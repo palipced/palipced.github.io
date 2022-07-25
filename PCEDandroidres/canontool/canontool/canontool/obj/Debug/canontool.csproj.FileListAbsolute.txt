@@ -1,0 +1,12 @@
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\bin\Debug\canontool.exe
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\bin\Debug\canontool.pdb
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.csprojAssemblyReference.cache
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.Properties.Resources.resources
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.csproj.GenerateResource.cache
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.exe
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.pdb
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.Form1.resources
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\bin\Debug\canontool.exe.config
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\bin\Debug\System.Data.SQLite.dll
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\bin\Debug\System.Data.SQLite.xml
+G:\AndroidStudioProjects\PCEDandroidres\canontool\canontool\canontool\obj\Debug\canontool.csproj.CopyComplete

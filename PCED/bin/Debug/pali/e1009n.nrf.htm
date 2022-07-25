@@ -1,0 +1,7502 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title><script>
+function setHitsVisibility(isVisible)
+{ 
+  var c = getStyleClass('hit');
+  if (isVisible)
+  {
+    c.style.backgroundColor = 'blue';
+    c.style.color = 'white';
+  }
+  else
+  {
+    c.style.backgroundColor = 'white';
+    c.style.color = 'black';
+  }
+}
+
+function setFootnotesVisibility(isVisible)
+{
+  getStyleClass('note').style.display = (isVisible ? 'inline' : 'none');
+}
+
+function getStyleClass (className) {
+	for (var s = 0; s < document.styleSheets.length; s++)
+	{
+		if(document.styleSheets[s].rules)
+		{
+			for (var r = 0; r < document.styleSheets[s].rules.length; r++)
+			{
+				if (document.styleSheets[s].rules[r].selectorText == '.' + className)
+				{
+					return document.styleSheets[s].rules[r];
+				}
+			}
+		}
+		else if(document.styleSheets[s].cssRules)
+		{
+			for (var r = 0; r < document.styleSheets[s].cssRules.length; r++)
+			{
+				if (document.styleSheets[s].cssRules[r].selectorText == '.' + className)
+					return document.styleSheets[s].cssRules[r];
+			}
+		}
+	}
+	
+	return null;
+}
+</script><style>
+body { 
+  font-family: "Times Ext Roman", "Indic Times", "Doulos SIL", Tahoma, "Arial Unicode MS", Gentium;
+  background: white;
+}
+
+span {}
+.note {color: blue}
+.bld {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white; }
+
+p {
+  border-top: 0in; border-bottom: 0in;
+  padding-top: 0in; padding-bottom: 0in;
+  margin-top: 0in; margin-bottom: 0.5cm;
+}
+
+.indent { font-size: 12pt; text-indent: 2em; margin-left: 3em;}
+
+.bodytext { font-size: 12pt; text-indent: 2em;}
+
+.hangnum { font-size: 12pt; text-indent: 2em;}
+
+/* Namo tassa, and nitthita -- no unique structural distinction */
+.centered { font-size: 12pt; text-align:center;}
+
+.unindented { font-size: 12pt;}
+
+.book { font-size: 21pt; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 18pt; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 24pt; text-align:center; font-weight: bold;}
+
+.title { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subsubhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+/* Gatha line 1 */
+.gatha1 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { font-size: 12pt; margin-bottom: 0.5cm; margin-left: 4em;}
+</style>
+  </head>
+  <body>
+
+
+
+
+
+<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="book">Naradakkhadīpanī</p>
+
+
+
+<p class="gatha1">Pālito <a name="M0.0008"></a> yeva saddhammo,</p>
+
+
+
+<p class="gatha2">Pālitena varena ca;</p>
+
+
+
+<p class="gatha3">Pālite suṭṭhu yaṃ sīlaṃ,</p>
+
+
+
+<p class="gathalast">Pālitaṃ dhamma-sundaraṃ.</p>
+
+
+
+<p class="gatha1">Sammā <a name="M0.0010"></a> āraddhaṃ sabba-sampattīnaṃ,</p>
+
+
+
+<p class="gathalast">Mūlaṃ hotīti daṭṭhabbaṃ.</p>
+
+
+
+<p class="gatha1">Vīriyārabbho <a name="M0.0011"></a> bhikkhave,</p>
+
+
+
+<p class="gathalast">Mahato atthāya saṃvattatīti.</p>
+
+
+
+<p class="gatha1">Tasmā <a name="M0.0012"></a> vīriyameva kattabbaṃ,</p>
+
+
+
+<p class="gathalast">Vīriyavato hi acintitaṃpi hoti.</p>
+
+
+
+<p class="gatha1">Yathā <a name="M0.0021"></a> hi tacchakānaṃ suttaṃ,</p>
+
+
+
+<p class="gatha2">Pamāṇaṃ hoti;</p>
+
+
+
+<p class="gathalast">Eva metampi viññūnaṃ.</p>
+
+
+
+<p class="gatha1">Suvijāno <a name="M0.0024"></a> bhavaṃ hoti,</p>
+
+
+
+<p class="gatha2">Dubbijāno parābhavo;</p>
+
+
+
+<p class="gatha3">Dhammakāmo bhavaṃ hoti,</p>
+
+
+
+<p class="gathalast">Dhammadessī parābhavo.</p>
+
+
+
+<p class="gatha1">Ayaṃ <a name="M0.0026"></a> dhammatāti ayaṃ sabhāvo,</p>
+
+
+
+<p class="gathalast">Ayaṃ niyāmoti vuttaṃ hoti.</p>
+
+
+
+<p class="gatha1">Ye <a name="M0.0028"></a> dhammā hetupabhavā,</p>
+
+
+
+<p class="gathalast">Tesaṃ hetuṃ tathāgato.</p>
+
+
+
+<p class="gatha1">Ratanattayaṃ<a name="M0.0035"></a>, santataṃ, ahaṃ vandāmi;</p>
+
+
+
+<p class="gatha2">Ācariyaṃ, so ahaṃ, niccaṃ namāmi;</p>
+
+
+
+<p class="gathalast">‘‘Hotu sabbaṃ, maṅgalaṃ, mamaṃ sabbadhi’’.</p>
+
+
+
+<p class="title">Naradakkhadīpanī</p>
+
+
+
+<p class="centered">Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="chapter">Paṇāma</p>
+
+
+
+<p class="chapter">Naradakkhadīpakassa,</p>
+
+
+
+<p class="gatha1">Namo samantacakkhuno;</p>
+
+
+
+<p class="gatha2">Saṃsārā vippamuttassa,</p>
+
+
+
+<p class="gatha3">Saṃsārā vippamuttassa,</p>
+
+
+
+<p class="gathalast">Sa-saddhammassa saṅghino.</p>
+
+
+
+<p class="chapter">Matthanā</p>
+
+
+
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> Pālitehi <a name="M0.0036"></a> varuttamaṃ,</p>
+
+
+
+<p class="gatha2">Pālitaṃ sīla-pāramiṃ;</p>
+
+
+
+<p class="gatha3">Pāletu varasambuddho,</p>
+
+
+
+<p class="gathalast">Pālitaṃ gantha-kāraṇaṃ.</p>
+
+
+
+<p class="chapter">Āsīsa</p>
+
+
+
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> Bahussuto <a name="M0.0037"></a> ca medhāvī,</p>
+
+
+
+<p class="gatha2">Sīlesuca samāhito;</p>
+
+
+
+<p class="gatha3">Cetosamathānuyutto,</p>
+
+
+
+<p class="gathalast">Api muddhani tiṭṭhatu.</p>
+
+
+
+<p class="chapter">Abhiyācaka</p>
+
+
+
+<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>.</p>
+
+
+
+<p class="gatha1"> Dhamma-saṅghaṃ <a name="M0.0038"></a> vanditvāna,</p>
+
+
+
+<p class="gatha2">Sabba-lokassa nāyakaṃ;</p>
+
+
+
+<p class="gatha3">Yācito tikakrapa-therena,</p>
+
+
+
+<p class="gathalast">Māṇavena ca dhīmatā.</p>
+
+
+
+<p class="hangnum"><a name="para5"></a><span class="paranum">5</span>.</p>
+
+
+
+<p class="gatha1"> Uttānameva saṅkhepaṃ,</p>
+
+
+
+<p class="gatha2">Nānā-sattha-sudhāritaṃ;</p>
+
+
+
+<p class="gatha3">Nara-dakkhaṃ likhissami,</p>
+
+
+
+<p class="gathalast">Passantu dhīra-māmakā.</p>
+
+
+
+<p class="hangnum"><a name="para6"></a><span class="paranum">6</span>.</p>
+
+
+
+<p class="gatha1"> Kosajjaṃ <a name="M0.0041"></a> bhayato disvā,</p>
+
+
+
+<p class="gatha2">Vīriyañjāpi khemato;</p>
+
+
+
+<p class="gatha3">Āraddhavīriyā hotha;</p>
+
+
+
+<p class="gathalast">Esā buddhānusāsanī.</p>
+
+
+
+<p class="hangnum"><a name="para7"></a><span class="paranum">7</span>.</p>
+
+
+
+<p class="gatha1"> Vīriyavā <a name="M0.0042"></a> kho bhikkhave ariyasāvako,</p>
+
+
+
+<p class="gatha2">Akusalaṃ pajahati, kusalaṃ bhāveti;</p>
+
+
+
+<p class="gatha3">Sāvajjaṃ pajahati, anavajjaṃ bhāveti,</p>
+
+
+
+<p class="gathalast">Suddhamattānaṃ pariharatīti.</p>
+
+
+
+<p class="gatha1">Vīriyavato <a name="M0.0043"></a> kiṃ nāma kammaṃ na sijjhati;</p>
+
+
+
+<p class="gatha2">Purisakāro <a name="M0.0044"></a> nāma na nassati,</p>
+
+
+
+<p class="gathalast">Sukhe patiṭṭhāpetīti jānāmi.</p>
+
+
+
+<p class="hangnum"><a name="para8"></a><span class="paranum">8</span>.</p>
+
+
+
+<p class="gatha1"> Yathā <a name="M0.0046"></a> khittaṃ nabhe leḍḍu,</p>
+
+
+
+<p class="gatha2">Dhuvaṃ patati bhūmiyaṃ;</p>
+
+
+
+<p class="gatha3">Tatheva buddha-seṭṭhānaṃ,</p>
+
+
+
+<p class="gathalast">Vacanaṃ dhuva-sassataṃ.</p>
+
+
+
+<p class="hangnum"><a name="para9"></a><span class="paranum">9</span>.</p>
+
+
+
+<p class="gatha1"> A-dvejjhavacanā <a name="M0.0048"></a> buddhā,</p>
+
+
+
+<p class="gathalast">A-moghavacanā jinā.</p>
+
+
+
+<p class="hangnum"><a name="para10"></a><span class="paranum">10</span>.</p>
+
+
+
+<p class="gatha1"> Sussusā <a name="M0.0049"></a> labhate paññaṃ,</p>
+
+
+
+<p class="gatha2">Uṭṭhātā vindate dhanaṃ;</p>
+
+
+
+<p class="gatha3">Tasmā pāḷiṃ guruṃ katvā,</p>
+
+
+
+<p class="gathalast">Imaṃ passāhi sobhaṇaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para11"></a><span class="paranum">11</span>.</p>
+
+
+
+<p class="gatha1"> Sussusā <a name="M0.0051"></a> suta-buddhinī,</p>
+
+
+
+<p class="gatha2">Sutaṃ paññāya vaḍḍhanaṃ;</p>
+
+
+
+<p class="gatha3">Paññāya atthaṃ jānāti,</p>
+
+
+
+<p class="gathalast">Ñāto attho sukhāvaho.</p>
+
+
+
+<p class="hangnum"><a name="para12"></a><span class="paranum">12</span>.</p>
+
+
+
+<p class="gatha1"> Satataṃjjhāyanaṃ <a name="M0.0052"></a> vāda,</p>
+
+
+
+<p class="gatha2">Para-tantavalokanaṃ;</p>
+
+
+
+<p class="gatha3">Sabbijjācera-sevāca,</p>
+
+
+
+<p class="gathalast">Buddhi-mati-karo guṇo.</p>
+
+
+
+<p class="hangnum"><a name="para13"></a><span class="paranum">13</span>.</p>
+
+
+
+<p class="gatha1"> Ati-dīghova <a name="M0.0053"></a> nīgho hi,</p>
+
+
+
+<p class="gatha2">Kusīto hīna-vīriyo;</p>
+
+
+
+<p class="gatha3">Tasmā vīriyaṃ katvāna,</p>
+
+
+
+<p class="gathalast">Vijjaṃ esantu sādhavo.</p>
+
+
+
+<p class="hangnum"><a name="para14"></a><span class="paranum">14</span>.</p>
+
+
+
+<p class="gatha1"> Suporiso <a name="M0.0055"></a> tāva sippaṃ,</p>
+
+
+
+<p class="gatha2">Uggaṇheyya paraṃ dhanaṃ;</p>
+
+
+
+<p class="gatha3">Gaveseyya tato mantaṃ,</p>
+
+
+
+<p class="gathalast">Katheyya sacca-bhāsitaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para15"></a><span class="paranum">15</span>.</p>
+
+
+
+<p class="gatha1"> Pathamaṃ <a name="M0.0056"></a> na parājaye sippaṃ,</p>
+
+
+
+<p class="gatha2">Dutīyaṃ na parājaye dhanaṃ;</p>
+
+
+
+<p class="gatha3">Tatīyaṃ na parājaye dhanaṃ,</p>
+
+
+
+<p class="gathalast">Catutthamatthaṃ kiṃ karissati.</p>
+
+
+
+<p class="hangnum"><a name="para16"></a><span class="paranum">16</span>.</p>
+
+
+
+<p class="gatha1"> Sobhanti <a name="M0.0058"></a> a-milātāni,</p>
+
+
+
+<p class="gatha2">Pupphāniva pilandhituṃ;</p>
+
+
+
+<p class="gatha3">Tathā sobhanti dārakā,</p>
+
+
+
+<p class="gathalast">Yobbaneyeva sikkhituṃ.</p>
+
+
+
+<p class="hangnum"><a name="para17"></a><span class="paranum">17</span>.</p>
+
+
+
+<p class="gatha1"> Tasmā <a name="M0.0059"></a> have guṇādhāraṃ,</p>
+
+
+
+<p class="gatha2">Paññā-vaḍḍhanamuttamaṃ;</p>
+
+
+
+<p class="gatha3">Sikkheyya matimā poso,</p>
+
+
+
+<p class="gathalast">Patthento hitamattano.</p>
+
+
+
+<p class="hangnum"><a name="para18"></a><span class="paranum">18</span>.</p>
+
+
+
+<p class="gatha1"> Alaṃ <a name="M0.0060"></a> vāyamituṃ sippe,</p>
+
+
+
+<p class="gatha2">Attha-kāmena jantunā;</p>
+
+
+
+<p class="gatha3">Kataṃ vijaññā vijjādi,</p>
+
+
+
+<p class="gathalast">Vayo te mā upajjhagā.</p>
+
+
+
+<p class="hangnum"><a name="para19"></a><span class="paranum">19</span>.</p>
+
+
+
+<p class="gatha1"> Vijjaṃ <a name="M0.0062"></a> sikkhe, care sīlaṃ,</p>
+
+
+
+<p class="gatha2">Dhīrena saha saṃvase;</p>
+
+
+
+<p class="gatha3">Dhanācaye, kare kammaṃ,</p>
+
+
+
+<p class="gathalast">Piyaṃ vācañca saṃvade.</p>
+
+
+
+<p class="hangnum"><a name="para20"></a><span class="paranum">20</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0064"></a> tveva supituṃ hoti,</p>
+
+
+
+<p class="gatha2">Ratti nakkhatta-mālinī;</p>
+
+
+
+<p class="gatha3">Paṭijaggitumevesā,</p>
+
+
+
+<p class="gathalast">Ratti hoti vijānataṃ.</p>
+
+
+
+<p class="hangnum"><a name="para21"></a><span class="paranum">21</span>.</p>
+
+
+
+<p class="gatha1"> Uṭṭhāhatha <a name="M0.0065"></a> nisīdatha,</p>
+
+
+
+<p class="gatha2">Ko attho supitena vo;</p>
+
+
+
+<p class="gatha3">Sādhu kho sippa-vijjāhvā,</p>
+
+
+
+<p class="gathalast">Vijjaṃ sikkhatha santataṃ.</p>
+
+
+
+<p class="hangnum"><a name="para22"></a><span class="paranum">22</span>.</p>
+
+
+
+<p class="gatha1"> Ārabbhatha <a name="M0.0067"></a> sadā puttā,</p>
+
+
+
+<p class="gatha2">Bahussutaṃ gavesituṃ;</p>
+
+
+
+<p class="gatha3">Yasmā loke sippavantā,</p>
+
+
+
+<p class="gathalast">Sabbā-disāsu pākaṭā.</p>
+
+
+
+<p class="hangnum"><a name="para23"></a><span class="paranum">23</span>.</p>
+
+
+
+<p class="gatha1"> Sakyarūpaṃ <a name="M0.0068"></a> pure santaṃ,</p>
+
+
+
+<p class="gatha2">Mayā sippaṃ na sikkhitaṃ;</p>
+
+
+
+<p class="gatha3">Kicchā vutti a-sippassa,</p>
+
+
+
+<p class="gathalast">Iti pacchā nutappati.</p>
+
+
+
+<p class="hangnum"><a name="para24"></a><span class="paranum">24</span>.</p>
+
+
+
+<p class="gatha1"> Lokatthaṃ <a name="M0.0075"></a> loka-kammantaṃ,</p>
+
+
+
+<p class="gatha2">Icchanto pariyesituṃ;</p>
+
+
+
+<p class="gatha3">Niccameva vīriyañca,</p>
+
+
+
+<p class="gathalast">Atthaṃ mantañja cintaye.</p>
+
+
+
+<p class="hangnum"><a name="para25"></a><span class="paranum">25</span>.</p>
+
+
+
+<p class="gatha1"> Dhanavā <a name="M0.0076"></a> guṇavā loke,</p>
+
+
+
+<p class="gatha2">Sabbā-disāya pākaṭo;</p>
+
+
+
+<p class="gatha3">Sīlavā paññavā macco,</p>
+
+
+
+<p class="gathalast">Sabba-lokehi pūjito.</p>
+
+
+
+<p class="hangnum"><a name="para26"></a><span class="paranum">26</span>.</p>
+
+
+
+<p class="gatha1"> Sajīvati <a name="M0.0077"></a> yaso yassa,</p>
+
+
+
+<p class="gatha2">Kitti yassa sajīvati;</p>
+
+
+
+<p class="gatha3">Yasa-kitti vihīnassa,</p>
+
+
+
+<p class="gathalast">Jīvantopi matopamā.</p>
+
+
+
+<p class="hangnum"><a name="para27"></a><span class="paranum">27</span>.</p>
+
+
+
+<p class="gatha1"> Saddhīdha <a name="M0.0079"></a> vittaṃ purisassa seṭṭhaṃ,</p>
+
+
+
+<p class="gatha2">Dhammo suciṇṇo sukhamāvahāti;</p>
+
+
+
+<p class="gatha3">Saccaṃ have sādutaraṃ rasānaṃ,</p>
+
+
+
+<p class="gathalast">Paññājīviṃ jīvitamāhu seṭṭhanti.</p>
+
+
+
+<p class="hangnum"><a name="para28"></a><span class="paranum">28</span>.</p>
+
+
+
+<p class="gatha1"> Satimato <a name="M0.0081"></a> sadā bhaddaṃ,</p>
+
+
+
+<p class="gatha2">Satimā sukhamedhati;</p>
+
+
+
+<p class="gatha3">Satimato suve seyyo,</p>
+
+
+
+<p class="gathalast">Verā ca parimuccati.</p>
+
+
+
+<p class="hangnum"><a name="para29"></a><span class="paranum">29</span>.</p>
+
+
+
+<p class="gatha1"> Mā <a name="M0.0083"></a> vo khaṇaṃ virādhetha,</p>
+
+
+
+<p class="gatha2">Khaṇātītā hi socare;</p>
+
+
+
+<p class="gatha3">Sadatthe vāyameyyātha,</p>
+
+
+
+<p class="gathalast">Khaṇo vo paṭipādito.</p>
+
+
+
+<p class="hangnum"><a name="para30"></a><span class="paranum">30</span>.</p>
+
+
+
+<p class="gatha1"> Yathicchitaṃ <a name="M0.0084"></a> na pappoti,</p>
+
+
+
+<p class="gatha2">A-phiyo nāvikoṇṇave;</p>
+
+
+
+<p class="gatha3">Tathevāvīriyopettha,</p>
+
+
+
+<p class="gathalast">Tasmārabheyya sāsanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para31"></a><span class="paranum">31</span>.</p>
+
+
+
+<p class="gatha1"> Vāyametheva <a name="M0.0087"></a> puriso,</p>
+
+
+
+<p class="gatha2">Yāva atthassa nipphadā;</p>
+
+
+
+<p class="gatha3">Nipphannasobhaṇo attho,</p>
+
+
+
+<p class="gathalast">Khantā bhiyyo na vijjati.</p>
+
+
+
+<p class="hangnum"><a name="para32"></a><span class="paranum">32</span>.</p>
+
+
+
+<p class="gatha1"> Sameva <a name="M0.0088"></a> ñāṇa-vāyāme,</p>
+
+
+
+<p class="gatha2">Sukhāvaho su-maṅgalo;</p>
+
+
+
+<p class="gatha3">Ñunedhike tathā no hi,</p>
+
+
+
+<p class="gathalast">Dvayena sādhu sampadā.</p>
+
+
+
+<p class="hangnum"><a name="para33"></a><span class="paranum">33</span>.</p>
+
+
+
+<p class="gatha1"> Kāya-kammāni <a name="M0.0090"></a> sijjhanti,</p>
+
+
+
+<p class="gatha2">Vacī-kammāni vīriyaṃ;</p>
+
+
+
+<p class="gatha3">Na hi kiccāni cintāhi,</p>
+
+
+
+<p class="gathalast">Kareyyāthīdha vāyamaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para34"></a><span class="paranum">34</span>.</p>
+
+
+
+<p class="gatha1"> Paṭikacceva <a name="M0.0091"></a> kareyya,</p>
+
+
+
+<p class="gatha2">Taṃ jaññā hitamattano;</p>
+
+
+
+<p class="gatha3">Na sākaṭikacintāya,</p>
+
+
+
+<p class="gathalast">Mandā dhīro parakkame.</p>
+
+
+
+<p class="hangnum"><a name="para35"></a><span class="paranum">35</span>.</p>
+
+
+
+<p class="gatha1"> Thirena <a name="M0.0095"></a> saka-kammena,</p>
+
+
+
+<p class="gatha2">Vaḍḍhatiyeva saṃ phalaṃ;</p>
+
+
+
+<p class="gatha3">A-thirena alasena,</p>
+
+
+
+<p class="gathalast">Kara-kammaṃ phalañca no.</p>
+
+
+
+<p class="hangnum"><a name="para36"></a><span class="paranum">36</span>.</p>
+
+
+
+<p class="gatha1"> Āsīsetheva <a name="M0.0096"></a> puriso,</p>
+
+
+
+<p class="gatha2">Na nibbindeyya paṇḍito;</p>
+
+
+
+<p class="gatha3">Passāmi vohaṃ attānaṃ,</p>
+
+
+
+<p class="gathalast">Yathā icchiṃ tathā ahu.</p>
+
+
+
+<p class="hangnum"><a name="para37"></a><span class="paranum">37</span>.</p>
+
+
+
+<p class="gatha1"> Aṇaṇo <a name="M0.0098"></a> ñātīnaṃ hoti,</p>
+
+
+
+<p class="gatha2">Devānaṃ pitunañca so;</p>
+
+
+
+<p class="gatha3">Karaṃ purisa-kiccāni,</p>
+
+
+
+<p class="gathalast">Na ca pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para38"></a><span class="paranum">38</span>.</p>
+
+
+
+<p class="gatha1"> Hiyyoti <a name="M0.0099"></a> hiyyati poso,</p>
+
+
+
+<p class="gatha2">Karissāmi pareti yo;</p>
+
+
+
+<p class="gatha3">Ajja kattabba kammaṃ sve,</p>
+
+
+
+<p class="gathalast">So tato parihāyati.</p>
+
+
+
+<p class="hangnum"><a name="para39"></a><span class="paranum">39</span>.</p>
+
+
+
+<p class="gatha1"> So <a name="M0.0101"></a> a-ppamatto a-kuddho,</p>
+
+
+
+<p class="gatha2">Tāta kiccāni kāraya;</p>
+
+
+
+<p class="gatha3">Vāyāmassu sa-kiccesu,</p>
+
+
+
+<p class="gathalast">Nālaso vindate sukhaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para40"></a><span class="paranum">40</span>.</p>
+
+
+
+<p class="gatha1"> Hīna-jaccopi <a name="M0.0102"></a> ce hoti,</p>
+
+
+
+<p class="gatha2">Uṭṭhātā dhitimā naro;</p>
+
+
+
+<p class="gatha3">Ācāra-sīla-sampanno,</p>
+
+
+
+<p class="gathalast">Nise aggīva bhāsati.</p>
+
+
+
+<p class="hangnum"><a name="para41"></a><span class="paranum">41</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0104"></a> pubbe karaṇīyāni,</p>
+
+
+
+<p class="gatha2">Pacchā so kātumicchati;</p>
+
+
+
+<p class="gatha3">Varuṇakaṭṭhabhañjova,</p>
+
+
+
+<p class="gathalast">Sa pacchā anutappati.</p>
+
+
+
+<p class="hangnum"><a name="para42"></a><span class="paranum">42</span>.</p>
+
+
+
+<p class="gatha1"> Uṭṭhānakālamhi <a name="M0.0105"></a> anuṭṭhahāno,</p>
+
+
+
+<p class="gatha2">Yuvā balī ālasiyaṃ upeto;</p>
+
+
+
+<p class="gatha3">A-puṇṇasaṅkappamano kusīto,</p>
+
+
+
+<p class="gathalast">Paññāya maggaṃ alaso na vindati.</p>
+
+
+
+<p class="hangnum"><a name="para43"></a><span class="paranum">43</span>.</p>
+
+
+
+<p class="gatha1"> Dummedho <a name="M0.0107"></a> puriso loke,</p>
+
+
+
+<p class="gatha2">Kusīto hīna-vīriyo;</p>
+
+
+
+<p class="gatha3">Appassuto anācāro,</p>
+
+
+
+<p class="gathalast">Parihāyati vuḍḍhiyā.</p>
+
+
+
+<p class="hangnum"><a name="para44"></a><span class="paranum">44</span>.</p>
+
+
+
+<p class="gatha1"> Appassutāyaṃ <a name="M0.0108"></a> puriso,</p>
+
+
+
+<p class="gatha2">Balībaddova jīrati;</p>
+
+
+
+<p class="gatha3">Maṃsāni tassa vaḍḍhanti,</p>
+
+
+
+<p class="gathalast">Paññā tassa na vaḍḍhati.</p>
+
+
+
+<p class="hangnum"><a name="para45"></a><span class="paranum">45</span>.</p>
+
+
+
+<p class="gatha1"> Yassa <a name="M0.0109"></a> manussa-bhūtassa,</p>
+
+
+
+<p class="gatha2">Natthi bhogā ca sippakaṃ;</p>
+
+
+
+<p class="gatha3">Kiṃphalaṃ tassa mānussaṃ,</p>
+
+
+
+<p class="gathalast">Dvipādaṭṭho hi so migo.</p>
+
+
+
+<p class="hangnum"><a name="para46"></a><span class="paranum">46</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0111"></a> ca vassasataṃ jīve,</p>
+
+
+
+<p class="gatha2">Kusīto hīna-vīriyo;</p>
+
+
+
+<p class="gatha3">Ekāhaṃ jīvitaṃ seyyo,</p>
+
+
+
+<p class="gathalast">Vīriyārabbhato daḷaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para47"></a><span class="paranum">47</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0112"></a> ca dhamma-vibhaṅgaññū,</p>
+
+
+
+<p class="gatha2">Kāluṭṭhāyī a-tandito;</p>
+
+
+
+<p class="gatha3">Anuṭṭhahati kālena,</p>
+
+
+
+<p class="gathalast">Phalaṃ tassa samijjhati.</p>
+
+
+
+<p class="hangnum"><a name="para48"></a><span class="paranum">48</span>.</p>
+
+
+
+<p class="gatha1"> A-caritvā <a name="M0.0126"></a> brahmacariyaṃ,</p>
+
+
+
+<p class="gatha2">A-laddhā yobbane dhanaṃ;</p>
+
+
+
+<p class="gatha3">Jiṇṇakoñcāva jhāyanti,</p>
+
+
+
+<p class="gathalast">Khīṇamaccheva pallale.</p>
+
+
+
+<p class="hangnum"><a name="para49"></a><span class="paranum">49</span>.</p>
+
+
+
+<p class="gatha1"> A-caritvā <a name="M0.0127"></a> brahmacariyaṃ,</p>
+
+
+
+<p class="gatha2">A-laddhā yobbane dhanaṃ;</p>
+
+
+
+<p class="gatha3">Sentti cāpātikhīṇāva,</p>
+
+
+
+<p class="gathalast">Purāṇāni anutthunaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para50"></a><span class="paranum">50</span>.</p>
+
+
+
+<p class="gatha1"> Appakenāpi <a name="M0.0132"></a> medhāvī,</p>
+
+
+
+<p class="gatha2">Pābhatena vicakkhaṇo;</p>
+
+
+
+<p class="gatha3">Samuṭṭhāpeti attānaṃ,</p>
+
+
+
+<p class="gathalast">Aṇuṃ aggiṃva sandhamaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para51"></a><span class="paranum">51</span>.</p>
+
+
+
+<p class="gatha1"> Vāyāmetheva <a name="M0.0138"></a> puriso,</p>
+
+
+
+<p class="gatha2">Na nibbindeyya paṇḍito;</p>
+
+
+
+<p class="gatha3">Vāyāmassa phalaṃ passa,</p>
+
+
+
+<p class="gathalast">Bhuttā ambā anītihaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para52"></a><span class="paranum">52</span>.</p>
+
+
+
+<p class="gatha1"> Anuṭṭhahaṃ <a name="M0.0140"></a> a-vāyāmaṃ,</p>
+
+
+
+<p class="gatha2">Sukhaṃ yatrādhi gacchati;</p>
+
+
+
+<p class="gatha3">Suvira tattha gacchāhi,</p>
+
+
+
+<p class="gathalast">Mañca tattheva pāpaya.</p>
+
+
+
+<p class="hangnum"><a name="para53"></a><span class="paranum">53</span>.</p>
+
+
+
+<p class="gatha1"> Yatthālaso <a name="M0.0142"></a> anuṭṭhātā,</p>
+
+
+
+<p class="gatha2">Accantaṃ sukhamedhati;</p>
+
+
+
+<p class="gatha3">Suvira tattha gacchāhi,</p>
+
+
+
+<p class="gathalast">Mañca ttattheva pāpaya.</p>
+
+
+
+<p class="hangnum"><a name="para54"></a><span class="paranum">54</span>.</p>
+
+
+
+<p class="gatha1"> Adhippāya-phalaṃ <a name="M0.0143"></a> loke,</p>
+
+
+
+<p class="gatha2">Dhītimanttassa sijjhati;</p>
+
+
+
+<p class="gatha3">Vīriyameva kattabbaṃ,</p>
+
+
+
+<p class="gathalast">Etaṃ buddhehi vaṇṇitaṃ.</p>
+
+
+
+<p class="chapter">Paññā-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para55"></a><span class="paranum">55</span>.</p>
+
+
+
+<p class="gatha1"> Paññaṃ <a name="M0.0144"></a> pathamamesehi,</p>
+
+
+
+<p class="gatha2">Paññā-balaṃ bahuttamaṃ;</p>
+
+
+
+<p class="gatha3">Kula-putta balaṃ paññā,</p>
+
+
+
+<p class="gathalast">Kiṃhināma na sādhyati.</p>
+
+
+
+<p class="hangnum"><a name="para56"></a><span class="paranum">56</span>.</p>
+
+
+
+<p class="gatha1"> Aneka-saṃsayucchedi<a name="M0.0146"></a>,</p>
+
+
+
+<p class="gatha2">Parokkhatthassa dassakaṃ;</p>
+
+
+
+<p class="gatha3">Sabbassa locanaṃ satthaṃ,</p>
+
+
+
+<p class="gathalast">Yassa natthyandhameva so.</p>
+
+
+
+<p class="hangnum"><a name="para57"></a><span class="paranum">57</span>.</p>
+
+
+
+<p class="gatha1"> Paññā <a name="M0.0148"></a> sutaṃ vinicchindi,</p>
+
+
+
+<p class="gatha2">Kitti-siloka-vaḍḍhanī;</p>
+
+
+
+<p class="gatha3">Paññāsahito naro idha,</p>
+
+
+
+<p class="gathalast">Api sukhānivindati.</p>
+
+
+
+<p class="hangnum"><a name="para58"></a><span class="paranum">58</span>.</p>
+
+
+
+<p class="gatha1"> Sabbaññubuddha-pacceka<a name="M0.0149"></a>,</p>
+
+
+
+<p class="gatha2">Catusacca-sutā iti;</p>
+
+
+
+<p class="gatha3">Catu-buddhesu ekova,</p>
+
+
+
+<p class="gathalast">Bahussuto naro bhave.</p>
+
+
+
+<p class="hangnum"><a name="para59"></a><span class="paranum">59</span>.</p>
+
+
+
+<p class="gatha1"> Lekhacheko <a name="M0.0150"></a> vācacheko,</p>
+
+
+
+<p class="gatha2">Ganthacheko suvācako;</p>
+
+
+
+<p class="gatha3">Vidhāyakacheko sūro,</p>
+
+
+
+<p class="gathalast">Niddukkhova sakammani.</p>
+
+
+
+<p class="hangnum"><a name="para60"></a><span class="paranum">60</span>.</p>
+
+
+
+<p class="gatha1"> Paññā <a name="M0.0152"></a> hi seṭṭhā kusalā vadanti,</p>
+
+
+
+<p class="gatha2">Nakkhatta-rājāriva tārakānaṃ;</p>
+
+
+
+<p class="gatha3">Sīlaṃ sirīcāpi satañca dhammo,</p>
+
+
+
+<p class="gathalast">Anvāyikā paññāvato bhavanti.</p>
+
+
+
+<p class="hangnum"><a name="para61"></a><span class="paranum">61</span>.</p>
+
+
+
+<p class="gatha1"> Sevetha <a name="M0.0154"></a> buddhe nipuṇe bahussutte,</p>
+
+
+
+<p class="gatha2">Uggāhako ca paripucchako;</p>
+
+
+
+<p class="gatha3">Suṇeyya sakkaccaṃ subhāsitāni,</p>
+
+
+
+<p class="gathalast">Evaṃ karo paññavā hoti macco.</p>
+
+
+
+<p class="hangnum"><a name="para62"></a><span class="paranum">62</span>.</p>
+
+
+
+<p class="gatha1"> Vayena <a name="M0.0156"></a> yasa-pucchāhi,</p>
+
+
+
+<p class="gatha2">Tiṭṭha-vāsena yoniso;</p>
+
+
+
+<p class="gatha3">Sākacchā snehasaṃsevā,</p>
+
+
+
+<p class="gathalast">Patirūpa-vāsenaca.</p>
+
+
+
+<p class="hangnum"><a name="para63"></a><span class="paranum">63</span>.</p>
+
+
+
+<p class="gatha1"> Etāni aṭṭhaṭhānāni,</p>
+
+
+
+<p class="gatha2">Buddhi-visada-kāraṇā;</p>
+
+
+
+<p class="gatha3">Yesaṃ etāni sambhonti,</p>
+
+
+
+<p class="gathalast">Tesaṃ buddhi pabhijjati.</p>
+
+
+
+<p class="bodytext"><a name="para64"></a><span class="paranum">64</span>. Cattārome <a name="M0.0158"></a> bhikkhave dhammā paññāvuddhiyā saṃvattanti. Katame cattāro. Sappurisasaṃsevo saddhammasavanaṃ yoniso manasikāro dhammānudhamma-paṭipatti. Ime kho bhikkhave cattāro dhammā paññā-vuddhiyā saṃvattantītti.</p>
+
+
+
+<p class="hangnum"><a name="para65"></a><span class="paranum">65</span>.</p>
+
+
+
+<p class="gatha1"> Cakkhupasāda-sampanno<a name="M0.0160"></a>,</p>
+
+
+
+<p class="gatha2">Acchimantañca passati;</p>
+
+
+
+<p class="gatha3">Andhaṃ kāṇaṃ su-passantaṃ,</p>
+
+
+
+<p class="gathalast">Andho sabbaṃ na passati.</p>
+
+
+
+<p class="hangnum"><a name="para66"></a><span class="paranum">66</span>.</p>
+
+
+
+<p class="gatha1"> Passatti <a name="M0.0161"></a> passo passantaṃ,</p>
+
+
+
+<p class="gatha2">A-passantañca passati;</p>
+
+
+
+<p class="gatha3">A-passanto a-passantaṃ,</p>
+
+
+
+<p class="gathalast">Passantañca na passati.</p>
+
+
+
+<p class="hangnum"><a name="para67"></a><span class="paranum">67</span>.</p>
+
+
+
+<p class="gatha1"> Pākaṭaṃ <a name="M0.0162"></a> a-paṭicchannaṃ,</p>
+
+
+
+<p class="gatha2">Rūpaṃ pasāda-cakkhunā;</p>
+
+
+
+<p class="gatha3">Nāññaṃ passatti sabbaṃpi,</p>
+
+
+
+<p class="gathalast">Tathato ñāṇa-cakkhunā.</p>
+
+
+
+<p class="hangnum"><a name="para68"></a><span class="paranum">68</span>.</p>
+
+
+
+<p class="gatha1"> Sujanāsujanā <a name="M0.0164"></a> sabbe,</p>
+
+
+
+<p class="gatha2">Guṇenāpi vivekino;</p>
+
+
+
+<p class="gatha3">Vivekaṃ na samāyanti,</p>
+
+
+
+<p class="gathalast">A-vivekījanantike.</p>
+
+
+
+<p class="hangnum"><a name="para69"></a><span class="paranum">69</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0165"></a> ca uppatitaṃ atthaṃ,</p>
+
+
+
+<p class="gatha2">Na khippamanubujjhati;</p>
+
+
+
+<p class="gatha3">A-mittavasamanveti,</p>
+
+
+
+<p class="gathalast">Pacchā ca anutappati.</p>
+
+
+
+<p class="hangnum"><a name="para70"></a><span class="paranum">70</span>.</p>
+
+
+
+<p class="gatha1"> Evaṃ <a name="M0.0166"></a> mahiddhikā paññā,</p>
+
+
+
+<p class="gatha2">Nipuṇā sādhucintinī;</p>
+
+
+
+<p class="gatha3">Diṭṭhadhamma-hitatthāya,</p>
+
+
+
+<p class="gathalast">Samparāya-sukhāya vā.</p>
+
+
+
+<p class="hangnum"><a name="para71"></a><span class="paranum">71</span>.</p>
+
+
+
+<p class="gatha1"> Taṃ <a name="M0.0168"></a> balānaṃ balaṃ seṭṭha,</p>
+
+
+
+<p class="gatha2">Agga paññābalaṃ balaṃ;</p>
+
+
+
+<p class="gatha3">Paññābalenupatthaddho,</p>
+
+
+
+<p class="gathalast">Etthaṃ vindati paṇḍitto.</p>
+
+
+
+<p class="hangnum"><a name="para72"></a><span class="paranum">72</span>.</p>
+
+
+
+<p class="gatha1"> Yena <a name="M0.0170"></a> ñāṇena bujjhanti,</p>
+
+
+
+<p class="gatha2">Ariyā kata-kiccataṃ;</p>
+
+
+
+<p class="gatha3">Taṃ ñāṇa-ratanaṃ laddhaṃ,</p>
+
+
+
+<p class="gathalast">Vāyāmetha jinorasā.</p>
+
+
+
+<p class="hangnum"><a name="para73"></a><span class="paranum">73</span>.</p>
+
+
+
+<p class="gatha1"> Paññāratanamālassa<a name="M0.0171"></a>,</p>
+
+
+
+<p class="gatha2">Na ciraṃ vattate bhavo;</p>
+
+
+
+<p class="gatha3">Khippaṃ dasseti amataṃ,</p>
+
+
+
+<p class="gathalast">Na ca so rocate bhave.</p>
+
+
+
+<p class="hangnum"><a name="para74"></a><span class="paranum">74</span>.</p>
+
+
+
+<p class="gatha1"> Pamādamanuyuñjanti<a name="M0.0173"></a>,</p>
+
+
+
+<p class="gatha2">Bālā dummedhino janā;</p>
+
+
+
+<p class="gatha3">Appamādañca medhāvī,</p>
+
+
+
+<p class="gathalast">Dhanaṃ seṭṭhaṃva rakkhati.</p>
+
+
+
+<p class="hangnum"><a name="para75"></a><span class="paranum">75</span>.</p>
+
+
+
+<p class="gatha1"> Dhana-puñña-dhī-lābhena<a name="M0.0174"></a>,</p>
+
+
+
+<p class="gatha2">Kālaṃ khiyyati paṇḍito;</p>
+
+
+
+<p class="gatha3">Kīḷanena ca dummedho,</p>
+
+
+
+<p class="gathalast">Niddāya kalahena vā.</p>
+
+
+
+<p class="hangnum"><a name="para76"></a><span class="paranum">76</span>.</p>
+
+
+
+<p class="gatha1"> Pamādaṃ <a name="M0.0176"></a> appamādena,</p>
+
+
+
+<p class="gatha2">Yadā nūdati paṇḍito;</p>
+
+
+
+<p class="gatha3">Paññāpāsāda-māruyha,</p>
+
+
+
+<p class="gatha2">A-soko sokiniṃ pajaṃ,</p>
+
+
+
+<p class="gatha3">Pabbataṭṭhova bhūmaṭṭhe,</p>
+
+
+
+<p class="gathalast">Dhīro bāle avekkhati.</p>
+
+
+
+<p class="hangnum"><a name="para77"></a><span class="paranum">77</span>.</p>
+
+
+
+<p class="gatha1"> Natti <a name="M0.0178"></a> attasamaṃ pemaṃ,</p>
+
+
+
+<p class="gatha2">Natthi dhaññasamaṃ dhanaṃ;</p>
+
+
+
+<p class="gatha3">Natthi paññāsamā ābhā,</p>
+
+
+
+<p class="gathalast">Vuṭṭhi ve paramā sarā.</p>
+
+
+
+<p class="hangnum"><a name="para78"></a><span class="paranum">78</span>.</p>
+
+
+
+<p class="gatha1"> Diṭṭhe <a name="M0.0180"></a> dhamme ca yo attho,</p>
+
+
+
+<p class="gatha2">Yo cattho samparāyiko;</p>
+
+
+
+<p class="gatha3">Atthābhisamayā dhīro,</p>
+
+
+
+<p class="gathalast">Paṇḍitoti pavuccati.</p>
+
+
+
+<p class="hangnum"><a name="para79"></a><span class="paranum">79</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0181"></a> tena paṇḍito hoti,</p>
+
+
+
+<p class="gatha2">Yāvatā bahu bhāsati;</p>
+
+
+
+<p class="gatha3">Khemī a-verī a-bhayo,</p>
+
+
+
+<p class="gathalast">Paṇḍitotti pavuccati.</p>
+
+
+
+<p class="hangnum"><a name="para80"></a><span class="paranum">80</span>.</p>
+
+
+
+<p class="gatha1"> Yamhi <a name="M0.0183"></a> saccañca dhammo ca,</p>
+
+
+
+<p class="gatha2">A-hiṃsā saṃyamo damo;</p>
+
+
+
+<p class="gatha3">Sa ve vantamalo dhīro,</p>
+
+
+
+<p class="gathalast">Thero iti pavuccatti.</p>
+
+
+
+<p class="hangnum"><a name="para81"></a><span class="paranum">81</span>.</p>
+
+
+
+<p class="gatha1"> Saka-guṇaṃ <a name="M0.0185"></a> saka-dosaṃ,</p>
+
+
+
+<p class="gatha2">Yo jānāti sapaṇḍito;</p>
+
+
+
+<p class="gatha3">Para-guṇaṃ para-dosaṃ,</p>
+
+
+
+<p class="gathalast">Yo jānāti sapaṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para82"></a><span class="paranum">82</span>.</p>
+
+
+
+<p class="gatha1"> Sati-vīriya-paññāya<a name="M0.0186"></a>,</p>
+
+
+
+<p class="gatha2">Yo karoti iriyāpathe;</p>
+
+
+
+<p class="gatha3">So paṇḍito have bhave,</p>
+
+
+
+<p class="gathalast">Ubhayattha-pariggaho.</p>
+
+
+
+<p class="hangnum"><a name="para83"></a><span class="paranum">83</span>.</p>
+
+
+
+<p class="gatha1"> Kataññū <a name="M0.0187"></a> vijjā-sampanno,</p>
+
+
+
+<p class="gatha2">Jātimā dhanavā have;</p>
+
+
+
+<p class="gatha3">So vicāraṇa-sīlo ca,</p>
+
+
+
+<p class="gathalast">Niddukkho paṇḍito bhave.</p>
+
+
+
+<p class="gatha1">Sabbe <a name="M0.0189"></a> kammassakā sattā,</p>
+
+
+
+<p class="gathalast">Kammaṃ satte vibhajjati.</p>
+
+
+
+<p class="hangnum"><a name="para84"></a><span class="paranum">84</span>.</p>
+
+
+
+<p class="gatha1"> Yo passati paccakkhatthaṃ,</p>
+
+
+
+<p class="gatha2">Yo ca saṃsāratthaṃ tesu;</p>
+
+
+
+<p class="gatha3">Pacchimova pūjanīyo,</p>
+
+
+
+<p class="gathalast">Ubhayattha-sudiṭṭhattā.</p>
+
+
+
+<p class="hangnum"><a name="para85"></a><span class="paranum">85</span>.</p>
+
+
+
+<p class="gatha1"> Appena <a name="M0.0191"></a> anavajjena,</p>
+
+
+
+<p class="gatha2">Santuṭṭho sulabhena ca;</p>
+
+
+
+<p class="gatha3">Mattaññū subharo hutvā,</p>
+
+
+
+<p class="gathalast">Careyya paṇḍito naro.</p>
+
+
+
+<p class="hangnum"><a name="para86"></a><span class="paranum">86</span>.</p>
+
+
+
+<p class="gatha1"> Attānameva <a name="M0.0192"></a> pathamaṃ,</p>
+
+
+
+<p class="gatha2">Patirūpe nivesaye;</p>
+
+
+
+<p class="gatha3">Athaññamanusāseyya,</p>
+
+
+
+<p class="gathalast">Na kilisseyya paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para87"></a><span class="paranum">87</span>.</p>
+
+
+
+<p class="gatha1"> Uttama-parisāya <a name="M0.0193"></a> ve,</p>
+
+
+
+<p class="gatha2">Utttamaṃ vācamuttamo;</p>
+
+
+
+<p class="gatha3">Bhaṇeyyākhepa-vitthāraṃ,</p>
+
+
+
+<p class="gathalast">Sā anagghyā lokattaye.</p>
+
+
+
+<p class="hangnum"><a name="para88"></a><span class="paranum">88</span>.</p>
+
+
+
+<p class="gatha1"> Paṇḍitassa <a name="M0.0194"></a> subhāsittaṃ,</p>
+
+
+
+<p class="gatha2">Paṇḍitova sujāniyā;</p>
+
+
+
+<p class="gatha3">Dummedho taṃ na jānāti,</p>
+
+
+
+<p class="gathalast">Dhīro dhīraṃ mamāyati.</p>
+
+
+
+<p class="hangnum"><a name="para89"></a><span class="paranum">89</span>.</p>
+
+
+
+<p class="gatha1"> Yena <a name="M0.0196"></a> kenaci vaṇṇena,</p>
+
+
+
+<p class="gatha2">Paro labhati rūppanaṃ;</p>
+
+
+
+<p class="gatha3">Attho vācāya ce hoti,</p>
+
+
+
+<p class="gathalast">Taṃ na bhāseyya paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para90"></a><span class="paranum">90</span>.</p>
+
+
+
+<p class="gatha1"> Bhuñjanatthaṃ <a name="M0.0197"></a> kathanatthaṃ,</p>
+
+
+
+<p class="gatha2">Mukhaṃ hotītti no vade;</p>
+
+
+
+<p class="gatha3">Yaṃvā taṃvā mukhāruḷhaṃ,</p>
+
+
+
+<p class="gathalast">Vacanaṃ paṇḍito naro.</p>
+
+
+
+<p class="hangnum"><a name="para91"></a><span class="paranum">91</span>.</p>
+
+
+
+<p class="gatha1"> Para-sattitto <a name="M0.0198"></a> sa-sattiṃ,</p>
+
+
+
+<p class="gatha2">Dujjāno hi naro mite;</p>
+
+
+
+<p class="gatha3">Ce jāne saka-sattiṃca,</p>
+
+
+
+<p class="gathalast">Kā kathā para-sattiyā.</p>
+
+
+
+<p class="hangnum"><a name="para92"></a><span class="paranum">92</span>.</p>
+
+
+
+<p class="gatha1"> Katta-guṇaṃ <a name="M0.0199"></a> paresaṃ yo,</p>
+
+
+
+<p class="gatha2">Paṭikaroti paṇḍito;</p>
+
+
+
+<p class="gatha3">Jānāti so ācikkhati,</p>
+
+
+
+<p class="gathalast">Na bālo guṇa-māmako.</p>
+
+
+
+<p class="hangnum"><a name="para93"></a><span class="paranum">93</span>.</p>
+
+
+
+<p class="gatha1"> Pabhūtaṃ <a name="M0.0200"></a> neva kātabbaṃ,</p>
+
+
+
+<p class="gatha2">Bhavissaṃ neva cintaye;</p>
+
+
+
+<p class="gatha3">Vattamānena kālena,</p>
+
+
+
+<p class="gathalast">Vicaranti vicakkhaṇā.</p>
+
+
+
+<p class="hangnum"><a name="para94"></a><span class="paranum">94</span>.</p>
+
+
+
+<p class="gatha1"> Dhammesu <a name="M0.0201"></a> sati icchitā,</p>
+
+
+
+<p class="gatha2">Rasesu loṇamicchitaṃ;</p>
+
+
+
+<p class="gatha3">Rāja-kiccesu amaccaṃ,</p>
+
+
+
+<p class="gathalast">Sabba-ṭhānesu paṇḍitaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para95"></a><span class="paranum">95</span>.</p>
+
+
+
+<p class="gatha1"> Khattiyo <a name="M0.0203"></a> seṭṭho jane tasmiṃ,</p>
+
+
+
+<p class="gatha2">Ye gottapaṭisārino;</p>
+
+
+
+<p class="gatha3">Vijjā-caraṇa-sampanno,</p>
+
+
+
+<p class="gathalast">So seṭṭho deva-mānuse.</p>
+
+
+
+<p class="hangnum"><a name="para96"></a><span class="paranum">96</span>.</p>
+
+
+
+<p class="gatha1"> Sambuddho <a name="M0.0204"></a> dvipadaṃ seṭṭho,</p>
+
+
+
+<p class="gatha2">Ājānīyo catuppadaṃ;</p>
+
+
+
+<p class="gatha3">Sussusā seṭṭhā bhariyānaṃ,</p>
+
+
+
+<p class="gathalast">Yo ca puttānamassavo.</p>
+
+
+
+<p class="hangnum"><a name="para97"></a><span class="paranum">97</span>.</p>
+
+
+
+<p class="gatha1"> Sātthako <a name="M0.0207"></a> ca a-sammoho,</p>
+
+
+
+<p class="gatha2">Sappāyo gocaro tathā;</p>
+
+
+
+<p class="gatha3">Cattārimāni sikkheyyuṃ,</p>
+
+
+
+<p class="gathalast">Sampajaññābhivaḍḍhakā.</p>
+
+
+
+<p class="hangnum"><a name="para98"></a><span class="paranum">98</span>.</p>
+
+
+
+<p class="gatha1"> Paññañca <a name="M0.0208"></a> kho a-sussusaṃ,</p>
+
+
+
+<p class="gatha2">Na koci adhigacchati;</p>
+
+
+
+<p class="gatha3">Bahussutaṃ anāgamma,</p>
+
+
+
+<p class="gathalast">Dhammaṭṭhaṃ a-vinibbhajaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para99"></a><span class="paranum">99</span>.</p>
+
+
+
+<p class="gatha1"> Adhippāyo <a name="M0.0210"></a> sudubbodho,</p>
+
+
+
+<p class="gatha2">Yasmā vijjati pāḷiyaṃ;</p>
+
+
+
+<p class="gatha3">Tasmā upaṭṭhahaṃ gaṇhe,</p>
+
+
+
+<p class="gathalast">Garuṃ garumataṃ vidū.</p>
+
+
+
+<p class="chapter">Cāritta-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para100"></a><span class="paranum">100</span>.</p>
+
+
+
+<p class="gatha1"> Attā <a name="M0.0213"></a> hi attano nātho,</p>
+
+
+
+<p class="gatha2">Ko hi nātho paro siyā;</p>
+
+
+
+<p class="gatha3">Attanā hi sudantena,</p>
+
+
+
+<p class="gathalast">Nāthaṃ labhati dullabhaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para101"></a><span class="paranum">101</span>.</p>
+
+
+
+<p class="gatha1"> Attānañce <a name="M0.0214"></a> piyaṃ jaññā,</p>
+
+
+
+<p class="gatha2">Rakkheyya naṃ surakkhitaṃ;</p>
+
+
+
+<p class="gatha3">Tiṇṇamaññataraṃ yāmaṃ,</p>
+
+
+
+<p class="gathalast">Paṭijaggeyya paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para102"></a><span class="paranum">102</span>.</p>
+
+
+
+<p class="gatha1"> Attanā <a name="M0.0216"></a> kurute lakkhiṃ,</p>
+
+
+
+<p class="gatha2">A-lakkhiṃ kurutettanā;</p>
+
+
+
+<p class="gatha3">Na hi lakkhiṃ a-lakkhiṃ vā,</p>
+
+
+
+<p class="gathalast">Añño aññassa kārako.</p>
+
+
+
+<p class="hangnum"><a name="para103"></a><span class="paranum">103</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0218"></a> pīḷitā atta-dukkhena dhīrā,</p>
+
+
+
+<p class="gatha2">Sukhapphalaṃ kammaṃ pariccajanti;</p>
+
+
+
+<p class="gatha3">Sammohitāvāpi sukhena mattā,</p>
+
+
+
+<p class="gathalast">Na pāpa-kammañca samācaranti.</p>
+
+
+
+<p class="hangnum"><a name="para104"></a><span class="paranum">104</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0219"></a> neva nindaṃ nappasaṃsaṃ,</p>
+
+
+
+<p class="gatha2">Ādiyati garahaṃ nopi pūjaṃ;</p>
+
+
+
+<p class="gatha3">Sirīca lakkhīca apeti tamhā,</p>
+
+
+
+<p class="gathalast">Āpo suvuṭṭhīva yathā thalamhā.</p>
+
+
+
+<p class="hangnum"><a name="para105"></a><span class="paranum">105</span>.</p>
+
+
+
+<p class="gatha1"> Sādhu <a name="M0.0221"></a> dhammaruci rājā,</p>
+
+
+
+<p class="gatha2">Sādhu paññāṇavā naro;</p>
+
+
+
+<p class="gatha3">Sādhu mittānama-ddubbho,</p>
+
+
+
+<p class="gathalast">Pāpassa a-karaṃ sukhaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para106"></a><span class="paranum">106</span>.</p>
+
+
+
+<p class="gatha1"> Kalyāṇakārī <a name="M0.0222"></a> kalyāṇaṃ,</p>
+
+
+
+<p class="gatha2">Pāpakārī ca pāpakaṃ;</p>
+
+
+
+<p class="gatha3">Yādisaṃ vapatte bījaṃ,</p>
+
+
+
+<p class="gathalast">Tādisaṃ vahate phalaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para107"></a><span class="paranum">107</span>.</p>
+
+
+
+<p class="gatha1"> Jīvaṃ <a name="M0.0224"></a> paññāya rakkheyya,</p>
+
+
+
+<p class="gatha2">Dhanaṃ kammena rakkhaye;</p>
+
+
+
+<p class="gatha3">Evaṃ hyarogo sukhito,</p>
+
+
+
+<p class="gathalast">Porāṇaka-vaco idaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para108"></a><span class="paranum">108</span>.</p>
+
+
+
+<p class="gatha1"> Anupubbena <a name="M0.0226"></a> medhāvī,</p>
+
+
+
+<p class="gatha2">Thokaṃ thokaṃ khaṇe khaṇe;</p>
+
+
+
+<p class="gatha3">Kammāro rajatasseva,</p>
+
+
+
+<p class="gathalast">Niddame malamattano.</p>
+
+
+
+<p class="hangnum"><a name="para109"></a><span class="paranum">109</span>.</p>
+
+
+
+<p class="gatha1"> Vācānurakkhī <a name="M0.0228"></a> manasā susaṃvuto,</p>
+
+
+
+<p class="gatha2">Kāyena ca nākusalaṃ kayirā;</p>
+
+
+
+<p class="gatha3">Etetayo kammapathevisodhaye,</p>
+
+
+
+<p class="gathalast">Ārādhaye maggamisi-ppaveditaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para110"></a><span class="paranum">110</span>.</p>
+
+
+
+<p class="gatha1"> A-sante <a name="M0.0230"></a> nopaseveyya,</p>
+
+
+
+<p class="gatha2">Sante seveyya paṇḍito;</p>
+
+
+
+<p class="gatha3">A-santo nirayaṃ yanti,</p>
+
+
+
+<p class="gathalast">Santo pāpenti suggatiṃ.</p>
+
+
+
+<p class="hangnum"><a name="para111"></a><span class="paranum">111</span>.</p>
+
+
+
+<p class="gatha1"> A-karontopi <a name="M0.0232"></a> ce pāpaṃ,</p>
+
+
+
+<p class="gatha2">Karontaṃ mupasevati;</p>
+
+
+
+<p class="gatha3">Saṅkiyo hoti pāpasmiṃ,</p>
+
+
+
+<p class="gathalast">A-vaṇṇo cassa rūhati.</p>
+
+
+
+<p class="hangnum"><a name="para112"></a><span class="paranum">112</span>.</p>
+
+
+
+<p class="gatha1"> Saṅghāgato <a name="M0.0233"></a> aniṭṭhehi,</p>
+
+
+
+<p class="gatha2">Ambopi madhurapphalo;</p>
+
+
+
+<p class="gatha3">Tittapubbova pā eva,</p>
+
+
+
+<p class="gathalast">Manusso tu sa-jīvako.</p>
+
+
+
+<p class="hangnum"><a name="para113"></a><span class="paranum">113</span>.</p>
+
+
+
+<p class="gatha1"> Nihīna-sevito <a name="M0.0234"></a> poso,</p>
+
+
+
+<p class="gatha2">Nihīyati ca sabbadā;</p>
+
+
+
+<p class="gatha3">Kadāci na ca hāyetha,</p>
+
+
+
+<p class="gathalast">Tulyasevīpi attanā.</p>
+
+
+
+<p class="hangnum"><a name="para114"></a><span class="paranum">114</span>.</p>
+
+
+
+<p class="gatha1"> Vaṇṇa-gandha-rasopeto<a name="M0.0237"></a>,</p>
+
+
+
+<p class="gatha2">Amboyaṃ ahuvā pure;</p>
+
+
+
+<p class="gatha3">Tameva pūjaṃ labhamāno;</p>
+
+
+
+<p class="gathalast">Kenambo kaṭukapphalo.</p>
+
+
+
+<p class="hangnum"><a name="para115"></a><span class="paranum">115</span>.</p>
+
+
+
+<p class="gatha1"> Pucimanda-parivāro<a name="M0.0238"></a>,</p>
+
+
+
+<p class="gatha2">Ambo te dadhivāhana;</p>
+
+
+
+<p class="gatha3">Mūlaṃ mūlena saṃsaṭṭhaṃ,</p>
+
+
+
+<p class="gatha3">Sākhā sākhaṃ nisevare;</p>
+
+
+
+<p class="gatha2">Asātta-sannivāsena,</p>
+
+
+
+<p class="gathalast">Tenambo kaṭukapphalo.</p>
+
+
+
+<p class="hangnum"><a name="para116"></a><span class="paranum">116</span>.</p>
+
+
+
+<p class="gatha1"> Pāmokkha-bhajanaṃ <a name="M0.0240"></a> khippaṃ,</p>
+
+
+
+<p class="gatha2">Attha-kāmo su-vuḍḍhiyaṃ;</p>
+
+
+
+<p class="gatha3">Bhaje uttari attanā,</p>
+
+
+
+<p class="gathalast">Tasmā udeti paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para117"></a><span class="paranum">117</span>.</p>
+
+
+
+<p class="gatha1"> Kāco <a name="M0.0241"></a> kañcana-saṃsaggā,</p>
+
+
+
+<p class="gatha2">Dhatte māra-katiṃ jutiṃ;</p>
+
+
+
+<p class="gatha3">Tathā saṃsannidhānena,</p>
+
+
+
+<p class="gathalast">Mūḷho yāti pavīṇataṃ.</p>
+
+
+
+<p class="hangnum"><a name="para118"></a><span class="paranum">118</span>.</p>
+
+
+
+<p class="gatha1"> Kīṭopi <a name="M0.0243"></a> sumano-saṅgā,</p>
+
+
+
+<p class="gatha2">Ārohati sataṃ siro;</p>
+
+
+
+<p class="gatha3">Asmāpi yāti devatvaṃ,</p>
+
+
+
+<p class="gathalast">Mahabbhi suppatiṭṭhito.</p>
+
+
+
+<p class="hangnum"><a name="para119"></a><span class="paranum">119</span>.</p>
+
+
+
+<p class="gatha1"> Sabbhireva <a name="M0.0245"></a> samāsetha,</p>
+
+
+
+<p class="gatha2">Sabbhi kubbetha sandhavaṃ;</p>
+
+
+
+<p class="gatha3">Sataṃ saddhammamaññāya,</p>
+
+
+
+<p class="gathalast">Paññaṃ labhati nāññato.</p>
+
+
+
+<p class="hangnum"><a name="para120"></a><span class="paranum">120</span>.</p>
+
+
+
+<p class="gatha1"> Sabbhireva <a name="M0.0246"></a> samāsetha,</p>
+
+
+
+<p class="gatha2">Sabbhi kubbetha sandhavaṃ;</p>
+
+
+
+<p class="gatha3">Sataṃ saddhammamaññāya,</p>
+
+
+
+<p class="gathalast">Sabba-dukkhā pamuccatti.</p>
+
+
+
+<p class="hangnum"><a name="para121"></a><span class="paranum">121</span>.</p>
+
+
+
+<p class="gatha1"> Sakiṃdeva <a name="M0.0247"></a> kulaputta,</p>
+
+
+
+<p class="gatha2">Sabbhi hoti samāgamo;</p>
+
+
+
+<p class="gatha3">Sā naṃ saṅgati pāleti,</p>
+
+
+
+<p class="gathalast">Nāsabbhi bahu saṅgamo.</p>
+
+
+
+<p class="hangnum"><a name="para122"></a><span class="paranum">122</span>.</p>
+
+
+
+<p class="gatha1"> Seyyo <a name="M0.0249"></a> a-mitto medhāvī,</p>
+
+
+
+<p class="gathalast">Yañce bālānukampako.</p>
+
+
+
+<p class="hangnum"><a name="para123"></a><span class="paranum">123</span>.</p>
+
+
+
+<p class="gatha1"> Sīlavantaṃ <a name="M0.0250"></a> paññavantaṃ,</p>
+
+
+
+<p class="gatha2">Divā nissaya-dāyakaṃ;</p>
+
+
+
+<p class="gatha3">Bahussutaṃ gavesanto,</p>
+
+
+
+<p class="gathalast">Bhajeyya attha-māmako.</p>
+
+
+
+<p class="hangnum"><a name="para124"></a><span class="paranum">124</span>.</p>
+
+
+
+<p class="gatha1"> Pāpa-mitte <a name="M0.0251"></a> vivajjetvā,</p>
+
+
+
+<p class="gatha2">Bhajeyyuttama-puggalaṃ;</p>
+
+
+
+<p class="gatha3">Ovāde cassa tiṭṭheyya,</p>
+
+
+
+<p class="gathalast">Patthento a-calaṃ sukhaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para125"></a><span class="paranum">125</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0253"></a> bhaje pāpake mitte,</p>
+
+
+
+<p class="gatha2">Na bhaje purisādhame;</p>
+
+
+
+<p class="gatha3">Bhajetha mittte kalyāṇe,</p>
+
+
+
+<p class="gathalast">Bhajetha purisuttame.</p>
+
+
+
+<p class="hangnum"><a name="para126"></a><span class="paranum">126</span>.</p>
+
+
+
+<p class="gatha1"> Anavajjaṃ <a name="M0.0254"></a> mukhamboja,</p>
+
+
+
+<p class="gatha2">Manavajjā ca bhāratī;</p>
+
+
+
+<p class="gatha3">Alaṅkatāva sobhante,</p>
+
+
+
+<p class="gathalast">Kiṃsu te niralaṅkatā.</p>
+
+
+
+<p class="hangnum"><a name="para127"></a><span class="paranum">127</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0256"></a> hi vaṇṇena sampannā,</p>
+
+
+
+<p class="gatha2">Mañjukā piya-dassinā;</p>
+
+
+
+<p class="gatha3">Kharā vācā piyā hoti,</p>
+
+
+
+<p class="gathalast">Asmiṃ loke paramhi ca.</p>
+
+
+
+<p class="hangnum"><a name="para128"></a><span class="paranum">128</span>.</p>
+
+
+
+<p class="gatha1"> Nanu <a name="M0.0257"></a> passasimaṃ kāḷiṃ,</p>
+
+
+
+<p class="gatha2">Dubbaṇṇaṃ tilakāhataṃ;</p>
+
+
+
+<p class="gatha3">Kolilaṃ saṇha-vācena,</p>
+
+
+
+<p class="gathalast">Bahūnaṃ pāṇinaṃ piyaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para129"></a><span class="paranum">129</span>.</p>
+
+
+
+<p class="gatha1"> Tasmā <a name="M0.0257"></a> sakhila-vācāya,</p>
+
+
+
+<p class="gatha2">Manta-bhāṇī anuddhato;</p>
+
+
+
+<p class="gatha3">Atthaṃ dhammañca dīpeti,</p>
+
+
+
+<p class="gathalast">Madhuraṃ tassa bhāsitaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para130"></a><span class="paranum">130</span>.</p>
+
+
+
+<p class="gatha1"> Tameva <a name="M0.0260"></a> vācaṃ bhāseyya,</p>
+
+
+
+<p class="gatha2">Yā sattānaṃ na tāpaye;</p>
+
+
+
+<p class="gatha3">Pare ca na vihiṃseyya,</p>
+
+
+
+<p class="gathalast">Sā ve vācā subhāsitā.</p>
+
+
+
+<p class="hangnum"><a name="para131"></a><span class="paranum">131</span>.</p>
+
+
+
+<p class="gatha1"> Piyaṃ <a name="M0.0261"></a> vācaṃva bhāseyya,</p>
+
+
+
+<p class="gatha2">Yā vācā paṭinanditā;</p>
+
+
+
+<p class="gatha3">Yaṃ anādāya pāpāni;</p>
+
+
+
+<p class="gathalast">Paresaṃ bhāsate piyaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para132"></a><span class="paranum">132</span>.</p>
+
+
+
+<p class="gatha1"> Saccaṃ <a name="M0.0262"></a> ve amatā vācā,</p>
+
+
+
+<p class="gatha2">Esa dhammo sanantano;</p>
+
+
+
+<p class="gatha3">Sacce atthe ca dhamme ca,</p>
+
+
+
+<p class="gathalast">Āhu santo patiṭṭhitā.</p>
+
+
+
+<p class="hangnum"><a name="para133"></a><span class="paranum">133</span>.</p>
+
+
+
+<p class="gatha1"> Subhāsitañca <a name="M0.0264"></a> dhammañca,</p>
+
+
+
+<p class="gatha2">Piyañca saccameva ca;</p>
+
+
+
+<p class="gatha3">Catu-aṅgehi sampannaṃ,</p>
+
+
+
+<p class="gathalast">Vācaṃ bhāseyya paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para134"></a><span class="paranum">134</span>.</p>
+
+
+
+<p class="gatha1"> Manāpameva <a name="M0.0265"></a> bhāseyya,</p>
+
+
+
+<p class="gatha2">Nāmanāpaṃ kudācanaṃ;</p>
+
+
+
+<p class="gatha3">Manāpaṃ bhāsamānassa,</p>
+
+
+
+<p class="gathalast">Siddhaṃ piyosadhaṃ bhave.</p>
+
+
+
+<p class="hangnum"><a name="para135"></a><span class="paranum">135</span>.</p>
+
+
+
+<p class="gatha1"> Yaṃ <a name="M0.0266"></a> vadeyya taṃ kareyya,</p>
+
+
+
+<p class="gatha2">Yaṃ na vade na taṃ kare;</p>
+
+
+
+<p class="gatha3">A-karontaṃ bhāsamānaṃ,</p>
+
+
+
+<p class="gathalast">Parijānanti paṇḍitā.</p>
+
+
+
+<p class="hangnum"><a name="para136"></a><span class="paranum">136</span>.</p>
+
+
+
+<p class="gatha1"> Rahovādaṃ <a name="M0.0268"></a> na bhāseyya,</p>
+
+
+
+<p class="gatha2">Na sammukhā khiṇaṃ bhaṇe;</p>
+
+
+
+<p class="gatha3">A-taramānova bhaṇeyya,</p>
+
+
+
+<p class="gathalast">Taramānova no bhaṇe.</p>
+
+
+
+<p class="hangnum"><a name="para137"></a><span class="paranum">137</span>.</p>
+
+
+
+<p class="gatha1"> Māvoca <a name="M0.0269"></a> pharusaṃ kiñci,</p>
+
+
+
+<p class="gatha2">Vuttā paṭivadeyyuṃ taṃ;</p>
+
+
+
+<p class="gatha3">Dukkhā hi sārambhakathā,</p>
+
+
+
+<p class="gathalast">Paṭidaṇḍā phuseyyuṃ taṃ.</p>
+
+
+
+<p class="hangnum"><a name="para138"></a><span class="paranum">138</span>.</p>
+
+
+
+<p class="gatha1"> Saka-yuttaṃ <a name="M0.0270"></a> kare kammaṃ,</p>
+
+
+
+<p class="gatha2">Saka-yuttaṃ vaciṃ bhaṇe;</p>
+
+
+
+<p class="gatha3">A-yuttake dhanaṃ naṭṭhaṃ,</p>
+
+
+
+<p class="gathalast">A-yutte jīvitaṃ khaye.</p>
+
+
+
+<p class="hangnum"><a name="para139"></a><span class="paranum">139</span>.</p>
+
+
+
+<p class="gatha1"> Ye <a name="M0.0272"></a> vuḍḍhamapacāyanti,</p>
+
+
+
+<p class="gatha2">Narā dhammassa dhakāvidā;</p>
+
+
+
+<p class="gatha3">Diṭṭhe dhammeva pāsaṃsā,</p>
+
+
+
+<p class="gathalast">Samparāye ca suggatiṃ.</p>
+
+
+
+<p class="hangnum"><a name="para140"></a><span class="paranum">140</span>.</p>
+
+
+
+<p class="gatha1"> Porī-kathaṃ-va <a name="M0.0274"></a> bhāseyya,</p>
+
+
+
+<p class="gatha2">Yuttā kathā hi pūrino;</p>
+
+
+
+<p class="gatha3">Bhāti-mattañca bhātāti,</p>
+
+
+
+<p class="gathalast">Pitu-mattaṃ pitā iti.</p>
+
+
+
+<p class="hangnum"><a name="para141"></a><span class="paranum">141</span>.</p>
+
+
+
+<p class="gatha1"> Dānañca <a name="M0.0275"></a> piya-vajjañca,</p>
+
+
+
+<p class="gatha2">Attha-cariyā ca yā idha;</p>
+
+
+
+<p class="gatha3">Samānattatā dhammesa,</p>
+
+
+
+<p class="gathalast">Tattha tattha yathārahaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para142"></a><span class="paranum">142</span>.</p>
+
+
+
+<p class="gatha1"> Sakiṃ <a name="M0.0277"></a> vadanti rājāno,</p>
+
+
+
+<p class="gatha2">Sakiṃṃ samaṇa-brāhmaṇā;</p>
+
+
+
+<p class="gatha3">Sakiṃva purisā loke,</p>
+
+
+
+<p class="gathalast">Esadhammo sanantano.</p>
+
+
+
+<p class="hangnum"><a name="para143"></a><span class="paranum">143</span>.</p>
+
+
+
+<p class="gatha1"> Eka-vācaṃva <a name="M0.0278"></a> dvevācaṃ,</p>
+
+
+
+<p class="gatha2">Bhaṇeyya anukampako;</p>
+
+
+
+<p class="gatha3">Taduttari na bhāseyya,</p>
+
+
+
+<p class="gathalast">Dāsovayyassa santike.</p>
+
+
+
+<p class="hangnum"><a name="para144"></a><span class="paranum">144</span>.</p>
+
+
+
+<p class="gatha1"> Tasseva <a name="M0.0279"></a> tena pāpiyo,</p>
+
+
+
+<p class="gatha2">Yo kuddhaṃ paṭikujjhatti;</p>
+
+
+
+<p class="gatha3">Kuddhaṃ a-paṭikujjhanto,</p>
+
+
+
+<p class="gathalast">Saṅgāmaṃ jeti dujjayaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para145"></a><span class="paranum">145</span>.</p>
+
+
+
+<p class="gatha1"> Ubhinnamatthaṃ <a name="M0.0281"></a> carati,</p>
+
+
+
+<p class="gatha2">Attano ca parassa ca;</p>
+
+
+
+<p class="gatha3">Paraṃ saṃkupitaṃ ñatvā,</p>
+
+
+
+<p class="gathalast">Yo sato upasammati.</p>
+
+
+
+<p class="gatha1">Attānaṃ <a name="M0.0282"></a> rakkhanto paraṃ rakkhati,</p>
+
+
+
+<p class="gathalast">Paraṃ rakkhanto attānaṃ rakkhati.</p>
+
+
+
+<p class="hangnum"><a name="para146"></a><span class="paranum">146</span>.</p>
+
+
+
+<p class="gatha1"> Sīla-samādhi-paññānaṃ<a name="M0.0283"></a>,</p>
+
+
+
+<p class="gatha2">Khantī padhāna-kāraṇaṃ;</p>
+
+
+
+<p class="gatha3">Sabbepi kusalā dhammā,</p>
+
+
+
+<p class="gathalast">Khantyāyattāva vaḍḍhare.</p>
+
+
+
+<p class="hangnum"><a name="para147"></a><span class="paranum">147</span>.</p>
+
+
+
+<p class="gatha1"> Khamā-khagga-karetassa<a name="M0.0284"></a>,</p>
+
+
+
+<p class="gatha2">Dujjano kiṃ karissati;</p>
+
+
+
+<p class="gatha3">A-tiṇe patito vahni,</p>
+
+
+
+<p class="gathalast">Sayamevūpasammati.</p>
+
+
+
+<p class="hangnum"><a name="para148"></a><span class="paranum">148</span>.</p>
+
+
+
+<p class="gatha1"> Sussusā <a name="M0.0285"></a> savaṇañceva,</p>
+
+
+
+<p class="gatha2">Gahaṇaṃ dhāraṇaṃ tathā;</p>
+
+
+
+<p class="gatha3">Uhāpohatthaviññāṇaṃ,</p>
+
+
+
+<p class="gathalast">Tatva-ññāṇañcadhīguṇaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para149"></a><span class="paranum">149</span>.</p>
+
+
+
+<p class="gatha1"> Yassete <a name="M0.0286"></a> caturo dhammā,</p>
+
+
+
+<p class="gatha2">Atthi posesu paṇḍita;</p>
+
+
+
+<p class="gatha3">Saccaṃ dhammo dhīti cāgo,</p>
+
+
+
+<p class="gathalast">Diṭṭhaṃ so ativattati.</p>
+
+
+
+<p class="hangnum"><a name="para150"></a><span class="paranum">150</span>.</p>
+
+
+
+<p class="gatha1"> Vejjo <a name="M0.0288"></a> purohito mantī,</p>
+
+
+
+<p class="gatha2">Vedaññotra catutthako;</p>
+
+
+
+<p class="gatha3">Pabhāta-kāle daṭṭhabbā,</p>
+
+
+
+<p class="gathalast">Niccaṃ sva-sīrimicchatā.</p>
+
+
+
+<p class="hangnum"><a name="para151"></a><span class="paranum">151</span>.</p>
+
+
+
+<p class="gatha1"> Mittānaṃ <a name="M0.0289"></a> santikaṃ gacche,</p>
+
+
+
+<p class="gatha2">Kāle na rattiyaṃ kisaṃ;</p>
+
+
+
+<p class="gatha3">Ce bahuṃ bhijje cinitvā,</p>
+
+
+
+<p class="gathalast">Taṃ mittesu samākare.</p>
+
+
+
+<p class="hangnum"><a name="para152"></a><span class="paranum">152</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0291"></a> paresaṃ vilomāni,</p>
+
+
+
+<p class="gatha2">Na paresaṃ katākataṃ;</p>
+
+
+
+<p class="gatha3">Attanova avekkheyya,</p>
+
+
+
+<p class="gathalast">Katāni a-katāni ca.</p>
+
+
+
+<p class="hangnum"><a name="para153"></a><span class="paranum">153</span>.</p>
+
+
+
+<p class="gatha1"> Desa-jāti-pubbe-carā<a name="M0.0293"></a>,</p>
+
+
+
+<p class="gatha2">Anu-carā jano kare;</p>
+
+
+
+<p class="gatha3">Paresaṃ vedhakaṃ māyaṃ,</p>
+
+
+
+<p class="gathalast">Taṃ jānitvā sakhaṃ kare.</p>
+
+
+
+<p class="hangnum"><a name="para154"></a><span class="paranum">154</span>.</p>
+
+
+
+<p class="gatha1"> Parittaṃ <a name="M0.0294"></a> dārumāruyha,</p>
+
+
+
+<p class="gatha2">Yathā sīde mahaṇṇave;</p>
+
+
+
+<p class="gatha3">Evaṃ kusītamāgamma,</p>
+
+
+
+<p class="gatha2">Sādhu-jīvīpi sīdati;</p>
+
+
+
+<p class="gatha3">Tasmā taṃ parivajjeyya,</p>
+
+
+
+<p class="gathalast">Kusītaṃ hīna-vīriyaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para155"></a><span class="paranum">155</span>.</p>
+
+
+
+<p class="gatha1"> Alasañca <a name="M0.0296"></a> pamādo ca,</p>
+
+
+
+<p class="gatha2">Anuṭṭhānaṃ a-saṃyamo;</p>
+
+
+
+<p class="gatha3">Niddā tandi ca te chidde,</p>
+
+
+
+<p class="gathalast">Sabbaso taṃ vivajjaye.</p>
+
+
+
+<p class="hangnum"><a name="para156"></a><span class="paranum">156</span>.</p>
+
+
+
+<p class="gatha1"> Cajeyya <a name="M0.0297"></a> dummittaṃ bālaṃ,</p>
+
+
+
+<p class="gatha2">Āsīvisaṃva māṇavo;</p>
+
+
+
+<p class="gatha3">Bhañjeyya pāpakaṃ kammaṃ,</p>
+
+
+
+<p class="gathalast">Naḷāgāraṃva kuñjaro.</p>
+
+
+
+<p class="hangnum"><a name="para157"></a><span class="paranum">157</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0299"></a> hi aññañña-cittānaṃ,</p>
+
+
+
+<p class="gatha2">Itthīnaṃ purisāna vā;</p>
+
+
+
+<p class="gatha3">Nānāvīkatvā saṃsaggaṃ,</p>
+
+
+
+<p class="gathalast">Tādisaṃ pica nāsmase.</p>
+
+
+
+<p class="hangnum"><a name="para158"></a><span class="paranum">158</span>.</p>
+
+
+
+<p class="gatha1"> Nāsmase <a name="M0.0300"></a> kata-pāpamhi,</p>
+
+
+
+<p class="gatha2">Nāsmase alika-vādine;</p>
+
+
+
+<p class="gatha3">Nāsmate attatthapaññamhi,</p>
+
+
+
+<p class="gathalast">Atta-santepi nāsmate.</p>
+
+
+
+<p class="hangnum"><a name="para159"></a><span class="paranum">159</span>.</p>
+
+
+
+<p class="gatha1"> Ghatāsanaṃ <a name="M0.0301"></a> kuñjaraṃ kaṇha-sappaṃ,</p>
+
+
+
+<p class="gatha2">Muddhā-bhisittaṃ pamadā ca sabbā;</p>
+
+
+
+<p class="gatha3">Ete naro niccasato bhajetha,</p>
+
+
+
+<p class="gathalast">Tesaṃ have dubbidū sabba-bhāvo.</p>
+
+
+
+<p class="hangnum"><a name="para160"></a><span class="paranum">160</span>.</p>
+
+
+
+<p class="gatha1"> Itthīnaṃ <a name="M0.0303"></a> dujjanāna-ñca,</p>
+
+
+
+<p class="gatha2">Vissāso no-pa pajjate;</p>
+
+
+
+<p class="gatha3">Vise siṅgimhi nadiyaṃ,</p>
+
+
+
+<p class="gathalast">Roge rāja-kulamhi ca.</p>
+
+
+
+<p class="hangnum"><a name="para161"></a><span class="paranum">161</span>.</p>
+
+
+
+<p class="gatha1"> Itthi-dhutto <a name="M0.0304"></a> surā-dhutto,</p>
+
+
+
+<p class="gatha2">Akkha-dhutto ca yo naro;</p>
+
+
+
+<p class="gatha3">Laddhaṃ laddhaṃ vināseti,</p>
+
+
+
+<p class="gathalast">Taṃ parābhavato mukhaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para162"></a><span class="paranum">162</span>.</p>
+
+
+
+<p class="gatha1"> Pāpa-mitto <a name="M0.0306"></a> pāpa-sakho,</p>
+
+
+
+<p class="gatha2">Pāpa-ācāra gocaro;</p>
+
+
+
+<p class="gatha3">Asmā lokā paramhā ca,</p>
+
+
+
+<p class="gathalast">Ubhayā dhaṃsate naro.</p>
+
+
+
+<p class="hangnum"><a name="para163"></a><span class="paranum">163</span>.</p>
+
+
+
+<p class="gatha1"> Maccherena <a name="M0.0307"></a> yasaṃ hataṃ,</p>
+
+
+
+<p class="gatha2">Kuppanena guṇo hato;</p>
+
+
+
+<p class="gatha3">Kūṭena nassate saccaṃ,</p>
+
+
+
+<p class="gathalast">Khuddena dhamma-rakkhanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para164"></a><span class="paranum">164</span>.</p>
+
+
+
+<p class="gatha1"> Akkha-devī <a name="M0.0309"></a> dhanāni ca,</p>
+
+
+
+<p class="gatha2">Vināso hoti āpadā;</p>
+
+
+
+<p class="gatha3">Ṭhiti hatā pamādo ca,</p>
+
+
+
+<p class="gathalast">Dvijaṃ bhikkhuñca nassati.</p>
+
+
+
+<p class="hangnum"><a name="para165"></a><span class="paranum">165</span>.</p>
+
+
+
+<p class="gatha1"> Pesuññena <a name="M0.0310"></a> kulaṃ hataṃ,</p>
+
+
+
+<p class="gatha2">Mānena hitamattano;</p>
+
+
+
+<p class="gatha3">Duccaritena mānuso,</p>
+
+
+
+<p class="gathalast">Daliddāyādaro hato.</p>
+
+
+
+<p class="hangnum"><a name="para166"></a><span class="paranum">166</span>.</p>
+
+
+
+<p class="gatha1"> A-mānanā <a name="M0.0312"></a> yattha siyā,</p>
+
+
+
+<p class="gatha2">Santānaṃpi vimānanā;</p>
+
+
+
+<p class="gatha3">Hīna-sammānanāvāpi,</p>
+
+
+
+<p class="gathalast">Na tattha vasatiṃ vase.</p>
+
+
+
+<p class="hangnum"><a name="para167"></a><span class="paranum">167</span>.</p>
+
+
+
+<p class="gatha1"> Yatthālaso <a name="M0.0313"></a> ca dakkho ca,</p>
+
+
+
+<p class="gatha2">Sūro bhīru ca pūjiyā;</p>
+
+
+
+<p class="gatha3">Na tattha santo vasanti,</p>
+
+
+
+<p class="gathalast">A-visesa-kare nare.</p>
+
+
+
+<p class="hangnum"><a name="para168"></a><span class="paranum">168</span>.</p>
+
+
+
+<p class="gatha1"> No <a name="M0.0315"></a> ce assa sakā-buddhi,</p>
+
+
+
+<p class="gatha2">Vinayo vā su-sikkhito;</p>
+
+
+
+<p class="gatha3">Vane andha-mahiṃsova,</p>
+
+
+
+<p class="gathalast">Careyya bahuko jano.</p>
+
+
+
+<p class="hangnum"><a name="para169"></a><span class="paranum">169</span>.</p>
+
+
+
+<p class="gatha1"> Phalaṃ <a name="M0.0316"></a> ve kadaliṃ hanti,</p>
+
+
+
+<p class="gatha2">Phalaṃ veḷuṃ phalaṃ naḷaṃ;</p>
+
+
+
+<p class="gatha3">Sakkāro kā-purisaṃ hanti,</p>
+
+
+
+<p class="gathalast">Gabbho assatariṃ yathā.</p>
+
+
+
+<p class="hangnum"><a name="para170"></a><span class="paranum">170</span>.</p>
+
+
+
+<p class="gatha1"> Vajjañca vajjato ñatvā,</p>
+
+
+
+<p class="gatha2">A-vajjañca a-vajjato;</p>
+
+
+
+<p class="gatha3">Sammādiṭṭhi-samādānā,</p>
+
+
+
+<p class="gathalast">Sattā gacchantti suggatiṃ.</p>
+
+
+
+<p class="chapter">Gharāvāsa-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para171"></a><span class="paranum">171</span>.</p>
+
+
+
+<p class="gatha1"> Dukkhaṃ <a name="M0.0319"></a> gahabbataṃ sādhu,</p>
+
+
+
+<p class="gatha2">Saṃvibhajjañca bhojanaṃ;</p>
+
+
+
+<p class="gatha3">A-hāso attha-lobhesu,</p>
+
+
+
+<p class="gathalast">Attha-byāpatti abyatho.</p>
+
+
+
+<p class="hangnum"><a name="para172"></a><span class="paranum">172</span>.</p>
+
+
+
+<p class="gatha1"> Yodha <a name="M0.0321"></a> sītañca uṇhañca,</p>
+
+
+
+<p class="gatha2">Tiṇā bhiyyo na maññati;</p>
+
+
+
+<p class="gatha3">Karaṃ purisa-kiccāni,</p>
+
+
+
+<p class="gathalast">So sukhā na vihāyati.</p>
+
+
+
+<p class="hangnum"><a name="para173"></a><span class="paranum">173</span>.</p>
+
+
+
+<p class="gatha1"> Paṇḍito <a name="M0.0322"></a> sīla-sampanno,</p>
+
+
+
+<p class="gatha2">Saṇhā ca paṭibhānavā;</p>
+
+
+
+<p class="gatha3">Nivāta-vutti atthaddho,</p>
+
+
+
+<p class="gathalast">Tādiso labhate yasaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para174"></a><span class="paranum">174</span>.</p>
+
+
+
+<p class="gatha1"> Uṭṭhānako <a name="M0.0324"></a> analaso,</p>
+
+
+
+<p class="gatha2">Āpadāsu na vedhati;</p>
+
+
+
+<p class="gatha3">Acchinnavutti medhāvī,</p>
+
+
+
+<p class="gathalast">Tādiso labhate yasaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para175"></a><span class="paranum">175</span>.</p>
+
+
+
+<p class="gatha1"> Saṅgāhako <a name="M0.0325"></a> mitta-karo,</p>
+
+
+
+<p class="gatha2">Vadaññū vītta-maccharo;</p>
+
+
+
+<p class="gatha3">Netā vi-netā anu-netā,</p>
+
+
+
+<p class="gathalast">Tādiso labhate yasaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para176"></a><span class="paranum">176</span>.</p>
+
+
+
+<p class="gatha1"> Uṭṭhānavako <a name="M0.0327"></a> satīmato,</p>
+
+
+
+<p class="gatha2">Suci-kammassa nisammakārino;</p>
+
+
+
+<p class="gatha3">Saññatassa dhamma-jīvino,</p>
+
+
+
+<p class="gathalast">A-ppamattassa yasobhi-vaḍḍhati.</p>
+
+
+
+<p class="hangnum"><a name="para177"></a><span class="paranum">177</span>.</p>
+
+
+
+<p class="gatha1"> Dveva <a name="M0.0329"></a> tāta padākāni,</p>
+
+
+
+<p class="gatha2">Yattha sabbaṃ patiṭṭhitaṃ;</p>
+
+
+
+<p class="gatha3">A-laddhassa ca yo lābho,</p>
+
+
+
+<p class="gathalast">Laddhassa anurakkhaṇā.</p>
+
+
+
+<p class="hangnum"><a name="para178"></a><span class="paranum">178</span>.</p>
+
+
+
+<p class="gatha1"> Catudhā <a name="M0.0330"></a> vibhaje bhoge,</p>
+
+
+
+<p class="gatha2">Paṇḍito gharamāvasaṃ;</p>
+
+
+
+<p class="gatha3">Ekena bhogaṃ bhuñjeyya,</p>
+
+
+
+<p class="gatha3">Dvīhi kammaṃ payojaye;</p>
+
+
+
+<p class="gatha2">Catutthañca nidhāpeyya,</p>
+
+
+
+<p class="gathalast">Āpadāsu bhavissati.</p>
+
+
+
+<p class="hangnum"><a name="para179"></a><span class="paranum">179</span>.</p>
+
+
+
+<p class="gatha1"> Añjanānaṃ <a name="M0.0332"></a> khayaṃ disvā,</p>
+
+
+
+<p class="gatha2">Upacikānañca ācayaṃ;</p>
+
+
+
+<p class="gatha3">Madhūnañca samāhāraṃ,</p>
+
+
+
+<p class="gathalast">Paṇḍitto gharamāvase.</p>
+
+
+
+<p class="hangnum"><a name="para180"></a><span class="paranum">180</span>.</p>
+
+
+
+<p class="gatha1"> Vibhavaṃ <a name="M0.0335"></a> rakkhato laddhaṃ,</p>
+
+
+
+<p class="gatha2">Parihāni na vijjati;</p>
+
+
+
+<p class="gatha3">Ārakkhamhi a-santamhi,</p>
+
+
+
+<p class="gathalast">Laddhaṃ laddhaṃ vinassati.</p>
+
+
+
+<p class="hangnum"><a name="para181"></a><span class="paranum">181</span>.</p>
+
+
+
+<p class="gatha1"> Paññā <a name="M0.0337"></a> natthi dhanaṃ natthi,</p>
+
+
+
+<p class="gatha2">Yassa loke na vindati;</p>
+
+
+
+<p class="gatha3">Putta-dārā na pīyanti,</p>
+
+
+
+<p class="gathalast">Tassa mittaṃ sukhāvahaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para182"></a><span class="paranum">182</span>.</p>
+
+
+
+<p class="gatha1"> Cattāro <a name="M0.0339"></a> ca veditabbā,</p>
+
+
+
+<p class="gatha2">Mittā ceva suhadā ca;</p>
+
+
+
+<p class="gatha3">Upakāro suhadopi,</p>
+
+
+
+<p class="gatha2">Samāna-sukha-dukkho ca;</p>
+
+
+
+<p class="gatha3">Atthakkhāyīnukampako,</p>
+
+
+
+<p class="gathalast">Tathā mitto veditabbo.</p>
+
+
+
+<p class="hangnum"><a name="para183"></a><span class="paranum">183</span>.</p>
+
+
+
+<p class="gatha1"> Bhogā <a name="M0.0342"></a> naṭṭhena jiṇṇena,</p>
+
+
+
+<p class="gatha2">A-mitena ca bhojane;</p>
+
+
+
+<p class="gatha3">Na tiṭṭhanti ciraṃ disvā,</p>
+
+
+
+<p class="gathalast">Taṃ paṇḍito ghare vase.</p>
+
+
+
+<p class="hangnum"><a name="para184"></a><span class="paranum">184</span>.</p>
+
+
+
+<p class="gatha1"> Ati-sītaṃ <a name="M0.0343"></a> ati-uṇhaṃ,</p>
+
+
+
+<p class="gatha2">Ati-sāyamidaṃ ahu;</p>
+
+
+
+<p class="gatha3">Iti vissaṭṭha-kammantte,</p>
+
+
+
+<p class="gathalast">Atthā accenti māṇave.</p>
+
+
+
+<p class="hangnum"><a name="para185"></a><span class="paranum">185</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0345"></a> divā suppa-sīlena,</p>
+
+
+
+<p class="gatha2">Rattinaṭṭhānadessinā;</p>
+
+
+
+<p class="gatha3">Niccaṃ mattena soṇḍena,</p>
+
+
+
+<p class="gathalast">Sakkā āvasituṃ gharaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para186"></a><span class="paranum">186</span>.</p>
+
+
+
+<p class="gatha1"> Hananti <a name="M0.0346"></a> bhogā dummedhaṃ,</p>
+
+
+
+<p class="gatha2">No ce pāra-gavesino;</p>
+
+
+
+<p class="gatha3">Bhoga-taṇhāya dummedho,</p>
+
+
+
+<p class="gathalast">Hanti aññeva attanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para187"></a><span class="paranum">187</span>.</p>
+
+
+
+<p class="gatha1"> Dujjīvitamajīvimhā<a name="M0.0348"></a>,</p>
+
+
+
+<p class="gatha2">Yesaṃ no na dadāmase;</p>
+
+
+
+<p class="gatha3">Vijjamānesu bhogesu,</p>
+
+
+
+<p class="gathalast">Dīpaṃ nā kamha mattano.</p>
+
+
+
+<p class="hangnum"><a name="para188"></a><span class="paranum">188</span>.</p>
+
+
+
+<p class="gatha1"> Saṭṭhi-vassa-sahassāni<a name="M0.0349"></a>,</p>
+
+
+
+<p class="gatha2">Paripuṇṇāni sabbaso;</p>
+
+
+
+<p class="gatha3">Niraye paccamānānaṃ,</p>
+
+
+
+<p class="gathalast">Kadā anto bhavissati.</p>
+
+
+
+<p class="hangnum"><a name="para189"></a><span class="paranum">189</span>.</p>
+
+
+
+<p class="gatha1"> Natthi <a name="M0.0350"></a> anto kuto anto,</p>
+
+
+
+<p class="gatha2">Na anto patidissati;</p>
+
+
+
+<p class="gatha3">Tadā hi pakataṃ pāpaṃ,</p>
+
+
+
+<p class="gathalast">Mama tuyhañce mārisā;</p>
+
+
+
+<p class="hangnum"><a name="para190"></a><span class="paranum">190</span>.</p>
+
+
+
+<p class="gatha1"> Sohaṃ <a name="M0.0351"></a> nūna ito gantā,</p>
+
+
+
+<p class="gatha2">Yoni laddhāna mānusaṃ;</p>
+
+
+
+<p class="gatha3">Vadaññū sīla-sampanno,</p>
+
+
+
+<p class="gathalast">Kāhāmi kusalaṃ bahuṃ.</p>
+
+
+
+<p class="hangnum"><a name="para191"></a><span class="paranum">191</span>.</p>
+
+
+
+<p class="gatha1"> Mā <a name="M0.0352"></a> gijjhe paccaye macco,</p>
+
+
+
+<p class="gatha2">Bahu-dosā hi paccayā;</p>
+
+
+
+<p class="gatha3">Caranto paccaye ñāyā,</p>
+
+
+
+<p class="gathalast">Ubhayatthāpi vaḍḍhati.</p>
+
+
+
+<p class="hangnum"><a name="para192"></a><span class="paranum">192</span>.</p>
+
+
+
+<p class="gatha1"> A-laddhā <a name="M0.0354"></a> vittaṃ tappati,</p>
+
+
+
+<p class="gatha2">Pubbe a-samudānitaṃ;</p>
+
+
+
+<p class="gatha3">Na pubbe dhanamesissaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para193"></a><span class="paranum">193</span>.</p>
+
+
+
+<p class="gatha1"> Kūṭavedī <a name="M0.0356"></a> pure āsiṃ,</p>
+
+
+
+<p class="gatha2">Pisuṇo piṭṭhi-maṃsiko;</p>
+
+
+
+<p class="gatha3">Caṇḍo ca pharuso cāpi,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para194"></a><span class="paranum">194</span>.</p>
+
+
+
+<p class="gatha1"> Pāṇātipātī <a name="M0.0357"></a> pure āsiṃ,</p>
+
+
+
+<p class="gatha2">Luddo cāpi anariyo;</p>
+
+
+
+<p class="gatha3">Bhūtānaṃ nānukampiyaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para195"></a><span class="paranum">195</span>.</p>
+
+
+
+<p class="gatha1"> Bahūsu <a name="M0.0359"></a> vata santīsu,</p>
+
+
+
+<p class="gatha2">Anāpādāsu itthisu;</p>
+
+
+
+<p class="gatha3">Para-dāraṃ asevissaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para196"></a><span class="paranum">196</span>.</p>
+
+
+
+<p class="gatha1"> Bahumhi <a name="M0.0360"></a> tava santamhi,</p>
+
+
+
+<p class="gatha2">Anna-pāne upaṭṭhite;</p>
+
+
+
+<p class="gatha3">Na pubbe adadaṃ dānaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para197"></a><span class="paranum">197</span>.</p>
+
+
+
+<p class="gatha1"> Mātaraṃ <a name="M0.0362"></a> pitarañcāpi,</p>
+
+
+
+<p class="gatha2">Jiṇṇakaṃ gata-yobbanaṃ;</p>
+
+
+
+<p class="gatha3">Pahu santo na posissaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānukappati.</p>
+
+
+
+<p class="hangnum"><a name="para198"></a><span class="paranum">198</span>.</p>
+
+
+
+<p class="gatha1"> Ācariyamanusatthāraṃ<a name="M0.0363"></a>,</p>
+
+
+
+<p class="gatha2">Sabba-kāma-rasāharaṃ;</p>
+
+
+
+<p class="gatha3">Pitaraṃ atimaññissaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para199"></a><span class="paranum">199</span>.</p>
+
+
+
+<p class="gatha1"> Samaṇe <a name="M0.0365"></a> brāhmaṇe cāpi,</p>
+
+
+
+<p class="gatha2">Sīlavante bahussute;</p>
+
+
+
+<p class="gatha3">Na pubbe payirupāsissaṃ,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para200"></a><span class="paranum">200</span>.</p>
+
+
+
+<p class="gatha1"> Sādhu <a name="M0.0366"></a> hoti tapo ciṇṇo,</p>
+
+
+
+<p class="gatha2">Santo ca payirupāsito;</p>
+
+
+
+<p class="gatha3">Na pubbeva tapociṇṇo,</p>
+
+
+
+<p class="gathalast">Iti pacchānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para201"></a><span class="paranum">201</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0368"></a> ca etāni ṭhānāni,</p>
+
+
+
+<p class="gatha2">Yoniso paṭipajjati;</p>
+
+
+
+<p class="gatha3">Karaṃ purisa-kiccāni,</p>
+
+
+
+<p class="gathalast">Sa pacchā nānutappati.</p>
+
+
+
+<p class="hangnum"><a name="para202"></a><span class="paranum">202</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0370"></a> sādhāraṇa-dārassa,</p>
+
+
+
+<p class="gatha2">Na bhuñje sādhumekako;</p>
+
+
+
+<p class="gatha3">Na seve lokāyatikaṃ,</p>
+
+
+
+<p class="gathalast">Netaṃ paññāya vaḍḍhanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para203"></a><span class="paranum">203</span>.</p>
+
+
+
+<p class="gatha1"> Sīlavā <a name="M0.0372"></a> vatta-sampanno,</p>
+
+
+
+<p class="gatha2">A-ppamatto vicakkhaṇo;</p>
+
+
+
+<p class="gatha3">Nivātta-vutti atthaddho,</p>
+
+
+
+<p class="gathalast">Surato sakhito mudu.</p>
+
+
+
+<p class="hangnum"><a name="para204"></a><span class="paranum">204</span>.</p>
+
+
+
+<p class="gatha1"> Saṅgahetā <a name="M0.0374"></a> ca mittānaṃ,</p>
+
+
+
+<p class="gatha2">Saṃvibhāgī vīdhānavā;</p>
+
+
+
+<p class="gatha3">Tappeyya anna-pānena,</p>
+
+
+
+<p class="gathalast">Sadā samaṇa-brāhmaṇe.</p>
+
+
+
+<p class="hangnum"><a name="para205"></a><span class="paranum">205</span>.</p>
+
+
+
+<p class="gatha1"> Dhamma-kāmo <a name="M0.0376"></a> sutā-dhāro,</p>
+
+
+
+<p class="gatha2">Bhaveyya paripucchako;</p>
+
+
+
+<p class="gatha3">Sakkaccaṃ payirupāseyya,</p>
+
+
+
+<p class="gathalast">Sīlavante bahussutte.</p>
+
+
+
+<p class="hangnum"><a name="para206"></a><span class="paranum">206</span>.</p>
+
+
+
+<p class="gatha1"> Gharamāvasamānassa<a name="M0.0377"></a>,</p>
+
+
+
+<p class="gatha2">Gahaṭṭhassa sakaṃ gharaṃ;</p>
+
+
+
+<p class="gatha3">Khemā vutti siyā evaṃ,</p>
+
+
+
+<p class="gathalast">Evaṃ nu assa saṅgaho.</p>
+
+
+
+<p class="hangnum"><a name="para207"></a><span class="paranum">207</span>.</p>
+
+
+
+<p class="gatha1"> A-byapajjo <a name="M0.0378"></a> siyā evaṃ,</p>
+
+
+
+<p class="gatha2">Sacca-vādī ca māṇavo;</p>
+
+
+
+<p class="gatha3">Asmā lokā paraṃ lokaṃ,</p>
+
+
+
+<p class="gathalast">Evaṃ pecca na socati.</p>
+
+
+
+<p class="hangnum"><a name="para208"></a><span class="paranum">208</span>.</p>
+
+
+
+<p class="gatha1"> Sukhā <a name="M0.0379"></a> matteyyatā loke,</p>
+
+
+
+<p class="gatha2">Atho petteyyatā sukhā;</p>
+
+
+
+<p class="gatha3">Sukhā sāmaññatā loke,</p>
+
+
+
+<p class="gathalast">Atho brahmaññatā sukhā.</p>
+
+
+
+<p class="hangnum"><a name="para209"></a><span class="paranum">209</span>.</p>
+
+
+
+<p class="gatha1"> Pathavī <a name="M0.0381"></a> veḷukaṃ pattaṃ,</p>
+
+
+
+<p class="gatha2">Cakkavāḷaṃ sucipphalaṃ;</p>
+
+
+
+<p class="gatha3">Sineru vammiko khuddo,</p>
+
+
+
+<p class="gathalast">Samuddo pātiko yathā.</p>
+
+
+
+<p class="hangnum"><a name="para210"></a><span class="paranum">210</span>.</p>
+
+
+
+<p class="gatha1"> Brahmāti <a name="M0.0382"></a> mātā-pitaro,</p>
+
+
+
+<p class="gatha2">Pubbācariyāti vuccare;</p>
+
+
+
+<p class="gatha3">Āhuneyyā ca puttānaṃ,</p>
+
+
+
+<p class="gathalast">Pajānamanukampakā.</p>
+
+
+
+<p class="hangnum"><a name="para211"></a><span class="paranum">211</span>.</p>
+
+
+
+<p class="gatha1"> Tasmā <a name="M0.0384"></a> hi ne namaseyya,</p>
+
+
+
+<p class="gatha2">Sakkareyya ca paṇḍito;</p>
+
+
+
+<p class="gatha3">Annena atho pānena,</p>
+
+
+
+<p class="gathalast">Vatthena sayanena ca.</p>
+
+
+
+<p class="chapter">Sādhujana-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para212"></a><span class="paranum">212</span>.</p>
+
+
+
+<p class="gatha1"> Kāya-kammaṃ <a name="M0.0386"></a> suci tesaṃ,</p>
+
+
+
+<p class="gatha2">Vācā-kammaṃ anāvilaṃ;</p>
+
+
+
+<p class="gatha3">Mano-kammaṃ suci-suddhaṃ,</p>
+
+
+
+<p class="gathalast">Tādisā sujanā narā.</p>
+
+
+
+<p class="hangnum"><a name="para213"></a><span class="paranum">213</span>.</p>
+
+
+
+<p class="gatha1"> Seṭṭha-vittaṃ <a name="M0.0387"></a> sutaṃ paññā,</p>
+
+
+
+<p class="gatha2">Saddhanaṃ sattadhā hotti;</p>
+
+
+
+<p class="gatha3">Saddhā sīlaṃ sutaṃ cāgo,</p>
+
+
+
+<p class="gathalast">Paññā ceva hirottappaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para214"></a><span class="paranum">214</span>.</p>
+
+
+
+<p class="gatha1"> Saddhammāpi <a name="M0.0389"></a> ca satteva,</p>
+
+
+
+<p class="gatha2">Saddhā hirī ca ottappaṃ;</p>
+
+
+
+<p class="gatha3">Bāhussaccaṃ dhiro ceva,</p>
+
+
+
+<p class="gathalast">Sati paññā ca iccevaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para215"></a><span class="paranum">215</span>.</p>
+
+
+
+<p class="gatha1"> Hirī-ottappa-sampannā<a name="M0.0390"></a>,</p>
+
+
+
+<p class="gatha2">Suktka-dhamma-samāhitā;</p>
+
+
+
+<p class="gatha3">Santo sappurisā loke,</p>
+
+
+
+<p class="gathalast">Deva-dhammāti vuccare.</p>
+
+
+
+<p class="hangnum"><a name="para216"></a><span class="paranum">216</span>.</p>
+
+
+
+<p class="gatha1"> Saddho <a name="M0.0392"></a> hirimā ottappī,</p>
+
+
+
+<p class="gatha2">Vīro pañño sa-gāravo;</p>
+
+
+
+<p class="gatha3">Bhabbo āpajjituṃ buddhiṃ,</p>
+
+
+
+<p class="gathalast">Virūḷhiñca vipullataṃ.</p>
+
+
+
+<p class="hangnum"><a name="para217"></a><span class="paranum">217</span>.</p>
+
+
+
+<p class="gatha1"> Yo <a name="M0.0393"></a> ve kataññū kata-vedi dhīro,</p>
+
+
+
+<p class="gatha2">Kalyāṇa-mitto daḷhaa-bhatto ca hoti;</p>
+
+
+
+<p class="gatha3">Dukkhittassa sakkaccaṃ karoti kiccaṃ,</p>
+
+
+
+<p class="gathalast">Tathāvidhaṃ sappurisaṃ vadanti.</p>
+
+
+
+<p class="hangnum"><a name="para218"></a><span class="paranum">218</span>.</p>
+
+
+
+<p class="gatha1"> Mātā-petti-bharaṃ <a name="M0.0395"></a> jantuṃ,</p>
+
+
+
+<p class="gatha2">Kule jeṭṭhāpacāyinaṃ;</p>
+
+
+
+<p class="gatha3">Saṇhaṃ sakhila-sambhāsaṃ,</p>
+
+
+
+<p class="gathalast">Pesuṇeyappahāyinaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para219"></a><span class="paranum">219</span>.</p>
+
+
+
+<p class="gatha1"> Macchera-vinaye yuttaṃ,</p>
+
+
+
+<p class="gatha2">Saccaṃ kodhābhituṃ naraṃ;</p>
+
+
+
+<p class="gatha3">Taṃ ve devā tāvatiṃsā,</p>
+
+
+
+<p class="gathalast">Āhu sappuriso iti.</p>
+
+
+
+<p class="hangnum"><a name="para220"></a><span class="paranum">220</span>.</p>
+
+
+
+<p class="gatha1"> A-ppamādena <a name="M0.0398"></a> maghavā,</p>
+
+
+
+<p class="gatha2">Devānaṃ seṭṭhataṃ gato;</p>
+
+
+
+<p class="gatha3">A-ppamādaṃ pasaṃsanti,</p>
+
+
+
+<p class="gathalast">Pamādo garahito sadā.</p>
+
+
+
+<p class="hangnum"><a name="para221"></a><span class="paranum">221</span>.</p>
+
+
+
+<p class="gatha1"> Dānaṃ <a name="M0.0399"></a> sīlaṃ pariccāgaṃ,</p>
+
+
+
+<p class="gatha2">Ājjavaṃ maddavaṃ tapaṃ;</p>
+
+
+
+<p class="gatha3">A-kodhaṃ a-vihiṃsañca,</p>
+
+
+
+<p class="gathalast">Khantīca a-virodhanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para222"></a><span class="paranum">222</span>.</p>
+
+
+
+<p class="gatha1"> Iccete kusale dhamme,</p>
+
+
+
+<p class="gatha2">Ṭhite passāmi attani;</p>
+
+
+
+<p class="gatha3">Tato me jāyate pīti,</p>
+
+
+
+<p class="gathalast">Somanassañcanappakaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para223"></a><span class="paranum">223</span>.</p>
+
+
+
+<p class="gatha1"> Nanu <a name="M0.0402"></a> teyeva santā no,</p>
+
+
+
+<p class="gatha2">Sāgarā na kulācalā;</p>
+
+
+
+<p class="gatha3">Manaṃpi mariyādaṃ ye,</p>
+
+
+
+<p class="gathalast">Saṃvaṭṭepi jahanti no.</p>
+
+
+
+<p class="hangnum"><a name="para224"></a><span class="paranum">224</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0403"></a> puppha-gandho paṭivātameti,</p>
+
+
+
+<p class="gatha2">Na candanaṃ taggara mallikā vā;</p>
+
+
+
+<p class="gatha3">Satañca gandho paṭivātameti,</p>
+
+
+
+<p class="gathalast">Sabbā disā sappuriso pavāyati.</p>
+
+
+
+<p class="hangnum"><a name="para225"></a><span class="paranum">225</span>.</p>
+
+
+
+<p class="gatha1"> Tepi <a name="M0.0405"></a> loka-hitā sattā,</p>
+
+
+
+<p class="gatha2">Sūriyo candimā api;</p>
+
+
+
+<p class="gatha3">Atthaṃ passa gamissanti,</p>
+
+
+
+<p class="gathalast">Niyamo kena laṅghate.</p>
+
+
+
+<p class="hangnum"><a name="para226"></a><span class="paranum">226</span>.</p>
+
+
+
+<p class="gatha1"> Satthā <a name="M0.0406"></a> deva-manussānaṃ,</p>
+
+
+
+<p class="gatha2">Vasī sopi munissaro;</p>
+
+
+
+<p class="gatha3">Gatova nibbutiṃ sabbe,</p>
+
+
+
+<p class="gathalast">Saṅkhārā na hi sassatā.</p>
+
+
+
+<p class="hangnum"><a name="para227"></a><span class="paranum">227</span>.</p>
+
+
+
+<p class="gatha1"> Kareyya <a name="M0.0407"></a> kusalaṃ sabbaṃ,</p>
+
+
+
+<p class="gatha2">Sivaṃ nibbānamāvahaṃ;</p>
+
+
+
+<p class="gatha3">Sareyyaa a-niccaṃ khandhaṃ,</p>
+
+
+
+<p class="gathalast">Nibbidā-ñāṇa-gocaraṃ.</p>
+
+
+
+<p class="hangnum"><a name="para228"></a><span class="paranum">228</span>.</p>
+
+
+
+<p class="gatha1"> Yātānuyāyī <a name="M0.0408"></a> ca bhavāhi māṇava,</p>
+
+
+
+<p class="gatha2">Allañca pāṇiṃ parivajjayassu;</p>
+
+
+
+<p class="gatha3">Mā cassu mittesu kadāci dubbhi,</p>
+
+
+
+<p class="gathalast">Mā ca vasaṃ a-satīnaṃ gaccha.</p>
+
+
+
+<p class="hangnum"><a name="para229"></a><span class="paranum">229</span>.</p>
+
+
+
+<p class="gatha1"> A-sandhavaṃ <a name="M0.0411"></a> nāpi ca diṭṭha-pubbaṃ,</p>
+
+
+
+<p class="gatha2">Yo āsanenāpi nimantayeyya;</p>
+
+
+
+<p class="gatha3">Tasseva atthaṃ puriso kareyya,</p>
+
+
+
+<p class="gathalast">Yātānuyāyītitamāhupaṇḍitā.</p>
+
+
+
+<p class="hangnum"><a name="para230"></a><span class="paranum">230</span>.</p>
+
+
+
+<p class="gatha1"> Yassekarattipi <a name="M0.0412"></a> ghare vaseyya,</p>
+
+
+
+<p class="gatha2">Yatthanna-pānaṃ puriso labheyya;</p>
+
+
+
+<p class="gatha3">Na tassa pāpaṃ manasāpi cinteyya,</p>
+
+
+
+<p class="gathalast">A-dubbha-pāṇi dahate mitta-dubbho.</p>
+
+
+
+<p class="subhead">Tatīya sādhunara</p>
+
+
+
+<p class="hangnum"><a name="para231"></a><span class="paranum">231</span>.</p>
+
+
+
+<p class="gatha1"> Yassa <a name="M0.0414"></a> rukkhassa chāyāya,</p>
+
+
+
+<p class="gatha2">Nisīdeyya sayeyya vā;</p>
+
+
+
+<p class="gatha3">Na tassa sākhaṃ bhañjeyya,</p>
+
+
+
+<p class="gathalast">Mitta-dubbho hi pāpako.</p>
+
+
+
+<p class="subhead">Catuttha sādhunara</p>
+
+
+
+<p class="hangnum"><a name="para232"></a><span class="paranum">232</span>.</p>
+
+
+
+<p class="gatha1"> Puṇṇaṃpi <a name="M0.0415"></a> ce maṃ pathaviṃ dhanena,</p>
+
+
+
+<p class="gatha2">Dajjitthiyā puriso sammatāya;</p>
+
+
+
+<p class="gatha3">Saddhā khaṇaṃ atimaññeyya taṃpi,</p>
+
+
+
+<p class="gathalast">Tāsaṃ vasaṃ a-satīnaṃ na gacche.</p>
+
+
+
+<p class="hangnum"><a name="para233"></a><span class="paranum">233</span>.</p>
+
+
+
+<p class="gatha1"> Evaṃ <a name="M0.0417"></a> kho yātaṃ anuyāyī hoti,</p>
+
+
+
+<p class="gatha2">Allañca pāṇiṃ dahate punevaṃ;</p>
+
+
+
+<p class="gatha3">A-satī ca sā so pana mittaṃ-dubbho,</p>
+
+
+
+<p class="gathalast">So dhammiko hohi jahassu a-dhammaṃ.</p>
+
+
+
+<p class="chapter">Kāyakhamanīya-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para234"></a><span class="paranum">234</span>.</p>
+
+
+
+<p class="gatha1"> Abhivādana-sīlissa<a name="M0.0420"></a>,</p>
+
+
+
+<p class="gatha2">Niccaṃ vuḍḍhāpacāyino;</p>
+
+
+
+<p class="gatha3">Cattāro dhammā vaḍḍhanti,</p>
+
+
+
+<p class="gathalast">Āyu vaṇṇo sukhaṃ balaṃ.</p>
+
+
+
+<p class="bodytext"><a name="para235"></a><span class="paranum">235</span>. Pañcime <a name="M0.0421"></a> bhikkhave dhammā āyussā, katame pañca. Sappāya-kārī hoti. Sappāyeca mattaṃ jānāti. Pariṇattabhojī ca hoti. Kāla-cārī ca, brahma-cārīca. Ime kho bhikkhave pañca dhammā āyussāti.</p>
+
+
+
+<p class="bodytext"><a name="para236"></a><span class="paranum">236</span>. Pañcime <a name="M0.0424"></a> bhikkhave dhammā āyussā, katame pañca. Sappāya-kārī hoti. Sappāyeca mattaṃ jānāti. Pariṇatabhojīcahoti. Sīlavāca, kalyāṇa mittoca. Ime kho bhikkhave pañca dhammā āyussāti.</p>
+
+
+
+<p class="hangnum"><a name="para237"></a><span class="paranum">237</span>.</p>
+
+
+
+<p class="gatha1"> Pañca-sīlaṃ <a name="M0.0427"></a> samādāya,</p>
+
+
+
+<p class="gatha2">Samaṃ katvā dine dine;</p>
+
+
+
+<p class="gatha3">Satimā paññavā hutvā,</p>
+
+
+
+<p class="gathalast">Care sabbiriyāpathe.</p>
+
+
+
+<p class="bodytext"><a name="para238"></a><span class="paranum">238</span>. Pañcime <a name="M0.0428"></a> bhikkhave caṅkame ānisaṃsā, katame pañca, addhānakkhamo hoti. Padhānakkhamo hoti. Appābādho hoti. Asitaṃpītaṃkhāyitaṃsāyitaṃ sammā pariṇāmaṃ gacchati. Caṅkamādhigato samādhi ciraṭṭhitiko hoti. Imekho bhikkhave pañca caṅkame āni saṃsāti.</p>
+
+
+
+<p class="hangnum"><a name="para239"></a><span class="paranum">239</span>.</p>
+
+
+
+<p class="gatha1"> Parissāvana-dānañca<a name="M0.0431"></a>,</p>
+
+
+
+<p class="gatha2">Āvāsa-dānameva ca;</p>
+
+
+
+<p class="gatha3">Gilāna-vatthu-dānañca,</p>
+
+
+
+<p class="gathalast">Dātabbaṃ manujādhipa.</p>
+
+
+
+<p class="hangnum"><a name="para240"></a><span class="paranum">240</span>.</p>
+
+
+
+<p class="gatha1"> Kātabbaṃ <a name="M0.0432"></a> jiṇṇakāvāsaṃ,</p>
+
+
+
+<p class="gatha2">Paṭisaṅkharaṇaṃ tathā;</p>
+
+
+
+<p class="gatha3">Pañca-sīla-samādānaṃ,</p>
+
+
+
+<p class="gatha2">Katvā taṃ sādhu-rakkhitaṃ;</p>
+
+
+
+<p class="gatha3">Uposathopavāso ca,</p>
+
+
+
+<p class="gathalast">Kātabboposathe iti.</p>
+
+
+
+<p class="hangnum"><a name="para241"></a><span class="paranum">241</span>.</p>
+
+
+
+<p class="gatha1"> Ati-bhottā <a name="M0.0434"></a> roga-mūlaṃ,</p>
+
+
+
+<p class="gatha2">Āyukkhayaṃ karoti ve;</p>
+
+
+
+<p class="gatha3">Tasmā taṃ ati-bhuttiṃva,</p>
+
+
+
+<p class="gathalast">Parihareyya paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para242"></a><span class="paranum">242</span>.</p>
+
+
+
+<p class="gatha1"> A-jiṇṇe <a name="M0.0435"></a> bhojanaṃ visaṃ,</p>
+
+
+
+<p class="gatha2">Dulladdhe a-vicārake;</p>
+
+
+
+<p class="gatha3">Jiṇṇe su-laddhe vicāre,</p>
+
+
+
+<p class="gathalast">Na vajjaṃ sabba-bhojanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para243"></a><span class="paranum">243</span>.</p>
+
+
+
+<p class="gatha1"> Cattāro <a name="M0.0437"></a> pañca ālope,</p>
+
+
+
+<p class="gatha2">Ābhutvā udakaṃ pive;</p>
+
+
+
+<p class="gatha3">Alaṃ phāsu-vihārāya;</p>
+
+
+
+<p class="gathalast">Pahitattassa bhikkhuno.</p>
+
+
+
+<p class="hangnum"><a name="para244"></a><span class="paranum">244</span>.</p>
+
+
+
+<p class="gatha1"> Manujassa <a name="M0.0438"></a> sadā satimato,</p>
+
+
+
+<p class="gatha2">Mattaṃ jānato laddha-bhojanaṃ;</p>
+
+
+
+<p class="gatha3">Tanukassa bhavanti vedanā,</p>
+
+
+
+<p class="gathalast">Sanikaṃ jīrati āyu pālayaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para245"></a><span class="paranum">245</span>.</p>
+
+
+
+<p class="gatha1"> Garūnaṃ <a name="M0.0440"></a> aḍḍha-sohiccaṃ,</p>
+
+
+
+<p class="gatha2">Lahūnaṃ nāti-kittiyā;</p>
+
+
+
+<p class="gatha3">Mattā-pamāṇaṃ niddiṭṭhaṃ,</p>
+
+
+
+<p class="gathalast">Sukhaṃ jīrati tāvatā.</p>
+
+
+
+<p class="hangnum"><a name="para246"></a><span class="paranum">246</span>.</p>
+
+
+
+<p class="gatha1"> Toyābhāve <a name="M0.0441"></a> pipāsattā,</p>
+
+
+
+<p class="gatha2">Khaṇā pāṇehi muccate;</p>
+
+
+
+<p class="gatha3">Tasmā sabbāsuvatthāsu,</p>
+
+
+
+<p class="gathalast">Deyyaṃ vāriṃ pipāsaye.</p>
+
+
+
+<p class="hangnum"><a name="para247"></a><span class="paranum">247</span>.</p>
+
+
+
+<p class="gatha1"> Sītodakaṃ <a name="M0.0442"></a> payo khuddaṃ,</p>
+
+
+
+<p class="gatha2">Ghatamekekaso dviso;</p>
+
+
+
+<p class="gatha3">Tisso samaggamatha vā,</p>
+
+
+
+<p class="gathalast">Page pitaṃ yuvattadaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para248"></a><span class="paranum">248</span>.</p>
+
+
+
+<p class="gatha1"> Annaṃ <a name="M0.0444"></a> brahmā rase viṇhu,</p>
+
+
+
+<p class="gatha2">Bhutte ceva mahesaro;</p>
+
+
+
+<p class="gatha3">Evaṃ ñatvātu yo bhuñje,</p>
+
+
+
+<p class="gathalast">Anna-dosaṃ na limpate.</p>
+
+
+
+<p class="hangnum"><a name="para249"></a><span class="paranum">249</span>.</p>
+
+
+
+<p class="gatha1"> Kattikassantimo <a name="M0.0445"></a> bhāgo,</p>
+
+
+
+<p class="gatha2">Yaṃ cādo miga-māsajo;</p>
+
+
+
+<p class="gatha3">Tāvubho yama-dāṭhākhyo,</p>
+
+
+
+<p class="gathalast">Laghvāhārova jīvati.</p>
+
+
+
+<p class="hangnum"><a name="para250"></a><span class="paranum">250</span>.</p>
+
+
+
+<p class="gatha1"> Satthānukula-cariyā<a name="M0.0447"></a>,</p>
+
+
+
+<p class="gatha2">Cittaññāvasavattinā;</p>
+
+
+
+<p class="gatha3">Buddhi-rakkhilitatthena,</p>
+
+
+
+<p class="gathalast">Paripuṇṇaṃ rasāyanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para250"></a><span class="paranum">250</span>.</p>
+
+
+
+<p class="gatha1"> A-jātiyā <a name="M0.0448"></a> a-jātānaṃ,</p>
+
+
+
+<p class="gatha2">Jātānaṃ vinivattiyā;</p>
+
+
+
+<p class="gatha3">Rogānaṃ yo vidhi diṭṭho,</p>
+
+
+
+<p class="gathalast">Taṃ sukhatthī samācare.</p>
+
+
+
+<p class="hangnum"><a name="para252"></a><span class="paranum">252</span>.</p>
+
+
+
+<p class="gatha1"> Ārogyaṃ <a name="M0.0449"></a> paramā lābhā,</p>
+
+
+
+<p class="gatha2">Santuṭṭhi paramaṃ dhanaṃ;</p>
+
+
+
+<p class="gatha3">Vissāsā paramā ñāti,</p>
+
+
+
+<p class="gathalast">Nibbānaṃ paramaṃ sukhaṃ.</p>
+
+
+
+<p class="chapter">Pakiṇṇaka-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para253"></a><span class="paranum">253</span>.</p>
+
+
+
+<p class="gatha1"> Kumudaṃ <a name="M0.0460"></a> ko pabodhayi,</p>
+
+
+
+<p class="gatha2">Nātho ravindu paṇḍito;</p>
+
+
+
+<p class="gatha3">Kamalaṃ ko kumudaṃ ko,</p>
+
+
+
+<p class="gathalast">Narapaṃ ko pabodhayi.</p>
+
+
+
+<p class="hangnum"><a name="para254"></a><span class="paranum">254</span>.</p>
+
+
+
+<p class="gatha1"> Cittena <a name="M0.0462"></a> niyyati loko,</p>
+
+
+
+<p class="gatha2">Cittena parikassati;</p>
+
+
+
+<p class="gatha3">Cittassa eka-dhammassa,</p>
+
+
+
+<p class="gathalast">Sabbeva vasamanvagū.</p>
+
+
+
+<p class="hangnum"><a name="para255"></a><span class="paranum">255</span>.</p>
+
+
+
+<p class="gatha1"> Samaṇo <a name="M0.0464"></a> rājānurājā,</p>
+
+
+
+<p class="gatha2">Senāpati mahā-matto;</p>
+
+
+
+<p class="gatha3">Dhammaṭṭho paṇḍito disvā,</p>
+
+
+
+<p class="gathalast">Paccakkhatthaṃ na kāriyā.</p>
+
+
+
+<p class="hangnum"><a name="para256"></a><span class="paranum">256</span>.</p>
+
+
+
+<p class="gatha1"> Dīpo <a name="M0.0465"></a> nava-disaṃ tejo,</p>
+
+
+
+<p class="gatha2">Na heṭṭhā ca tathā sakaṃ;</p>
+
+
+
+<p class="gatha3">Para-vajjaṃ vidū passe,</p>
+
+
+
+<p class="gathalast">Saka-vajjaṃpi passatu.</p>
+
+
+
+<p class="hangnum"><a name="para257"></a><span class="paranum">257</span>.</p>
+
+
+
+<p class="gatha1"> Sa-phalaṃ <a name="M0.0467"></a> paṇḍito loke,</p>
+
+
+
+<p class="gatha2">Sa-kāraṇaṃ vacaṃ bhaṇe;</p>
+
+
+
+<p class="gatha3">A-kāraṇaṃphalaṃ bālo,</p>
+
+
+
+<p class="gathalast">Idaṃ ubhaya-lakkhaṇaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para258"></a><span class="paranum">258</span>.</p>
+
+
+
+<p class="gatha1"> Tassa <a name="M0.0468"></a> vācāya jāneyya,</p>
+
+
+
+<p class="gatha2">Kuṭilaṃ bāla-paṇḍitaṃ;</p>
+
+
+
+<p class="gatha3">Vācā-rūpaṃ mittaṃ kare,</p>
+
+
+
+<p class="gathalast">Vācā-rūpaṃ dhuvaṃ jahe.</p>
+
+
+
+<p class="hangnum"><a name="para259"></a><span class="paranum">259</span>.</p>
+
+
+
+<p class="gatha1"> Duccintitassa <a name="M0.0470"></a> cintā ca,</p>
+
+
+
+<p class="gatha2">Dubbhāsitassa bhāsanā;</p>
+
+
+
+<p class="gatha3">Dukkammassa katañcāti,</p>
+
+
+
+<p class="gathalast">Etaṃ bālassa lakkhaṇaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para260"></a><span class="paranum">260</span>.</p>
+
+
+
+<p class="gatha1"> Su-cintitassa <a name="M0.0471"></a> cintā ca,</p>
+
+
+
+<p class="gatha2">Su-bhāsitassa bhāsanā;</p>
+
+
+
+<p class="gatha3">Su-kammassa katañcāti,</p>
+
+
+
+<p class="gathalast">Etaṃ dhīrassa lakkhaṇaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para261"></a><span class="paranum">261</span>.</p>
+
+
+
+<p class="gatha1"> A-nayaṃ <a name="M0.0473"></a> nayati dummedho,</p>
+
+
+
+<p class="gatha2">A-dhurāyaṃ ni-yuñjati;</p>
+
+
+
+<p class="gatha3">Dunnayo seyyaso hoti,</p>
+
+
+
+<p class="gatha2">Sammā vutto pakuppati;</p>
+
+
+
+<p class="gatha3">Vinayaṃ so na jānāti,</p>
+
+
+
+<p class="gathalast">Sādhu tassa a-dassanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para262"></a><span class="paranum">262</span>.</p>
+
+
+
+<p class="gatha1"> Nayaṃ <a name="M0.0476"></a> nayati medhāvī,</p>
+
+
+
+<p class="gatha2">A-dhurāyaṃ na yuñjati;</p>
+
+
+
+<p class="gatha3">Su-nayo seyyaso hoti,</p>
+
+
+
+<p class="gatha2">Sammā vutto na kuppati;</p>
+
+
+
+<p class="gatha3">Vinayaṃ so pajānāti,</p>
+
+
+
+<p class="gathalast">Sādhu tena samāgamo.</p>
+
+
+
+<p class="hangnum"><a name="para263"></a><span class="paranum">263</span>.</p>
+
+
+
+<p class="gatha1"> A-nāyakā <a name="M0.0479"></a> vinassanti,</p>
+
+
+
+<p class="gatha2">Nassanti bahu-nāyakā;</p>
+
+
+
+<p class="gatha3">Thī-nāyakā vinassanti,</p>
+
+
+
+<p class="gathalast">Nassanti susu-nāyakā.</p>
+
+
+
+<p class="hangnum"><a name="para264"></a><span class="paranum">264</span>.</p>
+
+
+
+<p class="gatha1"> Jeṭṭho <a name="M0.0481"></a> kammesu nīcānaṃ,</p>
+
+
+
+<p class="gatha2">Jānaṃjānaṃva ācare;</p>
+
+
+
+<p class="gatha3">A-jānevaṃ kare jānaṃ,</p>
+
+
+
+<p class="gathalast">Nīco eti bhayaṃ piyaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para265"></a><span class="paranum">265</span>.</p>
+
+
+
+<p class="gatha1"> Kammaṃ <a name="M0.0482"></a> dujjana-sāruppaṃ,</p>
+
+
+
+<p class="gatha2">Dudhā sujana-sāruppaṃ;</p>
+
+
+
+<p class="gatha3">Dujjanaṃ tesu dukkamme,</p>
+
+
+
+<p class="gathalast">Su-kamme sujanaṃ icche.</p>
+
+
+
+<p class="hangnum"><a name="para266"></a><span class="paranum">266</span>.</p>
+
+
+
+<p class="gatha1"> Paṇḍito <a name="M0.0484"></a> verī bālo ca,</p>
+
+
+
+<p class="gatha2">Dujjayo bāla-verito;</p>
+
+
+
+<p class="gatha3">Paṇḍitaṃ-verī pamādena,</p>
+
+
+
+<p class="gathalast">Na taṃ jayo hi sabbadā.</p>
+
+
+
+<p class="hangnum"><a name="para267"></a><span class="paranum">267</span>.</p>
+
+
+
+<p class="gatha1"> Guyhassa <a name="M0.0485"></a> hi guyhameva sādhu,</p>
+
+
+
+<p class="gatha2">Na hi guyhassa pasatthamāvi-kammaṃ;</p>
+
+
+
+<p class="gatha3">A-nipphannatāya saheyya dhīro,</p>
+
+
+
+<p class="gathalast">Nipphannatthova yathā-sukhaṃ bhaṇeyya.</p>
+
+
+
+<p class="hangnum"><a name="para268"></a><span class="paranum">268</span>.</p>
+
+
+
+<p class="gatha1"> Guyhamatthaṃ <a name="M0.0486"></a> na vivareyya,</p>
+
+
+
+<p class="gatha2">Rakkheyya naṃ yathā nidhiṃ;</p>
+
+
+
+<p class="gatha3">Na hī pātukato sādhu,</p>
+
+
+
+<p class="gathalast">Guyho attho pajānatā.</p>
+
+
+
+<p class="hangnum"><a name="para269"></a><span class="paranum">269</span>.</p>
+
+
+
+<p class="gatha1"> Thiyā <a name="M0.0487"></a> guyhaṃ na saṃseyya,</p>
+
+
+
+<p class="gatha2">A-mittassa ca paṇḍito;</p>
+
+
+
+<p class="gatha3">Yo cāmisena saṃhīro,</p>
+
+
+
+<p class="gathalast">Hadaya-ttheno ca yo naro.</p>
+
+
+
+<p class="hangnum"><a name="para270"></a><span class="paranum">270</span>.</p>
+
+
+
+<p class="gatha1"> Vivicca <a name="M0.0489"></a> bhāseyya divā rahassaṃ,</p>
+
+
+
+<p class="gatha2">Rattiṃ giraṃ nāti-velaṃ pamuñce;</p>
+
+
+
+<p class="gatha3">Upassutikā hi suṇanti mantaṃ,</p>
+
+
+
+<p class="gathalast">Tasmā hi manto khippamupeti bhedaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para271"></a><span class="paranum">271</span>.</p>
+
+
+
+<p class="gatha1"> Na <a name="M0.0491"></a> pakāsati guyhaṃ yo,</p>
+
+
+
+<p class="gatha2">So guyhaṃ paṭiguyhati;</p>
+
+
+
+<p class="gatha3">Bhayesu na jahe kicce,</p>
+
+
+
+<p class="gathalast">Su-mittonucaro bhave.</p>
+
+
+
+<p class="hangnum"><a name="para272"></a><span class="paranum">272</span>.</p>
+
+
+
+<p class="gatha1"> Karoti <a name="M0.0492"></a> dukkaraṃ sādhuṃ,</p>
+
+
+
+<p class="gatha2">Ujuṃ khamati dukkhamaṃ;</p>
+
+
+
+<p class="gatha3">Duddadaṃ sāmaṃ dadāti,</p>
+
+
+
+<p class="gathalast">Yo su-mitto have bhave.</p>
+
+
+
+<p class="hangnum"><a name="para273"></a><span class="paranum">273</span>.</p>
+
+
+
+<p class="gatha1"> Piya-vācā <a name="M0.0494"></a> sadā mitto,</p>
+
+
+
+<p class="gatha2">Piya-vatthuṃ na yācanā;</p>
+
+
+
+<p class="gatha3">Icchāgatena dānena,</p>
+
+
+
+<p class="gatha2">Su-daḷho su-ppiyo have;</p>
+
+
+
+<p class="gatha3">Tadaṅgato ca hīnena,</p>
+
+
+
+<p class="gathalast">A-ppiyo bhijjano bhave.</p>
+
+
+
+<p class="hangnum"><a name="para274"></a><span class="paranum">274</span>.</p>
+
+
+
+<p class="gatha1"> Dehīti <a name="M0.0496"></a> yācane hirī,</p>
+
+
+
+<p class="gatha2">Sirī ca kāya-devatā;</p>
+
+
+
+<p class="gatha3">Palāyanti siricchito,</p>
+
+
+
+<p class="gathalast">Na yāce para-santakaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para275"></a><span class="paranum">275</span>.</p>
+
+
+
+<p class="gatha1"> Svāno <a name="M0.0497"></a> laddhāna nimmaṃsaṃ,</p>
+
+
+
+<p class="gatha2">Aṭṭhiṃ tuṭṭho pamodati;</p>
+
+
+
+<p class="gatha3">Sakantikaṃ migaṃ sīho,</p>
+
+
+
+<p class="gathalast">Hitvā hatthiṃnudhāvati.</p>
+
+
+
+<p class="hangnum"><a name="para276"></a><span class="paranum">276</span>.</p>
+
+
+
+<p class="gatha1"> Evaṃ <a name="M0.0499"></a> chandānurūpena,</p>
+
+
+
+<p class="gatha2">Jano āsīsate phalaṃ;</p>
+
+
+
+<p class="gatha3">Mahā chandā mahantaṃva,</p>
+
+
+
+<p class="gathalast">Hīnaṃva hīna-chandakā.</p>
+
+
+
+<p class="hangnum"><a name="para277"></a><span class="paranum">277</span>.</p>
+
+
+
+<p class="gatha1"> Nānā-chandā <a name="M0.0501"></a> mahārāja,</p>
+
+
+
+<p class="gatha2">Ekāgāre vasāmase;</p>
+
+
+
+<p class="gatha3">Ahaṃ gāma-varaṃ icche,</p>
+
+
+
+<p class="gathalast">Brāhmaṇī ca gavaṃ sataṃ.</p>
+
+
+
+<p class="hangnum"><a name="para278"></a><span class="paranum">278</span>.</p>
+
+
+
+<p class="gatha1"> Putto <a name="M0.0502"></a> ca ājañña-rathaṃ,</p>
+
+
+
+<p class="gatha2">Kaññā ca maṇi-kuṇḍalaṃ;</p>
+
+
+
+<p class="gatha3">Yā cesā puṇṇakā jammī,</p>
+
+
+
+<p class="gathalast">Ujukkhalaṃbhi-kaṅkhati.</p>
+
+
+
+<p class="hangnum"><a name="para279"></a><span class="paranum">279</span>.</p>
+
+
+
+<p class="gatha1"> Ṭhānaṃ <a name="M0.0504"></a> mitte dhane kamme,</p>
+
+
+
+<p class="gatha2">Satussāhe su-labbhitaṃ;</p>
+
+
+
+<p class="gatha3">Taṃ daḷhaṃ dukkaraṃ kare,</p>
+
+
+
+<p class="gathalast">Paññā-sati-samādhinā.</p>
+
+
+
+<p class="hangnum"><a name="para280"></a><span class="paranum">280</span>.</p>
+
+
+
+<p class="gatha1"> Bhesajje <a name="M0.0505"></a> vihite suddha,</p>
+
+
+
+<p class="gatha2">Buddhādi-ratanattaye;</p>
+
+
+
+<p class="gatha3">Pasādamācare niccaṃ,</p>
+
+
+
+<p class="gathalast">Sajjane sa-guṇepi ca.</p>
+
+
+
+<p class="hangnum"><a name="para281"></a><span class="paranum">281</span>.</p>
+
+
+
+<p class="gatha1"> Rājā <a name="M0.0507"></a> raṭṭhena dhātuso,</p>
+
+
+
+<p class="gatha2">Bālo pāpehi dummano,</p>
+
+
+
+<p class="gatha3">Alaṅkārena itthīpi,</p>
+
+
+
+<p class="gathalast">Kāmehi ca na tappati.</p>
+
+
+
+<p class="hangnum"><a name="para282"></a><span class="paranum">282</span>.</p>
+
+
+
+<p class="gatha1"> Appiccho <a name="M0.0508"></a> ca dhutaṅgena,</p>
+
+
+
+<p class="gatha2">Āraddho vīriyena hi;</p>
+
+
+
+<p class="gatha3">Visārado parisāya,</p>
+
+
+
+<p class="gatha2">Pariccāgena dāyako;</p>
+
+
+
+<p class="gatha3">Savanena su-dhammaṃpi,</p>
+
+
+
+<p class="gathalast">Na tappativa paṇḍito.</p>
+
+
+
+<p class="hangnum"><a name="para283"></a><span class="paranum">283</span>.</p>
+
+
+
+<p class="gatha1"> Jeṭṭhassa <a name="M0.0510"></a> sitaṃ hasitaṃ,</p>
+
+
+
+<p class="gatha2">Majjhassa madhurassaraṃ;</p>
+
+
+
+<p class="gatha3">Loke aṃsa-siro-kampaṃ,</p>
+
+
+
+<p class="gatha2">Jammassa apa-hassitaṃ;</p>
+
+
+
+<p class="gatha3">Etesaṃ ati-hassitaṃ,</p>
+
+
+
+<p class="gathalast">Hāso hoti yathākkamaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para284"></a><span class="paranum">284</span>.</p>
+
+
+
+<p class="gatha1"> Natthi <a name="M0.0513"></a> duṭṭhe nayo atthi,</p>
+
+
+
+<p class="gatha2">Na dhammo na su-bhāsitaṃ;</p>
+
+
+
+<p class="gatha3">Nikkamaṃ duṭṭhe yuñjeyya,</p>
+
+
+
+<p class="gathalast">So hi sabbhiṃ na rañjati.</p>
+
+
+
+<p class="hangnum"><a name="para285"></a><span class="paranum">285</span>.</p>
+
+
+
+<p class="gatha1"> Dullabhaṃ <a name="M0.0515"></a> pakatiṃ vācaṃ,</p>
+
+
+
+<p class="gatha2">Dullabho khemako suto;</p>
+
+
+
+<p class="gatha3">Dullabhā sadisī jāyā,</p>
+
+
+
+<p class="gathalast">Dullabho sa-jano piyo.</p>
+
+
+
+<p class="hangnum"><a name="para286"></a><span class="paranum">286</span>.</p>
+
+
+
+<p class="gatha1"> Dhajo <a name="M0.0516"></a> rathassa paññāṇaṃ,</p>
+
+
+
+<p class="gatha2">Dhūmo paññāṇamaggino;</p>
+
+
+
+<p class="gatha3">Rājā raṭṭhassa paññāṇaṃ,</p>
+
+
+
+<p class="gathalast">Bhattā paññāṇamitthiyā.</p>
+
+
+
+<p class="hangnum"><a name="para287"></a><span class="paranum">287</span>.</p>
+
+
+
+<p class="gatha1"> Dunnāriyā <a name="M0.0518"></a> kulaṃ suddhaṃ,</p>
+
+
+
+<p class="gatha2">Putto nassati lālanā;</p>
+
+
+
+<p class="gatha3">Samiddhi a-nayā bandhu,</p>
+
+
+
+<p class="gathalast">Pavāsā madanā hirī.</p>
+
+
+
+<p class="hangnum"><a name="para288"></a><span class="paranum">288</span>.</p>
+
+
+
+<p class="gatha1"> Mātā <a name="M0.0520"></a> pitā ca puttānaṃ,</p>
+
+
+
+<p class="gatha2">Novāde bahu-sāsannaṃ;</p>
+
+
+
+<p class="gatha3">Paṇḍitā mātaro appaṃ,</p>
+
+
+
+<p class="gathalast">Vadeyyuṃ vajja-dīpanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para289"></a><span class="paranum">289</span>.</p>
+
+
+
+<p class="gatha1"> Lāḷaye <a name="M0.0522"></a> pañcha-vassāni,</p>
+
+
+
+<p class="gatha2">Dasa-vassāni tāḷaye;</p>
+
+
+
+<p class="gatha3">Patte tu soḷase vasse,</p>
+
+
+
+<p class="gathalast">Puttaṃ mittaṃvadācare.</p>
+
+
+
+<p class="hangnum"><a name="para290"></a><span class="paranum">290</span>.</p>
+
+
+
+<p class="gatha1"> Lālane <a name="M0.0523"></a> dhītaraṃ dosā,</p>
+
+
+
+<p class="gatha2">Pālane bahavo guṇā;</p>
+
+
+
+<p class="gatha3">Dhītuyā kiriyaṃ niccaṃ,</p>
+
+
+
+<p class="gathalast">Passantu suṭṭhu mātaro.</p>
+
+
+
+<p class="centered">Iti <a name="M0.0525"></a> pakiṇṇaka-niddeso nāma</p>
+
+
+
+<p class="centered">Sattamā paricchedo.</p>
+
+
+
+<p class="chapter">Sīla-niddesa</p>
+
+
+
+<p class="hangnum"><a name="para291"></a><span class="paranum">291</span>.</p>
+
+
+
+<p class="gatha1"> Pamādaṃ <a name="M0.0526"></a> bhayato disvā,</p>
+
+
+
+<p class="gatha2">A-ppamādañca khemato;</p>
+
+
+
+<p class="gatha3">Bhāvetha aṭṭhaṅgikaṃ maggaṃ,</p>
+
+
+
+<p class="gathalast">Esā buddhānusāsanī.</p>
+
+
+
+<p class="hangnum"><a name="para292"></a><span class="paranum">292</span>.</p>
+
+
+
+<p class="gatha1"> Hīnena <a name="M0.0528"></a> brahma-cariyena,</p>
+
+
+
+<p class="gatha2">Khattiye upapajjati;</p>
+
+
+
+<p class="gatha3">Majjhimena ca devattaṃ,</p>
+
+
+
+<p class="gathalast">Uttamena vi-sujjhati.</p>
+
+
+
+<p class="hangnum">Ka.</p>
+
+
+
+<p class="gatha1"> Nagare <a name="M0.0532"></a> bandhumatiyā,</p>
+
+
+
+<p class="gatha2">Bandhumā nāma khattiyo;</p>
+
+
+
+<p class="gatha3">Divase puṇṇamāya so,</p>
+
+
+
+<p class="gathalast">Upagacchi uposathaṃ.</p>
+
+
+
+<p class="hangnum">Kha.</p>
+
+
+
+<p class="gatha1"> Ahaṃ tena samayena,</p>
+
+
+
+<p class="gatha2">Gumbha-dāsī ahaṃ tahiṃ;</p>
+
+
+
+<p class="gatha3">Disvā sa-rājakaṃ senaṃ,</p>
+
+
+
+<p class="gathalast">Evāhaṃ cintayiṃ tadā.</p>
+
+
+
+<p class="hangnum">Ga.</p>
+
+
+
+<p class="gatha1"> Rājāpi <a name="M0.0533"></a> rajjaṃ chaṭṭetvā,</p>
+
+
+
+<p class="gatha2">Upagacchi uposathaṃ;</p>
+
+
+
+<p class="gatha3">Sa-phalaṃ nūna taṃ kammaṃ,</p>
+
+
+
+<p class="gathalast">Jana-kāyo pamodito.</p>
+
+
+
+<p class="hangnum">Gha.</p>
+
+
+
+<p class="gatha1"> Yoniso <a name="M0.0534"></a> paccavekkhitvā,</p>
+
+
+
+<p class="gatha2">Duggaccañca daliddataṃ;</p>
+
+
+
+<p class="gatha3">Mānasaṃ sampahaṃsitvā,</p>
+
+
+
+<p class="gathalast">Upagacchimu posathaṃ.</p>
+
+
+
+<p class="hangnum">Ṅa.</p>
+
+
+
+<p class="gatha1"> Ahaṃ <a name="M0.0535"></a> uposathaṃ katvā,</p>
+
+
+
+<p class="gatha2">Sammā-sambuddhasāsane;</p>
+
+
+
+<p class="gatha3">Tena kammena su-katena,</p>
+
+
+
+<p class="gathalast">Tāvatiṃsaṃ agacchahaṃ.</p>
+
+
+
+<p class="hangnum">Ca.</p>
+
+
+
+<p class="gatha1"> Tattha me su-kataṃ byamhaṃ,</p>
+
+
+
+<p class="gatha2">Ubbha-yojanamuggataṃ;</p>
+
+
+
+<p class="gatha3">Kūṭāgāra-varūpetaṃ,</p>
+
+
+
+<p class="gathalast">Mahāsanasu-bhūsitaṃ.</p>
+
+
+
+<p class="hangnum">Cha.</p>
+
+
+
+<p class="gatha1"> Accharā <a name="M0.0536"></a> sata-sahassā,</p>
+
+
+
+<p class="gatha2">Upatiṭṭhanti maṃ sadā;</p>
+
+
+
+<p class="gatha3">Aññe deve atikkamma,</p>
+
+
+
+<p class="gathalast">Atirocāmi sabbadā.</p>
+
+
+
+<p class="hangnum">Ja.</p>
+
+
+
+<p class="gatha1"> Catusaṭṭhi-deva-rājūnaṃ<a name="M0.0537"></a>,</p>
+
+
+
+<p class="gatha2">Mahesittamakārayiṃ;</p>
+
+
+
+<p class="gatha3">Tesaṭṭhi-cakkavattinaṃ,</p>
+
+
+
+<p class="gathalast">Mahesittamakārayiṃ.</p>
+
+
+
+<p class="hangnum">Jha.</p>
+
+
+
+<p class="gatha1"> Suvaṇṇa-vaṇā <a name="M0.0538"></a> hutvāna,</p>
+
+
+
+<p class="gatha2">Bhavesu saṃsarāmahaṃ;</p>
+
+
+
+<p class="gatha3">Sabbattha pavarā homi,</p>
+
+
+
+<p class="gathalast">Uposathassidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Ña.</p>
+
+
+
+<p class="gatha1"> Hatthi-yānaṃ assa-yānaṃ,</p>
+
+
+
+<p class="gatha2">Ratha-yānañca sivikaṃ;</p>
+
+
+
+<p class="gatha3">Labhāmi sabbametampi,</p>
+
+
+
+<p class="gathalast">Uposathassidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Ṭa.</p>
+
+
+
+<p class="gatha1"> Soṇṇa-mayaṃ <a name="M0.0539"></a> rūpi-mayaṃ,</p>
+
+
+
+<p class="gatha2">Athopi phalikā-mayaṃ;</p>
+
+
+
+<p class="gatha3">Lohitaṅga-mayañceva,</p>
+
+
+
+<p class="gathalast">Sabbaṃ paṭilabhāmahaṃ.</p>
+
+
+
+<p class="hangnum">Ṭha.</p>
+
+
+
+<p class="gatha1"> Koseyya-kambaliyāni<a name="M0.0540"></a>,</p>
+
+
+
+<p class="gatha2">Khoma-kappāsikāni ca;</p>
+
+
+
+<p class="gatha3">Mahagghāni ca vatthāni,</p>
+
+
+
+<p class="gathalast">Sabbaṃ paṭilabhāmahaṃ.</p>
+
+
+
+<p class="hangnum">Ḍa.</p>
+
+
+
+<p class="gatha1"> Annaṃ <a name="M0.0541"></a> pānaṃ khādanīyaṃ,</p>
+
+
+
+<p class="gatha2">Vatthaṃ senāsanāni ca;</p>
+
+
+
+<p class="gatha3">Sabbametaṃ paṭilabhe,</p>
+
+
+
+<p class="gathalast">Uposathassidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Ḍha.</p>
+
+
+
+<p class="gatha1"> Vara-gandhañca mālañca,</p>
+
+
+
+<p class="gatha2">Cuṇṇakañcha vilepanaṃ;</p>
+
+
+
+<p class="gatha3">Sabbametaṃ paṭilabhe,</p>
+
+
+
+<p class="gathalast">Uposathassidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Ṇa.</p>
+
+
+
+<p class="gatha1"> Kūṭāgārañca <a name="M0.0542"></a> pāsādaṃ,</p>
+
+
+
+<p class="gatha2">Maṇḍapaṃ hammiyaṃ guhaṃ;</p>
+
+
+
+<p class="gatha3">Sabbametaṃ paṭilabhe,</p>
+
+
+
+<p class="gathalast">Uposathassidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Ta.</p>
+
+
+
+<p class="gatha1"> Jātiyā <a name="M0.0543"></a> satta-vassāhaṃ,</p>
+
+
+
+<p class="gatha2">Pabbajiṃ ana-gāriyaṃ;</p>
+
+
+
+<p class="gatha3">Aḍḍha-māse a-sappatte,</p>
+
+
+
+<p class="gathalast">Ara hattaṃ apāpuṇiṃ.</p>
+
+
+
+<p class="hangnum">Tha.</p>
+
+
+
+<p class="gatha1"> Kilesā <a name="M0.0544"></a> jhāpitā mayhaṃ,</p>
+
+
+
+<p class="gatha2">Bhavā sabbe samūhatā;</p>
+
+
+
+<p class="gatha3">Sabbāsava-parikkhīṇā,</p>
+
+
+
+<p class="gathalast">Natthi dāni puna-bbhavo.</p>
+
+
+
+<p class="hangnum">Da.</p>
+
+
+
+<p class="gatha1"> Eka-navutito <a name="M0.0545"></a> kappe,</p>
+
+
+
+<p class="gatha2">Yaṃ kammamakariṃ tadā;</p>
+
+
+
+<p class="gatha3">Duggatiṃ nābhijānāmi,</p>
+
+
+
+<p class="gathalast">Uposathassidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Dha.</p>
+
+
+
+<p class="gatha1"> Svāgataṃ <a name="M0.0546"></a> vata me āsi,</p>
+
+
+
+<p class="gatha2">Mama buddhassa santike;</p>
+
+
+
+<p class="gatha3">Tisso vijjā anu-pattā,</p>
+
+
+
+<p class="gathalast">Kataṃ buddhassa sāsanaṃ.</p>
+
+
+
+<p class="hangnum">Na.</p>
+
+
+
+<p class="gatha1"> Paṭisambhidā catasso,</p>
+
+
+
+<p class="gatha2">Vimokāpi ca aṭṭhime;</p>
+
+
+
+<p class="gatha3">Chaḷābhiññā sacchikatā,</p>
+
+
+
+<p class="gathalast">Kataṃ buddhassa sāsanaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para293"></a><span class="paranum">293</span>.</p>
+
+
+
+<p class="gatha1"> Ñātīnañca <a name="M0.0547"></a> piyo hoti,</p>
+
+
+
+<p class="gatha2">Mittesu ca virocati;</p>
+
+
+
+<p class="gatha3">Kāyassa bhedā su-gatiṃ,</p>
+
+
+
+<p class="gathalast">Upapajjati sīlavā.</p>
+
+
+
+<p class="hangnum"><a name="para294"></a><span class="paranum">294</span>.</p>
+
+
+
+<p class="gatha1"> Nibbānaṃ <a name="M0.0549"></a> patthayantena samādinnaṃ,</p>
+
+
+
+<p class="gatha2">Pañca-sīlampi adhi-sīlaṃ;</p>
+
+
+
+<p class="gathalast">Dasa-sīlampi adhi-sīlameva.</p>
+
+
+
+<p class="hangnum">Ka.</p>
+
+
+
+<p class="gatha1"> Nagare <a name="M0.0554"></a> candavatiyā,</p>
+
+
+
+<p class="gatha2">Bhaṭako āsahaṃ tadā;</p>
+
+
+
+<p class="gatha3">Para-kammāyane yutto,</p>
+
+
+
+<p class="gathalast">Pabbajjaṃ na labhāmahaṃ.</p>
+
+
+
+<p class="hangnum">Kha.</p>
+
+
+
+<p class="gatha1"> Mahandhakāra-pihitā<a name="M0.0555"></a>,</p>
+
+
+
+<p class="gatha2">Tividhaggīhi ḍayhare;</p>
+
+
+
+<p class="gatha3">Kena nukho upāyena,</p>
+
+
+
+<p class="gathalast">Vi-saṃyutto bhave ahaṃ.</p>
+
+
+
+<p class="hangnum">Ga.</p>
+
+
+
+<p class="gatha1"> Deyyadhammo <a name="M0.0556"></a> ca me natthi,</p>
+
+
+
+<p class="gatha2">Bhaṭako dukkhito ahaṃ;</p>
+
+
+
+<p class="gatha3">Yaṃ nūnāhaṃ pañca-sīlaṃ,</p>
+
+
+
+<p class="gathalast">Rakkheyyaṃ paripūrayaṃ.</p>
+
+
+
+<p class="hangnum">Gha.</p>
+
+
+
+<p class="gatha1"> Anomadassissa munino,</p>
+
+
+
+<p class="gatha2">Nisabho nāma sāvako;</p>
+
+
+
+<p class="gatha3">Tamahaṃ upasaṅkamma,</p>
+
+
+
+<p class="gathalast">Pañca-sikkhāpadaggahiṃ.</p>
+
+
+
+<p class="hangnum">Ṅa.</p>
+
+
+
+<p class="gatha1"> Vassa-sata-sahassāni<a name="M0.0557"></a>,</p>
+
+
+
+<p class="gatha2">Āyu vijjati tāvade;</p>
+
+
+
+<p class="gatha3">Tāvatā pañca-sīlāni,</p>
+
+
+
+<p class="gathalast">Paripuṇṇāni gopayiṃ.</p>
+
+
+
+<p class="hangnum">Ca.</p>
+
+
+
+<p class="gatha1"> Maccu-kālamhi <a name="M0.0558"></a> sampatte,</p>
+
+
+
+<p class="gatha2">Devā assāsayanti maṃ;</p>
+
+
+
+<p class="gatha3">Ratho sahassa-yutto te,</p>
+
+
+
+<p class="gathalast">Mārisassa upaṭṭhito.</p>
+
+
+
+<p class="hangnum">Cha.</p>
+
+
+
+<p class="gatha1"> Vattante <a name="M0.0559"></a> carime citte,</p>
+
+
+
+<p class="gatha2">Mama sīlaṃ anussariṃ;</p>
+
+
+
+<p class="gatha3">Tena kammena su-katena,</p>
+
+
+
+<p class="gathalast">Tāvatiṃsaṃ agacchahaṃ.</p>
+
+
+
+<p class="hangnum">Ja.</p>
+
+
+
+<p class="gatha1"> Tiṃsakhattuñca devindo,</p>
+
+
+
+<p class="gatha2">Deva-rajjamakārayiṃ;</p>
+
+
+
+<p class="gatha3">Dibba-sukhaṃ anubhaviṃ,</p>
+
+
+
+<p class="gathalast">Accharāhi purakkhatto.</p>
+
+
+
+<p class="hangnum">Jha.</p>
+
+
+
+<p class="gatha1"> Pañca-sattatikhatttu-ñca<a name="M0.0560"></a>,</p>
+
+
+
+<p class="gatha2">Cakkavattī ahosahaṃ;</p>
+
+
+
+<p class="gatha3">Padesa-rajjaṃ vipulaṃ,</p>
+
+
+
+<p class="gathalast">Gaṇanāto a-saṅkhayaṃ.</p>
+
+
+
+<p class="hangnum">Ña.</p>
+
+
+
+<p class="gatha1"> Deva-lokā <a name="M0.0561"></a> cavitvāna,</p>
+
+
+
+<p class="gatha2">Sukka-mūlena codito;</p>
+
+
+
+<p class="gatha3">Pure vesāliyaṃ jāto,</p>
+
+
+
+<p class="gathalast">Mahā-kule su-aḍḍhake.</p>
+
+
+
+<p class="hangnum">Ṭa.</p>
+
+
+
+<p class="gatha1"> Vassūpanāyike kāle,</p>
+
+
+
+<p class="gatha2">Dibbante jina-sāsane;</p>
+
+
+
+<p class="gatha3">Mātā ca me pitā ceva,</p>
+
+
+
+<p class="gathalast">Pañca-sikkhāpadaggahuṃ.</p>
+
+
+
+<p class="hangnum">Ṭha.</p>
+
+
+
+<p class="gatha1"> Saha <a name="M0.0562"></a> sutvānahaṃ sīlaṃ,</p>
+
+
+
+<p class="gatha2">Mama sīlaṃ anussariṃ;</p>
+
+
+
+<p class="gatha3">Ekāsane nisīditvā,</p>
+
+
+
+<p class="gathalast">Arahattamapāpuṇiṃ.</p>
+
+
+
+<p class="hangnum">Ḍa.</p>
+
+
+
+<p class="gatha1"> Jātiyā <a name="M0.0563"></a> pañca-vassena,</p>
+
+
+
+<p class="gatha2">Arahattamapāpuṇiṃ;</p>
+
+
+
+<p class="gatha3">Upasampādayi buddho,</p>
+
+
+
+<p class="gathalast">Guṇamaññāya cakkhumā.</p>
+
+
+
+<p class="hangnum">Ḍha.</p>
+
+
+
+<p class="gatha1"> Paripuṇṇāni <a name="M0.0564"></a> gopetvā,</p>
+
+
+
+<p class="gatha2">Pañca-sikkhāpadānahaṃ;</p>
+
+
+
+<p class="gatha3">A-parimeyyito kappe,</p>
+
+
+
+<p class="gathalast">Vinipātaṃ na gacchahaṃ.</p>
+
+
+
+<p class="hangnum">Ṇa.</p>
+
+
+
+<p class="gatha1"> Svāhaṃ yasamanubhaviṃ,</p>
+
+
+
+<p class="gatha2">Tesaṃ sīlāna vāhasā;</p>
+
+
+
+<p class="gatha3">Kappa-koṭipi kittento,</p>
+
+
+
+<p class="gathalast">Kittaye eka-desakaṃ.</p>
+
+
+
+<p class="hangnum">Ta.</p>
+
+
+
+<p class="gatha1"> Pañca-sīlāni <a name="M0.0565"></a> gopetvā,</p>
+
+
+
+<p class="gatha2">Tayo hetū labhāmahaṃ;</p>
+
+
+
+<p class="gatha3">Dīghāyuko mahā-bhogo,</p>
+
+
+
+<p class="gathalast">Tikkha-pañño bhavāmahaṃ.</p>
+
+
+
+<p class="hangnum">Tha.</p>
+
+
+
+<p class="gatha1"> Saṃkittento <a name="M0.0566"></a> ca sabbesaṃ,</p>
+
+
+
+<p class="gatha2">Adhi-mattañca porisaṃ;</p>
+
+
+
+<p class="gatha3">Bhavābhave saṃsaritvā,</p>
+
+
+
+<p class="gathalast">Ete ṭhāne labhamahaṃ.</p>
+
+
+
+<p class="hangnum">Da.</p>
+
+
+
+<p class="gatha1"> A-parimeyya-sīlesu<a name="M0.0567"></a>,</p>
+
+
+
+<p class="gatha2">Vattantā jina-sāvakā;</p>
+
+
+
+<p class="gatha3">Bhavesu yadi rajjeyyuṃ,</p>
+
+
+
+<p class="gathalast">Vipāko kīdiso bhave.</p>
+
+
+
+<p class="hangnum">Dha.</p>
+
+
+
+<p class="gatha1"> Su-ciṇṇaṃ me pañca-sīlaṃ,</p>
+
+
+
+<p class="gatha2">Bhaṭakena tapassinā;</p>
+
+
+
+<p class="gatha3">Tena sīlenahaṃ ajja,</p>
+
+
+
+<p class="gathalast">Mocayiṃ sabba-bandhanā.</p>
+
+
+
+<p class="hangnum">Na.</p>
+
+
+
+<p class="gatha1"> A-parimeyyito <a name="M0.0568"></a> kappe,</p>
+
+
+
+<p class="gatha2">Pañca-sīlāni gopayiṃ;</p>
+
+
+
+<p class="gatha3">Duggatiṃ nābhijānāmi,</p>
+
+
+
+<p class="gathalast">Pañca-sīlānidaṃ phalaṃ.</p>
+
+
+
+<p class="hangnum">Pa.</p>
+
+
+
+<p class="gatha1"> Paṭisambhidā <a name="M0.0569"></a> catasso,</p>
+
+
+
+<p class="gatha2">Vimokkhāpi ca aṭṭhime;</p>
+
+
+
+<p class="gatha3">Chaḷābhiññā sacchikatā,</p>
+
+
+
+<p class="gathalast">Kataṃ buddhassa sāsanaṃ.</p>
+
+
+
+<p class="hangnum">Ka.</p>
+
+
+
+<p class="gatha1"> Taṃ <a name="M0.0572"></a> namassanti te vijjā,</p>
+
+
+
+<p class="gatha2">Sabbe bhūmā ca khattiyā;</p>
+
+
+
+<p class="gatha3">Cattāro ca mahā-rājā,</p>
+
+
+
+<p class="gatha2">Tidasā ca yasassino;</p>
+
+
+
+<p class="gatha3">Atha ko nāma so yakkho,</p>
+
+
+
+<p class="gathalast">Yaṃ tvaṃ sakka namassasi.</p>
+
+
+
+<p class="hangnum">Kha.</p>
+
+
+
+<p class="gatha1"> Maṃ <a name="M0.0574"></a> namassanti te-vijjā,</p>
+
+
+
+<p class="gatha2">Sabbe bhūmā ca khattiyā;</p>
+
+
+
+<p class="gatha3">Cattāro ca mahā-rājā,</p>
+
+
+
+<p class="gathalast">Tidasā ca yasassino.</p>
+
+
+
+<p class="hangnum">Ga.</p>
+
+
+
+<p class="gatha1"> Ahañca <a name="M0.0575"></a> sīla-sampanne,</p>
+
+
+
+<p class="gatha2">Ciraratta-samāhite;</p>
+
+
+
+<p class="gatha3">Sammā pabbajite vande,</p>
+
+
+
+<p class="gathalast">Brahma-cariya parāyane.</p>
+
+
+
+<p class="hangnum">Gha.</p>
+
+
+
+<p class="gatha1"> Ye <a name="M0.0576"></a> gahaṭṭhā puñña-karā,</p>
+
+
+
+<p class="gatha2">Sīlavanto upāsakā;</p>
+
+
+
+<p class="gatha3">Dhammena dāraṃ posenti,</p>
+
+
+
+<p class="gathalast">Te namassāmi mātali.</p>
+
+
+
+<p class="hangnum">Ṅa.</p>
+
+
+
+<p class="gatha1"> Seṭṭhā <a name="M0.0577"></a> hi kira lokasmiṃ,</p>
+
+
+
+<p class="gatha2">Ye tvaṃ sakka namassasi;</p>
+
+
+
+<p class="gatha3">Ahampi te namassāmi,</p>
+
+
+
+<p class="gathalast">Ye namassasi vāsava.</p>
+
+
+
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> Pālitattheranāgena<a name="M0.0580"></a>,</p>
+
+
+
+<p class="gatha2">Visuddhārāmavāsinā;</p>
+
+
+
+<p class="gatha3">Suticchitānamatthāya,</p>
+
+
+
+<p class="gathalast">Katā naradakkhadīpanī.</p>
+
+
+
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> Pubbācariya-sīhānaṃ<a name="M0.0581"></a>,</p>
+
+
+
+<p class="gatha2">Ālambitvāna nissayaṃ;</p>
+
+
+
+<p class="gatha3">Pālito nāma yo thero,</p>
+
+
+
+<p class="gatha2">Imaṃ gantha su-lekhanī;</p>
+
+
+
+<p class="gatha3">Sundarameva passituṃ,</p>
+
+
+
+<p class="gathalast">Yuñjeyyāthīdha sādhave.</p>
+
+
+
+<p class="bodytext">‘‘Chappadikā’’.</p>
+
+
+
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> Imaṃ <a name="M0.0582"></a> ganthaṃ vācuggato,</p>
+
+
+
+<p class="gatha2">Sace bhavasi māṇava;</p>
+
+
+
+<p class="gatha3">Puṇnamāyaṃ yathā cando,</p>
+
+
+
+<p class="gatha2">Ati-suddho virocati;</p>
+
+
+
+<p class="gatha3">Tatheva tvaṃ puṇṇa-mano,</p>
+
+
+
+<p class="gathalast">Viroca siriyā dhuvaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>.</p>
+
+
+
+<p class="gatha1"> Su-niṭṭhito <a name="M0.0583"></a> ayaṃ gantho,</p>
+
+
+
+<p class="gatha2">Sakkarāje dajhamphiye;</p>
+
+
+
+<p class="gatha3">Poṭṭhapādamhi sūramhi,</p>
+
+
+
+<p class="gathalast">Kālapakkhe catuddasiṃ.</p>
+
+
+
+<p class="hangnum"><a name="para5"></a><span class="paranum">5</span>.</p>
+
+
+
+<p class="gatha1"> Sañcitetaṃ <a name="M0.0584"></a> mayā puññaṃ,</p>
+
+
+
+<p class="gatha2">Taṃ-kammena varena ca;</p>
+
+
+
+<p class="gatha3">Ciraṃ tiṭṭhatu saddhammo,</p>
+
+
+
+<p class="gathalast">A-verā hontu pāṇino.</p>
+
+
+
+<p class="hangnum"><a name="para6"></a><span class="paranum">6</span>.</p>
+
+
+
+<p class="gatha1"> Imaṃ <a name="M0.0585"></a> ganthaṃ passitvāna,</p>
+
+
+
+<p class="gatha2">Hontu sabbepi jantuno;</p>
+
+
+
+<p class="gatha3">Sukhitā dhammikā ñāṇī,</p>
+
+
+
+<p class="gathalast">Dhammaṃ pāletu patthivo.</p>
+
+
+
+<p class="hangnum"><a name="para7"></a><span class="paranum">7</span>.</p>
+
+
+
+<p class="gatha1"> Nibbānaṃ <a name="M0.0586"></a> patthayantena,</p>
+
+
+
+<p class="gatha2">Sīlaṃ rakkhantu sajjanā;</p>
+
+
+
+<p class="gatha3">Ñatvā dhammaṃ sukhāvahaṃ,</p>
+
+
+
+<p class="gathalast">Pāpuṇantu anāsavaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para8"></a><span class="paranum">8</span>.</p>
+
+
+
+<p class="gatha1"> Aṭṭha-kaṇḍa-maṇḍitāya<a name="M0.0587"></a>,</p>
+
+
+
+<p class="gatha2">Dakkhaya attha-dīpako;</p>
+
+
+
+<p class="gatha3">Nara-sāro ayaṃ gantho,</p>
+
+
+
+<p class="gathalast">Cira-kālaṃ patiṭṭhatu.</p>
+
+
+
+<p class="hangnum"><a name="para9"></a><span class="paranum">9</span>.</p>
+
+
+
+<p class="gatha1"> Yāvatā canda-sūriyā,</p>
+
+
+
+<p class="gatha2">Nāgaccheyyuṃ mahī-tale;</p>
+
+
+
+<p class="gatha3">Pamoditā imaṃ ganthaṃ,</p>
+
+
+
+<p class="gathalast">Dissantu naya-kovidā.</p>
+
+
+
+<p class="hangnum"><a name="para10"></a><span class="paranum">10</span>.</p>
+
+
+
+<p class="gatha1"> Sammā <a name="M0.0588"></a> chandenimaṃ gantha,</p>
+
+
+
+<p class="gatha2">Vācentā pariyāpuṇā;</p>
+
+
+
+<p class="gatha3">Pasannenānāyāsena,</p>
+
+
+
+<p class="gathalast">Patvā sukhena kovidaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para11"></a><span class="paranum">11</span>.</p>
+
+
+
+<p class="gatha1"> Candādiccāva <a name="M0.0589"></a> ākāse,</p>
+
+
+
+<p class="gatha2">Bahussutehi sampadā;</p>
+
+
+
+<p class="gatha3">Visesa-puggalā hutvā,</p>
+
+
+
+<p class="gathalast">Pappontu amataṃ padaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para12"></a><span class="paranum">12</span>.</p>
+
+
+
+<p class="gatha1"> Ukkaṭṭha-dhamma-dānena<a name="M0.0590"></a>,</p>
+
+
+
+<p class="gatha2">Pāpuṇeyyamanuttaraṃ;</p>
+
+
+
+<p class="gatha3">Liṅga-sampatti-medhāvī,</p>
+
+
+
+<p class="gathalast">Takkī-paññā su-pesalī.</p>
+
+
+
+<p class="chapter">Naradakkha thomanā āsīsa</p>
+
+
+
+<p class="subhead">3. Gāthā</p>
+
+
+
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> Pālito <a name="M0.0592"></a> pāḷiyā cheko,</p>
+
+
+
+<p class="gatha2">Tvaṃsi gambhīra-ñāṇavā;</p>
+
+
+
+<p class="gatha3">Pāliyāva pālitassa,</p>
+
+
+
+<p class="gathalast">Dadāmidāni bho ahaṃ.</p>
+
+
+
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> Dakkhāvādesu <a name="M0.0593"></a> kusalo,</p>
+
+
+
+<p class="gatha2">Pālito sāsanandharī;</p>
+
+
+
+<p class="gatha3">Piṭakesu ajjhogāyha,</p>
+
+
+
+<p class="gathalast">Naradakkhaṃbhisaṅkharī.</p>
+
+
+
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> Suta-dharena <a name="M0.0595"></a> racitaṃ,</p>
+
+
+
+<p class="gatha2">Etaṃ sāra-gavesino;</p>
+
+
+
+<p class="gatha3">Atandikā su-dakkhantu,</p>
+
+
+
+<p class="gathalast">Aggagga-sāsane ratā.</p>
+
+
+
+<p class="title">Naradakkha thomanā āsīsa</p>
+
+
+
+<p class="subhead">2. Gāthā</p>
+
+
+
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> Ñuṃ <a name="M0.0596"></a> pālitodha jāto yo,</p>
+
+
+
+<p class="gatha2">Thero so abbhutova ñuṃ;</p>
+
+
+
+<p class="gatha3">Ñuṃ mahā-pālito santo,</p>
+
+
+
+<p class="gathalast">Nikāya-pālito ca ñuṃ.</p>
+
+
+
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> Ñuṃ <a name="M0.0598"></a> nara-dakkha-ganthaṃ yaṃ,</p>
+
+
+
+<p class="gatha2">Sovakā nara-dakkha-daṃ;</p>
+
+
+
+<p class="gatha3">Narā dakkhantu sammā ca,</p>
+
+
+
+<p class="gathalast">Dakkhattaṃ pāpuṇantu ñuṃ.</p>
+
+
+
+
+
+</body>
+</html>

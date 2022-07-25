@@ -1,0 +1,11 @@
+此工具1用于1.8.2以前版本pali经典库htm文件bug之修正：
+在打开一些短偈很多的书、以及调整其读经窗口大小时，速度很慢！
+是风格语句的原因，在pali目录下的这些htm文件里，
+.hangnum { font-size: 12pt; position:relative; left:0px; top:38px; z-index:-1; text-indent: 2em;}
+.hangnum { font-size: 12pt; text-indent: 2em;}
+把第一句都改成第二句即可解决，速度就不慢了，从26秒变为4秒。
+但是这个地方以前改过，原始的是：
+.hangnum { font-size: 12pt; margin-bottom: -14.4pt; text-indent: 2em;}
+那时因为速度慢的问题更大、有时翻页都困难，所以改了，没想到还是有问题，
+而且对速度的影响这么大。
+——此bug已修改（不是修改程序，而只是修改pali目录下的每个htm文件中的这一句）。

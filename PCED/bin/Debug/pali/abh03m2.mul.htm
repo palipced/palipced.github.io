@@ -1,0 +1,2358 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title><script>
+function setHitsVisibility(isVisible)
+{ 
+  var c = getStyleClass('hit');
+  if (isVisible)
+  {
+    c.style.backgroundColor = 'blue';
+    c.style.color = 'white';
+  }
+  else
+  {
+    c.style.backgroundColor = 'white';
+    c.style.color = 'black';
+  }
+}
+
+function setFootnotesVisibility(isVisible)
+{
+  getStyleClass('note').style.display = (isVisible ? 'inline' : 'none');
+}
+
+function getStyleClass (className) {
+	for (var s = 0; s < document.styleSheets.length; s++)
+	{
+		if(document.styleSheets[s].rules)
+		{
+			for (var r = 0; r < document.styleSheets[s].rules.length; r++)
+			{
+				if (document.styleSheets[s].rules[r].selectorText == '.' + className)
+				{
+					return document.styleSheets[s].rules[r];
+				}
+			}
+		}
+		else if(document.styleSheets[s].cssRules)
+		{
+			for (var r = 0; r < document.styleSheets[s].cssRules.length; r++)
+			{
+				if (document.styleSheets[s].cssRules[r].selectorText == '.' + className)
+					return document.styleSheets[s].cssRules[r];
+			}
+		}
+	}
+	
+	return null;
+}
+</script><style>
+body { 
+  font-family: "Times Ext Roman", "Indic Times", "Doulos SIL", Tahoma, "Arial Unicode MS", Gentium;
+  background: white;
+}
+
+span {}
+.note {color: blue}
+.bld {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white; }
+
+p {
+  border-top: 0in; border-bottom: 0in;
+  padding-top: 0in; padding-bottom: 0in;
+  margin-top: 0in; margin-bottom: 0.5cm;
+}
+
+.indent { font-size: 12pt; text-indent: 2em; margin-left: 3em;}
+
+.bodytext { font-size: 12pt; text-indent: 2em;}
+
+.hangnum { font-size: 12pt; text-indent: 2em;}
+
+/* Namo tassa, and nitthita -- no unique structural distinction */
+.centered { font-size: 12pt; text-align:center;}
+
+.unindented { font-size: 12pt;}
+
+.book { font-size: 21pt; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 18pt; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 24pt; text-align:center; font-weight: bold;}
+
+.title { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subsubhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+/* Gatha line 1 */
+.gatha1 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { font-size: 12pt; margin-bottom: 0.5cm; margin-left: 4em;}
+</style>
+  </head>
+  <body>
+
+
+
+
+
+<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="nikaya">Abhidhammapiṭake</p>
+
+<a class="khanti" id="a2"></a>
+
+<p class="book">Puggalapaññattipāḷi</p>
+
+
+
+<p class="chapter">Mātikā</p>
+
+
+
+<p class="subhead">1. Ekakauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para1"></span><a name="para1"></a><span class="paranum">1</span>. Cha <a name="T0.0129"></a><a name="P0.0001"></a><a name="M0.0101"></a><a name="V0.0103"></a> paññattiyo – khandhapaññatti, āyatanapaññatti, dhātupaññatti, saccapaññatti, indriyapaññatti, puggalapaññattīti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para2"></span><a name="para2"></a><span class="paranum">2</span>. Kittāvatā khandhānaṃ khandhapaññatti? Yāvatā pañcakkhandhā – rūpakkhandho, vedanākkhandho, saññākkhandho, saṅkhārakkhandho, viññāṇakkhandho; ettāvatā khandhānaṃ khandhapaññatti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para3"></span><a name="para3"></a><span class="paranum">3</span>. Kittāvatā <a name="V0.0104"></a> āyatanānaṃ āyatanapaññatti? Yāvatā dvādasāyatanāni – cakkhāyatanaṃ, rūpāyatanaṃ, sotāyatanaṃ, saddāyatanaṃ, ghānāyatanaṃ, gandhāyatanaṃ, jivhāyatanaṃ, rasāyatanaṃ, kāyāyatanaṃ, phoṭṭhabbāyatanaṃ, manāyatanaṃ, dhammāyatanaṃ; ettāvatā āyatanānaṃ āyatanapaññatti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para4"></span><a name="para4"></a><span class="paranum">4</span>. Kittāvatā <a name="T0.0130"></a> dhātūnaṃ dhātupaññatti? Yāvatā aṭṭhārasa dhātuyo – cakkhudhātu, rūpadhātu, cakkhuviññāṇadhātu, sotadhātu, saddadhātu, sotaviññāṇadhātu, ghānadhātu, gandhadhātu, ghānaviññāṇadhātu, jivhādhātu, rasadhātu, jivhāviññāṇadhātu, kāyadhātu, phoṭṭhabbadhātu, kāyaviññāṇadhātu, manodhātu, dhammadhātu, manoviññāṇadhātu; ettāvatā dhātūnaṃ dhātupaññatti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para5"></span><a name="para5"></a><span class="paranum">5</span>. Kittāvatā <a name="P0.0002"></a><a name="M0.0102"></a> saccānaṃ saccapaññatti? Yāvatā cattāri saccāni – dukkhasaccaṃ, samudayasaccaṃ, nirodhasaccaṃ, maggasaccaṃ; ettāvatā saccānaṃ saccapaññatti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para6"></span><a name="para6"></a><span class="paranum">6</span>. Kittāvatā indriyānaṃ indriyapaññatti? Yāvatā bāvīsatindriyāni – cakkhundriyaṃ, sotindriyaṃ, ghānindriyaṃ, jivhindriyaṃ, kāyindriyaṃ, manindriyaṃ, itthindriyaṃ, purisindriyaṃ, jīvitindriyaṃ, sukhindriyaṃ, dukkhindriyaṃ, somanassindriyaṃ, domanassindriyaṃ, upekkhindriyaṃ, saddhindriyaṃ, vīriyindriyaṃ, satindriyaṃ, samādhindriyaṃ, paññindriyaṃ, anaññātaññassāmītindriyaṃ, yaṃ, aññātāvindriyaṃ; ettāvatā indriyānaṃ indriyapaññatti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para7"></span><a name="para7"></a><span class="paranum">7</span>. <span class="bld">Kittāvatā</span> <a name="T0.0131"></a> <span class="bld">puggalānaṃ puggalapaññatti?</span></p>
+
+
+
+<p class="bodytext">(1) Samayavimutto</p>
+
+
+
+<p class="bodytext">(2) Asamayavimutto</p>
+
+
+
+<p class="bodytext">(3) Kuppadhammo</p>
+
+
+
+<p class="bodytext">(4) Akuppadhammo</p>
+
+
+
+<p class="bodytext">(5) Parihānadhammo</p>
+
+
+
+<p class="bodytext">(6) Aparihānadhammo</p>
+
+
+
+<p class="bodytext">(7) Cetanābhabbo <a name="V0.0105"></a></p>
+
+
+
+<p class="bodytext">(8) Anurakkhaṇābhabbo</p>
+
+
+
+<p class="bodytext">(9) Puthujjano</p>
+
+
+
+<p class="bodytext">(10) Gotrabhū</p>
+
+
+
+<p class="bodytext">(11) Bhayūparato</p>
+
+
+
+<p class="bodytext">(12) Abhayūparato</p>
+
+
+
+<p class="bodytext">(13) Bhabbāgamano</p>
+
+
+
+<p class="bodytext">(14) Abhabbāgamano</p>
+
+
+
+<p class="bodytext">(15) Niyato</p>
+
+
+
+<p class="bodytext">(16) Aniyato</p>
+
+
+
+<p class="bodytext">(17) Paṭipannako <a name="M0.0103"></a></p>
+
+
+
+<p class="bodytext">(18) Phaleṭhito</p>
+
+
+
+<p class="bodytext">(19) Samasīsī</p>
+
+
+
+<p class="bodytext">(20) Ṭhitakappī</p>
+
+
+
+<p class="bodytext">(21) Ariyo</p>
+
+
+
+<p class="bodytext">(22) Anariyo</p>
+
+
+
+<p class="bodytext">(23) Sekkho</p>
+
+
+
+<p class="bodytext">(24) Asekkho</p>
+
+
+
+<p class="bodytext">(25) Nevasekkhanāsekkho</p>
+
+
+
+<p class="bodytext">(26) Tevijjo</p>
+
+
+
+<p class="bodytext">(27) Chaḷabhiñño</p>
+
+
+
+<p class="bodytext">(28) Sammāsambuddho <a name="P0.0003"></a><a name="V0.0106"></a></p>
+
+
+
+<p class="bodytext">(29) Paccekasambuddho <span class="note">[paccekabuddho (sī.)]</span></p>
+
+
+
+<p class="bodytext">(30) Ubhatobhāgavimutto</p>
+
+
+
+<p class="bodytext">(31) Paññāvimutto</p>
+
+
+
+<p class="bodytext">(32) Kāyasakkhī</p>
+
+
+
+<p class="bodytext">(33) Diṭṭhippatto</p>
+
+
+
+<p class="bodytext">(34) Saddhāvimutto</p>
+
+
+
+<p class="bodytext">(35) Dhammānusārī</p>
+
+
+
+<p class="bodytext">(36) Saddhānusārī</p>
+
+
+
+<p class="bodytext">(37) Sattakkhattuparamo</p>
+
+
+
+<p class="bodytext">(38) Kolaṅkolo</p>
+
+
+
+<p class="bodytext">(39) Ekabījī</p>
+
+
+
+<p class="bodytext">(40) Sakadāgāmī <a name="M0.0104"></a></p>
+
+
+
+<p class="bodytext">(41) Anāgāmī</p>
+
+
+
+<p class="bodytext">(42) Antarāparinibbāyī</p>
+
+
+
+<p class="bodytext">(43) Upahaccaparinibbāyī</p>
+
+
+
+<p class="bodytext">(44) Asaṅkhāraparinibbāyī</p>
+
+
+
+<p class="bodytext">(45) Sasaṅkhāraparinibbāyī</p>
+
+
+
+<p class="bodytext">(46) Uddhaṃsotoakaniṭṭhagāmī</p>
+
+
+
+<p class="bodytext">(47) Sotāpanno</p>
+
+
+
+<p class="bodytext">(48) Sotāpattiphalasacchikiriyāya paṭipanno</p>
+
+
+
+<p class="bodytext">(49) Sakadāgāmī <a name="V0.0107"></a></p>
+
+
+
+<p class="bodytext">(50) Sakadāgāmiphalasacchikiriyāya paṭipanno</p>
+
+
+
+<p class="bodytext">(51) Anāgāmī</p>
+
+
+
+<p class="bodytext">(52) Anāgāmiphalasacchikiriyāya paṭipanno</p>
+
+
+
+<p class="bodytext">(53) Arahā</p>
+
+
+
+<p class="bodytext">(54) Arahattaphalasacchikiriyāya <span class="note">[arahattāya (sī.)]</span> paṭipanno</p>
+
+
+
+<p class="centered">Ekakaṃ.</p>
+
+
+
+<p class="subhead">2. Dukauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para8"></span><a name="para8"></a><span class="paranum">8</span>. <span class="bld">Dve</span> <a name="T0.0132"></a> <span class="bld">puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Kodhano ca, upanāhī ca.</p>
+
+
+
+<p class="bodytext">(2) Makkhī ca, paḷāsī <span class="note">[palāsī (syā. ka.)]</span> ca.</p>
+
+
+
+<p class="bodytext">(3) Issukī ca, maccharī ca.</p>
+
+
+
+<p class="bodytext">(4) Saṭho ca, māyāvī ca.</p>
+
+
+
+<p class="bodytext">(5) Ahiriko <a name="M0.0105"></a> ca, anottappī ca.</p>
+
+
+
+<p class="bodytext">(6) Dubbaco ca, pāpamitto ca.</p>
+
+
+
+<p class="bodytext">(7) Indriyesu <a name="P0.0004"></a> aguttadvāro ca, bhojane amattaññū ca.</p>
+
+
+
+<p class="bodytext">(8) Muṭṭhassati ca, asampajāno ca.</p>
+
+
+
+<p class="bodytext">(9) Sīlavipanno ca, diṭṭhivipanno ca.</p>
+
+
+
+<p class="bodytext">(10) Ajjhattasaṃyojano <a name="V0.0108"></a> ca, bahiddhāsaṃyojano ca.</p>
+
+
+
+<p class="bodytext">(11) Akkodhano ca, anupanāhī ca.</p>
+
+
+
+<p class="bodytext">(12) Amakkhī ca, apaḷāsī ca.</p>
+
+
+
+<p class="bodytext">(13) Anissukī ca, amaccharī ca.</p>
+
+
+
+<p class="bodytext">(14) Asaṭho ca, amāyāvī ca.</p>
+
+
+
+<p class="bodytext">(15) Hirimā ca, ottappī ca.</p>
+
+
+
+<p class="bodytext">(16) Suvaco ca, kalyāṇamitto ca.</p>
+
+
+
+<p class="bodytext">(17) Indriyesu guttadvāro ca, bhojane mattaññū ca.</p>
+
+
+
+<p class="bodytext">(18) Upaṭṭhitassati ca, sampajāno ca.</p>
+
+
+
+<p class="bodytext">(19) Sīlasampanno ca, diṭṭhisampanno ca.</p>
+
+
+
+<p class="bodytext">(20) Dve puggalā dullabhā lokasmiṃ.</p>
+
+
+
+<p class="bodytext">(21) Dve puggalā duttappayā.</p>
+
+
+
+<p class="bodytext">(22) Dve puggalā sutappayā.</p>
+
+
+
+<p class="bodytext">(23) Dvinnaṃ puggalānaṃ āsavā vaḍḍhanti.</p>
+
+
+
+<p class="bodytext">(24) Dvinnaṃ puggalānaṃ āsavā na vaḍḍhanti.</p>
+
+
+
+<p class="bodytext">(25) Hīnādhimutto ca, paṇītādhimutto ca.</p>
+
+
+
+<p class="bodytext">(26) Titto ca, tappetā ca.</p>
+
+
+
+<p class="centered">Dukaṃ.</p>
+
+
+
+<p class="subhead">3. Tikauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para9"></span><a name="para9"></a><span class="paranum">9</span>. <span class="bld">Tayo</span> <a name="M0.0106"></a><a name="V0.0109"></a> <span class="bld">puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Nirāso, āsaṃso, vigatāso.</p>
+
+
+
+<p class="bodytext">(2) Tayo gilānūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(3) Kāyasakkhī, diṭṭhippatto, saddhāvimutto.</p>
+
+
+
+<p class="bodytext">(4) Gūthabhāṇī, pupphabhāṇī, madhubhāṇī.</p>
+
+
+
+<p class="bodytext">(5) Arukūpamacitto puggalo, vijjūpamacitto puggalo<a name="T0.0133"></a>, vajirūpamacitto puggalo.</p>
+
+
+
+<p class="bodytext">(6) Andho, ekacakkhu, dvicakkhu.</p>
+
+
+
+<p class="bodytext">(7) Avakujjapañño puggalo, ucchaṅgapañño <span class="note">[uccaṅgupañño (syā.)]</span> puggalo, puthupañño puggalo.</p>
+
+
+
+<p class="bodytext">(8) Atthekacco <a name="P0.0005"></a> puggalo kāmesu ca bhavesu ca avītarāgo, atthekacco puggalo kāmesu vītarāgo bhavesu avītarāgo, atthekacco puggalo kāmesu ca bhavesu ca vītarāgo.</p>
+
+
+
+<p class="bodytext">(9) Pāsāṇalekhūpamo puggalo, pathavilekhūpamo puggalo, udakalekhūpamo puggalo.</p>
+
+
+
+<p class="bodytext">(10) Tayo potthakūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(11) Tayo kāsikavatthūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(12) Suppameyyo, duppameyyo, appameyyo.</p>
+
+
+
+<p class="bodytext">(13) Atthekacco puggalo na sevitabbo na bhajitabbo na payirupāsitabbo, atthekacco puggalo sevitabbo bhajitabbo payirupāsitabbo, atthekacco puggalo sakkatvā garuṃ katvā <span class="note">[garukatvā (sī.)]</span> sevitabbo bhajitabbo payirupāsitabbo.</p>
+
+
+
+<p class="bodytext">(14) Atthekacco <a name="M0.0107"></a> puggalo jigucchitabbo na sevitabbo na bhajitabbo na payirupāsitabbo, atthekacco puggalo ajjhupekkhitabbo na sevitabbo na bhajitabbo na payirupāsitabbo; atthekacco puggalo sevitabbo bhajitabbo payirupāsitabbo.</p>
+
+
+
+<p class="bodytext">(15) Atthekacco puggalo sīlesu paripūrakārī <span class="note">[paripūrīkārī (syā.)]</span>, samādhismiṃ mattaso kārī, paññāya mattaso <a name="V0.0110"></a> kārī; atthekacco puggalo sīlesu ca paripūrakārī, samādhismiñca paripūrakārī, paññāya mattaso kārī; atthekacco puggalo sīlesu ca paripūrakārī, samādhismiñca paripūrakārī, paññāya ca paripūrakārī.</p>
+
+
+
+<p class="bodytext">(16) Tayo satthāro.</p>
+
+
+
+<p class="bodytext">(17) Aparepi tayo satthāro.</p>
+
+
+
+<p class="centered">Tikaṃ.</p>
+
+
+
+<p class="subhead">4. Catukkauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para10"></span><a name="para10"></a><span class="paranum">10</span>. <span class="bld">Cattāro</span> <a name="T0.0134"></a> <span class="bld">puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Asappuriso, asappurisena asappurisataro, sappuriso, sappurisena sappurisataro.</p>
+
+
+
+<p class="bodytext">(2) Pāpo, pāpena pāpataro, kalyāṇo, kalyāṇena kalyāṇataro.</p>
+
+
+
+<p class="bodytext">(3) Pāpadhammo<a name="P0.0006"></a>, pāpadhammena pāpadhammataro, kalyāṇadhammo, kalyāṇadhammena kalyāṇadhammataro.</p>
+
+
+
+<p class="bodytext">(4) Sāvajjo, vajjabahulo, appavajjo <span class="note">[appasāvajjo (syā. ka.) a. ni. 4.135]</span>, anavajjo.</p>
+
+
+
+<p class="bodytext">(5) Ugghaṭitaññū, vipañcitaññū <span class="note">[vipacitaññū (sī.) a. ni. 4.133]</span>, neyyo, padaparamo.</p>
+
+
+
+<p class="bodytext">(6) Yuttappaṭibhāno<a name="M0.0108"></a>, no muttappaṭibhāno, muttappaṭibhāno, no yuttappaṭibhāno, yuttappaṭibhāno ca muttappaṭibhāno ca, neva yuttappaṭibhāno no muttappaṭibhāno.</p>
+
+
+
+<p class="bodytext">(7) Cattāro dhammakathikā puggalā.</p>
+
+
+
+<p class="bodytext">(8) Cattāro valāhakūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(9) Cattāro mūsikūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(10) Cattāro <a name="V0.0111"></a> ambūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(11) Cattāro kumbhūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(12) Cattāro udakarahadūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(13) Cattāro balībaddūpamā <span class="note">[balibaddūpamā (sī.)]</span> puggalā.</p>
+
+
+
+<p class="bodytext">(14) Cattāro āsīvisūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(15) Atthekacco puggalo ananuvicca apariyogāhetvā avaṇṇārahassa vaṇṇaṃ bhāsitā hoti, atthekacco puggalo ananuvicca apariyogāhetvā vaṇṇārahassa avaṇṇaṃ bhāsitā hoti, atthekacco puggalo ananuvicca apariyogāhetvā appasādanīye ṭhāne pasādaṃ upadaṃsitā hoti, atthekacco puggalo ananuvicca apariyogāhetvā pasādanīye ṭhāne appasādaṃ upadaṃsitā hoti.</p>
+
+
+
+<p class="bodytext">(16) Atthekacco puggalo anuvicca pariyogāhetvā avaṇṇārahassa <a name="T0.0135"></a> avaṇṇaṃ bhāsitā hoti, atthekacco puggalo anuvicca pariyogāhetvā vaṇṇārahassa vaṇṇaṃ bhāsitā hoti, atthekacco puggalo anuvicca pariyogāhetvā appasādanīye ṭhāne appasādaṃ upadaṃsitā hoti, atthekacco puggalo anuvicca pariyogāhetvā pasādanīye ṭhāne pasādaṃ upadaṃsitā hoti.</p>
+
+
+
+<p class="bodytext">(17) Atthekacco puggalo avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, no ca kho vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena; atthekacco puggalo vaṇṇārahassa vaṇṇaṃ bhāsitā <a name="M0.0109"></a> hoti bhūtaṃ tacchaṃ kālena, no ca kho avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena; atthekacco puggalo avaṇṇārahassa ca avaṇṇaṃ bhāsitā hoti bhūtaṃ <a name="P0.0007"></a> tacchaṃ kālena; vaṇṇārahassa ca vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, atthekacco puggalo neva avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, no ca vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena.</p>
+
+
+
+<p class="bodytext">(18) Uṭṭhānaphalūpajīvī no puññaphalūpajīvī, puññaphalūpajīvī no uṭṭhānaphalūpajīvī, uṭṭhānaphalūpajīvī ca puññaphalūpajīvī ca, neva uṭṭhānaphalūpajīvī no puññaphalūpajīvī.</p>
+
+
+
+<p class="bodytext">(19) Tamo <a name="V0.0112"></a> tamaparāyano, tamo jotiparāyano, joti tamaparāyano, joti jotiparāyano.</p>
+
+
+
+<p class="bodytext">(20) Oṇatoṇato, oṇatuṇṇato, uṇṇatoṇato, uṇṇatuṇṇato.</p>
+
+
+
+<p class="bodytext">(21) Cattāro rukkhūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(22) Rūpappamāṇo, rūpappasanno, ghosappamāṇo, ghosappasanno.</p>
+
+
+
+<p class="bodytext">(23) Lūkhappamāṇo, lūkhappasanno<a name="T0.0136"></a>, dhammappamāṇo, dhammappasanno.</p>
+
+
+
+<p class="bodytext">(24) Atthekacco puggalo attahitāya paṭipanno hoti, no parahitāya; atthekacco puggalo parahitāya paṭipanno hoti, no attahitāya; atthekacco puggalo attahitāya ceva paṭipanno hoti parahitāya ca; atthekacco puggalo neva attahitāya paṭipanno hoti no parahitāya.</p>
+
+
+
+<p class="bodytext">(25) Atthekacco puggalo attantapo hoti attaparitāpanānuyogamanuyutto; atthekacco puggalo parantapo hoti paraparitāpanānuyogamanuyutto; atthekacco puggalo attantapo ca hoti attaparitāpanānuyogamanuyutto<a name="M0.0110"></a>, parantapo ca paraparitāpanānuyogamanuyutto; atthekacco puggalo neva attantapo hoti na attaparitāpanānuyogamanuyutto, na parantapo na paraparitāpanānuyogamanuyutto. So anattantapo aparantapo diṭṭheva dhamme nicchāto nibbuto sītībhūto <span class="note">[sītibhūto (sī. ka.)]</span> sukhappaṭisaṃvedī brahmabhūtena attanā viharati.</p>
+
+
+
+<p class="bodytext">(26) Sarāgo, sadoso, samoho, samāno.</p>
+
+
+
+<p class="bodytext">(27) Atthekacco puggalo lābhī hoti ajjhattaṃ cetosamathassa, na lābhī adhipaññādhammavipassanāya; atthekacco <a name="P0.0008"></a> puggalo lābhī hoti adhipaññādhammavipassanāya, na lābhī ajjhattaṃ cetosamathassa; atthekacco puggalo lābhī ceva hoti ajjhattaṃ cetosamathassa, lābhī ca adhipaññādhammavipassanāya; atthekacco puggalo neva lābhī hoti ajjhattaṃ cetosamathassa, na lābhī adhipaññādhammavipassanāya.</p>
+
+
+
+<p class="bodytext">(28) Anusotagāmī <a name="V0.0113"></a> puggalo, paṭisotagāmī puggalo, ṭhitatto puggalo, tiṇṇo pāraṅgato <span class="note">[pāragato (sī. syā.)]</span> thale tiṭṭhati brāhmaṇo.</p>
+
+
+
+<p class="bodytext">(29) Appassuto <a name="T0.0137"></a> sutena anupapanno, appassuto sutena upapanno, bahussuto sutena anupapanno, bahussuto sutena upapanno.</p>
+
+
+
+<p class="bodytext">(30) Samaṇamacalo, samaṇapadumo, samaṇapuṇḍarīko, samaṇesu samaṇasukhumālo.</p>
+
+
+
+<p class="centered">Catukkaṃ.</p>
+
+
+
+<p class="subhead">5. Pañcakauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para11"></span><a name="para11"></a><span class="paranum">11</span>. <span class="bld">Pañca puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Atthekacco puggalo ārabhati <span class="note">[ārambhati (sī. syā.)]</span> ca vippaṭisārī ca hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā <a name="M0.0111"></a> akusalā dhammā aparisesā nirujjhanti. Atthekacco puggalo ārabhati na vippaṭisārī ca hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā akusalā dhammā aparisesā nirujjhanti. Atthekacco puggalo nārabhati vippaṭisārī ca hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā akusalā dhammā aparisesā nirujjhanti. Atthekacco puggalo nārabhati na vippaṭisārī hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā akusalā dhammā aparisesā nirujjhanti. Atthekacco puggalo nārabhati na vippaṭisārī hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ pajānāti, yatthassa te uppannā pāpakā akusalā dhammā aparisesā <a name="T0.0138"></a> nirujjhanti.</p>
+
+
+
+<p class="bodytext">(2) Datvā <a name="P0.0009"></a><a name="V0.0114"></a> avajānāti, saṃvāsena avajānāti, ādheyyamukho hoti, lolo hoti, mando momūho hoti.</p>
+
+
+
+<p class="bodytext">(3) Pañca yodhājīvūpamā puggalā.</p>
+
+
+
+<p class="bodytext">(4) Pañca piṇḍapātikā.</p>
+
+
+
+<p class="bodytext">(5) Pañca khalupacchābhattikā.</p>
+
+
+
+<p class="bodytext">(6) Pañca ekāsanikā.</p>
+
+
+
+<p class="bodytext">(7) Pañca paṃsukūlikā.</p>
+
+
+
+<p class="bodytext">(8) Pañca tecīvarikā.</p>
+
+
+
+<p class="bodytext">(9) Pañca āraññikā.</p>
+
+
+
+<p class="bodytext">(10) Pañca rukkhamūlikā.</p>
+
+
+
+<p class="bodytext">(11) Pañca abbhokāsikā.</p>
+
+
+
+<p class="bodytext">(12) Pañca nesajjikā.</p>
+
+
+
+<p class="bodytext">(13) Pañca yathāsanthatikā.</p>
+
+
+
+<p class="bodytext">(14) Pañca sosānikā.</p>
+
+
+
+<p class="centered">Pañcakaṃ.</p>
+
+
+
+<p class="subhead">6. Chakkauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para12"></span><a name="para12"></a><span class="paranum">12</span>. <span class="bld">Cha</span> <a name="M0.0112"></a> <span class="bld">puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Atthekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati, tattha ca sabbaññutaṃ pāpuṇāti balesu <span class="note">[phalesu (pī.)]</span> ca vasībhāvaṃ. Atthekacco puggalo pubbe ananussutesu dhammesu <a name="V0.0115"></a> sāmaṃ saccāni abhisambujjhati, na ca tattha sabbaññutaṃ pāpuṇāti na ca balesu vasībhāvaṃ. Atthekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati, diṭṭhe ceva dhamme dukkhassantakaro hoti sāvakapāramiñca pāpuṇāti. Atthekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati<a name="T0.0139"></a>, diṭṭheva dhamme dukkhassantakaro hoti, na ca sāvakapāramiṃ pāpuṇāti. Atthekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati, na ca diṭṭheva dhamme dukkhassantakaro hoti, anāgāmī hoti anāgantā <span class="note">[anāgantvā (syā. ka.) a. ni. 4.171]</span> itthattaṃ. Atthekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati, na ca diṭṭheva dhamme dukkhassantakaro hoti, āgāmī <span class="note">[sotāpannasakadāgāmī (syā. ka.)]</span> hoti āgantā itthattaṃ.</p>
+
+
+
+<p class="centered">Chakkaṃ.</p>
+
+
+
+<p class="subhead">7. Sattakauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para13"></span><a name="para13"></a><span class="paranum">13</span>. <span class="bld">Satta puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Satta <a name="P0.0010"></a> udakūpamā puggalā. Sakiṃ nimuggo nimuggova hoti, ummujjitvā nimujjati, ummujjitvā ṭhito hoti, ummujjitvā vipassati viloketi, ummujjitvā patarati, ummujjitvā paṭigādhappatto hoti, ummujjitvā tiṇṇo hoti pāraṅgato thale tiṭṭhati brāhmaṇo.</p>
+
+
+
+<p class="bodytext">(2) Ubhatobhāgavimutto<a name="M0.0113"></a>, paññāvimutto, kāyasakkhī, diṭṭhippatto, saddhāvimutto, dhammānusārī, saddhānusārī.</p>
+
+
+
+<p class="centered">Sattakaṃ.</p>
+
+
+
+<p class="subhead">8. Aṭṭhakauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para14"></span><a name="para14"></a><span class="paranum">14</span>. <span class="bld">Aṭṭha <a name="V0.0116"></a> puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Cattāro maggasamaṅgino, cattāro phalasamaṅgino puggalā.</p>
+
+
+
+<p class="centered">Aṭṭhakaṃ.</p>
+
+
+
+<p class="subhead">9. Navakauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para15"></span><a name="para15"></a><span class="paranum">15</span>. <span class="bld">Nava</span> <a name="T0.0140"></a> <span class="bld">puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Sammāsambuddho, paccekasambuddho, ubhatobhāgavimutto, paññāvimutto, kāyasakkhī, diṭṭhippatto, saddhāvimutto, dhammānusārī, saddhānusārī.</p>
+
+
+
+<p class="centered">Navakaṃ.</p>
+
+
+
+<p class="subhead">10. Dasakauddeso</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a2_para16"></span><a name="para16"></a><span class="paranum">16</span>. <span class="bld">Dasa puggalā –</span></p>
+
+
+
+<p class="bodytext">(1) Pañcannaṃ idha niṭṭhā, pañcannaṃ idha vihāya niṭṭhā.</p>
+
+
+
+<p class="centered">Dasakaṃ.</p>
+
+
+
+<p class="centered">Puggalapaññattimātikā niṭṭhitā.</p>
+
+ <a class="khanti" id="a3"></a>
+
+<p class="chapter">Niddeso</p>
+
+
+
+<p class="subhead">1. Ekakapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para1"></span><a name="para1"></a><span class="paranum">1</span>. Katamo <a name="P0.0011"></a><a name="M0.0114"></a><a name="V0.0117"></a> ca puggalo samayavimutto? Idhekacco puggalo kālena kālaṃ samayena samayaṃ aṭṭha vimokkhe kāyena phusitvā <span class="note">[phassitvā (sī. pī.)]</span> viharati, paññāya cassa disvā ekacce āsavā parikkhīṇā honti – ayaṃ vuccati puggalo ‘‘samayavimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para2"></span><a name="para2"></a><span class="paranum">2</span>. Katamo ca puggalo asamayavimutto? Idhekacco puggalo na <a name="T0.0141"></a> heva kho kālena kālaṃ samayena samayaṃ aṭṭha vimokkhe kāyena phusitvā viharati, paññāya cassa disvā āsavā parikkhīṇā honti – ayaṃ vuccati puggalo ‘‘asamayavimutto’’. Sabbepi ariyapuggalā ariye vimokkhe asamayavimuttā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para3"></span><a name="para3"></a><span class="paranum">3</span>. Katamo ca puggalo kuppadhammo? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ. So ca kho na nikāmalābhī hoti na akicchalābhī na akasiralābhī; na yatthicchakaṃ yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Ṭhānaṃ kho panetaṃ vijjati, yaṃ tassa puggalassa pamādamāgamma tā samāpattiyo kuppeyyuṃ – ayaṃ vuccati puggalo ‘‘kuppadhammo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para4"></span><a name="para4"></a><span class="paranum">4</span>. Katamo ca puggalo akuppadhammo? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ. So ca kho nikāmalābhī hoti akicchalābhī akasiralābhī; yatthicchakaṃ yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Aṭṭhānametaṃ anavakāso <a name="V0.0118"></a> yaṃ tassa puggalassa pamādamāgamma tā samāpattiyo kuppeyyuṃ – ayaṃ vuccati puggalo ‘‘akuppadhammo’’. Sabbepi ariyapuggalā ariye vimokkhe akuppadhammā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para5"></span><a name="para5"></a><span class="paranum">5</span>. Katamo ca puggalo parihānadhammo? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ <a name="P0.0012"></a> vā samāpattīnaṃ. So ca kho na nikāmalābhī hoti na akicchalābhī na akasiralābhī; na <a name="M0.0115"></a> yatthicchakaṃ <a name="T0.0142"></a> yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Ṭhānaṃ kho panetaṃ vijjati, yaṃ so puggalo pamādamāgamma tāhi samāpattīhi parihāyeyya – ayaṃ vuccati puggalo ‘‘parihānadhammo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para6"></span><a name="para6"></a><span class="paranum">6</span>. Katamo ca puggalo aparihānadhammo? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ. So ca kho nikāmalābhī hoti akicchalābhī akasiralābhī; yatthicchakaṃ yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Aṭṭhānametaṃ anavakāso yaṃ so puggalo pamādamāgamma tāhi samāpattīhi parihāyeyya – ayaṃ vuccati puggalo ‘‘aparihānadhammo’’. Sabbepi ariyapuggalā ariye vimokkhe aparihānadhammā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para7"></span><a name="para7"></a><span class="paranum">7</span>. Katamo ca puggalo cetanābhabbo? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ. So ca kho na nikāmalābhī hoti na akicchalābhī na akasiralābhī; na yatthicchakaṃ yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Sace anusañceteti, na parihāyati tāhi samāpattīhi. Sace na anusañceteti, parihāyati tāhi samāpattīhi – ayaṃ vuccati puggalo ‘‘cetanābhabbo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para8"></span><a name="para8"></a><span class="paranum">8</span>. Katamo ca puggalo anurakkhaṇābhabbo? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ. So ca kho na nikāmalābhī hoti na akicchalābhī na akasiralābhī; na yatthicchakaṃ yadicchakaṃ yāvaticchakaṃ samāpajjatipi vuṭṭhātipi. Sace anurakkhati, na <a name="T0.0143"></a> parihāyati tāhi samāpattīhi. Sace na anurakkhati, parihāyati tāhi samāpattīhi – ayaṃ vuccati puggalo ‘‘anurakkhaṇābhabbo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para9"></span><a name="para9"></a><span class="paranum">9</span>. Katamo <a name="V0.0119"></a> ca puggalo puthujjano? Yassa puggalassa tīṇi saṃyojanāni appahīnāni; na ca tesaṃ dhammānaṃ pahānāya paṭipanno – ayaṃ vuccati puggalo ‘‘puthujjano’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para10"></span><a name="para10"></a><span class="paranum">10</span>. Katamo ca puggalo gotrabhū? Yesaṃ <a name="P0.0013"></a> dhammānaṃ samanantarā ariyadhammassa avakkanti hoti tehi dhammehi samannāgato – ayaṃ vuccati puggalo ‘‘gotrabhū’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para11"></span><a name="para11"></a><span class="paranum">11</span>. Katamo <a name="M0.0116"></a> ca puggalo bhayūparato? Satta sekkhā bhayūparatā, ye ca puthujjanā sīlavanto. Arahā abhayūparato.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para12"></span><a name="para12"></a><span class="paranum">12</span>. Katamo ca puggalo abhabbāgamano? Ye te puggalā kammāvaraṇena samannāgatā, kilesāvaraṇena samannāgatā, vipākāvaraṇena samannāgatā, assaddhā acchandikā duppaññā eḷā, abhabbā niyāmaṃ okkamituṃ kusalesu dhammesu sammattaṃ – ime vuccanti puggalā ‘‘abhabbāgamanā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para13"></span><a name="para13"></a><span class="paranum">13</span>. Katamo ca puggalo bhabbāgamano? Ye te puggalā na kammāvaraṇena samannāgatā, na kilesāvaraṇena samannāgatā, na vipākāvaraṇena samannāgatā, saddhā chandikā paññavanto <span class="note">[paññavantā (sī.)]</span> aneḷā, bhabbā niyāmaṃ okkamituṃ kusalesu dhammesu sammattaṃ – ime vuccanti puggalā ‘‘bhabbāgamanā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para14"></span><a name="para14"></a><span class="paranum">14</span>. Katamo <a name="T0.0144"></a> ca puggalo niyato? Pañca puggalā ānantarikā, ye ca micchādiṭṭhikā niyatā, aṭṭha ca ariyapuggalā niyatā. Avasesā puggalā aniyatā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para15"></span><a name="para15"></a><span class="paranum">15</span>. Katamo ca puggalo paṭipannako? Cattāro maggasamaṅgino puggalā paṭipannakā, cattāro phalasamaṅgino puggalā phale ṭhitā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para16"></span><a name="para16"></a><span class="paranum">16</span>. Katamo ca puggalo samasīsī? Yassa puggalassa apubbaṃ acarimaṃ āsavapariyādānañca hoti jīvitapariyādānañca – ayaṃ vuccati puggalo ‘‘samasīsī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para17"></span><a name="para17"></a><span class="paranum">17</span>. Katamo <a name="V0.0120"></a> ca puggalo ṭhitakappī? Ayañca puggalo sotāpattiphalasacchikiriyāya paṭipanno assa, kappassa ca uḍḍayhanavelā assa, neva tāva kappo uḍḍayheyya yāvāyaṃ puggalo na sotāpattiphalaṃ sacchikaroti. Ayaṃ vuccati puggalo ‘‘ṭhitakappī’’. Sabbepi <a name="P0.0014"></a> maggasamaṅgino puggalā ṭhitakappino.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para18"></span><a name="para18"></a><span class="paranum">18</span>. Katamo ca puggalo ariyo? Aṭṭha ariyapuggalā ariyā. Avasesā puggalā anariyā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para19"></span><a name="para19"></a><span class="paranum">19</span>. Katamo <a name="M0.0117"></a> ca puggalo sekkho? Cattāro maggasamaṅgino tayo phalasamaṅgino puggalā ‘‘sekkhā’’. Arahā asekkho. Avasesā puggalā nevasekkhanāsekkhā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para20"></span><a name="para20"></a><span class="paranum">20</span>. Katamo ca puggalo tevijjo? Tīhi vijjāhi samannāgato puggalo <a name="T0.0145"></a> ‘‘tevijjo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para21"></span><a name="para21"></a><span class="paranum">21</span>. Katamo ca puggalo chaḷabhiñño? Chahi abhiññāhi samannāgato puggalo ‘‘chaḷabhiñño’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para22"></span><a name="para22"></a><span class="paranum">22</span>. Katamo ca puggalo sammāsambuddho? Idhekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati; tattha ca sabbaññutaṃ pāpuṇāti, balesu ca vasībhāvaṃ – ayaṃ vuccati puggalo ‘‘sammāsambuddho’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para23"></span><a name="para23"></a><span class="paranum">23</span>. Katamo ca puggalo paccekasambuddho? Idhekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati; na ca tattha sabbaññutaṃ pāpuṇāti, na ca balesu vasībhāvaṃ – ayaṃ vuccati puggalo ‘‘paccekasambuddho’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para24"></span><a name="para24"></a><span class="paranum">24</span>. Katamo ca puggalo ubhatobhāgavimutto? Idhekacco puggalo aṭṭha vimokkhe kāyena phusitvā viharati; paññāya cassa disvā āsavā parikkhīṇā honti – ayaṃ vuccati puggalo ‘‘ubhatobhāgavimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para25"></span><a name="para25"></a><span class="paranum">25</span>. Katamo <a name="V0.0121"></a> ca puggalo paññāvimutto? Idhekacco puggalo na heva kho aṭṭha vimokkhe kāyena phusitvā viharati; paññāya cassa disvā āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo ‘‘paññāvimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para26"></span><a name="para26"></a><span class="paranum">26</span>. Katamo ca puggalo kāyasakkhī? Idhekacco puggalo aṭṭha vimokkhe kāyena phusitvā viharati<a name="P0.0015"></a>; paññāya cassa disvā ekacce <a name="T0.0146"></a> āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo ‘‘kāyasakkhī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para27"></span><a name="para27"></a><span class="paranum">27</span>. Katamo ca puggalo diṭṭhippatto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Tathāgatappaveditā cassa <a name="M0.0118"></a> dhammā paññāya vodiṭṭhā honti vocaritā. Paññāya cassa disvā ekacce āsavā parikkhīṇā honti – ayaṃ vuccati puggalo ‘‘diṭṭhippatto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para28"></span><a name="para28"></a><span class="paranum">28</span>. Katamo ca puggalo saddhāvimutto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Tathāgatappaveditā cassa dhammā paññāya vodiṭṭhā honti vocaritā. Paññāya cassa disvā ekacce āsavā parikkhīṇā honti, no ca kho yathā diṭṭhippattassa – ayaṃ vuccati puggalo ‘‘saddhāvimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para29"></span><a name="para29"></a><span class="paranum">29</span>. Katamo ca puggalo dhammānusārī? Yassa puggalassa sotāpattiphalasacchikiriyāya paṭipannassa paññindriyaṃ adhimattaṃ hoti, paññāvāhiṃ paññāpubbaṅgamaṃ ariyamaggaṃ bhāveti – ayaṃ vuccati puggalo ‘‘dhammānusārī’’. Sotāpattiphalasacchikiriyāya paṭipanno puggalo dhammānusārī phale ṭhito diṭṭhippatto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para30"></span><a name="para30"></a><span class="paranum">30</span>. Katamo <a name="T0.0147"></a> ca puggalo saddhānusārī? Yassa puggalassa sotāpattiphalasacchikiriyāya paṭipannassa saddhindriyaṃ adhimattaṃ hoti, saddhāvāhiṃ saddhāpubbaṅgamaṃ ariyamaggaṃ bhāveti – ayaṃ vuccati <a name="V0.0122"></a> puggalo ‘‘saddhānusārī’’. Sotāpattiphalasacchikiriyāya paṭipanno puggalo saddhānusārī phale ṭhito saddhāvimutto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para31"></span><a name="para31"></a><span class="paranum">31</span>. Katamo ca puggalo sattakkhattuparamo? Idhekacco puggalo tiṇṇaṃ saṃyojanānaṃ parikkhayā sotāpanno <a name="P0.0016"></a> hoti avinipātadhammo niyato sambodhiparāyano <span class="note">[sambodhiparāyaṇo (sī. ka.)]</span>. So sattakkhattuṃ deve ca mānuse ca sandhāvitvā saṃsaritvā dukkhassantaṃ karoti – ayaṃ vuccati puggalo ‘‘sattakkhattuparamo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para32"></span><a name="para32"></a><span class="paranum">32</span>. Katamo ca puggalo kolaṅkolo? Idhekacco puggalo tiṇṇaṃ saṃyojanānaṃ parikkhayā sotāpanno hoti avinipātadhammo niyato <a name="M0.0119"></a> sambodhiparāyano. So dve vā tīṇi vā kulāni sandhāvitvā saṃsaritvā dukkhassantaṃ karoti – ayaṃ vuccati puggalo ‘‘kolaṅkolo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para33"></span><a name="para33"></a><span class="paranum">33</span>. Katamo ca puggalo ekabījī? Idhekacco puggalo tiṇṇaṃ saṃyojanānaṃ parikkhayā sotāpanno hoti avinipātadhammo niyato sambodhiparāyano. So ekaṃyeva mānusakaṃ bhavaṃ nibbattetvā dukkhassantaṃ karoti – ayaṃ vuccati puggalo ‘‘ekabījī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para34"></span><a name="para34"></a><span class="paranum">34</span>. Katamo ca puggalo sakadāgāmī? Idhekacco puggalo tiṇṇaṃ saṃyojanānaṃ parikkhayā rāgadosamohānaṃ tanuttā sakadāgāmī hoti<a name="T0.0148"></a>, sakideva imaṃ lokaṃ āgantvā dukkhassantaṃ karoti – ayaṃ vuccati puggalo ‘‘sakadāgāmī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para35"></span><a name="para35"></a><span class="paranum">35</span>. Katamo ca puggalo anāgāmī? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ parikkhayā opapātiko hoti, tattha parinibbāyī anāvattidhammo tasmā lokā – ayaṃ vuccati puggalo ‘‘anāgāmī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para36"></span><a name="para36"></a><span class="paranum">36</span>. Katamo ca puggalo antarāparinibbāyī? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ parikkhayā opapātiko hoti, tattha parinibbāyī anāvattidhammo tasmā lokā. So upapannaṃ vā samanantarā appattaṃ vā vemajjhaṃ āyuppamāṇaṃ ariyamaggaṃ sañjaneti upariṭṭhimānaṃ saṃyojanānaṃ pahānāya – ayaṃ vuccati puggalo ‘‘antarāparinibbāyī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para37"></span><a name="para37"></a><span class="paranum">37</span>. Katamo <a name="V0.0123"></a> ca puggalo upahaccaparinibbāyī? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ <a name="P0.0017"></a> parikkhayā opapātiko hoti, tattha parinibbāyī anāvattidhammo tasmā lokā. So atikkamitvā vemajjhaṃ āyuppamāṇaṃ upahacca vā kālakiriyaṃ <span class="note">[kālaṃ kiriyaṃ (ka.)]</span> ariyamaggaṃ sañjaneti upariṭṭhimānaṃ saṃyojanānaṃ pahānāya – ayaṃ vuccati puggalo ‘‘upahaccaparinibbāyī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para38"></span><a name="para38"></a><span class="paranum">38</span>. Katamo ca puggalo asaṅkhāraparinibbāyī? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ parikkhayā opapātiko hoti, tattha <a name="T0.0149"></a> parinibbāyī <a name="M0.0120"></a> anāvattidhammo tasmā lokā. So asaṅkhārena ariyamaggaṃ sañjaneti upariṭṭhimānaṃ saṃyojanānaṃ pahānāya – ayaṃ vuccati puggalo ‘‘asaṅkhāraparinibbāyī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para39"></span><a name="para39"></a><span class="paranum">39</span>. Katamo ca puggalo sasaṅkhāraparinibbāyī? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ parikkhayā opapātiko hoti, tattha parinibbāyī anāvattidhammo tasmā lokā. So sasaṅkhārena ariyamaggaṃ sañjaneti upariṭṭhimānaṃ saṃyojanānaṃ pahānāya – ayaṃ vuccati puggalo ‘‘sasaṅkhāraparinibbāyī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para40"></span><a name="para40"></a><span class="paranum">40</span>. Katamo ca puggalo uddhaṃsoto akaniṭṭhagāmī? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ parikkhayā opapātiko hoti, tattha parinibbāyī anāvattidhammo tasmā lokā. So avihā cuto atappaṃ gacchati, atappā cuto sudassaṃ gacchati, sudassā cuto sudassiṃ gacchati, sudassiyā cuto akaniṭṭhaṃ gacchati; akaniṭṭhe ariyamaggaṃ sañjaneti upariṭṭhimānaṃ saṃyojanānaṃ pahānāya – ayaṃ vuccati puggalo ‘‘uddhaṃsoto akaniṭṭhagāmī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para41"></span><a name="para41"></a><span class="paranum">41</span>. Katamo ca puggalo sotāpanno sotāpattiphalasacchikiriyāya paṭipanno? Tiṇṇaṃ saṃyojanānaṃ pahānāya paṭipanno puggalo sotāpattiphalasacchikiriyāya paṭipanno. Yassa puggalassa tīṇi saṃyojanāni pahīnāni – ayaṃ vuccati puggalo ‘‘sotāpanno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para42"></span><a name="para42"></a><span class="paranum">42</span>. Kāmarāgabyāpādānaṃ tanubhāvāya paṭipanno puggalo sakadāgāmiphalasacchikiriyāya paṭipanno<a name="V0.0124"></a>. Yassa <a name="T0.0150"></a> puggalassa kāmarāgabyāpādā tanubhūtā – ayaṃ vuccati puggalo ‘‘sakadāgāmī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para43"></span><a name="para43"></a><span class="paranum">43</span>. Kāmarāgabyāpādānaṃ anavasesappahānāya paṭipanno puggalo <a name="P0.0018"></a> anāgāmiphalasacchikiriyāya paṭipanno. Yassa puggalassa kāmarāgabyāpādā anavasesā pahīnā – ayaṃ vuccati puggalo ‘‘anāgāmī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para44"></span><a name="para44"></a><span class="paranum">44</span>. Rūparāgaarūparāgamānauddhaccaavijjāya anavasesappahānāya paṭipanno puggalo arahattaphalasacchikiriyāya paṭipanno. Yassa puggalassa rūparāgo <a name="M0.0121"></a> arūparāgo māno uddhaccaṃ avijjā anavasesā pahīnā – ayaṃ vuccati puggalo ‘‘arahā’’.</p>
+
+
+
+<p class="centered">Ekakaniddeso.</p>
+
+
+
+<p class="subhead">2. Dukapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para45"></span><a name="para45"></a><span class="paranum">45</span>. Katamo ca puggalo kodhano? Tattha katamo kodho? Yo kodho kujjhanā kujjhitattaṃ doso dussanā dussitattaṃ <span class="note">[dūsanā dūsitattaṃ (syā.)]</span> byāpatti byāpajjanā byāpajjitattaṃ virodho paṭivirodho caṇḍikkaṃ asuropo anattamanatā cittassa – ayaṃ vuccati kodho. Yassa puggalassa ayaṃ kodho appahīno – ayaṃ vuccati puggalo ‘‘kodhano’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para46"></span><a name="para46"></a><span class="paranum">46</span>. Katamo ca puggalo upanāhī? Tattha katamo upanāho? Pubbakālaṃ kodho aparakālaṃ upanāho. Yo evarūpo upanāho upanayhanā upanayhitattaṃ aṭṭhapanā <span class="note">[āṭhapanā (ka.) vibha. 891]</span> ṭhapanā saṇṭhapanā anusaṃsandanā anuppabandhanā daḷhīkammaṃ kodhassa – ayaṃ vuccati upanāho<a name="T0.0151"></a>. Yassa puggalassa ayaṃ upanāho appahīno – ayaṃ vuccati puggalo ‘‘upanāhī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para47"></span><a name="para47"></a><span class="paranum">47</span>. Katamo ca puggalo makkhī? Tattha katamo makkho? Yo makkho makkhāyanā makkhāyitattaṃ <span class="note">[makkhīyanā makkhīyitattaṃ (sī.), makkhiyanā makkhiyitattaṃ (ka.)]</span> <a name="V0.0125"></a> niṭṭhuriyaṃ niṭṭhuriyakammaṃ – ayaṃ vuccati makkho. Yassa puggalassa ayaṃ makkho appahīno – ayaṃ vuccati puggalo ‘‘makkhī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para48"></span><a name="para48"></a><span class="paranum">48</span>. Katamo ca puggalo paḷāsī? Tattha katamo paḷāso? Yo paḷāso paḷāsāyanā paḷāsāyitattaṃ <a name="P0.0019"></a> paḷāsāhāro vivādaṭṭhānaṃ yugaggāho appaṭinissaggo – ayaṃ vuccati paḷāso. Yassa puggalassa ayaṃ paḷāso appahīno – ayaṃ vuccati puggalo ‘‘paḷāsī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para49"></span><a name="para49"></a><span class="paranum">49</span>. Katamo <a name="M0.0122"></a> ca puggalo issukī? Tattha katamā issā? Yā paralābhasakkāragarukāramānanavandanapūjanāsu issā issāyanā issāyitattaṃ usūyā usūyanā <span class="note">[ussuyā ussuyanā (ka.) vibha. 893]</span> usūyitattaṃ – ayaṃ vuccati issā. Yassa puggalassa ayaṃ issā appahīnā – ayaṃ vuccati puggalo ‘‘issukī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para50"></span><a name="para50"></a><span class="paranum">50</span>. Katamo ca puggalo maccharī? Tattha katamaṃ macchariyaṃ? Pañca macchariyāni – āvāsamacchariyaṃ, kulamacchariyaṃ, lābhamacchariyaṃ, vaṇṇamacchariyaṃ, dhammamacchariyaṃ. Yaṃ evarūpaṃ maccheraṃ maccharāyanā maccharāyitattaṃ vevicchaṃ kadariyaṃ kaṭukañcukatā aggahitattaṃ cittassa – idaṃ vuccati macchariyaṃ. Yassa puggalassa idaṃ macchariyaṃ appahīnaṃ – ayaṃ vuccati puggalo ‘‘maccharī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para51"></span><a name="para51"></a><span class="paranum">51</span>. Katamo ca puggalo saṭho? Tattha katamaṃ sāṭheyyaṃ? Idhekacco saṭho hoti parisaṭho. Yaṃ tattha saṭhaṃ saṭhatā sāṭheyyaṃ <a name="T0.0152"></a> kakkaratā kakkariyaṃ <span class="note">[kakkhaḷatā kakkhaḷiyaṃ (syā.) evaṃ khuddakavibhaṅgadukaniddesepi]</span> parikkhattattā pārikkhattiyaṃ – idaṃ vuccati sāṭheyyaṃ. Yassa puggalassa idaṃ sāṭheyyaṃ appahīnaṃ – ayaṃ vuccati puggalo ‘‘saṭho’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para52"></span><a name="para52"></a><span class="paranum">52</span>. Katamo ca puggalo māyāvī? Tattha katamā māyā? Idhekacco kāyena duccaritaṃ caritvā vācāya duccaritaṃ caritvā manasā duccaritaṃ caritvā tassa paṭicchādanahetu pāpikaṃ icchaṃ paṇidahati – ‘‘mā maṃ jaññā’’ti icchati, ‘‘mā maṃ jaññā’’ti saṅkappati ‘‘mā maṃ jaññā’’ti vācaṃ bhāsati, ‘‘mā maṃ jaññā’’ti kāyena parakkamati. Yā evarūpā māyā māyāvitā accāsarā vañcanā nikati vikiraṇā pariharaṇā gūhanā parigūhanā chādanā paṭicchādanā <a name="V0.0126"></a> anuttānīkammaṃ anāvikammaṃ vocchādanā pāpakiriyā – ayaṃ vuccati māyā. Yassa puggalassa ayaṃ māyā appahīnā – ayaṃ vuccati puggalo ‘‘māyāvī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para53"></span><a name="para53"></a><span class="paranum">53</span>. Katamo ca puggalo ahiriko? Tattha katamaṃ ahirikaṃ? Yaṃ <a name="P0.0020"></a> na hirīyati hiriyitabbena na hirīyati pāpakānaṃ akusalānaṃ dhammānaṃ samāpattiyā – idaṃ vuccati ahirikaṃ. Iminā ahirikena samannāgato puggalo ‘‘ahiriko’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para54"></span><a name="para54"></a><span class="paranum">54</span>. Katamo <a name="M0.0123"></a> ca puggalo anottappī? Tattha katamaṃ anottappaṃ? Yaṃ na ottappati ottappitabbena na ottappati pāpakānaṃ akusalānaṃ dhammānaṃ samāpattiyā – idaṃ vuccati anottappaṃ. Iminā anottappena samannāgato puggalo ‘‘anottappī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para55"></span><a name="para55"></a><span class="paranum">55</span>. Katamo ca puggalo dubbaco? Tattha katamo dovacassatā? Sahadhammike vuccamāne dovacassāyaṃ dovacassiyaṃ dovacassatā vippaṭikulaggāhitā <a name="T0.0153"></a> vipaccanīkasātatā anādariyaṃ anādariyatā agāravatā appatissavatā – ayaṃ vuccati dovacassatā. Imāya dovacassatāya samannāgato puggalo ‘‘dubbaco’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para56"></span><a name="para56"></a><span class="paranum">56</span>. Katamo ca puggalo pāpamitto? Tattha katamā pāpamittatā? Ye te puggalā assaddhā dussīlā appassutā maccharino duppaññā, yā tesaṃ sevanā nisevanā saṃsevanā bhajanā sambhajanā bhatti sambhatti sampavaṅkatā – ayaṃ vuccati pāpamittatā. Imāya pāpamittatāya samannāgato puggalo ‘‘pāpamitto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para57"></span><a name="para57"></a><span class="paranum">57</span>. Katamo ca puggalo indriyesu aguttadvāro? Tattha katamā indriyesu aguttadvāratā? Idhekacco puggalo cakkhunā rūpaṃ disvā nimittaggāhī hoti anubyañjanaggāhī; yatvādhikaraṇamenaṃ cakkhundriyaṃ asaṃvutaṃ viharantaṃ abhijjhādomanassā pāpakā akusalā dhammā anvāssaveyyuṃ, tassa saṃvarāya na paṭipajjati, na rakkhati cakkhundriyaṃ, cakkhundriye na saṃvaraṃ āpajjati. Sotena saddaṃ sutvā…pe… ghānena gandhaṃ ghāyitvā…pe… jivhāya rasaṃ sāyitvā…pe… kāyena phoṭṭhabbaṃ phusitvā…pe… manasā dhammaṃ viññāya nimittaggāhī hoti anubyañjanaggāhī; yatvādhikaraṇamenaṃ manindriyaṃ asaṃvutaṃ viharantaṃ <a name="V0.0127"></a> abhijjhādomanassā pāpakā akusalā dhammā anvāssaveyyuṃ, tassa saṃvarāya na paṭipajjati, na rakkhati manindriyaṃ, manindriye <a name="P0.0021"></a> na saṃvaraṃ āpajjati. Yā imesaṃ channaṃ indriyānaṃ agutti agopanā anārakkho asaṃvaro – ayaṃ vuccati indriyesu aguttadvāratā. Imāya indriyesu aguttadvāratāya <a name="T0.0154"></a> samannāgato puggalo ‘‘indriyesu aguttadvāro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para58"></span><a name="para58"></a><span class="paranum">58</span>. Katamo ca puggalo bhojane amattaññū? Tattha katamā bhojane amattaññutā? Idhekacco puggalo appaṭisaṅkhā ayoniso āhāraṃ <a name="M0.0124"></a> āhāreti davāya madāya maṇḍanāya vibhūsanāya, yā tattha asantuṭṭhitā amattaññutā appaṭisaṅkhā bhojane – ayaṃ vuccati bhojane amattaññutā. Imāya bhojane amattaññutāya samannāgato puggalo ‘‘bhojane amattaññū’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para59"></span><a name="para59"></a><span class="paranum">59</span>. Katamo ca puggalo muṭṭhassati? Tattha katamaṃ muṭṭhassaccaṃ? Yā assati ananussati appaṭissati assati assaraṇatā adhāraṇatā pilāpanatā sammusanatā – idaṃ vuccati muṭṭhassaccaṃ. Iminā muṭṭhassaccena samannāgato puggalo ‘‘muṭṭhassati’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para60"></span><a name="para60"></a><span class="paranum">60</span>. Katamo ca puggalo asampajāno? Tattha katamaṃ asampajaññaṃ? Yaṃ aññāṇaṃ adassanaṃ anabhisamayo ananubodho asambodho appaṭivedho asaṅgāhaṇā apariyogāhaṇā <span class="note">[asaṃgāhanā apariyogāhanā (sī. syā. ka.)]</span> asamapekkhaṇā apaccavekkhaṇā apaccakkhakammaṃ dummejjhaṃ bālyaṃ asampajaññaṃ moho pamoho sammoho avijjā avijjogho avijjāyogo avijjānusayo avijjāpariyuṭṭhānaṃ avijjālaṅgī moho akusalamūlaṃ – idaṃ vuccati asampajaññaṃ. Iminā asampajaññena samannāgato puggalo ‘‘asampajāno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para61"></span><a name="para61"></a><span class="paranum">61</span>. Katamo ca puggalo sīlavipanno? Tattha katamā sīlavipatti? Kāyiko vītikkamo vācasiko vītikkamo kāyikavācasiko vītikkamo – ayaṃ vuccati sīlavipatti. Sabbampi dussilyaṃ sīlavipatti. Imāya sīlavipattiyā <a name="T0.0155"></a> samannāgato puggalo ‘‘sīlavipanno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para62"></span><a name="para62"></a><span class="paranum">62</span>. Katamo ca puggalo diṭṭhivipanno? Tattha katamā diṭṭhivipatti? ‘‘Natthi dinnaṃ, natthi yiṭṭhaṃ, natthi hutaṃ, natthi sukatadukkaṭānaṃ <span class="note">[sukaṭadukkaṭānaṃ (sī.)]</span> kammānaṃ phalaṃ vipāko, natthi ayaṃ loko<a name="P0.0022"></a>, natthi paro loko<a name="V0.0128"></a>, natthi mātā, natthi pitā, natthi sattā opapātikā, natthi loke samaṇabrāhmaṇā sammaggatā <span class="note">[samaggatā (ka.)]</span> sammāpaṭipannā ye imañca lokaṃ parañca lokaṃ sayaṃ abhiññā sacchikatvā pavedentī’’ti. Yā evarūpā diṭṭhi diṭṭhigataṃ diṭṭhigahanaṃ diṭṭhikantāro diṭṭhivisūkāyikaṃ diṭṭhivipphanditaṃ diṭṭhisaṃyojanaṃ gāho paṭiggāho abhiniveso parāmāso kummaggo micchāpatho micchattaṃ titthāyatanaṃ vipariyāsaggāho <span class="note">[vipariyesaggāho (sabbattha) padasiddhi cintetabbā]</span>, ayaṃ <a name="M0.0125"></a> vuccati diṭṭhivipatti. Sabbāpi micchādiṭṭhi diṭṭhivipatti. Imāya diṭṭhivipattiyā samannāgato puggalo ‘‘diṭṭhivipanno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para63"></span><a name="para63"></a><span class="paranum">63</span>. Katamo ca puggalo ajjhattasaṃyojano? Yassa puggalassa pañcorambhāgiyāni saṃyojanāni appahīnāni – ayaṃ vuccati puggalo ‘‘ajjhattasaṃyojano’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para64"></span><a name="para64"></a><span class="paranum">64</span>. Katamo ca puggalo bahiddhāsaṃyojano? Yassa puggalassa pañcuddhambhāgiyāni saṃyojanāni appahīnāni – ayaṃ vuccati puggalo ‘‘bahiddhāsaṃyojano’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para65"></span><a name="para65"></a><span class="paranum">65</span>. Katamo ca puggalo akkodhano? Tattha katamo kodho? Yo kodho kujjhanā kujjhitattaṃ doso dussanā dussitattaṃ byāpatti byāpajjanā byāpajjitattaṃ virodho paṭivirodho caṇḍikkaṃ asuropo anattamanatā cittassa – ayaṃ vuccati kodho. Yassa puggalassa ayaṃ kodho pahīno <a name="T0.0156"></a> – ayaṃ vuccati puggalo ‘‘akkodhano’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para66"></span><a name="para66"></a><span class="paranum">66</span>. Katamo ca puggalo anupanāhī? Tattha katamo upanāho? Pubbakālaṃ kodho aparakālaṃ upanāho yo evarūpo upanāho upanayhanā upanayhitattaṃ aṭṭhapanā ṭhapanā saṇṭhapanā anusaṃsandanā anuppabandhanā daḷhīkammaṃ kodhassa – ayaṃ vuccati upanāho. Yassa puggalassa ayaṃ upanāho pahīno – ayaṃ vuccati puggalo ‘‘anupanāhī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para67"></span><a name="para67"></a><span class="paranum">67</span>. Katamo ca puggalo amakkhī? Tattha katamo makkho? Yo makkho makkhāyanā makkhāyitattaṃ niṭṭhuriyaṃ niṭṭhuriyakammaṃ – ayaṃ vuccati makkho. Yassa puggalassa ayaṃ makkho pahīno – ayaṃ vuccati puggalo ‘‘amakkhī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para68"></span><a name="para68"></a><span class="paranum">68</span>. Katamo ca puggalo apaḷāsī? Tattha katamo paḷāso? Yo paḷāso paḷāsāyanā paḷāsāyitattaṃ <a name="V0.0129"></a> paḷāsāhāro vivādaṭṭhānaṃ yugaggāho appaṭinissaggo – ayaṃ vuccati paḷāso. Yassa puggalassa ayaṃ paḷāso pahīno – ayaṃ vuccati puggalo ‘‘apaḷāsī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para69"></span><a name="para69"></a><span class="paranum">69</span>. Katamo <a name="P0.0023"></a><a name="M0.0126"></a> ca puggalo anissukī? Tattha katamā issā? Yā paralābhasakkāragarukāramānanavandanapūjanāsu issā issāyanā issāyitattaṃ usūyā usūyanā usūyitattaṃ – ayaṃ vuccati issā. Yassa puggalassa ayaṃ issā pahīnā – ayaṃ vuccati puggalo ‘‘anissukī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para70"></span><a name="para70"></a><span class="paranum">70</span>. Katamo ca pugalo amaccharī? Tattha katamaṃ macchariyaṃ? Pañca macchariyāni – āvāsamacchariyaṃ, kulamacchariyaṃ, lābhamacchariyaṃ, vaṇṇamacchariyaṃ, dhammamacchariyaṃ. Yaṃ evarūpaṃ maccheraṃ maccharāyanā maccharāyitattaṃ vevicchaṃ kadariyaṃ kaṭukañcukatā <a name="T0.0157"></a> aggahitattaṃ cittassa – idaṃ vuccati macchariyaṃ. Yassa puggalassa idaṃ macchariyaṃ pahīnaṃ – ayaṃ vuccati puggalo ‘‘amaccharī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para71"></span><a name="para71"></a><span class="paranum">71</span>. Katamo ca puggalo asaṭho? Tattha katamaṃ sāṭheyyaṃ? Idhekacco saṭho hoti parisaṭho. Yaṃ tattha saṭhaṃ saṭhatā sāṭheyyaṃ kakkaratā kakkariyaṃ parikkhattatā pārikkhattiyaṃ – idaṃ vuccati sāṭheyyaṃ. Yassa puggalassa idaṃ sāṭheyyaṃ pahīnaṃ – ayaṃ vuccati puggalo ‘‘asaṭho’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para72"></span><a name="para72"></a><span class="paranum">72</span>. Katamo ca puggalo amāyāvī? Tattha katamā māyā? Idhekacco puggalo kāyena duccaritaṃ caritvā vācāya duccaritaṃ caritvā manasā duccaritaṃ caritvā tassa paṭicchādanahetu pāpikaṃ icchaṃ paṇidahati – ‘‘mā maṃ jaññā’’ti icchati, ‘‘mā maṃ jaññā’’ti saṅkappati, ‘‘mā maṃ jaññā’’ti vācaṃ bhāsati, ‘‘mā maṃ jaññā’’ti kāyena parakkamati. Yā evarūpā māyā māyāvitā accāsarā vañcanā nikati vikiraṇā pariharaṇā gūhanā parigūhanā chādanā paṭicchādanā anuttānīkammaṃ anāvikammaṃ vocchādanā pāpakiriyā – ayaṃ vuccati māyā. Yassa puggalassa ayaṃ māyā pahīnā – ayaṃ vuccati puggalo ‘‘amāyāvī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para73"></span><a name="para73"></a><span class="paranum">73</span>. Katamo <a name="V0.0130"></a> ca puggalo hirimā? Tattha katamā hirī? Yaṃ <a name="P0.0024"></a> hirīyati hiriyitabbena hirīyati pāpakānaṃ akusalānaṃ dhammānaṃ samāpattiyā – ayaṃ vuccati hirī. Imāya hiriyā samannāgato puggalo ‘‘hirimā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para74"></span><a name="para74"></a><span class="paranum">74</span>. Katamo ca puggalo ottappī? Tattha katamaṃ ottappaṃ? Yaṃ ottappati ottappitabbena ottappati pāpakānaṃ akusalānaṃ dhammānaṃ samāpattiyā – idaṃ <a name="T0.0158"></a> vuccati ottappaṃ. Iminā ottappena samannāgato puggalo ‘‘ottappī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para75"></span><a name="para75"></a><span class="paranum">75</span>. Katamo <a name="M0.0127"></a> ca puggalo suvaco? Tattha katamā sovacassatā? Sahadhammike vuccamāne sovacassāyaṃ sovacassiyaṃ sovacassatā avippaṭikulaggāhitā avipaccanīkasātatā sādariyaṃ sādariyatā sagāravatā sappatissavatā – ayaṃ vuccati sovacassatā. Imāya sovacassatāya samannāgato puggalo ‘‘suvaco’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para76"></span><a name="para76"></a><span class="paranum">76</span>. Katamo ca puggalo kalyāṇamitto? Tattha katamā kalyāṇamittatā? Ye te puggalā saddhā sīlavanto bahussutā cāgavanto paññavanto, yā tesaṃ sevanā nisevanā saṃsevanā bhajanā sambhajanā bhatti sambhatti sampavaṅkatā – ayaṃ vuccati kalyāṇamittatā. Imāya kalyāṇamittatāya samannāgato puggalo ‘‘kalyāṇamitto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para77"></span><a name="para77"></a><span class="paranum">77</span>. Katamo ca puggalo indriyesu guttadvāro? Tattha katamā indriyesu guttadvāratā? Idhekacco puggalo cakkhunā rūpaṃ disvā na nimittaggāhī hoti nānubyañjanaggāhī; yatvādhikaraṇamenaṃ cakkhundriyaṃ asaṃvutaṃ viharantaṃ abhijjhādomanassā pāpakā akusalā dhammā anvāssaveyyuṃ, tassa saṃvarāya paṭipajjati, rakkhati cakkhundriyaṃ cakkhundriye saṃvaraṃ āpajjati. Sotena saddaṃ sutvā…pe… ghānena gandhaṃ ghāyitvā…pe… jivhāya rasaṃ sāyitvā…pe… kāyena phoṭṭhabbaṃ phusitvā…pe… manasā dhammaṃ viññāya na nimittaggāhī hoti nānubyañjanaggāhī; yatvādhikaraṇamenaṃ manindriyaṃ asaṃvutaṃ viharantaṃ <a name="T0.0159"></a> abhijjhādomanassā pāpakā akusalā dhammā anvāssaveyyuṃ, tassa saṃvarāya paṭipajjati, rakkhati manindriyaṃ, manindriye saṃvaraṃ āpajjati. Yā imesaṃ channaṃ indriyānaṃ gutti gopanā ārakkho saṃvaro <a name="P0.0025"></a> – ayaṃ <a name="V0.0131"></a> vuccati indriyesu guttadvāratā. Imāya indriyesu guttadvāratāya samannāgato puggalo ‘‘indriyesu guttadvāro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para78"></span><a name="para78"></a><span class="paranum">78</span>. Katamo ca puggalo bhojane mattaññū? Tattha katamā bhojane mattaññutā? Idhekacco puggalo paṭisaṅkhā yoniso āhāraṃ āhāreti – ‘‘neva davāya, na madāya, na maṇḍanāya, na vibhūsanāya; yāvadeva imassa kāyassa ṭhitiyā yāpanāya vihiṃsūparatiyā brahmacariyānuggahāya. Iti purāṇañca vedanaṃ paṭihaṅkhāmi, navañca vedanaṃ na uppādessāmi, yātrā ca me bhavissati anavajjatā ca phāsuvihāro cā’’ti. Yā tattha santuṭṭhitā mattaññutā <a name="M0.0128"></a> paṭisaṅkhā bhojane – ayaṃ vuccati bhojane mattaññutā. Imāya bhojane mattaññutāya samannāgato puggalo ‘‘bhojane mattaññū’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para79"></span><a name="para79"></a><span class="paranum">79</span>. Katamo ca puggalo upaṭṭhitassati? Tattha katamā sati? Yā sati anussati paṭissati sati saraṇatā dhāraṇatā apilāpanatā asammusanatā sati satindriyaṃ satibalaṃ sammāsati – ayaṃ vuccati sati. Imāya satiyā samannāgato puggalo ‘‘upaṭṭhitassati’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para80"></span><a name="para80"></a><span class="paranum">80</span>. Katamo ca puggalo sampajāno? Tattha katamaṃ sampajaññaṃ? Yā paññā pajānanā vicayo pavicayo dhammavicayo sallakkhaṇā upalakkhaṇā paccupalakkhaṇā paṇḍiccaṃ kosallaṃ nepuññaṃ vebhabyā cintā upaparikkhā bhūrī medhā pariṇāyikā vipassanā sampajaññaṃ <a name="T0.0160"></a> patodo paññā paññindriyaṃ paññābalaṃ paññāsatthaṃ paññāpāsādo paññāāloko paññāobhāso paññāpajjoto paññāratanaṃ amoho dhammavicayo sammādiṭṭhi – idaṃ vuccati sampajaññaṃ. Iminā sampajaññena samannāgato puggalo ‘‘sampajāno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para81"></span><a name="para81"></a><span class="paranum">81</span>. Katamo ca puggalo sīlasampanno? Tattha katamā sīlasampadā? Kāyiko avītikkamo vācasiko avītikkamo kāyikavācasiko avītikkamo – ayaṃ vuccati sīlasampadā. Sabbopi sīlasaṃvaro sīlasampadā. Imāya sīlasampadāya samannāgato puggalo ‘‘sīlasampanno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para82"></span><a name="para82"></a><span class="paranum">82</span>. Katamo ca puggalo diṭṭhisampanno? Tattha <a name="P0.0026"></a> katamā diṭṭhisampadā? ‘‘Atthi dinnaṃ, atthi <a name="V0.0132"></a> yiṭṭhaṃ, atthi hutaṃ, atthi sukatadukkaṭānaṃ kammānaṃ phalaṃ vipāko, atthi ayaṃ loko, atthi paro loko, atthi mātā, atthi pitā, atthi sattā opapātikā, atthi loke samaṇabrāhmaṇā sammaggatā sammāpaṭipannā ye imañca lokaṃ parañca lokaṃ sayaṃ abhiññā sacchikatvā pavedentī’’ti. Yā evarūpā paññā pajānanā…pe… amoho dhammavicayo sammādiṭṭhi – ayaṃ vuccati diṭṭhisampadā. Sabbāpi sammādiṭṭhi diṭṭhisampadā. Imāya diṭṭhisampadāya samannāgato puggalo ‘‘diṭṭhisampanno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para83"></span><a name="para83"></a><span class="paranum">83</span>. Katame dve puggalā dullabhā lokasmiṃ? Yo ca pubbakārī, yo ca kataññū katavedī – ime dve puggalā dullabhā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para84"></span><a name="para84"></a><span class="paranum">84</span>. Katame <a name="M0.0129"></a> dve puggalā duttappayā? Yo ca laddhaṃ laddhaṃ nikkhipati, yo ca laddhaṃ laddhaṃ vissajjeti – ime dve puggalā ‘‘duttappayā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para85"></span><a name="para85"></a><span class="paranum">85</span>. Katame <a name="T0.0161"></a> dve puggalā sutappayā? Yo ca laddhaṃ laddhaṃ na nikkhipati, yo ca laddhaṃ laddhaṃ na vissajjeti – ime dve puggalā ‘‘sutappayā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para86"></span><a name="para86"></a><span class="paranum">86</span>. Katamesaṃ dvinnaṃ puggalānaṃ āsavā vaḍḍhanti? Yo ca na kukkuccāyitabbaṃ kukkuccāyati, yo ca kukkuccāyitabbaṃ na kukkuccāyati – imesaṃ dvinnaṃ puggalānaṃ āsavā vaḍḍhanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para87"></span><a name="para87"></a><span class="paranum">87</span>. Katamesaṃ dvinnaṃ puggalānaṃ āsavā na vaḍḍhanti? Yo ca na kukkuccāyitabbaṃ na kukkuccāyati, yo ca kukkuccāyitabbaṃ kukkuccāyati – imesaṃ dvinnaṃ puggalānaṃ āsavā na vaḍḍhanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para88"></span><a name="para88"></a><span class="paranum">88</span>. Katamo ca puggalo hīnādhimutto? Idhekacco puggalo dussīlo hoti pāpadhammo, so aññaṃ dussīlaṃ pāpadhammaṃ sevati bhajati payirupāsati – ayaṃ vuccati puggalo ‘‘hīnādhimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para89"></span><a name="para89"></a><span class="paranum">89</span>. Katamo <a name="V0.0133"></a> ca puggalo paṇītādhimutto? Idhekacco puggalo sīlavā hoti kalyāṇadhammo, so aññaṃ sīlavantaṃ kalyāṇadhammaṃ sevati bhajati payirupāsati – ayaṃ vuccati puggalo ‘‘paṇītādhimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para90"></span><a name="para90"></a><span class="paranum">90</span>. Katamo <a name="P0.0027"></a> ca puggalo titto? Paccekasambuddhā <span class="note">[paccekabuddho (sī.)]</span> ye ca tathāgatassa sāvakā arahanto tittā. Sammāsambuddho titto ca tappetā ca <span class="note">[tappetā ca, ayaṃ vuccati puggalo titto (sī.)]</span>.</p>
+
+
+
+<p class="centered">Dukaniddeso.</p>
+
+
+
+<p class="subhead">3. Tikapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para91"></span><a name="para91"></a><span class="paranum">91</span>. Katamo <a name="T0.0162"></a> ca puggalo nirāso? Idhekacco puggalo dussīlo hoti pāpadhammo asuci saṅkassarasamācāro paṭicchannakammanto assamaṇo <a name="M0.0130"></a> samaṇapaṭiñño abrahmacārī brahmacāripaṭiñño antopūti avassuto kasambujāto. So suṇāti – ‘‘itthannāmo kira bhikkhu āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharatī’’ti. Tassa na evaṃ hoti – ‘‘kudāssu nāmāhampi āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharissāmī’’ti. Ayaṃ vuccati puggalo ‘‘nirāso’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para92"></span><a name="para92"></a><span class="paranum">92</span>. Katamo ca puggalo āsaṃso? Idhekacco puggalo sīlavā hoti kalyāṇadhammo. So suṇāti – ‘‘itthannāmo kira bhikkhu āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharatī’’ti. Tassa evaṃ hoti – ‘‘kudāssu nāmāhampi āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharissāmī’’ti. Ayaṃ vuccati puggalo ‘‘āsaṃso’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para93"></span><a name="para93"></a><span class="paranum">93</span>. Katamo ca puggalo vigatāso? Idhekacco puggalo āsavānaṃ khayā anāsavaṃ cetovimuttiṃ <a name="V0.0134"></a> paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati. So suṇāti – ‘‘itthannāmo kira bhikkhu āsavānaṃ khayā anāsavaṃ cetovimuttiṃ <a name="T0.0163"></a> paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharatī’’ti. Tassa na evaṃ hoti – ‘‘kudāssu nāmāhampi āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharissāmī’’ti. Taṃ kissa hetu? Yā hissa pubbe avimuttassa vimuttāsā, sā paṭippassaddhā. Ayaṃ vuccati puggalo ‘‘vigatāso’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para94"></span><a name="para94"></a><span class="paranum">94</span>. Tattha katame tayo gilānūpamā puggalā? Tayo gilānā – idhekacco gilāno labhanto vā sappāyāni bhojanāni <a name="P0.0028"></a> alabhanto vā sappāyāni bhojanāni, labhanto vā sappāyāni bhesajjāni alabhanto vā sappāyāni bhesajjāni, labhanto vā patirūpaṃ upaṭṭhākaṃ alabhanto vā patirūpaṃ upaṭṭhākaṃ, neva vuṭṭhāti tamhā ābādhā. (1)</p>
+
+
+
+<p class="bodytext">Idha panekacco gilāno labhanto vā sappāyāni bhojanāni alabhanto vā sappāyāni bhojanāni, labhanto vā sappāyāni bhesajjāni <a name="M0.0131"></a> alabhanto vā sappāyāni bhesajjāni, labhanto vā patirūpaṃ upaṭṭhākaṃ alabhanto vā patirūpaṃ upaṭṭhākaṃ, vuṭṭhāti tamhā ābādhā. (2)</p>
+
+
+
+<p class="bodytext">Idha panekacco gilāno labhanto sappāyāni bhojanāni no alabhanto, labhanto sappāyāni bhesajjāni no alabhanto, labhanto patirūpaṃ upaṭṭhākaṃ no alabhanto, vuṭṭhāti tamhā ābādhā. (3)</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ gilāno labhanto sappāyāni bhojanāni no alabhanto, labhanto sappāyāni bhesajjāni no alabhanto, labhanto patirūpaṃ upaṭṭhākaṃ <a name="T0.0164"></a> no alabhanto, vuṭṭhāti tamhā ābādhā, imaṃ gilānaṃ paṭicca bhagavatā gilānabhattaṃ anuññātaṃ gilānabhesajjaṃ anuññātaṃ gilānupaṭṭhāko anuññāto. Imañca pana gilānaṃ paṭicca aññepi gilānā upaṭṭhātabbā.</p>
+
+
+
+<p class="bodytext">Evamevaṃ <span class="note">[evameva (sī.)]</span> tayo gilānūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame tayo? Idhekacco puggalo labhanto vā tathāgataṃ dassanāya alabhanto vā tathāgataṃ dassanāya, labhanto vā <a name="V0.0135"></a> tathāgatappaveditaṃ dhammavinayaṃ savaṇāya alabhanto vā tathāgatappaveditaṃ dhammavinayaṃ savaṇāya, neva okkamati niyāmaṃ kusalesu dhammesu sammattaṃ. (1)</p>
+
+
+
+<p class="bodytext">Idha panekacco puggalo labhanto vā tathāgataṃ dassanāya alabhanto vā tathāgataṃ dassanāya, labhanto vā tathāgatappaveditaṃ dhammavinayaṃ savaṇāya alabhanto vā tathāgatappaveditaṃ dhammavinayaṃ savaṇāya, okkamati niyāmaṃ kusalesu dhammesu sammattaṃ. (2)</p>
+
+
+
+<p class="bodytext">Idha panekacco puggalo labhanto tathāgataṃ dassanāya no alabhanto, labhanto tathāgatappaveditaṃ dhammavinayaṃ savaṇāya no alabhanto, okkamati niyāmaṃ kusalesu dhammesu sammattaṃ. (3)</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo labhanto tathāgataṃ dassanāya no alabhanto, labhanto tathāgatappaveditaṃ dhammavinayaṃ savaṇāya no alabhanto<a name="M0.0132"></a>, okkamati niyāmaṃ kusalesu dhammesu sammattaṃ, imaṃ puggalaṃ paṭicca bhagavatā dhammadesanā anuññātā, imañca puggalaṃ paṭicca aññesampi <a name="P0.0029"></a> dhammo desetabbo. Ime tayo gilānūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para95"></span><a name="para95"></a><span class="paranum">95</span>. Katamo <a name="T0.0165"></a> ca puggalo kāyasakkhī? Idhekacco puggalo aṭṭha vimokkhe kāyena phusitvā viharati, paññāya cassa disvā ekacce āsavā parikkhīṇā honti – ayaṃ vuccati puggalo ‘‘kāyasakkhī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para96"></span><a name="para96"></a><span class="paranum">96</span>. Katamo ca puggalo diṭṭhippatto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti, tathāgatappaveditā cassa dhammā paññāya vodiṭṭhā honti vocaritā, paññāya cassa disvā ekacce āsavā parikkhīṇā honti – ayaṃ vuccati puggalo ‘‘diṭṭhippatto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para97"></span><a name="para97"></a><span class="paranum">97</span>. Katamo ca puggalo saddhāvimutto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… tathāgatappaveditā cassa dhammā paññāya vodiṭṭhā honti vocaritā, paññāya cassa <a name="V0.0136"></a> disvā ekacce āsavā parikkhīṇā honti, no ca kho yathādiṭṭhippattassa – ayaṃ vuccati puggalo ‘‘saddhāvimutto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para98"></span><a name="para98"></a><span class="paranum">98</span>. Katamo ca puggalo gūthabhāṇī? Idhekacco puggalo musāvādī hoti sabhaggato vā parisaggato vā ñātimajjhagato vā pūgamajjhagato vā rājakulamajjhagato vā abhinīto sakkhipuṭṭho – ‘‘ehambho <span class="note">[ehi bho (syā. ka.) ma. ni. 1.440; a. ni. 3.28]</span>, purisa, yaṃ jānāsi taṃ vadehī’’ti, so ajānaṃ vā āha – ‘‘jānāmī’’ti, jānaṃ vā āha – ‘‘na jānāmī’’ti, apassaṃ vā āha – ‘‘passāmī’’ti, passaṃ vā āha – ‘‘na passāmī’’ti. Iti attahetu vā parahetu vā āmisakiñcikkhahetu vā <a name="T0.0166"></a> sampajānamusā bhāsitā hoti – ayaṃ vuccati puggalo ‘‘gūthabhāṇī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para99"></span><a name="para99"></a><span class="paranum">99</span>. Katamo <a name="M0.0133"></a> ca puggalo pupphabhāṇī? Idhekacco puggalo musāvādaṃ pahāya musāvādā paṭivirato hoti sabhaggato vā parisaggato vā ñātimajjhagato vā pūgamajjhagato vā rājakulamajjhagato vā abhinīto sakkhipuṭṭho – ‘‘ehambho, purisa, yaṃ jānāsi taṃ vadehī’’ti, so ajānaṃ vā āha – ‘‘na jānāmī’’ti, jānaṃ vā āha – ‘‘jānāmī’’ti, apassaṃ vā āha – ‘‘na passāmī’’ti, passaṃ vā āha – ‘‘passāmī’’ti. Iti attahetu vā parahetu vā āmisakiñcikkhahetu vā na sampajānamusā bhāsitā hoti – ayaṃ vuccati puggalo ‘‘pupphabhāṇī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para100"></span><a name="para100"></a><span class="paranum">100</span>. Katamo ca puggalo madhubhāṇī? Idhekacco puggalo yā sā vācā nelā kaṇṇasukhā pemaniyā <a name="P0.0030"></a> hadayaṅgamā porī bahujanakantā bahujanamanāpā, tathārūpiṃ vācaṃ bhāsitā hoti – ayaṃ vuccati puggalo ‘‘madhubhāṇī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para101"></span><a name="para101"></a><span class="paranum">101</span>. Katamo ca puggalo arukūpamacitto? Idhekacco puggalo kodhano hoti upāyāsabahulo, appampi vutto samāno abhisajjati kuppati byāpajjati patitthīyati <span class="note">[patiṭṭhīyati (syā. ka.) a. ni. 3.25]</span>, kopañca dosañca appaccayañca pātukaroti. Seyyathāpi nāma duṭṭhāruko kaṭṭhena vā kaṭhalāya <span class="note">[kathalāya (ka.), kathalena (aṭṭhakathā) a. ni. 3.25]</span> vā ghaṭṭito bhiyyoso mattāya āsavaṃ deti <span class="note">[assavanoti (sī.)]</span>, evamevaṃ idhekacco puggalo kodhano hoti upāyāsabahulo, appampi vutto samāno abhisajjati kuppati byāpajjati patitthīyati, kopañca dosañca appaccayañca pātukaroti – ayaṃ vuccati puggalo ‘‘arukūpamacitto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para102"></span><a name="para102"></a><span class="paranum">102</span>. Katamo <a name="V0.0137"></a> ca puggalo vijjūpamacitto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ <a name="T0.0167"></a> pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Seyyathāpi nāma cakkhumā puriso rattandhakāratimisāya vijjantarikāya rūpāni passeyya, evamevaṃ idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti<a name="M0.0134"></a>, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti – ayaṃ vuccati puggalo ‘‘vijjūpamacitto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para103"></span><a name="para103"></a><span class="paranum">103</span>. Katamo ca puggalo vajirūpamacitto? Idhekacco puggalo āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati. Seyyathāpi nāma vajirassa natthi kiñci abhejjaṃ maṇi vā pāsāṇo vā, evamevaṃ idhekacco puggalo āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati – ayaṃ vuccati puggalo ‘‘vajirūpamacitto’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para104"></span><a name="para104"></a><span class="paranum">104</span>. Katamo ca puggalo andho? Idhekaccassa puggalassa tathārūpaṃ cakkhu na hoti yathārūpena cakkhunā anadhigataṃ vā bhogaṃ adhigaccheyya, adhigataṃ vā bhogaṃ phātiṃ kareyya; tathārūpampissa cakkhu na hoti yathārūpena cakkhunā kusalākusale dhamme jāneyya, sāvajjānavajje dhamme jāneyya, hīnappaṇīte dhamme jāneyya, kaṇhasukkasappaṭibhāge dhamme jāneyya – ayaṃ vuccati puggalo ‘‘andho’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para105"></span><a name="para105"></a><span class="paranum">105</span>. Katamo ca puggalo ekacakkhu? Idhekaccassa puggalassa tathārūpaṃ cakkhu hoti<a name="T0.0168"></a>, yathārūpena cakkhunā anadhigataṃ vā bhogaṃ adhigaccheyya, adhigataṃ <a name="P0.0031"></a> vā bhogaṃ phātiṃ kareyya; tathārūpampissa cakkhu na hoti yathārūpena cakkhunā kusalākusale dhamme jāneyya, sāvajjānavajje dhamme jāneyya, hīnappaṇīte dhamme jāneyya, kaṇhasukkasappaṭibhāge dhamme jāneyya – ayaṃ vuccati puggalo ‘‘ekacakkhu’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para106"></span><a name="para106"></a><span class="paranum">106</span>. Katamo ca puggalo dvicakkhu? Idhekaccassa puggalassa tathārūpaṃ cakkhu hoti yathārūpena cakkhunā anadhigataṃ vā bhogaṃ adhigaccheyya, adhigataṃ vā bhogaṃ phātiṃ kareyya; tathārūpampissa <a name="V0.0138"></a> cakkhu hoti yathārūpena cakkhunā kusalākusale dhamme jāneyya, sāvajjānavajje dhamme jāneyya, hīnappaṇīte dhamme jāneyya, kaṇhasukkasappaṭibhāge dhamme jāneyya – ayaṃ vuccati puggalo ‘‘dvicakkhu’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para107"></span><a name="para107"></a><span class="paranum">107</span>. Katamo <a name="M0.0135"></a> ca puggalo avakujjapañño? Idhekacco puggalo ārāmaṃ gantā <span class="note">[gato (sī.), gantvā (syā.)]</span> hoti abhikkhaṇaṃ bhikkhūnaṃ santike dhammassavaṇāya <span class="note">[dhammassavanāya (syā.)]</span>. Tassa bhikkhū dhammaṃ desenti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ sātthaṃ sabyañjanaṃ kevalaparipuṇṇaṃ parisuddhaṃ brahmacariyaṃ pakāsenti. So tasmiṃ āsane nisinno tassā kathāya neva ādiṃ manasi karoti, na majjhaṃ manasi karoti, na pariyosānaṃ manasi karoti. Vuṭṭhitopi tamhā āsanā tassā kathāya neva ādiṃ manasi karoti, na majjhaṃ manasi karoti, na pariyosānaṃ manasi karoti. Seyyathāpi nāma kumbho nikkujjo <span class="note">[nikujjo (syā.) a. ni. 3.30]</span> tatra udakaṃ āsittaṃ vivaṭṭati, no saṇṭhāti; evamevaṃ idhekacco puggalo ārāmaṃ gantā hoti abhikkhaṇaṃ bhikkhūnaṃ santike dhammassavaṇāya<a name="T0.0169"></a>. Tassa bhikkhū dhammaṃ desenti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ sātthaṃ sabyañjanaṃ kevalaparipuṇṇaṃ parisuddhaṃ brahmacariyaṃ pakāsenti. So tasmiṃ āsane nisinno tassā kathāya neva ādiṃ manasi karoti, na majjhaṃ manasi karoti, na pariyosānaṃ manasi karoti. Vuṭṭhitopi tamhā āsanā tassā kathāya neva ādiṃ manasi karoti, na majjhaṃ manasi karoti, na pariyosānaṃ manasi karoti – ayaṃ vuccati puggalo ‘‘avakujjapañño’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para108"></span><a name="para108"></a><span class="paranum">108</span>. Katamo ca puggalo ucchaṅgapañño? Idhekacco puggalo ārāmaṃ gantā hoti abhikkhaṇaṃ bhikkhūnaṃ santike dhammassavaṇāya. Tassa bhikkhū dhammaṃ desenti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ sātthaṃ sabyañjanaṃ kevalaparipuṇṇaṃ parisuddhaṃ brahmacariyaṃ pakāsenti. So tasmiṃ āsane nisinno tassā kathāya ādimpi manasi karoti, majjhampi manasi karoti, pariyosānampi manasi karoti. Vuṭṭhito ca kho tamhā āsanā tassā kathāya neva ādiṃ manasi karoti, na majjhaṃ manasi karoti, na pariyosānaṃ manasi karoti. Seyyathāpi nāma purisassa ucchaṅge nānākhajjakāni ākiṇṇāni – tilā <a name="P0.0032"></a> taṇḍulā <span class="note">[tilataṇḍulā (ka.) a. ni. 3.30]</span> modakā badarā. So tamhā āsanā vuṭṭhahanto satisammosā pakireyya. Evamevaṃ idhekacco puggalo ārāmaṃ gantā hoti abhikkhaṇaṃ bhikkhūnaṃ santike dhammassavaṇāya. Tassa bhikkhū dhammaṃ desenti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ <a name="M0.0136"></a> sātthaṃ sabyañjanaṃ kevalaparipuṇṇaṃ <a name="V0.0139"></a> parisuddhaṃ brahmacariyaṃ pakāsenti. So tasmiṃ āsane nisinno tassā kathāya ādimpi <a name="T0.0170"></a> manasi karoti, majjhampi manasi karoti, pariyosānampi manasi karoti. Vuṭṭhito ca kho tamhā āsanā tassā kathāya neva ādimpi manasi karoti, na majjhampi manasi karoti, na pariyosānampi manasi karoti – ayaṃ vuccati puggalo ‘‘ucchaṅgapañño’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para109"></span><a name="para109"></a><span class="paranum">109</span>. Katamo ca puggalo puthupañño? Idhekacco puggalo ārāmaṃ gantā hoti abhikkhaṇaṃ bhikkhūnaṃ santike dhammassavaṇāya. Tassa bhikkhū dhammaṃ desenti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ sātthaṃ sabyañjanaṃ kevalaparipuṇṇaṃ parisuddhaṃ brahmacariyaṃ pakāsenti. So tasmiṃ āsane nisinno tassā kathāya ādimpi manasi karoti, majjhampi manasi karoti, pariyosānampi manasi karoti. Vuṭṭhitopi tamhā āsanā tassā kathāya ādimpi manasi karoti, majjhampi manasi karoti, pariyosānampi manasi karoti. Seyyathāpi nāma kumbho ukkujjo tatra udakaṃ āsittaṃ saṇṭhāti, no vivaṭṭati; evamevaṃ idhekacco puggalo ārāmaṃ gantā honti abhikkhaṇaṃ bhikkhūnaṃ santike dhammassavaṇāya. Tassa bhikkhū dhammaṃ desenti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ sātthaṃ sabyañjanaṃ kevalaparipuṇṇaṃ parisuddhaṃ brahmacariyaṃ pakāsenti. So tasmiṃ āsane nisinno tassā kathāya ādimpi manasi karoti, majjhampi manasi karoti, pariyosānampi manasi karoti. Vuṭṭhitopi tamhā āsanā tassā kathāya ādimpi manasi karoti, majjhampi manasi karoti, pariyosānampi manasi karoti – ayaṃ vuccati puggalo ‘‘puthupañño’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para110"></span><a name="para110"></a><span class="paranum">110</span>. Katamo ca puggalo kāmesu ca bhavesu ca avītarāgo? Sotāpannasakadāgāmino <a name="T0.0171"></a> – ime vuccanti puggalā ‘‘kāmesu ca bhavesu ca avītarāgā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para111"></span><a name="para111"></a><span class="paranum">111</span>. Katamo ca puggalo kāmesu vītarāgo, bhavesu avītarāgo? Anāgāmī – ayaṃ vuccati puggalo ‘‘kāmesu vītarāgo, bhavesu avītarāgo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para112"></span><a name="para112"></a><span class="paranum">112</span>. Katamo ca puggalo kāmesu ca bhavesu ca vītarāgo? Arahā – ayaṃ vuccati puggalo ‘‘kāmesu ca bhavesu ca vītarāgo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para113"></span><a name="para113"></a><span class="paranum">113</span>. Katamo <a name="M0.0137"></a><a name="V0.0140"></a> ca puggalo pāsāṇalekhūpamo? Idhekacco puggalo abhiṇhaṃ kujjhati. So ca khvassa kodho ciraṃ dīgharattaṃ anuseti. Seyyathāpi nāma pāsāṇe lekhā na khippaṃ lujjati vātena vā udakena vā, ciraṭṭhitikā hoti; evamevaṃ idhekacco puggalo abhiṇhaṃ kujjhati. So ca khvassa kodho ciraṃ dīgharattaṃ anuseti – ayaṃ vuccati puggalo ‘‘pāsāṇalekhūpamo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para114"></span><a name="para114"></a><span class="paranum">114</span>. Katamo ca puggalo pathavilekhūpamo? Idhekacco puggalo abhiṇhaṃ kujjhati. So ca khvassa kodho na ciraṃ dīgharattaṃ anuseti. Seyyathāpi nāma pathaviyā <span class="note">[paṭhaviyā (sī. syā.)]</span> lekhā khippaṃ lujjati vātena vā udakena vā, na ciraṭṭhitikā hoti; evamevaṃ idhekacco puggalo abhiṇhaṃ kujjhati. So ca khvassa kodho na ciraṃ dīgharattaṃ anuseti – ayaṃ vuccati puggalo ‘‘pathavilekhūpamo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para115"></span><a name="para115"></a><span class="paranum">115</span>. Katamo ca puggalo udakalekhūpamo? Idhekacco puggalo āgāḷhenapi vuccamāno pharusenapi vuccamāno amanāpenapi vuccamāno saṃsandatimeva <span class="note">[… ceva (syā.) a. ni. 3.133]</span> sandhiyatimeva <span class="note">[… ceva (syā.) a. ni. 3.133]</span> sammodatimeva <span class="note">[… ceva (syā.) a. ni. 3.133]</span>. Seyyathāpi nāma udake <a name="P0.0033"></a> lekhā khippaṃ lujjati, na ciraṭṭhitikā hoti; evamevaṃ idhekacco puggalo āgāḷhenapi vuccamāno <a name="T0.0172"></a> pharusenapi vuccamāno amanāpenapi vuccamāno saṃsandatimeva sandhiyatimeva sammodatimeva – ayaṃ vuccati puggalo ‘‘udakalekhūpamo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para116"></span><a name="para116"></a><span class="paranum">116</span>. Tattha katame tayo potthakūpamā puggalā? Tayo potthakā – navopi potthako dubbaṇṇo ceva hoti dukkhasamphasso ca appaggho ca, majjhimopi potthako dubbaṇṇo ceva hoti dukkhasamphasso ca appaggho ca, jiṇṇopi potthako dubbaṇṇo ceva hoti dukkhasamphasso ca appaggho ca. Jiṇṇampi potthakaṃ ukkhaliparimajjanaṃ vā karonti saṅkārakūṭe vā naṃ chaḍḍenti. Evamevaṃ tayome potthakūpamā puggalā santo saṃvijjamānā bhikkhūsu. Katame tayo? Navo cepi bhikkhu hoti dussīlo pāpadhammo, idamassa dubbaṇṇatāya. Seyyathāpi so potthako dubbaṇṇo, tathūpamo <a name="M0.0138"></a> ayaṃ puggalo. Ye kho panassa sevanti bhajanti payirupāsanti diṭṭhānugatiṃ āpajjanti, tesaṃ taṃ hoti dīgharattaṃ ahitāya dukkhāya. Idamassa dukkhasamphassatāya. Seyyathāpi so potthako dukkhasamphasso, tathūpamo ayaṃ puggalo. Yesaṃ kho pana so paṭiggaṇhāti cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhāraṃ<a name="V0.0141"></a>, tesaṃ taṃ na mahapphalaṃ hoti na mahānisaṃsaṃ. Idamassa appagghatāya. Seyyathāpi so potthako appaggho, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Majjhimo cepi bhikkhu hoti…pe… thero cepi bhikkhu hoti dussīlo pāpadhammo, idamassa dubbaṇṇatāya. Seyyathāpi so potthako dubbaṇṇo, tathūpamo ayaṃ puggalo. Ye <a name="T0.0173"></a> kho panassa sevanti bhajanti payirupāsanti diṭṭhānugatiṃ āpajjanti, tesaṃ taṃ hoti dīgharattaṃ ahitāya dukkhāya. Idamassa dukkhasamphassatāya. Seyyathāpi so potthako dukkhasamphasso, tathūpamo ayaṃ puggalo. Yesaṃ kho pana so paṭiggaṇhāti cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhāraṃ, tesaṃ taṃ na mahapphalaṃ hoti na mahānisaṃsaṃ. Idamassa appagghatāya. Seyyathāpi so potthako appaggho, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Evarūpo ce thero bhikkhu saṅghamajjhe bhaṇati. Tamenaṃ bhikkhū evamāhaṃsu – ‘‘kiṃ nu kho tuyhaṃ bālassa abyattassa bhaṇitena, tvampi nāma bhaṇitabbaṃ maññasī’’ti! So kupito anattamano tathārūpiṃ vācaṃ nicchāreti yathārūpāya vācāya saṅgho taṃ ukkhipati, saṅkārakūṭeva naṃ potthakaṃ. Ime <a name="P0.0034"></a> tayo potthakūpamā puggalā santo saṃvijjamānā bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para117"></span><a name="para117"></a><span class="paranum">117</span>. Tattha katame tayo kāsikavatthūpamā puggalā? Tīṇi kāsikavatthāni – navampi kāsikavatthaṃ vaṇṇavantañceva hoti sukhasamphassañca mahagghañca, majjhimampi kāsikavatthaṃ vaṇṇavantañceva hoti sukhasamphassañca mahagghañca, jiṇṇampi kāsikavatthaṃ vaṇṇavantañceva hoti sukhasamphassañca mahagghañca. Jiṇṇampi kāsikavatthaṃ ratanapaliveṭhanaṃ vā karonti gandhakaraṇḍake vā naṃ nikkhipanti.</p>
+
+
+
+<p class="bodytext">Evamevaṃ <a name="M0.0139"></a> tayome kāsikavatthūpamā puggalā santo saṃvijjamānā bhikkhūsu. Katame tayo? Navo cepi bhikkhu hoti sīlavā kalyāṇadhammo<a name="T0.0174"></a>, idamassa suvaṇṇatāya. Seyyathāpi taṃ kāsikavatthaṃ vaṇṇavantaṃ, tathūpamo ayaṃ puggalo. Ye kho panassa sevanti bhajanti payirupāsanti diṭṭhānugatiṃ āpajjanti, tesaṃ taṃ hoti dīgharattaṃ hitāya sukhāya. Idamassa sukhasamphassatāya. Seyyathāpi taṃ kāsikavatthaṃ sukhasamphassaṃ, tathūpamo ayaṃ puggalo. Yesaṃ kho pana so <span class="note">[yesaṃ kho pana (sabbattha) a. ni. 3.100]</span> paṭiggaṇhāti <span class="note">[patigaṇhāti (sī.) rūpasiddhiṭīkāya pana sameti]</span> cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhāraṃ, tesaṃ taṃ mahapphalaṃ <a name="V0.0142"></a> hoti mahānisaṃsaṃ. Idamassa mahagghatāya. Seyyathāpi taṃ kāsikavatthaṃ mahagghaṃ, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Majjhimo cepi bhikkhu…pe… thero cepi bhikkhu hoti sīlavā kalyāṇadhammo, idamassa suvaṇṇatāya. Seyyathāpi taṃ kāsikavatthaṃ vaṇṇavantaṃ, tathūpamo ayaṃ puggalo. Ye kho panassa sevanti bhajanti payirupāsanti diṭṭhānugatiṃ āpajjanti, tesaṃ taṃ hoti dīgharattaṃ hitāya sukhāya. Idamassa sukhasamphassatāya. Seyyathāpi taṃ kāsikavatthaṃ sukhasamphassaṃ, tathūpamo ayaṃ puggalo. Yesaṃ kho pana so paṭiggaṇhāti cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhāraṃ, tesaṃ taṃ mahapphalaṃ hoti mahānisaṃsaṃ. Idamassa mahagghatāya. Seyyathāpi taṃ kāsikavatthaṃ mahagghaṃ, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Evarūpo ce thero bhikkhu saṅghamajjhe bhaṇati, tamenaṃ bhikkhū evamāhaṃsu – ‘‘appasaddā āyasmanto hotha, thero bhikkhu dhammañca vinayañca bhaṇatī’’ti. Tassa taṃ vacanaṃ ādheyyaṃ gacchati, gandhakaraṇḍakeva <a name="P0.0035"></a> naṃ kāsikavatthaṃ. Ime tayo kāsikavatthūpamā puggalā santo saṃvijjamānā bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para118"></span><a name="para118"></a><span class="paranum">118</span>. Katamo <a name="T0.0175"></a> ca puggalo suppameyyo? Idhekacco puggalo uddhato hoti unnaḷo capalo mukharo vikiṇṇavāco muṭṭhassati asampajāno asamāhito vibbhantacitto pākaṭindriyo – ayaṃ vuccati puggalo ‘‘suppameyyo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para119"></span><a name="para119"></a><span class="paranum">119</span>. Katamo ca puggalo duppameyyo? Idhekacco puggalo anuddhato hoti anunnaḷo acapalo amukharo avikiṇṇavāco upaṭṭhitassati <a name="M0.0140"></a> sampajāno samāhito ekaggacitto saṃvutindriyo – ayaṃ vuccati puggalo ‘‘duppameyyo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para120"></span><a name="para120"></a><span class="paranum">120</span>. Katamo ca puggalo appameyyo? Idhekacco puggalo āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati – ayaṃ vuccati puggalo ‘‘appameyyo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para121"></span><a name="para121"></a><span class="paranum">121</span>. Katamo <a name="V0.0143"></a> ca puggalo na sevitabbo na bhajitabbo na payirupāsitabbo? Idhekacco puggalo hīno hoti sīlena samādhinā paññāya. Evarūpo puggalo na sevitabbo na bhajitabbo na payirupāsitabbo, aññatra anuddayā aññatra anukampā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para122"></span><a name="para122"></a><span class="paranum">122</span>. Katamo ca puggalo sevitabbo bhajitabbo payirupāsitabbo? Idhekacco puggalo sadiso hoti sīlena samādhinā paññāya. Evarūpo puggalo sevitabbo bhajitabbo payirupāsitabbo. Taṃ kissa hetu? ‘‘Sīlasāmaññagatānaṃ sataṃ sīlakathā ca no bhavissati, sā ca no phāsu bhavissati, sā ca no pavattinī bhavissati; samādhisāmaññagatānaṃ sataṃ samādhikathā ca no bhavissati, sā ca no phāsu bhavissati, sā ca no pavattinī <span class="note">[pavattanī (sī.) a. ni. 3.26]</span> bhavissati; paññāsāmaññagatānaṃ <a name="T0.0176"></a> sataṃ paññākathā ca no bhavissati, sā ca no phāsu bhavissati, sā ca no pavattinī bhavissatī’’ti. Tasmā evarūpo puggalo sevitabbo bhajitabbo payirupāsitabbo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para123"></span><a name="para123"></a><span class="paranum">123</span>. Katamo ca puggalo sakkatvā garuṃ katvā sevitabbo bhajitabbo payirupāsitabbo? Idhekacco puggalo adhiko hoti sīlena samādhinā paññāya. Evarūpo puggalo sakkatvā garuṃ katvā sevitabbo bhajitabbo payirupāsitabbo. Taṃ kissa hetu? ‘‘Aparipūraṃ vā sīlakkhandhaṃ paripūressāmi, paripūraṃ vā sīlakkhandhaṃ tattha <a name="P0.0036"></a> tattha paññāya anuggahessāmi; aparipūraṃ vā samādhikkhandhaṃ paripūressāmi, paripūraṃ vā samādhikkhandhaṃ tattha tattha paññāya anuggahessāmi; aparipūraṃ vā paññākkhandhaṃ paripūressāmi, paripūraṃ vā paññākkhandhaṃ tattha tattha paññāya anuggahessāmī’’ti. Tasmā evarūpo puggalo sakkatvā garuṃ katvā sevitabbo bhajitabbo payirupāsitabbo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para124"></span><a name="para124"></a><span class="paranum">124</span>. Katamo <a name="M0.0141"></a> ca puggalo jigucchitabbo na sevitabbo na bhajitabbo na payirupāsitabbo? Idhekacco puggalo dussīlo hoti pāpadhammo asuci saṅkassarasamācāro paṭicchannakammanto assamaṇo samaṇapaṭiñño abrahmacārī brahmacāripaṭiñño antopūti avassuto kasambujāto. Evarūpo puggalo jigucchitabbo na sevitabbo na bhajitabbo na payirupāsitabbo. Taṃ kissa hetu? Kiñcāpi evarūpassa puggalassa na diṭṭhānugatiṃ āpajjati, atha kho naṃ pāpako kittisaddo abbhuggacchati <a name="T0.0177"></a> – ‘‘pāpamitto purisapuggalo pāpasahāyo pāpasampavaṅko’’ti. Seyyathāpi nāma ahi gūthagato kiñcāpi na ḍaṃsati, atha kho <a name="V0.0144"></a> naṃ makkheti; evamevaṃ kiñcāpi evarūpassa puggalassa na diṭṭhānugatiṃ āpajjati, atha kho naṃ pāpako kittisaddo abbhuggacchati – ‘‘pāpamitto purisapuggalo pāpasahāyo pāpasampavaṅko’’ti! Tasmā evarūpo puggalo jigucchitabbo na sevitabbo na bhajitabbo na payirupāsitabbo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para125"></span><a name="para125"></a><span class="paranum">125</span>. Katamo ca puggalo ajjhupekkhitabbo na sevitabbo na bhajitabbo na payirupāsitabbo? Idhekacco puggalo kodhano hoti upāyāsabahulo, appampi vutto samāno abhisajjati kuppati byāpajjati patitthīyati, kopañca dosañca appaccayañca pātukaroti. Seyyathāpi nāma duṭṭhāruko kaṭṭhena vā kaṭhalāya vā ghaṭṭito bhiyyoso mattāya āsavaṃ deti, evamevaṃ idhekacco puggalo kodhano hoti upāyāsabahulo, appampi vutto samāno abhisajjati kuppati byāpajjati patitthīyati, kopañca dosañca appaccayañca pātukaroti. Seyyathāpi nāma tindukālātaṃ kaṭṭhena vā kaṭhalāya vā ghaṭṭitaṃ bhiyyoso mattāya cicciṭāyati ciṭiciṭāyati, evamevaṃ idhekacco puggalo kodhano hoti upāyāsabahulo, appampi vutto samāno abhisajjati kuppati byāpajjati patitthīyati, kopañca dosañca appaccayañca pātukaroti. Seyyathāpi nāma gūthakūpo kaṭṭhena vā kaṭhalāya vā ghaṭṭito bhiyyoso mattāya duggandho hoti, evamevaṃ idhekacco puggalo kodhano hoti upāyāsabahulo, appampi <a name="T0.0178"></a> vutto samāno abhisajjati kuppati byāpajjati patitthīyati, kopañca dosañca appaccayañca <a name="P0.0037"></a> pātukaroti; evarūpo puggalo ajjhupekkhitabbo na sevitabbo na bhajitabbo na payirupāsitabbo. Taṃ kissa hetu? ‘‘Akkoseyyapi maṃ paribhāseyyapi maṃ anatthampi <a name="M0.0142"></a> me kareyyā’’ti! Tasmā evarūpo puggalo ajjhupekkhitabbo na sevitabbo na bhajitabbo na payirupāsitabbo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para126"></span><a name="para126"></a><span class="paranum">126</span>. Katamo ca puggalo sevitabbo bhajitabbo payirupāsitabbo? Idhekacco puggalo sīlavā hoti kalyāṇadhammo – evarūpo puggalo sevitabbo bhajitabbo payirupāsitabbo. Taṃ kissa hetu? Kiñcāpi evarūpassa puggalassa na diṭṭhānugatiṃ āpajjati, atha kho naṃ kalyāṇo kittisaddo abbhuggacchati – ‘‘kalyāṇamitto purisapuggalo kalyāṇasahāyo kalyāṇasampavaṅko’’ti! Tasmā evarūpo puggalo sevitabbo bhajitabbo payirupāsitabbo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para127"></span><a name="para127"></a><span class="paranum">127</span>. Katamo ca puggalo sīlesu paripūrakārī, samādhismiṃ mattaso <a name="V0.0145"></a> kārī, paññāya mattaso kārī? Sotāpannasakadāgāmino – ime vuccanti puggalā sīlesu paripūrakārino, samādhismiṃ mattaso kārino, paññāya mattaso kārino.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para128"></span><a name="para128"></a><span class="paranum">128</span>. Katamo ca puggalo sīlesu ca paripūrakārī, samādhismiñca paripūrakārī, paññāya mattaso kārī? Anāgāmī – ayaṃ vuccati puggalo sīlesu ca paripūrakārī, samādhismiñca paripūrakārī, paññāya mattaso kārī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para129"></span><a name="para129"></a><span class="paranum">129</span>. Katamo ca puggalo sīlesu ca paripūrakārī, samādhismiñca paripūrakārī, paññāya ca paripūrakārī? Arahā – ayaṃ vuccati <a name="T0.0179"></a> puggalo sīlesu ca paripūrakārī, samādhismiñca paripūrakārī, paññāya ca paripūrakārī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para130"></span><a name="para130"></a><span class="paranum">130</span>. Tattha katame tayo satthāro? Idhekacco satthā kāmānaṃ pariññaṃ paññapeti <span class="note">[paññāpeti (sī. syā.)]</span>, na rūpānaṃ pariññaṃ paññapeti, na vedanānaṃ pariññaṃ paññapeti. Idha panekacco satthā kāmānañca pariññaṃ paññapeti, rūpānañca pariññaṃ paññapeti, na vedanānaṃ pariññaṃ paññapeti. Idha panekacco satthā kāmānañca pariññaṃ paññapeti, rūpānañca pariññaṃ paññapeti, vedanānañca pariññaṃ paññapeti.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ satthā kāmānaṃ pariññaṃ paññapeti, na rūpānaṃ pariññaṃ paññapeti, na vedanānaṃ pariññaṃ paññapeti, rūpāvacarasamāpattiyā lābhī satthā tena daṭṭhabbo. Tatra <a name="P0.0038"></a> yvāyaṃ satthā kāmānañca pariññaṃ paññapeti, rūpānañca <a name="M0.0143"></a> pariññaṃ paññapeti, na vedanānaṃ pariññaṃ paññapeti, arūpāvacarasamāpattiyā lābhī satthā tena daṭṭhabbo. Tatra yvāyaṃ satthā kāmānañca pariññaṃ paññapeti, rūpānañca pariññaṃ paññapeti, vedanānañca pariññaṃ paññapeti, sammāsambuddho satthā tena daṭṭhabbo. Ime tayo satthāro.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para131"></span><a name="para131"></a><span class="paranum">131</span>. Tattha katame aparepi tayo satthāro? Idhekacco satthā diṭṭhe ceva dhamme attānaṃ saccato thetato paññapeti, abhisamparāyañca attānaṃ saccato thetato paññapeti. Idha panekacco <a name="T0.0180"></a> satthā diṭṭhe ceva dhamme attānaṃ saccato thetato paññapeti, no ca kho abhisamparāyaṃ attānaṃ saccato <a name="V0.0146"></a> thetato paññapeti. Idha panekacco satthā diṭṭhe ceva dhamme attānaṃ saccato thetato na paññapeti, abhisamparāyañca attānaṃ saccato thetato na paññapeti.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ satthā diṭṭhe ceva dhamme attānaṃ saccato thetato paññapeti, abhisamparāyañca attānaṃ saccato thetato paññapeti, sassatavādo satthā tena daṭṭhabbo. Tatra yvāyaṃ satthā diṭṭhe ceva dhamme attānaṃ saccato thetato paññapeti, no ca kho abhisamparāyaṃ attānaṃ saccato thetato paññapeti, ucchedavādo satthā tena daṭṭhabbo. Tatra yvāyaṃ satthā diṭṭhe ceva dhamme attānaṃ saccato thetato na paññapeti, abhisamparāyañca attānaṃ saccato thetato na paññapeti, sammāsambuddho satthā tena daṭṭhabbo. Ime aparepi tayo satthāro.</p>
+
+
+
+<p class="centered">Tikaniddeso.</p>
+
+
+
+<p class="subhead">4. Catukkapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para132"></span><a name="para132"></a><span class="paranum">132</span>. Katamo ca puggalo asappuriso? Idhekacco puggalo pāṇātipātī hoti, adinnādāyī hoti, kāmesumicchācārī hoti, musāvādī <a name="T0.0181"></a> hoti, surāmerayamajjapamādaṭṭhāyī hoti – ayaṃ vuccati puggalo ‘‘asappuriso’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para133"></span><a name="para133"></a><span class="paranum">133</span>. Katamo <a name="P0.0039"></a> ca puggalo asappurisena asappurisataro? Idhekacco puggalo attanā ca pāṇātipātī hoti parañca pāṇātipāte samādapeti<a name="M0.0144"></a>, attanā ca adinnādāyī hoti parañca adinnādāne samādapeti, attanā ca kāmesumicchācārī hoti parañca kāmesumicchācāre samādapeti, attanā ca musāvādī hoti parañca musāvāde samādapeti, attanā ca surāmerayamajjapamādaṭṭhāyī hoti parañca surāmerayamajjapamādaṭṭhāne samādapeti – ayaṃ vuccati puggalo ‘‘asappurisena asappurisataro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para134"></span><a name="para134"></a><span class="paranum">134</span>. Katamo ca puggalo sappuriso? Idhekacco puggalo pāṇātipātā paṭivirato hoti<a name="V0.0147"></a>, adinnādānā paṭivirato hoti, kāmesumicchācārā paṭivirato hoti, musāvādā paṭivirato hoti, surāmerayamajjapamādaṭṭhānā paṭivirato hoti – ayaṃ vuccati puggalo ‘‘sappuriso’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para135"></span><a name="para135"></a><span class="paranum">135</span>. Katamo ca puggalo sappurisena sappurisataro? Idhekacco puggalo attanā ca pāṇātipātā paṭivirato hoti parañca pāṇātipātā veramaṇiyā samādapeti, attanā ca adinnādānā paṭivirato hoti parañca adinnādānā veramaṇiyā samādapeti, attanā ca kāmesumicchācārā paṭivirato hoti parañca kāmesumicchācārā veramaṇiyā samādapeti, attanā ca musāvādā paṭivirato hoti parañca musāvādā veramaṇiyā samādapeti, attanā ca surāmerayamajjapamādaṭṭhānā paṭivirato hoti parañca surāmerayamajjapamādaṭṭhānā veramaṇiyā samādapeti <a name="T0.0182"></a> – ayaṃ vuccati puggalo ‘‘sappurisena sappurisataro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para136"></span><a name="para136"></a><span class="paranum">136</span>. Katamo ca puggalo pāpo? Idhekacco puggalo pāṇātipātī hoti, adinnādāyī hoti, kāmesumicchācārī hoti, musāvādī hoti, pisuṇavāco <span class="note">[pisuṇāvāco]</span> hoti, pharusavāco <span class="note">[pharusāvāco (sī.) dī. ni. 3.115]</span> hoti, samphappalāpī hoti, abhijjhālu hoti, byāpannacitto hoti, micchādiṭṭhi <span class="note">[micchādiṭṭhī (ka.)]</span> hoti – ayaṃ vuccati puggalo ‘‘pāpo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para137"></span><a name="para137"></a><span class="paranum">137</span>. Katamo ca puggalo pāpena pāpataro? Idhekacco puggalo attanā ca pāṇātipātī hoti parañca pāṇātipāte samādapeti, attanā <a name="M0.0145"></a> ca adinnādāyī hoti parañca adinnādāne samādapeti, attanā ca kāmesumicchācārī hoti parañca kāmesumicchācāre samādapeti, attanā ca musāvādī hoti parañca musāvāde samādapeti, attanā ca pisuṇavāco hoti parañca pisuṇāya vācāya samādapeti, attanā ca pharusavāco <a name="P0.0040"></a> hoti parañca pharusāya vācāya samādapeti, attanā ca samphappalāpī hoti parañca samphappalāpe samādapeti, attanā ca abhijjhālu hoti parañca abhijjhāya samādapeti, attanā ca byāpannacitto hoti parañca byāpāde samādapeti, attanā ca micchādiṭṭhi hoti parañca micchādiṭṭhiyā samādapeti – ayaṃ vuccati puggalo ‘‘pāpena pāpataro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para138"></span><a name="para138"></a><span class="paranum">138</span>. Katamo ca puggalo kalyāṇo? Idhekacco puggalo pāṇātipātā paṭivirato hoti, adinnādānā paṭivirato hoti<a name="V0.0148"></a>, kāmesumicchācārā paṭivirato hoti, musāvādā paṭivirato hoti, pisuṇāya vācāya paṭivirato hoti, pharusāya vācāya paṭivirato hoti, samphappalāpā <a name="T0.0183"></a> paṭivirato hoti, anabhijjhālu hoti, abyāpannacitto hoti, sammādiṭṭhi <span class="note">[sammādiṭṭhī (ka.)]</span> hoti – ayaṃ vuccati puggalo ‘‘kalyāṇo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para139"></span><a name="para139"></a><span class="paranum">139</span>. Katamo ca puggalo kalyāṇena kalyāṇataro? Idhekacco puggalo attanā ca pāṇātipātā paṭivirato hoti parañca pāṇātipātā veramaṇiyā samādapeti, attanā ca adinnādānā paṭivirato hoti parañca adinnādānā veramaṇiyā samādapeti, attanā ca kāmesumicchācārā paṭivirato hoti parañca kāmesumicchācārā veramaṇiyā samādapeti, attanā ca musāvādā paṭivirato hoti parañca musāvādā veramaṇiyā samādapeti, attanā ca pisuṇāya vācāya paṭivirato hoti parañca pisuṇāya vācāya veramaṇiyā samādapeti, attanā ca pharusāya vācāya paṭivirato hoti parañca pharusāya vācāya veramaṇiyā samādapeti, attanā ca samphappalāpā paṭivirato hoti parañca samphappalāpā veramaṇiyā samādapeti, attanā ca anabhijjhālu hoti parañca anabhijjhāya samādapeti, attanā ca abyāpannacitto hoti parañca abyāpāde samādapeti, attanā ca sammādiṭṭhi hoti parañca <a name="M0.0146"></a> sammādiṭṭhiyā samādapeti – ayaṃ vuccati puggalo ‘‘kalyāṇena kalyāṇataro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para140"></span><a name="para140"></a><span class="paranum">140</span>. Katamo ca puggalo pāpadhammo? Idhekacco puggalo pāṇātipātī hoti, adinnādāyī hoti…pe… micchādiṭṭhi hoti – ayaṃ vuccati puggalo ‘‘pāpadhammo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para141"></span><a name="para141"></a><span class="paranum">141</span>. Katamo ca puggalo pāpadhammena pāpadhammataro? Idhekacco puggalo attanā ca pāṇātipātī hoti parañca <a name="T0.0184"></a> pāṇātipāte samādapeti, attanā ca adinnādāyī hoti parañca adinnādāne samādapeti…pe… attanā ca micchādiṭṭhi hoti parañca micchādiṭṭhiyā samādapeti – ayaṃ vuccati puggalo ‘‘pāpadhammena pāpadhammataro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para142"></span><a name="para142"></a><span class="paranum">142</span>. Katamo ca puggalo kalyāṇadhammo? Idhekacco puggalo pāṇātipātā paṭivirato hoti, adinnādānā paṭivirato hoti…pe… samādiṭṭhi hoti – ayaṃ vuccati puggalo ‘‘kalyāṇadhammo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para143"></span><a name="para143"></a><span class="paranum">143</span>. Katamo <a name="V0.0149"></a> ca puggalo kalyāṇadhammena kalyāṇadhammataro? Idhekacco puggalo attanā ca pāṇātipātā paṭivirato hoti parañca pāṇātipātā veramaṇiyā samādapeti…pe… attanā ca sammādiṭṭhi hoti parañca sammādiṭṭhiyā samādapeti – ayaṃ vuccati puggalo ‘‘kalyāṇadhammena kalyāṇadhammataro’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para144"></span><a name="para144"></a><span class="paranum">144</span>. Katamo <a name="P0.0041"></a> ca puggalo sāvajjo? Idhekacco puggalo sāvajjena kāyakammena samannāgato hoti, sāvajjena vacīkammena samannāgato hoti, sāvajjena manokammena samannāgato hoti – ayaṃ vuccati puggalo ‘‘sāvajjo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para145"></span><a name="para145"></a><span class="paranum">145</span>. Katamo ca puggalo vajjabahulo? Idhekacco puggalo sāvajjena bahulaṃ kāyakammena samannāgato hoti appaṃ anavajjena, sāvajjena bahulaṃ vacīkammena samannāgato hoti appaṃ anavajjena, sāvajjena bahulaṃ manokammena samannāgato hoti appaṃ anavajjena – ayaṃ vuccati puggalo ‘‘vajjabahulo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para146"></span><a name="para146"></a><span class="paranum">146</span>. Katamo <a name="M0.0147"></a> ca puggalo appavajjo? Idhekacco puggalo anavajjena bahulaṃ kāyakammena samannāgato <a name="T0.0185"></a> hoti appaṃ sāvajjena, anavajjena bahulaṃ vacīkammena samannāgato hoti appaṃ sāvajjena, anavajjena bahulaṃ manokammena samannāgato hoti appaṃ sāvajjena – ayaṃ vuccati puggalo ‘‘appavajjo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para147"></span><a name="para147"></a><span class="paranum">147</span>. Katamo ca puggalo anavajjo? Idhekacco puggalo anavajjena kāyakammena samannāgato hoti, anavajjena vacīkammena samannāgato hoti, anavajjena manokammena samannāgato hoti – ayaṃ vuccati puggalo ‘‘anavajjo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para148"></span><a name="para148"></a><span class="paranum">148</span>. Katamo ca puggalo ugghaṭitaññū? Yassa puggalassa saha udāhaṭavelāya dhammābhisamayo hoti – ayaṃ vuccati puggalo ‘‘ugghaṭitaññū’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para149"></span><a name="para149"></a><span class="paranum">149</span>. Katamo ca puggalo vipañcitaññū? Yassa puggalassa saṃkhittena bhāsitassa vitthārena atthe vibhajiyamāne dhammābhisamayo hoti – ayaṃ vuccati puggalo ‘‘vipañcitaññū’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para150"></span><a name="para150"></a><span class="paranum">150</span>. Katamo <a name="V0.0150"></a> ca puggalo neyyo? Yassa puggalassa uddesato paripucchato yoniso manasikaroto kalyāṇamitte sevato bhajato payirupāsato evaṃ anupubbena dhammābhisamayo hoti – ayaṃ vuccati puggalo ‘‘neyyo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para151"></span><a name="para151"></a><span class="paranum">151</span>. Katamo ca puggalo padaparamo? Yassa puggalassa bahumpi suṇato bahumpi bhaṇato bahumpi dhārayato bahumpi vācayato na tāya jātiyā dhammābhisamayo hoti – ayaṃ vuccati puggalo ‘‘padaparamo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para152"></span><a name="para152"></a><span class="paranum">152</span>. Katamo <a name="P0.0042"></a> ca puggalo yuttappaṭibhāno <span class="note">[yuttapaṭibhāṇo (syā.) a. ni. 4.132]</span> no muttappaṭibhāno? Idhekacco puggalo pañhaṃ puṭṭho samāno yuttaṃ vadati no sīghaṃ – ayaṃ <a name="T0.0186"></a> vuccati puggalo ‘‘yuttappaṭibhāno no muttappaṭibhāno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para153"></span><a name="para153"></a><span class="paranum">153</span>. Katamo <a name="M0.0148"></a> ca puggalo muttappaṭibhāno no yuttappaṭibhāno? Idhekacco puggalo pañhaṃ puṭṭho samāno sīghaṃ vadati no yuttaṃ – ayaṃ vuccati puggalo ‘‘muttappaṭibhāno no yuttappaṭibhāno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para154"></span><a name="para154"></a><span class="paranum">154</span>. Katamo ca puggalo yuttappaṭibhāno ca muttappaṭibhāno ca? Idhekacco puggalo pañhaṃ puṭṭho samāno yuttañca vadati sīghañca – ayaṃ vuccati puggalo ‘‘yuttappaṭibhāno ca muttappaṭibhāno ca’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para155"></span><a name="para155"></a><span class="paranum">155</span>. Katamo ca puggalo neva yuttappaṭibhāno no muttappaṭibhāno? Idhekacco puggalo pañhaṃ puṭṭho samāno neva yuttaṃ vadati no sīghaṃ – ayaṃ vuccati, puggalo ‘‘neva yuttappaṭibhāno no muttappaṭibhāno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para156"></span><a name="para156"></a><span class="paranum">156</span>. Tattha katame cattāro dhammakathikā puggalā? Idhekacco dhammakathiko appañca bhāsati asahitañca, parisā cassa na kusalā hoti sahitāsahitassa. Evarūpo dhammakathiko evarūpāya parisāya dhammakathikotveva saṅkhaṃ gacchati.</p>
+
+
+
+<p class="bodytext">Idha <a name="V0.0151"></a> panekacco dhammakathiko appañca bhāsati sahitañca, parisā cassa kusalā hoti sahitāsahitassa. Evarūpo dhammakathiko evarūpāya parisāya dhammakathikotveva saṅkhaṃ gacchati.</p>
+
+
+
+<p class="bodytext">Idha panekacco dhammakathiko bahuñca bhāsati asahitañca, parisā cassa na kusalā hoti sahitāsahitassa. Evarūpo dhammakathiko evarūpāya parisāya dhammakathikotveva saṅkhaṃ gacchati.</p>
+
+
+
+<p class="bodytext">Idha panekacco dhammakathiko bahuñca bhāsati sahitañca, parisā cassa kusalā hoti sahitāsahitassa. Evarūpo <a name="T0.0187"></a> dhammakathiko evarūpāya parisāya dhammakathikotveva saṅkhaṃ gacchati. Ime cattāro ‘‘dhammakathikā puggalā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para157"></span><a name="para157"></a><span class="paranum">157</span>. Tattha katame cattāro valāhakūpamā puggalā? Cattāro valāhakā – gajjitā no vassitā, vassitā no gajjitā, gajjitā ca vassitā ca, neva gajjitā no vassitā. Evamevaṃ cattārome <a name="P0.0043"></a> valāhakūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro<a name="M0.0149"></a>? Gajjitā no vassitā, vassitā no gajjitā, gajjitā ca vassitā ca, neva gajjitā no vassitā.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo gajjitā hoti no vassitā? Idhekacco puggalo bhāsitā hoti, no kattā. Evaṃ puggalo gajjitā hoti, no vassitā. Seyyathāpi so valāhako gajjitā no vassitā, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo vassitā hoti no gajjitā? Idhekacco puggalo kattā hoti, no bhāsitā. Evaṃ puggalo vassitā hoti no gajjitā. Seyyathāpi so valāhako vassitā no gajjitā, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo gajjitā ca hoti vassitā ca? Idhekacco puggalo bhāsitā ca hoti, kattā ca. Evaṃ puggalo gajjitā ca hoti vassitā ca. Seyyathāpi so valāhako gajjitā ca vassitā ca, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="V0.0152"></a> puggalo neva gajjitā hoti no vassitā? Idhekacco puggalo neva bhāsitā hoti no kattā. Evaṃ puggalo neva gajjitā hoti no vassitā. Seyyathāpi so valāhako neva <a name="T0.0188"></a> gajjitā no vassitā, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Ime cattāro valāhakūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para158"></span><a name="para158"></a><span class="paranum">158</span>. Tattha katame cattāro mūsikūpamā puggalā? Catasso mūsikā – gādhaṃ kattā no vasitā, vasitā no gādhaṃ kattā, gādhaṃ kattā ca vasitā ca, neva gādhaṃ kattā no vasitā. Evamevaṃ cattārome mūsikūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Gādhaṃ kattā no vasitā, vasitā no gādhaṃ kattā, gādhaṃ kattā ca vasitā ca, neva gādhaṃ kattā no vasitā.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo gādhaṃ kattā hoti no vasitā? Idhekacco puggalo dhammaṃ pariyāpuṇāti – suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhanirodho’’ti <a name="M0.0150"></a> yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ nappajānāti. Evaṃ puggalo gādhaṃ kattā hoti no vasitā. Seyyathāpi sā mūsikā gādhaṃ kattā no vasitā, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="P0.0044"></a> puggalo vasitā hoti no gādhaṃ kattā? Idhekacco puggalo dhammaṃ na pariyāpuṇāti – suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ <a name="T0.0189"></a> dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo vasitā hoti no gādhaṃ kattā. Seyyathāpi sā mūsikā vasitā no gādhaṃ kattā, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo gādhaṃ kattā ca hoti vasitā ca? Idhekacco puggalo dhammaṃ pariyāpuṇāti – suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo gādhaṃ kattā ca hoti vasitā ca. Seyyathāpi sā mūsikā gādhaṃ kattā ca vasitā ca, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo neva gādhaṃ kattā hoti no vasitā? Idhekacco puggalo dhammaṃ na pariyāpuṇāti – suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So <a name="V0.0153"></a> ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ nappajānāti. Evaṃ puggalo neva gādhaṃ kattā hoti no vasitā. Seyyathāpi sā mūsikā neva gādhaṃ kattā no vasitā, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Ime cattāro mūsikūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para159"></span><a name="para159"></a><span class="paranum">159</span>. Tattha <a name="T0.0190"></a><a name="M0.0151"></a> katame cattāro ambūpamā puggalā? Cattāri ambāni – āmaṃ pakkavaṇṇi <span class="note">[pakkavaṇṇī]</span>, pakkaṃ āmavaṇṇi <span class="note">[āmavaṇṇī (syā. ka.) a. ni. 4.105]</span>, āmaṃ āmavaṇṇi, pakkaṃ pakkavaṇṇi. Evamevaṃ cattārome ambūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Āmo pakkavaṇṇī, pakko āmavaṇṇī, āmo āmavaṇṇī, pakko pakkavaṇṇī.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo āmo hoti pakkavaṇṇī? Idhekaccassa puggalassa pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ <span class="note">[sammiñjitaṃ (sī. syā.)]</span> pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ nappajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ nappajānāti. Evaṃ puggalo āmo hoti pakkavaṇṇī. Seyyathāpi taṃ ambaṃ āmaṃ pakkavaṇṇi, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo pakko hoti āmavaṇṇī? Idhekaccassa <a name="P0.0045"></a> puggalassa na pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo pakko hoti āmavaṇṇī. Seyyathāpi taṃ ambaṃ pakkaṃ āmavaṇṇi, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo āmo hoti āmavaṇṇī? Idhekaccassa puggalassa <a name="T0.0191"></a> na pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ nappajānāti. Evaṃ puggalo āmo hoti āmavaṇṇī. Seyyathāpi taṃ ambaṃ āmaṃ āmavaṇṇi, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo pakko hoti pakkavaṇṇī? Idhekaccassa puggalassa pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ<a name="V0.0154"></a>. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti <a name="M0.0152"></a> …pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo pakko hoti pakkavaṇṇī. Seyyathāpi taṃ ambaṃ pakkaṃ pakkavaṇṇi, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Ime cattāro ambūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para160"></span><a name="para160"></a><span class="paranum">160</span>. Tattha katame cattāro kumbhūpamā puggalā? Cattāro kumbhā – tuccho pihito, pūro vivaṭo, tuccho vivaṭo, pūro pihito. Evamevaṃ cattārome kumbhūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Tuccho pihito, pūro vivaṭo, tuccho vivaṭo, pūro pihito.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo tuccho hoti pihito? Idhekaccassa puggalassa pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī <a name="T0.0192"></a> paṭipadā’’ti yathābhūtaṃ nappajānāti. Evaṃ puggalo tuccho hoti pihito. Seyyathāpi so kumbho tuccho pihito, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo pūro hoti vivaṭo? Idhekaccassa puggalassa na pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo pūro hoti vivaṭo. Seyyathāpi so kumbho pūro vivaṭo, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="P0.0046"></a> puggalo tuccho hoti vivaṭo? Idhekaccassa puggalassa na pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ <a name="V0.0155"></a> nappajānāti. Evaṃ puggalo tuccho hoti vivaṭo. Seyyathāpi so kumbho tuccho vivaṭo, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo pūro hoti pihito? Idhekaccassa puggalassa pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ <a name="M0.0153"></a> pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo pūro hoti pihito. Seyyathāpi so kumbho pūro pihito, tathūpamo ayaṃ puggalo. Ime cattāro kumbhūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para161"></span><a name="para161"></a><span class="paranum">161</span>. Tattha <a name="T0.0193"></a> katame cattāro udakarahadūpamā puggalā? Cattāro udakarahadā – uttāno gambhīrobhāso, gambhīro uttānobhāso, uttāno uttānobhāso, gambhīro gambhīrobhāso. Evamevaṃ cattārome udakarahadūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Uttāno gambhīrobhāso, gambhīro uttānobhāso, uttāno uttānobhāso, gambhīro gambhīrobhāso.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo uttāno hoti gambhīrobhāso? Idhekaccassa puggalassa pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So <a name="V0.0156"></a> ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ nappajānāti. Evaṃ puggalo uttāno hoti gambhīrobhāso. Seyyathāpi so udakarahado uttāno gambhīrobhāso, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo gambhīro hoti uttānobhāso? Idhekaccassa puggalassa na pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo gambhīro hoti uttānobhāso. Seyyathāpi so udakarahado gambhīro uttānobhāso, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo uttāno hoti uttānobhāso? Idhekaccassa <a name="P0.0047"></a> puggalassa na pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ <a name="T0.0194"></a> samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ nappajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ <a name="M0.0154"></a> nappajānāti. Evaṃ puggalo uttāno hoti uttānobhāso. Seyyathāpi so udakarahado uttāno uttānobhāso, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo gambhīro hoti gambhīrobhāso? Idhekaccassa puggalassa pāsādikaṃ hoti abhikkantaṃ paṭikkantaṃ ālokitaṃ vilokitaṃ samiñjitaṃ pasāritaṃ saṅghāṭipattacīvaradhāraṇaṃ. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti. Evaṃ puggalo gambhīro hoti gambhīrobhāso. Seyyathāpi so udakarahado gambhīro gambhīrobhāso, tathūpamo ayaṃ puggalo. Ime cattāro udakarahadūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para162"></span><a name="para162"></a><span class="paranum">162</span>. Tattha katame cattāro balībaddūpamā puggalā? Cattāro balībaddā <span class="note">[balibaddhā (syā.)]</span> – sakagavacaṇḍo <span class="note">[sagavacaṇḍo (ka. sī.) a. ni. 4.108]</span> no paragavacaṇḍo, paragavacaṇḍo no sakagavacaṇḍo, sakagavacaṇḍo ca paragavacaṇḍo ca, neva sakagavacaṇḍo no paragavacaṇḍo. Evamevaṃ cattārome balībaddūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Sakagavacaṇḍo no paragavacaṇḍo, paragavacaṇḍo no sakagavacaṇḍo, sakagavacaṇḍo ca paragavacaṇḍo ca, neva sakagavacaṇḍo no paragavacaṇḍo.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="V0.0157"></a> puggalo sakagavacaṇḍo hoti no paragavacaṇḍo? Idhekacco puggalo sakaparisaṃ ubbejitā <a name="T0.0195"></a> hoti, no paraparisaṃ. Evaṃ puggalo sakagavacaṇḍo hoti no paragavacaṇḍo. Seyyathāpi so balībaddo sakagavacaṇḍo no paragavacaṇḍo, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo paragavacaṇḍo hoti no sakagavacaṇḍo? Idhekacco puggalo paraparisaṃ ubbejitā hoti, no sakaparisaṃ. Evaṃ puggalo paragavacaṇḍo hoti no sakagavacaṇḍo. Seyyathāpi so balībaddo paragavacaṇḍo no sakagavacaṇḍo, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo sakagavacaṇḍo ca hoti paragavacaṇḍo ca? Idhekacco puggalo sakaparisañca ubbejitā hoti, paraparisañca. Evaṃ puggalo <a name="M0.0155"></a> sakagavacaṇḍo ca hoti paragavacaṇḍo ca. Seyyathāpi so balībaddo sakagavacaṇḍo ca paragavacaṇḍo ca, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo neva sakagavacaṇḍo hoti no paragavacaṇḍo? Idhekacco puggalo neva sakaparisaṃ ubbejitā hoti no paraparisaṃ. Evaṃ puggalo neva sakagavacaṇḍo hoti no paragavacaṇḍo. Seyyathāpi so balībaddo neva sakagavacaṇḍo no paragavacaṇḍo, tathūpamo ayaṃ puggalo. Ime cattāro balībaddūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para163"></span><a name="para163"></a><span class="paranum">163</span>. Tattha <a name="P0.0048"></a> katame cattāro āsīvisūpamā puggalā? Cattāro āsīvisā <span class="note">[āsivisā (syā.)]</span> – āgataviso no ghoraviso, ghoraviso no āgataviso, āgataviso ca ghoraviso ca, neva āgataviso no ghoraviso. Evamevaṃ <a name="T0.0196"></a> cattārome āsīvisūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Āgataviso no ghoraviso, ghoraviso no āgataviso, āgataviso ca ghoraviso ca, neva āgataviso no ghoraviso.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo āgataviso hoti no ghoraviso? Idhekacco puggalo abhiṇhaṃ kujjhati. So ca khvassa kodho na ciraṃ dīgharattaṃ anuseti. Evaṃ puggalo āgataviso hoti, no ghoraviso. Seyyathāpi so āsīviso āgataviso no ghoraviso, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="V0.0158"></a> puggalo ghoraviso hoti no āgataviso? Idhekacco puggalo naheva kho <span class="note">[neva kho (sī.) a. ni. 4.110]</span> abhiṇhaṃ kujjhati. So ca khvassa kodho ciraṃ dīgharattaṃ anuseti. Evaṃ puggalo ghoraviso hoti, no āgataviso. Seyyathāpi so āsīviso ghoraviso no āgataviso, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo āgataviso ca hoti ghoraviso ca? Idhekacco puggalo abhiṇhaṃ kujjhati. So ca khvassa kodho ciraṃ dīgharattaṃ anuseti. Evaṃ puggalo āgataviso ca hoti ghoraviso ca. Seyyathāpi <a name="M0.0156"></a> so āsīviso āgataviso ca ghoraviso ca, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo neva āgataviso hoti no ghoraviso? Idhekacco puggalo naheva kho abhiṇhaṃ kujjhati. So ca khvassa kodho na ciraṃ dīgharattaṃ anuseti. Evaṃ puggalo neva āgataviso hoti no ghoraviso. Seyyathāpi so āsīviso neva āgataviso no ghoraviso, tathūpamo ayaṃ puggalo. Ime cattāro āsīvisūpamā puggalā santo <a name="T0.0197"></a> saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para164"></span><a name="para164"></a><span class="paranum">164</span>. Kathañca puggalo ananuvicca apariyogāhetvā avaṇṇārahassa vaṇṇaṃ bhāsitā hoti? Idhekacco puggalo duppaṭipannānaṃ micchāpaṭipannānaṃ titthiyānaṃ titthiyasāvakānaṃ vaṇṇaṃ bhāsati – ‘‘suppaṭipannā’’ itipi, ‘‘sammāpaṭipannā’’ itipīti. Evaṃ puggalo ananuvicca apariyogāhetvā avaṇṇārahassa vaṇṇaṃ bhāsitā hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ananuvicca apariyogāhetvā vaṇṇārahassa avaṇṇaṃ bhāsitā hoti? Idhekacco <a name="P0.0049"></a> puggalo suppaṭipannānaṃ sammāpaṭipannānaṃ buddhānaṃ buddhasāvakānaṃ avaṇṇaṃ bhāsati – ‘‘duppaṭipannā’’ itipi, ‘‘micchāpaṭipannā’’ itipīti. Evaṃ puggalo ananuvicca apariyogāhetvā vaṇṇārahassa avaṇṇaṃ bhāsitā hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ananuvicca apariyogāhetvā appasādanīye ṭhāne pasādaṃ upadaṃsitā hoti? Idhekacco puggalo duppaṭipadāya micchāpaṭipadāya pasādaṃ janeti – ‘‘suppaṭipadā’’ itipi<a name="V0.0159"></a>, ‘‘sammāpaṭipadā’’ itipīti. Evaṃ puggalo ananuvicca apariyogāhetvā appasādanīye ṭhāne pasādaṃ upadaṃsitā hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ananuvicca apariyogāhetvā pasādanīye ṭhāne appasādaṃ upadaṃsitā hoti? Idhekacco puggalo suppaṭipadāya sammāpaṭipadāya appasādaṃ janeti – ‘‘duppaṭipadā’’ itipi, ‘‘micchāpaṭipadā’’ itipīti. Evaṃ puggalo ananuvicca apariyogāhetvā pasādanīye ṭhāne appasādaṃ upadaṃsitā hoti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para165"></span><a name="para165"></a><span class="paranum">165</span>. Kathañca <a name="M0.0157"></a> puggalo anuvicca pariyogāhetvā avaṇṇārahassa avaṇṇaṃ <a name="T0.0198"></a> bhāsitā hoti? Idhekacco puggalo duppaṭipannānaṃ micchāpaṭipannānaṃ titthiyānaṃ titthiyasāvakānaṃ avaṇṇaṃ bhāsati – ‘‘duppaṭipannā’’ itipi, ‘‘micchāpaṭipannā’’ itipīti. Evaṃ puggalo anuvicca pariyogāhetvā avaṇṇārahassa avaṇṇaṃ bhāsitā hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo anuvicca pariyogāhetvā vaṇṇārahassa vaṇṇaṃ bhāsitā hoti? Idhekacco puggalo suppaṭipannānaṃ sammāpaṭipannānaṃ buddhānaṃ buddhasāvakānaṃ vaṇṇaṃ bhāsati – ‘‘suppaṭipannā’’ itipi, ‘‘sammāpaṭipannā’’ itipīti. Evaṃ puggalo anuvicca pariyogāhetvā vaṇṇārahassa vaṇṇaṃ bhāsitā hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo anuvicca pariyogāhetvā appasādanīye ṭhāne appasādaṃ upadaṃsitā hoti? Idhekacco puggalo duppaṭipadāya micchāpaṭipadāya appasādaṃ janeti – ‘‘duppaṭipadā’’ itipi, ‘‘micchāpaṭipadā’’ itipīti. Evaṃ puggalo anuvicca pariyogāhetvā appasādanīye ṭhāne appasādaṃ upadaṃsitā hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo anuvicca pariyogāhetvā pasādanīye ṭhāne pasādaṃ upadaṃsitā hoti? Idhekacco <a name="P0.0050"></a> puggalo suppaṭipadāya sammāpaṭipadāya pasādaṃ janeti – ‘‘suppaṭipadā’’ itipi, ‘‘sammāpaṭipadā’’ itipīti. Evaṃ puggalo anuvicca pariyogāhetvā pasādanīye ṭhāne pasādaṃ upadaṃsitā hoti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para166"></span><a name="para166"></a><span class="paranum">166</span>. Kathañca <a name="V0.0160"></a> puggalo avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, no ca kho vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena? Idhekacco puggalo vaṇṇopi saṃvijjati avaṇṇopi saṃvijjati<a name="T0.0199"></a>. Yo tattha avaṇṇo taṃ bhaṇati bhūtaṃ tacchaṃ kālena, yo tattha vaṇṇo taṃ na bhaṇati bhūtaṃ tacchaṃ kālena. Evaṃ puggalo avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, no ca kho vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, no ca kho avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena? Idhekacco puggalo vaṇṇopi saṃvijjati avaṇṇopi saṃvijjati<a name="M0.0158"></a>. Yo tattha vaṇṇo taṃ bhaṇati bhūtaṃ tacchaṃ kālena, yo tattha avaṇṇo taṃ na bhaṇati bhūtaṃ tacchaṃ kālena. Evaṃ puggalo vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, no ca kho avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo avaṇṇārahassa ca avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, vaṇṇārahassa ca vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena? Idhekacco puggalo vaṇṇopi saṃvijjati avaṇṇopi saṃvijjati. Yo tattha avaṇṇo taṃ bhaṇati bhūtaṃ tacchaṃ kālena, yopi tattha vaṇṇo tampi bhaṇati bhūtaṃ tacchaṃ kālena. Tatra kālaññū hoti tassa pañhassa veyyākaraṇāya. Evaṃ puggalo avaṇṇārahassa ca avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, vaṇṇārahassa ca vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo neva avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, nopi vaṇṇārahassa vaṇṇaṃ <a name="T0.0200"></a> bhāsitā hoti bhūtaṃ tacchaṃ kālena? Idhekacco puggalo vaṇṇopi saṃvijjati avaṇṇopi saṃvijjati. Yo tattha avaṇṇo taṃ na bhaṇati bhūtaṃ tacchaṃ kālena, yopi tattha vaṇṇo tampi na bhaṇati bhūtaṃ tacchaṃ <a name="P0.0051"></a> kālena. Upekkhako viharati sato sampajāno. Evaṃ puggalo neva avaṇṇārahassa avaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena, nopi vaṇṇārahassa vaṇṇaṃ bhāsitā hoti bhūtaṃ tacchaṃ kālena.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para167"></span><a name="para167"></a><span class="paranum">167</span>. Katamo ca puggalo uṭṭhānaphalūpajīvī no puññaphalūpajīvī? Yassa puggalassa uṭṭhahato <a name="V0.0161"></a> ghaṭato vāyamato ājīvo abhinibbattati, no puññato – ayaṃ vuccati puggalo ‘‘uṭṭhānaphalūpajīvī, no puññaphalūpajīvī’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo puññaphalūpajīvī no uṭṭhānaphalūpajīvī? Paranimmitavasavattī deve <span class="note">[paranimmitavasavattideve (sī. syā.)]</span> upādāya tatūpari devā puññaphalūpajīvino na uṭṭhānaphalūpajīvino.</p>
+
+
+
+<p class="bodytext">Katamo <a name="M0.0159"></a> ca puggalo uṭṭhānaphalūpajīvī ca puññaphalūpajīvī ca? Yassa puggalassa uṭṭhahato ghaṭato vāyamato ājīvo abhinibbattati puññato ca – ayaṃ vuccati puggalo ‘‘uṭṭhānaphalūpajīvī ca puññaphalūpajīvī ca’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo neva uṭṭhānaphalūpajīvī no puññaphalūpajīvī? Nerayikā neva uṭṭhānaphalūpajīvino no puññaphalūpajīvino.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para168"></span><a name="para168"></a><span class="paranum">168</span>. Kathañca puggalo tamo hoti tamaparāyano? Idhekacco puggalo nīce kule paccājāto hoti – caṇḍālakule vā nesādakule vā venakule <span class="note">[veṇakule (sī. syā.)]</span> vā rathakārakule vā pukkusakule vā dalidde <span class="note">[daḷidde (sī.) passa aṅguttaranikāye]</span> appannapānabhojane <a name="T0.0201"></a> kasiravuttike, yattha kasirena ghāsacchādo labbhati. So ca hoti dubbaṇṇo duddasiko okoṭimako bahvābādho kāṇo vā kuṇī vā khañjo vā pakkhahato vā, na lābhī annassa pānassa vatthassa yānassa mālāgandhavilepanassa seyyāvasathapadīpeyyassa. So kāyena duccaritaṃ carati, vācāya duccaritaṃ carati, manasā duccaritaṃ carati. So kāyena duccaritaṃ caritvā vācāya duccaritaṃ caritvā manasā duccaritaṃ caritvā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjati. Evaṃ puggalo tamo hoti tamaparāyano.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo tamo hoti jotiparāyano? Idhekacco puggalo nīce kule paccājāto hoti – caṇḍālakule vā nesādakule vā venakule vā rathakārakule vā pukkusakule vā dalidde appannapānabhojane kasiravuttike, yattha kasirena ghāsacchādo labbhati. So ca hoti dubbaṇṇo duddasiko okoṭimako bahvābādho kāṇo vā kuṇī vā khañjo vā pakkhahato vā, na lābhī annassa pānassa vatthassa yānassa mālāgandhavilepanassa seyyāvasathapadīpeyyassa. So kāyena <a name="V0.0162"></a> sucaritaṃ carati, vācāya sucaritaṃ carati<a name="P0.0052"></a>, manasā sucaritaṃ carati. So kāyena sucaritaṃ caritvā vācāya sucaritaṃ caritvā manasā sucaritaṃ caritvā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjati. Evaṃ puggalo tamo hoti jotiparāyano.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo joti hoti tamaparāyano? Idhekacco puggalo ucce kule paccājāto hoti – khattiyamahāsālakule vā brāhmaṇamahāsālakule <a name="M0.0160"></a> vā <a name="T0.0202"></a> gahapatimahāsālakule vā aḍḍhe mahaddhane mahābhoge pahūtajātarūparajate pahūtavittūpakaraṇe pahūtadhanadhaññe. So ca hoti abhirūpo dassanīyo pāsādiko paramāya vaṇṇapokkharatāya samannāgato, lābhī annassa pānassa vatthassa yānassa mālāgandhavilepanassa seyyāvasathapadīpeyyassa. So kāyena duccaritaṃ carati, vācāya duccaritaṃ carati, manasā duccaritaṃ carati. So kāyena duccaritaṃ caritvā vācāya duccaritaṃ caritvā manasā duccaritaṃ caritvā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjati. Evaṃ puggalo joti hoti tamaparāyano.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo joti hoti jotiparāyano? Idhekacco puggalo ucce kule paccājāto hoti – khattiyamahāsālakule vā brāhmaṇamahāsālakule vā gahapatimahāsālakule vā aḍḍhe mahaddhane mahābhoge pahūtajātarūparajate pahūtavittūpakaraṇe pahūtadhanadhaññe. So ca hoti abhirūpo dassanīyo pāsādiko paramāya vaṇṇapokkharatāya samannāgato, lābhī annassa pānassa vatthassa yānassa mālāgandhavilepanassa seyyāvasathapadīpeyyassa. So kāyena sucaritaṃ carati, vācāya sucaritaṃ carati, manasā sucaritaṃ carati. So kāyena sucaritaṃ caritvā vācāya sucaritaṃ caritvā manasā sucaritaṃ caritvā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjati. Evaṃ puggalo joti hoti jotiparāyano.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para169"></span><a name="para169"></a><span class="paranum">169</span>. Kathañca puggalo oṇatoṇato hoti…pe… evaṃ puggalo oṇatoṇato <a name="T0.0203"></a> hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo oṇatuṇṇato hoti…pe… evaṃ puggalo oṇatuṇṇato hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo uṇṇatoṇato hoti…pe… evaṃ puggalo uṇṇatoṇato hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo uṇṇatuṇṇato hoti…pe… evaṃ puggalo uṇṇatuṇṇato hoti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para170"></span><a name="para170"></a><span class="paranum">170</span>. Tattha <a name="M0.0161"></a><a name="V0.0163"></a> katame cattāro rukkhūpamā puggalā? Cattāro rukkhā – pheggu sāraparivāro, sāro phegguparivāro, pheggu phegguparivāro, sāro sāraparivāro. Evamevaṃ cattārome rukkhūpamā puggalā santo saṃvijjamānā lokasmiṃ. Katame cattāro? Pheggu sāraparivāro, sāro phegguparivāro, pheggu phegguparivāro, sāro sāraparivāro.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="P0.0053"></a> puggalo pheggu hoti sāraparivāro? Idhekacco puggalo dussīlo hoti pāpadhammo, parisā ca khvassa hoti sīlavatī kalyāṇadhammā. Evaṃ puggalo pheggu hoti sāraparivāro. Seyyathāpi so rukkho pheggu sāraparivāro, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo sāro hoti phegguparivāro? Idhekacco puggalo sīlavā hoti kalyāṇadhammo, parisā ca khvassa hoti dussīlā pāpadhammā. Evaṃ puggalo sāro hoti phegguparivāro. Seyyathāpi so rukkho sāro phegguparivāro, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo pheggu hoti phegguparivāro? Idhekacco puggalo dussīlo hoti pāpadhammo, parisāpissa hoti dussīlā pāpadhammā. Evaṃ puggalo pheggu hoti phegguparivāro. Seyyathāpi so rukkho pheggu <a name="T0.0204"></a> phegguparivāro, tathūpamo ayaṃ puggalo.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo sāro hoti sāraparivāro? Idhekacco puggalo sīlavā hoti kalyāṇadhammo, parisāpissa hoti sīlavatī kalyāṇadhammā. Evaṃ puggalo sāro hoti sāraparivāro. Seyyathāpi so rukkho sāro sāraparivāro, tathūpamo ayaṃ puggalo. Ime cattāro rukkhūpamā puggalā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para171"></span><a name="para171"></a><span class="paranum">171</span>. Katamo ca puggalo rūpappamāṇo rūpappasanno? Idhekacco puggalo ārohaṃ vā passitvā pariṇāhaṃ vā passitvā saṇṭhānaṃ vā passitvā pāripūriṃ vā passitvā tattha pamāṇaṃ gahetvā pasādaṃ janeti. Ayaṃ vuccati puggalo rūpappamāṇo rūpappasanno.</p>
+
+
+
+<p class="bodytext">Katamo <a name="M0.0162"></a> ca puggalo ghosappamāṇo ghosappasanno? Idhekacco puggalo paravaṇṇanāya parathomanāya <a name="V0.0164"></a> parapasaṃsanāya paravaṇṇahārikāya <span class="note">[paravaṇṇahāriyā (sī.)]</span> tattha pamāṇaṃ gahetvā pasādaṃ janeti. Ayaṃ vuccati puggalo ghosappamāṇo ghosappasanno.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para172"></span><a name="para172"></a><span class="paranum">172</span>. Katamo ca puggalo lūkhappamāṇo lūkhappasanno? Idhekacco puggalo cīvaralūkhaṃ vā passitvā pattalūkhaṃ vā passitvā senāsanalūkhaṃ vā passitvā vividhaṃ vā dukkarakārikaṃ passitvā tattha pamāṇaṃ gahetvā pasādaṃ janeti. Ayaṃ vuccati puggalo lūkhappamāṇo lūkhappasanno.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo dhammappamāṇo dhammappasanno? Idhekacco puggalo sīlaṃ vā passitvā samādhiṃ vā passitvā paññaṃ <a name="P0.0054"></a> vā passitvā tattha pamāṇaṃ gahetvā pasādaṃ janeti. Ayaṃ vuccati puggalo <a name="T0.0205"></a> dhammappamāṇo dhammappasanno.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para173"></span><a name="para173"></a><span class="paranum">173</span>. Kathañca puggalo attahitāya paṭipanno hoti no parahitāya? Idhekacco puggalo attanā sīlasampanno hoti, no paraṃ sīlasampadāya samādapeti; attanā samādhisampanno hoti, no paraṃ samādhisampadāya samādapeti; attanā paññāsampanno hoti, no paraṃ paññāsampadāya samādapeti; attanā vimuttisampanno hoti, no paraṃ vimuttisampadāya samādapeti; attanā vimuttiñāṇadassanasampanno hoti, no paraṃ vimuttiñāṇadassanasampadāya samādapeti. Evaṃ puggalo attahitāya paṭipanno hoti no parahitāya.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo parahitāya paṭipanno hoti no attahitāya? Idhekacco puggalo attanā na sīlasampanno hoti, paraṃ sīlasampadāya samādapeti; attanā na samādhisampanno hoti, paraṃ samādhisampadāya samādapeti; attanā na paññāsampanno hoti, paraṃ paññāsampadāya samādapeti; attanā na vimuttisampanno hoti, paraṃ vimuttisampadāya samādapeti; attanā na vimuttiñāṇadassanasampanno hoti, paraṃ vimuttiñāṇadassanasampadāya samādapeti. Evaṃ puggalo parahitāya paṭipanno hoti no attahitāya.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="M0.0163"></a> puggalo attahitāya ceva paṭipanno hoti parahitāya ca? Idhekacco puggalo attanā ca sīlasampanno hoti, parañca sīlasampadāya samādapeti; attanā ca samādhisampanno hoti, parañca samādhisampadāya samādapeti; attanā ca paññāsampanno hoti, parañca paññāsampadāya <a name="T0.0206"></a><a name="V0.0165"></a> samādapeti; attanā ca vimuttisampanno hoti, parañca vimuttisampadāya samādapeti; attanā ca vimuttiñāṇadassanasampanno hoti, parañca vimuttiñāṇadassanasampadāya samādapeti. Evaṃ puggalo attahitāya ceva paṭipanno hoti parahitāya ca.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo neva attahitāya paṭipanno hoti no parahitāya? Idhekacco puggalo attanā na sīlasampanno hoti, no paraṃ sīlasampadāya samādapeti; attanā na samādhisampanno hoti, no paraṃ samādhisampadāya samādapeti; attanā na paññāsampanno hoti, no paraṃ paññāsampadāya samādapeti; attanā na <a name="P0.0055"></a> vimuttisampanno hoti, no paraṃ vimuttisampadāya samādapeti; attanā na vimuttiñāṇadassanasampanno hoti, no paraṃ vimuttiñāṇadassanasampadāya samādapeti. Evaṃ puggalo neva attahitāya paṭipanno hoti no parahitāya.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para174"></span><a name="para174"></a><span class="paranum">174</span>. Kathañca puggalo attantapo hoti attaparitāpanānuyogamanuyutto? Idhekacco puggalo acelako hoti muttācāro hatthāpalekhano <span class="note">[hatthāvalekhano (syā.)]</span>, naehibhaddantiko natiṭṭhabhaddantiko nābhihaṭaṃ na uddissakataṃ na nimantanaṃ sādiyati, so na kumbhimukhā paṭiggaṇhāti na kaḷopimukhā <span class="note">[kalopimukhā (sī. syā.) ma. ni. 2.7]</span> paṭiggaṇhāti, na eḷakamantaraṃ na daṇḍamantaraṃ na musalamantaraṃ na dvinnaṃ bhuñjamānānaṃ na gabbhiniyā na pāyamānāya na purisantaragatāya, na saṅkittīsu na yattha sā upaṭṭhito hoti na yattha makkhikā saṇḍasaṇḍacārinī, na macchaṃ na <a name="T0.0207"></a> maṃsaṃ na suraṃ na merayaṃ na thusodakaṃ pivati. So ekāgāriko vā hoti ekālopiko, dvāgāriko vā hoti dvālopiko…pe… sattāgāriko vā hoti sattālopiko; ekissāpi dattiyā yāpeti, dvīhipi dattīhi yāpeti…pe… sattahipi dattīhi yāpeti; ekāhikampi āhāraṃ āhāreti, dvīhikampi <span class="note">[dvāhikampi (sī.)]</span> āhāraṃ āhāreti…pe… sattāhikampi āhāraṃ āhāreti. Iti evarūpaṃ <a name="M0.0164"></a> aḍḍhamāsikampi pariyāyabhattabhojanānuyogamanuyutto viharati. So sākabhakkho vā hoti sāmākabhakkho vā hoti nīvārabhakkho vā hoti daddulabhakkho vā hoti haṭabhakkho vā hoti kaṇabhakkho vā hoti ācāmabhakkho vā hoti piññākabhakkho vā hoti tiṇabhakkho vā hoti gomayabhakkho vā hoti, vanamūlaphalāhāro yāpeti pavattaphalabhojī. So sāṇānipi dhāreti masāṇānipi dhāreti chavadussānipi dhāreti paṃsukūlānipi dhāreti tirīṭānipi dhāreti ajinampi dhāreti ajinakkhipampi dhāreti kusacīrampi dhāreti vākacīrampi dhāreti phalakacīrampi dhāreti kesakambalampi dhāreti vāḷakambalampi dhāreti ulūkapakkhampi <a name="V0.0166"></a> <span class="note">[ulukapakkhampi (sī. syā.)]</span> dhāreti, kesamassulocakopi hoti kesamassulocanānuyogamanuyutto, ubbhaṭṭhakopi hoti āsanapaṭikkhitto, ukkuṭikopi hoti ukkuṭikappadhānamanuyutto, kaṇṭakāpassayikopi hoti kaṇṭakāpassaye seyyaṃ kappeti, sāyatatiyakampi <span class="note">[sāyaṃtatiyakampi (syā. ka.) ma. ni. 2.7]</span> udakorohanānuyogamanuyutto viharati. Iti evarūpaṃ anekavihitaṃ kāyassa ātāpanaparitāpanānuyogamanuyutto viharati<a name="P0.0056"></a>. Evaṃ puggalo attantapo hoti attaparitāpanānuyogamanuyutto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para175"></span><a name="para175"></a><span class="paranum">175</span>. Kathañca puggalo parantapo hoti paraparitāpanānuyogamanuyutto? Idhekacco puggalo orabbhiko hoti sūkariko sākuṇiko māgaviko luddo macchaghātako coro coraghātako goghātako bandhanāgāriko, ye vā panaññepi keci kurūrakammantā. Evaṃ puggalo parantapo hoti paraparitāpanānuyogamanuyutto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para176"></span><a name="para176"></a><span class="paranum">176</span>. Kathañca puggalo attantapo ca hoti attaparitāpanānuyogamanuyutto, parantapo ca paraparitāpanānuyogamanuyutto? Idhekacco puggalo rājā vā hoti khattiyo muddhāvasitto <span class="note">[muddhābhisitto (syā. ka.)]</span> brāhmaṇo vā mahāsālo. So puratthimena narassa navaṃ sandhāgāraṃ <span class="note">[santāgāraṃ (syā.), yaññāgāraṃ (sī.)]</span> kārāpetvā kesamassuṃ ohāretvā kharājinaṃ <span class="note">[khurājinaṃ (syā. ka.)]</span> nivāsetvā sappitelena kāyaṃ abbhañjitvā <a name="M0.0165"></a> migavisāṇena piṭṭhiṃ kaṇḍuvamāno <span class="note">[kaṇḍūyamāno (sī.)]</span> sandhāgāraṃ pavisati saddhiṃ mahesiyā brāhmaṇena ca purohitena. So tattha anantarahitāya bhūmiyā haritupalittāya seyyaṃ kappeti. Ekissā gāviyā sarūpavacchāya yaṃ ekasmiṃ thane khīraṃ hoti tena rājā yāpeti, yaṃ dutiyasmiṃ thane khīraṃ hoti tena mahesī yāpeti, yaṃ tatiyasmiṃ thane khīraṃ hoti tena brāhmaṇo purohito yāpeti, yaṃ catutthasmiṃ thane khīraṃ hoti tena aggiṃ juhati, avasesena vacchako yāpeti. So evamāha – ‘‘ettakā usabhā haññantu yaññatthāya, ettakā vacchatarā haññantu yaññatthāya, ettakā vacchatariyo haññantu yaññatthāya, ettakā <a name="T0.0209"></a> ajā haññantu yaññatthāya, ettakā urabbhā haññantu yaññatthāya, (ettakā assā haññantu yaññatthāya) <span class="note">[( ) natthi sīhaḷapotthake. majjhimanikāye kandarakasuttepi evameva]</span> ettakā rukkhā chijjantu yūpatthāya, ettakā dabbhā lūyantu barihisatthāyā’’ti <span class="note">[parihiṃsatthāyāti (sī. syā. ka.) ma. ni. 2.9]</span>. Yepissa te honti dāsāti vā pessāti vā kammakarāti vā, tepi daṇḍatajjitā bhayatajjitā assumukhā rudamānā parikammāni karonti. Evaṃ puggalo attantapo ca hoti attaparitāpanānuyogamanuyutto, parantapo ca paraparitāpanānuyogamanuyutto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para177"></span><a name="para177"></a><span class="paranum">177</span>. Kathañca puggalo neva attantapo ca hoti na attaparitāpanānuyogamanuyutto, na parantapo <a name="V0.0167"></a> na paraparitāpanānuyogamanuyutto? So anattantapo aparantapo diṭṭheva dhamme nicchāto nibbuto sītībhūto sukhappaṭisaṃvedī brahmabhūtena attanā viharati.</p>
+
+
+
+<p class="bodytext">Idha tathāgato loke uppajjati arahaṃ sammāsambuddho vijjācaraṇasampanno <a name="P0.0057"></a> sugato lokavidū anuttaro purisadammasārathi satthā devamanussānaṃ buddho bhagavā. So imaṃ lokaṃ sadevakaṃ samārakaṃ sabrahmakaṃ sassamaṇabrāhmaṇiṃ pajaṃ sadevamanussaṃ sayaṃ abhiññā sacchikatvā pavedeti. So dhammaṃ deseti ādikalyāṇaṃ majjhekalyāṇaṃ pariyosānakalyāṇaṃ sātthaṃ sabyañjanaṃ, kevalaparipuṇṇaṃ parisuddhaṃ brahmacariyaṃ pakāseti. Taṃ dhammaṃ suṇāti gahapati vā gahapatiputto vā aññatarasmiṃ vā kule paccājāto<a name="M0.0166"></a>. So taṃ dhammaṃ sutvā tathāgate saddhaṃ paṭilabhati. So tena saddhāpaṭilābhena <a name="T0.0210"></a> samannāgato iti paṭisañcikkhati – ‘‘sambādho gharāvāso rajāpatho, abbhokāso pabbajjā. Nayidaṃ sukaraṃ agāraṃ ajjhāvasatā ekantaparipuṇṇaṃ ekantaparisuddhaṃ saṅkhalikhitaṃ brahmacariyaṃ carituṃ. Yaṃnūnāhaṃ kesamassuṃ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṃ pabbajeyya’’nti! So aparena samayena appaṃ vā bhogakkhandhaṃ pahāya mahantaṃ vā bhogakkhandhaṃ pahāya appaṃ vā ñātiparivaṭṭaṃ pahāya mahantaṃ vā ñātiparivaṭṭaṃ pahāya kesamassuṃ ohāretvā kāsāyāni vatthāni acchādetvā agārasmā anagāriyaṃ pabbajati.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para178"></span><a name="para178"></a><span class="paranum">178</span>. So evaṃ pabbajito samāno bhikkhūnaṃ sikkhāsājīvasamāpanno pāṇātipātaṃ pahāya pāṇātipātā paṭivirato hoti nihitadaṇḍo nihitasattho lajjī dayāpanno sabbapāṇabhūtahitānukampī viharati.</p>
+
+
+
+<p class="bodytext">Adinnādānaṃ pahāya adinnādānā paṭivirato hoti dinnādāyī dinnapāṭikaṅkhī, athenena sucibhūtena attanā viharati.</p>
+
+
+
+<p class="bodytext">Abrahmacariyaṃ pahāya brahmacārī hoti ārācārī <span class="note">[anācārī (ka.)]</span> paṭivirato methunā gāmadhammā.</p>
+
+
+
+<p class="bodytext">Musāvādaṃ pahāya musāvādā paṭivirato hoti saccavādī saccasandho theto paccayiko avisaṃvādako lokassa.</p>
+
+
+
+<p class="bodytext">Pisuṇaṃ <a name="V0.0168"></a> vācaṃ pahāya pisuṇāya vācāya paṭivirato hoti, ito sutvā na amutra akkhātā imesaṃ bhedāya, amutra vā sutvā na imesaṃ akkhātā amūsaṃ bhedāya. Iti bhinnānaṃ vā sandhātā sahitānaṃ vā anuppadātā samaggārāmo samaggarato samagganandī <a name="T0.0211"></a> samaggakaraṇiṃ vācaṃ bhāsitā hoti.</p>
+
+
+
+<p class="bodytext">Pharusaṃ vācaṃ pahāya pharusāya vācāya paṭivirato hoti. Yā sā vācā nelā kaṇṇasukhā pemanīyā hadayaṅgamā porī bahujanakantā bahujanamanāpā tathārūpiṃ vācaṃ bhāsitā hoti.</p>
+
+
+
+<p class="bodytext">Samphappalāpaṃ <a name="P0.0058"></a><a name="M0.0167"></a> pahāya samphappalāpā paṭivirato hoti, kālavādī bhūtavādī atthavādī dhammavādī vinayavādī nidhānavatiṃ vācaṃ bhāsitā kālena sāpadesaṃ pariyantavatiṃ atthasaṃhitaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para179"></span><a name="para179"></a><span class="paranum">179</span>. So bījagāmabhūtagāmasamārambhā paṭivirato hoti, ekabhattiko hoti rattūparato virato vikālabhojanā, naccagītavāditavisūkadassanā paṭivirato hoti, mālāgandhavilepanadhāraṇamaṇḍanavibhūsanaṭṭhānā paṭivirato hoti, uccāsayanamahāsayanā paṭivirato hoti, jātarūparajatapaṭiggahaṇā paṭivirato hoti.</p>
+
+
+
+<p class="bodytext">Āmakadhaññapaṭiggahaṇā paṭivirato hoti, āmakamaṃsapaṭiggahaṇā paṭivirato hoti, itthikumārikāpaṭiggahaṇā paṭivirato hoti, dāsidāsapaṭiggahaṇā paṭivirato hoti, ajeḷakapaṭiggahaṇā paṭivirato hoti, kukkuṭasūkarapaṭiggahaṇā paṭivirato hoti, hatthigavāssavaḷavapaṭiggahaṇā paṭivirato hoti, khettavatthupaṭiggahaṇā paṭivirato hoti, dūteyyapahiṇagamanānuyogā paṭivirato hoti, kayavikkayā paṭivirato hoti, tulākūṭakaṃsakūṭamānakūṭā paṭivirato hoti, ukkoṭanavañcananikatisāciyogā <span class="note">[… sāviyogā (syā. ka.)]</span> paṭivirato hoti, chedanavadhabandhanaviparāmosaālopasahasākārā paṭivirato hoti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para180"></span><a name="para180"></a><span class="paranum">180</span>. So santuṭṭho hoti kāyaparihārikena cīvarena kucchiparihārikena piṇḍapātena. So yena yeneva <a name="T0.0212"></a> pakkamati samādāyeva pakkamati, seyyathāpi nāma pakkhī sakuṇo yena yeneva ḍeti sapattabhārova ḍeti. Evamevaṃ bhikkhu santuṭṭho hoti kāyaparihārikena cīvarena kucchiparihārikena <a name="V0.0169"></a> piṇḍapātena. So yena yeneva pakkamati samādāyeva pakkamati. So iminā ariyena sīlakkhandhena samannāgato ajjhattaṃ anavajjasukhaṃ paṭisaṃvedeti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para181"></span><a name="para181"></a><span class="paranum">181</span>. So cakkhunā rūpaṃ disvā na nimittaggāhī hoti nānubyañjanaggāhī. Yatvādhikaraṇamenaṃ cakkhundriyaṃ asaṃvutaṃ viharantaṃ abhijjhādomanassā pāpakā akusalā dhammā anvāssaveyyuṃ, tassa saṃvarāya paṭipajjati, rakkhati cakkhundriyaṃ, cakkhundriye saṃvaraṃ āpajjati; sotena saddaṃ sutvā…pe… ghānena <a name="M0.0168"></a> gandhaṃ ghāyitvā…pe… jivhāya rasaṃ sāyitvā…pe… kāyena phoṭṭhabbaṃ phusitvā…pe… manasā dhammaṃ viññāya na nimittaggāhī hoti nānubyañjanaggāhī. Yatvādhikaraṇamenaṃ manindriyaṃ asaṃvutaṃ viharantaṃ abhijjhādomanassā pāpakā akusalā dhammā anvāssaveyyuṃ, tassa saṃvarāya paṭipajjati, rakkhati manindriyaṃ, manindriye <a name="P0.0059"></a> saṃvaraṃ āpajjati. So iminā ariyena indriyasaṃvarena samannāgato ajjhattaṃ abyāsekasukhaṃ paṭisaṃvedeti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para182"></span><a name="para182"></a><span class="paranum">182</span>. So abhikkante paṭikkante sampajānakārī hoti, ālokite vilokite sampajānakārī hoti, samiñjite pasārite sampajānakārī hoti, saṅghāṭipattacīvaradhāraṇe sampajānakārī hoti, asite pīte khāyite sāyite sampajānakārī hoti, uccārapassāvakamme sampajānakārī hoti, gate ṭhite nisinne sutte <a name="T0.0213"></a> jāgarite bhāsite tuṇhībhāve sampajānakārī hoti.</p>
+
+
+
+<p class="bodytext">So iminā ca ariyena sīlakkhandhena samannāgato iminā ca ariyena indriyasaṃvarena samannāgato iminā ca ariyena satisampajaññena samannāgato imāya ca ariyāya santuṭṭhiyā samannāgato <span class="note">[passa ma. ni. 2 kandarakasutte; a. ni. 1 attantapasutte ca]</span> vivittaṃ senāsanaṃ bhajati araññaṃ rukkhamūlaṃ pabbataṃ kandaraṃ giriguhaṃ susānaṃ vanapatthaṃ abbhokāsaṃ palālapuñjaṃ. So pacchābhattaṃ piṇḍapātapaṭikkanto nisīdati pallaṅkaṃ ābhujitvā ujuṃ kāyaṃ paṇidhāya parimukhaṃ satiṃ upaṭṭhapetvā. So abhijjhaṃ loke pahāya vigatābhijjhena cetasā viharati, abhijjhāya cittaṃ parisodheti; byāpādapadosaṃ pahāya abyāpannacitto viharati sabbapāṇabhūtahitānukampī, byāpādapadosā cittaṃ parisodheti; thinamiddhaṃ <span class="note">[thīnamiddhaṃ (sī. syā.)]</span> pahāya vigatathinamiddho viharati ālokasaññī sato sampajāno, thinamiddhā cittaṃ parisodheti; uddhaccakukkuccaṃ pahāya anuddhato viharati ajjhattaṃ vūpasantacitto, uddhaccakukkuccā <a name="V0.0170"></a> cittaṃ parisodheti; vicikicchaṃ pahāya tiṇṇavicikiccho viharati akathaṃkathī kusalesu dhammesu, vicikicchāya cittaṃ parisodheti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para183"></span><a name="para183"></a><span class="paranum">183</span>. So ime pañca nīvaraṇe pahāya cetaso upakkilese paññāya dubbalīkaraṇe vivicceva kāmehi vivicca akusalehi dhammehi savitakkaṃ <a name="M0.0169"></a> savicāraṃ vivekajaṃ pītisukhaṃ paṭhamaṃ jhānaṃ upasampajja viharati; vitakkavicārānaṃ vūpasamā ajjhattaṃ sampasādanaṃ cetaso ekodibhāvaṃ avitakkaṃ avicāraṃ samādhijaṃ pītisukhaṃ dutiyaṃ jhānaṃ upasampajja viharati; pītiyā ca <a name="T0.0214"></a> virāgā upekkhako ca viharati sato ca sampajāno sukhañca kāyena paṭisaṃvedeti, yaṃ taṃ ariyā ācikkhanti – ‘‘upekkhako satimā sukhavihārī’’ti tatiyaṃ jhānaṃ upasampajja viharati; sukhassa ca pahānā dukkhassa ca pahānā pubbeva somanassadomanassānaṃ atthaṅgamā adukkhamasukhaṃ upekkhāsatipārisuddhiṃ catutthaṃ jhānaṃ upasampajja viharati.</p>
+
+
+
+<p class="bodytext">So <a name="P0.0060"></a> evaṃ samāhite citte parisuddhe pariyodāte anaṅgaṇe vigatūpakkilese mudubhūte kammaniye ṭhite āneñjappatte pubbenivāsānussatiñāṇāya cittaṃ abhininnāmeti. So anekavihitaṃ pubbenivāsaṃ anussarati, seyyathidaṃ – ekampi jātiṃ dvepi jātiyo tissopi jātiyo catassopi jātiyo pañcapi jātiyo dasapi jātiyo vīsampi jātiyo tiṃsampi jātiyo cattālīsampi jātiyo paññāsampi jātiyo jātisatampi jātisahassampi jātisatasahassampi anekepi saṃvaṭṭakappe anekepi vivaṭṭakappe anekepi saṃvaṭṭavivaṭṭakappe – ‘‘amutrāsiṃ evaṃnāmo evaṃgotto evaṃvaṇṇo evamāhāro evaṃsukhadukkhapaṭisaṃvedī evamāyupariyanto, so tato cuto amutra udapādiṃ; tatrāpāsiṃ evaṃnāmo evaṃgotto evaṃvaṇṇo evamāhāro evaṃsukhadukkhapaṭisaṃvedī evamāyupariyanto, so tato cuto idhūpapanno’’ti. Iti sākāraṃ sauddesaṃ anekavihitaṃ pubbenivāsaṃ anussarati.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para184"></span><a name="para184"></a><span class="paranum">184</span>. So evaṃ samāhite citte parisuddhe pariyodāte anaṅgaṇe vigatūpakkilese mudubhūte kammaniye ṭhite āneñjappatte sattānaṃ cutūpapātañāṇāya cittaṃ abhininnāmeti. So dibbena <a name="T0.0215"></a> cakkhunā visuddhena atikkantamānusakena satte passati cavamāne upapajjamāne hīne paṇīte suvaṇṇe dubbaṇṇe, sugate duggate yathākammūpage satte pajānāti – ‘‘ime vata bhonto sattā <a name="V0.0171"></a> kāyaduccaritena samannāgatā, vacīduccaritena samannāgatā, manoduccaritena samannāgatā, ariyānaṃ upavādakā, micchādiṭṭhikā micchādiṭṭhikammasamādānā. Te kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapannā. Ime vā pana bhonto sattā kāyasucaritena <a name="M0.0170"></a> samannāgatā vacīsucaritena samannāgatā manosucaritena samannāgatā ariyānaṃ anupavādakā sammādiṭṭhikā sammādiṭṭhikammasamādānā. Te kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapannā’’ti. So iti dibbena cakkhunā visuddhena atikkantamānusakena satte passati cavamāne upapajjamāne hīne paṇīte suvaṇṇe dubbaṇṇe, sugate duggate yathākammūpage satte pajānāti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para185"></span><a name="para185"></a><span class="paranum">185</span>. So evaṃ samāhite citte parisuddhe pariyodāte anaṅgaṇe vigatūpakkilese mudubhūte kammaniye ṭhite āneñjappatte āsavānaṃ khayañāṇāya cittaṃ abhininnāmeti. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti, ‘‘ime <a name="P0.0061"></a> āsavā’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ āsavasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ āsavanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ āsavanirodhagāminī paṭipadā’’ti yathābhūtaṃ <a name="T0.0216"></a> pajānāti. Tassa evaṃ jānato evaṃ passato kāmāsavāpi cittaṃ vimuccati, bhavāsavāpi cittaṃ vimuccati, avijjāsavāpi cittaṃ vimuccati. Vimuttasmiṃ vimuttamiti ñāṇaṃ hoti. ‘‘Khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyā’’ti pajānāti. Evaṃ puggalo neva attantapo ca hoti na attaparitāpanānuyogamanuyutto, na parantapo na paraparitāpanānuyogamanuyutto. So anattantapo aparantapo diṭṭheva dhamme nicchāto nibbuto sītībhūto sukhappaṭisaṃvedī brahmabhūtena attanā viharati.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para186"></span><a name="para186"></a><span class="paranum">186</span>. Katamo ca puggalo sarāgo? Yassa puggalassa rāgo appahīno, ayaṃ vuccati puggalo ‘‘sarāgo’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo sadoso? Yassa puggalassa doso appahīno, ayaṃ vuccati puggalo ‘‘sadoso’’.</p>
+
+
+
+<p class="bodytext">Katamo <a name="V0.0172"></a> ca puggalo samoho? Yassa puggalassa moho appahīno, ayaṃ vuccati puggalo ‘‘samoho’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo samāno? Yassa puggalassa māno appahīno, ayaṃ vuccati puggalo ‘‘samāno’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para187"></span><a name="para187"></a><span class="paranum">187</span>. Kathañca <a name="M0.0171"></a> puggalo lābhī hoti ajjhattaṃ cetosamathassa, na lābhī adhipaññādhammavipassanāya? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ, na lābhī lokuttaramaggassa vā phalassa vā. Evaṃ puggalo lābhī hoti ajjhattaṃ cetosamathassa, na lābhī adhipaññādhammavipassanāya.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo lābhī hoti adhipaññādhammavipassanāya, na lābhī ajjhattaṃ cetosamathassa? Idhekacco puggalo <a name="T0.0217"></a> lābhī hoti lokuttaramaggassa vā phalassa vā, na lābhī rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ. Evaṃ puggalo lābhī hoti adhipaññādhammavipassanāya, na lābhī ajjhattaṃ cetosamathassa.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo lābhī ceva hoti ajjhattaṃ cetosamathassa, lābhī ca adhipaññādhammavipassanāya? Idhekacco puggalo lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ, lābhī lokuttaramaggassa vā phalassa vā. Evaṃ puggalo lābhī ceva hoti ajjhattaṃ cetosamathassa, lābhī ca adhipaññādhammavipassanāya.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="P0.0062"></a> puggalo neva lābhī hoti ajjhattaṃ cetosamathassa, na lābhī adhipaññādhammavipassanāya? Idhekacco puggalo neva lābhī hoti rūpasahagatānaṃ vā arūpasahagatānaṃ vā samāpattīnaṃ, na lābhī lokuttaramaggassa vā phalassa vā. Evaṃ puggalo neva lābhī hoti ajjhattaṃ cetosamathassa, na lābhī adhipaññādhammavipassanāya.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para188"></span><a name="para188"></a><span class="paranum">188</span>. Katamo ca puggalo anusotagāmī? Idhekacco puggalo kāme ca paṭisevati pāpañca kammaṃ karoti. Ayaṃ vuccati puggalo ‘‘anusotagāmī’’.</p>
+
+
+
+<p class="bodytext">Katamo <a name="V0.0173"></a> ca puggalo paṭisotagāmī? Idhekacco puggalo kāme ca na paṭisevati pāpañca kammaṃ na karoti. So sahāpi dukkhena sahāpi domanassena assumukhenapi rudamāno paripuṇṇaṃ parisuddhaṃ brahmacariyaṃ carati. Ayaṃ vuccati puggalo ‘‘paṭisotagāmī’’.</p>
+
+
+
+<p class="bodytext">Katamo <a name="M0.0172"></a> ca puggalo ṭhitatto? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ <a name="T0.0218"></a> parikkhayā opapātiko hoti tattha parinibbāyī anāvattidhammo tasmā lokā. Ayaṃ vuccati puggalo ‘‘ṭhitatto’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo tiṇṇo pāraṅgato thale tiṭṭhati brāhmaṇo? Idhekacco puggalo āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati. Ayaṃ vuccati puggalo tiṇṇo pāraṅgato thale tiṭṭhati brāhmaṇo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para189"></span><a name="para189"></a><span class="paranum">189</span>. Kathañca puggalo appassuto hoti sutena anupapanno? Idhekaccassa puggalassa appakaṃ sutaṃ hoti suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So tassa appakassa sutassa na atthamaññāya dhammamaññāya dhammānudhammappaṭipanno <span class="note">[na dhammamaññāya na dhammānudhammapaṭipanno (syā.), na dhammamaññāya dhammānudhammappaṭipanno (ka.)]</span> <a name="P0.0063"></a> hoti. Evaṃ puggalo appassuto hoti sutena anupapanno.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo appassuto hoti sutena upapanno? Idhekaccassa puggalassa appakaṃ sutaṃ hoti suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So tassa appakassa sutassa atthamaññāya dhammamaññāya dhammānudhammappaṭipanno hoti. Evaṃ puggalo appassuto hoti sutena upapanno.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo bahussuto hoti sutena anupapanno? Idhekaccassa puggalassa bahukaṃ sutaṃ hoti suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So tassa bahukassa sutassa na atthamaññāya dhammamaññāya dhammānudhammappaṭipanno hoti. Evaṃ puggalo bahussuto <a name="T0.0219"></a> hoti sutena anupapanno.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo bahussuto hoti sutena upapanno? Idhekaccassa puggalassa bahukaṃ sutaṃ hoti <a name="V0.0174"></a> suttaṃ geyyaṃ veyyākaraṇaṃ gāthaṃ udānaṃ itivuttakaṃ jātakaṃ abbhutadhammaṃ vedallaṃ. So tassa bahukassa sutassa atthamaññāya dhammamaññāya dhammānudhammappaṭipanno hoti. Evaṃ puggalo bahussuto hoti sutena upapanno.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para190"></span><a name="para190"></a><span class="paranum">190</span>. Katamo <a name="M0.0173"></a> ca puggalo samaṇamacalo? Idhekacco puggalo tiṇṇaṃ saṃyojanānaṃ parikkhayā sotāpanno hoti avinipātadhammo niyato sambodhiparāyano. Ayaṃ vuccati puggalo ‘‘samaṇamacalo’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo samaṇapadumo? Idhekacco puggalo tiṇṇaṃ saṃyojanānaṃ parikkhayā rāgadosamohānaṃ tanuttā sakadāgāmī hoti, sakideva imaṃ lokaṃ āgantvā dukkhassantaṃ karoti. Ayaṃ vuccati puggalo ‘‘samaṇapadumo’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo samaṇapuṇḍarīko? Idhekacco puggalo pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ parikkhayā opapātiko hoti tattha parinibbāyī anāvattidhammo tasmā lokā. Ayaṃ vuccati puggalo ‘‘samaṇapuṇḍarīko’’.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo samaṇesu samaṇasukhumālo? Idhekacco puggalo āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati. Ayaṃ vuccati puggalo ‘‘samaṇesu samaṇasukhumālo’’ti.</p>
+
+
+
+<p class="centered">Catukkaniddeso.</p>
+
+
+
+<p class="subhead">5. Pañcakapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para191"></span><a name="para191"></a><span class="paranum">191</span>. Tatra <a name="T0.0220"></a><a name="P0.0064"></a> yvāyaṃ puggalo ārabhati ca vippaṭisārī ca hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā akusalā dhammā aparisesā nirujjhanti<a name="V0.0175"></a>, so evamassa vacanīyo – ‘‘āyasmato kho ārambhajā <span class="note">[ārabbhajā (ka.) a. ni. 5.142]</span> āsavā saṃvijjanti, vippaṭisārajā āsavā pavaḍḍhanti. Sādhu vatāyasmā ārambhaje āsave pahāya vippaṭisāraje āsave paṭivinodetvā cittaṃ paññañca bhāvetu. Evamāyasmā amunā pañcamena puggalena samasamo bhavissatī’’ti.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo ārabhati na vippaṭisārī hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā <a name="M0.0174"></a> akusalā dhammā aparisesā nirujjhanti, so evamassa vacanīyo – ‘‘āyasmato kho ārambhajā āsavā saṃvijjanti, vippaṭisārajā āsavā nappavaḍḍhanti. Sādhu vatāyasmā ārambhaje āsave pahāya cittaṃ paññañca bhāvetu. Evamāyasmā amunā pañcamena puggalena samasamo bhavissatī’’ti.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo na ārabhati vippaṭisārī hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te uppannā pāpakā akusalā dhammā aparisesā nirujjhanti, so evamassa vacanīyo – ‘‘āyasmato kho ārambhajā āsavā na saṃvijjanti, vippaṭisārajā <a name="T0.0221"></a> āsavā pavaḍḍhanti. Sādhu vatāyasmā vippaṭisāraje āsave paṭivinodetvā cittaṃ paññañca bhāvetu. Evamāyasmā amunā pañcamena puggalena samasamo bhavissatī’’ti.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo na ārabhati na vippaṭisārī hoti, tañca cetovimuttiṃ paññāvimuttiṃ yathābhūtaṃ nappajānāti, yatthassa te pāpakā akusalā dhammā aparisesā nirujjhanti, so evamassa vacanīyo – ‘‘āyasmato kho ārambhajā āsavā na saṃvijjanti, vippaṭisārajā āsavā nappavaḍḍhanti. Sādhu vatāyasmā cittaṃ paññañca bhāvetu. Evamāyasmā amunā pañcamena puggalena samasamo bhavissatī’’ti. Ime cattāro puggalā amunā pañcamena puggalena evaṃ ovadiyamānā evaṃ anusāsiyamānā anupubbena āsavānaṃ khayaṃ pāpuṇanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para192"></span><a name="para192"></a><span class="paranum">192</span>. Kathañca <a name="P0.0065"></a> puggalo datvā avajānāti? Idhekacco puggalo yassa puggalassa deti cīvarapiṇḍapātasenāsanagilānapaccayabhesajjaparikkhāraṃ, tassa evaṃ hoti – ‘‘ahaṃ dammi, ayaṃ <span class="note">[ayaṃ pana (syā. ka.) a. ni. 5.141]</span> paṭiggaṇhātī’’ti, tamenaṃ datvā avajānāti. Evaṃ puggalo datvā avajānāti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo saṃvāsena avajānāti? Idhekacco puggalo yena puggalena saddhiṃ saṃvasati dve vā tīṇi vā vassāni, tamenaṃ saṃvāsena avajānāti. Evaṃ puggalo saṃvāsena avajānāti.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="M0.0175"></a> puggalo ādheyyamukho hoti? Idhekacco puggalo parassa vaṇṇe vā avaṇṇe vā bhāsiyamāne khippaññeva adhimuccitā hoti. Evaṃ puggalo ādheyyamukho hoti<a name="T0.0222"></a>.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="V0.0176"></a> puggalo lolo hoti? Idhekacco puggalo ittarasaddho hoti ittarabhattī ittarapemo ittarappasādo. Evaṃ puggalo lolo hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo mando momūho hoti? Idhekacco puggalo kusalākusale dhamme na jānāti, sāvajjānavajje dhamme na jānāti, hīnappaṇīte dhamme na jānāti, kaṇhasukkasappaṭibhāge dhamme na jānāti. Evaṃ puggalo mando momūho hoti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para193"></span><a name="para193"></a><span class="paranum">193</span>. Tattha katame pañca yodhājīvūpamā puggalā? Pañca yodhājīvā – idhekacco yodhājīvo rajaggaññeva disvā saṃsīdati visīdati na santhambhati <span class="note">[satthambhati (sī.) a. ni. 5.141]</span> na sakkoti saṅgāmaṃ otarituṃ. Evarūpopi idhekacco yodhājīvo hoti. Ayaṃ paṭhamo yodhājīvo santo saṃvijjamāno lokasmiṃ.</p>
+
+
+
+<p class="bodytext">Puna caparaṃ idhekacco yodhājīvo sahati rajaggaṃ, api ca kho dhajaggaññeva disvā saṃsīdati visīdati na santhambhati na sakkoti saṅgāmaṃ otarituṃ. Evarūpopi idhekacco yodhājīvo hoti. Ayaṃ dutiyo yodhājīvo santo saṃvijjamāno lokasmiṃ.</p>
+
+
+
+<p class="bodytext">Puna caparaṃ idhekacco yodhājīvo sahati rajaggaṃ sahati dhajaggaṃ, api ca kho ussāraṇaññeva <span class="note">[ussādanaṃyeva (sī.), ussādanaññeva (syā. ka.) a. ni. 5.141]</span> sutvā saṃsīdati visīdati na santhambhati na sakkoti saṅgāmaṃ otarituṃ. Evarūpopi idhekacco yodhājīvo hoti. Ayaṃ tatiyo yodhājīvo santo saṃvijjamāno lokasmiṃ.</p>
+
+
+
+<p class="bodytext">Puna caparaṃ idhekacco yodhājīvo sahati rajaggaṃ sahati <a name="P0.0066"></a> dhajaggaṃ sahati ussāraṇaṃ, api <a name="V0.0177"></a> ca kho sampahāre haññati byāpajjati. Evarūpopi idhekacco yodhājīvo hoti. Ayaṃ catuttho yodhājīvo <a name="T0.0223"></a> santo saṃvijjamāno lokasmiṃ.</p>
+
+
+
+<p class="bodytext">Puna <a name="M0.0176"></a> caparaṃ idhekacco yodhājīvo sahati rajaggaṃ sahati dhajaggaṃ sahati ussāraṇaṃ sahati sampahāraṃ. So taṃ saṅgāmaṃ abhivijinitvā vijitasaṅgāmo tameva saṅgāmasīsaṃ ajjhāvasati. Evarūpopi idhekacco yodhājīvo hoti. Ayaṃ pañcamo yodhājīvo santo saṃvijjamāno lokasmiṃ. Ime pañca yodhājīvā santo saṃvijjamānā lokasmiṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para194"></span><a name="para194"></a><span class="paranum">194</span>. Evamevaṃ pañcime yodhājīvūpamā puggalā santo saṃvijjamānā bhikkhūsu. Katame pañca? Idhekacco bhikkhu rajaggaññeva disvā saṃsīdati visīdati na santhambhati na sakkoti brahmacariyaṃ sandhāretuṃ <span class="note">[santānetuṃ (sī. syā.) a. ni. 5.75]</span>, sikkhādubbalyaṃ āvikatvā <span class="note">[āvīkatvā (sī.)]</span> sikkhaṃ paccakkhāya hīnāyāvattati. Kimassa rajaggasmiṃ? Idha bhikkhu suṇāti – ‘‘asukasmiṃ nāma gāme vā nigame vā itthī vā kumārī vā abhirūpā dassanīyā pāsādikā paramāya vaṇṇapokkharatāya samannāgatā’’ti. So taṃ sutvā saṃsīdati visīdati na santhambhati na sakkoti brahmacariyaṃ sandhāretuṃ, sikkhādubbalyaṃ āvikatvā sikkhaṃ paccakkhāya hīnāyāvattati. Idamassa rajaggasmiṃ.</p>
+
+
+
+<p class="bodytext">Seyyathāpi so yodhājīvo rajaggaññeva disvā saṃsīdati visīdati na santhambhati na sakkoti saṅgāmaṃ otarituṃ, tathūpamo ayaṃ puggalo. Evarūpopi idhekacco puggalo hoti. Ayaṃ paṭhamo yodhājīvūpamo puggalo santo saṃvijjamāno bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para195"></span><a name="para195"></a><span class="paranum">195</span>. Puna caparaṃ idhekacco bhikkhu sahati rajaggaṃ, api ca kho dhajaggaññeva disvā saṃsīdati visīdati na santhambhati <a name="T0.0224"></a> na sakkoti brahmacariyaṃ sandhāretuṃ, sikkhādubbalyaṃ āvikatvā sikkhaṃ paccakkhāya hīnāyāvattati. Kimassa dhajaggasmiṃ? Idha bhikkhu na heva kho suṇāti – ‘‘asukasmiṃ nāma gāme vā nigame vā itthī vā kumārī vā abhirūpā dassanīyā pāsādikā paramāya vaṇṇapokkharatāya samannāgatā’’ti, api ca kho sāmaṃ <span class="note">[sāmaṃyeva (sī.)]</span> passati itthiṃ vā kumāriṃ vā abhirūpaṃ dassanīyaṃ pāsādikaṃ paramāya vaṇṇapokkharatāya samannāgataṃ. So taṃ disvā saṃsīdati visīdati na santhambhati na sakkoti brahmacariyaṃ sandhāretuṃ, sikkhādubbalyaṃ āvikatvā sikkhaṃ paccakkhāya hīnāyāvattati. Idamassa dhajaggasmiṃ.</p>
+
+
+
+<p class="bodytext">Seyyathāpi <a name="P0.0067"></a><a name="M0.0177"></a><a name="V0.0178"></a> so yodhājīvo sahati rajaggaṃ, api ca kho dhajaggaññeva disvā saṃsīdati visīdati na santhambhati na sakkoti saṅgāmaṃ otarituṃ, tathūpamo ayaṃ puggalo. Evarūpopi idhekacco puggalo hoti. Ayaṃ dutiyo yodhājīvūpamo puggalo santo saṃvijjamāno bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para196"></span><a name="para196"></a><span class="paranum">196</span>. Puna caparaṃ idhekacco bhikkhu sahati rajaggaṃ sahati dhajaggaṃ, api ca kho ussāraṇaññeva sutvā saṃsīdati visīdati na santhambhati na sakkoti brahmacariyaṃ sandhāretuṃ, sikkhādubbalyaṃ āvikatvā sikkhaṃ paccakkhāya hīnāyāvattati. Kimassa ussāraṇāya? Idha bhikkhuṃ araññagataṃ vā rukkhamūlagataṃ vā suññāgāragataṃ vā mātugāmo upasaṅkamitvā ūhasati <span class="note">[uhasati (aṭṭhakathā) a. ni. 5.75]</span> ullapati ujjagghati uppaṇḍeti. So mātugāmena ūhasiyamāno ullapiyamāno ujjagghiyamāno uppaṇḍiyamāno saṃsīdati visīdati na santhambhati na sakkoti brahmacariyaṃ <a name="T0.0225"></a> sandhāretuṃ, sikkhādubbalyaṃ āvikatvā sikkhaṃ paccakkhāya hīnāyāvattati. Idamassa ussāraṇāya.</p>
+
+
+
+<p class="bodytext">Seyyathāpi so yodhājīvo sahati rajaggaṃ sahati dhajaggaṃ, api ca kho ussāraṇaññeva sutvā saṃsīdati visīdati na santhambhati na sakkoti saṅgāmaṃ otarituṃ, tathūpamo ayaṃ puggalo. Evarūpopi idhekacco puggalo hoti. Ayaṃ tatiyo yodhājīvūpamo puggalo santo saṃvijjamāno bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para197"></span><a name="para197"></a><span class="paranum">197</span>. Puna caparaṃ idhekacco bhikkhu sahati rajaggaṃ sahati dhajaggaṃ sahati ussāraṇaṃ, api ca kho sampahāre haññati byāpajjati. Kimassa sampahārasmiṃ? Idha bhikkhuṃ araññagataṃ vā rukkhamūlagataṃ vā suññāgāragataṃ vā mātugāmo upasaṅkamitvā abhinisīdati abhinipajjati ajjhottharati. So mātugāmena abhinisīdiyamāno abhinipajjiyamāno ajjhotthariyamāno sikkhaṃ appaccakkhāya dubbalyaṃ anāvikatvā methunaṃ dhammaṃ paṭisevati. Idamassa sampahārasmiṃ.</p>
+
+
+
+<p class="bodytext">Seyyathāpi so yodhājīvo sahati rajaggaṃ sahati dhajaggaṃ sahati ussāraṇaṃ, api ca kho sampahāre haññati byāpajjati, tathūpamo <a name="M0.0178"></a> ayaṃ puggalo. Evarūpopi idhekacco puggalo hoti. Ayaṃ catuttho yodhājīvūpamo puggalo santo saṃvijjamāno bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para198"></span><a name="para198"></a><span class="paranum">198</span>. Puna <a name="V0.0179"></a> caparaṃ idhekacco bhikkhu sahati rajaggaṃ sahati dhajaggaṃ sahati ussāraṇaṃ sahati sampahāraṃ. So taṃ saṅgāmaṃ abhivijinitvā vijitasaṅgāmo tameva saṅgāmasīsaṃ ajjhāvasati. Kimassa saṅgāmavijayasmiṃ? Idha bhikkhuṃ <a name="P0.0068"></a> araññagataṃ vā rukkhamūlagataṃ vā suññāgāragataṃ vā mātugāmo upasaṅkamitvā abhinisīdati <a name="T0.0226"></a> abhinipajjati ajjhottharati. So mātugāmena abhinisīdiyamāno abhinipajjiyamāno ajjhotthariyamāno viniveṭhetvā vinimocetvā yena kāmaṃ pakkamati.</p>
+
+
+
+<p class="bodytext">So vivittaṃ senāsanaṃ bhajati araññaṃ rukkhamūlaṃ pabbataṃ kandaraṃ giriguhaṃ susānaṃ vanapatthaṃ abbhokāsaṃ palālapuñjaṃ. So araññagato vā rukkhamūlagato vā suññāgāragato vā nisīdati pallaṅkaṃ ābhujitvā ujuṃ kāyaṃ paṇidhāya parimukhaṃ satiṃ upaṭṭhapetvā. So abhijjhaṃ loke pahāya vigatābhijjhena cetasā viharati, abhijjhāya cittaṃ parisodheti; byāpādapadosaṃ pahāya abyāpannacitto viharati, sabbapāṇabhūtahitānukampī byāpādapadosā cittaṃ parisodheti; thinamiddhaṃ pahāya vigatathinamiddho viharati ālokasaññī sato sampajāno, thinamiddhā cittaṃ parisodheti; uddhaccakukkuccaṃ pahāya anuddhato viharati ajjhattaṃ vūpasantacitto, uddhaccakukkuccā cittaṃ parisodheti; vicikicchaṃ pahāya tiṇṇavicikiccho viharati akathaṃkathī kusalesu dhammesu, vicikicchāya cittaṃ parisodheti.</p>
+
+
+
+<p class="bodytext">So ime pañca nīvaraṇe pahāya cetaso upakkilese paññāya dubbalīkaraṇe vivicceva kāmehi vivicca akusalehi dhammehi savitakkaṃ savicāraṃ vivekajaṃ pītisukhaṃ paṭhamaṃ jhānaṃ upasampajja viharati; vitakkavicārānaṃ vūpasamā dutiyaṃ jhānaṃ…pe… tatiyaṃ jhānaṃ…pe… catutthaṃ jhānaṃ upasampajja viharati.</p>
+
+
+
+<p class="bodytext">So evaṃ samāhite citte parisuddhe pariyodāte anaṅgaṇe vigatūpakkilese mudubhūte kammaniye ṭhite āneñjappatte āsavānaṃ khayañāṇāya cittaṃ abhininnāmeti. So ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti, ‘‘ayaṃ <a name="T0.0227"></a> dukkhasamudayo’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti, ‘‘ime āsavā’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ āsavasamudayo’’ti <a name="M0.0179"></a> yathābhūtaṃ pajānāti<a name="V0.0180"></a>, ‘‘ayaṃ āsavanirodho’’ti yathābhūtaṃ pajānāti, ‘‘ayaṃ āsavanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti.</p>
+
+
+
+<p class="bodytext">Tassa evaṃ jānato evaṃ passato kāmāsavāpi cittaṃ vimuccati, bhavāsavāpi cittaṃ vimuccati, avijjāsavāpi cittaṃ vimuccati. Vimuttasmiṃ vimuttamiti ñāṇaṃ hoti. ‘‘Khīṇā jāti, vusitaṃ brahmacariyaṃ, kataṃ karaṇīyaṃ, nāparaṃ itthattāyā’’ti pajānāti. Idamassa saṅgāmavijayasmiṃ. Seyyathāpi so yodhājīvo sahati rajaggaṃ sahati dhajaggaṃ sahati ussāraṇaṃ sahati sampahāraṃ, so taṃ saṅgāmaṃ abhivijinitvā vijitasaṅgāmo <a name="P0.0069"></a> tameva saṅgāmasīsaṃ ajjhāvasati, tathūpamo ayaṃ puggalo. Evarūpopi idhekacco puggalo hoti. Ayaṃ pañcamo yodhājīvūpamo puggalo santo saṃvijjamāno bhikkhūsu. Ime pañca yodhājīvūpamā puggalā santo saṃvijjamānā bhikkhūsu.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para199"></span><a name="para199"></a><span class="paranum">199</span>. Tattha katame pañca piṇḍapātikā? Mandattā momūhattā piṇḍapātiko hoti, pāpiccho icchāpakato piṇḍapātiko hoti, ummādā cittavikkhepā piṇḍapātiko hoti, ‘‘vaṇṇitaṃ buddhehi buddhasāvakehī’’ti piṇḍapātiko hoti, api ca appicchataṃyeva <span class="note">[appicchaṃyeva (syā.) a. ni. 5.181]</span> nissāya santuṭṭhiṃyeva nissāya sallekhaṃyeva nissāya idamatthitaṃyeva <span class="note">[idamaṭṭhitaṃyeva (sī.)]</span> nissāya piṇḍapātiko hoti. Tatra yvāyaṃ piṇḍapātiko appicchataṃyeva nissāya santuṭṭhiṃyeva <a name="T0.0228"></a> nissāya sallekhaṃyeva nissāya idamatthitaṃyeva nissāya piṇḍapātiko, ayaṃ imesaṃ pañcannaṃ piṇḍapātikānaṃ aggo ca seṭṭho ca pāmokkho <span class="note">[mokkho (sī.)]</span> ca uttamo ca pavaro ca.</p>
+
+
+
+<p class="bodytext">Seyyathāpi nāma gavā khīraṃ, khīramhā dadhi, dadhimhā navanītaṃ <span class="note">[nonītaṃ (sī.)]</span>, navanītamhā sappi, sappimhā sappimaṇḍo, sappimaṇḍaṃ tattha aggamakkhāyati; evamevaṃ yvāyaṃ piṇḍapātiko appicchataṃyeva nissāya santuṭṭhiṃyeva nissāya sallekhaṃyeva nissāya idamatthitaṃyeva nissāya piṇḍapātiko hoti, ayaṃ imesaṃ pañcannaṃ piṇḍapātikānaṃ aggo ca seṭṭho ca pāmokkho ca uttamo ca pavaro ca. Ime pañca piṇḍapātikā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para200"></span><a name="para200"></a><span class="paranum">200</span>. Tattha <a name="M0.0180"></a> katame pañca khalupacchābhattikā…pe… pañca ekāsanikā…pe… pañca paṃsukūlikā…pe… pañca tecīvarikā…pe… pañca āraññikā…pe… pañca rukkhamūlikā <a name="V0.0181"></a> …pe… pañca abbhokāsikā…pe… pañca nesajjikā…pe… pañca yathāsanthatikā…pe….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para201"></span><a name="para201"></a><span class="paranum">201</span>. Tattha katame pañca sosānikā? Mandattā momūhattā sosāniko hoti, pāpiccho icchāpakato sosāniko hoti, ummādā cittavikkhepā sosāniko hoti, ‘‘vaṇṇitaṃ buddhehi buddhasāvakehī’’ti sosāniko hoti, api ca appicchataṃyeva nissāya santuṭṭhiṃyeva nissāya sallekhaṃyeva nissāya idamatthitaṃyeva nissāya sosāniko hoti. Tatra yvāyaṃ sosāniko appicchataṃyeva nissāya santuṭṭhiṃyeva <a name="P0.0070"></a> nissāya sallekhaṃyeva nissāya idamatthitaṃyeva nissāya sosāniko, ayaṃ imesaṃ pañcannaṃ sosānikānaṃ aggo ca seṭṭho ca <a name="T0.0229"></a> pāmokkho ca uttamo ca pavaro ca.</p>
+
+
+
+<p class="bodytext">Seyyathāpi nāma gavā khīraṃ, khīramhā dadhi, dadhimhā navanītaṃ, navanītamhā sappi, sappimhā sappimaṇḍo, sappimaṇḍaṃ tattha aggamakkhāyati; evamevaṃ yvāyaṃ sosāniko appicchataṃyeva nissāya santuṭṭhiṃyeva nissāya sallekhaṃyeva nissāya idamatthitaṃyeva nissāya sosāniko hoti, ayaṃ imesaṃ pañcannaṃ sosānikānaṃ aggo ca seṭṭho ca pāmokkho ca uttamo ca pavaro ca. Ime pañca sosānikā.</p>
+
+
+
+<p class="centered">Pañcakaniddeso.</p>
+
+
+
+<p class="subhead">6. Chakkapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para202"></span><a name="para202"></a><span class="paranum">202</span>. Tatra yvāyaṃ puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati, tattha ca sabbaññutaṃ pāpuṇāti balesu ca vasībhāvaṃ, sammāsambuddho tena daṭṭhabbo.</p>
+
+
+
+<p class="bodytext">Tatra <a name="V0.0182"></a> yvāyaṃ puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati, na ca tattha sabbaññutaṃ pāpuṇāti na ca balesu vasībhāvaṃ, paccekasambuddho tena daṭṭhabbo.</p>
+
+
+
+<p class="bodytext">Tatra <a name="M0.0181"></a> yvāyaṃ puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati, diṭṭheva dhamme dukkhassantakaro hoti <span class="note">[dukkhassantaṃ karoti (sī.) evamuparipi]</span>, sāvakapāramiñca pāpuṇāti, sāriputtamoggallānā tena daṭṭhabbā.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati<a name="T0.0230"></a>, diṭṭheva dhamme dukkhassantakaro hoti, na ca sāvakapāramiṃ pāpuṇāti, avasesā arahantā tena daṭṭhabbā.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati, na ca diṭṭheva dhamme dukkhassantakaro hoti, anāgāmī hoti anāgantā itthattaṃ, anāgāmī <a name="P0.0071"></a> tena daṭṭhabbo.</p>
+
+
+
+<p class="bodytext">Tatra yvāyaṃ puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni anabhisambujjhati, na ca diṭṭheva dhamme dukkhassantakaro hoti, āgantā itthattaṃ, sotāpannasakadāgāmino tena daṭṭhabbā.</p>
+
+
+
+<p class="centered">Chakkaniddeso.</p>
+
+
+
+<p class="subhead">7. Sattakapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para203"></span><a name="para203"></a><span class="paranum">203</span>. Kathañca puggalo sakiṃ nimuggo nimuggova hoti? Idhekacco puggalo samannāgato hoti ekantakāḷakehi akusalehi dhammehi. Evaṃ puggalo sakiṃ nimuggo nimuggova hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ummujjitvā nimujjati? Idhekacco puggalo ummujjati ‘‘sāhu saddhā kusalesu dhammesu, sādhu <span class="note">[sāhu (sī. syā.) evaṃ tīsu ṭhānesupi]</span> hirī kusalesu dhammesu, sādhu ottappaṃ kusalesu dhammesu, sādhu vīriyaṃ <span class="note">[viriyaṃ (sī. syā.)]</span> kusalesu dhammesu, sādhu paññā kusalesu dhammesū’’ti. Tassa sā saddhā neva tiṭṭhati no vaḍḍhati hāyatiyeva<a name="V0.0183"></a>, tassa sā hirī neva tiṭṭhati no vaḍḍhati hāyatiyeva, tassa <a name="T0.0231"></a> taṃ ottappaṃ neva tiṭṭhati no vaḍḍhati hāyatiyeva, tassa taṃ vīriyaṃ neva tiṭṭhati no vaḍḍhati hāyatiyeva, tassa sā paññā neva tiṭṭhati no vaḍḍhati hāyatiyeva. Evaṃ puggalo ummujjitvā nimujjati.</p>
+
+
+
+<p class="bodytext">Kathañca <a name="M0.0182"></a> puggalo ummujjitvā ṭhito hoti? Idhekacco puggalo ummujjati ‘‘sāhu saddhā kusalesu dhammesu, sādhu hirī kusalesu dhammesu, sādhu ottappaṃ kusalesu dhammesu, sādhu vīriyaṃ kusalesu dhammesu, sādhu paññā kusalesu dhammesū’’ti. Tassa sā saddhā neva hāyati no vaḍḍhati ṭhitā hoti, tassa sā hirī neva hāyati no vaḍḍhati ṭhitā hoti, tassa taṃ ottappaṃ neva hāyati no vaḍḍhati ṭhitaṃ hoti, tassa taṃ vīriyaṃ neva hāyati no vaḍḍhati ṭhitaṃ hoti, tassa sā paññā neva hāyati no vaḍḍhati ṭhitā hoti. Evaṃ puggalo ummujjitvā ṭhito hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ummujjitvā vipassati viloketi? Idhekacco puggalo ummujjati ‘‘sāhu saddhā kusalesu dhammesu, sādhu hirī kusalesu dhammesu, sādhu ottappaṃ kusalesu dhammesu, sādhu vīriyaṃ kusalesu dhammesu, sādhu paññā <a name="P0.0072"></a> kusalesu dhammesū’’ti. So tiṇṇaṃ saṃyojanānaṃ <a name="T0.0232"></a> parikkhayā sotāpanno hoti avinipātadhammo niyato sambodhiparāyano. Evaṃ puggalo ummujjitvā vipassati viloketi.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ummujjitvā patarati? Idhekacco puggalo ummujjati ‘‘sāhu saddhā kusalesu dhammesu, sādhu hirī kusalesu dhammesu, sādhu ottappaṃ kusalesu dhammesu, sādhu vīriyaṃ kusalesu dhammesu, sādhu paññā kusalesu dhammesū’’ti. So tiṇṇaṃ saṃyojanānaṃ parikkhayā rāgadosamohānaṃ tanuttā sakadāgāmī hoti sakideva imaṃ lokaṃ āgantvā dukkhassantakaro hoti. Evaṃ puggalo ummujjitvā patarati.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ummujjitvā patigādhappatto hoti? Idhekacco puggalo ummujjati ‘‘sāhu saddhā kusalesu dhammesu, sādhu hirī kusalesu dhammesu, sādhu ottappaṃ kusalesu dhammesu, sādhu vīriyaṃ kusalesu dhammesu, sādhu paññā kusalesu dhammesū’’ti. So pañcannaṃ orambhāgiyānaṃ saṃyojanānaṃ <a name="V0.0184"></a> parikkhayā opapātiko hoti tattha parinibbāyī anāvattidhammo tasmā lokā. Evaṃ puggalo ummujjitvā patigādhappatto hoti.</p>
+
+
+
+<p class="bodytext">Kathañca puggalo ummujjitvā tiṇṇo hoti pāraṅgato thale tiṭṭhati brāhmaṇo? Idhekacco puggalo ummujjati ‘‘sāhu saddhā kusalesu dhammesu<a name="M0.0183"></a>, sādhu hirī kusalesu dhammesu, sādhu ottappaṃ kusalesu dhammesu, sādhu vīriyaṃ kusalesu dhammesu, sādhu paññā kusalesu dhammesū’’ti. So āsavānaṃ khayā anāsavaṃ cetovimuttiṃ paññāvimuttiṃ diṭṭheva dhamme sayaṃ abhiññā sacchikatvā upasampajja viharati. Evaṃ puggalo ummujjitvā tiṇṇo hoti pāraṅgato thale tiṭṭhati brāhmaṇo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para204"></span><a name="para204"></a><span class="paranum">204</span>. Katamo ca puggalo ubhatobhāgavimutto? Idhekacco puggalo aṭṭha vimokkhe kāyena phusitvā viharati paññāya cassa disvā āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo ubhatobhāgavimutto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para205"></span><a name="para205"></a><span class="paranum">205</span>. Katamo ca puggalo paññāvimutto…pe… kāyasakkhī… diṭṭhippatto… saddhāvimutto… dhammānusārī <a name="T0.0233"></a>….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para206"></span><a name="para206"></a><span class="paranum">206</span>. Katamo ca puggalo saddhānusārī? Yassa puggalassa sotāpattiphalasacchikiriyāya paṭipannassa saddhindriyaṃ adhimattaṃ hoti, saddhāvāhiṃ saddhāpubbaṅgamaṃ ariyamaggaṃ bhāveti. Ayaṃ vuccati puggalo saddhānusārī. Sotāpattiphalasacchikiriyāya paṭipanno puggalo saddhānusārī, phale ṭhito saddhāvimuttoti.</p>
+
+
+
+<p class="centered">Sattakaniddeso.</p>
+
+
+
+<p class="subhead">8. Aṭṭhakapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para207"></span><a name="para207"></a><span class="paranum">207</span>. Tattha <a name="P0.0073"></a><a name="V0.0185"></a> katame cattāro maggasamaṅgino, cattāro phalasamaṅgino puggalā? Sotāpanno, sotāpattiphalasacchikiriyāya paṭipanno; sakadāgāmī, sakadāgāmiphalasacchikiriyāya paṭipanno; anāgāmī, anāgāmiphalasacchikiriyāya paṭipanno; arahā, arahattaphalasacchikiriyāya <span class="note">[arahattāya (syā. ka.) a. ni. 8.59]</span> paṭipanno; ime cattāro maggasamaṅgino, ime cattāro phalasamaṅgino puggalā.</p>
+
+
+
+<p class="centered">Aṭṭhakaniddeso.</p>
+
+
+
+<p class="subhead">9. Navakapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para208"></span><a name="para208"></a><span class="paranum">208</span>. Katamo <a name="M0.0184"></a> ca puggalo sammāsambuddho? Idhekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati, tattha ca sabbaññutaṃ <a name="T0.0234"></a> pāpuṇāti balesu ca vasībhāvaṃ. Ayaṃ vuccati puggalo sammāsambuddho.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo paccekasambuddho? Idhekacco puggalo pubbe ananussutesu dhammesu sāmaṃ saccāni abhisambujjhati, na ca tattha sabbaññutaṃ pāpuṇāti na ca balesu vasībhāvaṃ. Ayaṃ vuccati puggalo paccekasambuddho.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo ubhatobhāgavimutto? Idhekacco puggalo aṭṭha vimokkhe kāyena phusitvā viharati paññāya cassa disvā āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo ubhatobhāgavimutto.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo paññāvimutto? Idhekacco puggalo na heva kho aṭṭha vimokkhe kāyena phusitvā viharati paññāya cassa disvā āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo paññāvimutto.</p>
+
+
+
+<p class="bodytext">Katamo <a name="V0.0186"></a> ca puggalo kāyasakkhī? Idhekacco puggalo aṭṭha vimokkhe kāyena phusitvā viharati paññāya cassa disvā ekacce āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo kāyasakkhī.</p>
+
+
+
+<p class="bodytext">Katamo <a name="P0.0074"></a> ca puggalo diṭṭhippatto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti, tathāgatappaveditā cassa dhammā paññāya vodiṭṭhā honti vocaritā, paññāya cassa disvā ekacce āsavā parikkhīṇā honti. Ayaṃ vuccati puggalo diṭṭhippatto.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo saddhāvimutto? Idhekacco puggalo ‘‘idaṃ dukkha’’nti yathābhūtaṃ pajānāti…pe… ‘‘ayaṃ dukkhanirodhagāminī paṭipadā’’ti yathābhūtaṃ pajānāti, tathāgatappaveditā cassa <a name="T0.0235"></a> dhammā paññāya vodiṭṭhā <a name="M0.0185"></a> honti vocaritā, paññāya cassa disvā ekacce āsavā parikkhīṇā honti, no ca kho yathā diṭṭhippattassa. Ayaṃ vuccati puggalo saddhāvimutto.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo dhammānusārī? Yassa puggalassa sotāpattiphalasacchikiriyāya paṭipannassa paññindriyaṃ adhimattaṃ hoti, paññāvāhiṃ paññāpubbaṅgamaṃ ariyamaggaṃ bhāveti. Ayaṃ vuccati puggalo dhammānusārī. Sotāpattiphalasacchikiriyāya paṭipanno puggalo dhammānusārī, phale ṭhito diṭṭhippatto.</p>
+
+
+
+<p class="bodytext">Katamo ca puggalo saddhānusārī? Yassa puggalassa sotāpattiphalasacchikiriyāya paṭipannassa saddhindriyaṃ adhimattaṃ hoti, saddhāvāhiṃ saddhāpubbaṅgamaṃ ariyamaggaṃ bhāveti. Ayaṃ vuccati puggalo saddhānusārī. Sotāpattiphalasacchikiriyāya paṭipanno puggalo saddhānusārī, phale ṭhito saddhāvimuttoti.</p>
+
+
+
+<p class="centered">Navakaniddeso.</p>
+
+
+
+<p class="subhead">10. Dasakapuggalapaññatti</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a3_para209"></span><a name="para209"></a><span class="paranum">209</span>. Katamesaṃ <a name="V0.0187"></a> pañcannaṃ idha niṭṭhā? Sattakkhattuparamassa kolaṅkolassa ekabījissa sakadāgāmissa yo ca diṭṭheva dhamme arahā – imesaṃ pañcannaṃ idha niṭṭhā.</p>
+
+
+
+<p class="bodytext">Katamesaṃ pañcannaṃ idha vihāya niṭṭhā? Antarāparinibbāyissa upahaccaparinibbāyissa asaṅkhāraparinibbāyissa sasaṅkhāraparinibbāyissa <a name="T0.0236"></a> uddhaṃsotassa akaniṭṭhagāmino – imesaṃ pañcannaṃ idha vihāya niṭṭhāti.</p>
+
+
+
+<p class="bodytext">Ettāvatā puggalānaṃ puggalapaññattīti.</p>
+
+
+
+<p class="centered">Dasakaniddeso.</p>
+
+
+
+<p class="centered">Puggalapaññattipakaraṇaṃ niṭṭhitaṃ.</p>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+D:\pced\pced\后台管理-词库制作\bin\Release\makedict.exe.config
+D:\pced\pced\后台管理-词库制作\bin\Release\makedict.exe
+D:\pced\pced\后台管理-词库制作\bin\Release\makedict.pdb
+D:\pced\pced\后台管理-词库制作\obj\Release\ResolveAssemblyReference.cache
+D:\pced\pced\后台管理-词库制作\obj\Release\makedict.exe
+D:\pced\pced\后台管理-词库制作\obj\Release\makedict.pdb
+D:\PCED\PCED\词库制作工具源档\bin\Release\makedict.exe.config
+D:\PCED\PCED\词库制作工具源档\obj\Release\makedict.exe
+D:\PCED\PCED\词库制作工具源档\obj\Release\makedict.pdb
+D:\我的文档\ff\pced181发布版源档更新词库工具20100529\pced181发布版源档更新词库工具20100529\pced181源档更新包20100418\词库制作工具源档\bin\Release\makedict.exe.config
+D:\我的文档\ff\pced181发布版源档更新词库工具20100529\pced181发布版源档更新词库工具20100529\pced181源档更新包20100418\词库制作工具源档\obj\Release\makedict.exe
+D:\我的文档\ff\pced181发布版源档更新词库工具20100529\pced181发布版源档更新词库工具20100529\pced181源档更新包20100418\词库制作工具源档\obj\Release\makedict.pdb
+D:\我的文档\ff\PCED180\工具1\bin\Release\makedict.exe.config
+D:\我的文档\ff\PCED180\工具1\obj\Release\makedict.exe
+D:\我的文档\ff\PCED180\工具1\obj\Release\makedict.pdb

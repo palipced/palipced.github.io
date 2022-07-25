@@ -1,0 +1,12 @@
+D:\pced\pced\后台管理-词库制作\bin\Release\makedict.exe.config
+D:\pced\pced\后台管理-词库制作\bin\Release\makedict.exe
+D:\pced\pced\后台管理-词库制作\bin\Release\makedict.pdb
+D:\pced\pced\后台管理-词库制作\obj\Release\ResolveAssemblyReference.cache
+D:\pced\pced\后台管理-词库制作\obj\Release\makedict.exe
+D:\pced\pced\后台管理-词库制作\obj\Release\makedict.pdb
+D:\PCED\PCED\词库制作工具源档\bin\Release\makedict.exe.config
+D:\PCED\PCED\词库制作工具源档\obj\Release\makedict.exe
+D:\PCED\PCED\词库制作工具源档\obj\Release\makedict.pdb
+E:\pyh\PCED英文版\词库制作工具源档\bin\Release\makedict.exe.config
+E:\pyh\PCED英文版\词库制作工具源档\obj\Release\makedict.exe
+E:\pyh\PCED英文版\词库制作工具源档\obj\Release\makedict.pdb

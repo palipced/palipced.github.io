@@ -1,0 +1,6674 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title><script>
+function setHitsVisibility(isVisible)
+{ 
+  var c = getStyleClass('hit');
+  if (isVisible)
+  {
+    c.style.backgroundColor = 'blue';
+    c.style.color = 'white';
+  }
+  else
+  {
+    c.style.backgroundColor = 'white';
+    c.style.color = 'black';
+  }
+}
+
+function setFootnotesVisibility(isVisible)
+{
+  getStyleClass('note').style.display = (isVisible ? 'inline' : 'none');
+}
+
+function getStyleClass (className) {
+	for (var s = 0; s < document.styleSheets.length; s++)
+	{
+		if(document.styleSheets[s].rules)
+		{
+			for (var r = 0; r < document.styleSheets[s].rules.length; r++)
+			{
+				if (document.styleSheets[s].rules[r].selectorText == '.' + className)
+				{
+					return document.styleSheets[s].rules[r];
+				}
+			}
+		}
+		else if(document.styleSheets[s].cssRules)
+		{
+			for (var r = 0; r < document.styleSheets[s].cssRules.length; r++)
+			{
+				if (document.styleSheets[s].cssRules[r].selectorText == '.' + className)
+					return document.styleSheets[s].cssRules[r];
+			}
+		}
+	}
+	
+	return null;
+}
+</script><style>
+body { 
+  font-family: "Times Ext Roman", "Indic Times", "Doulos SIL", Tahoma, "Arial Unicode MS", Gentium;
+  background: white;
+}
+
+span {}
+.note {color: blue}
+.bld {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white; }
+
+p {
+  border-top: 0in; border-bottom: 0in;
+  padding-top: 0in; padding-bottom: 0in;
+  margin-top: 0in; margin-bottom: 0.5cm;
+}
+
+.indent { font-size: 12pt; text-indent: 2em; margin-left: 3em;}
+
+.bodytext { font-size: 12pt; text-indent: 2em;}
+
+.hangnum { font-size: 12pt; text-indent: 2em;}
+
+/* Namo tassa, and nitthita -- no unique structural distinction */
+.centered { font-size: 12pt; text-align:center;}
+
+.unindented { font-size: 12pt;}
+
+.book { font-size: 21pt; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 18pt; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 24pt; text-align:center; font-weight: bold;}
+
+.title { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subsubhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+/* Gatha line 1 */
+.gatha1 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { font-size: 12pt; margin-bottom: 0.5cm; margin-left: 4em;}
+</style>
+  </head>
+  <body>
+
+
+
+
+
+<p class="chapter">Padamañjarī <a name="O0.0001"></a></p>
+
+
+
+<p class="centered">Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="gatha1">Niruttikāyodadhipāragaṃ jinaṃ,</p>
+
+
+
+<p class="gatha2">Visuddhadhammañca gaṇaṃ anuttaraṃ;</p>
+
+
+
+<p class="gatha3">Tidhā namitvā padamañjarī mayā,</p>
+
+
+
+<p class="gathalast">Karīyato bālakabuddhivuddhiyāti.</p>
+
+
+
+<p class="centered">Atha akārantapulliṅgo buddhasaddo vuccate.</p>
+
+
+
+<p class="unindented">Buddho devamanussānaṃ dhammaṃ desesi</p>
+
+
+
+<p class="unindented">Buddhā devamanussānaṃ dhammaṃ adesiṃsu</p>
+
+
+
+<p class="unindented">Bho buddha tvampikho maṃ pālaya</p>
+
+
+
+<p class="unindented">Bho buddhā tumhepi kho maṃ pāletha.</p>
+
+
+
+<p class="unindented">Buddhaṃ bhagavantaṃ sakkaccaṃ vandāmahaṃ</p>
+
+
+
+<p class="unindented">Buddhe bhagavante sakkaccaṃ vandāma mayaṃ</p>
+
+
+
+<p class="unindented">Buddhena bhagavatā dhammo desīyate</p>
+
+
+
+<p class="unindented">Buddhehi bhagavantehi dhammo desito</p>
+
+
+
+<p class="unindented">Buddhena bhagavatā mahājano sucarati</p>
+
+
+
+<p class="unindented">Buddhehi bhagavantehi sivapadaṃ yanti</p>
+
+
+
+<p class="unindented">Buddhassa bhagavato pupphaṃ yajati</p>
+
+
+
+<p class="unindented">Buddhānaṃ bhagavataṃ pupphāni yajati</p>
+
+
+
+<p class="unindented">Buddhā bhagavatā sivapadaṃ labheyya</p>
+
+
+
+<p class="unindented">Buddhehi bhagavantehi pabhā niccharati</p>
+
+
+
+<p class="unindented">Buddhassa bhagavato iddhi kiṃ na kare</p>
+
+
+
+<p class="unindented">Buddhānaṃ bhagavantānaṃ iddhipāṭihāriyāni</p>
+
+
+
+<p class="unindented">Buddhe bhagavante mahājano pasīdati.</p>
+
+
+
+<p class="unindented">Buddhesu bhagavantesu manaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti paṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Akārantapulliṅgo attasaddo vuccate.</p>
+
+
+
+<p class="unindented">Attā saṃsāradukkhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Attāno sukhadukkhaṃ pāpuṇanti</p>
+
+
+
+<p class="unindented">Bho atta sukhadukkhaṃ anubhosi</p>
+
+
+
+<p class="unindented">Bho attano sukhadukkhaṃ anubhotha</p>
+
+
+
+<p class="unindented">Attānaṃ passati buddho bhagavā</p>
+
+
+
+<p class="unindented">Attāno <a name="O0.0002"></a> passati sammā sambuddho</p>
+
+
+
+<p class="unindented">Attanā sukhadukkhaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Attanehi kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Attanā saṃsārasukhaṃ nāma natthi</p>
+
+
+
+<p class="unindented">Attanehi bhavasukhaṃ nāma natthi</p>
+
+
+
+<p class="unindented">Attano attāva patiṭṭhā siyā</p>
+
+
+
+<p class="unindented">Attānaṃ kammameva patiṭṭhā siyā</p>
+
+
+
+<p class="unindented">Attanāpi mahabbhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Attanehi mahabbhayāni jāyanti</p>
+
+
+
+<p class="unindented">Attano mātāpitaro honti</p>
+
+
+
+<p class="unindented">Attānaṃ pañcagatiyo honti</p>
+
+
+
+<p class="unindented">Attani sabbaṃ balaṃ harati rogo</p>
+
+
+
+<p class="unindented">Attanesu sabbaṃ balaṃ haranti rogā.</p>
+
+
+
+<p class="centered">Iti dutiyo pāṭho.</p>
+
+
+
+<p class="centered">Akāranta pulliṅgo rājasaddo vuccate.</p>
+
+
+
+<p class="unindented">Rājāpi mahājanaṃ toseti</p>
+
+
+
+<p class="unindented">Rājāno mahājanaṃ tosenti</p>
+
+
+
+<p class="unindented">Bho rājā mahājanaṃ pālaya</p>
+
+
+
+<p class="unindented">Bho rājāno mahājanaṃ pāletha</p>
+
+
+
+<p class="unindented">Rājānaṃ passati mahājano</p>
+
+
+
+<p class="unindented">Rājāno passanti mahājanā</p>
+
+
+
+<p class="unindented">Raññā kārīyate mahāpāsādo</p>
+
+
+
+<p class="unindented">Rājūhi kārāpitā mahāvihārā</p>
+
+
+
+<p class="unindented">Raññā mahājano sukhaṃ carati</p>
+
+
+
+<p class="unindented">Rājūhī mahājanā sukhaṃ caranti</p>
+
+
+
+<p class="unindented">Rañño paṇṇākāraṃ deti mahājano</p>
+
+
+
+<p class="unindented">Rājūnaṃ paṇṇākāraṃ denti mahājanā</p>
+
+
+
+<p class="unindented">Raññā mahabbhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Rājūhi mahabbhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Rañño vappamaṅgalaṃ hoti</p>
+
+
+
+<p class="unindented">Rājūnaṃ sabbābharaṇāni honti</p>
+
+
+
+<p class="unindented">Raññe mahājano pana pasīdati</p>
+
+
+
+<p class="unindented">Rājusu mahājanā pana pasīdanti.</p>
+
+
+
+<p class="centered">Iti tatiyo pāṭho.</p>
+
+
+
+<p class="centered">Akārantapulliṅgo guṇavattusaddo vuccate.</p>
+
+
+
+<p class="unindented">Guṇavā puriso sundaraṃ nibbāṇaṃ gato</p>
+
+
+
+<p class="unindented">Guṇavanto <a name="O0.0003"></a> purisā sundaraṃ nibbāṇaṃ gatā</p>
+
+
+
+<p class="unindented">Bho guṇavaṃ purisa tvampi dānaṃ dehi</p>
+
+
+
+<p class="unindented">Bho guṇavanto purisā tumhe dānaṃ detha</p>
+
+
+
+<p class="unindented">Guṇavantaṃ purisaṃ dhammaṃ bodheti ācariyo</p>
+
+
+
+<p class="unindented">Guṇavante purise dhammaṃ pāṭhayati ācariyo</p>
+
+
+
+<p class="unindented">Guṇavantena purisena kārito vihāro</p>
+
+
+
+<p class="unindented">Guṇavantehi purisehi kāritā vihārā</p>
+
+
+
+<p class="unindented">Guṇavantena purisena loko sucarati</p>
+
+
+
+<p class="unindented">Guṇavantehi purisehi lokā sucaranti</p>
+
+
+
+<p class="unindented">Guṇavato purisassa sakkāraṃ karoti</p>
+
+
+
+<p class="unindented">Guṇavataṃ purisānaṃ sakkāraṃ karonti</p>
+
+
+
+<p class="unindented">Guṇavatā purisasmā bhayaṃ nūppajjati</p>
+
+
+
+<p class="unindented">Guṇavantehi purisehi bhayāni nūppajjanti</p>
+
+
+
+<p class="unindented">Guṇavato purisassa kittisaddo aṅguggacchati</p>
+
+
+
+<p class="unindented">Guṇavataṃ purisānaṃ guṇaghoso hoti</p>
+
+
+
+<p class="unindented">Guṇavante purise me ramati mato</p>
+
+
+
+<p class="unindented">Guṇavantesu purisesu sappuriso pasīdati.</p>
+
+
+
+<p class="centered">Iti catuttho pāṭho.</p>
+
+
+
+<p class="centered">Akārantapulliṅgo gacchantasaddo vuccate.</p>
+
+
+
+<p class="unindented">Gacchaṃ yaññadatto purisaṃ bhāraṃ hārayati</p>
+
+
+
+<p class="unindented">Gacchantā yaññadattā purisaṃ kammaṃ kārayanti</p>
+
+
+
+<p class="unindented">Bho gacchaṃ yaññadatta tvaṃ maṃ pālaya</p>
+
+
+
+<p class="unindented">Bho gacchantā yaññadattā maṃ pāletha</p>
+
+
+
+<p class="unindented">Gacchantaṃ yaññadattaṃ kambalaṃyācayati dvijo</p>
+
+
+
+<p class="unindented">Gacchante yaññadatte kambalaṃ yācayati dvijo</p>
+
+
+
+<p class="unindented">Gacchatā yaññadattena rukkho pupphāni avacīyate</p>
+
+
+
+<p class="unindented">Gacchantehi yaññadattehi rukkho pupphāni avacito</p>
+
+
+
+<p class="unindented">Gacchatā yaññadattena koci maggaṃ jānāti</p>
+
+
+
+<p class="unindented">Gacchantehi yaññadattehi kecimaggaṃ jānanti</p>
+
+
+
+<p class="unindented">Gacchato yaññadattassa chattaṃ dhārayate</p>
+
+
+
+<p class="unindented">Gacchataṃ yaññadattānaṃ chattāni dhārayante</p>
+
+
+
+<p class="unindented">Gacchatā yaññadattasmā bhayaṃ nūppajjati</p>
+
+
+
+<p class="unindented">Gacchantehi yaññadattehi bhayāni nūppajjanti</p>
+
+
+
+<p class="unindented">Gacchato yaññadattassa chatto hoti</p>
+
+
+
+<p class="unindented">Gacchataṃ yaññadattānaṃ ābharaṇāni honti</p>
+
+
+
+<p class="unindented">Gacchante yaññadatte koci pasīdati</p>
+
+
+
+<p class="unindented">Gacchantesu yaññadattesu keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0004"></a> pañcamo pāṭho.</p>
+
+
+
+<p class="centered">Ikārantapulliṅgo aggisaddo vuccate.</p>
+
+
+
+<p class="unindented">Aggi pana kaṭṭhamaṅgāraṃ karoti</p>
+
+
+
+<p class="unindented">Aggayo kaṭṭhamaṅgāraṃ karonti</p>
+
+
+
+<p class="unindented">Bho aggi tvaṃ sītaṃ vinodehi</p>
+
+
+
+<p class="unindented">Bho aggī tumhe sītaṃ vinodetha</p>
+
+
+
+<p class="unindented">Aggiṃ nibbāpeti yo koci</p>
+
+
+
+<p class="unindented">Aggayo nibbāpenti ye keci</p>
+
+
+
+<p class="unindented">Agginā koci akāro daḍḍho</p>
+
+
+
+<p class="unindented">Aggīhi keci agārā daḍḍhā</p>
+
+
+
+<p class="unindented">Agginā kiñci āgāraṃ jhāpeti</p>
+
+
+
+<p class="unindented">Aggīhi keci agāre jhāpeti</p>
+
+
+
+<p class="unindented">Aggino upādānaṃ dadāti brāhmaṇo</p>
+
+
+
+<p class="unindented">Aggīnaṃ upādānaṃ dadanti brāhmaṇā</p>
+
+
+
+<p class="unindented">Agginā dhūmo apeti niccaṃ</p>
+
+
+
+<p class="unindented">Aggīhi’dhūmāpi apenti niccaṃ</p>
+
+
+
+<p class="unindented">Aggino āloko ca hoti</p>
+
+
+
+<p class="unindented">Aggīnaṃ ālokāpi honti</p>
+
+
+
+<p class="unindented">Aggimhi yo koci pasīdati</p>
+
+
+
+<p class="unindented">Aggīsu ye keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="centered">Ikārantapulliṅgo ādisaddo vuccate.</p>
+
+
+
+<p class="unindented">Ādi bandhīyate samaggena saṅghena</p>
+
+
+
+<p class="unindented">Ādayo bandhīyante samaggehi bhikkhuhi</p>
+
+
+
+<p class="unindented">Bho ādi tvaṃ dīghakālaṃ pavattehi</p>
+
+
+
+<p class="unindented">Bho ādī tumhe dīghakālaṃ pavattetha</p>
+
+
+
+<p class="unindented">Ādiṃ passati samaggo saṅgho ca</p>
+
+
+
+<p class="unindented">Ādayo passati bhikkhu saṅgho ca</p>
+
+
+
+<p class="unindented">Ādinā parisuddhena pana bhūyate</p>
+
+
+
+<p class="unindented">Ādīhi parisuddhehi pana bhūyate</p>
+
+
+
+<p class="unindented">Ādinā samaggo saṅgho sucarati</p>
+
+
+
+<p class="unindented">Ādīhi bhikkhu saṅgho sucarati</p>
+
+
+
+<p class="unindented">Ādino koci upakaraṇaṃ deti</p>
+
+
+
+<p class="unindented">Ādīnaṃ keci upakaraṇaṃ denti</p>
+
+
+
+<p class="unindented">Ādinā samaggo saṅgho apeti</p>
+
+
+
+<p class="unindented">Ādīhi bhikkhu’saṅgho apeti</p>
+
+
+
+<p class="unindented">Ādissa <a name="O0.0005"></a> upakārikā kho pana hoti</p>
+
+
+
+<p class="unindented">Ādīnaṃ upakārikāyopi honti</p>
+
+
+
+<p class="unindented">Ādimhi samaggo saṅgho nisīdati</p>
+
+
+
+<p class="unindented">Ādīsū bhikkhu saṅghopi nisīdati.</p>
+
+
+
+<p class="centered">Iti sattamo pāṭho.</p>
+
+
+
+<p class="centered">Īkārantapulliṅgo daṇḍīsaddo vuccate.</p>
+
+
+
+<p class="unindented">Daṇḍī purisopi daṇḍaṃ chaḍḍetu</p>
+
+
+
+<p class="unindented">Daṇḍino purisā daṇḍaṃ chaḍḍentu</p>
+
+
+
+<p class="unindented">Bho daṇḍī purisa daṇḍaṃ chaḍḍehi</p>
+
+
+
+<p class="unindented">Bho daṇḍino purisā daṇḍaṃ chaḍḍetha</p>
+
+
+
+<p class="unindented">Daṇḍiṃ purisaṃ kammaṃ kārayati puriso</p>
+
+
+
+<p class="unindented">Daṇḍī purise kamme kārenti purisā</p>
+
+
+
+<p class="unindented">Daṇḍinā purisena daṇḍo chaḍḍīyatu</p>
+
+
+
+<p class="unindented">Daṇḍīhi purisehi daṇḍā chaḍḍīyantu</p>
+
+
+
+<p class="unindented">Daṇḍinā purisena puriso tiṭṭhati</p>
+
+
+
+<p class="unindented">Daṇḍīhi purisehi purisā tiṭṭhanti</p>
+
+
+
+<p class="unindented">Daṇḍino purisassa cittaṃ na ruccati</p>
+
+
+
+<p class="unindented">Daṇḍīnaṃ purisānaṃ cittaṃ na ruccati</p>
+
+
+
+<p class="unindented">Daṇḍinā purisasmā bhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Daṇḍīhi purisehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Daṇḍino purisassa pariggaho hoti</p>
+
+
+
+<p class="unindented">Daṇḍīnaṃ purisānaṃ pariggahā honti</p>
+
+
+
+<p class="unindented">Daṇḍismiṃ purise cittaṃ na ramati</p>
+
+
+
+<p class="unindented">Daṇḍīsu purisesu ekacco nappasīdati.</p>
+
+
+
+<p class="centered">Iti aṭṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Ukārantapulliṅgo bhikkhusaddo vuccate.</p>
+
+
+
+<p class="unindented">Bhikkhu mahārājānaṃ dhammaṃ bhaṇati</p>
+
+
+
+<p class="unindented">Bhikkhū mahārājānaṃ dhammaṃ bhaṇanti</p>
+
+
+
+<p class="unindented">Bho bhikkhu paṇītaṃ dhammaṃ desehi</p>
+
+
+
+<p class="unindented">Bho bhikkhū paṇītaṃ dhammaṃ desetha</p>
+
+
+
+<p class="unindented">Bhikkhuṃ sakkaccaṃ paṇamāmahaṃ</p>
+
+
+
+<p class="unindented">Bhikkhū sakkaccaṃ paṇamāma mayaṃ</p>
+
+
+
+<p class="unindented">Bhikkhunā saddhammo desīyate</p>
+
+
+
+<p class="unindented">Bhikkhūhi saddhammo sudesito</p>
+
+
+
+<p class="unindented">Bhikkhunā loko saggaṃ gacchati</p>
+
+
+
+<p class="unindented">Bhikkhūhi mahājanā saggaṃ tacchanti</p>
+
+
+
+<p class="unindented">Bhikkhussa <a name="O0.0006"></a> dānaṃ deti sappuriso</p>
+
+
+
+<p class="unindented">Bhikkhūnaṃ dānaṃ denti sappurisā</p>
+
+
+
+<p class="unindented">Bhikkhunā saggaṃ labheyya saṅo</p>
+
+
+
+<p class="unindented">Bhikkhūhi saggaṃ labheyyuṃ sappurisā</p>
+
+
+
+<p class="unindented">Bhikkhuno pattacīvarampi bhavati</p>
+
+
+
+<p class="unindented">Bhikkhūnaṃ pattacīvarāni bhavanti</p>
+
+
+
+<p class="unindented">Bhikkhusmiṃ me ramati mano</p>
+
+
+
+<p class="unindented">Bhikkhūsu saddho sappuriso pasīdati.</p>
+
+
+
+<p class="centered">Iti navamo pāṭho.</p>
+
+
+
+<p class="centered">Ukārantapulliṅgo jantusaddo vuccate.</p>
+
+
+
+<p class="unindented">Jantu devadattaṃ kaṭaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Jantuno devadatte kaṭe kārāpenti</p>
+
+
+
+<p class="unindented">Bhojantu tvampi devadattaṃ kaṭaṃ kāresi</p>
+
+
+
+<p class="unindented">Bho jantuno devadatte kaṭe kāretha.</p>
+
+
+
+<p class="unindented">Jantumpetaṃ kaṭaṃ kāremi teneva kaṭe vā</p>
+
+
+
+<p class="unindented">Jantupete kaṭaṃ kārema teneva kaṭe vā</p>
+
+
+
+<p class="unindented">Jantunā puriso vihāraṃ vihārevā kārāpīyate</p>
+
+
+
+<p class="unindented">Jantūhi puriso vihāraṃ vihārevā kārito</p>
+
+
+
+<p class="unindented">Jantunā riyena yo koci sukhaṃ pāpuṇati</p>
+
+
+
+<p class="unindented">Jantūhi ariyehi ye keci sukhaṃ pāpuṇanti</p>
+
+
+
+<p class="unindented">Jantuno ariyassa dhanaṃ dadāti dhanavanto</p>
+
+
+
+<p class="unindented">Jantunamariyānaṃ dhanaṃ dadanti dhanavantā</p>
+
+
+
+<p class="unindented">Jantunāriyamhā antaradhāyati yo koci</p>
+
+
+
+<p class="unindented">Jantūhi ariyehi antaradhāyanti ye keci</p>
+
+
+
+<p class="unindented">Jantuno sakalassa phalaṃvipāko hoti</p>
+
+
+
+<p class="unindented">Jantūnaṃ sakalānaṃ pañcagatiyo honti</p>
+
+
+
+<p class="unindented">Jantumhi ariye yo koci pasīdati</p>
+
+
+
+<p class="unindented">Jantusu ariyesu ye keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti dasamo pāṭho.</p>
+
+
+
+<p class="centered">Ukārantapulliṅgo satthusaddo vuccate.</p>
+
+
+
+<p class="unindented">Satthā devamanussānaṃ dhammadesanaṃ akāsi</p>
+
+
+
+<p class="unindented">Satthāro devamanussānaṃ dhammadesanaṃ akāsuṃ</p>
+
+
+
+<p class="unindented">Bho satthā tvaṃ sadevakaṃ lokaṃ pālaya</p>
+
+
+
+<p class="unindented">Bho satthāro sadevakaṃ lokaṃ pāletha</p>
+
+
+
+<p class="unindented">Satthāraṃ dhammarājānaṃ sakkaccaṃ paṇamā mahaṃ</p>
+
+
+
+<p class="unindented">Satthāre dhammarāje sakkaccaṃ paṇamāma mayaṃ</p>
+
+
+
+<p class="unindented">Satthārā <a name="O0.0007"></a> dhammarājena sīvaṃ bodhīyate loko</p>
+
+
+
+<p class="unindented">Satthārehi dhammarājehi sivaṃ bodhito loko</p>
+
+
+
+<p class="unindented">Satthārā dhammarājena accutaṃ padaṃ gacchati</p>
+
+
+
+<p class="unindented">Satthārehi dhammarājehi accutaṃ padaṃ labheyya</p>
+
+
+
+<p class="unindented">Satthu dhammarājassa pupphāni yajati loko</p>
+
+
+
+<p class="unindented">Satthānaṃ dhammarājānaṃ pupphāni yajati loko</p>
+
+
+
+<p class="unindented">Satthārā dhammarājasmā parājenti aññatitthiyā</p>
+
+
+
+<p class="unindented">Satthārehi dhammarājehi charaṃsiyo niccharanti</p>
+
+
+
+<p class="unindented">Satthuno dhammarājassa caraṇaṃ paṇamāmyahaṃ</p>
+
+
+
+<p class="unindented">Satthānaṃ dhammarājānaṃ pāde sirasā paṇāma</p>
+
+
+
+<p class="unindented">Satthari dhammarāje ko bhattiṃ na ghaṭīyati</p>
+
+
+
+<p class="unindented">Satthāresu dhammarājesu bhatti bhavabhave atthu.</p>
+
+
+
+<p class="centered">Iti ekādasamo pāṭho.</p>
+
+
+
+<p class="centered">Ukārantapulliṅgo nantusaddo vuccate.</p>
+
+
+
+<p class="unindented">Tattā pitāmahaṃ bhojanaṃ bhojayati</p>
+
+
+
+<p class="unindented">Nattāro pitāmahaṃ bhojanaṃ bhojayanti</p>
+
+
+
+<p class="unindented">Bho nattā tvampi sippaṃ uggaṇhāhi</p>
+
+
+
+<p class="unindented">Bho nattāro tumhe sippāni uggaṇhātha</p>
+
+
+
+<p class="unindented">Nattāraṃ sippaṃ pāṭheti ācariyo</p>
+
+
+
+<p class="unindented">Nattāre sippāni pāṭhenti ācariyā</p>
+
+
+
+<p class="unindented">Nattārā rukkho pupphāni avacīyate</p>
+
+
+
+<p class="unindented">Nattārehi rukkho pupphāni avacito</p>
+
+
+
+<p class="unindented">Nattārā pitāmaho sukhī jāto</p>
+
+
+
+<p class="unindented">Nattārehi pittāmahā sukhījātā</p>
+
+
+
+<p class="unindented">Nattussa khettavatthuṃ dadāti pitāmaho</p>
+
+
+
+<p class="unindented">Nattārānaṃ khettavatthuṃ dadanti pitāmahā</p>
+
+
+
+<p class="unindented">Nattārā pitāmaho apeto hoti</p>
+
+
+
+<p class="unindented">Nattārehi pitāmaho apeto hoti</p>
+
+
+
+<p class="unindented">Nantuno vatthābharanaṃ pana hoti</p>
+
+
+
+<p class="unindented">Nattārānaṃ kho pana vatthābharanāni honti</p>
+
+
+
+<p class="unindented">Nattari yo koci pitāmaho nappasīdati</p>
+
+
+
+<p class="unindented">Nattāresu ye keci pitāmahā nappasīdanti.</p>
+
+
+
+<p class="centered">Iti dvādasamo pāṭho.</p>
+
+
+
+<p class="centered">Ukāranta pulliṅgo pitusaddo vuccate.</p>
+
+
+
+<p class="unindented">Pitāpi puttaṃ bhojanaṃ bhojayati</p>
+
+
+
+<p class="unindented">Pitaro putte bhojanaṃ bhojayanti</p>
+
+
+
+<p class="unindented">Bhopitā <a name="O0.0008"></a> tvampi bhojanaṃ bhojehi</p>
+
+
+
+<p class="unindented">Bho pitaro tumhe bhojanaṃ bhojetha</p>
+
+
+
+<p class="unindented">Pitaraṃ sakkaccaṃ poseti putto</p>
+
+
+
+<p class="unindented">Pitare sakkaccaṃ posenti puttā</p>
+
+
+
+<p class="unindented">Pitarā putto kusalaṃ kārāpīyate</p>
+
+
+
+<p class="unindented">Pitarehi putto kusalaṃ kārāpīyate</p>
+
+
+
+<p class="unindented">Pitarā puttopi sukhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Pitarehi bhaginiyo sukhaṃ pāpuṇanti</p>
+
+
+
+<p class="unindented">Pitussa annapānaṃdeti putto</p>
+
+
+
+<p class="unindented">Pitarānaṃ annapānaṃ denti puttā</p>
+
+
+
+<p class="unindented">Pitarā antaradhāyāti putto</p>
+
+
+
+<p class="unindented">Pituno pāde abhivandati putto</p>
+
+
+
+<p class="unindented">Pitarānaṃ pāde abhivandati puttā</p>
+
+
+
+<p class="unindented">Pitari putto trajo pasīdati</p>
+
+
+
+<p class="unindented">Pitaresu puttoraso pasīdati.</p>
+
+
+
+<p class="centered">Iti terasamo pāṭho.</p>
+
+
+
+<p class="centered">Ukāranta pulliṅgo bhātusaddo vuccate.</p>
+
+
+
+<p class="unindented">Bhātā bhaginiṃ kusalaṃ kārāpayati</p>
+
+
+
+<p class="unindented">Bhātaro bhaginī kusalāni kārāpayanti</p>
+
+
+
+<p class="unindented">Bho bhātā tvampi kusalaṃ karohi</p>
+
+
+
+<p class="unindented">Bho bhātaro tumhe kusalāni karotha</p>
+
+
+
+<p class="unindented">Bhātaraṃ kammaṃ kārayati pubbajo</p>
+
+
+
+<p class="unindented">Bhātare kamme kārayanti pubbajā</p>
+
+
+
+<p class="unindented">Bhātarā saṅgho bhattaṃ bhojāpīyate</p>
+
+
+
+<p class="unindented">Bhātarehi saṅgho bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Bhātarā bhaginīpi sukhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Bhātarehi bhaginiyo sukhaṃ pāpuṇanti</p>
+
+
+
+<p class="unindented">Bhātussa vatthañca dadāti pubbajo</p>
+
+
+
+<p class="unindented">Bhātarānaṃ vatthāni dadanti pubbajā</p>
+
+
+
+<p class="unindented">Bhātarā antaradhāyati bhaginipi</p>
+
+
+
+<p class="unindented">Bhātarehi antaradhāyanti bhaginiyo</p>
+
+
+
+<p class="unindented">Bhātuno khettavatthūni pana vijjanti</p>
+
+
+
+<p class="unindented">Bhātarānaṃ khettavatthūni pana vijjanti</p>
+
+
+
+<p class="unindented">Bhātari jeṭṭho sammā pasīdati</p>
+
+
+
+<p class="unindented">Bhātaresu jeṭṭhā sammā pasīdanti.</p>
+
+
+
+<p class="centered">Iti cuddasamo pāṭho.</p>
+
+
+
+<p class="centered">Ūkāranta <a name="O0.0009"></a> pulliṅgo abhibhūsaddo vuccate.</p>
+
+
+
+<p class="unindented">Abhibhū tathāgato dhammadesanaṃ akāsi</p>
+
+
+
+<p class="unindented">Abhibhū tathāgatā dhammadesanaṃ akāsuṃ</p>
+
+
+
+<p class="unindented">Bho abhibhū tathāgata dhammaṃ desehi</p>
+
+
+
+<p class="unindented">Bho abhibhū tathāgatā dhammaṃ desetha</p>
+
+
+
+<p class="unindented">Abhibhuṃ tathāgataṃ sirasā namāmyahaṃ</p>
+
+
+
+<p class="unindented">Abhibhuvo tathāgate sirasā namāma mayaṃ</p>
+
+
+
+<p class="unindented">Abhibhunā tathāgatena dhammo desito</p>
+
+
+
+<p class="unindented">Abhibhūhi tathāgatehi dhammā desitā</p>
+
+
+
+<p class="unindented">Abhibhunā tathāgatena munayo sukhījātā</p>
+
+
+
+<p class="unindented">Abhibhūhi tathāgatehi lokā sukhījātā</p>
+
+
+
+<p class="unindented">Abhibhūno tathāgatassa pupphāni yajati</p>
+
+
+
+<p class="unindented">Abhibhūnaṃ tathāgatānaṃ pupphāni yajanti</p>
+
+
+
+<p class="unindented">Abhibhunā tathāgatamhā pabhā niccharati</p>
+
+
+
+<p class="unindented">Abhibhūhi tathāgatehi pabhāyo niccharanti</p>
+
+
+
+<p class="unindented">Abhibhuno tathāgatassa pāde paṇamāmi</p>
+
+
+
+<p class="unindented">Abhibhūnaṃ tathāgatānaṃ caraṇaṃ paṇamāma</p>
+
+
+
+<p class="unindented">Abhibhumhi tathāgate me ramati mano</p>
+
+
+
+<p class="unindented">Abhibhūsu tathāgatesu manaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti pañcadasamo pāṭho.</p>
+
+
+
+<p class="centered">Ūkāranta pulliṅgo sabbaññusaddo vuccate.</p>
+
+
+
+<p class="unindented">Sabbaññu lokanātho dhammaṃ deseti</p>
+
+
+
+<p class="unindented">Sabbaññu lokanāthā dhammaṃ desenti</p>
+
+
+
+<p class="unindented">Bho sabbaññu lokanātha dhammaṃ desehi</p>
+
+
+
+<p class="unindented">Bho sabbaññu lokanāthā dhammaṃ desetha</p>
+
+
+
+<p class="unindented">Sabbaññuṃ lokanāthaṃ passati mahājano</p>
+
+
+
+<p class="unindented">Sabbaññuno lokanāthe passati mahājano</p>
+
+
+
+<p class="unindented">Sabbaññunā lokanāthena dhammo desīyate</p>
+
+
+
+<p class="unindented">Sabbaññūhi lokanāthehi dhammo desito</p>
+
+
+
+<p class="unindented">Sabbaññunā lokanāthena sivapadaṃ yanti</p>
+
+
+
+<p class="unindented">Sabbaññūhi lokanāthehi lokā sukhījātā</p>
+
+
+
+<p class="unindented">Sabbaññuno lokanāthassa jīvitaṃ pariccajāmi</p>
+
+
+
+<p class="unindented">Sabbaññūnaṃ lokanāthānaṃ jīvitaṃ pariccajāmi</p>
+
+
+
+<p class="unindented">Sabbaññunā lokanāthasmā sivapadaṃ labheyya</p>
+
+
+
+<p class="unindented">Sabbaññūhi lokanāthehi sivapadi labheyyuṃ</p>
+
+
+
+<p class="unindented">Sabbaññuno <a name="O0.0010"></a> lokanāthassa caraṇaṃ vandāmi</p>
+
+
+
+<p class="unindented">Sabbañuñūnaṃ lokanāthānaṃ pāde vandāma</p>
+
+
+
+<p class="unindented">Sabbaññusmiṃ lokanāthe loko pasīdati</p>
+
+
+
+<p class="unindented">Sabbaññūsu lokanāthesu lokā pasīdanti.</p>
+
+
+
+<p class="centered">Iti solasamo pāṭho.</p>
+
+
+
+<p class="centered">Okāranta pulliṅgo gosaddo vuccate.</p>
+
+
+
+<p class="unindented">Go usabho ujuṃ gacchati</p>
+
+
+
+<p class="unindented">Gāvo usabhā ujuṃ gacchanti</p>
+
+
+
+<p class="unindented">Bho go usabhā ujuṃ gacchāhi</p>
+
+
+
+<p class="unindented">Gāvuṃ vajaṃ rundhati gopālo</p>
+
+
+
+<p class="unindented">Gāvo vaje rundhati gopālā</p>
+
+
+
+<p class="unindented">Gāvena sakaṭo ānīyate</p>
+
+
+
+<p class="unindented">Gohi sakaṭā ānīyante</p>
+
+
+
+<p class="unindented">Gāvena gomiko jīvikaṃ kappeti</p>
+
+
+
+<p class="unindented">Gohi gomikā jīvikaṃ kappenti</p>
+
+
+
+<p class="unindented">Gāvassa tiṇaṃ dadāti gopālo</p>
+
+
+
+<p class="unindented">Gonaṃ tiṇaṃ dadanti gopālā</p>
+
+
+
+<p class="unindented">Gāvā usabhasmā bhayaṃ upjajjati</p>
+
+
+
+<p class="unindented">Gohi usabhehi bhayāni jāyanti</p>
+
+
+
+<p class="unindented">Gāvassa usabhassa dhavalo guṇo</p>
+
+
+
+<p class="unindented">Gavaṃ usabhānaṃ guṇā pamāṇaṃ</p>
+
+
+
+<p class="unindented">Bhāve usabhe gomiko pasīdati</p>
+
+
+
+<p class="unindented">Gosu usabhesu gomikā pasīdanti.</p>
+
+
+
+<p class="centered">Iti sattadasamo pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā pulliṅganāmānaṃ.</p>
+
+
+
+<p class="centered">Paṭhamo paricchedo.</p>
+
+
+
+<p class="centered">Atha akārantetthiliṅgo kaññāsaddo vuccate.</p>
+
+
+
+<p class="unindented">Kaññā dāsiṃ kammaṃ kārāpayati</p>
+
+
+
+<p class="unindented">Kaññāyo dāsī kamme kārāpayanti</p>
+
+
+
+<p class="unindented">Bho kaññe tvampi kusalaṃ karohi</p>
+
+
+
+<p class="unindented">Bho kaññāyo tumhe kusalaṃ karotha</p>
+
+
+
+<p class="unindented">Kaññaṃ kusalaṃ kārāpeti mātā</p>
+
+
+
+<p class="unindented">Kaññāyo kusalāni kārenti mātāpitaro</p>
+
+
+
+<p class="unindented">Kaññāya <a name="O0.0011"></a> tilānipi bhajjīyante</p>
+
+
+
+<p class="unindented">Kaññāhi dhaññānipi bhajjīyante</p>
+
+
+
+<p class="unindented">Kaññāya koci puriso sucarati</p>
+
+
+
+<p class="unindented">Kaññāhi keci purisā sucaranti</p>
+
+
+
+<p class="unindented">Kaññāya ābharaṇāni dadāti puriso</p>
+
+
+
+<p class="unindented">Kaññānaṃ ābharaṇāni dadāti puriso</p>
+
+
+
+<p class="unindented">Kaññāya apeti koci puriso</p>
+
+
+
+<p class="unindented">Kaññāhi apenti keci purisā</p>
+
+
+
+<p class="unindented">Kaññāya vatthābharaṇānipi honti</p>
+
+
+
+<p class="unindented">Kaññānaṃ vatthābharaṇānipi honti</p>
+
+
+
+<p class="unindented">Kaññāyaṃ koci puriso pasīdati</p>
+
+
+
+<p class="unindented">Kaññāsu keci purisā pasīdanti.</p>
+
+
+
+<p class="centered">Iti paṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Ikāranta itthiliṅgo rattisaddo vuccate.</p>
+
+
+
+<p class="unindented">Ratti juṇhā sammā virocati</p>
+
+
+
+<p class="unindented">Rattiyo juṇhāyo virocanti</p>
+
+
+
+<p class="unindented">Bho ratti juṇhā sammā viroca</p>
+
+
+
+<p class="unindented">Bho rattiyo juṇhāyo virocatha</p>
+
+
+
+<p class="unindented">Rattiṃ na oloketvā dhammaṃ suṇomi</p>
+
+
+
+<p class="unindented">Rattiyo na oloketvā dhammaṃ suṇoma</p>
+
+
+
+<p class="unindented">Rattiyā yo koci maggo rundhīyati</p>
+
+
+
+<p class="unindented">Rattīhi ye keci maggā rundhīyanti</p>
+
+
+
+<p class="unindented">Rattiyā corajeṭṭho corayati</p>
+
+
+
+<p class="unindented">Rattīhi corajeṭṭhā corayanti</p>
+
+
+
+<p class="unindented">Rattiyā dīpaṃ dadāti dīpakāle</p>
+
+
+
+<p class="unindented">Rattīnaṃ dīpaṃ dadanti dīpakāle</p>
+
+
+
+<p class="unindented">Rattiyā bhojanā appaṭivirato</p>
+
+
+
+<p class="unindented">Rattīhi bhojanehi appaṭivirato</p>
+
+
+
+<p class="unindented">Rattiyā ghanāndhakāropi hoti</p>
+
+
+
+<p class="unindented">Rattīnaṃ ghanāndhakārāpi honti</p>
+
+
+
+<p class="unindented">Rattiyaṃ sūriyo na pātubhavati</p>
+
+
+
+<p class="unindented">Rattīsu uhuṅkārā gocaraṃ gaṇhanti.</p>
+
+
+
+<p class="centered">Iti dutiyo pāṭho.</p>
+
+
+
+<p class="centered">Īkāranta itthiliṅgo nadīsaddo vuccate.</p>
+
+
+
+<p class="unindented">Nadī avicchedappavatti sandati</p>
+
+
+
+<p class="unindented">Nadiyo <a name="O0.0012"></a> avicchedappavattī sandantī</p>
+
+
+
+<p class="unindented">Bho nadī avicchedappavatti jalaṃ dada</p>
+
+
+
+<p class="unindented">Bho nadī avicchedappavattī jalaṃ dadatha</p>
+
+
+
+<p class="unindented">Nadiṃ avicchedappavattiṃ passati</p>
+
+
+
+<p class="unindented">Nadiyo avicchedappavattiyo passati</p>
+
+
+
+<p class="unindented">Nadiyā āpo niccaṃ vuyhate</p>
+
+
+
+<p class="unindented">Nadīhi āpo niccaṃ vuyhate</p>
+
+
+
+<p class="unindented">Nadiyā khettaṃ vapati kassako</p>
+
+
+
+<p class="unindented">Nadīhi khettāni vapanti kassakā</p>
+
+
+
+<p class="unindented">Nadiyā visaṃ dadāti koci bālo</p>
+
+
+
+<p class="unindented">Nadīnaṃ visaṃ dadanti keci bālā</p>
+
+
+
+<p class="unindented">Nadiyā pabhavanti kunnadiyo</p>
+
+
+
+<p class="unindented">Nadiyā kho pana mahogho bhavati</p>
+
+
+
+<p class="unindented">Nadīnaṃ kho pana mahogho bhavati</p>
+
+
+
+<p class="unindented">Nadiyaṃ macchasamūho pana vicarati</p>
+
+
+
+<p class="unindented">Nadīsu macchakacchapādayo vicaranti.</p>
+
+
+
+<p class="centered">Iti tatiyo pāṭho.</p>
+
+
+
+<p class="centered">Ukāranta itthiliṅgo yāgusaddo vuccate.</p>
+
+
+
+<p class="unindented">Yāgu paccate yaññadattena</p>
+
+
+
+<p class="unindented">Yāguyo paccante yaññadattehi</p>
+
+
+
+<p class="unindented">Bho yāgu tvaṃ pana khudaṃ bhana</p>
+
+
+
+<p class="unindented">Bho yāguyo tumhe khudaṃ bhanatha</p>
+
+
+
+<p class="unindented">Yāguṃ pibati yo koci jano</p>
+
+
+
+<p class="unindented">Yāguyo pibanti ye keci janā</p>
+
+
+
+<p class="unindented">Yāguyā pana udaraggi haññati</p>
+
+
+
+<p class="unindented">Yāgūhi pana udaraggī haññanti</p>
+
+
+
+<p class="unindented">Yāguyā koci rogo vupasammati</p>
+
+
+
+<p class="unindented">Yāgūhi keci rogā vupasammanti</p>
+
+
+
+<p class="unindented">Yāguyā pana lavaṇaṃ dadāti sūdo</p>
+
+
+
+<p class="unindented">Yāgūnaṃ lavaṇāni dadanti sūdā</p>
+
+
+
+<p class="unindented">Yāguyā kho pana dhūmo apeti</p>
+
+
+
+<p class="unindented">Yāgūhi kho pana dhūmā apenti</p>
+
+
+
+<p class="unindented">Yāguyā kho pana uṇho vijjati</p>
+
+
+
+<p class="unindented">Yāgūnaṃ kho pana uṇhā vijjanti.</p>
+
+
+
+<p class="unindented">Yāguyaṃ pana sitthāni honti</p>
+
+
+
+<p class="unindented">Yāgūsu pana sitthāni honti.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0013"></a> catuttho pāṭho.</p>
+
+
+
+<p class="centered">Ukāranta itthiliṅgo mātusaddo vuccate.</p>
+
+
+
+<p class="unindented">Mātā puttaṃ bhojanaṃ bhojayati</p>
+
+
+
+<p class="unindented">Mātaro putte bhojanaṃ bhojayanti</p>
+
+
+
+<p class="unindented">Bho mātā tvaṃ pana ciraṃ jīva</p>
+
+
+
+<p class="unindented">Bho mātaro tumhe ciraṃ jīvatha</p>
+
+
+
+<p class="unindented">Mātaraṃ poseti puttotrajopi</p>
+
+
+
+<p class="unindented">Mātare posenti puttotrajāpi</p>
+
+
+
+<p class="unindented">Mātarā putto bhattaṃ bhojāpīyate</p>
+
+
+
+<p class="unindented">Mātarehi putto bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Mātarā puttopi sukhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Mātarehi puttāpi sukhaṃ pāpuṇanti</p>
+
+
+
+<p class="unindented">Mātuyā annaṃ dadāti puttopi</p>
+
+
+
+<p class="unindented">Mātarānaṃ vatthāni dadanti puttāpi</p>
+
+
+
+<p class="unindented">Mātarā pana antaradhāyati putto</p>
+
+
+
+<p class="unindented">Mātarehi antaradhāyanti puttā</p>
+
+
+
+<p class="unindented">Mātuyā pana puttāpi bahavo honti</p>
+
+
+
+<p class="unindented">Mātarānaṃ puttāpi bahavo honti</p>
+
+
+
+<p class="unindented">Mātari pana oraso putto pasīdati</p>
+
+
+
+<p class="unindented">Mātaresu ye keci puttā pasīdanti.</p>
+
+
+
+<p class="centered">Iti pañcamo pāṭho.</p>
+
+
+
+<p class="centered">Ūkāranta itthiliṅgo jambusaddo vuccate.</p>
+
+
+
+<p class="unindented">Jambū pana anubhuttā tathāgatena</p>
+
+
+
+<p class="unindented">Jambuyo anubhuttāyo tathāgatehi</p>
+
+
+
+<p class="unindented">Bho jambū jambonadampi dehi</p>
+
+
+
+<p class="unindented">Bho jambuyo jambonadampi detha</p>
+
+
+
+<p class="unindented">Jambuṃ pana passati yo koci</p>
+
+
+
+<p class="unindented">Jambuyo passanti ye keci</p>
+
+
+
+<p class="unindented">Jambuyā udaraggi pana paṭihaññate</p>
+
+
+
+<p class="unindented">Jambūhi udaraggī pana paṭihaññante</p>
+
+
+
+<p class="unindented">Jambuyā kho pana yo koci jīvati</p>
+
+
+
+<p class="unindented">Jambūhi kho pana ye keci jīvanti</p>
+
+
+
+<p class="unindented">Jambuyā pana silāghate yo koci</p>
+
+
+
+<p class="unindented">Jambūnaṃ pana silāghate mahājano</p>
+
+
+
+<p class="unindented">Jambuyā <a name="O0.0014"></a> kho pana jambonadaṃ jāyati</p>
+
+
+
+<p class="unindented">Jambūhi kho pana jambonadaṃ uppajjati</p>
+
+
+
+<p class="unindented">Jambuyā pana madhurarasojā hoti</p>
+
+
+
+<p class="unindented">Jambūnaṃ madhurarasojāyo honti</p>
+
+
+
+<p class="unindented">Jambuyaṃ kho pana jambonadaṃ atthi</p>
+
+
+
+<p class="unindented">Jambusu pana jambonadāni vijjanti.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā itthiliṅganāmānaṃ.</p>
+
+
+
+<p class="centered">Dutiyo paricchedo.</p>
+
+
+
+<p class="centered">Atha akārantapuṃsakaliṅgo cittasaddo vuccate.</p>
+
+
+
+<p class="unindented">Cittaṃ attano santānaṃ vijānāti</p>
+
+
+
+<p class="unindented">Cittāni attano sattānaṃ vijānanti</p>
+
+
+
+<p class="unindented">Bho citta attano santānaṃ vijānāhi</p>
+
+
+
+<p class="unindented">Bho cittāni attano santānaṃ vijānātha</p>
+
+
+
+<p class="unindented">Cittaṃ saññamessanti ye keci janā</p>
+
+
+
+<p class="unindented">Cittāni saññamessanti ye keci</p>
+
+
+
+<p class="unindented">Cittena sabbopi jano nīyyate</p>
+
+
+
+<p class="unindented">Cittehi sabbopi jano nīyyate</p>
+
+
+
+<p class="unindented">Cittena saṃkilissati mānavo</p>
+
+
+
+<p class="unindented">Cittehi visujjhati kocimānavo</p>
+
+
+
+<p class="unindented">Cittassa ovādaṃ deti koci jano</p>
+
+
+
+<p class="unindented">Cittānaṃ ovādaṃ denti keci janā</p>
+
+
+
+<p class="unindented">Cittasmā ārammaṇaṃ uppajjati</p>
+
+
+
+<p class="unindented">Cittehi ārammaṇāni uppajjanti</p>
+
+
+
+<p class="unindented">Cittassa aniccadhammassa vasamanvagū</p>
+
+
+
+<p class="unindented">Cittānaṃ parivitakko udapādi</p>
+
+
+
+<p class="unindented">Citte arakkhite kāyakammaṃ arakkhitaṃ</p>
+
+
+
+<p class="unindented">Cittesu guttesu kāyakammaṃ rakkhitaṃ.</p>
+
+
+
+<p class="centered">Iti paṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Akārantanapuṃsakaliṅgo manasaddo vuccate.</p>
+
+
+
+<p class="unindented">Manaṃ attano santānaṃ maññati</p>
+
+
+
+<p class="unindented">Manāni attano sattānaṃ maññanti</p>
+
+
+
+<p class="unindented">Bho mana attano santānaṃ maññāhi</p>
+
+
+
+<p class="unindented">Bho <a name="O0.0015"></a> manāni attano santānaṃ maññatha</p>
+
+
+
+<p class="unindented">Manaṃ pasādetvā saggaṃ gamissāmi</p>
+
+
+
+<p class="unindented">Mane pasādetvā saggaṃ gamissāma</p>
+
+
+
+<p class="unindented">Manena kusalākusalakammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Manehi kusalākusalakammāni katāni</p>
+
+
+
+<p class="unindented">Manasā dhammaṃ vijānāti yogāvacaro</p>
+
+
+
+<p class="unindented">Manehi dhammaṃ vijānanti yogāvacarā</p>
+
+
+
+<p class="unindented">Manaso paduṭṭhassa ovādaṃ dadāti</p>
+
+
+
+<p class="unindented">Manānaṃ padūṭṭhānaṃ ovādaṃ dadanti</p>
+
+
+
+<p class="unindented">Manasāpana ārammanaṃ uppajjati</p>
+
+
+
+<p class="unindented">Manehi ārammaṇāni uppajjanti</p>
+
+
+
+<p class="unindented">Manaso aniccadhammassa vasamanvagū</p>
+
+
+
+<p class="unindented">Manānaṃ pana parivitakko udapādi</p>
+
+
+
+<p class="unindented">Mane arakkhite kāyakammaṃ arakkhitaṃ</p>
+
+
+
+<p class="unindented">Manesu guttesu kāyakammaṃ rakkhitaṃ.</p>
+
+
+
+<p class="centered">Iti dutiyo pāṭho.</p>
+
+
+
+<p class="centered">Akārantanapuṃsakaliṅgo guṇavantusaddo vuccate.</p>
+
+
+
+<p class="unindented">Guṇavaṃ kulaṃ pana puññaṃ karoti</p>
+
+
+
+<p class="unindented">Guṇavantā kulāni puññaṃ karonti</p>
+
+
+
+<p class="unindented">Bho guṇavaṃ kulaṃ puññaṃ karohi</p>
+
+
+
+<p class="unindented">Bho guṇavantā kulāni puññaṃ karotha</p>
+
+
+
+<p class="unindented">Guṇavantaṃ kulaṃ passati yo koci</p>
+
+
+
+<p class="unindented">Guṇavante kule passanti ye keci</p>
+
+
+
+<p class="unindented">Guṇavantena kulena vihāro kārito</p>
+
+
+
+<p class="unindented">Guṇavantehi kulehi vihārā kāritā</p>
+
+
+
+<p class="unindented">Guṇavantena kulena loko sucarati</p>
+
+
+
+<p class="unindented">Guṇavantehi kulehi lokā sucaranti</p>
+
+
+
+<p class="unindented">Guṇavato kulassa dhanaṃ dadāti dhanavā</p>
+
+
+
+<p class="unindented">Guṇavataṃ kulānaṃ dhanaṃ dadanti dhanavantā</p>
+
+
+
+<p class="unindented">Guṇavatā kulamhā na apeti yo koci</p>
+
+
+
+<p class="unindented">Guṇavantehi kulehi na apenti ye keci</p>
+
+
+
+<p class="unindented">Guṇavato kulassa guṇaghoso hoti</p>
+
+
+
+<p class="unindented">Guṇavantānaṃ kulānaṃ guṇaghosā honti</p>
+
+
+
+<p class="unindented">Guṇavante kulepi me ramati mano</p>
+
+
+
+<p class="unindented">Guṇavantesu kulesu manaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0016"></a> tatiyo pāṭho.</p>
+
+
+
+<p class="centered">Akārantanapuṃsakaliṅgo gaccantasaddo vuccate.</p>
+
+
+
+<p class="unindented">Gacchaṃ guṇavaṃ sundaraṃ nibbāṇaṃ gacchati</p>
+
+
+
+<p class="unindented">Gacchantā guṇavantā nibbāṇaṃ gacchanti</p>
+
+
+
+<p class="unindented">Bho gacchaṃ guṇavaṃ tvaṃ pana sugatiṃ gacchāhi</p>
+
+
+
+<p class="unindented">Bho gacchantā guṇavantā sugatiṃ gacchatha</p>
+
+
+
+<p class="unindented">Gacchantaṃ guṇavantaṃ passati ekacco</p>
+
+
+
+<p class="unindented">Gavchante guṇavante passati ekacco</p>
+
+
+
+<p class="unindented">Gacchatā guṇavantena satthaṃ sūyate</p>
+
+
+
+<p class="unindented">Gacchantehi guṇavantehi pupphaṃ gayhate</p>
+
+
+
+<p class="unindented">Gacchatā guṇavantena loko sucarati</p>
+
+
+
+<p class="unindented">Gacchantehi guṇavantehi sukhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Gacchato guṇavantassa anugiṇāti jano</p>
+
+
+
+<p class="unindented">Gacchataṃ guṇavantānaṃ patigiṇāti jano</p>
+
+
+
+<p class="unindented">Gacchatā guṇavantamhā apeti ekacco</p>
+
+
+
+<p class="unindented">Gaccantehi guṇavantehi apenti ekacce</p>
+
+
+
+<p class="unindented">Gacchato guṇavantassa mātāpitaro</p>
+
+
+
+<p class="unindented">Gacchataṃ guṇavantānaṃ nāmagottādi</p>
+
+
+
+<p class="unindented">Gacchante guṇavante me ramani mano</p>
+
+
+
+<p class="unindented">Gacchantesu guṇavantesu manaṃ patiṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti catuttho pāṭho.</p>
+
+
+
+<p class="centered">Ikārantanapuṃsakaliṅgo aṭṭhisaddo vuccate.</p>
+
+
+
+<p class="unindented">Aṭṭhi saṅkhalikaṃ sarīraṃ paṭikkūlaṃ hoti</p>
+
+
+
+<p class="unindented">Aṭṭhini puñjakitāni paṭikkūlāni honti</p>
+
+
+
+<p class="unindented">Bho aṭṭhi saṅkhalikaṃ tvaṃ aniccato passa</p>
+
+
+
+<p class="unindented">Bho aṭṭhini setāni aniccato passatha</p>
+
+
+
+<p class="unindented">Aṭṭhiṃ samaṃsalohitaṃ asubhato passati</p>
+
+
+
+<p class="unindented">Aṭṭhini puñjakitāni aniccato passati</p>
+
+
+
+<p class="unindented">Aṭṭhinā kāyena yaṃ kiñci rūpaṃ nimmitaṃ</p>
+
+
+
+<p class="unindented">Aṭṭhīhi kāyehi yaṃ kiñci rūpaṃ nimmitaṃ</p>
+
+
+
+<p class="unindented">Aṭṭhinā nimittena bhikkhū maggaṃ bhāveti</p>
+
+
+
+<p class="unindented">Aṭṭhīhi nimittehi bhikkhū maggaṃ bhāventi</p>
+
+
+
+<p class="unindented">Aṭṭhino kāyassa ovādaṃ deti ekacco</p>
+
+
+
+<p class="unindented">Aṭṭhīnaṃ kāyānaṃ ovādi denti ekacce</p>
+
+
+
+<p class="unindented">Aṭṭhimhā <a name="O0.0017"></a> kāyasmā apeti yogāvacaro</p>
+
+
+
+<p class="unindented">Aṭṭhīhi kāyehi apenti yogāvacarā</p>
+
+
+
+<p class="unindented">Aṭṭhino kāyassa pariggaho hoti</p>
+
+
+
+<p class="unindented">Aṭṭhīnaṃ kāyānaṃ pariggaho hoti</p>
+
+
+
+<p class="unindented">Aṭṭhinī kāye yogāvacaro nappasīdati</p>
+
+
+
+<p class="unindented">Aṭṭhīsu kāyesu yogāvacarā nappasīdanti.</p>
+
+
+
+<p class="centered">Iti pañcamo pāṭho.</p>
+
+
+
+<p class="centered">Īkārantanapuṃsakaliṅgo daṇḍisaddo vuccate.</p>
+
+
+
+<p class="unindented">Daṇḍī pana purisaṃ kammaṃ kārāpayati</p>
+
+
+
+<p class="unindented">Daṇḍīni purisaṃ kammaṃ kārāpayanti</p>
+
+
+
+<p class="unindented">Bho daṇḍī tvaṃ pana kammaṃ karohi</p>
+
+
+
+<p class="unindented">Bho daṇḍīni tumhe kammaṃ karotha</p>
+
+
+
+<p class="unindented">Daṇḍiṃ daṇḍakammaṃ kārayati amacco</p>
+
+
+
+<p class="unindented">Daṇḍīni daṇḍakamme kārayanti amaccā</p>
+
+
+
+<p class="unindented">Daṇḍinā jano daṇḍakammaṃ vedīyate</p>
+
+
+
+<p class="unindented">Daṇḍīhi jano daṇḍakammaṃ vedito</p>
+
+
+
+<p class="unindented">Daṇḍinā yo koci pana santajjeti</p>
+
+
+
+<p class="unindented">Daṇḍīhi ye keci pana santajjenti</p>
+
+
+
+<p class="unindented">Daṇḍino daṇḍakammaṃ deti amacco</p>
+
+
+
+<p class="unindented">Daṇḍīnaṃ daṇḍakammaṃ denti amaccā</p>
+
+
+
+<p class="unindented">Daṇḍinā apeti yo koci puriso</p>
+
+
+
+<p class="unindented">Daṇḍīhi apenti ye keci purisā</p>
+
+
+
+<p class="unindented">Daṇḍino yo koci pariggaho hoti</p>
+
+
+
+<p class="unindented">Daṇḍīnaṃ ye keci pariggahā honti</p>
+
+
+
+<p class="unindented">Daṇḍini pana me mano na ramati</p>
+
+
+
+<p class="unindented">Daṇḍīsu kho pana me manā na ramanti.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="centered">Ukāranta napuṃsakaliṅgo āyusaddo vuccate.</p>
+
+
+
+<p class="unindented">Āyu cassā pana parikkhiṇo ahosi</p>
+
+
+
+<p class="unindented">Āyūni pana tesaṃ parikkhīṇā ahesuṃ</p>
+
+
+
+<p class="unindented">Bho āyu tvaṃ pana jīvitaṃ pālehi</p>
+
+
+
+<p class="unindented">Bho āyūni tumhe jīvitaṃ pālathe</p>
+
+
+
+<p class="unindented">Āyuṃ arūpadhammaṃ passati sammā sambuddho</p>
+
+
+
+<p class="unindented">Āyūni arūpadhamme passati lokanātho</p>
+
+
+
+<p class="unindented">Āyunā arūpadhammena jīvitaṃ pavattitaṃ</p>
+
+
+
+<p class="unindented">Āyūhi <a name="O0.0018"></a> arūpadhammehi jīvitaṃ pavattitaṃ</p>
+
+
+
+<p class="unindented">Āyunā arūpadhammena loko jīvati</p>
+
+
+
+<p class="unindented">Āyūhi arūpadhammehi loko jīvanti</p>
+
+
+
+<p class="unindented">Āyuno ruccati sabbopi jano</p>
+
+
+
+<p class="unindented">Āyūnaṃ ruccanti sabbepi janā</p>
+
+
+
+<p class="unindented">Āyūnā kho pana apeti jīvitampi</p>
+
+
+
+<p class="unindented">Āyūhi kho pana apenti jīvitāni</p>
+
+
+
+<p class="unindented">Āyūno pana parihāro hoti sabbadā</p>
+
+
+
+<p class="unindented">Āyūnaṃ pana parihāro hoti sabbadā</p>
+
+
+
+<p class="unindented">Āyūmhi kho pana manaṃ patiṭhitaṃ sabbadā</p>
+
+
+
+<p class="unindented">Āyūsu kho pana manaṃ patiṭṭhitaṃ sabbadā.</p>
+
+
+
+<p class="centered">Iti sattamo pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā napuṃsakaliṅganāmānaṃ.</p>
+
+
+
+<p class="centered">Tatiyo paricchedo.</p>
+
+
+
+<p class="gatha1">Ito paraṃ pavakkhāmi sabbanāmaṃca tassamaṃ;</p>
+
+
+
+<p class="gathalast">Nāmaṃca yojitaṃ nānā nāmeheva visesato.</p>
+
+
+
+<p class="gatha1">Yāni honti tiliṅgāni anukūlāni yāni ca;</p>
+
+
+
+<p class="gathalast">Tiliṅgānaṃ visesena padānetāni nāmato.</p>
+
+
+
+<p class="gatha1">Sabbasādhāraṇā kāni nāmānicceva atthato;</p>
+
+
+
+<p class="gathalast">Sabbanāmāni vuccanti sattavīsati saṅkhato.</p>
+
+
+
+<p class="gatha1">Tesu kānici rūpehi sesāññehica yujjare;</p>
+
+
+
+<p class="gathalast">Kānici pana saheva etesaṃ lakkhaṇaṃ idaṃ.</p>
+
+
+
+<p class="gatha1">Etasmā lakkhaṇā muttaṃ napadaṃ sabbanāmikaṃ;</p>
+
+
+
+<p class="gathalast">Tasmātītādayo saddā guṇanāmāni vuccareti.</p>
+
+
+
+<p class="centered">Atha pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="gatha1">Sabbo sotari nāvāhi mahātitthe mahājano;</p>
+
+
+
+<p class="gathalast">Sabbe antaradhāyanti satamāyugate sati.</p>
+
+
+
+<p class="gatha1">Bho sabbā bhuta kalyāṇaṃ karohi kusalā sadā;</p>
+
+
+
+<p class="gathalast">Bho sabbe purisā bhaddaṃ karotha kusalaṃ sadā.</p>
+
+
+
+<p class="gatha1">Sabbaṃ bhaṇḍaṃ samodhāya tuṭṭhacitto mahīpati;</p>
+
+
+
+<p class="gathalast">Sabbe bhojāpayī te tu sā nakhīyittha bhojanaṃ.</p>
+
+
+
+<p class="gatha1">Sabbena <a name="O0.0019"></a> sādhulokena anubhuttaṃ subhaṃ phalaṃ;</p>
+
+
+
+<p class="gathalast">Sabbehi sādhujantuhi anubhuttaṃ kammaphalaṃ.</p>
+
+
+
+<p class="gatha1">Sabbena puññakammena pappoti vipulaṃ sukhaṃ;</p>
+
+
+
+<p class="gathalast">Sabbehi guṇavantehi papponti vipulaṃ sukhaṃ.</p>
+
+
+
+<p class="gatha1">Sabbassa bhikkhusaṅghassa mahādānaṃ dadanti ca;</p>
+
+
+
+<p class="gathalast">Sabbesaṃ sīlavantānaṃ dānaṃ denti mahājanā.</p>
+
+
+
+<p class="gatha1">Sabbasmā sādhulokasmā apentīti dubuddhino;</p>
+
+
+
+<p class="gathalast">Sabbehi bhagavantehi niccharanti charaṃsiyo.</p>
+
+
+
+<p class="gatha1">Sabbassa puññakammassa vipāko hoti sabbadā;</p>
+
+
+
+<p class="gathalast">Sabbesaṃ silavantānaṃ sīlagandho anuttaro.</p>
+
+
+
+<p class="gatha1">Sabbasmiṃ buddhadhamme ca sadā ramati me mano;</p>
+
+
+
+<p class="gathalast">Sabbesu ca vihāresu thūpe kāresi khattiyoti.</p>
+
+
+
+<p class="centered">Iti paṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="gatha1">Sabbā alaṅkatā laṅkā therassa viya āsi ca;</p>
+
+
+
+<p class="gathalast">Sabbā te phāsukā bhaggā gahakūṭaṃ visaṃ khitaṃ.</p>
+
+
+
+<p class="gatha1">Bho sabbe ca paje tvampi dānaṃ dadāhi sabbadā;</p>
+
+
+
+<p class="gathalast">Bho sabbāyo pajā tumhe sīlaṃ rakkhatha sabbadā.</p>
+
+
+
+<p class="gatha1">Sabbaṃ diṭṭhiṃ jahitvāna sammādiṭṭhiṃca bhāvaye;</p>
+
+
+
+<p class="gathalast">Sabbāyo diṭṭhiyo hantvā khemaṃ gacchanti paṇḍitā.</p>
+
+
+
+<p class="gatha1">Sabbassā assu kaññāya niccaṃ kammaṃ karīyyate;</p>
+
+
+
+<p class="gathalast">Sabbāhi cāpi itthīhi pāpakammaṃ karīyyate.</p>
+
+
+
+<p class="gatha1">Sabbassā pana vijjāya jīvantīti mahājanā;</p>
+
+
+
+<p class="gathalast">Sabbāhi ca nadīheva khettaṃ vapati kassako.</p>
+
+
+
+<p class="gatha1">Sabbassā assu kaññāya cittaṃ nadeti paṇḍito;</p>
+
+
+
+<p class="gathalast">Sabbāsānaṃ nadīnaṃca visaṃ nadeti paṇḍito.</p>
+
+
+
+<p class="gatha1">Sabbassā pana taṇhāya vimuttassa natthi bhayaṃ;</p>
+
+
+
+<p class="gathalast">Sabbāhi pana kaññāhi abhirūpāṅganā ayaṃ.</p>
+
+
+
+<p class="gatha1">Sabbassā assu kaññāya ābharaṇaṃ manoramaṃ;</p>
+
+
+
+<p class="gathalast">Sabbāsaṃ pana gaṅgānaṃ mahogho hoti sabbadā.</p>
+
+
+
+<p class="gatha1">Sabbassā neva kaññāya cittaṃ ramati paṇḍito;</p>
+
+
+
+<p class="gathalast">Sabbāsu ceva gaṅgāsu macchā caranti sabbadāti.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0020"></a> dutiyo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="gatha1">Sabbaṃ puññañhi nissesaṃ manussatte samijjhati;</p>
+
+
+
+<p class="gathalast">Sabbāni assu cittāni sayamevapi bhijjare.</p>
+
+
+
+<p class="gatha1">Bho sabbā bhūta kalyāṇaṃ puññaṃ karohi sabbadā;</p>
+
+
+
+<p class="gathalast">Bho sabbānica bhūtāni puññaṃ karotha sabbadā.</p>
+
+
+
+<p class="gatha1">Sabbaṃ bhaṇḍaṃ samādāya pāraṃ tiṇṇosi brāhmaṇo;</p>
+
+
+
+<p class="gathalast">Sabbāni assu puññāni katvāna tidivaṃ gato.</p>
+
+
+
+<p class="gatha1">Sabbena pana bhūtena anubhuttaṃ kammaphalaṃ;</p>
+
+
+
+<p class="gathalast">Sabbehi guṇavantehi puññakammaṃ karīyyate.</p>
+
+
+
+<p class="gatha1">Sabbena puññakammena pappoti vipulaṃ sukhaṃ;</p>
+
+
+
+<p class="gathalast">Sabbehi guṇavantehi sucaranti bahujjanā.</p>
+
+
+
+<p class="gatha1">Sabbassa guṇavantassa dānaṃ dadeyya paṇḍito;</p>
+
+
+
+<p class="gathalast">Sabbesaṃ sīlavantānaṃ dānaṃ dadeyya paṇḍito.</p>
+
+
+
+<p class="gatha1">Sabbasmā pāpakammasmā cittaṃ pana nivāraye;</p>
+
+
+
+<p class="gathalast">Sabbehi balavantehi apentīti keci janā.</p>
+
+
+
+<p class="gatha1">Sabbassa pāpakammassa vipāko hoti kibbisaṃ;</p>
+
+
+
+<p class="gathalast">Sabbesaṃ puññakammānaṃ vipāko hoti sobhano.</p>
+
+
+
+<p class="gatha1">Sabbasmiṃ puññakammeca sadā ramati me mano;</p>
+
+
+
+<p class="gathalast">Sabbesu sīlavantesu pasīdati mahājano.</p>
+
+
+
+<p class="centered">Iti tatiyo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Pubbo kālo atikkanto ahosi</p>
+
+
+
+<p class="unindented">Pubbe kālā ca atikkantā ahesuṃ</p>
+
+
+
+<p class="unindented">Bho pubba kāla atikkanto abhavi</p>
+
+
+
+<p class="unindented">Bho pubbe kālā atikkantā abhavittha</p>
+
+
+
+<p class="unindented">Pubbaṃ kālaṃ passati lokanātho</p>
+
+
+
+<p class="unindented">Pubbe kāle passati lokavidū</p>
+
+
+
+<p class="unindented">Pubbenācariyena sisso bodhīyī.</p>
+
+
+
+<p class="unindented">Pubbehi ācariyehi sissā bodhīyiṃsu</p>
+
+
+
+<p class="unindented">Pubbenācariyena sisso sukhījāto</p>
+
+
+
+<p class="unindented">Pubbehi ācariyehi sissā sukhījāti</p>
+
+
+
+<p class="unindented">Pubbassācariyassa sakkāraṃ akarī</p>
+
+
+
+<p class="unindented">Pubbesaṃ <a name="O0.0021"></a> ācariyānaṃ sakkāraṃ akaruṃ</p>
+
+
+
+<p class="unindented">Pubbācariyasmā antaradhāyī antevāsiko</p>
+
+
+
+<p class="unindented">Pubbehi ācariyehi antaradhāyiṃsu antevāsikā</p>
+
+
+
+<p class="unindented">Pubbassācariyassa antevāsikā bahavo</p>
+
+
+
+<p class="unindented">Pubbesaṃ ācariyānaṃ guṇaghosā ahesuṃ</p>
+
+
+
+<p class="unindented">Pubbe dīpaṅkaro nāma satthā udapādi</p>
+
+
+
+<p class="unindented">Pubbesu aṭṭhavīsati cakkavattirājāno ahesuṃ.</p>
+
+
+
+<p class="centered">Iti catuttho pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Pubbā yā kāci kaññā bahuṃ puññaṃ akarī</p>
+
+
+
+<p class="unindented">Pubbā yā kāci kaññāyo bahuṃ puññaṃ akaruṃ</p>
+
+
+
+<p class="unindented">Bho pubbe kaññe bahuṃ puññaṃ akaro</p>
+
+
+
+<p class="unindented">Bho pubbā kaññāyo bahuṃ puññaṃ akarittha</p>
+
+
+
+<p class="unindented">Pubbaṃ yaṃ kiṃci kaññaṃ puññaṃ kārāpayī</p>
+
+
+
+<p class="unindented">Pubbā yā kāci kaññāyo puññe kārāpayī</p>
+
+
+
+<p class="unindented">Pubbāya yāya kāyaci kaññāya puññaṃ kataṃ</p>
+
+
+
+<p class="unindented">Pubbāhi yāhi kāhici kaññāhi puññāni katāni</p>
+
+
+
+<p class="unindented">Pubbāya yāya kāyaci kaññāya koci anucarī</p>
+
+
+
+<p class="unindented">Pubbāhi yāhi kāhici kaññāhi keci anucariṃsu</p>
+
+
+
+<p class="unindented">Pubbāya yāya kāyaci kaññāya ābharaṇaṃ adadī</p>
+
+
+
+<p class="unindented">Pubbāsaṃ yāsaṃci kaññānaṃ ābharaṇāti adadiṃsu</p>
+
+
+
+<p class="unindented">Pubbāya yāya kāyaci kaññāya koci puriso apeto.</p>
+
+
+
+<p class="unindented">Pubbāhi yāya kāhici kaññāhi keci purisā apetā</p>
+
+
+
+<p class="unindented">Pubbāya yāya kāyaci kaññāya mātāpitaro ahesuṃ</p>
+
+
+
+<p class="unindented">Pubbāsaṃ yāsaṃ kāsaṃci kaññānaṃ vatthābharaṇāni</p>
+
+
+
+<p class="unindented">Pubbāyaṃ yāya kāyaci kaññāyaṃ cittaṃ patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Pubbāsu yāsu kāsuci kaññāsu cittaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti pañcamo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Pubbaṃ yaṃ kiṃci pana bahuṃ puccaṃ akarī</p>
+
+
+
+<p class="unindented">Pubbāni yāni kānici bahuṃ puññaṃ akaruṃ</p>
+
+
+
+<p class="unindented">Bho pubba bhūta tvaṃ bahuṃ puññaṃ akaro</p>
+
+
+
+<p class="unindented">Bho pubbāni bhūtāni bahuṃ puññaṃ akarittha</p>
+
+
+
+<p class="unindented">Pubbaṃ yaṃ kiṃci puññaṃ kārāpayī ekacco</p>
+
+
+
+<p class="unindented">Pubbāni yāni kānici puññe kārāpayiṃsu ekacce</p>
+
+
+
+<p class="unindented">Pubbena <a name="O0.0022"></a> yena kenaci vihāro kārāpito</p>
+
+
+
+<p class="unindented">Pubbehi yehi kehici vihārā kārāpitā</p>
+
+
+
+<p class="unindented">Pubbena yena kenaci puriso sukhījāto</p>
+
+
+
+<p class="unindented">Pubbehi yehi kehici purisā sukhījātā</p>
+
+
+
+<p class="unindented">Pubbassa yassa kassaci silāghate ekacco</p>
+
+
+
+<p class="unindented">Pubbesaṃ yesaṃ kesaṃci silāghate ekacco</p>
+
+
+
+<p class="unindented">Pubbā yasmā kasmāca ekacco apeto</p>
+
+
+
+<p class="unindented">Pubbehi yehi kehici ekacce apetā</p>
+
+
+
+<p class="unindented">Pubbassa yassa kassaci pariggaho ahosi</p>
+
+
+
+<p class="unindented">Pubbesaṃ yesaṃ kesaṃci pariggahā ahesuṃ</p>
+
+
+
+<p class="unindented">Pubbe yasmiṃ kasmiṃci cittaṃ patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Pubbesu yesu kesuci cittaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Eko puriso devadattaṃ odanaṃ pāceti</p>
+
+
+
+<p class="unindented">Eke purisā devadattaṃ odanaṃ pācenti</p>
+
+
+
+<p class="unindented">Ekaṃ sissaṃ dhammaṃ pāṭheti ācariyo</p>
+
+
+
+<p class="unindented">Eke sisse dhammaṃ pāṭhenti ācariyā</p>
+
+
+
+<p class="unindented">Ekena garunā sisso dhammaṃ bodhāpīyate</p>
+
+
+
+<p class="unindented">Ekehi garūhi sisso dhammaṃ bodhāpito</p>
+
+
+
+<p class="unindented">Ekena garunā antevāsiko sukhījāto</p>
+
+
+
+<p class="unindented">Ekehi garūhi antevāsikā sukhījātā</p>
+
+
+
+<p class="unindented">Ekassa garuno sakkāraṃ karoti sisso</p>
+
+
+
+<p class="unindented">Ekesaṃ garūnaṃ sakkāraṃ karonti sissā</p>
+
+
+
+<p class="unindented">Ekamhā garunā sikkhaṃ gaṇhāti sisso</p>
+
+
+
+<p class="unindented">Ekehi garūhi sikkhaṃ gaṇhanti sissā</p>
+
+
+
+<p class="unindented">Ekassa garuno kho pana parikkhāro hoti</p>
+
+
+
+<p class="unindented">Ekesaṃ garūnaṃ kho pana guṇaghoso hoti</p>
+
+
+
+<p class="unindented">Ekamhi garusmiṃ pana sisso pasīdati</p>
+
+
+
+<p class="unindented">Ekesu garūsu pana sissā pasīdanti.</p>
+
+
+
+<p class="centered">Iti sattamo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Ekā kaññā pana devadattaṃ kambalaṃ yācate</p>
+
+
+
+<p class="unindented">Ekā kaññāyo devadattaṃ kambalaṃ yācante</p>
+
+
+
+<p class="unindented">Ekaṃ kaññaṃ odanaṃ pācāpayati puriso</p>
+
+
+
+<p class="unindented">Ekā <a name="O0.0023"></a> kaññāyo odanaṃ pācāpayanti purisā</p>
+
+
+
+<p class="unindented">Ekāya kaññāya odano pacitvā bhujjate</p>
+
+
+
+<p class="unindented">Ekāhi kaññāhi odano pacitvā bhutto</p>
+
+
+
+<p class="unindented">Ekāya kaññāya sukhaṃ pāpuṇāti ekacco</p>
+
+
+
+<p class="unindented">Ekāhi kaññāhi sukhaṃ pāpuṇanti ekacce</p>
+
+
+
+<p class="unindented">Ekāya kaññāya ābharaṇaṃ deti puriso</p>
+
+
+
+<p class="unindented">Ekāsaṃ kaññānaṃ ābharaṇāni denti purisā</p>
+
+
+
+<p class="unindented">Ekāya kaññāya bhayaṃ uppajjati silavataṃ</p>
+
+
+
+<p class="unindented">Ekāhi kaññāhi bhayāni uppajjanti sīlavataṃ</p>
+
+
+
+<p class="unindented">Ekāya kaññāya pana vatthābharaṇaṃ hoti</p>
+
+
+
+<p class="unindented">Ekāsaṃ kaññānaṃ pana vatthābharaṇāni honti</p>
+
+
+
+<p class="unindented">Ekāyaṃ kaññāyaṃ yo kocipasīdati</p>
+
+
+
+<p class="unindented">Ekāsu kaññāsu ye keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti aṭṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Ekaṃ kulaṃ pana bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Ekāni kulāni bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Ekaṃ kulaṃ puññaṃ kārāpeti guṇavā</p>
+
+
+
+<p class="unindented">Ekāni kulāni puññaṃ kārāpeti guṇavā</p>
+
+
+
+<p class="unindented">Ekena kulena bhikkhu bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Ekehi kulehi bhikkhū bhattaṃ bhojāpitā</p>
+
+
+
+<p class="unindented">Ekena kulena sukhaṃ pāpuṇāti bhikkhu</p>
+
+
+
+<p class="unindented">Ekehi kulehi sukhaṃ pāpuṇanti bhikkhū</p>
+
+
+
+<p class="unindented">Ekassa kulassa pana usūyati dujjano</p>
+
+
+
+<p class="unindented">Ekesaṃ kulānaṃ pana usūyanti dujjanā</p>
+
+
+
+<p class="unindented">Ekasmā kulamhā yo koci pabbajito</p>
+
+
+
+<p class="unindented">Ekehi kulehi ye keci pabbajitā</p>
+
+
+
+<p class="unindented">Ekassa kulassa pana nāma gottādi</p>
+
+
+
+<p class="unindented">Ekesaṃ kulānaṃ pana nāma gottādayo</p>
+
+
+
+<p class="unindented">Ekasmiṃ kulamhi yo koci pasīdati</p>
+
+
+
+<p class="unindented">Ekesu kulesu ye keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti navamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Yo koci taṃ purisaṃ odanaṃ pācāpeti</p>
+
+
+
+<p class="unindented">Ye keci taṃ purisaṃ odanaṃ pācāpenti</p>
+
+
+
+<p class="unindented">Yaṃ kiṃci dāsaṃ gāmaṃ gamayati sāmiko</p>
+
+
+
+<p class="unindented">Ye <a name="O0.0024"></a> keci dāse gāmaṃ gamayati sāmiko</p>
+
+
+
+<p class="unindented">Yena kenaci sūdena odano pācāpīyate</p>
+
+
+
+<p class="unindented">Yehi kehici sūdehi odano pācāpito</p>
+
+
+
+<p class="unindented">Yena kenaci sukhaṃ pāpuṇāti bhikkhusaṅgho</p>
+
+
+
+<p class="unindented">Yehi kehici sukhaṃ pāpuṇāti bhikkhusaṅgho</p>
+
+
+
+<p class="unindented">Yassa kassaci dānaṃ deti saddho sappuriso</p>
+
+
+
+<p class="unindented">Yesaṃ kesaṃci dānaṃ denti sappurisā</p>
+
+
+
+<p class="unindented">Yasmā kasmāci garuṇā antaradhāyati sisso</p>
+
+
+
+<p class="unindented">Yehi kehici garūhi antaradhāyanti sissā</p>
+
+
+
+<p class="unindented">Yassa kassaci bhikkhuno pāde vandāmi</p>
+
+
+
+<p class="unindented">Yesaṃ kesaṃci bhikkhūnaṃ pāde vandāma</p>
+
+
+
+<p class="unindented">Yasmiṃ kasmiṃci āsane nisīdati koci</p>
+
+
+
+<p class="unindented">Yesu kesuci āsanesu nisīdanti keci.</p>
+
+
+
+<p class="centered">Iti dasamo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Yā kāci vanitā pana dāsiṃ kammaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Yā kāci vanitāyo dāsī kamme kārāpenti</p>
+
+
+
+<p class="unindented">Yaṃ kiṃci vanitaṃ puññaṃ kārāpeti puriso</p>
+
+
+
+<p class="unindented">Yā kāci vanitāyo puññaṃ kārenti purisā</p>
+
+
+
+<p class="unindented">Yāya kāyaci vanitāya sāmi bhattaṃ bhojāpīyate</p>
+
+
+
+<p class="unindented">Yāhi kāhici vanitāhi sāmi bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Yāya kāyaci vanitāya sukhaṃ pāpuṇāti sāmiko</p>
+
+
+
+<p class="unindented">Yāhi kāhici vanitāhi sukhaṃ pāpuṇanti sāmikā</p>
+
+
+
+<p class="unindented">Yāya kāyaci vanitāya ābharaṇaṃ deti sāmiko</p>
+
+
+
+<p class="unindented">Yāsaṃ kāsaṃci vanitānaṃ ābharaṇaṃ deti sāmiko</p>
+
+
+
+<p class="unindented">Yāya kāyaci vanitāya apeti yo koci</p>
+
+
+
+<p class="unindented">Yāhi kāhici vanitāhi apeti yo koci</p>
+
+
+
+<p class="unindented">Yāya kāyaci vanitāya puttāpi bahavo</p>
+
+
+
+<p class="unindented">Yāsaṃ kāsaṃci vanitānaṃ ābharaṇāni honti</p>
+
+
+
+<p class="unindented">Yāyaṃ kāyaṃci vanitāyaṃ me cittaṃ na ramati</p>
+
+
+
+<p class="unindented">Yāsu kāsuci vanitāsu me cittāni na ramanti.</p>
+
+
+
+<p class="centered">Iti ekādasamo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Yaṃ kiṃci kulaṃ pana bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Yāni kānici kulāni bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Yaṃ kiṃci bahuṃ puññaṃ kārāpeti koci</p>
+
+
+
+<p class="unindented">Yāni <a name="O0.0025"></a> kānici bahuṃ puññaṃ kārenti keci</p>
+
+
+
+<p class="unindented">Yena kenaci kulena sakkāro kato</p>
+
+
+
+<p class="unindented">Yehi kehici kulehi sakkārā katā</p>
+
+
+
+<p class="unindented">Yena kenaci kulena ekacco jīvati</p>
+
+
+
+<p class="unindented">Yehi kehici kulehi ekacce jīvanti</p>
+
+
+
+<p class="unindented">Yassa kassaci kulassa upakāraṃ akāsi</p>
+
+
+
+<p class="unindented">Yesaṃ kesaṃci kulānaṃ upakāraṃ akāsuṃ</p>
+
+
+
+<p class="unindented">Yasmā kasmāci kulamhā apeti ekacco</p>
+
+
+
+<p class="unindented">Yehi kehici kulehi apenti ekacce</p>
+
+
+
+<p class="unindented">Yassa kassaci kulassa nāma gottādi</p>
+
+
+
+<p class="unindented">Yesaṃ kesaṃci kulānaṃ nāma gottādayo</p>
+
+
+
+<p class="unindented">Yasmiṃ kasmiṃci kule ekacco pasīdati</p>
+
+
+
+<p class="unindented">Yesu kesuci kulesu ekacce pasīdanti.</p>
+
+
+
+<p class="centered">Iti dvādasamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">So sūdajeṭṭho sūdena odanaṃ pāceti</p>
+
+
+
+<p class="unindented">Te sūdajeṭṭhā sūdehi odanaṃ pācenti</p>
+
+
+
+<p class="unindented">Taṃ yaññadattaṃ kambalaṃ yācate brāhmaṇo</p>
+
+
+
+<p class="unindented">Te yaññadattena kambalaṃ yācante brāhmaṇā</p>
+
+
+
+<p class="unindented">Tena brāhmaṇena gahapati dhanaṃ yācīyate</p>
+
+
+
+<p class="unindented">Tehi sissehi garu satthaṃ pucchīyate</p>
+
+
+
+<p class="unindented">Tena pupphena buddhaṃ yajati sappuriso</p>
+
+
+
+<p class="unindented">Tehi pupphehi buddhaṃ yajanti sappurisā</p>
+
+
+
+<p class="unindented">Tassa bhikkhussa dānaṃ deti sappuriso</p>
+
+
+
+<p class="unindented">Tesaṃ yācakānaṃ dhanaṃ dadāti dhanavā</p>
+
+
+
+<p class="unindented">Tamhā himavatā pabhavanti pañcamahā nadiyo</p>
+
+
+
+<p class="unindented">Tehi lobhanīyehi dhammehi suddho asaṃsaṭṭho</p>
+
+
+
+<p class="unindented">Tassa buddhassa pacchato pacchato anubandhiṃsu</p>
+
+
+
+<p class="unindented">Tesaṃ bhikkhūnaṃyeva pattacīvarāni honti</p>
+
+
+
+<p class="unindented">Tasmiṃ āsaneyeva nisīdati bhikkhu</p>
+
+
+
+<p class="unindented">Tesu bhikkhūsu pana me mano ramati.</p>
+
+
+
+<p class="centered">Iti terasamo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Sā khattiyakaññā pana bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Tā khattiyakaññāyo bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Taṃ khattīyakaññaṃ puññaṃ kārāpeti rājā</p>
+
+
+
+<p class="unindented">Tā <a name="O0.0026"></a> khattiyakaññāyo puññaṃ kārāpeti rājā</p>
+
+
+
+<p class="unindented">Tāya khattiyakaññāya puññaṃ kārāpīyate</p>
+
+
+
+<p class="unindented">Tāhi khattiyakaññāhi puññaṃ kārāpito</p>
+
+
+
+<p class="unindented">Tāya khattiyakaññāya mahājano sucarati</p>
+
+
+
+<p class="unindented">Tāhi khattiyakaññāhi mahājanā sucaranti</p>
+
+
+
+<p class="unindented">Tāya khattiyakaññāya upatiṭṭheyya amacco</p>
+
+
+
+<p class="unindented">Tāsaṃ khattiyakaññānaṃ upatiṭṭheyyuṃ amaccā</p>
+
+
+
+<p class="unindented">Tāya khattiyakaññāya pana bhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Tāhi khattiyakaññāhi pana bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Tāya khattiyakaññāya pana vatthābharaṇāni</p>
+
+
+
+<p class="unindented">Tāsaṃ khattiyakaññānaṃ vatthābharaṇāni honti</p>
+
+
+
+<p class="unindented">Tāyaṃ khattiya kaññāyaṃ pasīdati yo koci</p>
+
+
+
+<p class="unindented">Tāsu khattiyakaññāsu pasīdanti ye keci.</p>
+
+
+
+<p class="centered">Iti cuddasamo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Taṃ kulaṃ niccaṃ bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Tāni kulāni pana bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Taṃ kulaṃ uddissa puññaṃ karoti koci</p>
+
+
+
+<p class="unindented">Tāni kulāni uddissa puññāni karonti keci</p>
+
+
+
+<p class="unindented">Tena kulena puññakammaṃ kārāpīyate</p>
+
+
+
+<p class="unindented">Tehi kulehi puññakammaṃ kārāpito</p>
+
+
+
+<p class="unindented">Tena kulena bahujjano sucarati</p>
+
+
+
+<p class="unindented">Tehi kulehi bahujjanā sucaranti</p>
+
+
+
+<p class="unindented">Tassa kulassa upakārañca akāsi</p>
+
+
+
+<p class="unindented">Tesaṃ kulānaṃ upakārañca akaṃsu</p>
+
+
+
+<p class="unindented">Tasmā kulamhā yo koci apeti</p>
+
+
+
+<p class="unindented">Tehi kulehi ye keci apenti</p>
+
+
+
+<p class="unindented">Tassa kulassa mahābhogo hoti</p>
+
+
+
+<p class="unindented">Tesaṃ kulānaṃ mahaddhano ca hoti</p>
+
+
+
+<p class="unindented">Tamhi kulasmiṃ pasīdati yo koci</p>
+
+
+
+<p class="unindented">Tesu kulesu pasīdanti ye keci.</p>
+
+
+
+<p class="centered">Iti pañcadasamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Eso sisso ca garuṃ dhammaṃ pucchati</p>
+
+
+
+<p class="unindented">Ete sissā ca garuṃ dhammaṃ pucchanti</p>
+
+
+
+<p class="unindented">Etaṃ sissaṃ dhammaṃ bodhayati garu</p>
+
+
+
+<p class="unindented">Ete <a name="O0.0027"></a> sisse dhammaṃ bodhayanti garū</p>
+
+
+
+<p class="unindented">Etena garunā sisso dhammaṃ bodhāpīyate</p>
+
+
+
+<p class="unindented">Etehi garūhi sisso dhammaṃ bodhāpito</p>
+
+
+
+<p class="unindented">Etena garunaṃ sukhaṃ pāpuṇāti sisso</p>
+
+
+
+<p class="unindented">Etehi garūhi sukhaṃ pāpuṇanti sissā</p>
+
+
+
+<p class="unindented">Etassa garuno sakkāraṃ karoti sisso</p>
+
+
+
+<p class="unindented">Etesaṃ garūnaṃ sakkāraṃ karonti sissā</p>
+
+
+
+<p class="unindented">Etasmā garunā pana antaradhāyati sisso</p>
+
+
+
+<p class="unindented">Etehi garūhi pana antaradhāyanti sissā</p>
+
+
+
+<p class="unindented">Etassa garuno antevāsikā bahavo</p>
+
+
+
+<p class="unindented">Etesaṃ garūnaṃ antevāsikā bahavo</p>
+
+
+
+<p class="unindented">Etasmiṃ garumhi pasīdati antevāsiko</p>
+
+
+
+<p class="unindented">Etesu garūsu pasīdanti antevāsikā.</p>
+
+
+
+<p class="centered">Iti soḷasamo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Esā vanitā pana dāsiṃ kammaṃ kārāpeti.</p>
+
+
+
+<p class="unindented">Etā vanitāyo dāsiṃ kammaṃ kārāpenti</p>
+
+
+
+<p class="unindented">Etaṃ vanitaṃ puññaṃ kārayati puriso</p>
+
+
+
+<p class="unindented">Etā vanitāyo puññaṃ kārayanti purisā</p>
+
+
+
+<p class="unindented">Etāya vanitāya odano pacitvā bhujjate</p>
+
+
+
+<p class="unindented">Etāhi vanitāhi odano pacitvā bhutto</p>
+
+
+
+<p class="unindented">Etāya vanitāya koci jīvikaṃ kappeti</p>
+
+
+
+<p class="unindented">Etāhi vanitāhi keci jīvikaṃ kappenti</p>
+
+
+
+<p class="unindented">Etissā vanitāya pilandhanaṃ deti puriso</p>
+
+
+
+<p class="unindented">Etāsaṃ vanitānaṃ pilandhanaṃ denti purisā</p>
+
+
+
+<p class="unindented">Etāya vanitāya pana yo koci apeti</p>
+
+
+
+<p class="unindented">Etāhi vanitāhi pana ye keci apenti</p>
+
+
+
+<p class="unindented">Etissā vanitāya pana vatthābharaṇāni honti</p>
+
+
+
+<p class="unindented">Etāsānaṃ vanitānaṃ nāma gottādayo</p>
+
+
+
+<p class="unindented">Etissaṃ vanitāyaṃ abhiramati ekacco</p>
+
+
+
+<p class="unindented">Etāsu vanitāsu abhiramanti ekacce.</p>
+
+
+
+<p class="centered">Iti sattadasamo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Etaṃ kulaṃ pana bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Etāni kulāni bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Etaṃ kulaṃ pana passati yo koci</p>
+
+
+
+<p class="unindented">Etāni <a name="O0.0028"></a> kulāni pana passanti ye keci</p>
+
+
+
+<p class="unindented">Etena kulena saṅgho bhattaṃ bhojāpīyate</p>
+
+
+
+<p class="unindented">Etehi kulehi saṅgho bhattaṃ bhojāpīto</p>
+
+
+
+<p class="unindented">Etena kulena pana jano sukhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Etehi kulehi pana janā sukhaṃ pāpuṇanti</p>
+
+
+
+<p class="unindented">Etassa kulassa kho pana dhanaṃ dadāti dhanavā</p>
+
+
+
+<p class="unindented">Etesaṃ kulānaṃ pana dhanaṃ dadanti dhanavantā</p>
+
+
+
+<p class="unindented">Etasmā kulamhā kho pana ekacco na apeti</p>
+
+
+
+<p class="unindented">Etehi kulehi kho pana ekacce na apenti</p>
+
+
+
+<p class="unindented">Etassa kulassa pana mahābhogo hoti</p>
+
+
+
+<p class="unindented">Etesaṃ kulānaṃ pana mahābhogā honti</p>
+
+
+
+<p class="unindented">Etasmiṃ kulamhi pana me mano ramati</p>
+
+
+
+<p class="unindented">Etesu kulesu me manāni na ramanti.</p>
+
+
+
+<p class="centered">Iti aṭṭhādasamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Ayaṃ jano pana taṃ purisaṃ puññaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Ime janā te purise puññaṃ kārāpenti</p>
+
+
+
+<p class="unindented">Imaṃ janā puññaṃ kārāpeti sappuriso</p>
+
+
+
+<p class="unindented">Ime jane puññaṃ kārāpenti sappurisā</p>
+
+
+
+<p class="unindented">Iminā janena kammaphalaṃ anubhūyate</p>
+
+
+
+<p class="unindented">Imehi janehi kammaphalāni anubhuttāni</p>
+
+
+
+<p class="unindented">Iminā janena yo koci sucarati</p>
+
+
+
+<p class="unindented">Imehi janehi ye keci sucaranti</p>
+
+
+
+<p class="unindented">Imassa janassa sakkārañca karoti</p>
+
+
+
+<p class="unindented">Imesaṃ janānaṃ sakkāraṃ karonti</p>
+
+
+
+<p class="unindented">Imamhā janamhā viññutaṃ pattosmi</p>
+
+
+
+<p class="unindented">Imehi janehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Imassa janassa khettavatthūni honti</p>
+
+
+
+<p class="unindented">Imesaṃ janānañca pahūtadhanadhaññāni</p>
+
+
+
+<p class="unindented">Imamhi janasmiṃ pasīdati yo koci</p>
+
+
+
+<p class="unindented">Imesu janesu pasīdanti ye keci.</p>
+
+
+
+<p class="centered">Iti ekūnavīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Ayaṃ kaññā pana bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Imā kaññāyo bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Imaṃ kaññaṃ puññaṃ kārāpeti mātā</p>
+
+
+
+<p class="unindented">Imā kaññāyo puññaṃ kārāpeti mātā</p>
+
+
+
+<p class="unindented">Imāya <a name="O0.0029"></a> kaññāya pana tilāni bhajjīyante</p>
+
+
+
+<p class="unindented">Imāhi kaññāhi pana dhaññāni bhajjīyante</p>
+
+
+
+<p class="unindented">Imāya kaññāya sukhaṃ pāpuṇāti mātā</p>
+
+
+
+<p class="unindented">Imāhi kaññāhi sukhaṃ pāpuṇāti mātā</p>
+
+
+
+<p class="unindented">Imissā kaññāya ābharaṇaṃ deti sāmi</p>
+
+
+
+<p class="unindented">Imāsaṃ kaññānaṃ ābharaṇaṃ deti sāmi</p>
+
+
+
+<p class="unindented">Imāya kaññāya pana apeti yo koci</p>
+
+
+
+<p class="unindented">Imāhi kaññāhi pana apeti yo koci</p>
+
+
+
+<p class="unindented">Imissā kaññāya pana ābharaṇāni honti</p>
+
+
+
+<p class="unindented">Imāsaṃ kaññānaṃ pana ābharaṇāni honti</p>
+
+
+
+<p class="unindented">Imissaṃ kaññāyaṃ pana cittaṃ patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Imāsu kaññāsu cittaṃ pana napatiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti vīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Imaṃ cittaṃ pana attano santānaṃ vijānāti</p>
+
+
+
+<p class="unindented">Imāni cittāni attano santānaṃ vijānanti</p>
+
+
+
+<p class="unindented">Imaṃ cittaṃ saññamessanti ye keci</p>
+
+
+
+<p class="unindented">Ime citte saññamessanti ye keci</p>
+
+
+
+<p class="unindented">Iminā cittena sabbopi jano nīyyati</p>
+
+
+
+<p class="unindented">Imehi cittehi sabbe janā nīyyanti</p>
+
+
+
+<p class="unindented">Iminā cittena yo koci saṃkilissati</p>
+
+
+
+<p class="unindented">Imehi cittehi yo koci visujjhati</p>
+
+
+
+<p class="unindented">Imassa cittassa ovādaṃ deti yo koci</p>
+
+
+
+<p class="unindented">Imesaṃ cittānaṃ ovādaṃ denti ye keci</p>
+
+
+
+<p class="unindented">Imasmā cittamhā ārammaṇaṃ uppajjati</p>
+
+
+
+<p class="unindented">Imehi cittehi ārammaṇāni uppajjanti</p>
+
+
+
+<p class="unindented">Imassa cittassa aniccadhammassa vasaṃ anvagū</p>
+
+
+
+<p class="unindented">Imesānaṃ cittānaṃ parivitakko udapādi</p>
+
+
+
+<p class="unindented">Asmiṃ citte arakkhite kāyakammaṃ arakkhitaṃ</p>
+
+
+
+<p class="unindented">Imesu cittesu guttesu kāyakammaṃ rakkhitaṃ.</p>
+
+
+
+<p class="centered">Iti ekavīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Asu mahārājā catuhi saṅgahavatthūhi janaṃ toseti</p>
+
+
+
+<p class="unindented">Amū mahārājā catūhisaṅgahavatthūhi janaṃ tosenti</p>
+
+
+
+<p class="unindented">Amuṃ mahārājānaṃ sakkaccaṃ upasaṅkamati mahājano</p>
+
+
+
+<p class="unindented">Amūyo mahārāje sakkaccaṃ upasaṅkamati mahājano</p>
+
+
+
+<p class="unindented">Amunā <a name="O0.0030"></a> mahārājenapi mahāpāsādo kārāpīyate</p>
+
+
+
+<p class="unindented">Amūhi mahārājehi mahāvihāropi kārāpito</p>
+
+
+
+<p class="unindented">Amunā mahārājena kho pana mahājano sucarati</p>
+
+
+
+<p class="unindented">Amūhi mahārājehi kho pana mahājano sucarati</p>
+
+
+
+<p class="unindented">Amussa mahārājassa paṇṇākāraṃ deti mahājano</p>
+
+
+
+<p class="unindented">Amūsānaṃ mahārājānaṃ paṇṇākāraṃ denti mahājanā</p>
+
+
+
+<p class="unindented">Amusmā mahārājamhā pana mahabbhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Amūhi mahārājehi mahabbhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Amūssa mahārājassa vappamaṅgalañca hoti</p>
+
+
+
+<p class="unindented">Amūsānaṃ mahārājānaṃ vappamaṅgalāni honti</p>
+
+
+
+<p class="unindented">Amusmiṃ mahārāje kho pana mahājano pasīdati</p>
+
+
+
+<p class="unindented">Amūsu mahārājesu kho pana mahājanā pasīdanti.</p>
+
+
+
+<p class="centered">Iti dvevīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Asu upāsikā pana sakkaccaṃ dhammaṃ suṇāti</p>
+
+
+
+<p class="unindented">Amuyo upāsikāyo sakkaccaṃ dhammaṃ suṇanti</p>
+
+
+
+<p class="unindented">Amuṃ upāsikaṃ puññaṃ kārāpeti saddho</p>
+
+
+
+<p class="unindented">Amuyo upāsikāyo puññaṃ kārāpeti saddho</p>
+
+
+
+<p class="unindented">Amuyā upāsikāya bhikkhu bhattaṃ bhojāpīyate</p>
+
+
+
+<p class="unindented">Amūhi upāsikāhi saṅgho bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Amuyā upāsikāya yo koci pana sucarati</p>
+
+
+
+<p class="unindented">Amūhi upāsikāhi ye keci pana sucaranti</p>
+
+
+
+<p class="unindented">Amussā upāsikāya dānaṃ deti sappuriso</p>
+
+
+
+<p class="unindented">Amūsaṃ upāsikānaṃ dānaṃ denti sappurisā</p>
+
+
+
+<p class="unindented">Amuyā upāsikāyapi yo koci apeti</p>
+
+
+
+<p class="unindented">Amūhi upāsikāhi ye keci pana apenti</p>
+
+
+
+<p class="unindented">Amussā upāsikāya puttāpi bahavo honti</p>
+
+
+
+<p class="unindented">Amūsānaṃ upāsikānaṃ parisāpi bahavo</p>
+
+
+
+<p class="unindented">Amussaṃ upāsikāyaṃ yo koci pasīdati</p>
+
+
+
+<p class="unindented">Amūsu upāsikāsu pana ye keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti tevīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Aduṃ dhanavaṃ niccaṃ bahuṃ puññaṃ pasavati</p>
+
+
+
+<p class="unindented">Amūni dhanavantāni bahuṃ puññaṃ pasavanti</p>
+
+
+
+<p class="unindented">Aduṃ dhanavantaṃ puññaṃ kārāpeti saddho</p>
+
+
+
+<p class="unindented">Amūni dhanavantāni puññaṃ kārāpeti saddho</p>
+
+
+
+<p class="unindented">Amunā <a name="O0.0031"></a> dhanavantena bhikkhu bhattaṃ bhojāpīyate</p>
+
+
+
+<p class="unindented">Amūhi dhanavantehi bhikkhu bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Amunā dhanavantena mahājanopi sukhījāto</p>
+
+
+
+<p class="unindented">Amūhi dhanavattehi mahājanopi sukhījāto</p>
+
+
+
+<p class="unindented">Amuno dhanavantassa suvaṇṇachattaṃ dhārayate</p>
+
+
+
+<p class="unindented">Amūsaṃ dhanavantānaṃ upatiṭṭheyya ekacco</p>
+
+
+
+<p class="unindented">Amusmā dhanavantamhā lābhasakkāraṃ labheyya</p>
+
+
+
+<p class="unindented">Amūhi dhanavantehi lābhasakkārāni labheyyuṃ</p>
+
+
+
+<p class="unindented">Amuno dhanavantassa mahāparivāro atthi</p>
+
+
+
+<p class="unindented">Amūsānaṃ dhanavantānaṃ mahāparivārā vijjanti</p>
+
+
+
+<p class="unindented">Amumhi dhanavantasmiṃ yo koci pasīdati</p>
+
+
+
+<p class="unindented">Amūsu dhanavantesu ye keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti catuvīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="gatha1">Kohi nāma budho loke vasaṃ kodhassa gacchati;</p>
+
+
+
+<p class="gathalast">Ke hitvā mānusaṃ dehaṃ dibbaṃ yogaṃ upaccaguṃ.</p>
+
+
+
+<p class="gatha1">Kaṃsi tvaṃ assu uddissa pabbajito ca āvuso;</p>
+
+
+
+<p class="gathalast">Keci puññāni katvāna kittakā tidivaṃ gatā.</p>
+
+
+
+<p class="gatha1">Kenāyaṃ pakato satto kuvaṃ sattassa kārako;</p>
+
+
+
+<p class="gathalast">Kehidaṃ pakataṃ bimbaṃ kvannu bibbassa kārako.</p>
+
+
+
+<p class="gatha1">Kena te tādiso vaṇṇo kena te idha mijjhati;</p>
+
+
+
+<p class="gathalast">Kehi me puññakammehi mamaṃ rakkhanti devatā.</p>
+
+
+
+<p class="gatha1">Kassa cābhirato satto sabbadukkhā pamuccati;</p>
+
+
+
+<p class="gathalast">Kesaṃ divāca rattoca sadā puññaṃ pavaḍḍhati.</p>
+
+
+
+<p class="gatha1">Kasmā naparidevesi evarūpe mahabbhaye;</p>
+
+
+
+<p class="gathalast">Kehi nāma ariyehi puthageva jano ayaṃ.</p>
+
+
+
+<p class="gatha1">Kassa tvaṃ dhammamaññāya vācaṃ bhasayi īdisaṃ;</p>
+
+
+
+<p class="gathalast">Kesaṃ te dhammamaññāya acchiduṃ bhavabhandhanaṃ.</p>
+
+
+
+<p class="gatha1">Kamhi kāle tayā vīra patthitā bodhimuttamā;</p>
+
+
+
+<p class="gathalast">Kesuddhānesu muninda sāvako paritibbutoti.</p>
+
+
+
+<p class="centered">Iti pañcavīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="gatha1">Kā ca suphassayaṃ dānaṃ mañcapīṭhādikaṃ adā;</p>
+
+
+
+<p class="gathalast">Kāyo nānāvidhaṃ puññaṃ katvāna tidivaṃ gatā.</p>
+
+
+
+<p class="gatha1">Kaṃ <a name="O0.0032"></a> bhāvanañca bhāveti kaṃ sīlaṃ paripālayī;</p>
+
+
+
+<p class="gathalast">Kā nāma dāsiyo kamme kārāpayati sāmiko.</p>
+
+
+
+<p class="gatha1">Kāya upāsikāyassu dhammo ca sūyate sadā;</p>
+
+
+
+<p class="gathalast">Kāhi ca sīlavatīhi dhammo ca sūyate sadā.</p>
+
+
+
+<p class="gatha1">Kāya vijjāya me putto pāpuṇāti idaṃ sukhaṃ;</p>
+
+
+
+<p class="gathalast">Kāhi sikkhāhi me puttā pāpuṇanti idaṃ sukhaṃ.</p>
+
+
+
+<p class="gatha1">Kassā upāsikāyassu dānaṃ dadeyya dhanavā;</p>
+
+
+
+<p class="gathalast">Kāsaṃ upāsikānañca dānaṃ dadeyya guṇavā.</p>
+
+
+
+<p class="gatha1">Kāya gaṅgāya sabbāca pabhavantīti kunnadī;</p>
+
+
+
+<p class="gathalast">Kāhi ca pana nadīhi pabhavanti mahānadī.</p>
+
+
+
+<p class="gatha1">Kassā kho pana gaṅgāya mahogho hoti sabbadā;</p>
+
+
+
+<p class="gathalast">Kāsaṃ kho pana kaññānaṃ ābharaṇā bhavanti ca.</p>
+
+
+
+<p class="gatha1">Kassaṃ nadiṃ pana macchā niccaṃ vicaranti sadā;</p>
+
+
+
+<p class="gathalast">Kāsu gaṅgāsu kho macchā niccaṃ vicaranti sadā.</p>
+
+
+
+<p class="centered">Iti chabbīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="gatha1">Kiṃ te jaṭāhi dummedha kiṃ te ajinasāṭiyā;</p>
+
+
+
+<p class="gathalast">Kāni cittāni jāyanti kathaṃ jānema taṃ mayaṃ.</p>
+
+
+
+<p class="gatha1">Kiṃ tvaṃ attavasaṃ disvā mama dajjāsimaṃ dhanaṃ;</p>
+
+
+
+<p class="gathalast">Kāni puññāni katvāna kittakā tidivaṃ gatā.</p>
+
+
+
+<p class="gatha1">Kenassu nīyati loko kenassu parikassati;</p>
+
+
+
+<p class="gathalast">Kehi me puññakammassa nāntamevañca dissati.</p>
+
+
+
+<p class="gatha1">Kenāsi dummano tāta purisaṃ kannu yocasi;</p>
+
+
+
+<p class="gathalast">Kehi pupphehi sakkaccaṃ saddho yajati gotamaṃ.</p>
+
+
+
+<p class="gatha1">Kassa so kayirā mettiṃ tamāhu cariyaṃ budhā;</p>
+
+
+
+<p class="gathalast">Kesaṃ dānavaraṃ etaṃ dātabbañca sadādarā.</p>
+
+
+
+<p class="gatha1">Kasmā coro ahu me tvaṃ iti rājā apucchitaṃ;</p>
+
+
+
+<p class="gathalast">Kehi nāmapi hetūhi jāyantīti ime janā.</p>
+
+
+
+<p class="gatha1">Kassa te dhammamaññāya acchiduṃ bhavabhandhanaṃ;</p>
+
+
+
+<p class="gathalast">Kesaṃ majjhagato bhāti candova nabhamajjhago.</p>
+
+
+
+<p class="gatha1">Kasmiṃ me sivayo kuddhā nāhaṃ passāmi dukkaṭaṃ;</p>
+
+
+
+<p class="gathalast">Kesu puññesu yojeti sakhīnaṃ so sakhāhitoti.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0033"></a> sattavīsatimo pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā sabbanāmānaṃ.</p>
+
+
+
+<p class="centered">Catuttho paricchedo.</p>
+
+
+
+<p class="centered">Atha aliṅgatumhāmhasaddā vuccante.</p>
+
+
+
+<p class="unindented">Tvaṃ pana puriso puññaṃ karohi</p>
+
+
+
+<p class="unindented">Tumhe purisā puññaṃ karotha</p>
+
+
+
+<p class="unindented">Tuvaṃ pana purisaṃ puññaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Tumhe purise puññāni kārāpeti</p>
+
+
+
+<p class="unindented">Tayā purisena odano paccate</p>
+
+
+
+<p class="unindented">Tumhehi purisehi odanā paccante</p>
+
+
+
+<p class="unindented">Tayā purisena ekacco jīvati</p>
+
+
+
+<p class="unindented">Tumhehi purisehi ekacce jīvanti</p>
+
+
+
+<p class="unindented">Tuyhaṃ purisassa dhanaṃ deti dhanī</p>
+
+
+
+<p class="unindented">Tumhākaṃ purisānaṃ dhanaṃ deti dhanī</p>
+
+
+
+<p class="unindented">Tayā purisamhā apeti yo koci</p>
+
+
+
+<p class="unindented">Tumhehi purisehi apenti ye keci</p>
+
+
+
+<p class="unindented">Tuyhaṃ purisassa nāma gottādayo</p>
+
+
+
+<p class="unindented">Tumhākaṃ purisānaṃ pariggaho</p>
+
+
+
+<p class="unindented">Tayi purisasmiṃ koci pasīdati</p>
+
+
+
+<p class="unindented">Tumhesu purisesu keci pasīdanti.</p>
+
+
+
+<p class="centered">Iti paṭhamo pāṭho.</p>
+
+
+
+<p class="unindented">Tvaṃ itthīpi odanaṃ bhutvā gacchāhi</p>
+
+
+
+<p class="unindented">Tumhe itthiyo odanaṃ bhutvā gacchatha</p>
+
+
+
+<p class="unindented">Tuvaṃ itthiṃ puññaṃ kārayati puriso</p>
+
+
+
+<p class="unindented">Tumhe itthiyo puññāni kārenti purisā</p>
+
+
+
+<p class="unindented">Tayā itthiyāpi dhaññaṃ bhajjate</p>
+
+
+
+<p class="unindented">Tumhehi itthīhi dhaññāni bhajjante</p>
+
+
+
+<p class="unindented">Tayā itthiyā dukkhaṃ pāpuṇāti koci</p>
+
+
+
+<p class="unindented">Tumhehi itthīhi sukhaṃ pāpuṇāti sāmi</p>
+
+
+
+<p class="unindented">Tuyhaṃ itthiyā ābharaṇaṃ deti sāmi</p>
+
+
+
+<p class="unindented">Tumhākaṃ itthīnaṃ ābharaṇaṃ deti sāmi</p>
+
+
+
+<p class="unindented">Tayā itthiyā apeti yo koci</p>
+
+
+
+<p class="unindented">Tumhehi itthīhi apenti ye keci</p>
+
+
+
+<p class="unindented">Tuyhaṃ itthiyā puttāpi bahavo honti</p>
+
+
+
+<p class="unindented">Tumhākaṃ itthīnaṃ vatthābharaṇāni honti</p>
+
+
+
+<p class="unindented">Tvayi itthiyā pana manaṃ patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Tumhesu itthīsu pana manāni patiṭṭhitāni.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0034"></a> dutiyo pāṭho.</p>
+
+
+
+<p class="unindented">Tvaṃ cittaṃ pana ārammaṇaṃ cintesi</p>
+
+
+
+<p class="unindented">Tumhe cittāni ārammaṇaṃ cintetha</p>
+
+
+
+<p class="unindented">Tvaṃ cittaṃ saññamessanti ye keci</p>
+
+
+
+<p class="unindented">Tumhe cittāni saññamessanti ye keci</p>
+
+
+
+<p class="unindented">Tayā cittena kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Tumhehi cittehi kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Tayā cittena buddhaṃ sarati sappuriso</p>
+
+
+
+<p class="unindented">Tumhehi cittehi buddhaṃ saranti sappurisā</p>
+
+
+
+<p class="unindented">Tuyhaṃ cittassa ovādaṃ deti koci</p>
+
+
+
+<p class="unindented">Tumhākaṃ cittānaṃ ovādaṃ denti keci</p>
+
+
+
+<p class="unindented">Tayā cittamhā kho pana bhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Tumhehi cittehi pana bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Tuyhaṃ cittassa parivitakko udapādi</p>
+
+
+
+<p class="unindented">Tumhākaṃ cittānaṃ parivitakko udapādi</p>
+
+
+
+<p class="unindented">Tayi citte kho pana kusalacittaṃ patiṭhitaṃ</p>
+
+
+
+<p class="unindented">Tumhesu cittesu kusalacittāni patiṭṭhitāni.</p>
+
+
+
+<p class="centered">Iti tatiyo pāṭho.</p>
+
+
+
+<p class="unindented">Ahaṃ purisopi puññaṃ karomi</p>
+
+
+
+<p class="unindented">Mayaṃ purisā pana puññaṃ karoma</p>
+
+
+
+<p class="unindented">Mamaṃ purisaṃ puññaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Amhe purise puññāni kārāpeti</p>
+
+
+
+<p class="unindented">Mayā purisena kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Amhehi purisehi kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Mayā purisena ekacco sucarati</p>
+
+
+
+<p class="unindented">Amhehi purisehi ekacce sucaranti</p>
+
+
+
+<p class="unindented">Amhaṃ purisassa dhanaṃ dadāti dhanavā</p>
+
+
+
+<p class="unindented">Amhākaṃ purisānaṃ phalaṃ dadāti phalavā</p>
+
+
+
+<p class="unindented">Mayā purisasmā apeti ekacco</p>
+
+
+
+<p class="unindented">Amhehi purisehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Amhaṃ purisassa nāma gottādi</p>
+
+
+
+<p class="unindented">Amhākaṃ purisānaṃ pariggaho hoti</p>
+
+
+
+<p class="unindented">Mayi purisasmiṃ pasīdati yo koci</p>
+
+
+
+<p class="unindented">Amhesu purisesu ekacco sūratamo.</p>
+
+
+
+<p class="centered">Iti catuttho pāṭho.</p>
+
+
+
+<p class="unindented">Ahaṃ kaññā pana puññaṃ karomi</p>
+
+
+
+<p class="unindented">Mayaṃ kaññāyo puññāni karoma</p>
+
+
+
+<p class="unindented">Mamaṃ kaññaṃ puññaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Amhe <a name="O0.0035"></a> kaññāyo puññaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Mayā kaññāya odano paccate</p>
+
+
+
+<p class="unindented">Amhehi kaññāhi odano paccate</p>
+
+
+
+<p class="unindented">Mayā kaññāya sukhadukkhā pāpuṇāti</p>
+
+
+
+<p class="unindented">Amhehi kaññāhi sukhadukkhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Amhaṃ kaññāya ābharaṇaṃ deti</p>
+
+
+
+<p class="unindented">Amhākaṃ kaññānaṃ ābharaṇaṃ deti</p>
+
+
+
+<p class="unindented">Mayā kaññāya ayaṃ kaññā hīṇā</p>
+
+
+
+<p class="unindented">Amhehi kaññāhi ayaṃ kaññā adhikā</p>
+
+
+
+<p class="unindented">Amhaṃ kaññāya vatthābharaṇāni honti</p>
+
+
+
+<p class="unindented">Amhākaṃ kaññānaṃ pariggaho hoti</p>
+
+
+
+<p class="unindented">Mayi kaññāyaṃ me manaṃ napatiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Amhesu kaññāsu me manaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti pañcamo pāṭho.</p>
+
+
+
+<p class="unindented">Ahaṃ cittaṃ pana ārammaṇaṃ vijānāhi</p>
+
+
+
+<p class="unindented">Mayaṃ cittāni ārammaṇaṃ vijānātha</p>
+
+
+
+<p class="unindented">Mamaṃ cittaṃ saññamessanti ekacce</p>
+
+
+
+<p class="unindented">Amhe cittāni saññamessanti keci</p>
+
+
+
+<p class="unindented">Mayā cittena kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Amhehi cittehi kammaphalaṃ anubhuttaṃ</p>
+
+
+
+<p class="unindented">Mayā cittena buddhaṃ sarati sappuriso</p>
+
+
+
+<p class="unindented">Amhehi cittehi buddhaṃ sarati saddho</p>
+
+
+
+<p class="unindented">Mamaṃ cittassa ovādaṃ deti koci</p>
+
+
+
+<p class="unindented">Amhākaṃ cittānaṃ ovādaṃ denti keci</p>
+
+
+
+<p class="unindented">Mayā cittasmā pana bhayaṃ uppajjati</p>
+
+
+
+<p class="unindented">Amhehi cittehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Mamaṃ cittassa parivitakko udapādi</p>
+
+
+
+<p class="unindented">Amhākaṃ cittānaṃ parivitakko hoti</p>
+
+
+
+<p class="unindented">Mayi citte pana kusalacittaṃ patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Amhesu cittesu kusalacittāni patiṭṭhitāni.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="unindented">Gāmaṃ vo pana gaccheyyātha</p>
+
+
+
+<p class="unindented">Gāmaṃ no pana gaccheyyāma</p>
+
+
+
+<p class="unindented">Pahāya vo bhikkhave gamissāmi</p>
+
+
+
+<p class="unindented">Mā no ajja pana vikantisu</p>
+
+
+
+<p class="unindented">Katameva te pana taṃ kammaṃ</p>
+
+
+
+<p class="unindented">Katameva <a name="O0.0036"></a> me pana taṃ kammaṃ</p>
+
+
+
+<p class="unindented">Katameva vo pana kusalakammaṃ</p>
+
+
+
+<p class="unindented">Katameva no pana kusalakammaṃ</p>
+
+
+
+<p class="unindented">Dadāmi te pana gāmavarāni pañca</p>
+
+
+
+<p class="unindented">Dadāhi me gāmavaraṃ tvampi</p>
+
+
+
+<p class="unindented">Dhammaṃ vo bhikkhave desissāmi</p>
+
+
+
+<p class="unindented">Saṃvibhājetha no rajjena</p>
+
+
+
+<p class="unindented">Manussasseva te sīsaṃ pana</p>
+
+
+
+<p class="unindented">Pahūtaṃ me pana dhanaṃ sakka</p>
+
+
+
+<p class="unindented">Tuṭṭhosmiyā vo pana pakatiyā</p>
+
+
+
+<p class="unindented">Satthā no bhagavā anuppatto.</p>
+
+
+
+<p class="gatha1">Vo no te meti rūpāni padāni padato yato;</p>
+
+
+
+<p class="gathalast">Tato nāmikapantīsu natū vuttāni tāni me.</p>
+
+
+
+<p class="gatha1">Paccatte upayoge ca karaṇe sampadāniye;</p>
+
+
+
+<p class="gathalast">Sāmissa vacane ceva vo no saddo pavattati.</p>
+
+
+
+<p class="gatha1">Karaṇe sampadāne ca sāmiatthe ca āgato;</p>
+
+
+
+<p class="gathalast">Te me saddoti viññeyyo viññunā nayadassināti.</p>
+
+
+
+<p class="centered">Iti sattamo pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā aliṅgasabbanāmānaṃ.</p>
+
+
+
+<p class="centered">Pañcamo paricchedo.</p>
+
+
+
+<p class="unindented">Imāni pulliṅgarūpāni vuccante</p>
+
+
+
+<p class="unindented">Dve mahārājāno rajjaṃ kārenti</p>
+
+
+
+<p class="unindented">Dvepi mahārājāno upasaṅkamati</p>
+
+
+
+<p class="unindented">Dvīhi mahārājehi saṅgāmo kato</p>
+
+
+
+<p class="unindented">Dvīhi mahārājehi raṭṭhavāsino jīvanti</p>
+
+
+
+<p class="unindented">Dvinnaṃ mahārājānaṃ pannākāraṃ deti</p>
+
+
+
+<p class="unindented">Dvīhi mahārājehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Dvinnaṃ mahārājānaṃ pariggaho hoti</p>
+
+
+
+<p class="unindented">Dvīsu mahārājesu manāni patiṭṭhitāni.</p>
+
+
+
+<p class="centered">Imāni itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Dve kaññāyo puññāni karonti</p>
+
+
+
+<p class="unindented">Dve kaññāyo puññāni kārāpeti</p>
+
+
+
+<p class="unindented">Dvīhi kaññāhi puññāni katāni</p>
+
+
+
+<p class="unindented">Dvīhi kaññāhi sukhadukkhaṃ pāpuṇāti</p>
+
+
+
+<p class="unindented">Dvinnaṃ kaññānaṃ ābharaṇāni deti</p>
+
+
+
+<p class="unindented">Dvīhi <a name="O0.0037"></a> kaññāhi ayaṃ kaññā adhikā</p>
+
+
+
+<p class="unindented">Dvinnaṃ kaññānaṃ vatthābharaṇaṃ hoti</p>
+
+
+
+<p class="unindented">Dvīsu kaññāsu manāni patiṭṭhitāni</p>
+
+
+
+<p class="centered">Imāni napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Dve kulāni dānādikusalaṃ karonti</p>
+
+
+
+<p class="unindented">Dve kulāni dānādikusalaṃ kārāpeti</p>
+
+
+
+<p class="unindented">Dvīhi kulehi saṅgho bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Dvīhi kulehi sukhaṃ pāpuṇāti saṅgho</p>
+
+
+
+<p class="unindented">Dvinnaṃ kulānaṃ sakkāraṃ karonti keci</p>
+
+
+
+<p class="unindented">Dvīhi kulehi apeti ekacco puggalo</p>
+
+
+
+<p class="unindented">Dvinnaṃ kulānaṃ nāma gottādayo</p>
+
+
+
+<p class="unindented">Dvīsu kulesu me cittaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti paṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Imāni pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Tayo purisā pana vihāraṃ karonti</p>
+
+
+
+<p class="unindented">Tayo purise upagacchati ekacco</p>
+
+
+
+<p class="unindented">Tīhi purisehi vihāro kārāpito</p>
+
+
+
+<p class="unindented">Tīhi purisehi jīvanti ye keci</p>
+
+
+
+<p class="unindented">Tiṇṇannaṃ purisānaṃ dhanaṃ deti dhanavā</p>
+
+
+
+<p class="unindented">Tīhi purisehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Tiṇṇannaṃ purisānaṃ pariggaho hoti</p>
+
+
+
+<p class="unindented">Tīsu purisesu pasīdati yo koci.</p>
+
+
+
+<p class="centered">Imāni itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Tisso itthiyo puññāni karonti</p>
+
+
+
+<p class="unindented">Tisso itthiyo puññāni kārāpeti</p>
+
+
+
+<p class="unindented">Tīhi itthīhi saṅgho bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Tīhi itthīhi jīvanti ekacco puriso</p>
+
+
+
+<p class="unindented">Tissannaṃ itthīnaṃ ābharaṇāni deti</p>
+
+
+
+<p class="unindented">Tīhi itthīhi apeti ekacco puriso</p>
+
+
+
+<p class="unindented">Tissannaṃ itthīnaṃ ābharaṇāni honti</p>
+
+
+
+<p class="unindented">Tīsu itthīsu pasīdati ekacco puriso.</p>
+
+
+
+<p class="centered">Imāni napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Tīni kulāni puññāni karonti</p>
+
+
+
+<p class="unindented">Tīni kulāni puññāni kārāpeti</p>
+
+
+
+<p class="unindented">Tīhi kulehi puññāni kariyyante</p>
+
+
+
+<p class="unindented">Tīhi kulehi jīvanti ye keci</p>
+
+
+
+<p class="unindented">Tiṇṇannaṃ <a name="O0.0038"></a> kulānaṃ dhanaṃ deti dhanavā</p>
+
+
+
+<p class="unindented">Tīhi kulehi bhayāni na uppajjanti</p>
+
+
+
+<p class="unindented">Tiṇṇannaṃ kulānaṃ mahābhogo hoti</p>
+
+
+
+<p class="unindented">Tīsu kulesu pasīdati ekacco puriso.</p>
+
+
+
+<p class="centered">Iti dutiyo pāṭho.</p>
+
+
+
+<p class="centered">Imāni pulliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Cattāro mahārājā rajjaṃ karonti</p>
+
+
+
+<p class="unindented">Cattāro mahārāje upagacchati ekacco</p>
+
+
+
+<p class="unindented">Catūhi mahārājehi puññāni kariyyante</p>
+
+
+
+<p class="unindented">Catūhi mahārājehi jīvanti mahājanā</p>
+
+
+
+<p class="unindented">Catunnaṃ mahārājānaṃ pannākāraṃ denti</p>
+
+
+
+<p class="unindented">Catūhi mahārājehi bhayāni uppajjanti</p>
+
+
+
+<p class="unindented">Catunnaṃ mahārājānaṃ ābharaṇaṃ hoti</p>
+
+
+
+<p class="unindented">Catūsu mahārājesu pasīdati mahājano.</p>
+
+
+
+<p class="centered">Imāni itthiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Catasso kaññāyo puññāni karonti</p>
+
+
+
+<p class="unindented">Catasso kaññāyo puññāni kārāpeti</p>
+
+
+
+<p class="unindented">Catūhi kaññāhi saṅgho bhattaṃ bhojāpito</p>
+
+
+
+<p class="unindented">Catūhi kaññāhi vadhaṃ pāpuṇanti purisā</p>
+
+
+
+<p class="unindented">Catassannaṃ kaññānaṃ ābharaṇāni denti</p>
+
+
+
+<p class="unindented">Catūhi kaññāhi ayaṃ kaññā adhikā</p>
+
+
+
+<p class="unindented">Catassannaṃ kaññānaṃ ābharaṇaṃ hoti</p>
+
+
+
+<p class="unindented">Catūsu kaññāsu pasīdati ekacco puriso.</p>
+
+
+
+<p class="centered">Imāni napuṃsakaliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Cattāri kulāni bahuṃ puññaṃ karonti</p>
+
+
+
+<p class="unindented">Cattāri kulāni upagacchanti ekacce</p>
+
+
+
+<p class="unindented">Catūhi kulehi vihāro kārāpīyate</p>
+
+
+
+<p class="unindented">Catūhi kulehi jīvanti ekacce purisā</p>
+
+
+
+<p class="unindented">Catunnaṃ kulānaṃ sakkāraṃ karonti</p>
+
+
+
+<p class="unindented">Catūhi kulehi apenti ekacce</p>
+
+
+
+<p class="unindented">Catunnaṃ kulānaṃ nāma gottādayo</p>
+
+
+
+<p class="unindented">Catusu kulesu pasīdati mahājano.</p>
+
+
+
+<p class="centered">Iti tatiyo pāṭho.</p>
+
+
+
+<p class="unindented">Pañca mahābhūtā tiṭṭhanti</p>
+
+
+
+<p class="unindented">Pañca mahābhūte passati</p>
+
+
+
+<p class="unindented">Pañcahi <a name="O0.0039"></a> mahābhūtehi katāni</p>
+
+
+
+<p class="unindented">Pañcahi mahābhūtehi sucarati</p>
+
+
+
+<p class="unindented">Pañcannaṃ mahābhūtānaṃ dīyate</p>
+
+
+
+<p class="unindented">Pañcahi mahābhūtehi apeti</p>
+
+
+
+<p class="unindented">Pañcannaṃ mahābhūtānaṃ santakaṃ</p>
+
+
+
+<p class="unindented">Pañcasu mahābhūtesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Pañca-mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Pañca-abhibhavitāro tiṭṭhanti</p>
+
+
+
+<p class="unindented">Pañca-purisā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Pañca-bhūmiyo pana honti</p>
+
+
+
+<p class="unindented">Pañca-kaññāyo pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Pañca-mahābhūtāni tiṭṭhanti</p>
+
+
+
+<p class="unindented">Pañca-cittāni uppajjanti</p>
+
+
+
+<p class="unindented">Evaṃ sabbattha yojetabbaṃ.</p>
+
+
+
+<p class="centered">Iti catuttho pāṭho.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Cha mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Cha abhibhavitāro passati</p>
+
+
+
+<p class="unindented">Chahi purisehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Channaṃ bhūmīnaṃ ruccati koci</p>
+
+
+
+<p class="unindented">Chahi kaññāhi apeti ekacco</p>
+
+
+
+<p class="unindented">Channaṃ bhūtānaṃ santakaṃ hoti</p>
+
+
+
+<p class="unindented">Chasu pana cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Satta mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Satta abhibhavitāro passati</p>
+
+
+
+<p class="unindented">Sattahi purisehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Sattannaṃ bhūmīnaṃ ruccati koci</p>
+
+
+
+<p class="unindented">Sattahi kaññāhi apeti ekacco</p>
+
+
+
+<p class="unindented">Sattannaṃ bhūtānaṃ santakaṃ hoti</p>
+
+
+
+<p class="unindented">Sattasu pana cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0040"></a> pañcamo pāṭho.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Aṭṭha mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Aṭṭha abhibhavitāro passati</p>
+
+
+
+<p class="unindented">Aṭṭhahipurisehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Aṭṭhannaṃ bhūmīnaṃ ruccati koci</p>
+
+
+
+<p class="unindented">Aṭṭhahi kaññāhi apeti koci</p>
+
+
+
+<p class="unindented">Aṭṭhannaṃbhūtānaṃ santakaṃ hoti</p>
+
+
+
+<p class="unindented">Aṭṭhasu pana cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Nava mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Nava abhibhavitāro passati</p>
+
+
+
+<p class="unindented">Navahi purisehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Navannaṃ bhūmīnaṃ ruccati koci</p>
+
+
+
+<p class="unindented">Navahi kaññāhi apeti koci</p>
+
+
+
+<p class="unindented">Navannaṃ bhūtānaṃ santakaṃ hoti</p>
+
+
+
+<p class="unindented">Navasu pana cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Dasa mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Dasa abhibhavitāro passati</p>
+
+
+
+<p class="unindented">Dasahi purisehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Dasannaṃ bhūtānaṃ ruccati koci</p>
+
+
+
+<p class="unindented">Dasahi kaññāhi apeti koci</p>
+
+
+
+<p class="unindented">Dasannaṃ bhūtānaṃ santakaṃ hoti</p>
+
+
+
+<p class="unindented">Dasasu pana cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Ekādasa-mahābhūtā tiṭṭhanti</p>
+
+
+
+<p class="unindented">Dvādasa-abhibhavitāro tiṭṭhanti</p>
+
+
+
+<p class="unindented">Terasa-purisā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Cuddasa-bhūmiyo pana honti</p>
+
+
+
+<p class="unindented">Pañcadasa-kaññāyo pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Solasa-bhūtāni pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Sattarasa-cittāni uppajjanti.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni <a name="O0.0041"></a> vuccante.</p>
+
+
+
+<p class="unindented">Aṭṭhārasa mahābhūtā pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Aṭṭhārasa abhibhavitāro passati</p>
+
+
+
+<p class="unindented">Aṭṭhārasahi purisehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Aṭṭhārasannaṃ bhūmīnaṃ ruccati</p>
+
+
+
+<p class="unindented">Aṭṭhārasahi kaññāhi apeti koci</p>
+
+
+
+<p class="unindented">Aṭṭhārasannaṃ bhūtānaṃ santakaṃ</p>
+
+
+
+<p class="unindented">Aṭṭhārasasu cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti sattamo pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā bahuvacanasaṅkhyānāmānaṃ chaṭṭho paricchedo.</p>
+
+
+
+<p class="centered">Tiliṅgarūpāni vuccante.</p>
+
+
+
+<p class="unindented">Ekūnavīsati ekūnavīsaṃ iccādipi</p>
+
+
+
+<p class="unindented">Ekūnavīsāya ekūnavīsāyaṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsati bhikkhūpi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Ekūnavīsaṃ bhikkhūpi passati</p>
+
+
+
+<p class="unindented">Ekūnavīsāya bhikkhūhi dhammo desito</p>
+
+
+
+<p class="unindented">Ekūnavīsāya kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāya cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāya bhikkhūnaṃ cīvaraṃ deti</p>
+
+
+
+<p class="unindented">Ekūnavīsāya kaññānaṃ dhanaṃ deti</p>
+
+
+
+<p class="unindented">Ekūnavīsāya cittānaṃ pana ruccati</p>
+
+
+
+<p class="unindented">Ekūnavīsāya bhikkhūhi apeti koci</p>
+
+
+
+<p class="unindented">Ekūnavīsāya kaññāhi apeti koci</p>
+
+
+
+<p class="unindented">Ekūnavīsāya cittehi apeti koci</p>
+
+
+
+<p class="unindented">Ekūnavīsāya bhikkhūnaṃ santakaṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāya kaññānaṃ santakaṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāya cittānaṃ santakaṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāya bhikkhūsu patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāya kaññāsu patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsāyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0042"></a> paṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Ekūnavīsati bhikkhūpi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Ekūnavīsatiṃ bhikkhūpi passati</p>
+
+
+
+<p class="unindented">Ekūnavīsatiyā bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Ekūnavīsatiyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Ekūnavīsati kaññāyo tiṭṭhanti</p>
+
+
+
+<p class="unindented">Ekūnavīsatiṃ kaññāyo passati</p>
+
+
+
+<p class="unindented">Ekūnavīsatiyā kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsatiyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Ekūnavīsati cittāni uppajjanti</p>
+
+
+
+<p class="unindented">Ekūnavīsatiṃ cittāni passati</p>
+
+
+
+<p class="unindented">Ekūnavīsatiyā cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Ekūnavīsatiyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti dutiyo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Vīsati bhikkhavo tiṭṭhanti</p>
+
+
+
+<p class="unindented">Vīsatiṃ bhikkhavo passati</p>
+
+
+
+<p class="unindented">Vīsatiyā bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Vīsatiyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Vīsati kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Visatiṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Vīsatiyā kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Vīsatiyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Vīsati cittāni uppajjanti</p>
+
+
+
+<p class="unindented">Vīsatiṃ cittānipi passati</p>
+
+
+
+<p class="unindented">Vīsatiyā cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Vīsatiyaṃ cittesu patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Vīsaṃ vīsaṃ vīsāya vīsāyaṃ</p>
+
+
+
+<p class="unindented">Tathā ekavīsa dvāvīsa bāvīsa</p>
+
+
+
+<p class="unindented">Tevīsa catuvīsa-iccādipi.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0043"></a> tatiyo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Tiṃsa bhikkhavo tiṭṭhanti</p>
+
+
+
+<p class="unindented">Tiṃsa bhikkhavo passati</p>
+
+
+
+<p class="unindented">Tiṃsāya bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Tiṃsāyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Tiṃsa kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Tiṃsa kaññāyopi passati</p>
+
+
+
+<p class="unindented">Tiṃsāya kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Tiṃsāyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Tiṃsa cittāni uppajjanti</p>
+
+
+
+<p class="unindented">Tiṃsa cittānipi passati</p>
+
+
+
+<p class="unindented">Tiṃsāya cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Tiṃsāyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti catuttho pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Cattālīsa bhikkhavo tiṭṭhanti</p>
+
+
+
+<p class="unindented">Cattālīsaṃ bhikkhavo passati</p>
+
+
+
+<p class="unindented">Cattālīsāya bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Cattālīsāyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Cattālīsa kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Cattālīsaṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Cattālīsāya kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Cattālīsāyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Cattālīsa cittānipi uppajjanti</p>
+
+
+
+<p class="unindented">Cattālīsaṃ cittānipi passati</p>
+
+
+
+<p class="unindented">Cattālīsāya cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Cattālīsāyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="unindented">Cattārīsa iccādipi.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0044"></a> pañcamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Paññāya bhikkhavo tiṭṭhanti</p>
+
+
+
+<p class="unindented">Paññāyaṃ bhikkhavo passati</p>
+
+
+
+<p class="unindented">Paññāsāya bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Paññāsāyaṃ bhikkhūsu vatiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Paññāya kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Paññāsaṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Paññāsāya kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Paññāsāyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Paññāsa cittānipi uppajjanti</p>
+
+
+
+<p class="unindented">Paññāsaṃ cittānipi passati.</p>
+
+
+
+<p class="unindented">Paññāsāya cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Paññāsāyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="unindented">Tathā paṇṇāsa paṇṇāsaṃ</p>
+
+
+
+<p class="unindented">Paṇṇāsāya paṇṇāsāyaṃ.</p>
+
+
+
+<p class="centered">Iti chaṭṭho pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Saṭṭhi bhikkhavopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Saṭṭhiṃ bhikkhavopi passati</p>
+
+
+
+<p class="unindented">Saṭṭhiyā bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Saṭṭhiyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Saṭṭhi kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Saṭṭhiṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Saṭṭhiyā kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Saṭṭhiyaṃ kaññāsu patiṭṭhitaṃ</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Saṭṭhi cittānipi uppajjanti</p>
+
+
+
+<p class="unindented">Saṭṭhiṃ cittānipi passati</p>
+
+
+
+<p class="unindented">Saṭṭhiyā cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Saṭṭhiyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0045"></a> sattamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Sattati bhikkhavopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Sattatiṃ bhikkhavopi passati</p>
+
+
+
+<p class="unindented">Sattatiyā bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Sattatiyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Sattati kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Sattatiṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Sattatiyā kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Sattatiyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Sattati cittānipi uppajjanti</p>
+
+
+
+<p class="unindented">Sattatiṃ cittānipi passati</p>
+
+
+
+<p class="unindented">Sattatiyā cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Sattatiyaṃ cittesu patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Sattari iccādipi.</p>
+
+
+
+<p class="centered">Iti aṭṭhamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Asīti bhikkhavopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Asītiṃ bhikkhavopi passati</p>
+
+
+
+<p class="unindented">Asītiyā bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Asītiyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Asīti kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Asītiṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Asītiyā kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Asītiyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Asīti cittānipi uppajjanti</p>
+
+
+
+<p class="unindented">Asītiṃ cittānipi passati</p>
+
+
+
+<p class="unindented">Asitiyā cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Asītiyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Iti navamo pāṭho.</p>
+
+
+
+<p class="centered">Pulliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Navuti bhikkhavopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Navutiṃ bhikkhavopi passati</p>
+
+
+
+<p class="unindented">Navutiyā bhikkhūhi desito</p>
+
+
+
+<p class="unindented">Navutiyaṃ bhikkhūsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Itthiliṅgarūpāni <a name="O0.0046"></a></p>
+
+
+
+<p class="unindented">Navuti kaññāyopi tiṭṭhanti</p>
+
+
+
+<p class="unindented">Navutiṃ kaññāyopi passati</p>
+
+
+
+<p class="unindented">Navutiyā kaññāhi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Navutiyaṃ kaññāsu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Napuṃsakaliṅgarūpāni.</p>
+
+
+
+<p class="unindented">Navuti cittānipi uppajjanti</p>
+
+
+
+<p class="unindented">Navutiṃ cittānipi passati</p>
+
+
+
+<p class="unindented">Navutiyā cittehi kammaṃ kataṃ</p>
+
+
+
+<p class="unindented">Navutiyaṃ cittesu patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Tathā ekanavuti iccādipi.</p>
+
+
+
+<p class="centered">Iti dasamo pāṭho.</p>
+
+
+
+<p class="unindented">Sataṃ bhikkhavo pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Satāni bhikkhavo pana tiṭṭhanti</p>
+
+
+
+<p class="unindented">Sataṃ bhikkhavo pana passati</p>
+
+
+
+<p class="unindented">Satāni bhikkhavo pana passati</p>
+
+
+
+<p class="unindented">Satena bhikkhūhi dhammo desito</p>
+
+
+
+<p class="unindented">Satehi bhikkhūhi dhammā desitā</p>
+
+
+
+<p class="unindented">Satassa bhikkhūnaṃ dānaṃ dadeyya</p>
+
+
+
+<p class="unindented">Satānaṃ bhikkhūnaṃ dānaṃ dadeyyuṃ</p>
+
+
+
+<p class="unindented">Satasmā bhikkhūhi apeti koci</p>
+
+
+
+<p class="unindented">Satehi bhikkhūhi apenti keci</p>
+
+
+
+<p class="unindented">Satassa bhikkhūnaṃ pattacīvarāni</p>
+
+
+
+<p class="unindented">Satānaṃ bhikkhunaṃ pattacīvarāni</p>
+
+
+
+<p class="unindented">Satasmiṃ bhikkhūsu manaṃ patiṭṭhitaṃ</p>
+
+
+
+<p class="unindented">Satesu bhikkhūsu manaṃ patiṭṭhitaṃ.</p>
+
+
+
+<p class="centered">Evaṃ sahassaṃ sahassānīti.</p>
+
+
+
+<p class="unindented">Yojetabbaṃ dasasahassaṃ</p>
+
+
+
+<p class="unindented">Satasahassaṃ dasasatasahassanti</p>
+
+
+
+<p class="unindented">Etthāpi esevanayo</p>
+
+
+
+<p class="unindented">Ayaṃ panettha nayo</p>
+
+
+
+<p class="unindented">Sataṃ kho bhikkhū honti</p>
+
+
+
+<p class="unindented">Sataṃ kho itthiyo honti</p>
+
+
+
+<p class="unindented">Sataṃ kho piyāti honti</p>
+
+
+
+<p class="unindented">Sahassādisupi eseva nayo.</p>
+
+
+
+<p class="centered">Iti <a name="O0.0047"></a> ekādasamo pāṭho.</p>
+
+
+
+<p class="unindented">Dasassa gaṇanassa dasaguṇitaṃ katvā sataṃ hoti.</p>
+
+
+
+<p class="unindented">Satassa dasaguṇitaṃ katvā sahassaṃ hoti.</p>
+
+
+
+<p class="unindented">Dasasahassassa dasaguṇitaṃ katvā satasahassaṃ hoti.</p>
+
+
+
+<p class="unindented">Taṃ lakkhanti vuccati, satasahassassa dasaguṇitaṃ katvā dasasatasahassaṃ hoti.</p>
+
+
+
+<p class="unindented">Dasasatasahassassa dasaguṇitaṃ katvā koṭi hoti.</p>
+
+
+
+<p class="unindented">Satasahassānaṃ sataṃ koṭi nāmāti attho.</p>
+
+
+
+<p class="unindented">Koṭisatasahassānaṃ sataṃ pakoṭi.</p>
+
+
+
+<p class="unindented">Pakoṭisatasahassānaṃ sataṃ koṭippakoṭi.</p>
+
+
+
+<p class="unindented">Koṭippakoṭi satasahassānaṃ sataṃ nahutaṃ.</p>
+
+
+
+<p class="unindented">Nahutasatasahassānaṃ sataṃ ninnahutaṃ</p>
+
+
+
+<p class="unindented">Ninnahutasatasahassānaṃ sataṃ akkhohiṇi.</p>
+
+
+
+<p class="unindented">Aparo nayo-ekaṃ dasaṃ sataṃ sahassaṃ</p>
+
+
+
+<p class="unindented">Dasasahassaṃ satasahassaṃ dasasatasahassaṃ</p>
+
+
+
+<p class="unindented">Koṭi pakoṭi koṭippakoṭi nahutaṃ</p>
+
+
+
+<p class="unindented">Ninnahutaṃ akkhohiṇīti evaṃ</p>
+
+
+
+<p class="unindented">Ekato paṭṭhāya guṇīyamānā akkhohiṇi</p>
+
+
+
+<p class="unindented">Terasama ṭhānaṃ hutvā tiṭṭhati.</p>
+
+
+
+<p class="unindented">Nava nāgasahassāni nāge nāge sataṃ rathā</p>
+
+
+
+<p class="unindented">Rathe rathe sataṃ assā asse asse sataṃ narā</p>
+
+
+
+<p class="unindented">Nare nare sataṃ kaññā eke kissaṃ satitthiyo</p>
+
+
+
+<p class="unindented">Esā akkhohiṇī nāma pubbācariyehi bhāsitāti.</p>
+
+
+
+<p class="unindented">Akkhohiṇīca bhindūca abbudaṃca nirabbudaṃ</p>
+
+
+
+<p class="unindented">Ahahaṃ ababañceva aṭaṭaṃca sugandhikaṃ</p>
+
+
+
+<p class="unindented">Uppalaṃ kumudañceva puṇḍarīkaṃ padumaṃ tathā</p>
+
+
+
+<p class="unindented">Kathānaṃ mahākathānaṃ asaṃkheyyanti bhāsito.</p>
+
+
+
+<p class="unindented">Kamo kaccāyane eso pāliyā so virujjhati</p>
+
+
+
+<p class="unindented">Pāliyantu kamo evaṃ veditabbo nirabbudā</p>
+
+
+
+<p class="unindented">Ababaṃ aṭaṭaṃ ahahaṃ kumudaṃca sugandhikaṃ</p>
+
+
+
+<p class="unindented">Uppalaṃ puṇḍarīkaṃca padumanti jinobravīti.</p>
+
+
+
+<p class="centered">Iti dvādasamo pāṭho.</p>
+
+
+
+<p class="centered">Iti padamañjariyā saṅkhyānāmānaṃ.</p>
+
+
+
+<p class="centered">Sattamo paricchedo.</p>
+
+
+
+<p class="centered">Padamañjariyā pakaraṇī samattā.</p>
+
+
+
+<p class="centered">Siddhi ratthu.</p>
+
+
+
+
+
+</body>
+</html>

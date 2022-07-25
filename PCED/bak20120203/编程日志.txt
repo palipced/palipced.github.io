@@ -1,0 +1,344 @@
+﻿1.9.2版程序升级：
+1、在词典窗口单词解释区右键菜单里增加了一个look up自定查找划选定的
+单词的功能。
+2、改变了右键中‘复制’功能的内在机制（改为利用js脚本函数进行复制）。
+3、稍完善了一下输入中文反查巴利文的功能。
+
+1.9.1版bug修正：
+
+已解决！
+这个bug主要是由于有些经文中title多的很，
+qdall()函数在往tiltle列表菜单里写时出现问题，
+把最大title数限制在<50个即解决问题，并且似乎也无必要显示太多title
+185版至189版中的这个bug，有些经文打开时出现死锁，不能正常打开
+但182版至184版没有这个问题，此bug是在打开经文时，qdall()这个函数出的问题，
+182版至184版及以前的版本只取页码，但185版之后的版本增加了取段号、book、title等。
+bug已解决！
+
+1.9.1版（测试）：增加了经文阅读时的字体大小设置。
+这可以在词典窗口的‘其它设置’菜单里面进行设置。
+在打开经典时，进行style字符串替换，根据\set\fs文件里的设置，替换不同大小字体\set\f1或f2或f3文件等设置的style。
+字体大小也是可以手工进行设置的，在pced191程序的set子目录下新增了四个名为fs和f1、f2、f3的style风格字体设置文件，
+这四个都是utf-8格式的文本文档，可以用记事本打开修改，
+fs文件里第一行的数字为0表示当前设置为不改变字体大小、仍是原始大小。
+fs文件里第一行的数字为1或2或3表示程序里当前设置为使用f1或f2或f3文件里的字体大小设置。
+f1、f2、f3文件也可以打开修改，但只应改变里面字体的大小设置，不要轻易改变其它设置，以免出现问题。
+
+1.8.7版（测试）
+在词典‘其他设置’菜单中新增了一项切换中文反查查词输出方式的设置。
+
+1.8.6版
+修正了在按页码、段号、章节定位时横向尺寸有时有偏差的问题。
+
+1.8.5版，
+读经窗口中增加了按‘经集、书、章节、小标题’定位的功能。
+
+1.8.4版，
+基本完善了按段落号定位的功能。
+
+1.8.3版，
+
+设置了一个打开与关闭“在外部程序中复制自动粘贴查词的功能”的开关，
+它在“其它设置”菜单中。
+
+1.8.2版，
+
+bug之修正：
+
+在打开一些短偈很多的书、以及调整其读经窗口大小时，速度很慢！
+是风格语句的原因，在pali目录下的这些htm文件里，
+.hangnum { font-size: 12pt; position:relative; left:0px; top:38px; z-index:-1; text-indent: 2em;}
+.hangnum { font-size: 12pt; text-indent: 2em;}
+把第一句都改成第二句即可解决，速度就不慢了，从26秒变为4秒。
+但是这个地方以前改过，原始的是：
+.hangnum { font-size: 12pt; margin-bottom: -14.4pt; text-indent: 2em;}
+那时因为速度慢的问题更大、有时翻页都困难，所以改了，没想到还是有问题，
+而且对速度的影响这么大。
+——此bug已修改（不是修改程序，而只是修改pali目录下的每个htm文件中的这一句）。
+
+1.8.1.5版，
+
+bug之修正：
+1.8.1版中在调整读经窗口大小时，没有定位好经文，此bug在1.8.1.5版中已经修正。
+新改进：
+新增按段号查找定位的功能，但此功能目前有两点尚未完善：
+1、对于“428-430”这样的段号标记，假如去查第429段 则可能查不到；
+2、有时可能是一本书中有两种以上段号如：1~500段，然后下面又来个1~600段，
+      这样的话，查找段落时，可能只能定位到第一个1~500段中的段。
+
+1.8.1版，
+
+新改进：
+使用Lucene做了一个中文词库的索引，极大的提高了在词典中查找中文时的速度。
+在发布时，须连同1.8.1版新增的 \index_ck 子目录一起发布，此目录下即是新建的
+中文词库的索引，此索引的建立或重建可以在目录窗口里的管理面板中进行，其中
+有一个建立中文词库索引的按钮。
+注意：在建立此索引时需要pali-h词库源档。
+
+读经窗口中，点击按钮或回车转到页码或段后，宜把焦点设为浏览器的经文窗口中，
+以便于鼠标滚动等操作，此宜改进。
+
+在‘搜索’窗中，未处理ṁŋ这两个字母，应该把复制输入的ṁŋ这两个字母都自动识别转换为ṃ，
+然后再进行搜索，如不识别处理的话，则输入含ṁ或ŋ的词，会查不到。因为ṃṁŋ这三个字母
+应该其实都是通用的，但是在pced经典文本库中，只用的是ṃ。所以必须把输入的ṁŋ这两个
+字母都自动识别转换为ṃ后再搜索。
+
+新改进之处：
+‘‘ayaṃ sāmikehi  ' chaḍḍito’’ti ' 
+经典文本中像这里这样的 中文引号 考虑在中文引号两边各加一个空格 ，估计可以解决如下
+问题：
+ ‘‘tattha anna’’ntiādi 在读经窗中，此句中anna查不到 tattha却能查到，但ctrl+f也查不到
+在读经窗口中 diṭṭhañcā’’ti   其中 ti 没查找到，但ctrl+f也查不到，可能是’号的原因。
+（2010.3.7修改）
+
+词库里的《巴汉词典》（明法尊者增订版）词条中，有的短语词条在以前制作词库时，在往
+词库中导入词条时，一些短语的词目中间误增加了一个英文的,（逗号），
+如下例：须修正之。
+F%Cattāro, satipaṭṭhānā(n.p.),四念处，四念住(Foundation of mindfulness; frame of reference(--body(身), feelings(受), mind(心), and mental events(法), viewed in and of themselves as they occur)。
+
+待增加：（据此修订词库中相应的水野辭典词条）
+勘誤表（水野弘元 パ一リ語辭典）觅寂尊者
+直接在原相应的 水野词条后面加括号，在括号内注明勘误，便于与原来的对比。
+
+1、以前部分经篇在打开阅读时，在翻页时出现翻页极慢、甚至程序停止反应的现象，
+     今已解决了此问题。
+2、以前在导入《巴利语汇解》一书中的词汇时，由于转换编码时的一个失误，导致词库
+     中的《巴利语汇解》词典中的一些词出现词形错误（大概不到48个词），无嗔在此
+     深致歉意！今已修正此错误，更新了词库。
+2010.2.28
+
+lucene查找条件
+
+Ara hattaṃ apāpuṇiṃ.在搜索窗中打开并定位到此段时 再查ara虽能查到 但背景却不加亮，
+不知是否因为是首字的原因
+
+keyword.moveStart('character', 1); 1或许应该改为0
+
+搜索窗口load和关闭时应先判断index目录是否存在
+
+'kāyopi āditto sampajjalito sajotibhūto'
+这个句子高亮有问题
+
+词典输入 samm 发生脚本错 ')'
+//webBrowser1.ScriptErrorsSuppressed = true;
+
+ārammaṇa nāmanti查第二词时论中异常
+
+收藏当前页之功能
+
+程序集名称'pced'不能改 否则序列化的目录会不能读入
+
+下面这个词里的数字是什么呢?
+Pubba
+,【形】先前的(往昔：台语：以早i2 ca2，以往i2 ong2，以前i2 cing5，卡早khah ca2，古早koo2 ca2，向时hing3 si3，往阵ing2 cun7，往过ing kue3往摆ing2 pai2)
+
+kalandagāmo
+在查此复合词后 在复合框中双击 再按小按钮 再在框中双击 会出异常
+
+copy_Click函数的运行会连续激发3次剪贴板事件，不知是程序自动复制函数的原因，还是系统bug，如果是系统bug，则以后bug如被修正，则此处必须也跟着修正。
+
+复合词中如果有空格 在分析结果中双击 会出错误（查词显示有误）
+
+3. Paribbājakavaggo中有aparise+saṃ有+号
+
+2009.10.8
+用pced管理面板把所有经典目录的子目录都打开了
+----------------------------------------------------------
+fan s[]繁简未转换
+
+pasīdeyyā’’ti gotamo’ti中的引号
+
+偶现San字体下，先在Caps Lock下输入的大写R字母，在用取消CL后用小按钮输入pali字母后，
+R会被自动转为小写r，不知何故？
+
+若经典文件不存在，应处理异常提示
+
+電子字典pced152 辞典版,在打上以 n 為開頭的搜尋時,會要我除錯,不知這是什麼原因
+
+查词后输入数字如22会出错　脚本错误　没设定实例
+当列表中只有一个单词（或一个重复的单词）时，自动调用htmout输出详细解释
+上下键的滚动效果
+词库中<  >的问题,在html文档里会有问题，可以≤  ≥替代 pali-h 的词库已替代
+自动或手动复制来的词，在vri字体下的处理情况
+应排除qx等的输入
+textBox3里是Tahoma字体，须处理复制输出字体转换
+m点的重复
+程序单独启动时有jit或页面错误 滚轮控制似应放在 启动时webonload后启动
+当程序启动时，使它失去焦点，则jit错(不能继续，须重新启动)
+i
+n
+脚本错
+outword里应该加html语句
+字母是按英文排序而非巴利文
+15beta那次jit为何不运行
+ar
+ara上横
+arāti
+arq
+akuppa
+ak
+htmout最上行
+下点m
+k脚本错后后面输出词条悬停无反映
+
+htm文件保存格式应与charset设置格式相同
+
+lajjin@qq.com  QQ号码为744066831
+
+不应以空格作为词典中词目和解释之间的分割符m
+法清博士
+英文词典翻译显示去第一行
+-号
+
+英语词典中重复的词条在list中只能看到最后一条？
+
+部分pali词库中词含有qfwxz字母者如下，已删除：
+Z%Visakha festival:卫塞节
+N%red-kasiṇa exercise: s. <i>kasiṇa</i>.
+F%Vikkhambhanzppahāna, 伏断(烦恼镇伏而不起作用)(elimination (of character-blemishes) by discarding)。
+N%water-kasiṇa, white-k., wind-k.: s. <i>kasiṇa</i>.
+
+fulu:
+<br><br>
+<i></i>
+
+htmlListOut()里没加
+"<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>" +
+这一句
+
+在ped词典里下词中q应为a上有个弯折线，由于此类foreigs1字体没在doc中替代故，应修正
+bhavq-bhava
+应重新制作ped的词库增加页码和字体加粗等html显示处理
+
+cidian词库词条开头词条与解释之间的分割符为 :  或 , 号
+
+*** 屏蔽了程序浏览器脚本错误，然而调试时应打开以测试是什么原因出错，是否是因为
+      个别词条里一些字符如'('引起的脚本错误
+
+在ped.doc中，<->符号是何作用?
+
+nīlapītalohitodātamañjiṭṭhapabhassarānaṃ
+hontīti
+rūpāti
+byākāsi
+cittasamuṭṭhānānaṃ
+nīlapīta   lohit       odātamañjiṭṭhapabhassarānaṃ
+bāhiraka
+kāmāvacaraṃ
+atītapaccuppannānāgatavipākāvipākavasena
+utuparissayavinodanapaṭisallānārāmatthaṃ
+ekattakāyanānattasaññīsattāvāsaphalatāya
+mahādānaṃ
+sabbāpi
+somanassindriyaṃ
+saddhindriyaṃ
+itaresaṃ
+vuccatīti
+tenupasaṅkami
+natthīti
+tatheva
+tattheva
+athekadivasaṃ
+purimanayeneva
+tenāti
+sahajātādhipati
+idāneva
+
+* nahetupaccayā
+caparaṃ
+dhammoti
+nacirasseva
+
+复合词，词词之间可能有接头变化，但只在复合词语尾才有语尾变形
+原多种语尾变形功能开启后不仅大大的降低速度，而且多查出来的词不过1%，而且还未必就正确，此功能应删除
+0042979nti
+0009446tiādi
+0009301hotīti
+0008782rājā
+<> pāramī 巴拉密,  (古音译:)波罗蜜多,播罗弭多
+<> pārami:        波罗蜜
+
+mpi查找停止
+0000005ḍaṃsamakasavātātapasarīsapasamphassenapi
+padavaṇṇanāsikkhāvassikasāṭika
+<> Padavaṇṇanā,【阴】 字的解释。
+Aggamahākammaññhānācariya 最高大禅师
+pañcannaṁ
+rūpakkhandho
+s[23]
+s[12]
+首字母a接头冗余p,k
+
+nahetussa
+tesampi
+
+F%Svākkhāta(su+akkhāta; BSk. svākhyāta), 善宣说的。‘Svākkhāto Bhagavatā dhammo sandiṭṭhiko akāliko ehipassiko opaneyyiko paccattaṁ veditabbo viññūhī’ti.(法是世尊善说、自见(sa+n+diṭṭhika)、即时、来见、引导、智者各自证知的。)
+F%Abrahmacariya (a非+brahmacariya梵行),【中】非梵行。Kh.31.︰Abrahmacariyassa pana cattāri aṅgāni bhavanti-- (1)ajjhācariyavatthu ca hoti, (2)tattha ca sevanacittaṁ paccupaṭṭhitaṁ hoti, (3)sevanapaccayā payogañca samāpajjati, (4)sādiyati cāti.(非梵行有四条件︰1.交媾(若是邪淫，则对象非配偶)。2.生起淫欲心。3.达到从事(性交)之缘的方式。4.接纳乐受(sādiyati cāti)。)
+F%Evaṁ,【副】如此(thus (as mentioned))，这样(thus (as follows))。evaṁvidha,【形】像这样的。Evaṁ me sutaṁ (Evaṁ(副词, 如是) me(具格, 被我) sutaṁ (过去分词, 已听到)，直译：这样，已被我听说)，如是我闻(thus have I heard)。evameva kho, 同样地。evaṃ mayā wrutam, evaṃ mayā wrutâdibhyah,【梵】如是我闻。
+F%Eta (poetical-archaic form:etad)(Vedic etad)(=tad)﹐【代】【形】那、彼(that)；此、这(this)。【阳】：单.主.eso﹑esa；复.主ete；单.宾.etaṁ(﹑enaṁ)；复.宾.ete；单.具.etena；复.具.etehi﹑etebhi；单.离.etasmā﹑etamhā；复.离.etehi﹑etebhi；单.属﹑与.etassa；复.与﹑属.etesaṁ﹑etesānaṁ；单.处.etasmiṁ & etamhi；复.处.etesu。【中】：单.主.etaṁ (the usual form) & etad；复.主.etāni。单.宾.etaṁ﹑etad；复.宾.etāni。(其余同阳性)。【阴】：单.主esā；复.主.etā﹑etāyo；单.宾.etaṁ；复.宾.etā﹑etā﹑etāyo；单.具.etāya；复.具.etāhi﹑etābhi；单.离etāya；复.离.etāhi & etābhi；单.与﹑属.etissā﹑etassāya﹑etissā；单.处.etāya﹑etāyaṁ(﹑etāsaṁ﹑etassaṁ﹑etissaṁ)；复.处.etāsu。ayametesaṁ﹐这是它们的。panetā=pana+etā。etadavoca, etadavocaṁ, 说这，这么说。
+F%Okkanti (fr. okkamati),【阴】进入，形成，出现(entry (lit. descent), appearance, coming to be)。okkantikkhaṇa﹐投胎刹那。Paṭṭhānappakaraṇa-aṭṭhakathā《发趣论注释》(CS:p.365) ：Okkantikkhaṇeti pañcavokārabhave paṭisandhikkhaṇe.(在投胎刹那：即在五蕴生命的结生刹那。)
+
+内部变形
+khuddakavatthuvibhaṅgādiabhidhammanayena
+
+akammaññabhāvakaraavasesanīvaraṇādikilesappaṭipakkhabhūtāti
+akammañña-bhāva-kar-aavasesa-nīvara-ṇādiki-le-sappaṭi-pakkha-bhū-tāti
+akammañña-bhāva-kara-avasesa-nīvara-ṇādiki-le-sappaṭi-pakkha-bhū-tāti
+akammañña-bhā-vakara-avasesa-nīvara-ṇādiki-le-sappaṭi-pakkha-bhū-tāti
+4162.2650432 s.
+100%0000001gāmanivesanaudositaaḍḍamāḷapāsādahammiyanāvāsatthakhettadhaññakaraṇaārāmavihārarukkhamūlaajjhokāsesu
+100%0000001ticīvarapiṇḍapātapattathālakaparissāvanadhamakaraṇaparibhogabhājanachattupāhanaudakatumbasūcikattara
+
+2009.1.10日 建议明法比丘删除词典中退法阿罗汉之说，接受并修正词典词条解释。
+\b匹配以-号结尾的词有问题，如：$A-, 前缀 a 在双子音之前的短化。 匹配成：'A-, 前缀' 而非A-
+
+【现分】 ṭhenta。此词条可能缺个~
+标点符号没有转换
+Araññaka, araññika, 【形】 森林的，住在森林的。
+Araññaka, 【形】属于森林的，生活在森林的。
+
+小部自说5 目录有误
+
+阳光灿烂(397080218) 
+
+在夏天学巴利文时使用词典归纳了几条意见
+
+支持屏幕取词(鼠标指词翻译)
+能够在下一次启动时保存（上一次的）选项的设置
+增加隐藏词典导航窗口的选项
+增加经典的书签功能
+希望有常用的快捷键
+
+171版修改记录：
+新版(无需 vri ,san 字体版)修改记录：
+1、Program.cs
+把 Main中开始部分检测安装字体的代码注释掉。
+
+2,	Form1.cs
+ public void htmonmouseup()函数中调整了_isPaliWeb = true;的位置
+
+3,	新建一函数 string inword_t(string s)
+
+4,	在自动复制取词到查词框的地方使用 inword_t 函数转换为Tahoma字体编码
+
+5.	在点击设置字体与load的两个地方，把那两种字体都改为了Tahoma
+
+6.
+在public void oClick(string listword)中，
+把 palihan_ccFHC(outword_t(listword));
+改为palihan_ccFHC(listword);
+
+7.
+private void kABC(int i)
+private void kabc(int i)
+private void inputpali(int i)
+private bool inputError()
+
+string inword(string cboxInputWord)
+string inword()
+string einword(string cboxInputWord)
+string einword()
+private void cboxInput_KeyDown(object sender, KeyEventArgs e) //不再转换编码两处
+
+8.
+在cboxInput中设置快捷方式和右键菜单

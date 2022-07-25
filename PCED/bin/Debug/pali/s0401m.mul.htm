@@ -1,0 +1,1756 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title><script>
+function setHitsVisibility(isVisible)
+{ 
+  var c = getStyleClass('hit');
+  if (isVisible)
+  {
+    c.style.backgroundColor = 'blue';
+    c.style.color = 'white';
+  }
+  else
+  {
+    c.style.backgroundColor = 'white';
+    c.style.color = 'black';
+  }
+}
+
+function setFootnotesVisibility(isVisible)
+{
+  getStyleClass('note').style.display = (isVisible ? 'inline' : 'none');
+}
+
+function getStyleClass (className) {
+	for (var s = 0; s < document.styleSheets.length; s++)
+	{
+		if(document.styleSheets[s].rules)
+		{
+			for (var r = 0; r < document.styleSheets[s].rules.length; r++)
+			{
+				if (document.styleSheets[s].rules[r].selectorText == '.' + className)
+				{
+					return document.styleSheets[s].rules[r];
+				}
+			}
+		}
+		else if(document.styleSheets[s].cssRules)
+		{
+			for (var r = 0; r < document.styleSheets[s].cssRules.length; r++)
+			{
+				if (document.styleSheets[s].cssRules[r].selectorText == '.' + className)
+					return document.styleSheets[s].cssRules[r];
+			}
+		}
+	}
+	
+	return null;
+}
+</script><style>
+body { 
+  font-family: "Times Ext Roman", "Indic Times", "Doulos SIL", Tahoma, "Arial Unicode MS", Gentium;
+  background: white;
+}
+
+span {}
+.note {color: blue}
+.bld {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white; }
+
+p {
+  border-top: 0in; border-bottom: 0in;
+  padding-top: 0in; padding-bottom: 0in;
+  margin-top: 0in; margin-bottom: 0.5cm;
+}
+
+.indent { font-size: 12pt; text-indent: 2em; margin-left: 3em;}
+
+.bodytext { font-size: 12pt; text-indent: 2em;}
+
+.hangnum { font-size: 12pt; text-indent: 2em;}
+
+/* Namo tassa, and nitthita -- no unique structural distinction */
+.centered { font-size: 12pt; text-align:center;}
+
+.unindented { font-size: 12pt;}
+
+.book { font-size: 21pt; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 18pt; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 24pt; text-align:center; font-weight: bold;}
+
+.title { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subsubhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+/* Gatha line 1 */
+.gatha1 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { font-size: 12pt; margin-bottom: 0.5cm; margin-left: 4em;}
+</style>
+  </head>
+  <body>
+
+
+
+
+
+<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="nikaya">Aṅguttaranikāyo</p>
+
+<a name="an1"></a>
+
+
+<p class="book">Ekakanipātapāḷi</p>
+
+<a name="an1_1"></a>
+<a class="khanti" id="a1"></a>
+
+<p class="chapter">1. Rūpādivaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para1"></span><a name="para1"></a><a name="para1_an1"></a><span class="paranum">1</span>. Evaṃ <a name="T1.0001"></a><a name="V1.0001"></a><a name="P1.0001"></a><a name="M1.0001"></a> me sutaṃ – ekaṃ samayaṃ bhagavā sāvatthiyaṃ viharati jetavane anāthapiṇḍikassa ārāme. Tatra kho bhagavā bhikkhū āmantesi – ‘‘bhikkhavo’’ti. ‘‘Bhadante’’ti te bhikkhū bhagavato paccassosuṃ. Bhagavā etadavoca –</p>
+
+
+
+<p class="bodytext">‘‘Nāhaṃ, bhikkhave, aññaṃ ekarūpampi samanupassāmi yaṃ evaṃ purisassa cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, itthirūpaṃ. Itthirūpaṃ, bhikkhave, purisassa cittaṃ pariyādāya tiṭṭhatī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para2"></span><a name="para2"></a><a name="para2_an1"></a><span class="paranum">2</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekasaddampi samanupassāmi yaṃ evaṃ purisassa cittaṃ pariyādāya <a name="V1.0002"></a> tiṭṭhati yathayidaṃ, bhikkhave, itthisaddo. Itthisaddo, bhikkhave, purisassa cittaṃ pariyādāya tiṭṭhatī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para3"></span><a name="para3"></a><a name="para3_an1"></a><span class="paranum">3</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekagandhampi samanupassāmi yaṃ evaṃ purisassa cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, itthigandho. Itthigandho, bhikkhave, purisassa cittaṃ pariyādāya tiṭṭhatī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para4"></span><a name="para4"></a><a name="para4_an1"></a><span class="paranum">4</span>. ‘‘Nāhaṃ<a name="T1.0002"></a><a name="P1.0002"></a>, bhikkhave, aññaṃ ekarasampi samanupassāmi yaṃ evaṃ purisassa cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, itthiraso. Itthiraso, bhikkhave, purisassa cittaṃ pariyādāya tiṭṭhatī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para5"></span><a name="para5"></a><a name="para5_an1"></a><span class="paranum">5</span>. ‘‘Nāhaṃ<a name="M1.0002"></a>, bhikkhave, aññaṃ ekaphoṭṭhabbampi samanupassāmi yaṃ evaṃ purisassa cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, itthiphoṭṭhabbo. Itthiphoṭṭhabbo, bhikkhave, purisassa cittaṃ pariyādāya tiṭṭhatī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para6"></span><a name="para6"></a><a name="para6_an1"></a><span class="paranum">6</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekarūpampi samanupassāmi yaṃ evaṃ itthiyā cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, purisarūpaṃ. Purisarūpaṃ, bhikkhave, itthiyā cittaṃ pariyādāya tiṭṭhatī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para7"></span><a name="para7"></a><a name="para7_an1"></a><span class="paranum">7</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekasaddampi samanupassāmi yaṃ evaṃ itthiyā cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, purisasaddo. Purisasaddo, bhikkhave, itthiyā cittaṃ pariyādāya tiṭṭhatī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para8"></span><a name="para8"></a><a name="para8_an1"></a><span class="paranum">8</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekagandhampi samanupassāmi yaṃ evaṃ itthiyā cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, purisagandho. Purisagandho, bhikkhave, itthiyā cittaṃ pariyādāya tiṭṭhatī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para9"></span><a name="para9"></a><a name="para9_an1"></a><span class="paranum">9</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekarasampi samanupassāmi yaṃ evaṃ itthiyā cittaṃ pariyādāya <a name="V1.0003"></a> tiṭṭhati yathayidaṃ, bhikkhave, purisaraso. Purisaraso, bhikkhave, itthiyā cittaṃ pariyādāya tiṭṭhatī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para10"></span><a name="para10"></a><a name="para10_an1"></a><span class="paranum">10</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekaphoṭṭhabbampi samanupassāmi yaṃ evaṃ <a name="T1.0003"></a> itthiyā cittaṃ pariyādāya tiṭṭhati yathayidaṃ, bhikkhave, purisaphoṭṭhabbo. Purisaphoṭṭhabbo, bhikkhave, itthiyā cittaṃ pariyādāya tiṭṭhatī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Rūpādivaggo paṭhamo.</p>
+
+
+<a name="an1_2"></a>
+
+
+<p class="chapter">2. Nīvaraṇappahānavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para11"></span><a name="para11"></a><a name="para11_an1"></a><span class="paranum">11</span>. ‘‘Nāhaṃ<a name="V1.0004"></a><a name="P1.0003"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppanno vā kāmacchando uppajjati uppanno vā kāmacchando bhiyyobhāvāya vepullāya saṃvattati yathayidaṃ, bhikkhave, subhanimittaṃ. Subhanimittaṃ, bhikkhave, ayoniso manasi karoto anuppanno ceva kāmacchando uppajjati uppanno ca kāmacchando bhiyyobhāvāya vepullāya saṃvattatī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para12"></span><a name="para12"></a><a name="para12_an1"></a><span class="paranum">12</span>. ‘‘Nāhaṃ<a name="M1.0003"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppanno vā byāpādo uppajjati uppanno vā byāpādo bhiyyobhāvāya vepullāya saṃvattati yathayidaṃ, bhikkhave, paṭighanimittaṃ. Paṭighanimittaṃ, bhikkhave, ayoniso manasi karoto anuppanno ceva byāpādo uppajjati uppanno ca byāpādo bhiyyobhāvāya vepullāya saṃvattatī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para13"></span><a name="para13"></a><a name="para13_an1"></a><span class="paranum">13</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannaṃ vā thinamiddhaṃ <span class="note">[thīnamiddhaṃ (sī. syā. kaṃ. pī.)]</span> uppajjati uppannaṃ vā thinamiddhaṃ bhiyyobhāvāya vepullāya saṃvattati yathayidaṃ, bhikkhave, arati tandī <span class="note">[tandi (ka.)]</span> vijambhitā <span class="note">[vijambhikā (sī. syā. kaṃ. pī.)]</span> bhattasammado cetaso ca līnattaṃ. Līnacittassa, bhikkhave, anuppannañceva thinamiddhaṃ <a name="T1.0004"></a> uppajjati uppannañca thinamiddhaṃ bhiyyobhāvāya vepullāya saṃvattatī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para14"></span><a name="para14"></a><a name="para14_an1"></a><span class="paranum">14</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannaṃ vā uddhaccakukkuccaṃ uppajjati uppannaṃ vā uddhaccakukkuccaṃ bhiyyobhāvāya vepullāya saṃvattati yathayidaṃ, bhikkhave, cetaso avūpasamo. Avūpasantacittassa, bhikkhave, anuppannañceva uddhaccakukkuccaṃ uppajjati uppannañca uddhaccakukkuccaṃ bhiyyobhāvāya vepullāya saṃvattatī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para15"></span><a name="para15"></a><a name="para15_an1"></a><span class="paranum">15</span>. ‘‘Nāhaṃ<a name="V1.0005"></a><a name="P1.0004"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā vicikicchā uppajjati uppannā vā vicikicchā bhiyyobhāvāya vepullāya saṃvattati yathayidaṃ, bhikkhave, ayonisomanasikāro. Ayoniso, bhikkhave, manasi karoto anuppannā ceva vicikicchā uppajjati uppannā ca vicikicchā bhiyyobhāvāya vepullāya saṃvattatī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para16"></span><a name="para16"></a><a name="para16_an1"></a><span class="paranum">16</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppanno vā kāmacchando nuppajjati uppanno vā kāmacchando pahīyati yathayidaṃ, bhikkhave, asubhanimittaṃ. Asubhanimittaṃ, bhikkhave, yoniso manasi karoto anuppanno ceva kāmacchando nuppajjati uppanno ca kāmacchando pahīyatī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para17"></span><a name="para17"></a><a name="para17_an1"></a><span class="paranum">17</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppanno vā byāpādo nuppajjati uppanno vā byāpādo pahīyati <a name="T1.0005"></a> yathayidaṃ, bhikkhave, mettā <a name="M1.0004"></a> cetovimutti. Mettaṃ, bhikkhave, cetovimuttiṃ yoniso manasi karoto anuppanno ceva byāpādo nuppajjati uppanno ca byāpādo pahīyatī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para18"></span><a name="para18"></a><a name="para18_an1"></a><span class="paranum">18</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannaṃ vā thinamiddhaṃ nuppajjati uppannaṃ vā thinamiddhaṃ pahīyati yathayidaṃ, bhikkhave, ārambhadhātu nikkamadhātu parakkamadhātu. Āraddhavīriyassa, bhikkhave, anuppannañceva thinamiddhaṃ nuppajjati uppannañca thinamiddhaṃ pahīyatī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para19"></span><a name="para19"></a><a name="para19_an1"></a><span class="paranum">19</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannaṃ vā uddhaccakukkuccaṃ nuppajjati uppannaṃ vā uddhaccakukkuccaṃ pahīyati yathayidaṃ, bhikkhave, cetaso vūpasamo. Vūpasantacittassa, bhikkhave, anuppannañceva uddhaccakukkuccaṃ nuppajjati uppannañca uddhaccakukkuccaṃ pahīyatī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para20"></span><a name="para20"></a><a name="para20_an1"></a><span class="paranum">20</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi <a name="P1.0005"></a> yena anuppannā vā vicikicchā nuppajjati uppannā vā vicikicchā pahīyati yathayidaṃ, bhikkhave, yonisomanasikāro<a name="V1.0006"></a>. Yoniso, bhikkhave, manasi karoto anuppannā ceva vicikicchā nuppajjati uppannā ca vicikicchā pahīyatī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Nīvaraṇappahānavaggo dutiyo.</p>
+
+
+<a name="an1_3"></a>
+
+
+<p class="chapter">3. Akammaniyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para21"></span><a name="para21"></a><a name="para21_an1"></a><span class="paranum">21</span>. ‘‘Nāhaṃ<a name="V1.0007"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ abhāvitaṃ <a name="T1.0006"></a> akammaniyaṃ hoti yathayidaṃ, bhikkhave, cittaṃ <span class="note">[yathayidaṃ cittaṃ (sī. pī.) evamuparipi]</span>. Cittaṃ, bhikkhave, abhāvitaṃ akammaniyaṃ hotī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para22"></span><a name="para22"></a><a name="para22_an1"></a><span class="paranum">22</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ bhāvitaṃ kammaniyaṃ hoti yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, bhāvitaṃ kammaniyaṃ hotī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para23"></span><a name="para23"></a><a name="para23_an1"></a><span class="paranum">23</span>. ‘‘Nāhaṃ<a name="M1.0005"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ abhāvitaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, abhāvitaṃ mahato anatthāya saṃvattatī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para24"></span><a name="para24"></a><a name="para24_an1"></a><span class="paranum">24</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ bhāvitaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, bhāvitaṃ mahato atthāya saṃvattatī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para25"></span><a name="para25"></a><a name="para25_an1"></a><span class="paranum">25</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ abhāvitaṃ apātubhūtaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, abhāvitaṃ apātubhūtaṃ mahato anatthāya saṃvattatī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para26"></span><a name="para26"></a><a name="para26_an1"></a><span class="paranum">26</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi <a name="P1.0006"></a> yaṃ evaṃ bhāvitaṃ pātubhūtaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, bhāvitaṃ pātubhūtaṃ mahato atthāya saṃvattatī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para27"></span><a name="para27"></a><a name="para27_an1"></a><span class="paranum">27</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ abhāvitaṃ abahulīkataṃ <a name="V1.0008"></a> mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, abhāvitaṃ abahulīkataṃ mahato anatthāya saṃvattatī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para28"></span><a name="para28"></a><a name="para28_an1"></a><span class="paranum">28</span>. ‘‘Nāhaṃ<a name="T1.0007"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ bhāvitaṃ bahulīkataṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, bhāvitaṃ bahulīkataṃ mahato atthāya saṃvattatī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para29"></span><a name="para29"></a><a name="para29_an1"></a><span class="paranum">29</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ abhāvitaṃ abahulīkataṃ dukkhādhivahaṃ hoti yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, abhāvitaṃ abahulīkataṃ dukkhādhivahaṃ hotī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para30"></span><a name="para30"></a><a name="para30_an1"></a><span class="paranum">30</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ bhāvitaṃ bahulīkataṃ sukhādhivahaṃ hoti yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, bhāvitaṃ bahulīkataṃ sukhādhivahaṃ hotī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Akammaniyavaggo tatiyo.</p>
+
+
+<a name="an1_4"></a>
+
+
+<p class="chapter">4. Adantavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para31"></span><a name="para31"></a><a name="para31_an1"></a><span class="paranum">31</span>. ‘‘Nāhaṃ<a name="V1.0009"></a><a name="M1.0006"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ adantaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, adantaṃ mahato anatthāya saṃvattatī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para32"></span><a name="para32"></a><a name="para32_an1"></a><span class="paranum">32</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ dantaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, dantaṃ mahato atthāya saṃvattatī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para33"></span><a name="para33"></a><a name="para33_an1"></a><span class="paranum">33</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi <a name="P1.0007"></a> yaṃ evaṃ aguttaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, aguttaṃ mahato anatthāya saṃvattatī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para34"></span><a name="para34"></a><a name="para34_an1"></a><span class="paranum">34</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ guttaṃ <a name="T1.0008"></a> mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, guttaṃ mahato atthāya saṃvattatī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para35"></span><a name="para35"></a><a name="para35_an1"></a><span class="paranum">35</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ arakkhitaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, arakkhitaṃ mahato anatthāya saṃvattatī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para36"></span><a name="para36"></a><a name="para36_an1"></a><span class="paranum">36</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ rakkhitaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, rakkhitaṃ mahato atthāya saṃvattatī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para37"></span><a name="para37"></a><a name="para37_an1"></a><span class="paranum">37</span>. ‘‘Nāhaṃ<a name="V1.0010"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ asaṃvutaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, asaṃvutaṃ mahato anatthāya saṃvattatī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para38"></span><a name="para38"></a><a name="para38_an1"></a><span class="paranum">38</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ saṃvutaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, saṃvutaṃ mahato atthāya saṃvattatī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para39"></span><a name="para39"></a><a name="para39_an1"></a><span class="paranum">39</span>. ‘‘Nāhaṃ<a name="M1.0007"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ adantaṃ aguttaṃ arakkhitaṃ asaṃvutaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ. Cittaṃ, bhikkhave, adantaṃ aguttaṃ arakkhitaṃ asaṃvutaṃ mahato anatthāya saṃvattatī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para40"></span><a name="para40"></a><a name="para40_an1"></a><span class="paranum">40</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ dantaṃ guttaṃ rakkhitaṃ saṃvutaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, cittaṃ<a name="T1.0009"></a>. Cittaṃ, bhikkhave, dantaṃ guttaṃ rakkhitaṃ saṃvutaṃ mahato atthāya saṃvattatī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Adantavaggo catuttho.</p>
+
+
+<a name="an1_5"></a>
+
+
+<p class="chapter">5. Paṇihitaacchavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para41"></span><a name="para41"></a><a name="para41_an1"></a><span class="paranum">41</span>. ‘‘Seyyathāpi<a name="V1.0011"></a><a name="P1.0008"></a>, bhikkhave, sālisūkaṃ vā yavasūkaṃ vā micchāpaṇihitaṃ hatthena vā pādena vā akkantaṃ hatthaṃ vā pādaṃ vā bhecchati <span class="note">[bhijjissati (syā. kaṃ. ka.), bhejjati (sī.) moggallānabyākaraṇaṃ passitabbaṃ]</span> lohitaṃ vā uppādessatīti netaṃ ṭhānaṃ vijjati. Taṃ kissa hetu? Micchāpaṇihitattā, bhikkhave, sūkassa. Evamevaṃ kho, bhikkhave, so vata bhikkhu micchāpaṇihitena cittena avijjaṃ bhecchati, vijjaṃ uppādessati, nibbānaṃ sacchikarissatīti netaṃ ṭhānaṃ vijjati. Taṃ kissa hetu? Micchāpaṇihitattā, bhikkhave, cittassā’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para42"></span><a name="para42"></a><a name="para42_an1"></a><span class="paranum">42</span>. ‘‘Seyyathāpi, bhikkhave, sālisūkaṃ vā yavasūkaṃ vā sammāpaṇihitaṃ hatthena vā pādena vā akkantaṃ hatthaṃ vā pādaṃ vā bhecchati lohitaṃ vā uppādessatīti ṭhānametaṃ vijjati. Taṃ kissa hetu? Sammāpaṇihitattā, bhikkhave, sūkassa. Evamevaṃ kho, bhikkhave, so vata bhikkhu sammāpaṇihitena cittena avijjaṃ bhecchati, vijjaṃ uppādessati, nibbānaṃ sacchikarissatīti ṭhānametaṃ vijjati. Taṃ kissa hetu? Sammāpaṇihitattā, bhikkhave, cittassā’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para43"></span><a name="para43"></a><a name="para43_an1"></a><span class="paranum">43</span>. ‘‘Idhāhaṃ <a name="M1.0008"></a> <span class="note">[idāhaṃ (sī.)]</span>, bhikkhave, ekaccaṃ puggalaṃ paduṭṭhacittaṃ evaṃ cetasā ceto paricca pajānāmi – ‘imamhi ce ayaṃ samaye puggalo kālaṃ kareyya, yathābhataṃ nikkhitto evaṃ niraye’. Taṃ kissa hetu? Cittaṃ hissa<a name="T1.0010"></a>, bhikkhave, paduṭṭhaṃ. ‘‘Cetopadosahetu pana, bhikkhave, evamidhekacce sattā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjantī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para44"></span><a name="para44"></a><a name="para44_an1"></a><span class="paranum">44</span>. ‘‘Idhāhaṃ, bhikkhave, ekaccaṃ puggalaṃ pasannacittaṃ evaṃ cetasā ceto paricca pajānāmi – ‘imamhi ce ayaṃ <a name="P1.0009"></a> samaye puggalo kālaṃ kareyya, yathābhataṃ nikkhitto evaṃ sagge’. Taṃ kissa hetu? Cittaṃ hissa, bhikkhave, pasannaṃ. ‘‘Cetopasādahetu pana, bhikkhave, evamidhekacce sattā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjantī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para45"></span><a name="para45"></a><a name="para45_an1"></a><span class="paranum">45</span>. ‘‘Seyyathāpi<a name="V1.0012"></a>, bhikkhave, udakarahado āvilo luḷito kalalībhūto tattha cakkhumā puriso tīre ṭhito na passeyya sippisambukampi <span class="note">[sippikasambukampi (ka.)]</span> sakkharakaṭhalampi macchagumbampi carantampi tiṭṭhantampi. Taṃ kissa hetu? Āvilattā, bhikkhave, udakassa. Evamevaṃ kho, bhikkhave, so vata bhikkhu āvilena cittena attatthaṃ vā ñassati paratthaṃ vā ñassati ubhayatthaṃ vā ñassati uttariṃ vā manussadhammā alamariyañāṇadassanavisesaṃ sacchikarissatīti netaṃ ṭhānaṃ vijjati. Taṃ kissa hetu? Āvilattā, bhikkhave, cittassā’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para46"></span><a name="para46"></a><a name="para46_an1"></a><span class="paranum">46</span>. ‘‘Seyyathāpi, bhikkhave, udakarahado accho vippasanno anāvilo tattha cakkhumā puriso tīre ṭhito passeyya sippisambukampi sakkharakaṭhalampi macchagumbampi carantampi tiṭṭhantampi. Taṃ kissa hetu? Anāvilattā, bhikkhave, udakassa. Evamevaṃ kho, bhikkhave, so vata bhikkhu anāvilena <a name="T1.0011"></a> cittena attatthaṃ vā ñassati paratthaṃ vā ñassati ubhayatthaṃ vā ñassati uttariṃ vā manussadhammā alamariyañāṇadassanavisesaṃ sacchikarissatīti ṭhānametaṃ vijjati. Taṃ kissa hetu? Anāvilattā, bhikkhave, cittassā’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para47"></span><a name="para47"></a><a name="para47_an1"></a><span class="paranum">47</span>. ‘‘Seyyathāpi, bhikkhave, yāni kānici rukkhajātānaṃ phandano tesaṃ aggamakkhāyati yadidaṃ mudutāya ceva kammaññatāya ca. Evamevaṃ kho ahaṃ, bhikkhave<a name="M1.0009"></a>, nāññaṃ ekadhammampi samanupassāmi yaṃ evaṃ bhāvitaṃ bahulīkataṃ mudu ca hoti kammaññañca yathayidaṃ cittaṃ. Cittaṃ, bhikkhave, bhāvitaṃ bahulīkataṃ mudu ca hoti kammaññañca hotī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para48"></span><a name="para48"></a><a name="para48_an1"></a><span class="paranum">48</span>. ‘‘Nāhaṃ<a name="P1.0010"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ lahuparivattaṃ yathayidaṃ cittaṃ. Yāvañcidaṃ, bhikkhave, upamāpi na sukarā yāva lahuparivattaṃ citta’’nti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para49"></span><a name="para49"></a><a name="para49_an1"></a><span class="paranum">49</span>. ‘‘Pabhassaramidaṃ, bhikkhave, cittaṃ. Tañca kho āgantukehi upakkilesehi upakkiliṭṭha’’nti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para50"></span><a name="para50"></a><a name="para50_an1"></a><span class="paranum">50</span>. ‘‘Pabhassaramidaṃ, bhikkhave, cittaṃ. Tañca kho āgantukehi upakkilesehi vippamutta’’nti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Paṇihitaacchavaggo pañcamo.</p>
+
+
+<a name="an1_6"></a>
+
+
+<p class="chapter">6. Accharāsaṅghātavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para51"></span><a name="para51"></a><a name="para51_an1"></a><span class="paranum">51</span>. ‘‘Pabhassaramidaṃ<a name="V1.0013"></a>, bhikkhave, cittaṃ. Tañca kho āgantukehi upakkilesehi upakkiliṭṭhaṃ. Taṃ assutavā puthujjano yathābhūtaṃ nappajānāti. Tasmā ‘assutavato puthujjanassa cittabhāvanā natthī’ti vadāmī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para52"></span><a name="para52"></a><a name="para52_an1"></a><span class="paranum">52</span>. ‘‘Pabhassaramidaṃ<a name="T1.0012"></a>, bhikkhave, cittaṃ. Tañca kho āgantukehi upakkilesehi vippamuttaṃ. Taṃ sutavā ariyasāvako yathābhūtaṃ pajānāti. Tasmā ‘sutavato ariyasāvakassa cittabhāvanā atthī’ti vadāmī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para53"></span><a name="para53"></a><a name="para53_an1"></a><span class="paranum">53</span>. ‘‘Accharāsaṅghātamattampi ce, bhikkhave, bhikkhu mettācittaṃ <span class="note">[mettaṃ cittaṃ (sī.), mettacittaṃ (syā. kaṃ. pī. ka.)]</span> āsevati; ayaṃ vuccati, bhikkhave – ‘bhikkhu arittajjhāno viharati satthusāsanakaro ovādapatikaro, amoghaṃ raṭṭhapiṇḍaṃ bhuñjati’. Ko pana vādo ye naṃ bahulīkarontī’’ti! Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para54"></span><a name="para54"></a><a name="para54_an1"></a><span class="paranum">54</span>. ‘‘Accharāsaṅghātamattampi <a name="M1.0010"></a> ce, bhikkhave, bhikkhu mettācittaṃ bhāveti; ayaṃ vuccati, bhikkhave – ‘bhikkhu arittajjhāno viharati satthusāsanakaro ovādapatikaro, amoghaṃ raṭṭhapiṇḍaṃ bhuñjati’. Ko pana vādo ye naṃ bahulīkarontī’’ti! Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para55"></span><a name="para55"></a><a name="para55_an1"></a><span class="paranum">55</span>. ‘‘Accharāsaṅghātamattampi <a name="P1.0011"></a> ce, bhikkhave, bhikkhu mettācittaṃ manasi karoti; ayaṃ vuccati, bhikkhave – ‘bhikkhu arittajjhāno viharati satthusāsanakaro ovādapatikaro amoghaṃ raṭṭhapiṇḍaṃ bhuñjati’. Ko pana vādo ye naṃ bahulīkarontī’’ti! Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para56"></span><a name="para56"></a><a name="para56_an1"></a><span class="paranum">56</span>. ‘‘Ye keci, bhikkhave, dhammā akusalā akusalabhāgiyā akusalapakkhikā, sabbe te manopubbaṅgamā. Mano tesaṃ dhammānaṃ paṭhamaṃ uppajjati, anvadeva akusalā dhammā’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para57"></span><a name="para57"></a><a name="para57_an1"></a><span class="paranum">57</span>. ‘‘Ye <a name="V1.0014"></a> keci, bhikkhave, dhammā kusalā kusalabhāgiyā kusalapakkhikā, sabbe te manopubbaṅgamā. Mano tesaṃ dhammānaṃ paṭhamaṃ uppajjati, anvadeva <a name="T1.0013"></a> kusalā dhammā’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para58"></span><a name="para58"></a><a name="para58_an1"></a><span class="paranum">58</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, pamādo. Pamattassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para59"></span><a name="para59"></a><a name="para59_an1"></a><span class="paranum">59</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, appamādo. Appamattassa, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā dhammā parihāyantī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para60"></span><a name="para60"></a><a name="para60_an1"></a><span class="paranum">60</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, kosajjaṃ. Kusītassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Dasamaṃ.</p>
+
+
+
+Accharāsaṅghātavaggo chaṭṭho.
+
+
+<a name="an1_7"></a>
+
+
+<p class="chapter">7. Vīriyārambhādivaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para61"></span><a name="para61"></a><a name="para61_an1"></a><span class="paranum">61</span>. ‘‘Nāhaṃ<a name="V1.0015"></a><a name="P1.0012"></a><a name="M1.0011"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, vīriyārambho <span class="note">[viriyārambho (sī. syā. kaṃ. pī.)]</span>. Āraddhavīriyassa, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā <a name="T1.0014"></a> dhammā parihāyantī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para62"></span><a name="para62"></a><a name="para62_an1"></a><span class="paranum">62</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, mahicchatā. Mahicchassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para63"></span><a name="para63"></a><a name="para63_an1"></a><span class="paranum">63</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, appicchatā. Appicchassa, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā dhammā parihāyantī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para64"></span><a name="para64"></a><a name="para64_an1"></a><span class="paranum">64</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, asantuṭṭhitā. Asantuṭṭhassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para65"></span><a name="para65"></a><a name="para65_an1"></a><span class="paranum">65</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, santuṭṭhitā. Santuṭṭhassa, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā dhammā <a name="T1.0015"></a> parihāyantī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para66"></span><a name="para66"></a><a name="para66_an1"></a><span class="paranum">66</span>. ‘‘Nāhaṃ<a name="V1.0016"></a><a name="P1.0013"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, ayonisomanasikāro. Ayoniso, bhikkhave, manasi karoto anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para67"></span><a name="para67"></a><a name="para67_an1"></a><span class="paranum">67</span>. ‘‘Nāhaṃ<a name="M1.0012"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, yonisomanasikāro. Yoniso, bhikkhave, manasi karoto anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā dhammā parihāyantī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para68"></span><a name="para68"></a><a name="para68_an1"></a><span class="paranum">68</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, asampajaññaṃ. Asampajānassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para69"></span><a name="para69"></a><a name="para69_an1"></a><span class="paranum">69</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, sampajaññaṃ. Sampajānassa, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā <a name="T1.0016"></a> dhammā parihāyantī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para70"></span><a name="para70"></a><a name="para70_an1"></a><span class="paranum">70</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, pāpamittatā. Pāpamittassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Vīriyārambhādivaggo sattamo.</p>
+
+
+<a name="an1_8"></a>
+
+
+<p class="chapter">8. Kalyāṇamittādivaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para71"></span><a name="para71"></a><a name="para71_an1"></a><span class="paranum">71</span>. ‘‘Nāhaṃ<a name="V1.0017"></a><a name="P1.0014"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, kalyāṇamittatā. Kalyāṇamittassa, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā dhammā parihāyantī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para72"></span><a name="para72"></a><a name="para72_an1"></a><span class="paranum">72</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ, bhikkhave, anuyogo akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ <a name="M1.0013"></a> dhammānaṃ. Anuyogā, bhikkhave, akusalānaṃ dhammānaṃ, ananuyogā kusalānaṃ dhammānaṃ anuppannā ceva akusalā dhammā uppajjanti uppannā ca kusalā dhammā parihāyantī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para73"></span><a name="para73"></a><a name="para73_an1"></a><span class="paranum">73</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā akusalā dhammā <a name="T1.0017"></a> parihāyanti yathayidaṃ, bhikkhave, anuyogo kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ. Anuyogā, bhikkhave, kusalānaṃ dhammānaṃ, ananuyogā akusalānaṃ dhammānaṃ anuppannā ceva kusalā dhammā uppajjanti uppannā ca akusalā dhammā parihāyantī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para74"></span><a name="para74"></a><a name="para74_an1"></a><span class="paranum">74</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā bojjhaṅgā nuppajjanti uppannā vā bojjhaṅgā na bhāvanāpāripūriṃ gacchanti yathayidaṃ, bhikkhave, ayonisomanasikāro. Ayoniso, bhikkhave, manasi karoto anuppannā ceva bojjhaṅgā nuppajjanti uppannā ca bojjhaṅgā na bhāvanāpāripūriṃ gacchantī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para75"></span><a name="para75"></a><a name="para75_an1"></a><span class="paranum">75</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā bojjhaṅgā uppajjanti uppannā vā bojjhaṅgā bhāvanāpāripūriṃ gacchanti yathayidaṃ, bhikkhave, yonisomanasikāro<a name="V1.0018"></a>. Yoniso<a name="P1.0015"></a>, bhikkhave, manasi karoto anuppannā ceva bojjhaṅgā uppajjanti uppannā ca bojjhaṅgā bhāvanāpāripūriṃ gacchantī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para76"></span><a name="para76"></a><a name="para76_an1"></a><span class="paranum">76</span>. ‘‘Appamattikā esā, bhikkhave, parihāni yadidaṃ ñātiparihāni. Etaṃ patikiṭṭhaṃ, bhikkhave, parihānīnaṃ yadidaṃ paññāparihānī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para77"></span><a name="para77"></a><a name="para77_an1"></a><span class="paranum">77</span>. ‘‘Appamattikā esā, bhikkhave, vuddhi yadidaṃ ñātivuddhi. Etadaggaṃ, bhikkhave, vuddhīnaṃ yadidaṃ paññāvuddhi. Tasmātiha, bhikkhave, evaṃ sikkhitabbaṃ – ‘paññāvuddhiyā vaddhissāmā’ti. Evañhi vo, bhikkhave<a name="T1.0018"></a>, sikkhitabba’’nti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para78"></span><a name="para78"></a><a name="para78_an1"></a><span class="paranum">78</span>. ‘‘Appamattikā esā, bhikkhave, parihāni yadidaṃ bhogaparihāni. Etaṃ patikiṭṭhaṃ, bhikkhave, parihānīnaṃ yadidaṃ paññāparihānī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para79"></span><a name="para79"></a><a name="para79_an1"></a><span class="paranum">79</span>. ‘‘Appamattikā <a name="M1.0014"></a> esā, bhikkhave, vuddhi yadidaṃ bhogavuddhi. Etadaggaṃ, bhikkhave, vuddhīnaṃ yadidaṃ paññāvuddhi. Tasmātiha, bhikkhave, evaṃ sikkhitabbaṃ – ‘paññāvuddhiyā vaddhissāmā’ti. Evañhi vo, bhikkhave, sikkhitabba’’nti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para80"></span><a name="para80"></a><a name="para80_an1"></a><span class="paranum">80</span>. ‘‘Appamattikā esā, bhikkhave, parihāni yadidaṃ yasoparihāni. Etaṃ patikiṭṭhaṃ, bhikkhave, parihānīnaṃ yadidaṃ paññāparihānī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Kalyāṇamittādivaggo aṭṭhamo.</p>
+
+
+<a name="an1_9"></a>
+
+
+<p class="chapter">9. Pamādādivaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para81"></span><a name="para81"></a><a name="para81_an1"></a><span class="paranum">81</span>. ‘‘Appamattikā <a name="V1.0019"></a> esā, bhikkhave, vuddhi yadidaṃ yasovuddhi. Etadaggaṃ, bhikkhave, vuddhīnaṃ yadidaṃ paññāvuddhi. Tasmātiha, bhikkhave, evaṃ sikkhitabbaṃ – ‘paññāvuddhiyā vaddhissāmā’ti. Evañhi vo, bhikkhave, sikkhitabba’’nti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para82"></span><a name="para82"></a><a name="para82_an1"></a><span class="paranum">82</span>. ‘‘Nāhaṃ<a name="P1.0016"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, pamādo. Pamādo, bhikkhave, mahato anatthāya saṃvattatī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para83"></span><a name="para83"></a><a name="para83_an1"></a><span class="paranum">83</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, appamādo. Appamādo, bhikkhave, mahato atthāya saṃvattatī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para84"></span><a name="para84"></a><a name="para84_an1"></a><span class="paranum">84</span>. ‘‘Nāhaṃ<a name="T1.0019"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, kosajjaṃ. Kosajjaṃ, bhikkhave, mahato anatthāya saṃvattatī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para85"></span><a name="para85"></a><a name="para85_an1"></a><span class="paranum">85</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, vīriyārambho. Vīriyārambho, bhikkhave, mahato atthāya saṃvattatī’’ti. Pañcamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para86"></span><a name="para86"></a><a name="para86_an1"></a><span class="paranum">86</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, mahicchatā. Mahicchatā, bhikkhave, mahato anatthāya saṃvattatī’’ti. Chaṭṭhaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para87"></span><a name="para87"></a><a name="para87_an1"></a><span class="paranum">87</span>. ‘‘Nāhaṃ<a name="V1.0020"></a><a name="M1.0015"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, appicchatā. Appicchatā, bhikkhave, mahato atthāya saṃvattatī’’ti. Sattamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para88"></span><a name="para88"></a><a name="para88_an1"></a><span class="paranum">88</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, asantuṭṭhitā. Asantuṭṭhitā, bhikkhave, mahato anatthāya saṃvattatī’’ti. Aṭṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para89"></span><a name="para89"></a><a name="para89_an1"></a><span class="paranum">89</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, santuṭṭhitā. Santuṭṭhitā, bhikkhave, mahato atthāya saṃvattatī’’ti. Navamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para90"></span><a name="para90"></a><a name="para90_an1"></a><span class="paranum">90</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, ayoniso manasikāro. Ayonisomanasikāro<a name="T1.0020"></a>, bhikkhave, mahato anatthāya saṃvattatī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para91"></span><a name="para91"></a><a name="para91_an1"></a><span class="paranum">91</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, yoniso manasikāro. Yonisomanasikāro, bhikkhave, mahato atthāya saṃvattatī’’ti. Ekādasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para92"></span><a name="para92"></a><a name="para92_an1"></a><span class="paranum">92</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, asampajaññaṃ. Asampajaññaṃ, bhikkhave, mahato anatthāya saṃvattatī’’ti. Dvādasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para93"></span><a name="para93"></a><a name="para93_an1"></a><span class="paranum">93</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, sampajaññaṃ. Sampajaññaṃ, bhikkhave, mahato atthāya saṃvattatī’’ti. Terasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para94"></span><a name="para94"></a><a name="para94_an1"></a><span class="paranum">94</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati <a name="V1.0021"></a> yathayidaṃ, bhikkhave, pāpamittatā. Pāpamittatā, bhikkhave, mahato anatthāya saṃvattatī’’ti. Cuddasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para95"></span><a name="para95"></a><a name="para95_an1"></a><span class="paranum">95</span>. ‘‘Nāhaṃ<a name="M1.0016"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, kalyāṇamittatā. Kalyāṇamittatā, bhikkhave, mahato atthāya saṃvattatī’’ti. Pannarasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para96"></span><a name="para96"></a><a name="para96_an1"></a><span class="paranum">96</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, anuyogo akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ dhammānaṃ. Anuyogo, bhikkhave, akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ dhammānaṃ mahato anatthāya saṃvattatī’’ti. Soḷasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para97"></span><a name="para97"></a><a name="para97_an1"></a><span class="paranum">97</span>. ‘‘Nāhaṃ<a name="T1.0021"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, anuyogo kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ. Anuyogo, bhikkhave, kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ mahato atthāya saṃvattatī’’ti. Sattarasamaṃ.</p>
+
+
+
+<p class="centered">Pamādādivaggo navamo.</p>
+
+
+<a name="an1_10"></a>
+
+
+<p class="chapter">10. Dutiyapamādādivaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para98"></span><a name="para98"></a><a name="para98_an1"></a><span class="paranum">98</span>. ‘‘Ajjhattikaṃ<a name="V1.0022"></a>, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, pamādo. Pamādo, bhikkhave, mahato anatthāya saṃvattatī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para99"></span><a name="para99"></a><a name="para99_an1"></a><span class="paranum">99</span>. ‘‘Ajjhattikaṃ, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, appamādo. Appamādo<a name="P1.0017"></a>, bhikkhave, mahato atthāya saṃvattatī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para100"></span><a name="para100"></a><a name="para100_an1"></a><span class="paranum">100</span>. ‘‘Ajjhattikaṃ, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, kosajjaṃ. Kosajjaṃ, bhikkhave, mahato anatthāya saṃvattatī’’ti. Tatiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para101"></span><a name="para101"></a><a name="para101_an1"></a><span class="paranum">101</span>. ‘‘Ajjhattikaṃ, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, vīriyārambho. Vīriyārambho, bhikkhave, mahato atthāya saṃvattatī’’ti. Catutthaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para102-109"></span><a name="para102-109"></a><a name="para102-109_an1"></a><span class="paranum">102-109</span>. ‘‘Ajjhattikaṃ<a name="M1.0017"></a>, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, mahicchatā…pe… <a name="T1.0022"></a> appicchatā… asantuṭṭhitā… santuṭṭhitā… ayonisomanasikāro… yonisomanasikāro… asampajaññaṃ… sampajaññaṃ… dvādasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para110"></span><a name="para110"></a><a name="para110_an1"></a><span class="paranum">110</span>. ‘‘Bāhiraṃ<a name="V1.0023"></a>, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, pāpamittatā. Pāpamittatā, bhikkhave, mahato anatthāya saṃvattatī’’ti. Terasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para111"></span><a name="para111"></a><a name="para111_an1"></a><span class="paranum">111</span>. ‘‘Bāhiraṃ, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, kalyāṇamittatā. Kalyāṇamittatā, bhikkhave, mahato atthāya saṃvattatī’’ti. Cuddasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para112"></span><a name="para112"></a><a name="para112_an1"></a><span class="paranum">112</span>. ‘‘Ajjhattikaṃ<a name="T1.0023"></a>, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato anatthāya saṃvattati yathayidaṃ, bhikkhave, anuyogo akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ dhammānaṃ. Anuyogo, bhikkhave, akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ dhammānaṃ mahato anatthāya saṃvattatī’’ti. Pannarasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para113"></span><a name="para113"></a><a name="para113_an1"></a><span class="paranum">113</span>. ‘‘Ajjhattikaṃ, bhikkhave, aṅganti karitvā nāññaṃ ekaṅgampi samanupassāmi yaṃ evaṃ mahato atthāya saṃvattati yathayidaṃ, bhikkhave, anuyogo kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ. Anuyogo, bhikkhave, kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ mahato atthāya saṃvattatī’’ti. Soḷasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para114"></span><a name="para114"></a><a name="para114_an1"></a><span class="paranum">114</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ saddhammassa sammosāya antaradhānāya saṃvattati yathayidaṃ, bhikkhave, pamādo. Pamādo, bhikkhave, saddhammassa sammosāya antaradhānāya saṃvattatī’’ti. Sattarasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para115"></span><a name="para115"></a><a name="para115_an1"></a><span class="paranum">115</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ saddhammassa ṭhitiyā asammosāya anantaradhānāya saṃvattati yathayidaṃ, bhikkhave, appamādo. Appamādo<a name="P1.0018"></a>, bhikkhave, saddhammassa ṭhitiyā asammosāya anantaradhānāya saṃvattatī’’ti. Aṭṭhārasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para116"></span><a name="para116"></a><a name="para116_an1"></a><span class="paranum">116</span>. ‘‘Nāhaṃ<a name="M1.0018"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ <a name="T1.0024"></a> saddhammassa sammosāya <a name="V1.0024"></a> antaradhānāya saṃvattati yathayidaṃ, bhikkhave, kosajjaṃ. Kosajjaṃ, bhikkhave, saddhammassa sammosāya antaradhānāya saṃvattatī’’ti. Ekūnavīsatimaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para117"></span><a name="para117"></a><a name="para117_an1"></a><span class="paranum">117</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ saddhammassa ṭhitiyā asammosāya anantaradhānāya saṃvattati yathayidaṃ, bhikkhave, vīriyārambho. Vīriyārambho, bhikkhave, saddhammassa ṭhitiyā asammosāya anantaradhānāya saṃvattatī’’ti. Vīsatimaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para118-128"></span><a name="para118-128"></a><a name="para118-128_an1"></a><span class="paranum">118-128</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ saddhammassa sammosāya antaradhānāya saṃvattati yathayidaṃ, bhikkhave, mahicchatā…pe… appicchatā… asantuṭṭhitā… santuṭṭhitā… ayonisomanasikāro… yonisomanasikāro… asampajaññaṃ… sampajaññaṃ <a name="T1.0025"></a>… pāpamittatā… kalyāṇamittatā… anuyogo akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ dhammānaṃ. Anuyogo, bhikkhave, akusalānaṃ dhammānaṃ, ananuyogo kusalānaṃ dhammānaṃ saddhammassa sammosāya antaradhānāya saṃvattatī’’ti. Ekattiṃsatimaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para129"></span><a name="para129"></a><a name="para129_an1"></a><span class="paranum">129</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yo evaṃ saddhammassa ṭhitiyā asammosāya anantaradhānāya saṃvattati yathayidaṃ, bhikkhave, anuyogo kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ. Anuyogo, bhikkhave, kusalānaṃ dhammānaṃ, ananuyogo akusalānaṃ dhammānaṃ saddhammassa ṭhitiyā asammosāya anantaradhānāya saṃvattatī’’ti. Catukkoṭikaṃ niṭṭhitaṃ. Bāttiṃsatimaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para130"></span><a name="para130"></a><a name="para130_an1"></a><span class="paranum">130</span>. ‘‘Ye te, bhikkhave, bhikkhū adhammaṃ dhammoti dīpenti te, bhikkhave, bhikkhū bahujanaahitāya paṭipannā bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussānaṃ<a name="V1.0025"></a>. Bahuñca te, bhikkhave, bhikkhū apuññaṃ pasavanti, te cimaṃ <span class="note">[tepimaṃ (sī.)]</span> saddhammaṃ antaradhāpentī’’ti. Tettiṃsatimaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para131"></span><a name="para131"></a><a name="para131_an1"></a><span class="paranum">131</span>. ‘‘Ye te, bhikkhave, bhikkhū dhammaṃ adhammoti dīpenti te, bhikkhave, bhikkhū bahujanaahitāya paṭipannā bahujanaasukhāya, bahuno janassa anatthāya <a name="M1.0019"></a> ahitāya dukkhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū apuññaṃ pasavanti, te cimaṃ saddhammaṃ antaradhāpentī’’ti. Catuttiṃsatimaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para132-139"></span><a name="para132-139"></a><a name="para132-139_an1"></a><span class="paranum">132-139</span>. ‘‘Ye te, bhikkhave, bhikkhū avinayaṃ <a name="T1.0026"></a> vinayoti dīpenti…pe… vinayaṃ avinayoti dīpenti…pe… abhāsitaṃ alapitaṃ tathāgatena bhāsitaṃ <a name="P1.0019"></a> lapitaṃ tathāgatenāti dīpenti…pe… bhāsitaṃ lapitaṃ tathāgatena abhāsitaṃ alapitaṃ tathāgatenāti dīpenti…pe… anāciṇṇaṃ tathāgatena āciṇṇaṃ tathāgatenāti dīpenti…pe… āciṇṇaṃ tathāgatena anāciṇṇaṃ tathāgatenāti dīpenti…pe… apaññattaṃ tathāgatena paññattaṃ tathāgatenāti dīpenti…pe… paññattaṃ tathāgatena apaññattaṃ tathāgatenāti dīpenti te, bhikkhave, bhikkhū bahujanaahitāya paṭipannā bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū apuññaṃ pasavanti, te cimaṃ saddhammaṃ antaradhāpentī’’ti. Dvācattālīsatimaṃ.</p>
+
+
+
+<p class="centered">Dutiyapamādādivaggo dasamo.</p>
+
+
+<a name="an1_11"></a>
+
+
+<p class="chapter">11. Adhammavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para140"></span><a name="para140"></a><a name="para140_an1"></a><span class="paranum">140</span>. ‘‘Ye <a name="V1.0026"></a> te, bhikkhave, bhikkhū adhammaṃ adhammoti dīpenti te, bhikkhave, bhikkhū bahujanahitāya paṭipannā bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū puññaṃ pasavanti, te cimaṃ saddhammaṃ ṭhapentī’’ti <span class="note">[thapentīti (ka.)]</span>. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para141"></span><a name="para141"></a><a name="para141_an1"></a><span class="paranum">141</span>. ‘‘Ye te, bhikkhave, bhikkhū dhammaṃ dhammoti dīpenti te, bhikkhave, bhikkhū bahujanahitāya paṭipannā bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū puññaṃ pasavanti, te cimaṃ saddhammaṃ ṭhapentī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para142-149"></span><a name="para142-149"></a><a name="para142-149_an1"></a><span class="paranum">142-149</span>. ‘‘Ye te, bhikkhave, bhikkhū avinayaṃ avinayoti dīpenti…pe… vinayaṃ vinayoti dīpenti…pe… abhāsitaṃ alapitaṃ tathāgatena abhāsitaṃ alapitaṃ tathāgatenāti dīpenti…pe… bhāsitaṃ <a name="M1.0020"></a> lapitaṃ tathāgatena bhāsitaṃ lapitaṃ tathāgatenāti dīpenti…pe… anāciṇṇaṃ <a name="P1.0020"></a> tathāgatena anāciṇṇaṃ tathāgatenāti dīpenti…pe… āciṇṇaṃ tathāgatena āciṇṇaṃ tathāgatenāti dīpenti…pe… <a name="T1.0027"></a> apaññattaṃ tathāgatena apaññattaṃ tathāgatenāti dīpenti…pe… paññattaṃ tathāgatena paññattaṃ tathāgatenāti dīpenti te, bhikkhave, bhikkhū bahujanahitāya paṭipannā bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū puññaṃ pasavanti, te cimaṃ saddhammaṃ ṭhapentī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="centered">Adhammavaggo ekādasamo.</p>
+
+
+<a name="an1_12"></a>
+
+
+<p class="chapter">12. Anāpattivaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para150"></span><a name="para150"></a><a name="para150_an1"></a><span class="paranum">150</span>. ‘‘Ye <a name="V1.0027"></a> te, bhikkhave, bhikkhū anāpattiṃ āpattīti dīpenti te, bhikkhave, bhikkhū bahujanaahitāya paṭipannā bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū apuññaṃ pasavanti, te cimaṃ saddhammaṃ antaradhāpentī’’ti. Paṭhamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para151"></span><a name="para151"></a><a name="para151_an1"></a><span class="paranum">151</span>. ‘‘Ye te, bhikkhave, bhikkhū āpattiṃ anāpattīti dīpenti te, bhikkhave, bhikkhū bahujanaahitāya paṭipannā bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū apuññaṃ pasavanti, te cimaṃ saddhammaṃ antaradhāpentī’’ti. Dutiyaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para152-159"></span><a name="para152-159"></a><a name="para152-159_an1"></a><span class="paranum">152-159</span>. ‘‘Ye te, bhikkhave, bhikkhū lahukaṃ āpattiṃ garukā āpattīti dīpenti…pe… garukaṃ āpattiṃ lahukā āpattīti dīpenti…pe… duṭṭhullaṃ āpattiṃ aduṭṭhullā āpattīti dīpenti…pe… aduṭṭhullaṃ āpattiṃ duṭṭhullā āpattīti dīpenti…pe… sāvasesaṃ āpattiṃ anavasesā āpattīti dīpenti…pe… anavasesaṃ <a name="P1.0021"></a> āpattiṃ sāvasesā āpattīti dīpenti…pe… sappaṭikammaṃ āpattiṃ appaṭikammā āpattīti dīpenti…pe… appaṭikammaṃ āpattiṃ sappaṭikammā āpattīti dīpenti te, bhikkhave, bhikkhū bahujanaahitāya paṭipannā bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussānaṃ. Bahuñca <a name="M1.0021"></a> te, bhikkhave, bhikkhū apuññaṃ pasavanti, te cimaṃ saddhammaṃ antaradhāpentī’’ti. Dasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para160"></span><a name="para160"></a><a name="para160_an1"></a><span class="paranum">160</span>. ‘‘Ye te, bhikkhave, bhikkhū anāpattiṃ anāpattīti dīpenti te, bhikkhave, bhikkhū bahujanahitāya paṭipannā bahujanasukhāya, bahuno janassa atthāya <a name="T1.0028"></a> hitāya sukhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū puññaṃ pasavanti, te cimaṃ saddhammaṃ ṭhapentī’’ti. Ekādasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para161"></span><a name="para161"></a><a name="para161_an1"></a><span class="paranum">161</span>. ‘‘Ye <a name="V1.0028"></a> te, bhikkhave, bhikkhū āpattiṃ āpattīti dīpenti te, bhikkhave, bhikkhū bahujanahitāya paṭipannā bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū puññaṃ pasavanti, te cimaṃ saddhammaṃ ṭhapentī’’ti. Dvādasamaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para162-169"></span><a name="para162-169"></a><a name="para162-169_an1"></a><span class="paranum">162-169</span>. ‘‘Ye te, bhikkhave, bhikkhū lahukaṃ āpattiṃ lahukā āpattīti dīpenti… garukaṃ āpattiṃ garukā āpattīti dīpenti… duṭṭhullaṃ āpattiṃ duṭṭhullā āpattīti dīpenti… aduṭṭhullaṃ āpattiṃ aduṭṭhullā āpattīti dīpenti… sāvasesaṃ āpattiṃ sāvasesā āpattīti dīpenti… anavasesaṃ āpattiṃ anavasesā āpattīti dīpenti… sappaṭikammaṃ āpattiṃ sappaṭikammā āpattīti dīpenti… appaṭikammaṃ āpattiṃ appaṭikammā āpattīti dīpenti te, bhikkhave, bhikkhū bahujanahitāya paṭipannā bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussānaṃ. Bahuñca te, bhikkhave, bhikkhū puññaṃ pasavanti, te cimaṃ saddhammaṃ ṭhapentī’’ti. Vīsatimaṃ.</p>
+
+
+
+<p class="centered">Anāpattivaggo dvādasamo.</p>
+
+
+<a name="an1_13"></a>
+
+
+<p class="chapter">13. Ekapuggalavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para170"></span><a name="para170"></a><a name="para170_an1"></a><span class="paranum">170</span>. ‘‘Ekapuggalo<a name="V1.0029"></a><a name="P1.0022"></a>, bhikkhave, loke uppajjamāno uppajjati bahujanahitāya bahujanasukhāya lokānukampāya atthāya hitāya sukhāya devamanussānaṃ<a name="T1.0029"></a>. Katamo ekapuggalo? Tathāgato arahaṃ sammāsambuddho. Ayaṃ kho, bhikkhave, ekapuggalo loke uppajjamāno uppajjati bahujanahitāya <a name="M1.0022"></a> bahujanasukhāya lokānukampāya atthāya hitāya sukhāya devamanussāna’’nti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para171"></span><a name="para171"></a><a name="para171_an1"></a><span class="paranum">171</span>. ‘‘Ekapuggalassa, bhikkhave, pātubhāvo dullabho lokasmiṃ. Katamassa ekapuggalassa? Tathāgatassa arahato sammāsambuddhassa. Imassa kho, bhikkhave, ekapuggalassa pātubhāvo dullabho lokasmi’’nti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para172"></span><a name="para172"></a><a name="para172_an1"></a><span class="paranum">172</span>. ‘‘Ekapuggalo, bhikkhave, loke uppajjamāno uppajjati acchariyamanusso. Katamo ekapuggalo? Tathāgato arahaṃ sammāsambuddho. Ayaṃ kho, bhikkhave, ekapuggalo loke uppajjamāno uppajjati acchariyamanusso’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para173"></span><a name="para173"></a><a name="para173_an1"></a><span class="paranum">173</span>. ‘‘Ekapuggalassa, bhikkhave, kālakiriyā bahuno janassa anutappā <span class="note">[ānutappā (sī.)]</span> hoti. Katamassa ekapuggalassa? Tathāgatassa arahato sammāsambuddhassa. Imassa kho, bhikkhave, ekapuggalassa kālakiriyā bahuno janassa anutappā hotī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para174"></span><a name="para174"></a><a name="para174_an1"></a><span class="paranum">174</span>. ‘‘Ekapuggalo, bhikkhave, loke uppajjamāno uppajjati adutiyo asahāyo appaṭimo appaṭisamo appaṭibhāgo appaṭipuggalo asamo asamasamo dvipadānaṃ aggo. Katamo ekapuggalo? Tathāgato arahaṃ sammāsambuddho. Ayaṃ kho, bhikkhave, ekapuggalo loke uppajjamāno uppajjati adutiyo asahāyo appaṭimo appaṭisamo appaṭibhāgo appaṭipuggalo asamo asamasamo dvipadānaṃ aggo’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para175-186"></span><a name="para175-186"></a><a name="para175-186_an1"></a><span class="paranum">175-186</span>. ‘‘Ekapuggalassa<a name="T1.0030"></a><a name="V1.0030"></a>, bhikkhave, pātubhāvā mahato cakkhussa pātubhāvo hoti, mahato ālokassa pātubhāvo hoti, mahato obhāsassa pātubhāvo hoti, channaṃ anuttariyānaṃ pātubhāvo hoti, catunnaṃ paṭisambhidānaṃ sacchikiriyā hoti, anekadhātupaṭivedho hoti, nānādhātupaṭivedho hoti, vijjāvimuttiphalasacchikiriyā <a name="P1.0023"></a> hoti, sotāpattiphalasacchikiriyā hoti, sakadāgāmiphalasacchikiriyā hoti, anāgāmiphalasacchikiriyā hoti, arahattaphalasacchikiriyā <a name="M1.0023"></a> hoti. Katamassa ekapuggalassa? Tathāgatassa arahato sammāsambuddhassa. Imassa kho, bhikkhave, ekapuggalassa pātubhāvā mahato cakkhussa pātubhāvo hoti, mahato ālokassa pātubhāvo hoti, mahato obhāsassa pātubhāvo hoti, channaṃ anuttariyānaṃ pātubhāvo hoti, catunnaṃ paṭisambhidānaṃ sacchikiriyā hoti, anekadhātupaṭivedho hoti, nānādhātupaṭivedho hoti, vijjāvimuttiphalasacchikiriyā hoti, sotāpattiphalasacchikiriyā hoti, sakadāgāmiphalasacchikiriyā hoti, anāgāmiphalasacchikiriyā hoti, arahattaphalasacchikiriyā hotī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para187"></span><a name="para187"></a><a name="para187_an1"></a><span class="paranum">187</span>. ‘‘Nāhaṃ bhikkhave, aññaṃ ekapuggalampi samanupassāmi yo evaṃ tathāgatena anuttaraṃ dhammacakkaṃ pavattitaṃ sammadeva anuppavatteti yathayidaṃ, bhikkhave, sāriputto. Sāriputto, bhikkhave, tathāgatena anuttaraṃ dhammacakkaṃ pavattitaṃ sammadeva anuppavattetī’’ti.</p>
+
+
+
+<p class="centered">Ekapuggalavaggo terasamo.</p>
+
+
+<a name="an1_14"></a>
+
+
+<p class="chapter">14. Etadaggavaggo</p>
+
+
+
+<p class="subhead">1. Paṭhamavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para188"></span><a name="para188"></a><a name="para188_an1"></a><span class="paranum">188</span>. ‘‘Etadaggaṃ<a name="V1.0031"></a><a name="T1.0031"></a>, bhikkhave, mama sāvakānaṃ bhikkhūnaṃ rattaññūnaṃ yadidaṃ aññāsikoṇḍañño’’ <span class="note">[aññātakoṇḍaññoti (ka.), aññākoṇḍañño (sī. syā. kaṃ. pī.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para189"></span><a name="para189"></a><a name="para189_an1"></a><span class="paranum">189</span>. … Mahāpaññānaṃ yadidaṃ sāriputto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para190"></span><a name="para190"></a><a name="para190_an1"></a><span class="paranum">190</span>. … Iddhimantānaṃ yadidaṃ mahāmoggallāno.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para191"></span><a name="para191"></a><a name="para191_an1"></a><span class="paranum">191</span>. … Dhutavādānaṃ <span class="note">[dhutaṅgadharānaṃ (katthaci)]</span> yadidaṃ mahākassapo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para192"></span><a name="para192"></a><a name="para192_an1"></a><span class="paranum">192</span>. … Dibbacakkhukānaṃ yadidaṃ anuruddho.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para193"></span><a name="para193"></a><a name="para193_an1"></a><span class="paranum">193</span>. … Uccākulikānaṃ yadidaṃ bhaddiyo kāḷigodhāyaputto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para194"></span><a name="para194"></a><a name="para194_an1"></a><span class="paranum">194</span>. … Mañjussarānaṃ yadidaṃ lakuṇḍaka <span class="note">[lakuṇṭaka (syā. kaṃ.)]</span> bhaddiyo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para195"></span><a name="para195"></a><a name="para195_an1"></a><span class="paranum">195</span>. … Sīhanādikānaṃ <a name="M1.0024"></a> yadidaṃ piṇḍolabhāradvājo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para196"></span><a name="para196"></a><a name="para196_an1"></a><span class="paranum">196</span>. … Dhammakathikānaṃ yadidaṃ puṇṇo mantāṇiputto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para197"></span><a name="para197"></a><a name="para197_an1"></a><span class="paranum">197</span>. … Saṃkhittena bhāsitassa vitthārena atthaṃ vibhajantānaṃ yadidaṃ mahākaccānoti.</p>
+
+
+
+<p class="centered">Vaggo paṭhamo.</p>
+
+
+
+<p class="subhead">2. Dutiyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para198"></span><a name="para198"></a><a name="para198_an1"></a><span class="paranum">198</span>. ‘‘Etadaggaṃ<a name="V1.0032"></a><a name="P1.0024"></a>, bhikkhave, mama sāvakānaṃ bhikkhūnaṃ manomayaṃ kāyaṃ abhinimminantānaṃ yadidaṃ cūḷapanthako’’ <span class="note">[cullapanthako (sī. syā. kaṃ. pī.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para199"></span><a name="para199"></a><a name="para199_an1"></a><span class="paranum">199</span>. … Cetovivaṭṭakusalānaṃ yadidaṃ cūḷapanthako.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para200"></span><a name="para200"></a><a name="para200_an1"></a><span class="paranum">200</span>. … Saññāvivaṭṭakusalānaṃ yadidaṃ mahāpanthako.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para201"></span><a name="para201"></a><a name="para201_an1"></a><span class="paranum">201</span>. … Araṇavihārīnaṃ yadidaṃ subhūti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para202"></span><a name="para202"></a><a name="para202_an1"></a><span class="paranum">202</span>. … Dakkhiṇeyyānaṃ yadidaṃ subhūti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para203"></span><a name="para203"></a><a name="para203_an1"></a><span class="paranum">203</span>. … Āraññakānaṃ yadidaṃ revato khadiravaniyo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para204"></span><a name="para204"></a><a name="para204_an1"></a><span class="paranum">204</span>. … Jhāyīnaṃ yadidaṃ kaṅkhārevato.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para205"></span><a name="para205"></a><a name="para205_an1"></a><span class="paranum">205</span>. … Āraddhavīriyānaṃ yadidaṃ soṇo koḷiviso.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para206"></span><a name="para206"></a><a name="para206_an1"></a><span class="paranum">206</span>. … Kalyāṇavākkaraṇānaṃ yadidaṃ soṇo kuṭikaṇṇo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para207"></span><a name="para207"></a><a name="para207_an1"></a><span class="paranum">207</span>. … Lābhīnaṃ yadidaṃ sīvali.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para208"></span><a name="para208"></a><a name="para208_an1"></a><span class="paranum">208</span>. … Saddhādhimuttānaṃ yadidaṃ vakkalīti.</p>
+
+
+
+<p class="centered">Vaggo dutiyo.</p>
+
+
+
+<p class="subhead">3. Tatiyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para209"></span><a name="para209"></a><a name="para209_an1"></a><span class="paranum">209</span>. ‘‘Etadaggaṃ<a name="V1.0033"></a>, bhikkhave, mama sāvakānaṃ bhikkhūnaṃ sikkhākāmānaṃ yadidaṃ <a name="T1.0032"></a> rāhulo’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para210"></span><a name="para210"></a><a name="para210_an1"></a><span class="paranum">210</span>. … Saddhāpabbajitānaṃ <a name="M1.0025"></a> yadidaṃ raṭṭhapālo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para211"></span><a name="para211"></a><a name="para211_an1"></a><span class="paranum">211</span>. … Paṭhamaṃ salākaṃ gaṇhantānaṃ yadidaṃ kuṇḍadhāno.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para212"></span><a name="para212"></a><a name="para212_an1"></a><span class="paranum">212</span>. … Paṭibhānavantānaṃ yadidaṃ vaṅgīso.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para213"></span><a name="para213"></a><a name="para213_an1"></a><span class="paranum">213</span>. … Samantapāsādikānaṃ yadidaṃ upaseno vaṅgantaputto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para214"></span><a name="para214"></a><a name="para214_an1"></a><span class="paranum">214</span>. … Senāsanapaññāpakānaṃ yadidaṃ dabbo mallaputto.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para215"></span><a name="para215"></a><a name="para215_an1"></a><span class="paranum">215</span>. … Devatānaṃ piyamanāpānaṃ yadidaṃ pilindavaccho.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para216"></span><a name="para216"></a><a name="para216_an1"></a><span class="paranum">216</span>. … Khippābhiññānaṃ yadidaṃ bāhiyo dārucīriyo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para217"></span><a name="para217"></a><a name="para217_an1"></a><span class="paranum">217</span>. … Cittakathikānaṃ yadidaṃ kumārakassapo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para218"></span><a name="para218"></a><a name="para218_an1"></a><span class="paranum">218</span>. … Paṭisambhidāpattānaṃ yadidaṃ mahākoṭṭhitoti <span class="note">[mahākoṭṭhikoti (aññesu suttesu marammapotthake)]</span>.</p>
+
+
+
+<p class="centered">Vaggo tatiyo.</p>
+
+
+
+<p class="subhead">4. Catutthavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para219"></span><a name="para219"></a><a name="para219_an1"></a><span class="paranum">219</span>. ‘‘Etadaggaṃ, bhikkhave, mama sāvakānaṃ bhikkhūnaṃ bahussutānaṃ yadidaṃ ānando’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para220"></span><a name="para220"></a><a name="para220_an1"></a><span class="paranum">220</span>. … Satimantānaṃ <a name="V1.0034"></a> yadidaṃ ānando.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para221"></span><a name="para221"></a><a name="para221_an1"></a><span class="paranum">221</span>. … Gatimantānaṃ <a name="P1.0025"></a> yadidaṃ ānando.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para222"></span><a name="para222"></a><a name="para222_an1"></a><span class="paranum">222</span>. … Dhitimantānaṃ yadidaṃ ānando.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para223"></span><a name="para223"></a><a name="para223_an1"></a><span class="paranum">223</span>. … Upaṭṭhākānaṃ yadidaṃ ānando.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para224"></span><a name="para224"></a><a name="para224_an1"></a><span class="paranum">224</span>. … Mahāparisānaṃ yadidaṃ uruvelakassapo.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para225"></span><a name="para225"></a><a name="para225_an1"></a><span class="paranum">225</span>. … Kulappasādakānaṃ yadidaṃ kāḷudāyī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para226"></span><a name="para226"></a><a name="para226_an1"></a><span class="paranum">226</span>. … Appābādhānaṃ yadidaṃ bākulo <span class="note">[bakkulo (sī. syā. kaṃ. pī.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para227"></span><a name="para227"></a><a name="para227_an1"></a><span class="paranum">227</span>. … Pubbenivāsaṃ anussarantānaṃ yadidaṃ sobhito.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para228"></span><a name="para228"></a><a name="para228_an1"></a><span class="paranum">228</span>. … Vinayadharānaṃ yadidaṃ upāli.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para229"></span><a name="para229"></a><a name="para229_an1"></a><span class="paranum">229</span>. … Bhikkhunovādakānaṃ <a name="M1.0026"></a> yadidaṃ nandako.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para230"></span><a name="para230"></a><a name="para230_an1"></a><span class="paranum">230</span>. … Indriyesu guttadvārānaṃ yadidaṃ nando.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para231"></span><a name="para231"></a><a name="para231_an1"></a><span class="paranum">231</span>. … Bhikkhuovādakānaṃ yadidaṃ mahākappino.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para232"></span><a name="para232"></a><a name="para232_an1"></a><span class="paranum">232</span>. … Tejodhātukusalānaṃ yadidaṃ sāgato.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para233"></span><a name="para233"></a><a name="para233_an1"></a><span class="paranum">233</span>. … Paṭibhāneyyakānaṃ yadidaṃ rādho.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para234"></span><a name="para234"></a><a name="para234_an1"></a><span class="paranum">234</span>. … Lūkhacīvaradharānaṃ <a name="V1.0035"></a> yadidaṃ mogharājāti.</p>
+
+
+
+<p class="centered">Vaggo catuttho.</p>
+
+
+
+<p class="subhead">5. Pañcamavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para235"></span><a name="para235"></a><a name="para235_an1"></a><span class="paranum">235</span>. ‘‘Etadaggaṃ<a name="T1.0033"></a>, bhikkhave, mama sāvikānaṃ bhikkhunīnaṃ rattaññūnaṃ yadidaṃ mahāpajāpatigotamī’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para236"></span><a name="para236"></a><a name="para236_an1"></a><span class="paranum">236</span>. … Mahāpaññānaṃ yadidaṃ khemā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para237"></span><a name="para237"></a><a name="para237_an1"></a><span class="paranum">237</span>. … Iddhimantīnaṃ yadidaṃ uppalavaṇṇā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para238"></span><a name="para238"></a><a name="para238_an1"></a><span class="paranum">238</span>. … Vinayadharānaṃ yadidaṃ paṭācārā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para239"></span><a name="para239"></a><a name="para239_an1"></a><span class="paranum">239</span>. … Dhammakathikānaṃ yadidaṃ dhammadinnā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para240"></span><a name="para240"></a><a name="para240_an1"></a><span class="paranum">240</span>. … Jhāyīnaṃ yadidaṃ nandā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para241"></span><a name="para241"></a><a name="para241_an1"></a><span class="paranum">241</span>. … Āraddhavīriyānaṃ yadidaṃ soṇā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para242"></span><a name="para242"></a><a name="para242_an1"></a><span class="paranum">242</span>. … Dibbacakkhukānaṃ yadidaṃ bakulā <span class="note">[sakulā (sī. syā. kaṃ. pī.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para243"></span><a name="para243"></a><a name="para243_an1"></a><span class="paranum">243</span>. … Khippābhiññānaṃ yadidaṃ bhaddā kuṇḍalakesā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para244"></span><a name="para244"></a><a name="para244_an1"></a><span class="paranum">244</span>. … Pubbenivāsaṃ anussarantīnaṃ yadidaṃ bhaddā kāpilānī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para245"></span><a name="para245"></a><a name="para245_an1"></a><span class="paranum">245</span>. … Mahābhiññappattānaṃ yadidaṃ bhaddakaccānā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para246"></span><a name="para246"></a><a name="para246_an1"></a><span class="paranum">246</span>. … Lūkhacīvaradharānaṃ yadidaṃ kisāgotamī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para247"></span><a name="para247"></a><a name="para247_an1"></a><span class="paranum">247</span>. … Saddhādhimuttānaṃ <a name="V1.0036"></a> yadidaṃ siṅgālakamātāti <span class="note">[sigālamātāti (sī. syā. kaṃ. pī.)]</span>.</p>
+
+
+
+<p class="centered">Vaggo pañcamo.</p>
+
+
+
+<p class="subhead">6. Chaṭṭhavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para248"></span><a name="para248"></a><a name="para248_an1"></a><span class="paranum">248</span>. ‘‘Etadaggaṃ<a name="M1.0027"></a>, bhikkhave, mama sāvakānaṃ upāsakānaṃ paṭhamaṃ saraṇaṃ gacchantānaṃ yadidaṃ <a name="P1.0026"></a> tapussabhallikā <span class="note">[tapassubhallikā (sī. pī.)]</span> vāṇijā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para249"></span><a name="para249"></a><a name="para249_an1"></a><span class="paranum">249</span>. … Dāyakānaṃ yadidaṃ sudatto gahapati anāthapiṇḍiko.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para250"></span><a name="para250"></a><a name="para250_an1"></a><span class="paranum">250</span>. … Dhammakathikānaṃ yadidaṃ citto gahapati macchikāsaṇḍiko.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para251"></span><a name="para251"></a><a name="para251_an1"></a><span class="paranum">251</span>. … Catūhi saṅgahavatthūhi parisaṃ saṅgaṇhantānaṃ yadidaṃ hatthako āḷavako.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para252"></span><a name="para252"></a><a name="para252_an1"></a><span class="paranum">252</span>. … Paṇītadāyakānaṃ yadidaṃ mahānāmo sakko.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para253"></span><a name="para253"></a><a name="para253_an1"></a><span class="paranum">253</span>. … Manāpadāyakānaṃ yadidaṃ uggo gahapati vesāliko.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para254"></span><a name="para254"></a><a name="para254_an1"></a><span class="paranum">254</span>. … Saṅghupaṭṭhākānaṃ yadidaṃ hatthigāmako uggato gahapati.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para255"></span><a name="para255"></a><a name="para255_an1"></a><span class="paranum">255</span>. … Aveccappasannānaṃ yadidaṃ sūrambaṭṭho <span class="note">[sūro ambaṭṭho (sī. syā. kaṃ. pī.) surebandho (ka.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para256"></span><a name="para256"></a><a name="para256_an1"></a><span class="paranum">256</span>. … Puggalappasannānaṃ yadidaṃ jīvako komārabhacco.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para257"></span><a name="para257"></a><a name="para257_an1"></a><span class="paranum">257</span>. … Vissāsakānaṃ <a name="V1.0037"></a> yadidaṃ nakulapitā gahapatīti.</p>
+
+
+
+<p class="centered">Vaggo chaṭṭho.</p>
+
+
+
+<p class="subhead">7. Sattamavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para258"></span><a name="para258"></a><a name="para258_an1"></a><span class="paranum">258</span>. ‘‘Etadaggaṃ<a name="T1.0034"></a>, bhikkhave, mama sāvikānaṃ upāsikānaṃ paṭhamaṃ saraṇaṃ gacchantīnaṃ yadidaṃ sujātā seniyadhītā’’ <span class="note">[senānī dhītā (sī. syā. kaṃ. pī.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para259"></span><a name="para259"></a><a name="para259_an1"></a><span class="paranum">259</span>. … Dāyikānaṃ yadidaṃ visākhā migāramātā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para260"></span><a name="para260"></a><a name="para260_an1"></a><span class="paranum">260</span>. … Bahussutānaṃ yadidaṃ khujjuttarā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para261"></span><a name="para261"></a><a name="para261_an1"></a><span class="paranum">261</span>. … Mettāvihārīnaṃ yadidaṃ sāmāvatī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para262"></span><a name="para262"></a><a name="para262_an1"></a><span class="paranum">262</span>. … Jhāyīnaṃ yadidaṃ uttarānandamātā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para263"></span><a name="para263"></a><a name="para263_an1"></a><span class="paranum">263</span>. … Paṇītadāyikānaṃ yadidaṃ suppavāsā koliyadhītā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para264"></span><a name="para264"></a><a name="para264_an1"></a><span class="paranum">264</span>. … Gilānupaṭṭhākīnaṃ <a name="M1.0028"></a> yadidaṃ suppiyā upāsikā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para265"></span><a name="para265"></a><a name="para265_an1"></a><span class="paranum">265</span>. … Aveccappasannānaṃ yadidaṃ kātiyānī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para266"></span><a name="para266"></a><a name="para266_an1"></a><span class="paranum">266</span>. … Vissāsikānaṃ yadidaṃ nakulamātā gahapatānī.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para267"></span><a name="para267"></a><a name="para267_an1"></a><span class="paranum">267</span>. … Anussavappasannānaṃ yadidaṃ kāḷī upāsikā kulagharikā <span class="note">[kulagharikā (ka.)]</span> ti.</p>
+
+
+
+<p class="centered">Vaggo sattamo.</p>
+
+
+
+<p class="centered">Etadaggavaggo cuddasamo.</p>
+
+
+<a name="an1_15"></a>
+
+
+<p class="chapter">15. Aṭṭhānapāḷi</p>
+
+
+
+<p class="subhead">1. Paṭhamavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para268"></span><a name="para268"></a><a name="para268_an1"></a><span class="paranum">268</span>. ‘‘Aṭṭhānametaṃ<a name="V1.0038"></a>, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo kañci <span class="note">[kiñci (ka.)]</span> saṅkhāraṃ niccato upagaccheyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati <a name="P1.0027"></a> yaṃ puthujjano kañci saṅkhāraṃ niccato upagaccheyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para269"></span><a name="para269"></a><a name="para269_an1"></a><span class="paranum">269</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo kañci saṅkhāraṃ sukhato upagaccheyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano kañci saṅkhāraṃ sukhato upagaccheyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para270"></span><a name="para270"></a><a name="para270_an1"></a><span class="paranum">270</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo <a name="T1.0035"></a> kañci dhammaṃ attato upagaccheyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano kañci dhammaṃ attato upagaccheyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para271"></span><a name="para271"></a><a name="para271_an1"></a><span class="paranum">271</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo mātaraṃ jīvitā voropeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho, bhikkhave, vijjati yaṃ puthujjano mātaraṃ jīvitā voropeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para272"></span><a name="para272"></a><a name="para272_an1"></a><span class="paranum">272</span>. ‘‘Aṭṭhānametaṃ<a name="M1.0029"></a>, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo pitaraṃ jīvitā voropeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano pitaraṃ jīvitā voropeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para273"></span><a name="para273"></a><a name="para273_an1"></a><span class="paranum">273</span>. ‘‘Aṭṭhānametaṃ<a name="V1.0039"></a>, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo arahantaṃ jīvitā voropeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano arahantaṃ jīvitā voropeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para274"></span><a name="para274"></a><a name="para274_an1"></a><span class="paranum">274</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo tathāgatassa paduṭṭhacitto lohitaṃ uppādeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano tathāgatassa paduṭṭhacitto lohitaṃ uppādeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para275"></span><a name="para275"></a><a name="para275_an1"></a><span class="paranum">275</span>. ‘‘Aṭṭhānametaṃ<a name="T1.0036"></a>, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo saṅghaṃ bhindeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano saṅghaṃ bhindeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para276"></span><a name="para276"></a><a name="para276_an1"></a><span class="paranum">276</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ diṭṭhisampanno puggalo aññaṃ satthāraṃ uddiseyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puthujjano aññaṃ satthāraṃ uddiseyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para277"></span><a name="para277"></a><a name="para277_an1"></a><span class="paranum">277</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ ekissā lokadhātuyā dve arahanto sammāsambuddhā apubbaṃ acarimaṃ <a name="P1.0028"></a> uppajjeyyuṃ. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ ekissā lokadhātuyā ekova arahaṃ sammāsambuddho uppajjeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="centered">Vaggo paṭhamo.</p>
+
+
+
+<p class="subhead">2. Dutiyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para278"></span><a name="para278"></a><a name="para278_an1"></a><span class="paranum">278</span>. ‘‘Aṭṭhānametaṃ<a name="V1.0040"></a>, bhikkhave, anavakāso yaṃ ekissā lokadhātuyā dve rājāno cakkavattī apubbaṃ acarimaṃ uppajjeyyuṃ. Netaṃ ṭhānaṃ vijjati<a name="M1.0030"></a>. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ ekissā lokadhātuyā eko rājā cakkavattī uppajjeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para279"></span><a name="para279"></a><a name="para279_an1"></a><span class="paranum">279</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ itthī arahaṃ assa sammāsambuddho. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho, etaṃ, bhikkhave, vijjati yaṃ puriso arahaṃ assa sammāsambuddho. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para280"></span><a name="para280"></a><a name="para280_an1"></a><span class="paranum">280</span>. ‘‘Aṭṭhānametaṃ<a name="T1.0037"></a>, bhikkhave, anavakāso yaṃ itthī rājā assa cakkavattī. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puriso rājā assa cakkavattī. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para281-283"></span><a name="para281-283"></a><a name="para281-283_an1"></a><span class="paranum">281-283</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ itthī sakkattaṃ kāreyya…pe… mārattaṃ kāreyya…pe… brahmattaṃ kāreyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ puriso sakkattaṃ kāreyya…pe… mārattaṃ kāreyya…pe… brahmattaṃ kāreyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para284"></span><a name="para284"></a><a name="para284_an1"></a><span class="paranum">284</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ kāyaduccaritassa iṭṭho kanto manāpo vipāko nibbatteyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ kāyaduccaritassa aniṭṭho akanto amanāpo vipāko nibbatteyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para285-286"></span><a name="para285-286"></a><a name="para285-286_an1"></a><span class="paranum">285-286</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ vacīduccaritassa…pe… yaṃ manoduccaritassa iṭṭho kanto manāpo vipāko nibbatteyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ manoduccaritassa aniṭṭho akanto amanāpo vipāko nibbatteyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="centered">Vaggo dutiyo.</p>
+
+
+
+<p class="subhead">3. Tatiyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para287"></span><a name="para287"></a><a name="para287_an1"></a><span class="paranum">287</span>. ‘‘Aṭṭhānametaṃ<a name="V1.0041"></a>, bhikkhave, anavakāso yaṃ kāyasucaritassa aniṭṭho akanto amanāpo vipāko nibbatteyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca <a name="T1.0038"></a><a name="M1.0031"></a> kho etaṃ, bhikkhave, vijjati yaṃ kāyasucaritassa iṭṭho kanto manāpo vipāko nibbatteyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para288-289"></span><a name="para288-289"></a><a name="para288-289_an1"></a><span class="paranum">288-289</span>. ‘‘Aṭṭhānametaṃ<a name="P1.0029"></a>, bhikkhave, anavakāso yaṃ vacīsucaritassa…pe… manosucaritassa aniṭṭho akanto amanāpo vipāko nibbatteyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ manosucaritassa iṭṭho kanto manāpo vipāko nibbatteyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para290"></span><a name="para290"></a><a name="para290_an1"></a><span class="paranum">290</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ kāyaduccaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ kāyaduccaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para291-292"></span><a name="para291-292"></a><a name="para291-292_an1"></a><span class="paranum">291-292</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ vacīduccaritasamaṅgī…pe… yaṃ manoduccaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ manoduccaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjeyya. Ṭhānametaṃ vijjatī’’ti<a name="T1.0039"></a>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para293"></span><a name="para293"></a><a name="para293_an1"></a><span class="paranum">293</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ kāyasucaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ kāyasucaritasamaṅgī tannidānā tappaccayā <a name="V1.0042"></a> kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para294-295"></span><a name="para294-295"></a><a name="para294-295_an1"></a><span class="paranum">294-295</span>. ‘‘Aṭṭhānametaṃ, bhikkhave, anavakāso yaṃ vacīsucaritasamaṅgī…pe… yaṃ manosucaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjeyya. Netaṃ ṭhānaṃ vijjati. Ṭhānañca kho etaṃ, bhikkhave, vijjati yaṃ <a name="P1.0030"></a> manosucaritasamaṅgī tannidānā tappaccayā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjeyya. Ṭhānametaṃ vijjatī’’ti.</p>
+
+
+
+<p class="centered">Vaggo tatiyo.</p>
+
+
+
+<p class="centered">Aṭṭhānapāḷi pannarasamo.</p>
+
+
+<a name="an1_16"></a>
+
+
+<p class="chapter">16. Ekadhammapāḷi</p>
+
+
+
+<p class="subhead">1. Paṭhamavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para296"></span><a name="para296"></a><a name="para296_an1"></a><span class="paranum">296</span>. ‘‘Ekadhammo<a name="V1.0043"></a><a name="M1.0032"></a>, bhikkhave, bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattati. Katamo ekadhammo? Buddhānussati. Ayaṃ kho, bhikkhave, ekadhammo bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya <a name="T1.0040"></a> nibbānāya saṃvattatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para297"></span><a name="para297"></a><a name="para297_an1"></a><span class="paranum">297</span>. ‘‘Ekadhammo, bhikkhave, bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattati. Katamo ekadhammo? Dhammānussati…pe… saṅghānussati… sīlānussati… cāgānussati… devatānussati… ānāpānassati… maraṇassati… kāyagatāsati… upasamānussati. Ayaṃ kho, bhikkhave, ekadhammo bhāvito bahulīkato ekantanibbidāya virāgāya nirodhāya upasamāya abhiññāya sambodhāya nibbānāya saṃvattatī’’ti.</p>
+
+
+
+<p class="centered">Vaggo paṭhamo.</p>
+
+
+
+<p class="subhead">2. Dutiyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para298"></span><a name="para298"></a><a name="para298_an1"></a><span class="paranum">298</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā uppajjanti uppannā vā akusalā dhammā bhiyyobhāvāya vepullāya saṃvattanti yathayidaṃ, bhikkhave, micchādiṭṭhi. Micchādiṭṭhikassa, bhikkhave, anuppannā ceva akusalā dhammā uppajjanti uppannā ca akusalā dhammā bhiyyobhāvāya vepullāya saṃvattantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para299"></span><a name="para299"></a><a name="para299_an1"></a><span class="paranum">299</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā uppajjanti uppannā vā kusalā dhammā bhiyyobhāvāya vepullāya saṃvattanti yathayidaṃ<a name="V1.0044"></a>, bhikkhave, sammādiṭṭhi. Sammādiṭṭhikassa<a name="P1.0031"></a>, bhikkhave, anuppannā ceva kusalā dhammā uppajjanti uppannā ca kusalā dhammā bhiyyobhāvāya vepullāya saṃvattantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para300"></span><a name="para300"></a><a name="para300_an1"></a><span class="paranum">300</span>. ‘‘Nāhaṃ<a name="T1.0041"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā kusalā dhammā nuppajjanti uppannā vā kusalā dhammā parihāyanti yathayidaṃ<a name="M1.0033"></a>, bhikkhave, micchādiṭṭhi. Micchādiṭṭhikassa, bhikkhave, anuppannā ceva kusalā dhammā nuppajjanti uppannā ca kusalā dhammā parihāyantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para301"></span><a name="para301"></a><a name="para301_an1"></a><span class="paranum">301</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā akusalā dhammā nuppajjanti uppannā vā akusalā dhammā parihāyanti yathayidaṃ, bhikkhave, sammādiṭṭhi. Sammādiṭṭhikassa, bhikkhave, anuppannā ceva akusalā dhammā nuppajjanti uppannā ca akusalā dhammā parihāyantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para302"></span><a name="para302"></a><a name="para302_an1"></a><span class="paranum">302</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā micchādiṭṭhi uppajjati uppannā vā micchādiṭṭhi pavaḍḍhati yathayidaṃ, bhikkhave, ayonisomanasikāro. Ayoniso, bhikkhave, manasi karoto anuppannā ceva micchādiṭṭhi uppajjati uppannā ca micchādiṭṭhi pavaḍḍhatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para303"></span><a name="para303"></a><a name="para303_an1"></a><span class="paranum">303</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena anuppannā vā sammādiṭṭhi uppajjati uppannā vā sammādiṭṭhi pavaḍḍhati yathayidaṃ, bhikkhave, yonisomanasikāro. Yoniso, bhikkhave, manasi karoto anuppannā ceva sammādiṭṭhi uppajjati uppannā ca sammādiṭṭhi pavaḍḍhatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para304"></span><a name="para304"></a><a name="para304_an1"></a><span class="paranum">304</span>. ‘‘Nāhaṃ<a name="T1.0042"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi yena <span class="note">[yenevaṃ (sī. syā. kaṃ. pī.)]</span> sattā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjanti yathayidaṃ, bhikkhave, micchādiṭṭhi. Micchādiṭṭhiyā, bhikkhave, samannāgatā sattā kāyassa bhedā paraṃ maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upapajjantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para305"></span><a name="para305"></a><a name="para305_an1"></a><span class="paranum">305</span>. ‘‘Nāhaṃ<a name="V1.0045"></a>, bhikkhave, aññaṃ ekadhammampi samanupassāmi <a name="P1.0032"></a> yena sattā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjanti yathayidaṃ, bhikkhave, sammādiṭṭhi. Sammādiṭṭhiyā, bhikkhave, samannāgatā sattā kāyassa bhedā paraṃ maraṇā sugatiṃ saggaṃ lokaṃ upapajjantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para306"></span><a name="para306"></a><a name="para306_an1"></a><span class="paranum">306</span>. ‘‘Micchādiṭṭhikassa, bhikkhave, purisapuggalassa yañceva kāyakammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yañca vacīkammaṃ…pe… yañca manokammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yā ca cetanā yā ca patthanā yo ca paṇidhi ye ca saṅkhārā sabbe te dhammā aniṭṭhāya akantāya amanāpāya ahitāya dukkhāya saṃvattanti. Taṃ kissa hetu? Diṭṭhi hissa <span class="note">[diṭṭhi hi (sī. syā. kaṃ. pī.)]</span>, bhikkhave, pāpikā. Seyyathāpi, bhikkhave<a name="M1.0034"></a>, nimbabījaṃ vā kosātakibījaṃ vā tittakalābubījaṃ vā allāya pathaviyā <span class="note">[paṭhaviyā (sī. syā. kaṃ. pī.)]</span> nikkhittaṃ yañceva pathavirasaṃ upādiyati yañca āporasaṃ upādiyati sabbaṃ taṃ tittakattāya kaṭukattāya asātattāya saṃvattati. Taṃ kissa hetu? Bījaṃ hissa <span class="note">[vījaṃ (sī. syā. kaṃ. pī.)]</span>, bhikkhave, pāpakaṃ. Evamevaṃ kho, bhikkhave, micchādiṭṭhikassa purisapuggalassa yañceva kāyakammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yañca vacīkammaṃ…pe… <a name="T1.0043"></a> yañca manokammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yā ca cetanā yā ca patthanā yo ca paṇidhi ye ca saṅkhārā sabbe te dhammā aniṭṭhāya akantāya amanāpāya ahitāya dukkhāya saṃvattanti. Taṃ kissa hetu? Diṭṭhi hissa, bhikkhave, pāpikā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para307"></span><a name="para307"></a><a name="para307_an1"></a><span class="paranum">307</span>. ‘‘Sammādiṭṭhikassa, bhikkhave, purisapuggalassa yañceva kāyakammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yañca vacīkammaṃ…pe… yañca manokammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yā ca cetanā yā ca patthanā yo ca paṇidhi ye ca saṅkhārā sabbe te dhammā iṭṭhāya kantāya manāpāya hitāya sukhāya saṃvattanti. Taṃ kissa hetu? Diṭṭhi hissa, bhikkhave, bhaddikā. Seyyathāpi, bhikkhave, ucchubījaṃ vā sālibījaṃ vā muddikābījaṃ vā allāya pathaviyā nikkhittaṃ yañceva pathavirasaṃ upādiyati yañca āporasaṃ upādiyati sabbaṃ taṃ madhurattāya sātattāya asecanakattāya saṃvattati. Taṃ kissa hetu? Bījaṃ hissa, bhikkhave, bhaddakaṃ. Evamevaṃ kho, bhikkhave, sammādiṭṭhikassa purisapuggalassa yañceva kāyakammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yañca vacīkammaṃ…pe… yañca manokammaṃ yathādiṭṭhi samattaṃ samādinnaṃ yā ca cetanā yā ca patthanā yo ca paṇidhi ye ca saṅkhārā sabbe te dhammā iṭṭhāya kantāya manāpāya <a name="V1.0046"></a> hitāya sukhāya saṃvattanti. Taṃ kissa hetu? Diṭṭhi hissa, bhikkhave, bhaddikā’’ti.</p>
+
+
+
+<p class="centered">Vaggo dutiyo.</p>
+
+
+
+<p class="subhead">3. Tatiyavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para308"></span><a name="para308"></a><a name="para308_an1"></a><span class="paranum">308</span>. ‘‘Ekapuggalo<a name="T1.0044"></a><a name="P1.0033"></a>, bhikkhave, loke uppajjamāno uppajjati bahujanaahitāya bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya <a name="M1.0035"></a> devamanussānaṃ. Katamo ekapuggalo? Micchādiṭṭhiko hoti viparītadassano. So bahujanaṃ saddhammā vuṭṭhāpetvā asaddhamme patiṭṭhāpeti. Ayaṃ kho, bhikkhave, ekapuggalo loke uppajjamāno uppajjati bahujanaahitāya bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussāna’’nti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para309"></span><a name="para309"></a><a name="para309_an1"></a><span class="paranum">309</span>. ‘‘Ekapuggalo, bhikkhave, loke uppajjamāno uppajjati bahujanahitāya bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussānaṃ. Katamo ekapuggalo? Sammādiṭṭhiko hoti aviparītadassano. So bahujanaṃ asaddhammā vuṭṭhāpetvā saddhamme patiṭṭhāpeti. Ayaṃ kho, bhikkhave, ekapuggalo loke upapajjamāno uppajjati bahujanahitāya bahujanasukhāya, bahuno janassa atthāya hitāya sukhāya devamanussāna’’nti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para310"></span><a name="para310"></a><a name="para310_an1"></a><span class="paranum">310</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekadhammampi samanupassāmi yaṃ evaṃ mahāsāvajjaṃ yathayidaṃ, bhikkhave, micchādiṭṭhi. Micchādiṭṭhiparamāni, bhikkhave, mahāsāvajjānī’’ti <span class="note">[vajjānīti (sī. syā. kaṃ.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para311"></span><a name="para311"></a><a name="para311_an1"></a><span class="paranum">311</span>. ‘‘Nāhaṃ, bhikkhave, aññaṃ ekapuggalampi samanupassāmi yo evaṃ bahujanaahitāya paṭipanno bahujanaasukhāya, bahuno janassa anatthāya ahitāya dukkhāya devamanussānaṃ yathayidaṃ, bhikkhave, makkhali moghapuriso. Seyyathāpi, bhikkhave, nadīmukhe khippaṃ <span class="note">[khipaṃ (sī. syā. kaṃ. pī.)]</span> uḍḍeyya <span class="note">[oḍḍeyya (sī.), ujjheyya (ka.)]</span> bahūnaṃ macchānaṃ ahitāya dukkhāya anayāya byasanāya; evamevaṃ kho, bhikkhave<a name="V1.0047"></a>, makkhali moghapuriso manussakhippaṃ <a name="T1.0045"></a> maññe loke uppanno bahūnaṃ sattānaṃ ahitāya dukkhāya anayāya byasanāyā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para312"></span><a name="para312"></a><a name="para312_an1"></a><span class="paranum">312</span>. ‘‘Durakkhāte<a name="P1.0034"></a>, bhikkhave, dhammavinaye yo ca samādapeti <span class="note">[samādāpeti (?)]</span> yañca samādapeti yo ca samādapito tathattāya paṭipajjati sabbe te bahuṃ apuññaṃ pasavanti. Taṃ kissa hetu? Durakkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para313"></span><a name="para313"></a><a name="para313_an1"></a><span class="paranum">313</span>. ‘‘Svākkhāte<a name="M1.0036"></a>, bhikkhave, dhammavinaye yo ca samādapeti yañca samādapeti yo ca samādapito tathattāya paṭipajjati sabbe te bahuṃ puññaṃ pasavanti. Taṃ kissa hetu? Svākkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para314"></span><a name="para314"></a><a name="para314_an1"></a><span class="paranum">314</span>. ‘‘Durakkhāte, bhikkhave, dhammavinaye dāyakena mattā jānitabbā, no paṭiggāhakena. Taṃ kissa hetu? Durakkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para315"></span><a name="para315"></a><a name="para315_an1"></a><span class="paranum">315</span>. ‘‘Svākkhāte, bhikkhave, dhammavinaye paṭiggāhakena mattā jānitabbā, no dāyakena. Taṃ kissa hetu? Svākkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para316"></span><a name="para316"></a><a name="para316_an1"></a><span class="paranum">316</span>. ‘‘Durakkhāte, bhikkhave, dhammavinaye yo āraddhavīriyo so dukkhaṃ viharati. Taṃ kissa hetu? Durakkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para317"></span><a name="para317"></a><a name="para317_an1"></a><span class="paranum">317</span>. ‘‘Svākkhāte, bhikkhave, dhammavinaye yo kusīto so dukkhaṃ viharati. Taṃ kissa hetu? Svākkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para318"></span><a name="para318"></a><a name="para318_an1"></a><span class="paranum">318</span>. ‘‘Durakkhāte, bhikkhave, dhammavinaye yo kusīto so sukhaṃ viharati<a name="T1.0046"></a>. Taṃ kissa hetu? Durakkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para319"></span><a name="para319"></a><a name="para319_an1"></a><span class="paranum">319</span>. ‘‘Svākkhāte, bhikkhave, dhammavinaye yo āraddhavīriyo so sukhaṃ viharati. Taṃ kissa hetu? Svākkhātattā, bhikkhave, dhammassā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para320"></span><a name="para320"></a><a name="para320_an1"></a><span class="paranum">320</span>. ‘‘Seyyathāpi<a name="V1.0048"></a>, bhikkhave, appamattakopi gūtho duggandho hoti; evamevaṃ kho ahaṃ, bhikkhave, appamattakampi bhavaṃ na vaṇṇemi, antamaso accharāsaṅghātamattampi’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para321"></span><a name="para321"></a><a name="para321_an1"></a><span class="paranum">321</span>. ‘‘Seyyathāpi, bhikkhave, appamattakampi muttaṃ duggandhaṃ hoti… appamattakopi kheḷo duggandho hoti… appamattakopi pubbo duggandho hoti… appamattakampi <a name="P1.0035"></a> lohitaṃ duggandhaṃ hoti; evamevaṃ kho ahaṃ, bhikkhave, appamattakampi bhavaṃ na vaṇṇemi, antamaso accharāsaṅghātamattampi’’.</p>
+
+
+
+<p class="centered">Vaggo tatiyo.</p>
+
+
+
+<p class="subhead">4. Catutthavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para322"></span><a name="para322"></a><a name="para322_an1"></a><span class="paranum">322</span>. ‘‘Seyyathāpi<a name="M1.0037"></a>, bhikkhave, appamattakaṃ imasmiṃ jambudīpe ārāmarāmaṇeyyakaṃ vanarāmaṇeyyakaṃ bhūmirāmaṇeyyakaṃ pokkharaṇirāmaṇeyyakaṃ; atha kho etadeva bahutaraṃ yadidaṃ ukkūlavikūlaṃ nadīviduggaṃ khāṇukaṇṭakaṭṭhānaṃ <span class="note">[khāṇukaṇḍakadhānaṃ (sī. pī.)]</span> pabbatavisamaṃ; evamevaṃ kho, bhikkhave, appakā te sattā ye thalajā, atha kho eteva sattā bahutarā ye odakā’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para323"></span><a name="para323"></a><a name="para323_an1"></a><span class="paranum">323</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye manussesu paccājāyanti; atha kho eteva sattā bahutarā ye aññatra manussehi paccājāyanti.</p>
+
+
+
+<p class="bodytext">… Evamevaṃ kho, bhikkhave, appakā te sattā ye majjhimesu janapadesu paccājāyanti; atha <a name="T1.0047"></a> kho eteva sattā bahutarā ye paccantimesu janapadesu paccājāyanti aviññātāresu milakkhesu <span class="note">[milakkhūsu (ka.)]</span>.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para324"></span><a name="para324"></a><a name="para324_an1"></a><span class="paranum">324</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye paññavanto ajaḷā aneḷamūgā paṭibalā subhāsitadubbhāsitassa atthamaññātuṃ; atha kho eteva sattā bahutarā ye duppaññā jaḷā eḷamūgā na paṭibalā subhāsitadubbhāsitassa atthamaññātuṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para325"></span><a name="para325"></a><a name="para325_an1"></a><span class="paranum">325</span>. … Evamevaṃ <a name="V1.0049"></a> kho, bhikkhave, appakā te sattā ye ariyena paññācakkhunā samannāgatā; atha kho eteva sattā bahutarā ye avijjāgatā sammūḷhā.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para326"></span><a name="para326"></a><a name="para326_an1"></a><span class="paranum">326</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye labhanti tathāgataṃ dassanāya; atha kho eteva sattā bahutarā ye na labhanti tathāgataṃ dassanāya.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para327"></span><a name="para327"></a><a name="para327_an1"></a><span class="paranum">327</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye labhanti tathāgatappaveditaṃ dhammavinayaṃ savanāya; atha kho eteva <a name="P1.0036"></a> sattā bahutarā ye na labhanti tathāgatappaveditaṃ dhammavinayaṃ savanāya.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para328"></span><a name="para328"></a><a name="para328_an1"></a><span class="paranum">328</span>. … Evamevaṃ <a name="M1.0038"></a> kho, bhikkhave, appakā te sattā ye sutvā dhammaṃ dhārenti; atha kho eteva sattā bahutarā ye sutvā dhammaṃ na dhārenti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para329"></span><a name="para329"></a><a name="para329_an1"></a><span class="paranum">329</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye dhātānaṃ <span class="note">[dhatānaṃ (sī. syā. kaṃ. pī.)]</span> dhammānaṃ atthaṃ upaparikkhanti; atha kho eteva sattā bahutarā ye dhātānaṃ dhammānaṃ atthaṃ na upaparikkhanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para330"></span><a name="para330"></a><a name="para330_an1"></a><span class="paranum">330</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye atthamaññāya dhammamaññāya dhammānudhammaṃ paṭipajjanti; atha kho eteva sattā bahutarā ye atthamaññāya dhammamaññāya dhammānudhammaṃ na paṭipajjanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para331"></span><a name="para331"></a><a name="para331_an1"></a><span class="paranum">331</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye saṃvejaniyesu ṭhānesu saṃvijjanti; atha kho eteva sattā <a name="T1.0048"></a> bahutarā ye saṃvejaniyesu ṭhānesu na saṃvijjanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para332"></span><a name="para332"></a><a name="para332_an1"></a><span class="paranum">332</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye saṃviggā <a name="V1.0050"></a> yoniso padahanti; atha kho eteva sattā bahutarā ye saṃviggā yoniso na padahanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para333"></span><a name="para333"></a><a name="para333_an1"></a><span class="paranum">333</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye vavassaggārammaṇaṃ karitvā labhanti samādhiṃ <span class="note">[cittassa samādhiṃ (sī.)]</span> labhanti cittassekaggataṃ <span class="note">[cittassekaggaṃ (sī.)]</span>; atha kho eteva sattā bahutarā ye vavassaggārammaṇaṃ karitvā na labhanti samādhiṃ na labhanti cittassekaggataṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para334"></span><a name="para334"></a><a name="para334_an1"></a><span class="paranum">334</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye annaggarasaggānaṃ lābhino; atha kho eteva sattā bahutarā ye annaggarasaggānaṃ na lābhino, uñchena kapālābhatena yāpenti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para335"></span><a name="para335"></a><a name="para335_an1"></a><span class="paranum">335</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye attharasassa dhammarasassa vimuttirasassa lābhino; atha kho eteva sattā bahutarā ye attharasassa dhammarasassa vimuttirasassa na lābhino. Tasmātiha, bhikkhave<a name="M1.0039"></a>, evaṃ sikkhitabbaṃ – attharasassa dhammarasassa vimuttirasassa lābhino bhavissāmāti. Evañhi vo, bhikkhave, sikkhitabbanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para336-338"></span><a name="para336-338"></a><a name="para336-338_an1"></a><span class="paranum">336-338</span>. ‘‘Seyyathāpi<a name="P1.0037"></a>, bhikkhave, appamattakaṃ imasmiṃ jambudīpe ārāmarāmaṇeyyakaṃ vanarāmaṇeyyakaṃ bhūmirāmaṇeyyakaṃ pokkharaṇirāmaṇeyyakaṃ; atha kho etadeva bahutaraṃ yadidaṃ ukkūlavikūlaṃ nadīviduggaṃ khāṇukaṇṭakaṭṭhānaṃ pabbatavisamaṃ. Evamevaṃ kho, bhikkhave, appakā te sattā ye manussā cutā manussesu paccājāyanti, atha kho eteva sattā bahutarā ye manussā cutā niraye paccājāyanti…pe… tiracchānayoniyā paccājāyanti…pe… pettivisaye paccājāyanti’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para339-341"></span><a name="para339-341"></a><a name="para339-341_an1"></a><span class="paranum">339-341</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye <a name="T1.0049"></a> manussā cutā devesu paccājāyanti; atha kho eteva sattā bahutarā ye manussā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para342-344"></span><a name="para342-344"></a><a name="para342-344_an1"></a><span class="paranum">342-344</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye devā <a name="V1.0051"></a> cutā devesu paccājāyanti; atha kho eteva sattā bahutarā ye devā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para345-347"></span><a name="para345-347"></a><a name="para345-347_an1"></a><span class="paranum">345-347</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye devā cutā manussesu paccājāyanti; atha kho eteva sattā bahutarā ye devā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para348-350"></span><a name="para348-350"></a><a name="para348-350_an1"></a><span class="paranum">348-350</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye nirayā cutā manussesu paccājāyanti; atha kho eteva sattā bahutarā ye nirayā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para351-353"></span><a name="para351-353"></a><a name="para351-353_an1"></a><span class="paranum">351-353</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye nirayā cutā devesu paccājāyanti; atha kho eteva sattā bahutarā ye nirayā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para354-356"></span><a name="para354-356"></a><a name="para354-356_an1"></a><span class="paranum">354-356</span>. … Evamevaṃ <a name="M1.0040"></a> kho, bhikkhave, appakā te sattā ye tiracchānayoniyā cutā manussesu paccājāyanti; atha kho eteva sattā bahutarā ye tiracchānayoniyā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para357-359"></span><a name="para357-359"></a><a name="para357-359_an1"></a><span class="paranum">357-359</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye tiracchānayoniyā cutā devesu paccājāyanti; atha kho eteva sattā bahutarā ye <a name="P1.0038"></a> tiracchānayoniyā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para360-362"></span><a name="para360-362"></a><a name="para360-362_an1"></a><span class="paranum">360-362</span>. … Evamevaṃ kho, bhikkhave, appakā te sattā ye pettivisayā cutā manussesu paccājāyanti; atha kho eteva sattā bahutarā ye pettivisayā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para363-365"></span><a name="para363-365"></a><a name="para363-365_an1"></a><span class="paranum">363-365</span>. … Evamevaṃ <a name="V1.0052"></a> kho, bhikkhave, appakā te sattā ye pettivisayā cutā devesu paccājāyanti<a name="T1.0050"></a>; atha kho eteva sattā bahutarā ye pettivisayā cutā niraye paccājāyanti… tiracchānayoniyā paccājāyanti… pettivisaye paccājāyanti.</p>
+
+
+
+<p class="centered">Vaggo catuttho.</p>
+
+
+
+<p class="centered">Jambudīpapeyyālo niṭṭhito.</p>
+
+
+
+<p class="centered">Ekadhammapāḷi soḷasamo.</p>
+
+
+<a name="an1_17"></a>
+
+
+<p class="chapter">17. Pasādakaradhammavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para366-381"></span><a name="para366-381"></a><a name="para366-381_an1"></a><span class="paranum">366-381</span>. ‘‘Addhamidaṃ<a name="V1.0053"></a>, bhikkhave, lābhānaṃ yadidaṃ āraññikattaṃ <span class="note">[araññakattaṃ (sabbattha)]</span> …pe… piṇḍapātikattaṃ… paṃsukūlikattaṃ… tecīvarikattaṃ… dhammakathikattaṃ… vinayadharattaṃ <span class="note">[vinayadharakattaṃ (syā. kaṃ. pī. ka.)]</span> … bāhusaccaṃ… thāvareyyaṃ… ākappasampadā… parivārasampadā… mahāparivāratā… kolaputti… vaṇṇapokkharatā… kalyāṇavākkaraṇatā… appicchatā… appābādhatā’’ti.</p>
+
+
+
+<p class="centered">Soḷasa pasādakaradhammā niṭṭhitā.</p>
+
+
+
+<p class="centered">Pasādakaradhammavaggo sattarasamo.</p>
+
+
+<a name="an1_18"></a>
+
+
+<p class="chapter">18. Aparaaccharāsaṅghātavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para382"></span><a name="para382"></a><a name="para382_an1"></a><span class="paranum">382</span>. ‘‘Accharāsaṅghātamattampi <a name="V1.0054"></a><a name="M1.0041"></a> ce, bhikkhave, bhikkhu paṭhamaṃ jhānaṃ bhāveti, ayaṃ vuccati, bhikkhave – ‘bhikkhu arittajjhāno viharati, satthusāsanakaro ovādapatikaro, amoghaṃ raṭṭhapiṇḍaṃ bhuñjati’. Ko pana vādo ye naṃ bahulīkarontī’’ti!</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para383-389"></span><a name="para383-389"></a><a name="para383-389_an1"></a><span class="paranum">383-389</span>. ‘‘Accharāsaṅghātamattampi ce, bhikkhave, bhikkhu dutiyaṃ jhānaṃ bhāveti…pe… <a name="T1.0051"></a> tatiyaṃ jhānaṃ bhāveti…pe… catutthaṃ jhānaṃ bhāveti…pe… mettaṃ cetovimuttiṃ bhāveti…pe… karuṇaṃ cetovimuttiṃ bhāveti…pe… muditaṃ <a name="P1.0039"></a> cetovimuttiṃ bhāveti…pe… upekkhaṃ cetovimuttiṃ bhāveti…pe….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para390-393"></span><a name="para390-393"></a><a name="para390-393_an1"></a><span class="paranum">390-393</span>. Kāye kāyānupassī viharati ātāpī sampajāno satimā vineyya loke abhijjhādomanassaṃ; vedanāsu vedanānupassī viharati…pe… citte cittānupassī viharati…pe… dhammesu dhammānupassī viharati ātāpī sampajāno satimā vineyya loke abhijjhādomanassaṃ.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para394-397"></span><a name="para394-397"></a><a name="para394-397_an1"></a><span class="paranum">394-397</span>. Anuppannānaṃ pāpakānaṃ akusalānaṃ dhammānaṃ anuppādāya chandaṃ janeti vāyamati vīriyaṃ <span class="note">[viriyaṃ (sī. syā. kaṃ. pī.)]</span> ārabhati cittaṃ paggaṇhāti padahati; uppannānaṃ pāpakānaṃ akusalānaṃ dhammānaṃ pahānāya chandaṃ janeti vāyamati vīriyaṃ ārabhati cittaṃ paggaṇhāti padahati. Anuppannānaṃ kusalānaṃ dhammānaṃ uppādāya chandaṃ janeti vāyamati vīriyaṃ ārabhati cittaṃ paggaṇhāti padahati; uppannānaṃ kusalānaṃ dhammānaṃ ṭhitiyā asammosāya bhiyyobhāvāya vepullāya bhāvanāya pāripūriyā chandaṃ janeti vāyamati vīriyaṃ ārabhati cittaṃ paggaṇhāti padahati.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para398-401"></span><a name="para398-401"></a><a name="para398-401_an1"></a><span class="paranum">398-401</span>. Chandasamādhipadhānasaṅkhārasamannāgataṃ iddhipādaṃ bhāveti… vīriyasamādhipadhānasaṅkhārasamannāgataṃ <a name="V1.0055"></a> iddhipādaṃ bhāveti… cittasamādhipadhānasaṅkhārasamannāgataṃ iddhipādaṃ bhāveti… vīmaṃsāsamādhipadhānasaṅkhārasamannāgataṃ iddhipādaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para402-406"></span><a name="para402-406"></a><a name="para402-406_an1"></a><span class="paranum">402-406</span>. Saddhindriyaṃ bhāveti… vīriyindriyaṃ bhāveti… satindriyaṃ bhāveti… samādhindriyaṃ bhāveti… paññindriyaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para407-411"></span><a name="para407-411"></a><a name="para407-411_an1"></a><span class="paranum">407-411</span>. Saddhābalaṃ <a name="M1.0042"></a> bhāveti… vīriyabalaṃ bhāveti… satibalaṃ <a name="T1.0052"></a> bhāveti… samādhibalaṃ bhāveti… paññābalaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para412-418"></span><a name="para412-418"></a><a name="para412-418_an1"></a><span class="paranum">412-418</span>. Satisambojjhaṅgaṃ bhāveti… dhammavicayasambojjhaṅgaṃ bhāveti… vīriyasambojjhaṅgaṃ <a name="P1.0040"></a> bhāveti… pītisambojjhaṅgaṃ bhāveti… passaddhisambojjhaṅgaṃ bhāveti… samādhisambojjhaṅgaṃ bhāveti… upekkhāsambojjhaṅgaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para419-426"></span><a name="para419-426"></a><a name="para419-426_an1"></a><span class="paranum">419-426</span>. Sammādiṭṭhiṃ bhāveti… sammāsaṅkappaṃ bhāveti… sammāvācaṃ bhāveti… sammākammantaṃ bhāveti… sammāājīvaṃ bhāveti… sammāvāyāmaṃ bhāveti… sammāsatiṃ bhāveti… sammāsamādhiṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para427-434"></span><a name="para427-434"></a><a name="para427-434_an1"></a><span class="paranum">427-434</span>. <span class="note">[dī. ni. 2.173; ma. ni. 2.249; a. ni. 8.65]</span> Ajjhattaṃ rūpasaññī bahiddhā rūpāni passati parittāni suvaṇṇadubbaṇṇāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti… ajjhattaṃ rūpasaññī bahiddhā rūpāni passati appamāṇāni suvaṇṇadubbaṇṇāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti… ajjhattaṃ arūpasaññī bahiddhā rūpāni passati parittāni suvaṇṇadubbaṇṇāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti… ajjhattaṃ arūpasaññī bahiddhā rūpāni passati appamāṇāni suvaṇṇadubbaṇṇāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti… ajjhattaṃ <a name="T1.0053"></a> arūpasaññī bahiddhā rūpāni passati nīlāni nīlavaṇṇāni nīlanidassanāni nīlanibhāsāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti… ajjhattaṃ arūpasaññī bahiddhā rūpāni passati pītāni pītavaṇṇāni pītanidassanāni pītanibhāsāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti… ajjhattaṃ arūpasaññī bahiddhā rūpāni passati lohitakāni lohitakavaṇṇāni <a name="V1.0056"></a> lohitakanidassanāni lohitakanibhāsāni. ‘Tāni abhibhuyya jānāmi passāmī’ti evaṃsaññī hoti… ajjhattaṃ arūpasaññī bahiddhā rūpāni passati odātāni odātavaṇṇāni odātanidassanāni odātanibhāsāni. ‘Tāni abhibhuyya jānāmi passāmī’ti – evaṃsaññī hoti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para435-442"></span><a name="para435-442"></a><a name="para435-442_an1"></a><span class="paranum">435-442</span>. Rūpī rūpāni passati… ajjhattaṃ <a name="P1.0041"></a> arūpasaññī bahiddhā rūpāni passati subhanteva adhimutto hoti… sabbaso rūpasaññānaṃ samatikkamā paṭighasaññānaṃ atthaṅgamā nānattasaññānaṃ amanasikārā ananto <a name="M1.0043"></a> ākāsoti ākāsānañcāyatanaṃ upasampajja viharati… sabbaso ākāsānañcāyatanaṃ samatikkamma anantaṃ viññāṇanti viññāṇañcāyatanaṃ upasampajja viharati… sabbaso viññāṇañcāyatanaṃ samatikkamma natthi kiñcīti ākiñcaññāyatanaṃ <a name="T1.0054"></a> upasampajja viharati… sabbaso ākiñcaññāyatanaṃ samatikkamma nevasaññānāsaññāyatanaṃ upasampajja viharati… sabbaso nevasaññānāsaññāyatanaṃ samatikkamma saññāvedayitanirodhaṃ upasampajja viharati….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para443-452"></span><a name="para443-452"></a><a name="para443-452_an1"></a><span class="paranum">443-452</span>. Pathavīkasiṇaṃ bhāveti… āpokasiṇaṃ bhāveti… tejokasiṇaṃ bhāveti… vāyokasiṇaṃ bhāveti… nīlakasiṇaṃ bhāveti… pītakasiṇaṃ bhāveti… lohitakasiṇaṃ bhāveti… odātakasiṇaṃ bhāveti… ākāsakasiṇaṃ bhāveti… viññāṇakasiṇaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para453-462"></span><a name="para453-462"></a><a name="para453-462_an1"></a><span class="paranum">453-462</span>. Asubhasaññaṃ bhāveti… maraṇasaññaṃ bhāveti… āhāre paṭikūlasaññaṃ bhāveti… sabbaloke anabhiratisaññaṃ <span class="note">[anabhiratasaññaṃ (sī. syā. kaṃ. pī.)]</span> bhāveti… aniccasaññaṃ bhāveti… anicce dukkhasaññaṃ bhāveti… dukkhe anattasaññaṃ bhāveti… pahānasaññaṃ bhāveti… virāgasaññaṃ bhāveti… nirodhasaññaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para463-472"></span><a name="para463-472"></a><a name="para463-472_an1"></a><span class="paranum">463-472</span>. Aniccasaññaṃ bhāveti… anattasaññaṃ bhāveti… maraṇasaññaṃ <a name="P1.0042"></a> bhāveti… āhāre paṭikūlasaññaṃ bhāveti… sabbaloke anabhiratisaññaṃ bhāveti… aṭṭhikasaññaṃ bhāveti… puḷavakasaññaṃ <span class="note">[puḷuvakasaññaṃ (ka.)]</span> bhāveti… vinīlakasaññaṃ bhāveti… vicchiddakasaññaṃ bhāveti… uddhumātakasaññaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para473-482"></span><a name="para473-482"></a><a name="para473-482_an1"></a><span class="paranum">473-482</span>. Buddhānussatiṃ <a name="V1.0057"></a> bhāveti… dhammānussatiṃ bhāveti… saṅghānussatiṃ bhāveti… sīlānussatiṃ bhāveti… cāgānussatiṃ bhāveti… devatānussatiṃ <a name="T1.0055"></a> bhāveti… ānāpānassatiṃ bhāveti… maraṇassatiṃ bhāveti… kāyagatāsatiṃ bhāveti… upasamānussatiṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para483-492"></span><a name="para483-492"></a><a name="para483-492_an1"></a><span class="paranum">483-492</span>. Paṭhamajjhānasahagataṃ <a name="M1.0044"></a> saddhindriyaṃ bhāveti… vīriyindriyaṃ bhāveti… satindriyaṃ bhāveti… samādhindriyaṃ bhāveti… paññindriyaṃ bhāveti… saddhābalaṃ bhāveti… vīriyabalaṃ bhāveti… satibalaṃ bhāveti… samādhibalaṃ bhāveti… paññābalaṃ bhāveti….</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para493-562"></span><a name="para493-562"></a><a name="para493-562_an1"></a><span class="paranum">493-562</span>. ‘‘Dutiyajjhānasahagataṃ…pe… tatiyajjhānasahagataṃ…pe… catutthajjhānasahagataṃ…pe… mettāsahagataṃ…pe… karuṇāsahagataṃ…pe… muditāsahagataṃ…pe… upekkhāsahagataṃ saddhindriyaṃ bhāveti… vīriyindriyaṃ bhāveti… satindriyaṃ <a name="P1.0043"></a> bhāveti… samādhindriyaṃ bhāveti… paññindriyaṃ bhāveti… saddhābalaṃ bhāveti… vīriyabalaṃ bhāveti… satibalaṃ bhāveti… samādhibalaṃ bhāveti… paññābalaṃ bhāveti. Ayaṃ vuccati, bhikkhave – ‘bhikkhu arittajjhāno viharati satthusāsanakaro ovādapatikaro, amoghaṃ raṭṭhapiṇḍaṃ bhuñjati’. Ko pana vādo ye naṃ bahulīkarontī’’ti!</p>
+
+
+
+<p class="centered">Aparaaccharāsaṅghātavaggo aṭṭhārasamo.</p>
+
+
+<a name="an1_19"></a>
+
+
+<p class="chapter">19. Kāyagatāsativaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para563"></span><a name="para563"></a><a name="para563_an1"></a><span class="paranum">563</span>. ‘‘Yassa <a name="V1.0058"></a> kassaci, bhikkhave, mahāsamuddo cetasā phuṭo antogadhā tassa kunnadiyo yā kāci samuddaṅgamā; evamevaṃ, bhikkhave, yassa kassaci kāyagatā sati bhāvitā bahulīkatā antogadhā tassa kusalā dhammā ye keci vijjābhāgiyā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para564-570"></span><a name="para564-570"></a><a name="para564-570_an1"></a><span class="paranum">564-570</span>. ‘‘Ekadhammo, bhikkhave, bhāvito bahulīkato mahato saṃvegāya saṃvattati… mahato atthāya saṃvattati… mahato yogakkhemāya saṃvattati… satisampajaññāya <a name="T1.0056"></a> saṃvattati… ñāṇadassanappaṭilābhāya saṃvattati… diṭṭhadhammasukhavihārāya saṃvattati… vijjāvimuttiphalasacchikiriyāya saṃvattati. Katamo ekadhammo? Kāyagatā sati. Ayaṃ kho, bhikkhave, ekadhammo bhāvito bahulīkato mahato saṃvegāya saṃvattati… mahato atthāya saṃvattati… mahato yogakkhemāya saṃvattati… satisampajaññāya saṃvattati… ñāṇadassanappaṭilābhāya saṃvattati… diṭṭhadhammasukhavihārāya saṃvattati… vijjāvimuttiphalasacchikiriyāya saṃvattatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para571"></span><a name="para571"></a><a name="para571_an1"></a><span class="paranum">571</span>. ‘‘Ekadhamme<a name="M1.0045"></a>, bhikkhave, bhāvite bahulīkate kāyopi passambhati, cittampi passambhati, vitakkavicārāpi vūpasammanti, kevalāpi vijjābhāgiyā dhammā bhāvanāpāripūriṃ gacchanti. Katamasmiṃ ekadhamme? Kāyagatāya satiyā. Imasmiṃ <a name="P1.0044"></a> kho, bhikkhave, ekadhamme bhāvite bahulīkate kāyopi passambhati, cittampi passambhati, vitakkavicārāpi vūpasammanti, kevalāpi vijjābhāgiyā dhammā bhāvanāpāripūriṃ gacchantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para572"></span><a name="para572"></a><a name="para572_an1"></a><span class="paranum">572</span>. ‘‘Ekadhamme, bhikkhave, bhāvite bahulīkate anuppannā ceva akusalā dhammā nuppajjanti, uppannā ca akusalā dhammā pahīyanti. Katamasmiṃ ekadhamme? Kāyagatāya satiyā. Imasmiṃ kho, bhikkhave, ekadhamme bhāvite bahulīkate anuppannā ceva akusalā dhammā nuppajjanti, uppannā ca akusalā dhammā pahīyantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para573"></span><a name="para573"></a><a name="para573_an1"></a><span class="paranum">573</span>. ‘‘Ekadhamme<a name="V1.0059"></a>, bhikkhave, bhāvite bahulīkate anuppannā ceva kusalā dhammā uppajjanti, uppannā ca kusalā dhammā bhiyyobhāvāya vepullāya <a name="T1.0057"></a> saṃvattanti. Katamasmiṃ ekadhamme? Kāyagatāya satiyā. Imasmiṃ kho, bhikkhave, ekadhamme bhāvite bahulīkate anuppannā ceva kusalā dhammā uppajjanti, uppannā ca kusalā dhammā bhiyyobhāvāya vepullāya saṃvattantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para574"></span><a name="para574"></a><a name="para574_an1"></a><span class="paranum">574</span>. ‘‘Ekadhamme, bhikkhave, bhāvite bahulīkate avijjā pahīyati, vijjā uppajjati, asmimāno pahīyati, anusayā samugghātaṃ gacchanti, saṃyojanā pahīyanti. Katamasmiṃ ekadhamme? Kāyagatāya satiyā. Imasmiṃ kho, bhikkhave, ekadhamme bhāvite bahulīkate avijjā pahīyati, vijjā uppajjati, asmimāno pahīyati, anusayā samugghātaṃ gacchanti, saṃyojanā pahīyantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para575-576"></span><a name="para575-576"></a><a name="para575-576_an1"></a><span class="paranum">575-576</span>. ‘‘Ekadhammo, bhikkhave, bhāvito bahulīkato paññāpabhedāya saṃvattati… anupādāparinibbānāya saṃvattati. Katamo ekadhammo? Kāyagatā sati. Ayaṃ kho, bhikkhave, ekadhammo bhāvito bahulīkato paññāpabhedāya saṃvattati… anupādāparinibbānāya saṃvattatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para577-579"></span><a name="para577-579"></a><a name="para577-579_an1"></a><span class="paranum">577-579</span>. ‘‘Ekadhamme<a name="M1.0046"></a>, bhikkhave, bhāvite bahulīkate anekadhātupaṭivedho hoti… nānādhātupaṭivedho hoti… anekadhātupaṭisambhidā hoti. Katamasmiṃ ekadhamme? Kāyagatāya satiyā. Imasmiṃ kho, bhikkhave, ekadhamme bhāvite bahulīkate anekadhātupaṭivedho hoti… nānādhātupaṭivedho hoti… anekadhātupaṭisambhidā hotī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para580-583"></span><a name="para580-583"></a><a name="para580-583_an1"></a><span class="paranum">580-583</span>. ‘‘Ekadhammo, bhikkhave, bhāvito bahulīkato sotāpattiphalasacchikiriyāya <a name="T1.0058"></a> saṃvattati… sakadāgāmiphalasacchikiriyāya saṃvattati… anāgāmiphalasacchikiriyāya saṃvattati… arahattaphalasacchikiriyāya <a name="P1.0045"></a> saṃvattati. Katamo ekadhammo? Kāyagatā sati. Ayaṃ kho, bhikkhave, ekadhammo bhāvito bahulīkato sotāpattiphalasacchikiriyāya saṃvattati… sakadāgāmiphalasacchikiriyāya saṃvattati… anāgāmiphalasacchikiriyāya saṃvattati… arahattaphalasacchikiriyāya saṃvattatī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para584-599"></span><a name="para584-599"></a><a name="para584-599_an1"></a><span class="paranum">584-599</span>. ‘‘Ekadhammo<a name="V1.0060"></a>, bhikkhave, bhāvito bahulīkato paññāpaṭilābhāya saṃvattati… paññāvuddhiyā saṃvattati… paññāvepullāya saṃvattati… mahāpaññatāya saṃvattati… puthupaññatāya saṃvattati… vipulapaññatāya saṃvattati… gambhīrapaññatāya saṃvattati… asāmantapaññatāya <span class="note">[asamatthapaññatāya (syā. kaṃ.), asamattapaññatāya (ka.), asamantapaññatāya (ṭīkā) paṭi. ma. aṭṭha. 2.3.1 passitabbaṃ]</span> saṃvattati… bhūripaññatāya saṃvattati… paññābāhullāya saṃvattati… sīghapaññatāya saṃvattati… lahupaññatāya saṃvattati… hāsapaññatāya <span class="note">[hāsupaññatāya (sī. pī.)]</span> saṃvattati… javanapaññatāya saṃvattati… tikkhapaññatāya saṃvattati… nibbedhikapaññatāya saṃvattati. Katamo ekadhammo? Kāyagatā sati. Ayaṃ kho, bhikkhave, ekadhammo bhāvito bahulīkato paññāpaṭilābhāya saṃvattati… paññāvuddhiyā saṃvattati… paññāvepullāya saṃvattati… mahāpaññatāya saṃvattati… puthupaññatāya saṃvattati… vipulapaññatāya saṃvattati… gambhīrapaññatāya saṃvattati… asāmantapaññatāya saṃvattati… bhūripaññatāya saṃvattati… paññābāhullāya saṃvattati… sīghapaññatāya saṃvattati… lahupaññatāya saṃvattati… hāsapaññatāya saṃvattati… javanapaññatāya saṃvattati… tikkhapaññatāya saṃvattati… nibbedhikapaññatāya saṃvattatī’’ti.</p>
+
+
+
+<p class="centered">Kāyagatāsativaggo ekūnavīsatimo.</p>
+
+
+<a name="an1_20"></a>
+
+
+<p class="chapter">20. Amatavaggo</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para600"></span><a name="para600"></a><a name="para600_an1"></a><span class="paranum">600</span>. ‘‘Amataṃ <a name="T1.0059"></a><a name="V1.0061"></a><a name="M1.0047"></a> te, bhikkhave, na paribhuñjanti ye kāyagatāsatiṃ na paribhuñjanti. Amataṃ te, bhikkhave, paribhuñjanti ye kāyagatāsatiṃ paribhuñjantī’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para601"></span><a name="para601"></a><a name="para601_an1"></a><span class="paranum">601</span>. ‘‘Amataṃ tesaṃ, bhikkhave, aparibhuttaṃ yesaṃ kāyagatāsati aparibhuttā. Amataṃ tesaṃ, bhikkhave, paribhuttaṃ yesaṃ kāyagatāsati paribhuttā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para602"></span><a name="para602"></a><a name="para602_an1"></a><span class="paranum">602</span>. ‘‘Amataṃ tesaṃ, bhikkhave, parihīnaṃ yesaṃ kāyagatāsati parihīnā. Amataṃ tesaṃ, bhikkhave, aparihīnaṃ yesaṃ kāyagatāsati aparihīnā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para603"></span><a name="para603"></a><a name="para603_an1"></a><span class="paranum">603</span>. ‘‘Amataṃ tesaṃ, bhikkhave, viraddhaṃ yesaṃ kāyagatāsati <a name="P1.0046"></a> viraddhā. Amataṃ tesaṃ, bhikkhave, āraddhaṃ <span class="note">[aviraddhaṃ (ka.)]</span> yesaṃ kāyagatāsati āraddhā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para604"></span><a name="para604"></a><a name="para604_an1"></a><span class="paranum">604</span>. ‘‘Amataṃ te, bhikkhave, pamādiṃsu ye kāyagatāsatiṃ pamādiṃsu. Amataṃ te, bhikkhave, na pamādiṃsu ye kāyagatāsatiṃ na pamādiṃsu’’.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para605"></span><a name="para605"></a><a name="para605_an1"></a><span class="paranum">605</span>. ‘‘Amataṃ tesaṃ, bhikkhave, pamuṭṭhaṃ yesaṃ kāyagatāsati pamuṭṭhā. Amataṃ tesaṃ, bhikkhave, appamuṭṭhaṃ yesaṃ kāyagatāsati appamuṭṭhā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para606"></span><a name="para606"></a><a name="para606_an1"></a><span class="paranum">606</span>. ‘‘Amataṃ tesaṃ, bhikkhave, anāsevitaṃ yesaṃ kāyagatāsati anāsevitā. Amataṃ tesaṃ, bhikkhave, āsevitaṃ yesaṃ kāyagatāsati āsevitā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para607"></span><a name="para607"></a><a name="para607_an1"></a><span class="paranum">607</span>. ‘‘Amataṃ tesaṃ, bhikkhave, abhāvitaṃ yesaṃ kāyagatāsati abhāvitā. Amataṃ tesaṃ, bhikkhave, bhāvitaṃ yesaṃ kāyagatāsati bhāvitā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para608"></span><a name="para608"></a><a name="para608_an1"></a><span class="paranum">608</span>. ‘‘Amataṃ <a name="V1.0062"></a><a name="M1.0048"></a> tesaṃ, bhikkhave, abahulīkataṃ yesaṃ kāyagatāsati abahulīkatā<a name="T1.0060"></a>. Amataṃ tesaṃ, bhikkhave, bahulīkataṃ yesaṃ kāyagatāsati bahulīkatā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para609"></span><a name="para609"></a><a name="para609_an1"></a><span class="paranum">609</span>. ‘‘Amataṃ tesaṃ, bhikkhave, anabhiññātaṃ yesaṃ kāyagatāsati anabhiññātā. Amataṃ tesaṃ, bhikkhave, abhiññātaṃ yesaṃ kāyagatāsati abhiññātā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para610"></span><a name="para610"></a><a name="para610_an1"></a><span class="paranum">610</span>. ‘‘Amataṃ tesaṃ, bhikkhave, apariññātaṃ yesaṃ kāyagatāsati apariññātā. Amataṃ tesaṃ, bhikkhave, pariññātaṃ yesaṃ kāyagatāsati pariññātā’’ti.</p>
+
+
+
+<p class="bodytext"><span class="newparamark" id="a1_para611"></span><a name="para611"></a><a name="para611_an1"></a><span class="paranum">611</span>. ‘‘Amataṃ tesaṃ, bhikkhave, asacchikataṃ yesaṃ kāyagatāsati asacchikatā. Amataṃ tesaṃ, bhikkhave, sacchikataṃ yesaṃ kāyagatāsati sacchikatā’’ti. (….) <span class="note">[(ekakanipātassa suttasahassaṃ samattaṃ.) (sī. syā. kaṃ. pī.)]</span></p>
+
+
+
+<p class="bodytext">(Idamavoca bhagavā. Attamanā te bhikkhū bhagavato bhāsitaṃ abhinandunti.) <span class="note">[( ) etthantare pāṭho sī. syā. kaṃ. pī. potthakesu natthi]</span></p>
+
+
+
+<p class="centered">Amatavaggo vīsatimo.</p>
+
+
+
+
+<p class="centered">Ekakanipātapāḷi niṭṭhitā.</p>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+﻿a   %o         %陽性%单数,复数%主格,呼格%例:buddha佛陀
+a   %e         %陽性,中性%单数,复数%主格,呼格,處格,對格,具格%例:buddha佛陀,例:rūpa色
+a   %a         %陽性,中性%单数%呼格%例:buddha佛陀,例:rūpa色
+a   %ā         %陽性,中性%单数,复数%呼格,具格,離格,與格,屬格,主格%例:buddha佛陀,例:rūpa色
+a   %aṁ        %陽性,中性%单数%對格,主格,呼格%例:buddha佛陀,例:rūpa色
+a   %ena       %陽性%单数%具格%例:buddha佛陀
+a   %asā       %陽性%单数%具格%例:buddha佛陀
+a   %asmā      %陽性%单数%離格%例:buddha佛陀
+a   %amhā      %陽性%单数%離格%例:buddha佛陀
+a   %ato       %陽性%单数,复数%離格%例:buddha佛陀
+a   %assa      %陽性%单数%與格,屬格%例:buddha佛陀
+a   %āya       %陽性%单数%與格,屬格%例:buddha佛陀
+a   %asi       %陽性%单数%處格%例:buddha佛陀
+a   %asmiṁ     %陽性%单数%處格%例:buddha佛陀
+a   %amhi      %陽性%单数%處格%例:buddha佛陀
+ā   %ā         %陰性%单数,复数%主格,呼格,具格,對格%例:vanitā女人
+ā   %e         %陰性%单数%呼格%例:vanitā女人
+ā   %a         %陰性%单数%呼格%例:vanitā女人
+ā   %aṁ        %陰性%单数%對格%例:vanitā女人
+ā   %āya       %陰性%单数%具格,離格,與格,屬格,處格%例:vanitā女人
+ā   %ato       %陰性%单数%離格%例:vanitā女人
+ā   %āto       %陰性%单数%離格%例:vanitā女人
+ā   %āyaṁ      %陰性%单数%處格%例:vanitā女人
+i   %i         %陽性,中性,陰性%单数%主格,呼格,對格%例:aggi火,例:aṭṭhi骨,例:bhūmi地
+i   %e         %陽性%单数%呼格,與格,屬格,處格%例:aggi火
+i   %iṁ        %陽性,中性,陰性%单数%對格,主格,呼格%例:aggi火,例:aṭṭhi骨,例:bhūmi地
+i   %inā       %陽性%单数%具格,離格%例:aggi火
+i   %ismā      %陽性%单数%離格%例:aggi火
+i   %imhā      %陽性%单数%離格%例:aggi火
+i   %ito       %陽性,陰性%单数%離格%例:aggi火,例:bhūmi地
+i   %issa      %陽性%单数%與格,屬格%例:aggi火
+i   %ino       %陽性%单数,复数%與格,屬格,主格%例:aggi火
+i   %ini       %陽性%单数,复数%處格,具格%例:aggi火
+i   %ismiṁ     %陽性%单数%處格%例:aggi火
+i   %imhi      %陽性%单数%處格%例:aggi火
+i   %o         %陽性,陰性%单数%處格%例:aggi火,例:bhūmi地
+ī   %ī         %陽性,陰性%单数,复数%主格,呼格,對格%例:pakkhī鳥,例:kumārī女
+ī   %iṁ        %陽性,陰性%单数%對格%例:pakkhī鳥,例:kumārī女
+ī   %inaṁ      %陽性,陰性%单数,复数%對格,與格,屬格%例:pakkhī鳥,例:kumārī女
+ī   %inā       %陽性%单数%具格,離格%例:pakkhī鳥
+ī   %ismā      %陽性%单数%離格%例:pakkhī鳥
+ī   %imhā      %陽性%单数%離格%例:pakkhī鳥
+ī   %ito       %陽性,陰性%单数%離格%例:pakkhī鳥,例:kumārī女
+ī   %issa      %陽性%单数%與格,屬格%例:pakkhī鳥
+ī   %ino       %陽性%单数,复数%與格,屬格,主格,呼格,對格%例:pakkhī鳥
+ī   %ini       %陽性%单数%處格%例:pakkhī鳥
+ī   %ismiṁ     %陽性%单数%處格%例:pakkhī鳥
+ī   %imhi      %陽性%单数%處格%例:pakkhī鳥
+in  %i         %陽性%单数%主格,呼格%例:hatthin象
+in  %ī         %陽性%单数,复数%主格,呼格,對格%例:hatthin象
+i   %ī         %陰性,陽性,中性%单数,复数%主格,呼格,對格%例:bhūmi地,例:aggi火,例:aṭṭhi骨
+i   %iyā       %陰性%单数%具格,離格,與格,屬格%例:bhūmi地
+i   %yā        %陰性%单数%具格,離格,與格,屬格%例:bhūmi地
+i   %iyaṁ      %陰性%单数%處格%例:bhūmi地
+i   %yaṁ       %陰性%单数%處格%例:bhūmi地
+i   %āyaṁ      %陰性%单数%處格%例:bhūmi地
+i   %u         %陰性%单数%處格%例:bhūmi地
+ī   %i         %陰性%单数%主格,呼格%例:kumārī女
+ī   %iyaṁ      %陰性%单数%對格,處格%例:kumārī女
+ī   %iyā       %陰性%单数%具格,離格,與格,屬格,處格%例:kumārī女
+ī   %ya        %陰性%单数%具格%例:kumārī女
+ī   %yā        %陰性%单数%離格,與格,屬格,處格%例:kumārī女
+ī   %īto       %陰性%单数%離格%例:kumārī女
+ī   %yaṁ       %陰性%单数%處格%例:kumārī女
+u   %u         %陽性,中性,陰性%单数%主格,呼格,離格,與格,屬格,對格%例:garu老師,例:cakkhu眼,例:dhenu牝牛
+u   %o         %陽性%单数%主格,呼格%例:garu老師
+u   %uṁ        %陽性,中性,陰性%单数%對格,主格,呼格%例:garu老師,例:cakkhu眼,例:dhenu牝牛
+u   %unaṁ      %陽性,陰性%单数,复数%對格,與格,屬格%例:garu老師,例:dhenu牝牛
+u   %unā       %陽性%单数%具格,離格%例:garu老師
+u   %usmā      %陽性%单数%離格%例:garu老師
+u   %umhā      %陽性%单数%離格%例:garu老師
+u   %uto       %陽性,陰性%单数%離格%例:garu老師,例:dhenu牝牛
+u   %ussa      %陽性%单数%與格,屬格%例:garu老師
+u   %uno       %陽性%单数,复数%與格,屬格,主格,呼格,對格%例:garu老師
+u   %uni       %陽性%单数%處格%例:garu老師
+u   %usmiṁ     %陽性%单数%處格%例:garu老師
+u   %umhi      %陽性%单数%處格%例:garu老師
+ū   %u         %陽性,陰性%单数%主格,呼格%例:vidū智者,例:jambū閻浮樹
+ū   %ū         %陽性,陰性%单数,复数%主格,呼格,對格%例:vidū智者,例:jambū閻浮樹
+ū   %uṁ        %陽性,陰性%单数%對格%例:vidū智者,例:jambū閻浮樹
+ū   %unā       %陽性%单数%具格,離格%例:vidū智者
+ū   %usmā      %陽性%单数%離格%例:vidū智者
+ū   %umhā      %陽性%单数%離格%例:vidū智者
+ū   %ūto       %陽性%单数%離格%例:vidū智者
+ū   %ussa      %陽性%单数%與格,屬格%例:vidū智者
+ū   %uno       %陽性%单数,复数%與格,屬格,主格,呼格,對格%例:vidū智者
+ū   %usmiṁ     %陽性%单数%處格%例:vidū智者
+ū   %umhi      %陽性%单数%處格%例:vidū智者
+u   %uyā       %陰性%单数%具格,離格,與格,屬格,處格%例:dhenu牝牛
+u   %uyaṁ      %陰性%单数%處格%例:dhenu牝牛
+ū   %uyā       %陰性%单数%具格,離格,與格,屬格,處格%例:jambū閻浮樹
+ū   %uyaṁ      %陰性%单数%處格%例:jambū閻浮樹
+ar  %ā         %陽性,陰性%单数,复数%主格,呼格%例:★satthar大師pitar父,例:mātar母
+ar  %a         %陽性,陰性%单数%主格,呼格%例:★satthar大師pitar父,例:mātar母
+ar  %o         %陽性%单数%主格%例:★satthar大師pitar父
+ar  %e         %陽性,陰性%单数,复数%呼格,對格%例:★satthar大師pitar父,例:mātar母,例:★satthar大師◆pitar父
+ar  %araṁ      %陽性,陰性%单数%對格%例:★satthar大師pitar父,例:mātar母
+ar  %āraṁ      %陽性%单数%對格%例:★satthar大師pitar父
+ar  %uṁ        %陽性%单数%對格%例:★satthar大師pitar父
+ar  %aṁ        %陽性%单数%對格%例:★satthar大師pitar父
+ar  %arā       %陽性,陰性%单数%具格,離格%例:★satthar大師pitar父,例:mātar母
+ar  %ārā       %陽性%单数%具格,離格%例:★satthar大師pitar父
+ar  %★unā      %陽性%单数%具格%例:★satthar大師pitar父
+ar  %★u        %陽性%单数%離格%例:★satthar大師pitar父
+ar  %ito       %陽性,陰性%单数%離格%例:★satthar大師pitar父,例:mātar母
+ar  %ussa      %陽性%单数%與格,屬格%例:★satthar大師pitar父
+ar  %uno       %陽性%单数,复数%與格,屬格,對格%例:★satthar大師pitar父,例:★satthar大師◆pitar父
+ar  %u         %陽性,陰性%单数%與格,屬格%例:★satthar大師pitar父,例:mātar母
+ar  %ari       %陽性,陰性%单数%處格%例:★satthar大師pitar父,例:mātar母
+ar  %uyā       %陰性%单数%具格,離格,與格,屬格,處格%例:mātar母
+ar  %yā        %陰性%单数%具格,離格,與格,屬格,處格%例:mātar母
+ar  %āya       %陰性%单数%與格,屬格%例:mātar母
+ar  %uyaṁ      %陰性%单数%處格%例:mātar母
+an  %ā         %陽性,中性%单数,复数%主格,呼格,具格,離格,對格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %no        %陽性%单数%主格,與格,屬格%例:attan自己
+an  %a         %陽性,中性%单数%呼格,主格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %āna       %陽性%单数%對格%例:attan自己
+an  %aṁ        %陽性,中性%单数%對格,主格,呼格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %ṁ         %陽性,中性%单数%對格%例:attan自己,例:Kamm-an業
+an  %nā        %陽性%单数%具格,離格%例:attan自己
+an  %ena       %陽性,中性%单数%具格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %asmā      %陽性%单数%離格%例:attan自己,例:rājan王
+an  %amhā      %陽性%单数%離格%例:attan自己,例:rājan王
+an  %ato       %陽性%单数%離格%例:attan自己
+an  %assa      %陽性,中性%单数%與格,屬格%例:attan自己,例:Kamm-an業
+an  %nassa     %陽性%单数%與格,屬格%例:attan自己
+an  %ni        %陽性%单数%處格%例:attan自己,例:rājan王
+an  %asmiṁ     %陽性,中性%单数%處格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %imhi      %陽性%单数%處格%例:attan自己
+an  %ne        %陽性%单数%處格%例:attan自己,例:rājan王
+an  %ānaṁ      %陽性,中性%单数,复数%對格,與格,屬格%例:rājan王,例:attan自己,例:Kamm-an業
+an  %raññā     %陽性%单数%具格,離格%例:rājan王
+an  %inā       %陽性%单数%具格%例:rājan王
+an  %rañño     %陽性%单数%與格,屬格%例:rājan王
+an  %raññassa  %陽性%单数%與格,屬格%例:rājan王
+an  %ino       %陽性%单数%與格,屬格%例:rājan王
+an  %amhi      %陽性%单数%處格%例:rājan王
+an  %enā       %中性%单数%具格%例:Kamm-an業
+an  %unā       %中性%单数%具格%例:Kamm-an業
+an  %anā       %中性%单数%離格%例:Kamm-an業
+an  %uno       %中性%单数%與格,屬格%例:Kamm-an業
+an  %āni       %中性%单数,复数%處格,主格,呼格,對格%例:Kamm-an業
+an  %ani       %中性%单数%處格%例:Kamm-an業
+an  %e         %中性%单数%處格%例:Kamm-an業
+vant%ā         %陽性%单数%主格,呼格%例:Guṇa-Vant具德者
+vant%anto      %陽性%单数,复数%主格,呼格,對格%例:Guṇa-Vant具德者,例:Guṇa-vant具德者
+vant%vā        %陽性%单数%主格,呼格%例:Guṇa-Vant具德者
+vant%vanto     %陽性%单数,复数%主格,呼格,對格%例:Guṇa-Vant具德者,例:Guṇa-vant具德者
+vant%anta      %陽性%单数%呼格%例:Guṇa-Vant具德者
+vant%aṁ        %陽性%单数%呼格,對格%例:Guṇa-Vant具德者
+vant%a         %陽性%单数%呼格%例:Guṇa-Vant具德者
+vant%vanta     %陽性%单数%呼格%例:Guṇa-Vant具德者
+vant%vaṁ       %陽性%单数%呼格,對格%例:Guṇa-Vant具德者
+vant%va        %陽性%单数%呼格%例:Guṇa-Vant具德者
+vant%antaṁ     %陽性%单数,复数%對格,與格,屬格%例:Guṇa-Vant具德者,例:Guṇa-vant具德者
+vant%vantaṁ    %陽性%单数%對格%例:Guṇa-Vant具德者
+vant%atā       %陽性%单数%具格,離格%例:Guṇa-Vant具德者
+vant%antena    %陽性%单数%具格%例:Guṇa-Vant具德者
+vant%antā      %陽性%单数,复数%離格,主格,呼格%例:Guṇa-Vant具德者,例:Guṇa-vant具德者
+vant%antasmā   %陽性%单数%離格%例:Guṇa-Vant具德者
+vant%antamhā   %陽性%单数%離格%例:Guṇa-Vant具德者
+vant%antassa   %陽性%单数%與格,屬格%例:Guṇa-Vant具德者
+vant%ato       %陽性%单数%與格,屬格%例:Guṇa-Vant具德者
+vant%ati       %陽性%单数%處格%例:Guṇa-Vant具德者
+vant%ante      %陽性%单数,复数%處格,對格%例:Guṇa-Vant具德者,例:Guṇa-vant具德者
+vant%antasmiṁ  %陽性%单数%處格%例:Guṇa-Vant具德者
+vant%abtamhi   %陽性%单数%處格%例:Guṇa-Vant具德者
+mant%ā         %陽性%单数%主格,呼格%例:Guṇa-vant具德者
+mant%anto      %陽性%单数,复数%主格,呼格,對格%例:Guṇa-vant具德者
+mant%vā        %陽性%单数%主格,呼格%例:Guṇa-vant具德者
+mant%vanto     %陽性%单数,复数%主格,呼格,對格%例:Guṇa-vant具德者
+mant%anta      %陽性%单数%呼格%例:Guṇa-vant具德者
+mant%aṁ        %陽性%单数%呼格,對格%例:Guṇa-vant具德者
+mant%a         %陽性%单数%呼格%例:Guṇa-vant具德者
+mant%vanta     %陽性%单数%呼格%例:Guṇa-vant具德者
+mant%vaṁ       %陽性%单数%呼格,對格%例:Guṇa-vant具德者
+mant%va        %陽性%单数%呼格%例:Guṇa-vant具德者
+mant%antaṁ     %陽性%单数,复数%對格,與格,屬格%例:Guṇa-vant具德者
+mant%vantaṁ    %陽性%单数%對格%例:Guṇa-vant具德者
+mant%atā       %陽性%单数%具格,離格%例:Guṇa-vant具德者
+mant%antena    %陽性%单数%具格%例:Guṇa-vant具德者
+mant%antā      %陽性%单数,复数%離格,主格,呼格%例:Guṇa-vant具德者
+mant%antasmā   %陽性%单数%離格%例:Guṇa-vant具德者
+mant%antamhā   %陽性%单数%離格%例:Guṇa-vant具德者
+mant%antassa   %陽性%单数%與格,屬格%例:Guṇa-vant具德者
+mant%ato       %陽性%单数%與格,屬格%例:Guṇa-vant具德者
+mant%ati       %陽性%单数%處格%例:Guṇa-vant具德者
+mant%ante      %陽性%单数,复数%處格,對格%例:Guṇa-vant具德者
+mant%antasmiṁ  %陽性%单数%處格%例:Guṇa-vant具德者
+mant%abtamhi   %陽性%单数%處格%例:Guṇa-vant具德者
+ant %aṁ        %陽性%单数%主格,呼格%例:Gacch-ant正去
+ant %anto      %陽性%单数,复数%主格,呼格,對格%例:Gacch-ant正去
+ant %ato       %陽性%单数%主格%例:Gacch-ant正去
+ant %a         %陽性%单数%呼格%例:Gacch-ant正去
+ant %antaṁ     %陽性%单数%對格%例:Gacch-ant正去
+ant %ataṁ      %陽性%单数%對格%例:Gacch-ant正去
+as  %o         %中性%单数%主格,呼格,對格%例:manas意
+as  %aṁ        %中性%单数%主格,呼格,對格%例:manas意
+as  %a         %中性%单数%呼格%例:manas意
+as  %asā       %中性%单数%具格,離格%例:manas意
+as  %ena       %中性%单数%具格%例:manas意
+as  %ā         %中性%单数,复数%離格,主格,呼格%例:manas意
+as  %asmā      %中性%单数%離格%例:manas意
+as  %amhā      %中性%单数%離格%例:manas意
+as  %ato       %中性%单数%離格%例:manas意
+as  %assa      %中性%单数%與格,屬格%例:manas意
+as  %aso       %中性%单数%與格,屬格%例:manas意
+as  %asi       %中性%单数%處格%例:manas意
+as  %e         %中性%单数,复数%處格,對格%例:manas意
+as  %asmiṁ     %中性%单数%處格%例:manas意
+as  %amhi      %中性%单数%處格%例:manas意
+us  %u         %中性%单数%主格,呼格,對格%例:āyus壽
+us  %uṁ        %中性%单数%主格,呼格,對格%例:āyus壽
+us  %usā       %中性%单数%具格,離格%例:āyus壽
+us  %unā       %中性%单数%具格,離格%例:āyus壽
+us  %usss      %中性%单数%與格,屬格%例:āyus壽
+us  %uno       %中性%单数%與格,屬格%例:āyus壽
+us  %usi       %中性%单数%處格%例:āyus壽
+us  %uni       %中性%单数%處格%例:āyus壽
+o   %go        %陽性%单数%主格,呼格%例:go牛
+o   %goṇo      %陽性%单数%主格,呼格%例:go牛
+o   %avaṁ      %陽性%单数%對格%例:go牛
+o   %āvaṁ      %陽性%单数%對格%例:go牛
+o   %avuṁ      %陽性%单数%對格%例:go牛
+o   %āvuṁ      %陽性%单数%對格%例:go牛
+o   %oṇaṁ      %陽性%单数%對格%例:go牛
+o   %avena     %陽性%单数%具格%例:go牛
+o   %āvena     %陽性%单数%具格%例:go牛
+o   %ava       %陽性%单数%離格%例:go牛
+o   %āva       %陽性%单数%離格%例:go牛
+o   %avamha    %陽性%单数%離格%例:go牛
+o   %āvamha    %陽性%单数%離格%例:go牛
+o   %avasma    %陽性%单数%離格%例:go牛
+o   %āvasma    %陽性%单数%離格%例:go牛
+o   %āvassa    %陽性%单数%與格,屬格%例:go牛
+o   %ave       %陽性%单数%處格%例:go牛
+o   %āve       %陽性%单数%處格%例:go牛
+o   %avamhi    %陽性%单数%處格%例:go牛
+o   %āvamhi    %陽性%单数%處格%例:go牛
+o   %avasmiṁ   %陽性%单数%處格%例:go牛
+o   %āvasmiṁ   %陽性%单数%處格%例:go牛
+a   %āse       %陽性%复数%主格%例:buddha佛陀
+a   %ān        %陽性%复数%對格%例:buddha佛陀
+a   %ehi       %陽性%复数%具格,離格%例:buddha佛陀
+a   %ebhi      %陽性%复数%具格,離格%例:buddha佛陀
+a   %ānam      %陽性%复数%與格,屬格%例:buddha佛陀
+a   %āna       %陽性%复数%與格,屬格%例:buddha佛陀
+a   %esu       %陽性%复数%處格%例:buddha佛陀
+a   %āni       %中性%复数%主格,呼格,對格%例:rūpa色
+ā   %āyo       %陰性%复数%主格,呼格,對格%例:vanitā女人
+ā   %āhi       %陰性%复数%具格,離格%例:vanitā女人
+ā   %ābhi      %陰性%复数%具格,離格%例:vanitā女人
+ā   %ānaṁ      %陰性%复数%與格,屬格%例:vanitā女人
+ā   %āna       %陰性%复数%與格,屬格%例:vanitā女人
+ā   %āsu       %陰性%复数%處格%例:vanitā女人
+i   %ayo       %陽性%复数%主格,對格%例:aggi火
+i   %iyo       %陽性,陰性%复数%主格,呼格,對格%例:aggi火,例:bhūmi地
+i   %avo       %陽性%复数%呼格%例:aggi火
+i   %ibhi      %陽性%复数%具格,離格%例:aggi火
+i   %ībhi      %陽性,陰性%复数%具格,離格%例:aggi火,例:bhūmi地
+i   %ihi       %陽性%复数%具格,離格%例:aggi火
+i   %īhi       %陽性,陰性%复数%離格,具格%例:aggi火,例:bhūmi地
+i   %inaṁ      %陽性%复数%與格,屬格%例:aggi火
+i   %īnaṁ      %陽性,陰性%复数%與格,屬格%例:aggi火,例:bhūmi地
+i   %isu       %陽性,陰性%复数%處格%例:aggi火,例:bhūmi地
+i   %īsu       %陽性,陰性%复数%處格%例:aggi火,例:bhūmi地
+i   %īni       %中性%复数%主格,呼格,對格%例:aṭṭhi骨
+ī   %ihi       %陽性%复数%具格,離格%例:pakkhī鳥
+ī   %īhi       %陽性,陰性%复数%具格,離格%例:pakkhī鳥,例:kumārī女
+ī   %ibhi      %陽性%复数%具格,離格%例:pakkhī鳥
+ī   %ībhi      %陽性,陰性%复数%具格,離格%例:pakkhī鳥,例:kumārī女
+ī   %īnaṁ      %陽性,陰性%复数%與格,屬格%例:pakkhī鳥,例:kumārī女
+ī   %isu       %陽性,陰性%复数%處格%例:pakkhī鳥,例:kumārī女
+ī   %īsu       %陽性,陰性%复数%處格%例:pakkhī鳥,例:kumārī女
+in  %ino       %陽性%复数%主格,呼格,對格%例:hatthin象
+in  %ihi       %陽性%复数%具格,離格%例:hatthin象
+in  %īhi       %陽性%复数%具格,離格%例:hatthin象
+in  %ibhi      %陽性%复数%具格,離格%例:hatthin象
+in  %ībhi      %陽性%复数%具格,離格%例:hatthin象
+in  %inaṁ      %陽性%复数%與格,屬格%例:hatthin象
+in  %īnaṁ      %陽性%复数%與格,屬格%例:hatthin象
+in  %isu       %陽性%复数%處格%例:hatthin象
+in  %īsu       %陽性%复数%處格%例:hatthin象
+i   %yo        %陰性%复数%主格,呼格,對格%例:bhūmi地
+ī   %iyo       %陰性%复数%主格,呼格,對格%例:kumārī女
+ī   %īyo       %陰性%复数%主格,呼格,對格%例:kumārī女
+ī   %āyo       %陰性%复数%主格,呼格,對格%例:kumārī女
+ī   %ryo       %陰性%复数%主格,呼格,對格%例:kumārī女
+ī   %iyanaṁ    %陰性%复数%與格,屬格%例:kumārī女
+ī   %īyanaṁ    %陰性%复数%與格,屬格%例:kumārī女
+u   %ū         %陽性,中性,陰性%复数%主格,呼格,對格%例:garu老師,例:cakkhu眼,例:dhenu牝牛
+u   %avo       %陽性%复数%主格,呼格,對格%例:garu老師
+u   %uyo       %陽性,陰性%复数%主格,對格,呼格%例:garu老師,例:dhenu牝牛
+u   %ave       %陽性%复数%呼格%例:garu老師
+u   %uhi       %陽性,陰性%复数%具格,離格%例:garu老師,例:dhenu牝牛
+u   %ūhi       %陽性,陰性%复数%具格,離格%例:garu老師,例:dhenu牝牛
+u   %ubhi      %陽性,陰性%复数%具格,離格%例:garu老師,例:dhenu牝牛
+u   %ūbhi      %陽性,陰性%复数%具格,離格%例:garu老師,例:dhenu牝牛
+u   %ūnaṁ      %陽性,陰性%复数%與格,屬格%例:garu老師,例:dhenu牝牛
+u   %unnaṁ     %陽性%复数%與格,屬格%例:garu老師
+u   %usu       %陽性,陰性%复数%處格%例:garu老師,例:dhenu牝牛
+u   %ūsu       %陽性,陰性%复数%處格%例:garu老師,例:dhenu牝牛
+u   %ūni       %中性%复数%主格,呼格,對格%例:cakkhu眼
+ū   %uvo       %陽性%复数%主格,呼格,對格%例:vidū智者
+ū   %ūno       %陽性%复数%主格,呼格,對格%例:vidū智者
+ū   %uhi       %陽性,陰性%复数%具格,離格%例:vidū智者,例:jambū閻浮樹
+ū   %ūhi       %陽性,陰性%复数%具格,離格%例:vidū智者,例:jambū閻浮樹
+ū   %ubhi      %陽性,陰性%复数%具格,離格%例:vidū智者,例:jambū閻浮樹
+ū   %ūbhi      %陽性,陰性%复数%具格,離格%例:vidū智者,例:jambū閻浮樹
+ū   %unaṁ      %陽性,陰性%复数%與格,屬格%例:vidū智者,例:jambū閻浮樹
+ū   %ūnaṁ      %陽性,陰性%复数%與格,屬格%例:vidū智者,例:jambū閻浮樹
+ū   %usu       %陽性,陰性%复数%處格%例:vidū智者,例:jambū閻浮樹
+ū   %ūsu       %陽性,陰性%复数%處格%例:vidū智者,例:jambū閻浮樹
+u   %uvo       %陰性%复数%主格,呼格,對格%例:dhenu牝牛
+ū   %uyo       %陰性%复数%主格,呼格,對格%例:jambū閻浮樹
+ū   %ūyo       %陰性%复数%主格,呼格,對格%例:jambū閻浮樹
+ar  %aro       %陽性,陰性%复数%主格,呼格,對格%例:★satthar大師◆pitar父,例:mātar母
+ar  %āro       %陽性%复数%主格,對格%例:★satthar大師◆pitar父
+ar  %★ā        %陽性%复数%主格%例:★satthar大師◆pitar父
+ar  %are       %陽性,陰性%复数%對格%例:★satthar大師◆pitar父,例:mātar母
+ar  %āre       %陽性%复数%對格%例:★satthar大師◆pitar父
+ar  %ū         %陽性%复数%對格%例:★satthar大師◆pitar父
+ar  %arehi     %陽性,陰性%复数%具格,離格%例:★satthar大師◆pitar父,例:mātar母
+ar  %ārehi     %陽性%复数%具格,離格%例:★satthar大師◆pitar父
+ar  %arebhi    %陽性,陰性%复数%具格,離格%例:★satthar大師◆pitar父,例:mātar母
+ar  %ārebhi    %陽性%复数%具格,離格%例:★satthar大師◆pitar父
+ar  %◆uhi      %陽性%复数%具格,離格%例:★satthar大師◆pitar父
+ar  %◆ūhi      %陽性%复数%具格,離格%例:★satthar大師◆pitar父
+ar  %◆ubhi     %陽性%复数%具格,離格%例:★satthar大師◆pitar父
+ar  %◆ūbhi     %陽性%复数%具格,離格%例:★satthar大師◆pitar父
+ar  %arānaṁ    %陽性,陰性%复数%與格,屬格%例:★satthar大師◆pitar父,例:mātar母
+ar  %ārānaṁ    %陽性%复数%與格,屬格%例:★satthar大師◆pitar父
+ar  %ūnaṁ      %陽性,陰性%复数%與格,屬格%例:★satthar大師◆pitar父,例:mātar母
+ar  %anaṁ      %陽性%复数%與格,屬格%例:★satthar大師◆pitar父
+ar  %ānaṁ      %陽性,陰性%复数%與格,屬格%例:★satthar大師◆pitar父,例:mātar母
+ar  %unnaṁ     %陽性,陰性%复数%與格,屬格%例:★satthar大師◆pitar父,例:mātar母
+ar  %aresu     %陽性,陰性%复数%處格%例:★satthar大師◆pitar父,例:mātar母
+ar  %āresu     %陽性%复数%處格%例:★satthar大師◆pitar父
+ar  %◆usu      %陽性%复数%處格%例:★satthar大師◆pitar父
+ar  %◆ūsu      %陽性%复数%處格%例:★satthar大師◆pitar父
+ar  %uhi       %陰性%复数%具格,離格%例:mātar母
+ar  %ūhi       %陰性%复数%具格,離格%例:mātar母
+ar  %ubhi      %陰性%复数%具格,離格%例:mātar母
+ar  %ūbhi      %陰性%复数%具格,離格%例:mātar母
+ar  %arehbi    %陰性%复数%離格%例:mātar母
+ar  %āsu       %陰性%复数%處格%例:mātar母
+ar  %usu       %陰性%复数%處格%例:mātar母
+ar  %ūsu       %陰性%复数%處格%例:mātar母
+an  %āno       %陽性%复数%主格,呼格,對格%例:attan自己,例:rājan王
+an  %ano       %陽性%复数%對格%例:attan自己
+an  %ehi       %陽性,中性%复数%具格,離格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %ebhi      %陽性,中性%复数%具格,離格%例:attan自己,例:Kamm-an業
+an  %uhi       %陽性%复数%具格,離格%例:attan自己,例:rājan王
+an  %ūhi       %陽性%复数%具格,離格%例:attan自己,例:rājan王
+an  %ubhi      %陽性%复数%具格%例:attan自己
+an  %ūbhi      %陽性%复数%具格%例:attan自己
+an  %nāhi      %陽性%复数%具格%例:attan自己
+an  % ūnaṁ     %陽性%复数%與格,屬格%例:attan自己
+an  %usu       %陽性%复数%處格%例:attan自己,例:rājan王
+an  %ūsu       %陽性%复数%處格%例:attan自己,例:rājan王
+an  %esu       %陽性,中性%复数%處格%例:attan自己,例:rājan王,例:Kamm-an業
+an  %raññāhi   %陽性%复数%具格,離格%例:rājan王
+an  %raññaṁ    %陽性%复数%與格,屬格%例:rājan王
+an  %ūnaṁ      %陽性%复数%與格,屬格%例:rājan王
+vant%vantā     %陽性%复数%主格,呼格%例:Guṇa-vant具德者
+vant%vante     %陽性%复数%對格%例:Guṇa-vant具德者
+vant%antehi    %陽性%复数%具格,離格%例:Guṇa-vant具德者
+vant%antebhi   %陽性%复数%具格,離格%例:Guṇa-vant具德者
+vant%antānaṁ   %陽性%复数%與格,屬格%例:Guṇa-vant具德者
+vant%antesu    %陽性%复数%處格%例:Guṇa-vant具德者
+mant%vantā     %陽性%复数%主格,呼格%例:Guṇa-vant具德者
+mant%vante     %陽性%复数%對格%例:Guṇa-vant具德者
+mant%antehi    %陽性%复数%具格,離格%例:Guṇa-vant具德者
+mant%antebhi   %陽性%复数%具格,離格%例:Guṇa-vant具德者
+mant%antānaṁ   %陽性%复数%與格,屬格%例:Guṇa-vant具德者
+mant%antesu    %陽性%复数%處格%例:Guṇa-vant具德者
+ant %antā      %陽性%复数%主格,呼格%例:Gacch-ant正去
+ant %vanto     %陽性%复数%主格%例:Gacch-ant正去
+ant %vantā     %陽性%复数%主格%例:Gacch-ant正去
+ant %ante      %陽性%复数%對格%例:Gacch-ant正去
+as  %āni       %中性%复数%主格,呼格,對格%例:manas意
+as  %ehi       %中性%复数%具格,離格%例:manas意
+as  %ebhi      %中性%复数%具格,離格%例:manas意
+as  %ānaṁ      %中性%复数%與格,屬格%例:manas意
+as  %esu       %中性%复数%處格%例:manas意
+us  %ūni       %中性%复数%主格,呼格,對格%例:āyus壽
+us  %ū         %中性%复数%主格,呼格,對格%例:āyus壽
+us  %ūhi       %中性%复数%具格,離格%例:āyus壽
+us  %ūbhi      %中性%复数%具格,離格%例:āyus壽
+us  %usaṁ      %中性%复数%與格,屬格%例:āyus壽
+us  %ūnaṁ      %中性%复数%與格,屬格%例:āyus壽
+us  %usu       %中性%复数%處格%例:āyus壽
+us  %ūsu       %中性%复数%處格%例:āyus壽
+o   %gāvo      %陽性%复数%主格,呼格,對格%例:go牛
+o   %goṇe      %陽性%复数%對格%例:go牛
+o   %gohi      %陽性%复数%具格,離格%例:go牛
+o   %gobhi     %陽性%复数%具格,離格%例:go牛
+o   %gavehi    %陽性%复数%具格,離格%例:go牛
+o   %gavaṁ     %陽性%复数%與格,屬格%例:go牛
+o   %gunnaṁ    %陽性%复数%與格,屬格%例:go牛
+o   %gonaṁ     %陽性%复数%與格,屬格%例:go牛
+o   %goṇānaṁ   %陽性%复数%與格,屬格%例:go牛
+o   %gosu      %陽性%复数%處格%例:go牛
+o   %gavesu    %陽性%复数%處格%例:go牛
+o   %gāvesu    %陽性%复数%處格%例:go牛

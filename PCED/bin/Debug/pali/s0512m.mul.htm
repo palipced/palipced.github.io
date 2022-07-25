@@ -1,0 +1,4918 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title><script>
+function setHitsVisibility(isVisible)
+{ 
+  var c = getStyleClass('hit');
+  if (isVisible)
+  {
+    c.style.backgroundColor = 'blue';
+    c.style.color = 'white';
+  }
+  else
+  {
+    c.style.backgroundColor = 'white';
+    c.style.color = 'black';
+  }
+}
+
+function setFootnotesVisibility(isVisible)
+{
+  getStyleClass('note').style.display = (isVisible ? 'inline' : 'none');
+}
+
+function getStyleClass (className) {
+	for (var s = 0; s < document.styleSheets.length; s++)
+	{
+		if(document.styleSheets[s].rules)
+		{
+			for (var r = 0; r < document.styleSheets[s].rules.length; r++)
+			{
+				if (document.styleSheets[s].rules[r].selectorText == '.' + className)
+				{
+					return document.styleSheets[s].rules[r];
+				}
+			}
+		}
+		else if(document.styleSheets[s].cssRules)
+		{
+			for (var r = 0; r < document.styleSheets[s].cssRules.length; r++)
+			{
+				if (document.styleSheets[s].cssRules[r].selectorText == '.' + className)
+					return document.styleSheets[s].cssRules[r];
+			}
+		}
+	}
+	
+	return null;
+}
+</script><style>
+body { 
+  font-family: "Times Ext Roman", "Indic Times", "Doulos SIL", Tahoma, "Arial Unicode MS", Gentium;
+  background: white;
+}
+
+span {}
+.note {color: blue}
+.bld {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white; }
+
+p {
+  border-top: 0in; border-bottom: 0in;
+  padding-top: 0in; padding-bottom: 0in;
+  margin-top: 0in; margin-bottom: 0.5cm;
+}
+
+.indent { font-size: 12pt; text-indent: 2em; margin-left: 3em;}
+
+.bodytext { font-size: 12pt; text-indent: 2em;}
+
+.hangnum { font-size: 12pt; text-indent: 2em;}
+
+/* Namo tassa, and nitthita -- no unique structural distinction */
+.centered { font-size: 12pt; text-align:center;}
+
+.unindented { font-size: 12pt;}
+
+.book { font-size: 21pt; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 18pt; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 24pt; text-align:center; font-weight: bold;}
+
+.title { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subsubhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+/* Gatha line 1 */
+.gatha1 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { font-size: 12pt; margin-bottom: 0.5cm; margin-left: 4em;}
+</style>
+  </head>
+  <body>
+
+
+
+
+
+<p class="centered"> Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="nikaya">Khuddakanikāye</p>
+
+<a name="kn13"></a>
+
+
+<p class="book">Cariyāpiṭakapāḷi</p>
+
+<a class="khanti" id="kn13_1"></a>
+
+
+<p class="chapter">1. Akittivaggo</p>
+
+
+
+<p class="subhead">1. Akitticariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para1"></span><a name="para1"></a><a name="para1_kn13"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kappe <a name="T2.0551"></a><a name="M2.0385"></a><a name="V2.0371"></a><a name="P0.0073"></a> ca satasahasse, caturo ca asaṅkhiye;</p>
+
+
+
+<p class="gathalast">Etthantare yaṃ caritaṃ, sabbaṃ taṃ bodhipācanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para2"></span><a name="para2"></a><a name="para2_kn13"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Atītakappe caritaṃ, ṭhapayitvā bhavābhave;</p>
+
+
+
+<p class="gathalast">Imamhi kappe caritaṃ, pavakkhissaṃ suṇohi me.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para3"></span><a name="para3"></a><a name="para3_kn13"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadā ahaṃ brahāraññe, suññe vipinakānane;</p>
+
+
+
+<p class="gathalast">Ajjhogāhetvā <span class="note">[ajjhogahetvā (sī. syā.)]</span> viharāmi, akitti nāma tāpaso.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para4"></span><a name="para4"></a><a name="para4_kn13"></a><span class="paranum">4</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadā <a name="V2.0372"></a> maṃ tapatejena, santatto tidivābhibhū;</p>
+
+
+
+<p class="gathalast">Dhārento brāhmaṇavaṇṇaṃ, bhikkhāya maṃ upāgami.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para5"></span><a name="para5"></a><a name="para5_kn13"></a><span class="paranum">5</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pavanā ābhataṃ paṇṇaṃ, atelañca aloṇikaṃ;</p>
+
+
+
+<p class="gathalast">Mama dvāre ṭhitaṃ disvā, sakaṭāhena ākiriṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para6"></span><a name="para6"></a><a name="para6_kn13"></a><span class="paranum">6</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa datvānahaṃ paṇṇaṃ, nikkujjitvāna bhājanaṃ;</p>
+
+
+
+<p class="gathalast">Punesanaṃ jahitvāna, pāvisiṃ paṇṇasālakaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para7"></span><a name="para7"></a><a name="para7_kn13"></a><span class="paranum">7</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dutiyampi <a name="T2.0552"></a> tatiyampi, upagañchi mamantikaṃ;</p>
+
+
+
+<p class="gathalast">Akampito anolaggo, evamevamadāsahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para8"></span><a name="para8"></a><a name="para8_kn13"></a><span class="paranum">8</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na <a name="M2.0386"></a> me tappaccayā atthi, sarīrasmiṃ vivaṇṇiyaṃ;</p>
+
+
+
+<p class="gathalast">Pītisukhena ratiyā, vītināmemi taṃ divaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para9"></span><a name="para9"></a><a name="para9_kn13"></a><span class="paranum">9</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadi māsampi dvemāsaṃ, dakkhiṇeyyaṃ varaṃ labhe;</p>
+
+
+
+<p class="gathalast">Akampito anolīno, dadeyyaṃ dānamuttamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para10"></span><a name="para10"></a><a name="para10_kn13"></a><span class="paranum">10</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na tassa dānaṃ dadamāno, yasaṃ lābhañca patthayiṃ;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ patthayāno, tāni kammāni ācari’’nti.</p>
+
+
+
+<p class="centered">Akitticariyaṃ paṭhamaṃ.</p>
+
+
+
+<p class="subhead">2. Saṅkhacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para11"></span><a name="para11"></a><a name="para11_kn13"></a><span class="paranum">11</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="P0.0074"></a> yadā homi, brāhmaṇo saṅkhasavhayo;</p>
+
+
+
+<p class="gathalast">Mahāsamuddaṃ taritukāmo, upagacchāmi paṭṭanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para12"></span><a name="para12"></a><a name="para12_kn13"></a><span class="paranum">12</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tatthaddasaṃ paṭipathe, sayambhuṃ aparājitaṃ;</p>
+
+
+
+<p class="gathalast">Kantāraddhānaṃ paṭipannaṃ <span class="note">[kantāraddhānapaṭipannaṃ (sī. syā.)]</span>, tattāya kaṭhinabhūmiyā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para13"></span><a name="para13"></a><a name="para13_kn13"></a><span class="paranum">13</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tamahaṃ paṭipathe disvā, imamatthaṃ vicintayiṃ;</p>
+
+
+
+<p class="gathalast">‘Idaṃ khettaṃ anuppattaṃ, puññakāmassa jantuno.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para14"></span><a name="para14"></a><a name="para14_kn13"></a><span class="paranum">14</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yathā kassako puriso, khettaṃ disvā mahāgamaṃ;</p>
+
+
+
+<p class="gathalast">Tattha bījaṃ na ropeti, na so dhaññena atthiko.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para15"></span><a name="para15"></a><a name="para15_kn13"></a><span class="paranum">15</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Evamevāhaṃ <a name="T2.0553"></a><a name="V2.0373"></a> puññakāmo, disvā khettavaruttamaṃ;</p>
+
+
+
+<p class="gathalast">Yadi tattha kāraṃ na karomi, nāhaṃ puññena atthiko.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para16"></span><a name="para16"></a><a name="para16_kn13"></a><span class="paranum">16</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yathā amacco muddikāmo, rañño antepure jane;</p>
+
+
+
+<p class="gathalast">Na deti tesaṃ dhanadhaññaṃ, muddito parihāyati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para17"></span><a name="para17"></a><a name="para17_kn13"></a><span class="paranum">17</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Evamevāhaṃ puññakāmo, vipulaṃ disvāna dakkhiṇaṃ;</p>
+
+
+
+<p class="gathalast">Yadi tassa dānaṃ na dadāmi, parihāyissāmi puññato’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para18"></span><a name="para18"></a><a name="para18_kn13"></a><span class="paranum">18</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evāhaṃ cintayitvāna, orohitvā upāhanā;</p>
+
+
+
+<p class="gathalast">Tassa pādāni vanditvā, adāsiṃ chattupāhanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para19"></span><a name="para19"></a><a name="para19_kn13"></a><span class="paranum">19</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tenevāhaṃ <a name="M2.0387"></a> sataguṇato, sukhumālo sukhedhito;</p>
+
+
+
+<p class="gathalast">Api ca dānaṃ paripūrento, evaṃ tassa adāsaha’’nti.</p>
+
+
+
+<p class="centered">Saṅkhacariyaṃ dutiyaṃ.</p>
+
+
+
+<p class="subhead">3. Kururājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para20"></span><a name="para20"></a><a name="para20_kn13"></a><span class="paranum">20</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, indapatthe <span class="note">[indapatte (sī. ka.)]</span> puruttame;</p>
+
+
+
+<p class="gathalast">Rājā dhanañcayo nāma, kusale dasahupāgato.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para21"></span><a name="para21"></a><a name="para21_kn13"></a><span class="paranum">21</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kaliṅgaraṭṭhavisayā, brāhmaṇā upagañchu maṃ;</p>
+
+
+
+<p class="gathalast">Āyācuṃ maṃ hatthināgaṃ, dhaññaṃ maṅgalasammataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para22"></span><a name="para22"></a><a name="para22_kn13"></a><span class="paranum">22</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Avuṭṭhiko janapado, dubbhikkho chātako mahā;</p>
+
+
+
+<p class="gathalast">Dadāhi pavaraṃ nāgaṃ, nīlaṃ añjanasavhayaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para23"></span><a name="para23"></a><a name="para23_kn13"></a><span class="paranum">23</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Na <a name="T2.0554"></a><a name="P0.0075"></a> me yācakamanuppatte, paṭikkhepo anucchavo;</p>
+
+
+
+<p class="gathalast">Mā me bhijji samādānaṃ, dassāmi vipulaṃ gajaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para24"></span><a name="para24"></a><a name="para24_kn13"></a><span class="paranum">24</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nāgaṃ gahetvā soṇḍāya, bhiṅgāre <span class="note">[bhiṅkāre (sī.)]</span> ratanāmaye;</p>
+
+
+
+<p class="gathalast">Jalaṃ hatthe ākiritvā, brāhmaṇānaṃ adaṃ gajaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para25"></span><a name="para25"></a><a name="para25_kn13"></a><span class="paranum">25</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa nāge padinnamhi, amaccā etadabravuṃ;</p>
+
+
+
+<p class="gathalast">‘Kiṃ nu tuyhaṃ varaṃ nāgaṃ, yācakānaṃ padassasi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para26"></span><a name="para26"></a><a name="para26_kn13"></a><span class="paranum">26</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Dhaññaṃ <a name="V2.0374"></a> maṅgalasampannaṃ, saṅgāmavijayuttamaṃ;</p>
+
+
+
+<p class="gathalast">Tasmiṃ nāge padinnamhi, kiṃ te rajjaṃ karissati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para27"></span><a name="para27"></a><a name="para27_kn13"></a><span class="paranum">27</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Rajjampi me dade sabbaṃ, sarīraṃ dajjamattano;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā nāgaṃ adāsaha’’’nti.</p>
+
+
+
+<p class="centered">Kururājacariyaṃ tatiyaṃ.</p>
+
+
+
+<p class="subhead">4. Mahāsudassanacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para28"></span><a name="para28"></a><a name="para28_kn13"></a><span class="paranum">28</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kusāvatimhi nagare, yadā āsiṃ mahīpati;</p>
+
+
+
+<p class="gathalast">Mahāsudassano nāma, cakkavattī mahabbalo.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para29"></span><a name="para29"></a><a name="para29_kn13"></a><span class="paranum">29</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tatthāhaṃ <a name="M2.0388"></a> divase tikkhattuṃ, ghosāpemi tahiṃ tahiṃ;</p>
+
+
+
+<p class="gathalast">‘Ko kiṃ icchati pattheti, kassa kiṃ dīyatū dhanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para30"></span><a name="para30"></a><a name="para30_kn13"></a><span class="paranum">30</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ko chātako ko tasito, ko mālaṃ ko vilepanaṃ;</p>
+
+
+
+<p class="gathalast">Nānārattāni vatthāni, ko naggo paridahissati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para31"></span><a name="para31"></a><a name="para31_kn13"></a><span class="paranum">31</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ko pathe chattamādeti, kopāhanā mudū subhā’;</p>
+
+
+
+<p class="gathalast">Iti <a name="T2.0555"></a> sāyañca pāto ca, ghosāpemi tahiṃ tahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para32"></span><a name="para32"></a><a name="para32_kn13"></a><span class="paranum">32</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na taṃ dasasu ṭhānesu, napi ṭhānasatesu vā;</p>
+
+
+
+<p class="gathalast">Anekasataṭhānesu, paṭiyattaṃ yācake dhanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para33"></span><a name="para33"></a><a name="para33_kn13"></a><span class="paranum">33</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Divā vā yadi vā rattiṃ, yadi eti vanibbako;</p>
+
+
+
+<p class="gathalast">Laddhā yadicchakaṃ bhogaṃ, pūrahatthova gacchati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para34"></span><a name="para34"></a><a name="para34_kn13"></a><span class="paranum">34</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evarūpaṃ mahādānaṃ, adāsiṃ yāvajīvikaṃ;</p>
+
+
+
+<p class="gathalast">Napāhaṃ dessaṃ dhanaṃ dammi, napi natthi nicayo mayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para35"></span><a name="para35"></a><a name="para35_kn13"></a><span class="paranum">35</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yathāpi āturo nāma, rogato parimuttiyā;</p>
+
+
+
+<p class="gathalast">Dhanena vejjaṃ tappetvā, rogato parimuccati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para36"></span><a name="para36"></a><a name="para36_kn13"></a><span class="paranum">36</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tathevāhaṃ jānamāno, paripūretumasesato;</p>
+
+
+
+<p class="gatha2">Ūnamanaṃ pūrayituṃ, demi dānaṃ vanibbake;</p>
+
+
+
+<p class="gathalast">Nirālayo apaccāso, sambodhimanupattiyā’’ti.</p>
+
+
+
+<p class="centered">Mahāsudassanacariyaṃ catutthaṃ.</p>
+
+
+
+<p class="subhead">5. Mahāgovindacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para37"></span><a name="para37"></a><a name="para37_kn13"></a><span class="paranum">37</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="V2.0375"></a><a name="P0.0076"></a> yadā homi, sattarājapurohito;</p>
+
+
+
+<p class="gathalast">Pūjito naradevehi, mahāgovindabrāhmaṇo.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para38"></span><a name="para38"></a><a name="para38_kn13"></a><span class="paranum">38</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadāhaṃ sattarajjesu, yaṃ me āsi upāyanaṃ;</p>
+
+
+
+<p class="gathalast">Tena demi mahādānaṃ, akkhobbhaṃ <span class="note">[akkhobhaṃ (syā. kaṃ.)]</span> sāgarūpamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para39"></span><a name="para39"></a><a name="para39_kn13"></a><span class="paranum">39</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na <a name="T2.0556"></a><a name="M2.0389"></a> me dessaṃ dhanaṃ dhaññaṃ, napi natthi nicayo mayi;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā demi varaṃ dhana’’nti.</p>
+
+
+
+<p class="centered">Mahāgovindacariyaṃ pañcamaṃ.</p>
+
+
+
+<p class="subhead">6. Nimirājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para40"></span><a name="para40"></a><a name="para40_kn13"></a><span class="paranum">40</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, mithilāyaṃ puruttame;</p>
+
+
+
+<p class="gathalast">Nimi nāma mahārājā, paṇḍito kusalatthiko.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para41"></span><a name="para41"></a><a name="para41_kn13"></a><span class="paranum">41</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadāhaṃ māpayitvāna, catussālaṃ catummukhaṃ;</p>
+
+
+
+<p class="gathalast">Tattha dānaṃ pavattesiṃ, migapakkhinarādinaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para42"></span><a name="para42"></a><a name="para42_kn13"></a><span class="paranum">42</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Acchādanañca sayanaṃ, annaṃ pānañca bhojanaṃ;</p>
+
+
+
+<p class="gathalast">Abbocchinnaṃ karitvāna, mahādānaṃ pavattayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para43"></span><a name="para43"></a><a name="para43_kn13"></a><span class="paranum">43</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yathāpi sevako sāmiṃ, dhanahetumupāgato;</p>
+
+
+
+<p class="gathalast">Kāyena vācā manasā, ārādhanīyamesati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para44"></span><a name="para44"></a><a name="para44_kn13"></a><span class="paranum">44</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tathevāhaṃ sabbabhave, pariyesissāmi bodhijaṃ;</p>
+
+
+
+<p class="gathalast">Dānena satte tappetvā, icchāmi bodhimuttama’’nti.</p>
+
+
+
+<p class="centered">Nimirājacariyaṃ chaṭṭhaṃ.</p>
+
+
+
+<p class="subhead">7. Candakumāracariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para45"></span><a name="para45"></a><a name="para45_kn13"></a><span class="paranum">45</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="V2.0376"></a><a name="P0.0077"></a> yadā homi, ekarājassa atrajo;</p>
+
+
+
+<p class="gathalast">Nagare pupphavatiyā, kumāro candasavhayo.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para46"></span><a name="para46"></a><a name="para46_kn13"></a><span class="paranum">46</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadāhaṃ <a name="T2.0557"></a> yajanā mutto, nikkhanto yaññavāṭato;</p>
+
+
+
+<p class="gathalast">Saṃvegaṃ janayitvāna, mahādānaṃ pavattayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para47"></span><a name="para47"></a><a name="para47_kn13"></a><span class="paranum">47</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nāhaṃ pivāmi khādāmi, napi bhuñjāmi bhojanaṃ;</p>
+
+
+
+<p class="gathalast">Dakkhiṇeyye adatvāna, api chappañcarattiyo.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para48"></span><a name="para48"></a><a name="para48_kn13"></a><span class="paranum">48</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yathāpi <a name="M2.0390"></a> vāṇijo nāma, katvāna bhaṇḍasañcayaṃ;</p>
+
+
+
+<p class="gathalast">Yattha lābho mahā hoti, tattha taṃ <span class="note">[tattha naṃ (sī.), tattha (ka.)]</span> harati bhaṇḍakaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para49"></span><a name="para49"></a><a name="para49_kn13"></a><span class="paranum">49</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tatheva sakabhuttāpi, pare dinnaṃ mahapphalaṃ;</p>
+
+
+
+<p class="gathalast">Tasmā parassa dātabbaṃ, satabhāgo bhavissati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para50"></span><a name="para50"></a><a name="para50_kn13"></a><span class="paranum">50</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Etamatthavasaṃ ñatvā, demi dānaṃ bhavābhave;</p>
+
+
+
+<p class="gathalast">Na paṭikkamāmi dānato, sambodhimanupattiyā’’ti.</p>
+
+
+
+<p class="centered">Candakumāracariyaṃ sattamaṃ.</p>
+
+
+
+<p class="subhead">8. Sivirājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para51"></span><a name="para51"></a><a name="para51_kn13"></a><span class="paranum">51</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ariṭṭhasavhaye nagare, sivināmāsi khattiyo;</p>
+
+
+
+<p class="gathalast">Nisajja pāsādavare, evaṃ cintesahaṃ tadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para52"></span><a name="para52"></a><a name="para52_kn13"></a><span class="paranum">52</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yaṃ kiñci mānusaṃ dānaṃ, adinnaṃ me na vijjati;</p>
+
+
+
+<p class="gathalast">Yopi yāceyya maṃ cakkhuṃ, dadeyyaṃ avikampito’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para53"></span><a name="para53"></a><a name="para53_kn13"></a><span class="paranum">53</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mama saṅkappamaññāya, sakko devānamissaro;</p>
+
+
+
+<p class="gathalast">Nisinno devaparisāya, idaṃ vacanamabravi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para54"></span><a name="para54"></a><a name="para54_kn13"></a><span class="paranum">54</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Nisajja <a name="T2.0558"></a> pāsādavare, sivirājā mahiddhiko;</p>
+
+
+
+<p class="gathalast">Cintento vividhaṃ dānaṃ, adeyyaṃ so na passati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para55"></span><a name="para55"></a><a name="para55_kn13"></a><span class="paranum">55</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Tathaṃ <a name="V2.0377"></a> nu vitathaṃ netaṃ, handa vīmaṃsayāmi taṃ;</p>
+
+
+
+<p class="gathalast">Muhuttaṃ āgameyyātha, yāva jānāmi taṃ manaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para56"></span><a name="para56"></a><a name="para56_kn13"></a><span class="paranum">56</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pavedhamāno palitasiro, valigatto <span class="note">[valitagatto (sī.)]</span> jarāturo;</p>
+
+
+
+<p class="gathalast">Andhavaṇṇova hutvāna, rājānaṃ upasaṅkami.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para57"></span><a name="para57"></a><a name="para57_kn13"></a><span class="paranum">57</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘So <a name="P0.0078"></a> tadā paggahetvāna, vāmaṃ dakkhiṇabāhu ca;</p>
+
+
+
+<p class="gathalast">Sirasmiṃ añjaliṃ katvā, idaṃ vacanamabravi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para58"></span><a name="para58"></a><a name="para58_kn13"></a><span class="paranum">58</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yācāmi taṃ mahārāja, dhammika raṭṭhavaḍḍhana;</p>
+
+
+
+<p class="gathalast">Tava dānaratā kitti, uggatā devamānuse.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para59"></span><a name="para59"></a><a name="para59_kn13"></a><span class="paranum">59</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ubhopi <a name="M2.0391"></a> nettā nayanā, andhā upahatā mama;</p>
+
+
+
+<p class="gathalast">Ekaṃ me nayanaṃ dehi, tvampi ekena yāpaya’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para60"></span><a name="para60"></a><a name="para60_kn13"></a><span class="paranum">60</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassāhaṃ vacanaṃ sutvā, haṭṭho saṃviggamānaso;</p>
+
+
+
+<p class="gathalast">Katañjalī vedajāto, idaṃ vacanamabraviṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para61"></span><a name="para61"></a><a name="para61_kn13"></a><span class="paranum">61</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Idānāhaṃ cintayitvāna, pāsādato idhāgato;</p>
+
+
+
+<p class="gathalast">Tvaṃ mama cittamaññāya, nettaṃ yācitumāgato.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para62"></span><a name="para62"></a><a name="para62_kn13"></a><span class="paranum">62</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Aho me mānasaṃ siddhaṃ, saṅkappo paripūrito;</p>
+
+
+
+<p class="gathalast">Adinnapubbaṃ dānavaraṃ, ajja dassāmi yācake.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para63"></span><a name="para63"></a><a name="para63_kn13"></a><span class="paranum">63</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ehi sivaka uṭṭhehi, mā dandhayi mā pavedhayi;</p>
+
+
+
+<p class="gathalast">Ubhopi nayanaṃ dehi, uppāṭetvā vaṇibbake’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para64"></span><a name="para64"></a><a name="para64_kn13"></a><span class="paranum">64</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tato <a name="T2.0559"></a> so codito mayhaṃ, sivako vacanaṃ karo;</p>
+
+
+
+<p class="gathalast">Uddharitvāna pādāsi, tālamiñjaṃva yācake.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para65"></span><a name="para65"></a><a name="para65_kn13"></a><span class="paranum">65</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dadamānassa dentassa, dinnadānassa me sato;</p>
+
+
+
+<p class="gathalast">Cittassa aññathā natthi, bodhiyāyeva kāraṇā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para66"></span><a name="para66"></a><a name="para66_kn13"></a><span class="paranum">66</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na me dessā ubho cakkhū, attā na me na dessiyo;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā cakkhuṃ adāsaha’’nti.</p>
+
+
+
+<p class="centered">Sivirājacariyaṃ aṭṭhamaṃ.</p>
+
+
+
+<p class="subhead">9. Vessantaracariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para67"></span><a name="para67"></a><a name="para67_kn13"></a><span class="paranum">67</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yā <a name="V2.0378"></a> me ahosi janikā, phussatī <span class="note">[phusatī (sī.)]</span> nāma khattiyā;</p>
+
+
+
+<p class="gathalast">Sā atītāsu jātīsu, sakkassa mahesī piyā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para68"></span><a name="para68"></a><a name="para68_kn13"></a><span class="paranum">68</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassā āyukkhayaṃ ñatvā, devindo etadabravi;</p>
+
+
+
+<p class="gathalast">‘Dadāmi te dasa vare, varabhadde yadicchasi’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para69"></span><a name="para69"></a><a name="para69_kn13"></a><span class="paranum">69</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ vuttā ca sā devī, sakkaṃ punidamabravi;</p>
+
+
+
+<p class="gatha2">‘Kiṃ nu me aparādhatthi, kiṃ nu dessā ahaṃ tava;</p>
+
+
+
+<p class="gathalast">Rammā cāvesi maṃ ṭhānā, vātova dharaṇīruhaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para70"></span><a name="para70"></a><a name="para70_kn13"></a><span class="paranum">70</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ <a name="M2.0392"></a> vutto ca so sakko, puna tassidamabravi;</p>
+
+
+
+<p class="gathalast">‘Na ceva te kataṃ pāpaṃ, na ca me tvaṃsi appiyā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para71"></span><a name="para71"></a><a name="para71_kn13"></a><span class="paranum">71</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ettakaṃyeva <a name="P0.0079"></a> te āyu, cavanakālo bhavissati;</p>
+
+
+
+<p class="gathalast">Paṭiggaṇha mayā dinne, vare dasa varuttame’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para72"></span><a name="para72"></a><a name="para72_kn13"></a><span class="paranum">72</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sakkena <a name="T2.0560"></a> sā dinnavarā, tuṭṭhahaṭṭhā pamoditā;</p>
+
+
+
+<p class="gathalast">Mamaṃ abbhantaraṃ katvā, phussatī dasa vare varī.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para73"></span><a name="para73"></a><a name="para73_kn13"></a><span class="paranum">73</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tato cutā sā phussatī, khattiye upapajjatha;</p>
+
+
+
+<p class="gathalast">Jetuttaramhi nagare, sañjayena samāgami.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para74"></span><a name="para74"></a><a name="para74_kn13"></a><span class="paranum">74</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadāhaṃ phussatiyā kucchiṃ, okkanto piyamātuyā;</p>
+
+
+
+<p class="gathalast">Mama tejena me mātā, sadā dānaratā ahu.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para75"></span><a name="para75"></a><a name="para75_kn13"></a><span class="paranum">75</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Adhane āture jiṇṇe, yācake addhike <span class="note">[pathike (ka.)]</span> jane;</p>
+
+
+
+<p class="gathalast">Samaṇe brāhmaṇe khīṇe, deti dānaṃ akiñcane.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para76"></span><a name="para76"></a><a name="para76_kn13"></a><span class="paranum">76</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dasa māse dhārayitvāna, karonte puraṃ padakkhiṇaṃ;</p>
+
+
+
+<p class="gathalast">Vessānaṃ vīthiyā majjhe, janesi phussatī mamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para77"></span><a name="para77"></a><a name="para77_kn13"></a><span class="paranum">77</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na mayhaṃ mattikaṃ nāmaṃ, napi pettikasambhavaṃ;</p>
+
+
+
+<p class="gathalast">Jātettha vessavīthiyā, tasmā vessantaro ahu.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para78"></span><a name="para78"></a><a name="para78_kn13"></a><span class="paranum">78</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadāhaṃ dārako homi, jātiyā aṭṭhavassiko;</p>
+
+
+
+<p class="gathalast">Tadā nisajja pāsāde, dānaṃ dātuṃ vicintayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para79"></span><a name="para79"></a><a name="para79_kn13"></a><span class="paranum">79</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Hadayaṃ <a name="V2.0379"></a> dadeyyaṃ cakkhuṃ, maṃsampi rudhirampi ca;</p>
+
+
+
+<p class="gathalast">Dadeyyaṃ kāyaṃ sāvetvā, yadi koci yācaye mamaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para80"></span><a name="para80"></a><a name="para80_kn13"></a><span class="paranum">80</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sabhāvaṃ cintayantassa, akampitamasaṇṭhitaṃ;</p>
+
+
+
+<p class="gathalast">Akampi tattha pathavī, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para81"></span><a name="para81"></a><a name="para81_kn13"></a><span class="paranum">81</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Anvaddhamāse pannarase, puṇṇamāse uposathe;</p>
+
+
+
+<p class="gathalast">Paccayaṃ nāgamāruyha, dānaṃ dātuṃ upāgamiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para82"></span><a name="para82"></a><a name="para82_kn13"></a><span class="paranum">82</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kaliṅgaraṭṭhavisayā<a name="T2.0561"></a>, brāhmaṇā upagañchu maṃ;</p>
+
+
+
+<p class="gathalast">Ayācuṃ maṃ hatthināgaṃ, dhaññaṃ maṅgalasammataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para83"></span><a name="para83"></a><a name="para83_kn13"></a><span class="paranum">83</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Avuṭṭhiko <a name="M2.0393"></a> janapado, dubbhikkho chātako mahā;</p>
+
+
+
+<p class="gathalast">Dadāhi pavaraṃ nāgaṃ, sabbasetaṃ gajuttamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para84"></span><a name="para84"></a><a name="para84_kn13"></a><span class="paranum">84</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dadāmi na vikampāmi, yaṃ maṃ yācanti brāhmaṇā;</p>
+
+
+
+<p class="gathalast">Santaṃ nappatigūhāmi <span class="note">[nappatiguyhāmi (sī. ka.)]</span>, dāne me ramate mano.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para85"></span><a name="para85"></a><a name="para85_kn13"></a><span class="paranum">85</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na me yācakamanuppatte, paṭikkhepo anucchavo;</p>
+
+
+
+<p class="gathalast">‘Mā me bhijji samādānaṃ, dassāmi vipulaṃ gajaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para86"></span><a name="para86"></a><a name="para86_kn13"></a><span class="paranum">86</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nāgaṃ gahetvā soṇḍāya, bhiṅgāre ratanāmaye;</p>
+
+
+
+<p class="gathalast">Jalaṃ hatthe ākiritvā, brāhmaṇānaṃ adaṃ gajaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para87"></span><a name="para87"></a><a name="para87_kn13"></a><span class="paranum">87</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ dadantassa, sabbasetaṃ gajuttamaṃ;</p>
+
+
+
+<p class="gathalast">Tadāpi pathavī kampi, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para88"></span><a name="para88"></a><a name="para88_kn13"></a><span class="paranum">88</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa nāgassa dānena, sivayo kuddhā samāgatā;</p>
+
+
+
+<p class="gathalast">Pabbājesuṃ sakā raṭṭhā, ‘vaṅkaṃ gacchatu pabbataṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para89"></span><a name="para89"></a><a name="para89_kn13"></a><span class="paranum">89</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tesaṃ nicchubhamānānaṃ, akampitthamasaṇṭhitaṃ;</p>
+
+
+
+<p class="gathalast">Mahādānaṃ pavattetuṃ, ekaṃ varamayācisaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para90"></span><a name="para90"></a><a name="para90_kn13"></a><span class="paranum">90</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yācitā <a name="P0.0080"></a> sivayo sabbe, ekaṃ varamadaṃsu me;</p>
+
+
+
+<p class="gathalast">Sāvayitvā kaṇṇabheriṃ, mahādānaṃ dadāmahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para91"></span><a name="para91"></a><a name="para91_kn13"></a><span class="paranum">91</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Athettha vattatī saddo, tumulo bheravo mahā;</p>
+
+
+
+<p class="gathalast">Dānenimaṃ nīharanti, puna dānaṃ dadātayaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para92"></span><a name="para92"></a><a name="para92_kn13"></a><span class="paranum">92</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Hatthiṃ <a name="T2.0562"></a> asse rathe datvā, dāsiṃ dāsaṃ gavaṃ dhanaṃ;</p>
+
+
+
+<p class="gathalast">Mahādānaṃ daditvāna, nagarā nikkhamiṃ tadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para93"></span><a name="para93"></a><a name="para93_kn13"></a><span class="paranum">93</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nikkhamitvāna <a name="V2.0380"></a> nagarā, nivattitvā vilokite;</p>
+
+
+
+<p class="gathalast">Tadāpi pathavī kampi, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para94"></span><a name="para94"></a><a name="para94_kn13"></a><span class="paranum">94</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Catuvāhiṃ rathaṃ datvā, ṭhatvā cātummahāpathe;</p>
+
+
+
+<p class="gathalast">Ekākiyo adutiyo, maddideviṃ idamabraviṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para95"></span><a name="para95"></a><a name="para95_kn13"></a><span class="paranum">95</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Tvaṃ maddi kaṇhaṃ gaṇhāhi, lahukā esā kaniṭṭhikā;</p>
+
+
+
+<p class="gathalast">Ahaṃ jāliṃ gahessāmi, garuko bhātiko hi so’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para96"></span><a name="para96"></a><a name="para96_kn13"></a><span class="paranum">96</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Padumaṃ <a name="M2.0394"></a> puṇḍarīkaṃva, maddī kaṇhājinaggahī;</p>
+
+
+
+<p class="gathalast">Ahaṃ suvaṇṇabimbaṃva, jāliṃ khattiyamaggahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para97"></span><a name="para97"></a><a name="para97_kn13"></a><span class="paranum">97</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Abhijātā sukhumālā, khattiyā caturo janā;</p>
+
+
+
+<p class="gathalast">Visamaṃ samaṃ akkamantā, vaṅkaṃ gacchāma pabbataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para98"></span><a name="para98"></a><a name="para98_kn13"></a><span class="paranum">98</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ye keci manujā enti, anumagge paṭippathe;</p>
+
+
+
+<p class="gathalast">Maggante paṭipucchāma, ‘kuhiṃ vaṅkanta <span class="note">[vaṅkata (sī.)]</span> pabbato’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para99"></span><a name="para99"></a><a name="para99_kn13"></a><span class="paranum">99</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Te tattha amhe passitvā, karuṇaṃ giramudīrayuṃ;</p>
+
+
+
+<p class="gathalast">Dukkhaṃ te paṭivedenti, dūre vaṅkantapabbato.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para100"></span><a name="para100"></a><a name="para100_kn13"></a><span class="paranum">100</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadi passanti pavane, dārakā phaline dume;</p>
+
+
+
+<p class="gathalast">Tesaṃ phalānaṃ hetumhi, uparodanti dārakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para101"></span><a name="para101"></a><a name="para101_kn13"></a><span class="paranum">101</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Rodante dārake disvā, ubbiddhā <span class="note">[ubbiggā (syā. kaṃ.)]</span> vipulā dumā;</p>
+
+
+
+<p class="gathalast">Sayamevoṇamitvāna, upagacchanti dārake.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para102"></span><a name="para102"></a><a name="para102_kn13"></a><span class="paranum">102</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Idaṃ <a name="T2.0563"></a> acchariyaṃ disvā, abbhutaṃ lomahaṃsanaṃ;</p>
+
+
+
+<p class="gathalast">Sāhukāraṃ <span class="note">[sādhukāraṃ (sabbattha)]</span> pavattesi, maddī sabbaṅgasobhanā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para103"></span><a name="para103"></a><a name="para103_kn13"></a><span class="paranum">103</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Accheraṃ vata lokasmiṃ, abbhutaṃ lomahaṃsanaṃ;</p>
+
+
+
+<p class="gathalast">Vessantarassa tejena, sayamevoṇatā dumā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para104"></span><a name="para104"></a><a name="para104_kn13"></a><span class="paranum">104</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saṅkhipiṃsu pathaṃ yakkhā, anukampāya dārake;</p>
+
+
+
+<p class="gathalast">Nikkhantadivaseneva <span class="note">[nikkhantadivaseyeva (sī.)]</span>, cetaraṭṭhamupāgamuṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para105"></span><a name="para105"></a><a name="para105_kn13"></a><span class="paranum">105</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saṭṭhirājasahassāni, tadā vasanti mātule;</p>
+
+
+
+<p class="gathalast">Sabbe pañjalikā hutvā, rodamānā upāgamuṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para106"></span><a name="para106"></a><a name="para106_kn13"></a><span class="paranum">106</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tattha vattetvā sallāpaṃ, cetehi cetaputtehi;</p>
+
+
+
+<p class="gathalast">Te tato nikkhamitvāna, vaṅkaṃ agamu pabbataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para107"></span><a name="para107"></a><a name="para107_kn13"></a><span class="paranum">107</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Āmantayitvā <a name="V2.0381"></a> devindo, vissakammaṃ <span class="note">[visukammaṃ (ka.)]</span> mahiddhikaṃ;</p>
+
+
+
+<p class="gathalast">Assamaṃ sukataṃ rammaṃ, paṇṇasālaṃ sumāpaya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para108"></span><a name="para108"></a><a name="para108_kn13"></a><span class="paranum">108</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sakkassa vacanaṃ sutvā, vissakammo mahiddhiko;</p>
+
+
+
+<p class="gathalast">Assamaṃ <a name="P0.0081"></a> sukataṃ rammaṃ, paṇṇasālaṃ sumāpayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para109"></span><a name="para109"></a><a name="para109_kn13"></a><span class="paranum">109</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ajjhogāhetvā <a name="M2.0395"></a> pavanaṃ, appasaddaṃ nirākulaṃ;</p>
+
+
+
+<p class="gathalast">Caturo janā mayaṃ tattha, vasāma pabbatantare.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para110"></span><a name="para110"></a><a name="para110_kn13"></a><span class="paranum">110</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ahañca maddidevī ca, jālī kaṇhājinā cubho;</p>
+
+
+
+<p class="gathalast">Aññamaññaṃ sokanudā, vasāma assame tadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para111"></span><a name="para111"></a><a name="para111_kn13"></a><span class="paranum">111</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dārake anurakkhanto, asuñño homi assame;</p>
+
+
+
+<p class="gathalast">Maddī phalaṃ āharitvā, poseti sā tayo jane.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para112"></span><a name="para112"></a><a name="para112_kn13"></a><span class="paranum">112</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pavane <a name="T2.0564"></a> vasamānassa, addhiko maṃ upāgami;</p>
+
+
+
+<p class="gathalast">Āyāci puttake mayhaṃ, jāliṃ kaṇhājinaṃ cubho.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para113"></span><a name="para113"></a><a name="para113_kn13"></a><span class="paranum">113</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yācakaṃ upagataṃ disvā, hāso me upapajjatha;</p>
+
+
+
+<p class="gathalast">Ubho putte gahetvāna, adāsiṃ brāhmaṇe tadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para114"></span><a name="para114"></a><a name="para114_kn13"></a><span class="paranum">114</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sake putte cajantassa, jūjake brāhmaṇe yadā;</p>
+
+
+
+<p class="gathalast">Tadāpi pathavī kampi, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para115"></span><a name="para115"></a><a name="para115_kn13"></a><span class="paranum">115</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punadeva sakko oruyha, hutvā brāhmaṇasannibho;</p>
+
+
+
+<p class="gathalast">Āyāci maṃ maddideviṃ, sīlavantiṃ patibbataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para116"></span><a name="para116"></a><a name="para116_kn13"></a><span class="paranum">116</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Maddiṃ hatthe gahetvāna, udakañjali pūriya;</p>
+
+
+
+<p class="gathalast">Pasannamanasaṅkappo, tassa maddiṃ adāsahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para117"></span><a name="para117"></a><a name="para117_kn13"></a><span class="paranum">117</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Maddiyā dīyamānāya, gagane devā pamoditā;</p>
+
+
+
+<p class="gathalast">Tadāpi pathavī kampi, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para118"></span><a name="para118"></a><a name="para118_kn13"></a><span class="paranum">118</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Jāliṃ kaṇhājinaṃ dhītaṃ, maddideviṃ patibbataṃ;</p>
+
+
+
+<p class="gathalast">Cajamāno na cintesiṃ, bodhiyāyeva kāraṇā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para119"></span><a name="para119"></a><a name="para119_kn13"></a><span class="paranum">119</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na me dessā ubho puttā, maddidevī na dessiyā;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā piye adāsahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para120"></span><a name="para120"></a><a name="para120_kn13"></a><span class="paranum">120</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ brahāraññe, mātāpitusamāgame;</p>
+
+
+
+<p class="gathalast">Karuṇaṃ paridevante, sallapante sukhaṃ dukhaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para121"></span><a name="para121"></a><a name="para121_kn13"></a><span class="paranum">121</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Hirottappena <a name="V2.0382"></a> garunā <span class="note">[garunaṃ (syā. ka.)]</span>, ubhinnaṃ upasaṅkami;</p>
+
+
+
+<p class="gathalast">Tadāpi pathavī kampi, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para122"></span><a name="para122"></a><a name="para122_kn13"></a><span class="paranum">122</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0565"></a><a name="M2.0396"></a> brahāraññā, nikkhamitvā sañātibhi;</p>
+
+
+
+<p class="gathalast">Pavisāmi puraṃ rammaṃ, jetuttaraṃ puruttamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para123"></span><a name="para123"></a><a name="para123_kn13"></a><span class="paranum">123</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ratanāni satta vassiṃsu, mahāmegho pavassatha;</p>
+
+
+
+<p class="gathalast">Tadāpi pathavī kampi, sineruvanavaṭaṃsakā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para124"></span><a name="para124"></a><a name="para124_kn13"></a><span class="paranum">124</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Acetanāyaṃ pathavī, aviññāya sukhaṃ dukhaṃ;</p>
+
+
+
+<p class="gathalast">Sāpi dānabalā mayhaṃ, sattakkhattuṃ pakampathā’’ti.</p>
+
+
+
+<p class="centered">Vessantaracariyaṃ navamaṃ.</p>
+
+
+
+<p class="subhead">10. Sasapaṇḍitacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para125"></span><a name="para125"></a><a name="para125_kn13"></a><span class="paranum">125</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="P0.0082"></a> yadā homi, sasako pavanacārako;</p>
+
+
+
+<p class="gathalast">Tiṇapaṇṇasākaphalabhakkho, paraheṭhanavivajjito.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para126"></span><a name="para126"></a><a name="para126_kn13"></a><span class="paranum">126</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Makkaṭo ca siṅgālo ca, suttapoto cahaṃ tadā;</p>
+
+
+
+<p class="gathalast">Vasāma ekasāmantā, sāyaṃ pāto ca dissare <span class="note">[sāyaṃ pāto padissare (ka.)]</span>.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para127"></span><a name="para127"></a><a name="para127_kn13"></a><span class="paranum">127</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ahaṃ te anusāsāmi, kiriye kalyāṇapāpake;</p>
+
+
+
+<p class="gathalast">‘Pāpāni parivajjetha, kalyāṇe abhinivissatha’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para128"></span><a name="para128"></a><a name="para128_kn13"></a><span class="paranum">128</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Uposathamhi divase, candaṃ disvāna pūritaṃ;</p>
+
+
+
+<p class="gathalast">Etesaṃ tattha ācikkhiṃ, divaso ajjuposatho.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para129"></span><a name="para129"></a><a name="para129_kn13"></a><span class="paranum">129</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dānāni paṭiyādetha, dakkhiṇeyyassa dātave;</p>
+
+
+
+<p class="gathalast">Datvā dānaṃ dakkhiṇeyye, upavassathuposathaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para130"></span><a name="para130"></a><a name="para130_kn13"></a><span class="paranum">130</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Te <a name="T2.0566"></a> me sādhūti vatvāna, yathāsatti yathābalaṃ;</p>
+
+
+
+<p class="gathalast">Dānāni paṭiyādetvā, dakkhiṇeyyaṃ gavesisuṃ <span class="note">[gavesayyuṃ (ka.)]</span>.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para131"></span><a name="para131"></a><a name="para131_kn13"></a><span class="paranum">131</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ahaṃ nisajja cintesiṃ, dānaṃ dakkhiṇanucchavaṃ;</p>
+
+
+
+<p class="gathalast">‘Yadihaṃ labhe dakkhiṇeyyaṃ, kiṃ me dānaṃ bhavissati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para132"></span><a name="para132"></a><a name="para132_kn13"></a><span class="paranum">132</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Na <a name="V2.0383"></a> me atthi tilā muggā, māsā vā taṇḍulā ghataṃ;</p>
+
+
+
+<p class="gathalast">Ahaṃ tiṇena yāpemi, na sakkā tiṇa dātave.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para133"></span><a name="para133"></a><a name="para133_kn13"></a><span class="paranum">133</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yadi <a name="M2.0397"></a> koci eti dakkhiṇeyyo, bhikkhāya mama santike;</p>
+
+
+
+<p class="gathalast">Dajjāhaṃ sakamattānaṃ, na so tuccho gamissati’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para134"></span><a name="para134"></a><a name="para134_kn13"></a><span class="paranum">134</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mama saṅkappamaññāya, sakko brāhmaṇavaṇṇinā;</p>
+
+
+
+<p class="gathalast">Āsayaṃ me upāgacchi, dānavīmaṃsanāya me.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para135"></span><a name="para135"></a><a name="para135_kn13"></a><span class="paranum">135</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tamahaṃ disvāna santuṭṭho, idaṃ vacanamabraviṃ;</p>
+
+
+
+<p class="gathalast">‘Sādhu khosi anuppatto, ghāsahetu mamantike.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para136"></span><a name="para136"></a><a name="para136_kn13"></a><span class="paranum">136</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Adinnapubbaṃ dānavaraṃ, ajja dassāmi te ahaṃ;</p>
+
+
+
+<p class="gathalast">Tuvaṃ sīlaguṇūpeto, ayuttaṃ te paraheṭhanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para137"></span><a name="para137"></a><a name="para137_kn13"></a><span class="paranum">137</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ehi aggiṃ padīpehi, nānākaṭṭhe samānaya;</p>
+
+
+
+<p class="gathalast">Ahaṃ pacissamattānaṃ, pakkaṃ tvaṃ bhakkhayissasi’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para138"></span><a name="para138"></a><a name="para138_kn13"></a><span class="paranum">138</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Sādhū’ti so haṭṭhamano, nānākaṭṭhe samānayi;</p>
+
+
+
+<p class="gathalast">Mahantaṃ akāsi citakaṃ, katvā aṅgāragabbhakaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para139"></span><a name="para139"></a><a name="para139_kn13"></a><span class="paranum">139</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Aggiṃ tattha padīpesi, yathā so khippaṃ mahā bhave;</p>
+
+
+
+<p class="gathalast">Phoṭetvā rajagate gatte, ekamantaṃ upāvisiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para140"></span><a name="para140"></a><a name="para140_kn13"></a><span class="paranum">140</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadā <a name="T2.0567"></a> mahākaṭṭhapuñjo, āditto dhamadhamāyati <span class="note">[dhumadhumāyati (sī.), dhamamāyati (ka.)]</span>;</p>
+
+
+
+<p class="gathalast">Taduppatitvā papatiṃ, majjhe jālasikhantare.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para141"></span><a name="para141"></a><a name="para141_kn13"></a><span class="paranum">141</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yathā <a name="P0.0083"></a> sītodakaṃ nāma, paviṭṭhaṃ yassa kassaci;</p>
+
+
+
+<p class="gathalast">Sameti darathapariḷāhaṃ, assādaṃ deti pīti ca.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para142"></span><a name="para142"></a><a name="para142_kn13"></a><span class="paranum">142</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tatheva jalitaṃ aggiṃ, paviṭṭhassa mamaṃ tadā;</p>
+
+
+
+<p class="gathalast">Sabbaṃ sameti darathaṃ, yathā sītodakaṃ viya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_1_para143"></span><a name="para143"></a><a name="para143_kn13"></a><span class="paranum">143</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Chaviṃ cammaṃ maṃsaṃ nhāruṃ, aṭṭhiṃ hadayabandhanaṃ;</p>
+
+
+
+<p class="gathalast">Kevalaṃ sakalaṃ kāyaṃ, brāhmaṇassa adāsaha’’nti.</p>
+
+
+
+<p class="centered">Sasapaṇḍitacariyaṃ dasamaṃ.</p>
+
+
+
+<p class="centered">Akittivaggo paṭhamo.</p>
+
+
+
+<p class="bodytext">Tassuddānaṃ <a name="V2.0384"></a> –</p>
+
+
+
+<p class="gatha1">Akittibrāhmaṇo <a name="M2.0398"></a> saṅkho, kururājā dhanañcayo;</p>
+
+
+
+<p class="gathalast">Mahāsudassano rājā, mahāgovindabrāhmaṇo.</p>
+
+
+
+<p class="gatha1">Nimi candakumāro ca, sivi vessantaro saso;</p>
+
+
+
+<p class="gathalast">Ahameva tadā āsiṃ, yo te dānavare adā.</p>
+
+
+
+<p class="gatha1">Ete dānaparikkhārā, ete dānassa pāramī;</p>
+
+
+
+<p class="gathalast">Jīvitaṃ yācake datvā, imaṃ pārami pūrayiṃ.</p>
+
+
+
+<p class="gatha1">Bhikkhāya upagataṃ disvā, sakattānaṃ pariccajiṃ;</p>
+
+
+
+<p class="gathalast">Dānena me samo natthi, esā me dānapāramīti.</p>
+
+
+
+<p class="centered">Dānapāraminiddeso niṭṭhito.</p>
+
+
+<a class="khanti" id="kn13_2"></a>
+
+
+<p class="chapter">2. Hatthināgavaggo</p>
+
+
+
+<p class="subhead">1. Mātuposakacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para1"></span><a name="para1"></a><a name="para1_kn13"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadā <a name="T2.0568"></a><a name="M2.0399"></a><a name="V2.0385"></a><a name="P0.0084"></a> ahosiṃ pavane, kuñjaro mātuposako;</p>
+
+
+
+<p class="gathalast">Na tadā atthi mahiyā, guṇena mama sādiso.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para2"></span><a name="para2"></a><a name="para2_kn13"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pavane disvā vanacaro, rañño maṃ paṭivedayi;</p>
+
+
+
+<p class="gathalast">‘Tavānucchavo mahārāja, gajo vasati kānane.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para3"></span><a name="para3"></a><a name="para3_kn13"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Na tassa parikkhāyattho, napi āḷakakāsuyā;</p>
+
+
+
+<p class="gathalast">Saha gahite <span class="note">[samaṃ gahite (sī.)]</span> soṇḍāya, sayameva idhehi’ti.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para4"></span><a name="para4"></a><a name="para4_kn13"></a><span class="paranum">4</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa taṃ vacanaṃ sutvā, rājāpi tuṭṭhamānaso;</p>
+
+
+
+<p class="gathalast">Pesesi hatthidamakaṃ, chekācariyaṃ susikkhitaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para5"></span><a name="para5"></a><a name="para5_kn13"></a><span class="paranum">5</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Gantvā so hatthidamako, addasa padumassare;</p>
+
+
+
+<p class="gathalast">Bhisamuḷālaṃ <span class="note">[bhisamūlaṃ (ka.)]</span> uddharantaṃ, yāpanatthāya mātuyā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para6"></span><a name="para6"></a><a name="para6_kn13"></a><span class="paranum">6</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Viññāya me sīlaguṇaṃ, lakkhaṇaṃ upadhārayi;</p>
+
+
+
+<p class="gathalast">‘Ehi puttā’ti patvāna, mama soṇḍāya aggahi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para7"></span><a name="para7"></a><a name="para7_kn13"></a><span class="paranum">7</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yaṃ me tadā pākatikaṃ, sarīrānugataṃ balaṃ;</p>
+
+
+
+<p class="gathalast">Ajja nāgasahassānaṃ, balena samasādisaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para8"></span><a name="para8"></a><a name="para8_kn13"></a><span class="paranum">8</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadihaṃ tesaṃ pakuppeyyaṃ, upetānaṃ gahaṇāya maṃ;</p>
+
+
+
+<p class="gathalast">Paṭibalo bhave tesaṃ, yāva rajjampi mānusaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para9"></span><a name="para9"></a><a name="para9_kn13"></a><span class="paranum">9</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Api <a name="T2.0569"></a> cāhaṃ sīlarakkhāya, sīlapāramipūriyā;</p>
+
+
+
+<p class="gathalast">Na karomi citte aññathattaṃ, pakkhipantaṃ mamāḷake.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para10"></span><a name="para10"></a><a name="para10_kn13"></a><span class="paranum">10</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadi te maṃ tattha koṭṭeyyuṃ, pharasūhi tomarehi ca;</p>
+
+
+
+<p class="gathalast">Neva tesaṃ pakuppeyyaṃ, sīlakhaṇḍabhayā mamā’’ti.</p>
+
+
+
+<p class="centered">Mātuposakacariyaṃ paṭhamaṃ.</p>
+
+
+
+<p class="subhead">2. Bhūridattacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para11"></span><a name="para11"></a><a name="para11_kn13"></a><span class="paranum">11</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="M2.0400"></a><a name="V2.0386"></a><a name="P0.0085"></a> yadā homi, bhūridatto mahiddhiko;</p>
+
+
+
+<p class="gathalast">Virūpakkhena mahāraññā, devalokamagañchahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para12"></span><a name="para12"></a><a name="para12_kn13"></a><span class="paranum">12</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tattha passitvāhaṃ deve, ekantaṃ sukhasamappite;</p>
+
+
+
+<p class="gathalast">Taṃ saggagamanatthāya, sīlabbataṃ samādiyiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para13"></span><a name="para13"></a><a name="para13_kn13"></a><span class="paranum">13</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sarīrakiccaṃ katvāna, bhutvā yāpanamattakaṃ;</p>
+
+
+
+<p class="gathalast">Caturo aṅge adhiṭṭhāya, semi vammikamuddhani.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para14"></span><a name="para14"></a><a name="para14_kn13"></a><span class="paranum">14</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Chaviyā cammena maṃsena, nahāruaṭṭhikehi vā;</p>
+
+
+
+<p class="gathalast">Yassa etena karaṇīyaṃ, dinnaṃyeva harātu so.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para15"></span><a name="para15"></a><a name="para15_kn13"></a><span class="paranum">15</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saṃsito akataññunā, ālampāyano <span class="note">[ālambaṇo (sī.)]</span> mamaggahi;</p>
+
+
+
+<p class="gathalast">Peḷāya pakkhipitvāna, kīḷeti maṃ tahiṃ tahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para16"></span><a name="para16"></a><a name="para16_kn13"></a><span class="paranum">16</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Peḷāya pakkhipantepi, sammaddantepi pāṇinā;</p>
+
+
+
+<p class="gathalast">Ālampāyane <span class="note">[ālambaṇe (sī.)]</span> na kuppāmi, sīlakhaṇḍabhayā mama.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para17"></span><a name="para17"></a><a name="para17_kn13"></a><span class="paranum">17</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sakajīvitapariccāgo<a name="T2.0570"></a>, tiṇato lahuko mama;</p>
+
+
+
+<p class="gathalast">Sīlavītikkamo mayhaṃ, pathavīuppatanaṃ viya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para18"></span><a name="para18"></a><a name="para18_kn13"></a><span class="paranum">18</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nirantaraṃ jātisataṃ, cajeyyaṃ mama jīvitaṃ;</p>
+
+
+
+<p class="gathalast">Neva sīlaṃ pabhindeyyaṃ, catuddīpāna hetupi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para19"></span><a name="para19"></a><a name="para19_kn13"></a><span class="paranum">19</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Api cāhaṃ sīlarakkhāya, sīlapāramipūriyā;</p>
+
+
+
+<p class="gathalast">Na karomi citte aññathattaṃ, pakkhipantampi peḷake’’ti.</p>
+
+
+
+<p class="centered">Bhūridattacariyaṃ dutiyaṃ.</p>
+
+
+
+<p class="subhead">3. Campeyyanāgacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para20"></span><a name="para20"></a><a name="para20_kn13"></a><span class="paranum">20</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, campeyyako mahiddhiko;</p>
+
+
+
+<p class="gathalast">Tadāpi dhammiko āsiṃ, sīlabbatasamappito.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para21"></span><a name="para21"></a><a name="para21_kn13"></a><span class="paranum">21</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadāpi <a name="V2.0387"></a> maṃ dhammacāriṃ, upavutthaṃ uposathaṃ;</p>
+
+
+
+<p class="gathalast">Ahituṇḍiko gahetvāna, rājadvāramhi kīḷati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para22"></span><a name="para22"></a><a name="para22_kn13"></a><span class="paranum">22</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yaṃ <a name="M2.0401"></a> yaṃ so vaṇṇaṃ cintayi, nīlaṃva pītalohitaṃ;</p>
+
+
+
+<p class="gathalast">Tassa cittānuvattanto, homi cintitasannibho.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para23"></span><a name="para23"></a><a name="para23_kn13"></a><span class="paranum">23</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Thalaṃ <a name="P0.0086"></a> kareyyamudakaṃ, udakampi thalaṃ kare;</p>
+
+
+
+<p class="gathalast">Yadihaṃ tassa pakuppeyyaṃ, khaṇena chārikaṃ kare.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para24"></span><a name="para24"></a><a name="para24_kn13"></a><span class="paranum">24</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadi cittavasī hessaṃ, parihāyissāmi sīlato;</p>
+
+
+
+<p class="gathalast">Sīlena parihīnassa, uttamattho na sijjhati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para25"></span><a name="para25"></a><a name="para25_kn13"></a><span class="paranum">25</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kāmaṃ <a name="T2.0571"></a> bhijjatuyaṃ kāyo, idheva vikirīyatu;</p>
+
+
+
+<p class="gathalast">Neva sīlaṃ pabhindeyyaṃ, vikirante bhusaṃ viyā’’ti.</p>
+
+
+
+<p class="centered">Campeyyanāgacariyaṃ tatiyaṃ.</p>
+
+
+
+<p class="subhead">4. Cūḷabodhicariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para26"></span><a name="para26"></a><a name="para26_kn13"></a><span class="paranum">26</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, cūḷabodhi susīlavā;</p>
+
+
+
+<p class="gathalast">Bhavaṃ disvāna bhayato, nekkhammaṃ abhinikkhamiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para27"></span><a name="para27"></a><a name="para27_kn13"></a><span class="paranum">27</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yā me dutiyikā āsi, brāhmaṇī kanakasannibhā;</p>
+
+
+
+<p class="gathalast">Sāpi vaṭṭe anapekkhā, nekkhammaṃ abhinikkhami.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para28"></span><a name="para28"></a><a name="para28_kn13"></a><span class="paranum">28</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nirālayā chinnabandhū, anapekkhā kule gaṇe;</p>
+
+
+
+<p class="gathalast">Carantā gāmanigamaṃ, bārāṇasimupāgamuṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para29"></span><a name="para29"></a><a name="para29_kn13"></a><span class="paranum">29</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tattha vasāma nipakā, asaṃsaṭṭhā kule gaṇe;</p>
+
+
+
+<p class="gathalast">Nirākule appasadde, rājuyyāne vasāmubho.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para30"></span><a name="para30"></a><a name="para30_kn13"></a><span class="paranum">30</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Uyyānadassanaṃ gantvā, rājā addasa brāhmaṇiṃ;</p>
+
+
+
+<p class="gathalast">Upagamma mamaṃ pucchi, ‘tuyhesā kā kassa bhariyā’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para31"></span><a name="para31"></a><a name="para31_kn13"></a><span class="paranum">31</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ vutte ahaṃ tassa, idaṃ vacanamabraviṃ;</p>
+
+
+
+<p class="gathalast">‘Na mayhaṃ bhariyā esā, sahadhammā ekasāsanī’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para32"></span><a name="para32"></a><a name="para32_kn13"></a><span class="paranum">32</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tissā <a name="V2.0388"></a> <span class="note">[tassā (sī.)]</span> sārattagadhito, gāhāpetvāna ceṭake;</p>
+
+
+
+<p class="gathalast">Nippīḷayanto balasā, antepuraṃ pavesayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para33"></span><a name="para33"></a><a name="para33_kn13"></a><span class="paranum">33</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Odapattakiyā <a name="M2.0402"></a> mayhaṃ, sahajā ekasāsanī;</p>
+
+
+
+<p class="gathalast">Ākaḍḍhitvā nayantiyā, kopo me upapajjatha.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para34"></span><a name="para34"></a><a name="para34_kn13"></a><span class="paranum">34</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saha <a name="T2.0572"></a> kope samuppanne, sīlabbatamanussariṃ;</p>
+
+
+
+<p class="gathalast">Tattheva kopaṃ niggaṇhiṃ, nādāsiṃ vaḍḍhitūpari.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para35"></span><a name="para35"></a><a name="para35_kn13"></a><span class="paranum">35</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadi naṃ brāhmaṇiṃ koci, koṭṭeyya tiṇhasattiyā;</p>
+
+
+
+<p class="gathalast">Neva sīlaṃ pabhindeyyaṃ, bodhiyāyeva kāraṇā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para36"></span><a name="para36"></a><a name="para36_kn13"></a><span class="paranum">36</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na mesā brāhmaṇī dessā, napi me balaṃ na vijjati;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā sīlānurakkhisa’’nti.</p>
+
+
+
+<p class="centered">Cūḷabodhicariyaṃ catutthaṃ.</p>
+
+
+
+<p class="subhead">5. Mahiṃsarājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para37"></span><a name="para37"></a><a name="para37_kn13"></a><span class="paranum">37</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="P0.0087"></a> yadā homi, mahiṃso pavanacārako;</p>
+
+
+
+<p class="gathalast">Pavaḍḍhakāyo balavā, mahanto bhīmadassano.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para38"></span><a name="para38"></a><a name="para38_kn13"></a><span class="paranum">38</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pabbhāre giridugge <span class="note">[vanadugge (sī.)]</span> ca, rukkhamūle dakāsaye;</p>
+
+
+
+<p class="gathalast">Hotettha ṭhānaṃ mahiṃsānaṃ, koci koci tahiṃ tahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para39"></span><a name="para39"></a><a name="para39_kn13"></a><span class="paranum">39</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Vicaranto brahāraññe, ṭhānaṃ addasa bhaddakaṃ;</p>
+
+
+
+<p class="gathalast">Taṃ ṭhānaṃ upagantvāna, tiṭṭhāmi ca sayāmi ca.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para40"></span><a name="para40"></a><a name="para40_kn13"></a><span class="paranum">40</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Athettha kapimāgantvā, pāpo anariyo lahu;</p>
+
+
+
+<p class="gathalast">Khandhe nalāṭe bhamuke, mutteti ohanetitaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para41"></span><a name="para41"></a><a name="para41_kn13"></a><span class="paranum">41</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sakimpi divasaṃ dutiyaṃ, tatiyaṃ catutthampi ca;</p>
+
+
+
+<p class="gathalast">Dūseti maṃ sabbakālaṃ, tena homi upadduto.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para42"></span><a name="para42"></a><a name="para42_kn13"></a><span class="paranum">42</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mamaṃ <a name="T2.0573"></a> upaddutaṃ disvā, yakkho maṃ idamabravi;</p>
+
+
+
+<p class="gathalast">‘Nāsehetaṃ chavaṃ pāpaṃ, siṅgehi ca khurehi ca’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para43"></span><a name="para43"></a><a name="para43_kn13"></a><span class="paranum">43</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ <a name="V2.0389"></a> vutte tadā yakkhe, ahaṃ taṃ idamabraviṃ;</p>
+
+
+
+<p class="gathalast">‘Kiṃ tvaṃ makkhesi kuṇapena, pāpena anariyena maṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para44"></span><a name="para44"></a><a name="para44_kn13"></a><span class="paranum">44</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yadihaṃ <a name="M2.0403"></a> tassa pakuppeyyaṃ, tato hīnataro bhave;</p>
+
+
+
+<p class="gathalast">Sīlañca me pabhijjeyya, viññū ca garaheyyu maṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para45"></span><a name="para45"></a><a name="para45_kn13"></a><span class="paranum">45</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Hīḷitā jīvitā vāpi, parisuddhena mataṃ varaṃ;</p>
+
+
+
+<p class="gathalast">Kyāhaṃ jīvitahetūpi, kāhāmiṃ paraheṭhanaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para46"></span><a name="para46"></a><a name="para46_kn13"></a><span class="paranum">46</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mamevāyaṃ maññamāno, aññepevaṃ karissati;</p>
+
+
+
+<p class="gathalast">Teva tassa vadhissanti, sā me mutti bhavissati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para47"></span><a name="para47"></a><a name="para47_kn13"></a><span class="paranum">47</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Hīnamajjhimaukkaṭṭhe, sahanto avamānitaṃ;</p>
+
+
+
+<p class="gathalast">Evaṃ labhati sappañño, manasā yathā patthita’’nti.</p>
+
+
+
+<p class="centered">Mahiṃsarājacariyaṃ pañcamaṃ.</p>
+
+
+
+<p class="subhead">6. Rururājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para48"></span><a name="para48"></a><a name="para48_kn13"></a><span class="paranum">48</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, sutattakanakasannibho;</p>
+
+
+
+<p class="gathalast">Migarājā rurunāma, paramasīlasamāhito.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para49"></span><a name="para49"></a><a name="para49_kn13"></a><span class="paranum">49</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ramme padese ramaṇīye, vivitte amanussake;</p>
+
+
+
+<p class="gathalast">Tattha vāsaṃ upagañchiṃ, gaṅgākūle manorame.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para50"></span><a name="para50"></a><a name="para50_kn13"></a><span class="paranum">50</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Atha <a name="P0.0088"></a> upari gaṅgāya, dhanikehi paripīḷito;</p>
+
+
+
+<p class="gathalast">Puriso gaṅgāya papati, ‘jīvāmi vā marāmi vā’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para51"></span><a name="para51"></a><a name="para51_kn13"></a><span class="paranum">51</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Rattindivaṃ <a name="T2.0574"></a> so gaṅgāya, vuyhamāno mahodake;</p>
+
+
+
+<p class="gathalast">Ravanto karuṇaṃ ravaṃ, majjhe gaṅgāya gacchati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para52"></span><a name="para52"></a><a name="para52_kn13"></a><span class="paranum">52</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassāhaṃ saddaṃ sutvāna, karuṇaṃ paridevato;</p>
+
+
+
+<p class="gathalast">Gaṅgāya tīre ṭhatvāna, apucchiṃ ‘kosi tvaṃ naro’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para53"></span><a name="para53"></a><a name="para53_kn13"></a><span class="paranum">53</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘So me puṭṭho ca byākāsi, attano karaṇaṃ tadā;</p>
+
+
+
+<p class="gathalast">‘Dhanikehi bhīto tasito, pakkhandohaṃ mahānadiṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para54"></span><a name="para54"></a><a name="para54_kn13"></a><span class="paranum">54</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa <a name="V2.0390"></a> katvāna kāruññaṃ, cajitvā mama jīvitaṃ;</p>
+
+
+
+<p class="gathalast">Pavisitvā nīhariṃ tassa, andhakāramhi rattiyā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para55"></span><a name="para55"></a><a name="para55_kn13"></a><span class="paranum">55</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Assatthakālamaññāya, tassāhaṃ idamabraviṃ;</p>
+
+
+
+<p class="gathalast">‘Ekaṃ taṃ varaṃ yācāmi, mā maṃ kassaci pāvada’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para56"></span><a name="para56"></a><a name="para56_kn13"></a><span class="paranum">56</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nagaraṃ <a name="M2.0404"></a> gantvāna ācikkhi, pucchito dhanahetuko;</p>
+
+
+
+<p class="gathalast">Rājānaṃ so gahetvāna, upagañchi mamantikaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para57"></span><a name="para57"></a><a name="para57_kn13"></a><span class="paranum">57</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yāvatā karaṇaṃ sabbaṃ, rañño ārocitaṃ mayā;</p>
+
+
+
+<p class="gatha2">Rājā sutvāna vacanaṃ, usuṃ tassa pakappayi;</p>
+
+
+
+<p class="gathalast">‘Idheva ghātayissāmi, mittadubbhiṃ <span class="note">[mittadūbhiṃ (sī.)]</span> anāriyaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para58"></span><a name="para58"></a><a name="para58_kn13"></a><span class="paranum">58</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tamahaṃ anurakkhanto, nimminiṃ mama attanā;</p>
+
+
+
+<p class="gathalast">‘Tiṭṭhateso mahārāja, kāmakāro bhavāmi te’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para59"></span><a name="para59"></a><a name="para59_kn13"></a><span class="paranum">59</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Anurakkhiṃ mama sīlaṃ, nārakkhiṃ mama jīvitaṃ;</p>
+
+
+
+<p class="gathalast">Sīlavā hi tadā āsiṃ, bodhiyāyeva kāraṇā’’ti.</p>
+
+
+
+<p class="centered">Rururājacariyaṃ chaṭṭhaṃ.</p>
+
+
+
+<p class="subhead">7. Mātaṅgacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para60"></span><a name="para60"></a><a name="para60_kn13"></a><span class="paranum">60</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0575"></a> yadā homi, jaṭilo uggatāpano;</p>
+
+
+
+<p class="gathalast">Mātaṅgo nāma nāmena, sīlavā susamāhito.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para61"></span><a name="para61"></a><a name="para61_kn13"></a><span class="paranum">61</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ahañca brāhmaṇo eko, gaṅgākūle vasāmubho;</p>
+
+
+
+<p class="gathalast">Ahaṃ vasāmi upari, heṭṭhā vasati brāhmaṇo.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para62"></span><a name="para62"></a><a name="para62_kn13"></a><span class="paranum">62</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Vicaranto anukūlamhi, uddhaṃ me assamaddasa;</p>
+
+
+
+<p class="gathalast">Tattha maṃ paribhāsetvā, abhisapi muddhaphālanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para63"></span><a name="para63"></a><a name="para63_kn13"></a><span class="paranum">63</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadihaṃ tassa pakuppeyyaṃ, yadi sīlaṃ na gopaye;</p>
+
+
+
+<p class="gathalast">Oloketvānahaṃ tassa, kareyyaṃ chārikaṃ viya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para64"></span><a name="para64"></a><a name="para64_kn13"></a><span class="paranum">64</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yaṃ <a name="P0.0089"></a> so tadā maṃ abhisapi, kupito duṭṭhamānaso;</p>
+
+
+
+<p class="gathalast">Tasseva matthake nipati, yogena taṃ pamocayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para65"></span><a name="para65"></a><a name="para65_kn13"></a><span class="paranum">65</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Anurakkhiṃ <a name="V2.0391"></a> mama sīlaṃ, nārakkhiṃ mama jīvitaṃ;</p>
+
+
+
+<p class="gathalast">Sīlavā hi tadā āsiṃ, bodhiyāyeva kāraṇā’’ti.</p>
+
+
+
+<p class="centered">Mātaṅgacariyaṃ sattamaṃ.</p>
+
+
+
+<p class="subhead">8. Dhammadevaputtacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para66"></span><a name="para66"></a><a name="para66_kn13"></a><span class="paranum">66</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="M2.0405"></a> yadā homi, mahāpakkho mahiddhiko;</p>
+
+
+
+<p class="gathalast">Dhammo nāma mahāyakkho, sabbalokānukampako.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para67"></span><a name="para67"></a><a name="para67_kn13"></a><span class="paranum">67</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dasakusalakammapathe<a name="T2.0576"></a>, samādapento mahājanaṃ;</p>
+
+
+
+<p class="gathalast">Carāmi gāmanigamaṃ, samitto saparijjano.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para68"></span><a name="para68"></a><a name="para68_kn13"></a><span class="paranum">68</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pāpo kadariyo yakkho, dīpento dasa pāpake;</p>
+
+
+
+<p class="gathalast">Sopettha mahiyā carati, samitto saparijjano.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para69"></span><a name="para69"></a><a name="para69_kn13"></a><span class="paranum">69</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dhammavādī adhammo ca, ubho paccanikā mayaṃ;</p>
+
+
+
+<p class="gathalast">Dhure dhuraṃ ghaṭṭayantā, samimhā paṭipathe ubho.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para70"></span><a name="para70"></a><a name="para70_kn13"></a><span class="paranum">70</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kalaho vattatī bhesmā, kalyāṇapāpakassa ca;</p>
+
+
+
+<p class="gathalast">Maggā okkamanatthāya, mahāyuddho upaṭṭhito.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para71"></span><a name="para71"></a><a name="para71_kn13"></a><span class="paranum">71</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadihaṃ tassa kuppeyyaṃ, yadi bhinde tapoguṇaṃ;</p>
+
+
+
+<p class="gathalast">Sahaparijanaṃ tassa, rajabhūtaṃ kareyyahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para72"></span><a name="para72"></a><a name="para72_kn13"></a><span class="paranum">72</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Apicāhaṃ sīlarakkhāya, nibbāpetvāna mānasaṃ;</p>
+
+
+
+<p class="gathalast">Saha janenokkamitvā, pathaṃ pāpassa dāsahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para73"></span><a name="para73"></a><a name="para73_kn13"></a><span class="paranum">73</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saha pathato okkante, katvā cittassa nibbutiṃ;</p>
+
+
+
+<p class="gathalast">Vivaraṃ adāsi pathavī, pāpayakkhassa tāvade’’ti.</p>
+
+
+
+<p class="centered">Dhammadevaputtacariyaṃ aṭṭhamaṃ.</p>
+
+
+
+<p class="subhead">9. Alīnasattucariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para74"></span><a name="para74"></a><a name="para74_kn13"></a><span class="paranum">74</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pañcālaraṭṭhe <a name="V2.0392"></a><a name="P0.0090"></a> nagaravare, kapilāyaṃ <span class="note">[kampilāyaṃ (sī.), kappilāyaṃ (syā.)]</span> puruttame;</p>
+
+
+
+<p class="gathalast">Rājā jayaddiso nāma, sīlaguṇamupāgato.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para75"></span><a name="para75"></a><a name="para75_kn13"></a><span class="paranum">75</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa <a name="T2.0577"></a> rañño ahaṃ putto, sutadhammo susīlavā;</p>
+
+
+
+<p class="gathalast">Alīnasatto guṇavā, anurakkhaparijano sadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para76"></span><a name="para76"></a><a name="para76_kn13"></a><span class="paranum">76</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pitā me migavaṃ gantvā, porisādaṃ upāgami;</p>
+
+
+
+<p class="gathalast">So me pitumaggahesi, ‘bhakkhosi mama mā cali’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para77"></span><a name="para77"></a><a name="para77_kn13"></a><span class="paranum">77</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa <a name="M2.0406"></a> taṃ vacanaṃ sutvā, bhīto tasitavedhito;</p>
+
+
+
+<p class="gathalast">Ūrukkhambho ahu tassa, disvāna porisādakaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para78"></span><a name="para78"></a><a name="para78_kn13"></a><span class="paranum">78</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Migavaṃ gahetvā muñcassu, katvā āgamanaṃ puna;</p>
+
+
+
+<p class="gathalast">Brāhmaṇassa dhanaṃ datvā, pitā āmantayī mamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para79"></span><a name="para79"></a><a name="para79_kn13"></a><span class="paranum">79</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Rajjaṃ putta paṭipajja, mā pamajji puraṃ idaṃ;</p>
+
+
+
+<p class="gathalast">Kataṃ me porisādena, mama āgamanaṃ puna’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para80"></span><a name="para80"></a><a name="para80_kn13"></a><span class="paranum">80</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mātāpitū ca vanditvā, nimminitvāna attanā;</p>
+
+
+
+<p class="gathalast">Nikkhipitvā dhanuṃ khaggaṃ, porisādaṃ upāgamiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para81"></span><a name="para81"></a><a name="para81_kn13"></a><span class="paranum">81</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sasatthahatthūpagataṃ, kadāci so tasissati;</p>
+
+
+
+<p class="gathalast">Tena bhijjissati sīlaṃ, parittāsaṃ <span class="note">[paritāsaṃ (sī.)]</span> kate mayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para82"></span><a name="para82"></a><a name="para82_kn13"></a><span class="paranum">82</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sīlakhaṇḍabhayā mayhaṃ, tassa dessaṃ na byāhariṃ;</p>
+
+
+
+<p class="gathalast">Mettacitto hitavādī, idaṃ vacanamabraviṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para83"></span><a name="para83"></a><a name="para83_kn13"></a><span class="paranum">83</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ujjālehi mahāaggiṃ, papatissāmi rukkhato;</p>
+
+
+
+<p class="gathalast">Tvaṃ pakkakālamaññāya <span class="note">[supakkakālamaññāya (pī.)]</span>, bhakkhaya maṃ pitāmaha’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para84"></span><a name="para84"></a><a name="para84_kn13"></a><span class="paranum">84</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Iti sīlavataṃ hetu, nārakkhiṃ mama jīvitaṃ;</p>
+
+
+
+<p class="gathalast">Pabbājesiṃ cahaṃ tassa, sadā pāṇātipātika’’nti.</p>
+
+
+
+<p class="centered">Alīnasattucariyaṃ navamaṃ.</p>
+
+
+
+<p class="subhead">10. Saṅkhapālacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para85"></span><a name="para85"></a><a name="para85_kn13"></a><span class="paranum">85</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0578"></a><a name="V2.0393"></a><a name="P0.0091"></a> yadā homi, saṅkhapālo mahiddhiko;</p>
+
+
+
+<p class="gathalast">Dāṭhāvudho ghoraviso, dvijivho uragādhibhū.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para86"></span><a name="para86"></a><a name="para86_kn13"></a><span class="paranum">86</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Catuppathe mahāmagge, nānājanasamākule;</p>
+
+
+
+<p class="gathalast">Caturo aṅge adhiṭṭhāya, tattha vāsamakappayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para87"></span><a name="para87"></a><a name="para87_kn13"></a><span class="paranum">87</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Chaviyā cammena maṃsena, nahāruaṭṭhikehi vā;</p>
+
+
+
+<p class="gathalast">Yassa etena karaṇīyaṃ, dinnaṃyeva harātu so.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para88"></span><a name="para88"></a><a name="para88_kn13"></a><span class="paranum">88</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Addasaṃsu <a name="M2.0407"></a> bhojaputtā, kharā luddā akāruṇā;</p>
+
+
+
+<p class="gathalast">Upagañchuṃ mamaṃ tattha, daṇḍamuggarapāṇino.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para89"></span><a name="para89"></a><a name="para89_kn13"></a><span class="paranum">89</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nāsāya vinivijjhitvā, naṅguṭṭhe piṭṭhikaṇṭake;</p>
+
+
+
+<p class="gathalast">Kāje āropayitvāna, bhojaputtā hariṃsu maṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para90"></span><a name="para90"></a><a name="para90_kn13"></a><span class="paranum">90</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sasāgarantaṃ pathaviṃ, sakānanaṃ sapabbataṃ;</p>
+
+
+
+<p class="gathalast">Icchamāno cahaṃ tattha, nāsāvātena jhāpaye.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_2_para91"></span><a name="para91"></a><a name="para91_kn13"></a><span class="paranum">91</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sūlehi vinivijjhante, koṭṭayantepi sattibhi;</p>
+
+
+
+<p class="gathalast">Bhojaputte na kuppāmi, esā me sīlapāramī’’ti.</p>
+
+
+
+<p class="centered">Saṅkhapālacariyaṃ dasamaṃ.</p>
+
+
+
+<p class="centered">Hatthināgavaggo dutiyo.</p>
+
+
+
+<p class="bodytext">Tassuddānaṃ –</p>
+
+
+
+<p class="gatha1">Hatthināgo <a name="T2.0579"></a> bhūridatto, campeyyo bodhi mahiṃso;</p>
+
+
+
+<p class="gathalast">Ruru mātaṅgo dhammo ca, atrajo ca jayaddiso.</p>
+
+
+
+<p class="gatha1">Ete nava sīlabalā, parikkhārā padesikā;</p>
+
+
+
+<p class="gathalast">Jīvitaṃ parirakkhitvā, sīlāni anurakkhisaṃ.</p>
+
+
+
+<p class="gatha1">Saṅkhapālassa me sato, sabbakālampi jīvitaṃ;</p>
+
+
+
+<p class="gathalast">Yassa kassaci niyyattaṃ, tasmā sā sīlapāramīti.</p>
+
+
+
+<p class="centered">Sīlapāraminiddeso niṭṭhito.</p>
+
+
+<a class="khanti" id="kn13_3"></a>
+
+
+<p class="chapter">3. Yudhañjayavaggo</p>
+
+
+
+<p class="subhead">1. Yudhañjayacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para1"></span><a name="para1"></a><a name="para1_kn13"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadāhaṃ <a name="M2.0408"></a><a name="V2.0394"></a><a name="P0.0092"></a> amitayaso, rājaputto yudhañjayo;</p>
+
+
+
+<p class="gathalast">Ussāvabinduṃ sūriyātape, patitaṃ disvāna saṃvijiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para2"></span><a name="para2"></a><a name="para2_kn13"></a><span class="paranum">2</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Taññevādhipatiṃ katvā, saṃvegamanubrūhayiṃ;</p>
+
+
+
+<p class="gathalast">Mātāpitū ca vanditvā, pabbajjamanuyācahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para3"></span><a name="para3"></a><a name="para3_kn13"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yācanti maṃ pañjalikā, sanegamā saraṭṭhakā;</p>
+
+
+
+<p class="gathalast">‘Ajjeva putta paṭipajja, iddhaṃ phītaṃ mahāmahiṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para4"></span><a name="para4"></a><a name="para4_kn13"></a><span class="paranum">4</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sarājake sahorodhe, sanegame saraṭṭhake;</p>
+
+
+
+<p class="gathalast">Karuṇaṃ paridevante, anapekkhova pariccajiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para5"></span><a name="para5"></a><a name="para5_kn13"></a><span class="paranum">5</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kevalaṃ pathaviṃ rajjaṃ, ñātiparijanaṃ yasaṃ;</p>
+
+
+
+<p class="gathalast">Cajamāno na cintesiṃ, bodhiyāyeva kāraṇā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para6"></span><a name="para6"></a><a name="para6_kn13"></a><span class="paranum">6</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mātāpitā na me dessā, napi me dessaṃ mahāyasaṃ;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā rajjaṃ pariccaji’’nti.</p>
+
+
+
+<p class="centered">Yudhañjayacariyaṃ paṭhamaṃ.</p>
+
+
+
+<p class="subhead">2. Somanassacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para7"></span><a name="para7"></a><a name="para7_kn13"></a><span class="paranum">7</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0580"></a> yadā homi, indapatthe puruttame;</p>
+
+
+
+<p class="gathalast">Kāmito dayito putto, somanassoti vissuto.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para8"></span><a name="para8"></a><a name="para8_kn13"></a><span class="paranum">8</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sīlavā guṇasampanno, kalyāṇapaṭibhānavā;</p>
+
+
+
+<p class="gathalast">Vuḍḍhāpacāyī hirīmā, saṅgahesu ca kovido.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para9"></span><a name="para9"></a><a name="para9_kn13"></a><span class="paranum">9</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa <a name="V2.0395"></a> rañño patikaro, ahosi kuhakatāpaso;</p>
+
+
+
+<p class="gathalast">Ārāmaṃ mālāvacchañca, ropayitvāna jīvati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para10"></span><a name="para10"></a><a name="para10_kn13"></a><span class="paranum">10</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tamahaṃ <a name="P0.0093"></a> disvāna kuhakaṃ, thusarāsiṃva ataṇḍulaṃ;</p>
+
+
+
+<p class="gathalast">Dumaṃva anto susiraṃ, kadaliṃva asārakaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para11"></span><a name="para11"></a><a name="para11_kn13"></a><span class="paranum">11</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Natthimassa <a name="M2.0409"></a> sataṃ dhammo, sāmaññāpagato ayaṃ;</p>
+
+
+
+<p class="gathalast">Hirīsukkadhammajahito, jīvitavuttikāraṇā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para12"></span><a name="para12"></a><a name="para12_kn13"></a><span class="paranum">12</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kupito ahu <span class="note">[ahosi (sī.), āsi (syā.)]</span> paccanto, aṭavīhi parantihi;</p>
+
+
+
+<p class="gathalast">Taṃ nisedhetuṃ gacchanto, anusāsi pitā mamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para13"></span><a name="para13"></a><a name="para13_kn13"></a><span class="paranum">13</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Mā pamajji tuvaṃ tāta, jaṭilaṃ uggatāpanaṃ;</p>
+
+
+
+<p class="gathalast">Yadicchakaṃ pavattehi, sabbakāmadado hi so’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para14"></span><a name="para14"></a><a name="para14_kn13"></a><span class="paranum">14</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tamahaṃ gantvānupaṭṭhānaṃ, idaṃ vacanamabraviṃ;</p>
+
+
+
+<p class="gathalast">‘Kacci te gahapati kusalaṃ, kiṃ vā te āharīyatu’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para15"></span><a name="para15"></a><a name="para15_kn13"></a><span class="paranum">15</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tena so kupito āsi, kuhako mānanissito;</p>
+
+
+
+<p class="gathalast">‘Ghātāpemi tuvaṃ ajja, raṭṭhā pabbājayāmi vā’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para16"></span><a name="para16"></a><a name="para16_kn13"></a><span class="paranum">16</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nisedhayitvā <a name="T2.0581"></a> paccantaṃ, rājā kuhakamabravi;</p>
+
+
+
+<p class="gathalast">‘Kacci te bhante khamanīyaṃ, sammāno te pavattito’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para17"></span><a name="para17"></a><a name="para17_kn13"></a><span class="paranum">17</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa ācikkhatī pāpo, kumāro yathā nāsiyo;</p>
+
+
+
+<p class="gathalast">Tassa taṃ vacanaṃ sutvā, āṇāpesi mahīpati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para18"></span><a name="para18"></a><a name="para18_kn13"></a><span class="paranum">18</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Sīsaṃ tattheva chinditvā, katvāna catukhaṇḍikaṃ;</p>
+
+
+
+<p class="gathalast">Rathiyā rathiyaṃ dassetha, sā gati jaṭilahīḷitā’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para19"></span><a name="para19"></a><a name="para19_kn13"></a><span class="paranum">19</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tattha kāraṇikā gantvā, caṇḍā luddā akāruṇā;</p>
+
+
+
+<p class="gathalast">Mātuaṅke nisinnassa, ākaḍḍhitvā nayanti maṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para20"></span><a name="para20"></a><a name="para20_kn13"></a><span class="paranum">20</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tesāhaṃ evamavacaṃ, bandhataṃ gāḷhabandhanaṃ;</p>
+
+
+
+<p class="gathalast">‘Rañño dassetha maṃ khippaṃ, rājakiriyāni atthi me’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para21"></span><a name="para21"></a><a name="para21_kn13"></a><span class="paranum">21</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Te maṃ rañño dassayiṃsu, pāpassa pāpasevino;</p>
+
+
+
+<p class="gathalast">Disvāna taṃ saññāpesiṃ, mamañca vasamānayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para22"></span><a name="para22"></a><a name="para22_kn13"></a><span class="paranum">22</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘So maṃ tattha khamāpesi, mahārajjamadāsi me;</p>
+
+
+
+<p class="gathalast">Sohaṃ tamaṃ dālayitvā, pabbajiṃ anagāriyaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para23"></span><a name="para23"></a><a name="para23_kn13"></a><span class="paranum">23</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na <a name="V2.0396"></a> me dessaṃ mahārajjaṃ, kāmabhogo na dessiyo;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā rajjaṃ pariccaji’’nti.</p>
+
+
+
+<p class="centered">Somanassacariyaṃ dutiyaṃ.</p>
+
+
+
+<p class="subhead">3. Ayogharacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para24"></span><a name="para24"></a><a name="para24_kn13"></a><span class="paranum">24</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0582"></a><a name="M2.0410"></a><a name="P0.0094"></a> yadā homi, kāsirājassa atrajo;</p>
+
+
+
+<p class="gathalast">Ayogharamhi saṃvaḍḍho, nāmenāsi ayogharo.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para25"></span><a name="para25"></a><a name="para25_kn13"></a><span class="paranum">25</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dukkhena jīvito laddho, saṃpīḷe patiposito;</p>
+
+
+
+<p class="gathalast">Ajjeva putta paṭipajja, kevalaṃ vasudhaṃ imaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para26"></span><a name="para26"></a><a name="para26_kn13"></a><span class="paranum">26</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saraṭṭhakaṃ sanigamaṃ, sajanaṃ vanditva khattiyaṃ;</p>
+
+
+
+<p class="gathalast">Añjaliṃ paggahetvāna, idaṃ vacanamabraviṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para27"></span><a name="para27"></a><a name="para27_kn13"></a><span class="paranum">27</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ye keci mahiyā sattā, hīnamukkaṭṭhamajjhimā;</p>
+
+
+
+<p class="gathalast">Nirārakkhā sake gehe, vaḍḍhanti sakañātibhi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para28"></span><a name="para28"></a><a name="para28_kn13"></a><span class="paranum">28</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Idaṃ loke uttariyaṃ, saṃpīḷe mama posanaṃ;</p>
+
+
+
+<p class="gathalast">Ayogharamhi saṃvaḍḍho, appabhe candasūriye.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para29"></span><a name="para29"></a><a name="para29_kn13"></a><span class="paranum">29</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Pūtikuṇapasampuṇṇā, muccitvā mātu kucchito;</p>
+
+
+
+<p class="gathalast">Tato ghoratare dukkhe, puna pakkhittayoghare.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para30"></span><a name="para30"></a><a name="para30_kn13"></a><span class="paranum">30</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yadihaṃ tādisaṃ patvā, dukkhaṃ paramadāruṇaṃ;</p>
+
+
+
+<p class="gathalast">Rajjesu yadi rajjāmi <span class="note">[rañjāmi (sī.)]</span>, pāpānaṃ uttamo siyaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para31"></span><a name="para31"></a><a name="para31_kn13"></a><span class="paranum">31</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Ukkaṇṭhitomhi kāyena, rajjenamhi anatthiko;</p>
+
+
+
+<p class="gathalast">Nibbutiṃ pariyesissaṃ, yattha maṃ maccu na maddiye’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para32"></span><a name="para32"></a><a name="para32_kn13"></a><span class="paranum">32</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evāhaṃ cintayitvāna, viravante mahājane;</p>
+
+
+
+<p class="gathalast">Nāgova bandhanaṃ chetvā, pāvisiṃ kānanaṃ vanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para33"></span><a name="para33"></a><a name="para33_kn13"></a><span class="paranum">33</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mātāpitā <a name="T2.0583"></a><a name="V2.0397"></a> na me dessā, napi me dessaṃ mahāyasaṃ;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā rajjaṃ pariccaji’’nti.</p>
+
+
+
+<p class="centered">Ayogharacariyaṃ tatiyaṃ.</p>
+
+
+
+<p class="subhead">4. Bhisacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para34"></span><a name="para34"></a><a name="para34_kn13"></a><span class="paranum">34</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, kāsīnaṃ puravaruttame;</p>
+
+
+
+<p class="gathalast">Bhaginī ca bhātaro satta, nibbattā sotthiye kule.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para35"></span><a name="para35"></a><a name="para35_kn13"></a><span class="paranum">35</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Etesaṃ <a name="M2.0411"></a> pubbajo āsiṃ, hirīsukkamupāgato;</p>
+
+
+
+<p class="gathalast">Bhavaṃ disvāna bhayato, nekkhammābhirato ahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para36"></span><a name="para36"></a><a name="para36_kn13"></a><span class="paranum">36</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mātāpitūhi <a name="P0.0095"></a> pahitā, sahāyā ekamānasā;</p>
+
+
+
+<p class="gathalast">Kāmehi maṃ nimantenti, ‘kulavaṃsaṃ dharehi’ti.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para37"></span><a name="para37"></a><a name="para37_kn13"></a><span class="paranum">37</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yaṃ tesaṃ vacanaṃ vuttaṃ, gihīdhamme sukhāvahaṃ;</p>
+
+
+
+<p class="gathalast">Taṃ me ahosi kaṭhinaṃ, tatta <span class="note">[santatta (ka.)]</span> phālasamaṃ viya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para38"></span><a name="para38"></a><a name="para38_kn13"></a><span class="paranum">38</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Te maṃ tadā ukkhipantaṃ, pucchiṃsu patthitaṃ mama;</p>
+
+
+
+<p class="gathalast">‘Kiṃ tvaṃ patthayase samma, yadi kāme na bhuñjasi’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para39"></span><a name="para39"></a><a name="para39_kn13"></a><span class="paranum">39</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tesāhaṃ evamavacaṃ, atthakāmo hitesinaṃ;</p>
+
+
+
+<p class="gathalast">‘Nāhaṃ patthemi gihībhāvaṃ, nekkhammābhirato ahaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para40"></span><a name="para40"></a><a name="para40_kn13"></a><span class="paranum">40</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Te mayhaṃ vacanaṃ sutvā, pitumātu ca sāvayuṃ;</p>
+
+
+
+<p class="gathalast">Mātāpitā evamāhu, ‘sabbeva pabbajāma bho’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para41"></span><a name="para41"></a><a name="para41_kn13"></a><span class="paranum">41</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ubho <a name="T2.0584"></a> mātāpitā mayhaṃ, bhaginī ca satta bhātaro;</p>
+
+
+
+<p class="gathalast">Amitadhanaṃ chaḍḍayitvā, pāvisimhā mahāvana’’nti.</p>
+
+
+
+<p class="centered">Bhisacariyaṃ catutthaṃ.</p>
+
+
+
+<p class="subhead">5. Soṇapaṇḍitacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para42"></span><a name="para42"></a><a name="para42_kn13"></a><span class="paranum">42</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="V2.0398"></a> yadā homi, nagare brahmavaḍḍhane;</p>
+
+
+
+<p class="gathalast">Tattha kulavare seṭṭhe, mahāsāle ajāyahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para43"></span><a name="para43"></a><a name="para43_kn13"></a><span class="paranum">43</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadāpi lokaṃ disvāna, andhībhūtaṃ tamotthaṭaṃ;</p>
+
+
+
+<p class="gathalast">Cittaṃ bhavato patikuṭati, tuttavegahataṃ viya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para44"></span><a name="para44"></a><a name="para44_kn13"></a><span class="paranum">44</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Disvāna vividhaṃ pāpaṃ, evaṃ cintesahaṃ tadā;</p>
+
+
+
+<p class="gathalast">‘Kadāhaṃ gehā nikkhamma, pavisissāmi kānanaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para45"></span><a name="para45"></a><a name="para45_kn13"></a><span class="paranum">45</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tadāpi maṃ nimantesuṃ, kāmabhogehi ñātayo;</p>
+
+
+
+<p class="gathalast">Tesampi chandamācikkhiṃ, ‘mā nimantetha tehi maṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para46"></span><a name="para46"></a><a name="para46_kn13"></a><span class="paranum">46</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yo <a name="M2.0412"></a> me kaniṭṭhako bhātā, nando nāmāsi paṇḍito;</p>
+
+
+
+<p class="gathalast">Sopi maṃ anusikkhanto, pabbajjaṃ samarocayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para47"></span><a name="para47"></a><a name="para47_kn13"></a><span class="paranum">47</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ahaṃ soṇo ca nando ca, ubho mātāpitā mama;</p>
+
+
+
+<p class="gathalast">Tadāpi bhoge chaḍḍetvā, pāvisimhā mahāvana’’nti.</p>
+
+
+
+<p class="centered">Soṇapaṇḍitacariyaṃ pañcamaṃ.</p>
+
+
+
+<p class="subhead">6. Temiyacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para48"></span><a name="para48"></a><a name="para48_kn13"></a><span class="paranum">48</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0585"></a><a name="P0.0096"></a> yadā homi, kāsirājassa atrajo;</p>
+
+
+
+<p class="gathalast">Mūgapakkhoti nāmena, temiyoti vadanti maṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para49"></span><a name="para49"></a><a name="para49_kn13"></a><span class="paranum">49</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Soḷasitthisahassānaṃ, na vijjati pumo tadā <span class="note">[sadā (sī.)]</span>;</p>
+
+
+
+<p class="gathalast">Ahorattānaṃ accayena, nibbatto ahamekako.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para50"></span><a name="para50"></a><a name="para50_kn13"></a><span class="paranum">50</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Kicchā laddhaṃ piyaṃ puttaṃ, abhijātaṃ jutindharaṃ;</p>
+
+
+
+<p class="gathalast">Setacchattaṃ dhārayitvāna, sayane poseti maṃ pitā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para51"></span><a name="para51"></a><a name="para51_kn13"></a><span class="paranum">51</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Niddāyamāno sayanavare, pabujjhitvānahaṃ tadā;</p>
+
+
+
+<p class="gathalast">Addasaṃ paṇḍaraṃ chattaṃ, yenāhaṃ nirayaṃ gato.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para52"></span><a name="para52"></a><a name="para52_kn13"></a><span class="paranum">52</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saha <a name="V2.0399"></a> diṭṭhassa me chattaṃ, tāso uppajji bheravo;</p>
+
+
+
+<p class="gathalast">Vinicchayaṃ samāpanno, ‘kathāhaṃ imaṃ muñcissaṃ’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para53"></span><a name="para53"></a><a name="para53_kn13"></a><span class="paranum">53</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pubbasālohitā mayhaṃ, devatā atthakāminī;</p>
+
+
+
+<p class="gathalast">Sā maṃ disvāna dukkhitaṃ, tīsu ṭhānesu yojayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para54"></span><a name="para54"></a><a name="para54_kn13"></a><span class="paranum">54</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Mā paṇḍiccayaṃ vibhāvaya, bālamato bhava sabbapāṇinaṃ;</p>
+
+
+
+<p class="gathalast">Sabbo taṃ jano ocināyatu, evaṃ tava attho bhavissati’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para55"></span><a name="para55"></a><a name="para55_kn13"></a><span class="paranum">55</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ vuttāyahaṃ tassā, idaṃ vacanamabraviṃ;</p>
+
+
+
+<p class="gathalast">‘Karomi te taṃ vacanaṃ, yaṃ tvaṃ bhaṇasi devate;</p>
+
+
+
+<p class="gathalast">Atthakāmāsi me amma, hitakāmāsi devate’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para56"></span><a name="para56"></a><a name="para56_kn13"></a><span class="paranum">56</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassāhaṃ vacanaṃ sutvā, sāgareva thalaṃ labhiṃ;</p>
+
+
+
+<p class="gathalast">Haṭṭho <a name="T2.0586"></a> saṃviggamānaso, tayo aṅge adhiṭṭhahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para57"></span><a name="para57"></a><a name="para57_kn13"></a><span class="paranum">57</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mūgo <a name="M2.0413"></a> ahosiṃ badhiro, pakkho gativivajjito;</p>
+
+
+
+<p class="gathalast">Ete aṅge adhiṭṭhāya, vassāni soḷasaṃ vasiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para58"></span><a name="para58"></a><a name="para58_kn13"></a><span class="paranum">58</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tato me hatthapāde ca, jivhaṃ sotañca maddiya;</p>
+
+
+
+<p class="gathalast">Anūnataṃ me passitvā, ‘kāḷakaṇṇī’ti nindisuṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para59"></span><a name="para59"></a><a name="para59_kn13"></a><span class="paranum">59</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tato jānapadā sabbe, senāpatipurohitā;</p>
+
+
+
+<p class="gathalast">Sabbe ekamanā hutvā, chaḍḍanaṃ anumodisuṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para60"></span><a name="para60"></a><a name="para60_kn13"></a><span class="paranum">60</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sohaṃ tesaṃ matiṃ sutvā, haṭṭho saṃviggamānaso;</p>
+
+
+
+<p class="gathalast">Yassatthāya tapociṇṇo, so me attho samijjhatha.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para61"></span><a name="para61"></a><a name="para61_kn13"></a><span class="paranum">61</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Nhāpetvā anulimpitvā, veṭhetvā rājaveṭhanaṃ;</p>
+
+
+
+<p class="gathalast">Chattena abhisiñcitvā, kāresuṃ puraṃ padakkhiṇaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para62"></span><a name="para62"></a><a name="para62_kn13"></a><span class="paranum">62</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sattāhaṃ dhārayitvāna, uggate ravimaṇḍale;</p>
+
+
+
+<p class="gathalast">Rathena maṃ nīharitvā, sārathī vanamupāgami.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para63"></span><a name="para63"></a><a name="para63_kn13"></a><span class="paranum">63</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ekokāse <a name="P0.0097"></a> rathaṃ katvā, sajjassaṃ hatthamuccito <span class="note">[hatthamuñcito (sī. syā.)]</span>;</p>
+
+
+
+<p class="gathalast">Sārathī khaṇatī kāsuṃ, nikhātuṃ pathaviyā mamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para64"></span><a name="para64"></a><a name="para64_kn13"></a><span class="paranum">64</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Adhiṭṭhitamadhiṭṭhānaṃ, tajjento vividhakāraṇā;</p>
+
+
+
+<p class="gathalast">Na bhindiṃ tamadhiṭṭhānaṃ, bodhiyāyeva kāraṇā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para65"></span><a name="para65"></a><a name="para65_kn13"></a><span class="paranum">65</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mātāpitā na me dessā, attā me na ca dessiyo;</p>
+
+
+
+<p class="gathalast">Sabbaññutaṃ piyaṃ mayhaṃ, tasmā vatamadhiṭṭhahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para66"></span><a name="para66"></a><a name="para66_kn13"></a><span class="paranum">66</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ete <a name="T2.0587"></a><a name="V2.0400"></a> aṅge adhiṭṭhāya, vassāni soḷasaṃ vasiṃ;</p>
+
+
+
+<p class="gathalast">Adhiṭṭhānena me samo natthi, esā me adhiṭṭhānapāramī’’ti.</p>
+
+
+
+<p class="centered">Temiyacariyaṃ chaṭṭhaṃ.</p>
+
+
+
+<p class="subhead">7. Kapirājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para67"></span><a name="para67"></a><a name="para67_kn13"></a><span class="paranum">67</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yadā ahaṃ kapi āsiṃ, nadīkūle darīsaye;</p>
+
+
+
+<p class="gathalast">Pīḷito susumārena, gamanaṃ na labhāmahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para68"></span><a name="para68"></a><a name="para68_kn13"></a><span class="paranum">68</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Yamhokāse <a name="M2.0414"></a> ahaṃ ṭhatvā, orā pāraṃ patāmahaṃ;</p>
+
+
+
+<p class="gathalast">Tatthacchi sattu vadhako, kumbhīlo luddadassano.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para69"></span><a name="para69"></a><a name="para69_kn13"></a><span class="paranum">69</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘So maṃ asaṃsi ‘ehī’ti, ‘ahaṃpemī’ti taṃ vatiṃ;</p>
+
+
+
+<p class="gathalast">Tassa matthakamakkamma, parakūle patiṭṭhahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para70"></span><a name="para70"></a><a name="para70_kn13"></a><span class="paranum">70</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na tassa alikaṃ bhaṇitaṃ, yathā vācaṃ akāsahaṃ;</p>
+
+
+
+<p class="gathalast">Saccena me samo natthi, esā me saccapāramī’’ti.</p>
+
+
+
+<p class="centered">Kapirājacariyaṃ sattamaṃ.</p>
+
+
+
+<p class="subhead">8. Saccatāpasacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para71"></span><a name="para71"></a><a name="para71_kn13"></a><span class="paranum">71</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, tāpaso saccasavhayo;</p>
+
+
+
+<p class="gathalast">Saccena lokaṃ pālesiṃ, samaggaṃ janamakāsaha’’nti.</p>
+
+
+
+<p class="centered">Saccatāpasacariyaṃ aṭṭhamaṃ.</p>
+
+
+
+<p class="subhead">9. Vaṭṭapotakacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para72"></span><a name="para72"></a><a name="para72_kn13"></a><span class="paranum">72</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="T2.0588"></a><a name="V2.0401"></a><a name="P0.0098"></a> yadā homi, magadhe vaṭṭapotako;</p>
+
+
+
+<p class="gathalast">Ajātapakkho taruṇo, maṃsapesi kulāvake.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para73"></span><a name="para73"></a><a name="para73_kn13"></a><span class="paranum">73</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Mukhatuṇḍakenāharitvā <span class="note">[mukhatuṇḍenāharitvā (sī.)]</span>, mātā posayatī mamaṃ;</p>
+
+
+
+<p class="gathalast">Tassā phassena jīvāmi, natthi me kāyikaṃ balaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para74"></span><a name="para74"></a><a name="para74_kn13"></a><span class="paranum">74</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saṃvacchare gimhasamaye, davaḍāho <span class="note">[vanadāho (ka.)]</span> padippati;</p>
+
+
+
+<p class="gathalast">Upagacchati amhākaṃ, pāvako kaṇhavattanī.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para75"></span><a name="para75"></a><a name="para75_kn13"></a><span class="paranum">75</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dhamadhamā itievaṃ, saddāyanto mahāsikhī;</p>
+
+
+
+<p class="gathalast">Anupubbena jhāpento, aggi mamamupāgami.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para76"></span><a name="para76"></a><a name="para76_kn13"></a><span class="paranum">76</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Aggivegabhayātītā, tasitā mātāpitā mama;</p>
+
+
+
+<p class="gathalast">Kulāvake maṃ chaḍḍetvā, attānaṃ parimocayuṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para77"></span><a name="para77"></a><a name="para77_kn13"></a><span class="paranum">77</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Pāde <a name="M2.0415"></a> pakkhe pajahāmi, natthi me kāyikaṃ balaṃ;</p>
+
+
+
+<p class="gathalast">Sohaṃ agatiko tattha, evaṃ cintesahaṃ tadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para78"></span><a name="para78"></a><a name="para78_kn13"></a><span class="paranum">78</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yesāhaṃ upadhāveyyaṃ, bhīto tasitavedhito;</p>
+
+
+
+<p class="gathalast">Te maṃ ohāya pakkantā, kathaṃ me ajja kātave.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para79"></span><a name="para79"></a><a name="para79_kn13"></a><span class="paranum">79</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Atthi loke sīlaguṇo, saccaṃ soceyyanuddayā;</p>
+
+
+
+<p class="gathalast">Tena saccena kāhāmi, saccakiriyamuttamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para80"></span><a name="para80"></a><a name="para80_kn13"></a><span class="paranum">80</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Āvejjetvā dhammabalaṃ, saritvā pubbake jine;</p>
+
+
+
+<p class="gathalast">Saccabalamavassāya, saccakiriyamakāsahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para81"></span><a name="para81"></a><a name="para81_kn13"></a><span class="paranum">81</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Santi <a name="T2.0589"></a> pakkhā apatanā, santi pādā avañcanā;</p>
+
+
+
+<p class="gathalast">Mātāpitā ca nikkhantā, jātaveda paṭikkama’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para82"></span><a name="para82"></a><a name="para82_kn13"></a><span class="paranum">82</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sahasacce kate mayhaṃ, mahāpajjalito sikhī;</p>
+
+
+
+<p class="gatha2">Vajjesi soḷasakarīsāni, udakaṃ patvā yathā sikhī;</p>
+
+
+
+<p class="gathalast">Saccena me samo natthi, esā me saccapāramī’’ti.</p>
+
+
+
+<p class="centered">Vaṭṭapotakacariyaṃ navamaṃ.</p>
+
+
+
+<p class="subhead">10. Maccharājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para83"></span><a name="para83"></a><a name="para83_kn13"></a><span class="paranum">83</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="V2.0402"></a><a name="P0.0099"></a> yadā homi, maccharājā mahāsare;</p>
+
+
+
+<p class="gathalast">Uṇhe sūriyasantāpe, sare udaka khīyatha.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para84"></span><a name="para84"></a><a name="para84_kn13"></a><span class="paranum">84</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tato kākā ca gijjhā ca, kaṅkā <span class="note">[bakā (sī.)]</span> kulalasenakā;</p>
+
+
+
+<p class="gathalast">Bhakkhayanti divārattiṃ, macche upanisīdiya.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para85"></span><a name="para85"></a><a name="para85_kn13"></a><span class="paranum">85</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ cintesahaṃ tattha, saha ñātīhi pīḷito;</p>
+
+
+
+<p class="gathalast">‘Kena nu kho upāyena, ñātī dukkhā pamocaye’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para86"></span><a name="para86"></a><a name="para86_kn13"></a><span class="paranum">86</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Vicintayitvā dhammatthaṃ, saccaṃ addasa passayaṃ;</p>
+
+
+
+<p class="gathalast">Sacce ṭhatvā pamocesiṃ, ñātīnaṃ taṃ atikkhayaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para87"></span><a name="para87"></a><a name="para87_kn13"></a><span class="paranum">87</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Anussaritvā sataṃ dhammaṃ, paramatthaṃ vicintayaṃ;</p>
+
+
+
+<p class="gathalast">Akāsi saccakiriyaṃ, yaṃ loke dhuvasassataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para88"></span><a name="para88"></a><a name="para88_kn13"></a><span class="paranum">88</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Yato <a name="M2.0416"></a> sarāmi attānaṃ, yato pattosmi viññutaṃ;</p>
+
+
+
+<p class="gathalast">Nābhijānāmi sañcicca, ekapāṇampi hiṃsitaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para89"></span><a name="para89"></a><a name="para89_kn13"></a><span class="paranum">89</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Etena <a name="T2.0590"></a> saccavajjena, pajjunno abhivassatu;</p>
+
+
+
+<p class="gatha2">Abhitthanaya pajjunna, nidhiṃ kākassa nāsaya;</p>
+
+
+
+<p class="gathalast">Kākaṃ sokāya randhehi, macche sokā pamocaya’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para90"></span><a name="para90"></a><a name="para90_kn13"></a><span class="paranum">90</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sahakate saccavare, pajjunno abhigajjiya;</p>
+
+
+
+<p class="gathalast">Thalaṃ ninnañca pūrento, khaṇena abhivassatha.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para91"></span><a name="para91"></a><a name="para91_kn13"></a><span class="paranum">91</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evarūpaṃ saccavaraṃ, katvā vīriyamuttamaṃ;</p>
+
+
+
+<p class="gathalast">Vassāpesiṃ mahāmeghaṃ, saccatejabalassito;</p>
+
+
+
+<p class="gathalast">Saccena me samo natthi, esā me saccapāramī’’ti.</p>
+
+
+
+<p class="centered">Maccharājacariyaṃ dasamaṃ.</p>
+
+
+
+<p class="subhead">11. Kaṇhadīpāyanacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para92"></span><a name="para92"></a><a name="para92_kn13"></a><span class="paranum">92</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ <a name="V2.0403"></a> yadā homi, kaṇhadīpāyano isi;</p>
+
+
+
+<p class="gathalast">Paropaññāsavassāni, anabhiratocariṃ ahaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para93"></span><a name="para93"></a><a name="para93_kn13"></a><span class="paranum">93</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na koci etaṃ jānāti, anabhiratimanaṃ mama;</p>
+
+
+
+<p class="gathalast">Ahañhi kassaci nācikkhiṃ, arati me carati mānase.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para94"></span><a name="para94"></a><a name="para94_kn13"></a><span class="paranum">94</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sabrahmacārī <a name="P0.0100"></a> maṇḍabyo, sahāyo me mahāisi;</p>
+
+
+
+<p class="gathalast">Pubbakammasamāyutto, sūlamāropanaṃ labhi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para95"></span><a name="para95"></a><a name="para95_kn13"></a><span class="paranum">95</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tamahaṃ upaṭṭhahitvāna, ārogyamanupāpayiṃ;</p>
+
+
+
+<p class="gathalast">Āpucchitvāna āgañchiṃ, yaṃ mayhaṃ sakamassamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para96"></span><a name="para96"></a><a name="para96_kn13"></a><span class="paranum">96</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sahāyo <a name="T2.0591"></a> brāhmaṇo mayhaṃ, bhariyaṃ ādāya puttakaṃ;</p>
+
+
+
+<p class="gathalast">Tayo janā samāgantvā, āgañchuṃ pāhunāgataṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para97"></span><a name="para97"></a><a name="para97_kn13"></a><span class="paranum">97</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sammodamāno tehi saha, nisinno sakamassame;</p>
+
+
+
+<p class="gathalast">Dārako vaṭṭamanukkhipaṃ, āsīvisamakopayi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para98"></span><a name="para98"></a><a name="para98_kn13"></a><span class="paranum">98</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tato so vaṭṭagataṃ maggaṃ, anvesanto kumārako;</p>
+
+
+
+<p class="gathalast">Āsīvisassa hatthena, uttamaṅgaṃ parāmasi.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para99"></span><a name="para99"></a><a name="para99_kn13"></a><span class="paranum">99</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa <a name="M2.0417"></a> āmasane kuddho, sappo visabalassito;</p>
+
+
+
+<p class="gathalast">Kupito paramakopena, aḍaṃsi dārakaṃ khaṇe.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para100"></span><a name="para100"></a><a name="para100_kn13"></a><span class="paranum">100</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sahadaṭṭho āsīvisena <span class="note">[ativisena (pī. ka.)]</span>, dārako papati <span class="note">[patati (ka.)]</span> bhūmiyaṃ;</p>
+
+
+
+<p class="gathalast">Tenāhaṃ dukkhito āsiṃ, mama vāhasi taṃ dukkhaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para101"></span><a name="para101"></a><a name="para101_kn13"></a><span class="paranum">101</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tyāhaṃ assāsayitvāna, dukkhite sokasallite;</p>
+
+
+
+<p class="gathalast">Paṭhamaṃ akāsiṃ kiriyaṃ, aggaṃ saccaṃ varuttamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para102"></span><a name="para102"></a><a name="para102_kn13"></a><span class="paranum">102</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Sattāhamevāhaṃ pasannacitto, puññatthiko acariṃ brahmacariyaṃ;</p>
+
+
+
+<p class="gathalast">Athāparaṃ yaṃ caritaṃ mamedaṃ, vassāni paññāsasamādhikāni.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para103"></span><a name="para103"></a><a name="para103_kn13"></a><span class="paranum">103</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘‘Akāmako vāhi ahaṃ carāmi, etena saccena suvatthi hotu;</p>
+
+
+
+<p class="gathalast">Hataṃ visaṃ jīvatu yaññadatto’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para104"></span><a name="para104"></a><a name="para104_kn13"></a><span class="paranum">104</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Saha <a name="T2.0592"></a><a name="V2.0404"></a> sacce kate mayhaṃ, visavegena vedhito;</p>
+
+
+
+<p class="gatha2">Abujjhitvāna vuṭṭhāsi, arogo cāsi māṇavo;</p>
+
+
+
+<p class="gathalast">Saccena me samo natthi, esā me saccapāramī’’ti.</p>
+
+
+
+<p class="centered">Kaṇhadīpāyanacariyaṃ ekādasamaṃ.</p>
+
+
+
+<p class="subhead">12. Sutasomacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para105"></span><a name="para105"></a><a name="para105_kn13"></a><span class="paranum">105</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, sutasomo mahīpati;</p>
+
+
+
+<p class="gathalast">Gahito porisādena, brāhmaṇe saṅgaraṃ sariṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para106"></span><a name="para106"></a><a name="para106_kn13"></a><span class="paranum">106</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Khattiyānaṃ ekasataṃ, āvuṇitvā karattale;</p>
+
+
+
+<p class="gathalast">Etesaṃ pamilāpetvā, yaññatthe upanayī mamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para107"></span><a name="para107"></a><a name="para107_kn13"></a><span class="paranum">107</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Apucchi <a name="P0.0101"></a> maṃ porisādo, ‘kiṃ tvaṃ icchasi nissajaṃ;</p>
+
+
+
+<p class="gathalast">Yathāmati te kāhāmi, yadi me tvaṃ punehisi’.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para108"></span><a name="para108"></a><a name="para108_kn13"></a><span class="paranum">108</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Tassa <a name="M2.0418"></a> paṭissuṇitvāna, paṇhe āgamanaṃ mama;</p>
+
+
+
+<p class="gathalast">Upagantvā puraṃ rammaṃ, rajjaṃ niyyādayiṃ tadā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para109"></span><a name="para109"></a><a name="para109_kn13"></a><span class="paranum">109</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Anussaritvā sataṃ dhammaṃ, pubbakaṃ jinasevitaṃ;</p>
+
+
+
+<p class="gathalast">Brāhmaṇassa dhanaṃ datvā, porisādaṃ upāgamiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para110"></span><a name="para110"></a><a name="para110_kn13"></a><span class="paranum">110</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Natthi me saṃsayo tattha, ghātayissati vā na vā;</p>
+
+
+
+<p class="gatha2">Saccavācānurakkhanto, jīvitaṃ cajitumupāgamiṃ;</p>
+
+
+
+<p class="gathalast">Saccena me samo natthi, esā me saccapāramī’’ti.</p>
+
+
+
+<p class="centered">Sutasomacariyaṃ dvādasamaṃ.</p>
+
+
+
+<p class="subhead">13. Suvaṇṇasāmacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para111"></span><a name="para111"></a><a name="para111_kn13"></a><span class="paranum">111</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sāmo <a name="T2.0593"></a><a name="V2.0405"></a> yadā vane āsiṃ, sakkena abhinimmito;</p>
+
+
+
+<p class="gathalast">Pavane sīhabyagghe ca, mettāyamupanāmayiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para112"></span><a name="para112"></a><a name="para112_kn13"></a><span class="paranum">112</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sīhabyagghehi dīpīhi, acchehi mahisehi ca;</p>
+
+
+
+<p class="gathalast">Pasadamigavarāhehi, parivāretvā vane vasiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para113"></span><a name="para113"></a><a name="para113_kn13"></a><span class="paranum">113</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Na maṃ koci uttasati, napi bhāyāmi kassaci;</p>
+
+
+
+<p class="gathalast">Mettābalenupatthaddho, ramāmi pavane tadā’’ti.</p>
+
+
+
+<p class="centered">Suvaṇṇasāmacariyaṃ terasamaṃ.</p>
+
+
+
+<p class="subhead">14. Ekarājacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para114"></span><a name="para114"></a><a name="para114_kn13"></a><span class="paranum">114</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Punāparaṃ yadā homi, ekarājāti vissuto;</p>
+
+
+
+<p class="gathalast">Paramaṃ sīlaṃ adhiṭṭhāya, pasāsāmi mahāmahiṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para115"></span><a name="para115"></a><a name="para115_kn13"></a><span class="paranum">115</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Dasa kusalakammapathe, vattāmi anavasesato;</p>
+
+
+
+<p class="gathalast">Catūhi saṅgahavatthūhi, saṅgaṇhāmi <span class="note">[saṅgahāmi (ka.)]</span> mahājanaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para116"></span><a name="para116"></a><a name="para116_kn13"></a><span class="paranum">116</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Evaṃ me appamattassa, idha loke parattha ca;</p>
+
+
+
+<p class="gathalast">Dabbaseno <a name="P0.0102"></a> upagantvā, acchindanto puraṃ mama.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para117"></span><a name="para117"></a><a name="para117_kn13"></a><span class="paranum">117</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Rājūpajīve <a name="M2.0419"></a> nigame, sabalaṭṭhe saraṭṭhake;</p>
+
+
+
+<p class="gathalast">Sabbaṃ hatthagataṃ katvā, kāsuyā nikhaṇī mamaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para118"></span><a name="para118"></a><a name="para118_kn13"></a><span class="paranum">118</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Amaccamaṇḍalaṃ rajjaṃ, phītaṃ antepuraṃ mama;</p>
+
+
+
+<p class="gathalast">Acchinditvāna gahitaṃ, piyaṃ puttaṃva passahaṃ;</p>
+
+
+
+<p class="gathalast">Mettāya me samo natthi, esā me mettāpāramī’’ti.</p>
+
+
+
+<p class="centered">Ekarājacariyaṃ cuddasamaṃ.</p>
+
+
+
+<p class="subhead">15. Mahālomahaṃsacariyā</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para119"></span><a name="para119"></a><a name="para119_kn13"></a><span class="paranum">119</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Susāne <a name="T2.0594"></a><a name="V2.0406"></a> seyyaṃ kappemi, chavaṭṭhikaṃ upanidhāyahaṃ;</p>
+
+
+
+<p class="gathalast">Gāmaṇḍalā <span class="note">[gomaṇḍalā (sī.), gāmamaṇḍalā (syā.)]</span> upāgantvā, rūpaṃ dassentinappakaṃ.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para120"></span><a name="para120"></a><a name="para120_kn13"></a><span class="paranum">120</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Apare gandhamālañca, bhojanaṃ vividhaṃ bahuṃ;</p>
+
+
+
+<p class="gathalast">Upāyanānūpanenti, haṭṭhā saṃviggamānasā.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para121"></span><a name="para121"></a><a name="para121_kn13"></a><span class="paranum">121</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Ye me dukkhaṃ upaharanti, ye ca denti sukhaṃ mama;</p>
+
+
+
+<p class="gathalast">Sabbesaṃ samako homi, dayā kopo na vijjati.</p>
+
+
+
+<p class="hangnum"><span class="newparamark" id="kn13_3_para122"></span><a name="para122"></a><a name="para122_kn13"></a><span class="paranum">122</span>.</p>
+
+
+
+<p class="gatha1"> ‘‘Sukhadukkhe tulābhūto, yasesu ayasesu ca;</p>
+
+
+
+<p class="gathalast">Sabbattha samako homi, esā me upekkhāpāramī’’ti.</p>
+
+
+
+<p class="centered">Mahālomahaṃsacariyaṃ pannarasamaṃ.</p>
+
+
+
+<p class="centered">Yudhañjayavaggo tatiyo.</p>
+
+
+
+
+<p class="bodytext">Tassuddānaṃ –</p>
+
+
+
+<p class="gatha1">Yudhañjayo somanasso, ayogharabhisena ca;</p>
+
+
+
+<p class="gathalast">Soṇanando mūgapakkho, kapirājā saccasavhayo.</p>
+
+
+
+<p class="gatha1">Vaṭṭako maccharājā ca, kaṇhadīpāyano isi;</p>
+
+
+
+<p class="gatha2">Sutasomo puna āsiṃ <span class="note">[āsi (syā.)]</span>, sāmo ca ekarājahu;</p>
+
+
+
+<p class="gathalast">Upekkhāpāramī āsi, iti vutthaṃ <span class="note">[vuttaṃ (sabbattha) aṭṭhakathā oloketabbā]</span> mahesinā.</p>
+
+
+
+<p class="gatha1">Evaṃ <a name="M2.0420"></a> bahubbidhaṃ dukkhaṃ, sampattī ca bahubbidhā <span class="note">[sampatti ca bahuvidhā (sī.), sampattiṃ ca bahuvidhaṃ (ka.)]</span>;</p>
+
+
+
+<p class="gathalast">Bhavābhave anubhavitvā, patto sambodhimuttamaṃ.</p>
+
+
+
+<p class="gatha1">Datvā dātabbakaṃ dānaṃ, sīlaṃ pūretvā asesato;</p>
+
+
+
+<p class="gathalast">Nekkhamme pāramiṃ gantvā, patto sambodhimuttamaṃ.</p>
+
+
+
+<p class="gatha1">Paṇḍite <a name="T2.0595"></a> paripucchitvā, vīriyaṃ katvāna muttamaṃ;</p>
+
+
+
+<p class="gathalast">Khantiyā pāramiṃ gantvā, patto sambodhimuttamaṃ.</p>
+
+
+
+<p class="gatha1">Katvā daḷhamadhiṭṭhānaṃ, saccavācānurakkhiya;</p>
+
+
+
+<p class="gathalast">Mettāya <a name="P0.0103"></a> pāramiṃ gantvā, patto sambodhimuttamaṃ.</p>
+
+
+
+<p class="gatha1">Lābhālābhe <a name="V2.0407"></a> yasāyase, sammānanāvamānane;</p>
+
+
+
+<p class="gathalast">Sabbattha samako hutvā, patto sambodhimuttamaṃ.</p>
+
+
+
+<p class="gatha1">Kosajjaṃ bhayato disvā, vīriyārambhañca khemato;</p>
+
+
+
+<p class="gathalast">Āraddhavīriyā hotha, esā buddhānusāsanī.</p>
+
+
+
+<p class="gatha1">Vivādaṃ bhayato disvā, avivādañca khemato;</p>
+
+
+
+<p class="gathalast">Samaggā sakhilā hotha, esā buddhānusāsanī.</p>
+
+
+
+<p class="gatha1">Pamādaṃ bhayato disvā, appamādañca khemato;</p>
+
+
+
+<p class="gathalast">Bhāvethaṭṭhaṅgikaṃ maggaṃ, esā buddhānusāsanī.</p>
+
+
+
+<p class="bodytext">Itthaṃ sudaṃ bhagavā attano pubbacariyaṃ sambhāvayamāno buddhāpadāniyaṃ nāma dhammapariyāyaṃ abhāsitthāti.</p>
+
+
+
+<p class="centered">Cariyāpiṭakaṃ niṭṭhitaṃ.</p>
+
+
+
+
+
+
+</body>
+</html>

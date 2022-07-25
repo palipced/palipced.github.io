@@ -1,0 +1,19 @@
+➟ iPhone上的操作方法：
+
+① 先确认您的iPhone上已安装了【文件 app】，如果没有，请先前往iOS系统的“App Store”下载安装，链接如下：
+https://apps.apple.com/cn/app/%E6%96%87%E4%BB%B6/id1232058109
+
+② 再次前往iOS系统的“App Store”下载安装【欧路词典】，链接如下：
+https://apps.apple.com/cn/app/%E6%AC%A7%E8%B7%AF%E8%8B%B1%E8%AF%AD%E8%AF%8D%E5%85%B8-eudic-%E6%B1%89%E8%8B%B1%E8%8B%B1%E6%B1%89%E4%BA%92%E8%AF%91%E5%B7%A5%E5%85%B7/id367278030
+
+下载安装到您的iPhone后，请前往“文件 app”，进入【我的 iPhone】并确认文件夹内已经出现“欧路词典”（它关系到步骤④）
+
+③ 下载【词库】，请点击百度网盘链接：https://pan.baidu.com/s/1ALl380Q_aiHE8TMmOLINxw
+
+如需下载安装“百度网盘 app”，链接如下：
+https://apps.apple.com/cn/app/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/id547166701
+
+
+④ “词库”文件下载成功后，点击该文件并选择【存储到“文件”】⇢ 存储位置选择【我的 iPhone - 欧路词典】
+
+⑤ 最后，进入“欧路词典 app”，点击右下角的［账号］，在【词典库管理】中就有〖PCED〗了，随您的使用习惯进行设置即可。

@@ -1,0 +1,446 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title><script>
+function setHitsVisibility(isVisible)
+{ 
+  var c = getStyleClass('hit');
+  if (isVisible)
+  {
+    c.style.backgroundColor = 'blue';
+    c.style.color = 'white';
+  }
+  else
+  {
+    c.style.backgroundColor = 'white';
+    c.style.color = 'black';
+  }
+}
+
+function setFootnotesVisibility(isVisible)
+{
+  getStyleClass('note').style.display = (isVisible ? 'inline' : 'none');
+}
+
+function getStyleClass (className) {
+	for (var s = 0; s < document.styleSheets.length; s++)
+	{
+		if(document.styleSheets[s].rules)
+		{
+			for (var r = 0; r < document.styleSheets[s].rules.length; r++)
+			{
+				if (document.styleSheets[s].rules[r].selectorText == '.' + className)
+				{
+					return document.styleSheets[s].rules[r];
+				}
+			}
+		}
+		else if(document.styleSheets[s].cssRules)
+		{
+			for (var r = 0; r < document.styleSheets[s].cssRules.length; r++)
+			{
+				if (document.styleSheets[s].cssRules[r].selectorText == '.' + className)
+					return document.styleSheets[s].cssRules[r];
+			}
+		}
+	}
+	
+	return null;
+}
+</script><style>
+body { 
+  font-family: "Times Ext Roman", "Indic Times", "Doulos SIL", Tahoma, "Arial Unicode MS", Gentium;
+  background: white;
+}
+
+span {}
+.note {color: blue}
+.bld {font-weight: bold; }
+.paranum {font-weight: bold; }
+.hit {background-color: blue; color: white; }
+.context {background-color: green; color: white; }
+
+p {
+  border-top: 0in; border-bottom: 0in;
+  padding-top: 0in; padding-bottom: 0in;
+  margin-top: 0in; margin-bottom: 0.5cm;
+}
+
+.indent { font-size: 12pt; text-indent: 2em; margin-left: 3em;}
+
+.bodytext { font-size: 12pt; text-indent: 2em;}
+
+.hangnum { font-size: 12pt; text-indent: 2em;}
+
+/* Namo tassa, and nitthita -- no unique structural distinction */
+.centered { font-size: 12pt; text-align:center;}
+
+.unindented { font-size: 12pt;}
+
+.book { font-size: 21pt; text-align:center; font-weight: bold;}
+
+.chapter { font-size: 18pt; text-align:center; font-weight: bold;}
+
+.nikaya { font-size: 24pt; text-align:center; font-weight: bold;}
+
+.title { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+.subsubhead { font-size: 12pt; text-align:center; font-weight: bold;}
+
+/* Gatha line 1 */
+.gatha1 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 2 */
+.gatha2 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha line 3 */
+.gatha3 { font-size: 12pt; margin-bottom: 0em; margin-left: 4em;}
+
+/* Gatha last line */
+.gathalast { font-size: 12pt; margin-bottom: 0.5cm; margin-left: 4em;}
+</style>
+  </head>
+  <body>
+
+
+
+
+
+<p class="chapter">Saddabindu <a name="O0.0001"></a> pakaraṇaṃ</p>
+
+
+
+<p class="centered">Namo tassa bhagavato arahato sammāsambuddhassa</p>
+
+
+
+<p class="hangnum"><a name="para1"></a><span class="paranum">1</span>.</p>
+
+
+
+<p class="gatha1"> Yassañeyyesu dhammesu, nāṇumattampaveditaṃ,</p>
+
+
+
+<p class="gathalast">Natvāsaddhammasaṅghaṃtaṃ, saddabinduṃsamārabhe;</p>
+
+
+
+<p class="hangnum"><a name="para2"></a><span class="paranum">2</span>. <a name="O0.0002"></a></p>
+
+
+
+<p class="gatha1"> Kādiritā navasaṅkhyā, kamenaṭā di yādica,</p>
+
+
+
+<p class="gathalast">Pādayopañca saṅkhyātā, suññanāmā saraññanā;</p>
+
+
+
+<p class="hangnum"><a name="para3"></a><span class="paranum">3</span>.</p>
+
+
+
+<p class="gatha1"> Sarehevasarāpubbe luttāvāvīpareramā,</p>
+
+
+
+<p class="gathalast">Byañjanācāgamāvāvī dīgharassādisambhavā;</p>
+
+
+
+<p class="hangnum"><a name="para4"></a><span class="paranum">4</span>. <a name="O0.0003"></a></p>
+
+
+
+<p class="gatha1"> Kākāsenāgatosisa keniddhimaccadassayi,</p>
+
+
+
+<p class="gathalast">Arājakhvaggimesīnaṃ sotukammeghayitthiyo;</p>
+
+
+
+<p class="centered">Iti sandhikappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para5"></a><span class="paranum">5</span>. <a name="O0.0004"></a></p>
+
+
+
+<p class="gatha1"> Buddhapumayuvasanta rājabrahmasakhācasā,</p>
+
+
+
+<p class="gathalast">Yatādidehījantuca satthupitābhibhūvidū;</p>
+
+
+
+<p class="hangnum"><a name="para6"></a><span class="paranum">6</span>.</p>
+
+
+
+<p class="gatha1"> Kaññāmmārattithipo, kkharaṇīnadirumātubhū,</p>
+
+
+
+<p class="gathalast">Napuṃsaketiyantāca, padakammadadhāyuno;</p>
+
+
+
+<p class="hangnum"><a name="para7"></a><span class="paranum">7</span>. <a name="O0.0005"></a></p>
+
+
+
+<p class="gatha1"> Gahitāgahaṇenettha suddhosyādyantakāpume,</p>
+
+
+
+<p class="gathalast">Vimalāhontijāntehi thyaṃpañcantehidādhikā;</p>
+
+
+
+<p class="hangnum"><a name="para8"></a><span class="paranum">8</span>.</p>
+
+
+
+<p class="gatha1"> Napuṃsakepayogātu janakāhontityantato,</p>
+
+
+
+<p class="gathalast">Padhānānugatāsabba nāmasamāsataddhitā;</p>
+
+
+
+<p class="hangnum"><a name="para9"></a><span class="paranum">9</span>. <a name="O0.0006"></a></p>
+
+
+
+<p class="gatha1"> Attiliṅgānipātādi tatoluttāvasyādayo,</p>
+
+
+
+<p class="gathalast">Suttānurūpatosiddhā hontivattāmanādayo;</p>
+
+
+
+<p class="centered">Iti nāmakappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para10"></a><span class="paranum">10</span>.</p>
+
+
+
+<p class="gatha1"> Chakārakesasāmismiṃ samāsohotisambhavā,</p>
+
+
+
+<p class="gathalast">Taddhītākattukammasa, mpadānokāsasāmisu;</p>
+
+
+
+<p class="hangnum"><a name="para11"></a><span class="paranum">11</span>. <a name="O0.0007"></a></p>
+
+
+
+<p class="gatha1"> Sādhattayamhiākhyāto kitakosattasādhane,</p>
+
+
+
+<p class="gathalast">Sabbatthapaṭhamāvutte avuttedutiyādayo;</p>
+
+
+
+<p class="hangnum"><a name="para12"></a><span class="paranum">12</span>.</p>
+
+
+
+<p class="gatha1"> Manasāmuninovutyā vanebuddhenavaṇṇite,</p>
+
+
+
+<p class="gathalast">Vaṭṭāhitovivaṭṭatthaṃ bhikkhubhāvetibhāvanaṃ;</p>
+
+
+
+<p class="centered">Iti kārakakappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para13"></a><span class="paranum">13</span>. <a name="O0.0008"></a></p>
+
+
+
+<p class="gatha1"> Rāsīdvipadikādvandā liṅgenavacanenaca,</p>
+
+
+
+<p class="gathalast">Luttātulyādhikaraṇā bahubbīhītukhemarū;</p>
+
+
+
+<p class="hangnum"><a name="para14"></a><span class="paranum">14</span>.</p>
+
+
+
+<p class="gatha1"> Tappurisācakhemorā dayācakammadhārayā,</p>
+
+
+
+<p class="gathalast">Digavocāvyayāhārā etesabbepihāritā;</p>
+
+
+
+<p class="centered">Iti samāsakappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para15"></a><span class="paranum">15</span>.</p>
+
+
+
+<p class="gatha1"> Kaccāditopiekamhā saddatoniyamaṃvinā,</p>
+
+
+
+<p class="gathalast">Nekatthesatibhonteva sabbetaddhitapaccayā;</p>
+
+
+
+<p class="centered">Iti taddhitakappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para16"></a><span class="paranum">16</span>. <a name="O0.0009"></a></p>
+
+
+
+<p class="gatha1"> Kattarināññathākamme tathābhāvetumerayā,</p>
+
+
+
+<p class="gathalast">Sabbetepacadhātumhi saṅkhepenamarūmayā;</p>
+
+
+
+<p class="hangnum"><a name="para17"></a><span class="paranum">17</span>.<a name="O0.0010"></a></p>
+
+
+
+<p class="gatha1"> Gamīmhātiguṇāphatto sambhavāaññadhātusu,</p>
+
+
+
+<p class="gathalast">Anantāvapayogāte ādesapaccayādihi;</p>
+
+
+
+<p class="centered">Iti ākhyātakappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para18"></a><span class="paranum">18</span>.</p>
+
+
+
+<p class="gatha1"> Kitādipaccayāsabbe, ekamhāapidhātuto,</p>
+
+
+
+<p class="gathalast">Siyuṃnurūpatosatta, sādhanesatipāyato;</p>
+
+
+
+<p class="centered">Iti kitakappo samatto.</p>
+
+
+
+<p class="hangnum"><a name="para19"></a><span class="paranum">19</span>. <a name="O0.0011"></a></p>
+
+
+
+<p class="gatha1"> Iminākiñcilesena, sakkāñātuṃjināgame,</p>
+
+
+
+<p class="gathalast">Payogāñāṇināsindhu, rasovekenabindunā;</p>
+
+
+
+<p class="hangnum"><a name="para20"></a><span class="paranum">20</span>.</p>
+
+
+
+<p class="gatha1"> Rammaṃsīghappavesāya, puraṃpiṭakasaññitaṃ,</p>
+
+
+
+<p class="gathalast">Maggojumaggataṃmaggaṃ, saddāraññevisodhito;</p>
+
+
+
+<p class="hangnum"><a name="para21"></a><span class="paranum">21</span>. <a name="O0.0012"></a></p>
+
+
+
+<p class="gatha1"> Teneva kiñci jalito jalito padīpo</p>
+
+
+
+<p class="gatha2">Kaccāyanuttiratano citagabbhakoṇe,</p>
+
+
+
+<p class="gatha3">Dhammādirājagurunā garumāmakena</p>
+
+
+
+<p class="gathalast">Dhammena yobbipatinā sagaruttanīto;</p>
+
+
+
+<p class="centered">Iti saddabindu pakaraṇaṃ parisamattaṃ.</p>
+
+
+
+<p class="gatha1">Yosaññamo guṇadhano nayanaṃ nijaṃva</p>
+
+
+
+<p class="gatha2">Sikkhāpayī mama mavaṃ sugatāgamādo,</p>
+
+
+
+<p class="gatha3">Salloka puñja suhado padumādi rāma</p>
+
+
+
+<p class="gathalast">Nāmo mahā yativarā cariyo samayhaṃ;</p>
+
+
+
+<p class="gatha1">Saddhādhanena vasatā viditamhi pupphā</p>
+
+
+
+<p class="gatha2">Rāmedhunā ariyavaṃsa dhajavhayena,</p>
+
+
+
+<p class="gatha3">Santena ñāṇatilako tyaparākhyakena</p>
+
+
+
+<p class="gathalast">Bālānametamavidhīyi mayāhitāya;</p>
+
+
+
+
+
+</body>
+</html>

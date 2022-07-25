@@ -1,0 +1,217 @@
+﻿vin01m.mul          0 0 0 
+vin02m1.mul         1 0 0 
+vin02m2.mul         2 0 0 
+vin02m3.mul         3 0 0 
+vin02m4.mul         4 0 0 
+s0101m.mul          0 0 1 0 
+s0102m.mul          1 0 1 0 
+s0103m.mul          2 0 1 0 
+s0201m.mul          0 1 1 0 
+s0202m.mul          1 1 1 0 
+s0203m.mul          2 1 1 0 
+s0301m.mul          0 2 1 0 
+s0302m.mul          1 2 1 0 
+s0303m.mul          2 2 1 0 
+s0304m.mul          3 2 1 0 
+s0305m.mul          4 2 1 0 
+s0401m.mul          0 3 1 0 
+s0402m1.mul         1 3 1 0 
+s0402m2.mul         2 3 1 0 
+s0402m3.mul         3 3 1 0 
+s0403m1.mul         4 3 1 0 
+s0403m2.mul         5 3 1 0 
+s0403m3.mul         6 3 1 0 
+s0404m1.mul         7 3 1 0 
+s0404m2.mul         8 3 1 0 
+s0404m3.mul         9 3 1 0 
+s0404m4.mul         103 1 0 
+s0501m.mul          0 4 1 0 
+s0502m.mul          1 4 1 0 
+s0503m.mul          2 4 1 0 
+s0504m.mul          3 4 1 0 
+s0505m.mul          4 4 1 0 
+s0506m.mul          5 4 1 0 
+s0507m.mul          6 4 1 0 
+s0508m.mul          7 4 1 0 
+s0509m.mul          8 4 1 0 
+s0510m1.mul         9 4 1 0 
+s0510m2.mul         104 1 0 
+s0511m.mul          114 1 0 
+s0512m.mul          124 1 0 
+s0513m.mul          134 1 0 
+s0514m.mul          144 1 0 
+s0515m.mul          154 1 0 
+s0516m.mul          164 1 0 
+s0517m.mul          174 1 0 
+s0519m.mul          184 1 0 
+s0518m.nrf          194 1 0 
+s0520m.nrf          204 1 0 
+abh01m.mul          0 2 0 
+abh02m.mul          1 2 0 
+abh03m1.mul         2 2 0 
+abh03m2.mul         3 2 0 
+abh03m3.mul         4 2 0 
+abh03m4.mul         5 2 0 
+abh03m5.mul         6 2 0 
+abh03m6.mul         7 2 0 
+abh03m7.mul         8 2 0 
+abh03m8.mul         9 2 0 
+abh03m9.mul         102 0 
+abh03m10.mul        112 0 
+abh03m11.mul        122 0 
+vin01a.att          0 0 1 
+vin02a1.att         1 0 1 
+vin02a2.att         2 0 1 
+vin02a3.att         3 0 1 
+vin02a4.att         4 0 1 
+s0101a.att          0 0 1 1 
+s0102a.att          1 0 1 1 
+s0103a.att          2 0 1 1 
+s0201a.att          0 1 1 1 
+s0202a.att          1 1 1 1 
+s0203a.att          2 1 1 1 
+s0301a.att          0 2 1 1 
+s0302a.att          1 2 1 1 
+s0303a.att          2 2 1 1 
+s0304a.att          3 2 1 1 
+s0305a.att          4 2 1 1 
+s0401a.att          0 3 1 1 
+s0402a.att          1 3 1 1 
+s0403a.att          2 3 1 1 
+s0404a.att          3 3 1 1 
+s0501a.att          0 4 1 1 
+s0502a.att          1 4 1 1 
+s0503a.att          2 4 1 1 
+s0504a.att          3 4 1 1 
+s0505a.att          4 4 1 1 
+s0506a.att          5 4 1 1 
+s0507a.att          6 4 1 1 
+s0508a1.att         7 4 1 1 
+s0508a2.att         8 4 1 1 
+s0509a.att          9 4 1 1 
+s0510a.att          104 1 1 
+s0511a.att          114 1 1 
+s0512a.att          124 1 1 
+s0513a1.att         134 1 1 
+s0513a2.att         144 1 1 
+s0513a3.att         154 1 1 
+s0513a4.att         164 1 1 
+s0514a1.att         174 1 1 
+s0514a2.att         184 1 1 
+s0514a3.att         194 1 1 
+s0515a.att          204 1 1 
+s0516a.att          214 1 1 
+s0517a.att          224 1 1 
+s0519a.att          234 1 1 
+abh01a.att          0 2 1 
+abh02a.att          1 2 1 
+abh03a.att          2 2 1 
+vin01t1.tik         0 0 2 
+vin01t2.tik         1 0 2 
+vin02t.tik          2 0 2 
+vin04t.nrf          3 0 2 
+vin05t.nrf          4 0 2 
+vin06t.nrf          5 0 2 
+vin07t.nrf          6 0 2 
+vin08t.nrf          7 0 2 
+vin09t.nrf          8 0 2 
+vin10t.nrf          9 0 2 
+vin11t.nrf          100 2 
+vin12t.nrf          110 2 
+vin13t.nrf          120 2 
+s0101t.tik          0 0 1 2 
+s0102t.tik          1 0 1 2 
+s0103t.tik          2 0 1 2 
+s0104t.nrf          3 0 1 2 
+s0105t.nrf          4 0 1 2 
+s0201t.tik          0 1 1 2 
+s0202t.tik          1 1 1 2 
+s0203t.tik          2 1 1 2 
+s0301t.tik          0 2 1 2 
+s0302t.tik          1 2 1 2 
+s0303t.tik          2 2 1 2 
+s0304t.tik          3 2 1 2 
+s0305t.tik          4 2 1 2 
+s0401t.tik          0 3 1 2 
+s0402t.tik          1 3 1 2 
+s0403t.tik          2 3 1 2 
+s0404t.tik          3 3 1 2 
+s0519t.tik          0 4 1 2 
+s0501t.nrf          1 4 1 2 
+abh01t.tik          0 2 2 
+abh02t.tik          1 2 2 
+abh03t.tik          2 2 2 
+abh04t.nrf          3 2 2 
+abh05t.nrf          4 2 2 
+abh06t.nrf          5 2 2 
+abh07t.nrf          6 2 2 
+abh08t.nrf          7 2 2 
+abh09t.nrf          8 2 2 
+e0101n.mul          0 0 3 
+e0102n.mul          1 0 3 
+e0103n.att          2 0 3 
+e0104n.att          3 0 3 
+e0105n.nrf          4 0 3 
+e0901n.nrf          0 1 3 
+e0902n.nrf          1 1 3 
+e0903n.nrf          2 1 3 
+e0904n.nrf          3 1 3 
+e0905n.nrf          4 1 3 
+e0906n.nrf          5 1 3 
+e0907n.nrf          6 1 3 
+e0201n.nrf          0 2 3 
+e0301n.nrf          1 2 3 
+e0401n.nrf          2 2 3 
+e0501n.nrf          3 2 3 
+e0601n.nrf          0 3 3 
+e0602n.nrf          1 3 3 
+e0603n.nrf          2 3 3 
+e0604n.nrf          3 3 3 
+e0605n.nrf          4 3 3 
+e0606n.nrf          5 3 3 
+e0607n.nrf          6 3 3 
+e0608n.nrf          7 3 3 
+e0701n.nrf          0 4 3 
+e0702n.nrf          1 4 3 
+e0703n.nrf          2 4 3 
+e0801n.nrf          0 5 3 
+e0802n.nrf          1 5 3 
+e0803n.nrf          2 5 3 
+e0804n.nrf          3 5 3 
+e0805n.nrf          4 5 3 
+e0806n.nrf          5 5 3 
+e0807n.nrf          6 5 3 
+e0808n.nrf          7 5 3 
+e0809n.nrf          8 5 3 
+e0810n.nrf          9 5 3 
+e0811n.nrf          105 3 
+e0812n.nrf          115 3 
+e0813n.nrf          125 3 
+e1001n.nrf          0 6 3 
+e1002n.nrf          1 6 3 
+e1003n.nrf          2 6 3 
+e1004n.nrf          3 6 3 
+e1005n.nrf          4 6 3 
+e1006n.nrf          5 6 3 
+e1007n.nrf          6 6 3 
+e1008n.nrf          7 6 3 
+e1009n.nrf          8 6 3 
+e1010n.nrf          9 6 3 
+e1101n.nrf          0 7 3 
+e1102n.nrf          1 7 3 
+e1103n.nrf          2 7 3 
+e1201n.nrf          0 8 3 
+e1202n.nrf          1 8 3 
+e1203n.nrf          2 8 3 
+e1204n.nrf          3 8 3 
+e1205n.nrf          4 8 3 
+e1206n.nrf          5 8 3 
+e1207n.nrf          6 8 3 
+e1208n.nrf          7 8 3 
+e1209n.nrf          8 8 3 
+e1210n.nrf          9 8 3 
+e1211n.nrf          108 3 
+e1212n.nrf          118 3 
+e1213n.nrf          128 3 
+e1214n.nrf          138 3 
+e1215n.nrf          148 3 

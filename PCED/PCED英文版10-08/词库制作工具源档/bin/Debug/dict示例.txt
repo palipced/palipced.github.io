@@ -1,0 +1,7 @@
+﻿C
+V
+示例词典简称
+示例词典全称全称全称全称
+looka: 1 示例文本，可删除This term is probably used for the first time in Abh. S., though already in Vis.M. XIV the 4 <i>cetasika</i> in question are mentioned amongst the mental factors associated with each of the 12 <i>akusala-cittas</i> (Tab. I, 22-33), while in the <i>Abhidhamma</i> <i>Piṭaka</i> (Dhs. §§ 365-429) <i>uddhacca</i> is found only in the last of the 12 <i>cittas</i> , missing in all the remaining 11 <i>cittas</i> .
+lookb: 2 示例文本，可删除This term seems to be used for the first time in Kath. (190) of the Abh. Canon; the 5 crimes mentioned, however, are already enumerated and explained in the old <i>Sutta</i> texts (e.g. A.V, 129), as is to be seen from the main part of this work.
+lookc: 3 示例文本，可删除s. <i>paccaya</i> , 2.

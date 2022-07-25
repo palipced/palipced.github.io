@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/imgMulu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/txtMulu"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imgMulu"
+        android:gravity="center_vertical"
+        android:text="abc"
+        android:textColor="#ff000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+D:\我的文档\ff\PCED181\PCED181\工具1\bin\Debug\newf.exe.config
+D:\我的文档\ff\PCED181\PCED181\工具1\bin\Debug\newf.exe
+D:\我的文档\ff\PCED181\PCED181\工具1\bin\Debug\newf.pdb
+D:\我的文档\ff\PCED181\PCED181\工具1\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\ff\PCED181\PCED181\工具1\obj\Debug\newf.exe
+D:\我的文档\ff\PCED181\PCED181\工具1\obj\Debug\newf.pdb

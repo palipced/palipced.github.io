@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spdata">
+        <item>@string/vripage</item>
+        <item>Myanmar :</item>
+        <item>@string/ptspage</item>
+        <item>@string/thaipage</item>
+        <item>@string/paraNO</item>
+    </string-array>
+</resources>

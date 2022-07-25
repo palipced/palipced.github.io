@@ -1,0 +1,9 @@
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\bin\Debug\palisqlitedbtool.exe.config
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\bin\Debug\palisqlitedbtool.exe
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\bin\Debug\palisqlitedbtool.pdb
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\bin\Debug\System.Data.SQLite.dll
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\bin\Debug\System.Data.SQLite.xml
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\obj\Debug\palisqlitedbtool.csprojAssemblyReference.cache
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\obj\Debug\palisqlitedbtool.csproj.CopyComplete
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\obj\Debug\palisqlitedbtool.exe
+G:\AndroidStudioProjects\PCEDandroidres\dbtool\obj\Debug\palisqlitedbtool.pdb

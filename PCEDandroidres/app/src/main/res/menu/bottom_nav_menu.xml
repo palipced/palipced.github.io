@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navitemMula"
+        android:icon="@drawable/ic_baseline_format_mula_24"
+        android:title="@string/navmula" />
+
+    <item
+        android:id="@+id/navitemYizhu"
+        android:icon="@drawable/ic_baseline_format_atth_24"
+        android:title="@string/navatth" />
+
+    <item
+        android:id="@+id/navitemFuzhu"
+        android:icon="@drawable/ic_baseline_format_tika_24"
+        android:title="@string/navtika" />
+
+    <item
+        android:id="@+id/navitemSousuo"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/navsearch" />
+
+    <item
+        android:id="@+id/navitemXiangqing"
+        android:icon="@drawable/ic_baseline_playlist_add_24"
+        android:title="@string/navcontext" />
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="black">#FF000000</drawable>
+    <drawable name="white">#FFFFFFFF</drawable>
+    <drawable name="blue">#FF0000FF</drawable>
+    <drawable name="onegreen">#FF11CC66</drawable>
+    <drawable name="oneyellow">#FFDDCC66</drawable>
+    <drawable name="gray">#FFC0C0C0</drawable>
+    <color name="blue">#FF0000FF</color>
+    <color name="AliceBlue">#FFF0F8FF</color>
+    <color name="Gainsboro">#FFDCDCDC</color>
+</resources>
