@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to pali tipitaka dictionary PCED home page
 
 You can use the [editor on GitHub](https://github.com/pcedpalidict/pcedpalidict.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
