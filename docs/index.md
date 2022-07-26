@@ -1,6 +1,6 @@
 ## Welcome to pali tipitaka dictionary PCED home page
 
-[PCED app download page:](https://github.com/palipced/palipced.github.io/releases)
+PCED app download page url: [https://github.com/palipced/palipced.github.io/releases](https://github.com/palipced/palipced.github.io/releases)
 
 You can use the [editor on GitHub](https://github.com/pcedpalidict/pcedpalidict.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
