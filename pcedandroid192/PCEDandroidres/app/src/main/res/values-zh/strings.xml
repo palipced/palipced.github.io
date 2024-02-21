@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">巴利三藏词典192</string>
+    <string name="action_settings">设置</string>
+    <string name="btn1">查找</string>
+    <string name="search">搜索</string>
+    <string name="tipitaka">巴利三藏</string>
+    <string name="apptitle">巴利三藏词典1.92</string>
+    <string name="dict">巴利词典</string>
+    <string name="paraNO">段号：</string>
+    <string name="vripage">VRI 页码：</string>
+    <string name="ptspage">PTS 页码：</string>
+    <string name="thaipage">Thai 页码：</string>
+    <string name="gooto">转到</string>
+    <string name="edtsearch">输入单词以空格分隔在三藏中搜索</string>
+    <string name="get">获取</string>
+    <string name="word">输入关键词</string>
+    <string name="findnext">查找页/下个</string>
+    <string name="prev">前个</string>
+    <string name="navmula">根本/其它</string>
+    <string name="navatth">义注</string>
+    <string name="navtika">复注</string>
+    <string name="navsearch">搜索结果</string>
+    <string name="navcontext">上下文</string>
+    <string name="tipicata">巴利三藏目录</string>
+    <string name="backabovedirectory">返回上一级目录</string>
+    <string name="dicttitle">巴利词典</string>
+    <string name="edtLookupWord">输入单词在词典中查找</string>
+    <string name="lookup">查词典</string>
+    <string name="copy">复制</string>
+    <string name="paste">粘贴</string>
+
+</resources>

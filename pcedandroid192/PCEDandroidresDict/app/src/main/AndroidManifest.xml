@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peiyh.pcedpalidict192"
+    android:versionCode="8"
+    android:versionName="1.91">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--android:hardwareAccelerated="false"-->
+    <!--android:largeHeap="true"-->
+    <application
+        android:name="com.peiyh.pcedpalidict192.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:icon="@drawable/pced"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name="com.peiyh.pcedpalidict192.CanonActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name="pcedpalidict192.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        -->
+    </application>
+
+</manifest>

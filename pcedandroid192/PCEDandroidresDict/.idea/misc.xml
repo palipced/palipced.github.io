@@ -1,0 +1,38 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-hdpi/bg_change.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-hdpi/onetextviewonpressbackground.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-hdpi/sptxtinput.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-hdpi/tvblackwhite.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-ldpi/bg_change.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-mdpi/bg_change.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-xhdpi/bg_change.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable-xxhdpi/bg_change.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_chevron_right_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_folder_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_format_atth_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_format_mula_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_format_tika_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_playlist_add_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/drawable/ic_baseline_text_snippet_24.xml" value="0.2985" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/layout/activity_canon.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/layout/adapter_treeview.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/layout/fruit_item.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/layout/newone.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/menu/main.xml" value="0.3619791666666667" />
+        <entry key="..\:/AndroidStudioProjects/PCEDandroidresDict/app/src/main/res/menu/mainwin.xml" value="0.3619791666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

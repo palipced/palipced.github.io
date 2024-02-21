@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--此句在8、9之前的安卓版本上导致崩溃-->
+    <!--<item android:drawable="@color/material_on_background_emphasis_medium" android:state_pressed="true" />-->
+    <item android:drawable="@android:color/holo_green_light" android:state_pressed="true" />
+</selector>
