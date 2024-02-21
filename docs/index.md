@@ -1,4 +1,4 @@
-## Welcome to pali tipitaka dictionary PCED home page
+Welcome to pali tipitaka dictionary software PCED home page
 
 ++++++++++
 
@@ -8,7 +8,7 @@ PCED app download page url:
 
 ++++++++++
 
-PCED Pali Tipitaka reading dictionary program version 2.0.2 introduction:
+pali tipitaka dictionary software PCED version 2.0.5 introduction:
 
 This software has the following functions:
 
@@ -24,7 +24,7 @@ This software has the following functions:
 
 6. For some Pali inflection words and compound words, the dictionary program can disassemble them for reference.
 
-Note: the above is the description of PCED Windows version 2.0.2. As for PCED Android version, the function should be simple. One important difference is that pced191 Android version does not have the function of annotation jump at present.
+Note: the above is the description of PCED Windows version 2.0.5. As for PCED Android version, the function should be simple. One important difference is that pced192 Android version does not have the function of annotation jump at present.
 
 Software producer: alobha
 
@@ -32,7 +32,7 @@ contact information: alobha@hotmail.com
 
 ++++++++++
 
-pced巴利三藏阅读词典程序2.0.2版简介：
+巴利三藏阅读词典软件 PCED 2.0.5 简介：
 
 此软件具有如下功能：
 
@@ -48,7 +48,7 @@ pced巴利三藏阅读词典程序2.0.2版简介：
 
 6，对于一些巴利词尾变形词、复合词，词典程序可以对它进行拆解，以供参考。
 
-注：以上是pced的windows电脑版2.0.1.2版的说明，至于pced的安卓版，功能则要简单，其中一条重要的区别：pced191安卓版目前还不具备义注跳转的功能。
+注：以上是pced的windows电脑版2.0.5版的说明，至于pced的安卓版，功能则要简单，其中一条重要的区别：pced192安卓版目前还不具备义注直接跳转的功能。
 
 软件制作者：alobha
 
@@ -56,6 +56,6 @@ pced巴利三藏阅读词典程序2.0.2版简介：
 
 ++++++++++
 
-2022.7.26
+2024.2.21
 
 ++++++++++
