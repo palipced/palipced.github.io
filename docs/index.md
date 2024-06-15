@@ -59,3 +59,9 @@ contact information: alobha@hotmail.com
 2024.2.21
 
 ++++++++++
+
+PRIVACY POLICY
+
+[https://palipced.github.io/privacy_statement.html](https://palipced.github.io/privacy_statement.html)
+
+++++++++++
